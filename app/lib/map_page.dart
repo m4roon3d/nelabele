@@ -12,6 +12,9 @@ import 'models.dart';
 const _styleUrl = 'https://tiles.openfreemap.org/styles/positron';
 const _sourceId = 'areas';
 const _layerId = 'areas-dots';
+const _shapeSourceId = 'area-shapes';
+const _fillLayerId = 'areas-fill';
+const _lineLayerId = 'areas-outline';
 const _mapTypes = ['plot', 'agricultural_land', 'apartment'];
 
 /// Five rate bands, cheapest to priciest: field green through to deep red earth.
@@ -30,6 +33,7 @@ class _MapPageState extends State<MapPage> {
   bool _styleReady = false;
   String _type = 'plot';
   final Map<String, List<Area>> _cache = {};
+  Future<Map<int, Map<String, dynamic>>>? _shapes;
   List<double> _breaks = [];
   bool _loading = false;
   String? _error;
@@ -41,7 +45,10 @@ class _MapPageState extends State<MapPage> {
       _error = null;
     });
     try {
+      // outlines are the same for every type: fetch once, alongside the first rates
+      _shapes ??= _api.fetchShapes().catchError((_) => <int, Map<String, dynamic>>{});
       final areas = _cache[type] ??= await _api.fetchMapAreas(type);
+      await _shapes;
       if (!mounted || _type != type) return;
       final rates = [for (final a in areas) a.rates[type]!.guidanceRate!]..sort();
       _breaks = rates.isEmpty
@@ -59,19 +66,42 @@ class _MapPageState extends State<MapPage> {
     }
   }
 
+  /// First label layer of the base map, so outlines sit beneath place names.
+  Future<String?> _firstLabelLayer(MapLibreMapController map) async {
+    try {
+      final ids = await map.getLayerIds();
+      for (final id in ids) {
+        final s = id.toString();
+        if (s.contains('label') || s.contains('name') || s.startsWith('place') || s.contains('poi')) return s;
+      }
+    } catch (_) {}
+    return null;
+  }
+
   Future<void> _draw(List<Area> areas) async {
     final map = _map;
     if (map == null || !_styleReady) return;
+    final shapes = await (_shapes ?? Future.value(<int, Map<String, dynamic>>{}));
+    Map<String, dynamic> props(Area a) => {'id': a.id, 'name': a.name, 'rate': a.rates[_type]!.guidanceRate};
     final geojson = {
       'type': 'FeatureCollection',
       'features': [
         for (final a in areas)
-          {
-            'type': 'Feature',
-            'id': a.id,
-            'geometry': {'type': 'Point', 'coordinates': [a.lon, a.lat]},
-            'properties': {'id': a.id, 'name': a.name, 'rate': a.rates[_type]!.guidanceRate},
-          },
+          if (!shapes.containsKey(a.id))
+            {
+              'type': 'Feature',
+              'id': a.id,
+              'geometry': {'type': 'Point', 'coordinates': [a.lon, a.lat]},
+              'properties': props(a),
+            },
+      ],
+    };
+    final shapeJson = {
+      'type': 'FeatureCollection',
+      'features': [
+        for (final a in areas)
+          if (shapes.containsKey(a.id))
+            {'type': 'Feature', 'id': a.id, 'geometry': shapes[a.id], 'properties': props(a)},
       ],
     };
     final color = _breaks.length == 4
@@ -81,12 +111,36 @@ class _MapPageState extends State<MapPage> {
             _breaks[2], _bandColors[3], _breaks[3], _bandColors[4],
           ]
         : _bandColors[2];
-    try {
-      await map.removeLayer(_layerId);
-    } catch (_) {}
-    try {
-      await map.removeSource(_sourceId);
-    } catch (_) {}
+    for (final id in [_layerId, _fillLayerId, _lineLayerId]) {
+      try {
+        await map.removeLayer(id);
+      } catch (_) {}
+    }
+    for (final id in [_sourceId, _shapeSourceId]) {
+      try {
+        await map.removeSource(id);
+      } catch (_) {}
+    }
+    await map.addGeoJsonSource(_shapeSourceId, shapeJson);
+    final below = await _firstLabelLayer(map);
+    await map.addFillLayer(
+      _shapeSourceId,
+      _fillLayerId,
+      FillLayerProperties(
+        fillColor: color,
+        fillOpacity: ['interpolate', ['linear'], ['zoom'], 8, 0.7, 13, 0.45],
+      ),
+      belowLayerId: below,
+    );
+    await map.addLineLayer(
+      _shapeSourceId,
+      _lineLayerId,
+      LineLayerProperties(
+        lineColor: '#FBF6EE',
+        lineWidth: ['interpolate', ['linear'], ['zoom'], 8, 0.3, 13, 1.2],
+      ),
+      belowLayerId: below,
+    );
     await map.addGeoJsonSource(_sourceId, geojson);
     await map.addCircleLayer(
       _sourceId,
@@ -104,7 +158,7 @@ class _MapPageState extends State<MapPage> {
   Future<void> _onTap(Point<double> point, LatLng _) async {
     final map = _map;
     if (map == null) return;
-    final features = await map.queryRenderedFeatures(point, [_layerId], null);
+    final features = await map.queryRenderedFeatures(point, [_layerId, _fillLayerId], null);
     if (features.isEmpty || !mounted) return;
     var f = features.first;
     if (f is String) f = jsonDecode(f);
@@ -189,6 +243,14 @@ class _MapPageState extends State<MapPage> {
               ),
             ),
           ),
+        Positioned(
+          right: 8,
+          bottom: 34,
+          child: Text(
+            'Village outlines: Census 2011 via DataMeet (ODbL)',
+            style: theme.textTheme.labelSmall?.copyWith(color: const Color(0xFF6B6157), fontSize: 9),
+          ),
+        ),
         if (_breaks.length == 4)
           Positioned(
             left: 12,

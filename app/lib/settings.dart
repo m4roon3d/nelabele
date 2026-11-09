@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'bulk_import_page.dart';
+import 'listing_import_page.dart';
+
 /// The owner's private editor key, kept on this device only.
 class EditorKey {
   static const _prefKey = 'editor_key';
@@ -86,6 +89,38 @@ class _SettingsPageState extends State<SettingsPage> {
                 onPressed: () => EditorKey.save(null),
                 icon: const Icon(Icons.delete_outline),
                 label: const Text('Remove key'),
+              ),
+              const SizedBox(height: 24),
+              Text('Add market rates', style: theme.textTheme.titleMedium),
+              const SizedBox(height: 4),
+              Text(
+                'On Android you can also share a listing from 99acres, MagicBricks, Housing or '
+                'any app straight to NelaBele.',
+                style: muted,
+              ),
+              const SizedBox(height: 8),
+              Card.outlined(
+                child: Column(children: [
+                  ListTile(
+                    leading: const Icon(Icons.link),
+                    title: const Text('From a listing'),
+                    subtitle: const Text('Paste a listing’s text; NelaBele reads the price and size'),
+                    trailing: const Icon(Icons.chevron_right),
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute<void>(builder: (_) => const ListingImportPage()),
+                    ),
+                  ),
+                  const Divider(height: 1),
+                  ListTile(
+                    leading: const Icon(Icons.playlist_add),
+                    title: const Text('Bulk import'),
+                    subtitle: const Text('Paste many rates, one per line'),
+                    trailing: const Icon(Icons.chevron_right),
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute<void>(builder: (_) => const BulkImportPage()),
+                    ),
+                  ),
+                ]),
               ),
             ] else ...[
               TextField(

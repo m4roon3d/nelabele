@@ -13,7 +13,7 @@ import 'models.dart';
 class NelaBeleApi {
   static const _baseUrl = String.fromEnvironment('data_api_url');
   static const _token = String.fromEnvironment('app_token');
-  static const _rateColumns = 'geo_area_id,area_name,level,district,parent_name,parent_level,'
+  static const _rateColumns = 'geo_area_id,area_name,name_kn,has_boundary,level,district,parent_name,parent_level,'
       'lat,lon,property_type,guidance_rate,guidance_effective,market_low,market_mid,'
       'market_high,market_obs,confidence';
 
@@ -58,8 +58,14 @@ class NelaBeleApi {
       'order': 'area_name.asc,property_type.asc',
       'limit': '200',
     };
-    final q = query.trim().replaceAll(RegExp(r'[*,()]'), ' ');
-    if (q.isNotEmpty) params['area_name'] = 'ilike.*$q*';
+    final q = query.trim().replaceAll(RegExp(r'[*,()"]'), ' ').trim();
+    if (q.isNotEmpty) {
+      if (RegExp(r'[\u0C80-\u0CFF]').hasMatch(q)) {
+        params['name_kn'] = 'ilike.*$q*';
+      } else {
+        params['or'] = '(area_name.ilike."*$q*",name_kn.ilike."*$q*")';
+      }
+    }
     if (district != null) params['district'] = 'eq.$district';
     if (type != null) params['property_type'] = 'eq.$type';
     return _group(await _get('api_rate', params));
@@ -72,6 +78,59 @@ class NelaBeleApi {
       'geo_area_id': 'eq.$id',
     }));
     return areas.isEmpty ? null : areas.first;
+  }
+
+  /// Areas by id, with all their rates (saved places, comparison).
+  Future<List<Area>> fetchAreasByIds(List<int> ids) async {
+    if (ids.isEmpty) return [];
+    final areas = _group(await _get('api_rate', {
+      'select': _rateColumns,
+      'geo_area_id': 'in.(${ids.join(',')})',
+    }));
+    final order = {for (var i = 0; i < ids.length; i++) ids[i]: i};
+    areas.sort((a, b) => (order[a.id] ?? 0).compareTo(order[b.id] ?? 0));
+    return areas;
+  }
+
+  /// Exact-name lookup used by bulk import: every area called [name].
+  Future<List<Area>> findByName(String name) async {
+    final n = name.trim().replaceAll(RegExp(r'[*,()"]'), ' ').trim();
+    if (n.isEmpty) return [];
+    return _group(await _get('api_rate', {
+      'select': _rateColumns,
+      'area_name': 'ilike.$n',
+    }));
+  }
+
+  /// Village outlines (GeoJSON geometry) keyed by area id, fetched in pages.
+  Future<Map<int, Map<String, dynamic>>> fetchShapes() async {
+    const page = 1000;
+    final shapes = <int, Map<String, dynamic>>{};
+    for (var offset = 0;; offset += page) {
+      final batch = await _get('api_area_shape', {
+        'select': 'id,shape',
+        'order': 'id.asc',
+        'limit': '$page',
+        'offset': '$offset',
+      });
+      for (final row in batch.cast<Map<String, dynamic>>()) {
+        shapes[(row['id'] as num).toInt()] = (row['shape'] as Map).cast<String, dynamic>();
+      }
+      if (batch.length < page) break;
+    }
+    return shapes;
+  }
+
+  static CityTrend? _trend;
+
+  /// Latest city-wide price change, cached for the session.
+  Future<CityTrend?> cityTrend() async {
+    if (_trend != null) return _trend;
+    try {
+      final rows = await _get('api_city_trend', {'select': 'city,period,yoy_pct,measure', 'limit': '1'});
+      if (rows.isNotEmpty) _trend = CityTrend.fromJson((rows.first as Map).cast<String, dynamic>());
+    } catch (_) {}
+    return _trend;
   }
 
   /// Every area on the map that has a rate of [type], fetched in pages.

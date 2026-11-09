@@ -17,12 +17,18 @@ jobs:
             "api_rate?limit=3&select=area_name,property_type,guidance_rate" \
             "rpc/search_area?q=Hoskote&select=name,level&limit=2" \
             "api_rate?area_name=eq.Jayanagar%204th%20Block&select=area_name,parent_name,property_type,guidance_rate,lat,lon" \
-            "api_rate?select=district,lat&lat=not.is.null&limit=1&district=eq.Bangalore%20Urban"; do
+            "api_rate?select=district,lat&lat=not.is.null&limit=1&district=eq.Bangalore%20Urban" \
+            "api_city_trend?select=city,period,yoy_pct,measure" \
+            "api_area_shape?select=id&limit=2" \
+            "api_rate?select=area_name,name_kn,has_boundary&name_kn=ilike.*%E0%B2%9C%E0%B2%AF%E0%B2%A8%E0%B2%97%E0%B2%B0*&limit=2" \
+            "api_rate?select=area_name,name_kn&or=(area_name.ilike.%22*attiguppe*%22,name_kn.ilike.%22*attiguppe*%22)&limit=2"; do
             echo "GET /$path"
             code=$(curl -sS -o body.json -w '%{http_code}' -H "Authorization: Bearer $token" "$url/$path")
             cat body.json; echo; echo "HTTP $code"; echo
             [ "$code" = 200 ] || failed=1
           done
+          shapes=$(curl -sS -H "Authorization: Bearer $token" -H "Prefer: count=exact" -o /dev/null -D - "$url/api_area_shape?select=id&limit=1" | grep -i content-range)
+          echo "Village outlines: $shapes"; echo
           echo "Without a token (should be refused):"
           curl -sS -o /dev/null -w 'HTTP %{http_code}\n' "$url/api_rate?limit=1"
           echo "Logging a market rate with the public token (should be refused):"

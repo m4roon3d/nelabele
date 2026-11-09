@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
+import 'listing_import_page.dart';
 import 'map_page.dart';
+import 'saved_page.dart';
 import 'settings.dart';
+import 'share_inbox.dart';
 import 'theme.dart';
 
 /// Brand header, List / Map tabs and the settings button.
@@ -16,6 +19,29 @@ class AppShell extends StatefulWidget {
 class _AppShellState extends State<AppShell> {
   int _tab = 0;
   bool _mapOpened = false;
+
+  @override
+  void initState() {
+    super.initState();
+    ShareInbox.text.addListener(_onShared);
+    WidgetsBinding.instance.addPostFrameCallback((_) => _onShared());
+  }
+
+  @override
+  void dispose() {
+    ShareInbox.text.removeListener(_onShared);
+    super.dispose();
+  }
+
+  /// A listing shared from another app opens straight in the import screen.
+  void _onShared() {
+    final text = ShareInbox.text.value;
+    if (text == null || !mounted) return;
+    ShareInbox.text.value = null;
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(builder: (_) => ListingImportPage(initialText: text)),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,6 +93,7 @@ class _AppShellState extends State<AppShell> {
           const RatesListView(),
           // the map is built the first time its tab opens, then kept alive
           _mapOpened ? const MapPage() : const SizedBox.shrink(),
+          const SavedPage(),
         ],
       ),
       bottomNavigationBar: NavigationBar(
@@ -78,6 +105,7 @@ class _AppShellState extends State<AppShell> {
         destinations: const [
           NavigationDestination(icon: Icon(Icons.list_alt_outlined), selectedIcon: Icon(Icons.list_alt), label: 'List'),
           NavigationDestination(icon: Icon(Icons.map_outlined), selectedIcon: Icon(Icons.map), label: 'Map'),
+          NavigationDestination(icon: Icon(Icons.star_outline), selectedIcon: Icon(Icons.star), label: 'Saved'),
         ],
       ),
     );

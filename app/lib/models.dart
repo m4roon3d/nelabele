@@ -46,6 +46,13 @@ class Rate {
 
   bool get hasMarket => marketLow != null && marketHigh != null;
 
+  /// How many times the guidance value the market mid is, e.g. 1.8.
+  double? get marketRatio {
+    final g = guidanceRate, m = marketMid;
+    if (g == null || m == null || g <= 0) return null;
+    return m / g;
+  }
+
   factory Rate.fromJson(Map<String, dynamic> j) => Rate(
         propertyType: j['property_type'] as String,
         guidanceRate: _num(j['guidance_rate']),
@@ -71,10 +78,14 @@ class Area {
     required this.parentLevel,
     required this.lat,
     required this.lon,
+    this.nameKn,
+    this.hasBoundary = false,
   });
 
   final int id;
   final String name;
+  final String? nameKn;
+  final bool hasBoundary;
   final String level;
   final String district;
   final String? parentName;
@@ -92,6 +103,8 @@ class Area {
         parentLevel: j['parent_level'] as String?,
         lat: _num(j['lat']),
         lon: _num(j['lon']),
+        nameKn: j['name_kn'] as String?,
+        hasBoundary: (j['has_boundary'] as bool?) ?? false,
       );
 
   List<Rate> get sortedRates => [
@@ -105,4 +118,21 @@ class Area {
         if (parentName != null) parentLevel == 'zone' ? '$parentName area' : '$parentName taluk',
         district,
       ].join(' · ');
+}
+
+/// Latest city-wide price change (NHB RESIDEX).
+class CityTrend {
+  CityTrend({required this.city, required this.period, required this.yoyPct, required this.measure});
+
+  final String city;
+  final String period;
+  final double yoyPct;
+  final String measure;
+
+  factory CityTrend.fromJson(Map<String, dynamic> j) => CityTrend(
+        city: j['city'] as String,
+        period: j['period'] as String,
+        yoyPct: (j['yoy_pct'] as num).toDouble(),
+        measure: j['measure'] as String,
+      );
 }

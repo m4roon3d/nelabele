@@ -83,7 +83,7 @@ class _RatesListViewState extends State<RatesListView> {
               onChanged: _onSearchChanged,
               textInputAction: TextInputAction.search,
               decoration: InputDecoration(
-                hintText: 'Search a village or locality',
+                hintText: 'Search a place · ಸ್ಥಳ ಹುಡುಕಿ',
                 prefixIcon: const Icon(Icons.search),
                 suffixIcon: _search.text.isEmpty
                     ? null
@@ -232,7 +232,17 @@ class _AreaCard extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(area.name, style: theme.textTheme.titleMedium),
+              Text.rich(
+                TextSpan(children: [
+                  TextSpan(text: area.name),
+                  if (area.nameKn != null)
+                    TextSpan(
+                      text: '  ${area.nameKn}',
+                      style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.primary),
+                    ),
+                ]),
+                style: theme.textTheme.titleMedium,
+              ),
               const SizedBox(height: 2),
               Text(area.subtitle,
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
@@ -243,7 +253,11 @@ class _AreaCard extends StatelessWidget {
                 children: [
                   for (final r in area.sortedRates)
                     if (r.guidanceRate != null)
-                      _RatePill(label: propertyLabel(r.propertyType), value: headline(r.propertyType, r.guidanceRate!)),
+                      _RatePill(
+                        label: propertyLabel(r.propertyType),
+                        value: headline(r.propertyType, r.guidanceRate!),
+                        extra: r.marketRatio == null ? null : 'market ${r.marketRatio!.toStringAsFixed(1)}×',
+                      ),
                 ],
               ),
             ],
@@ -255,10 +269,11 @@ class _AreaCard extends StatelessWidget {
 }
 
 class _RatePill extends StatelessWidget {
-  const _RatePill({required this.label, required this.value});
+  const _RatePill({required this.label, required this.value, this.extra});
 
   final String label;
   final String value;
+  final String? extra;
 
   @override
   Widget build(BuildContext context) {
@@ -276,6 +291,7 @@ class _RatePill extends StatelessWidget {
             text: value,
             style: TextStyle(color: scheme.onSecondaryContainer, fontWeight: FontWeight.w600),
           ),
+          if (extra != null) TextSpan(text: '  ·  $extra', style: TextStyle(color: scheme.primary)),
         ]),
       ),
     );

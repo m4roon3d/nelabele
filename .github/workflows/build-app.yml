@@ -38,6 +38,10 @@ jobs:
           manifest=android/app/src/main/AndroidManifest.xml
           sed -i 's#<application#<uses-permission android:name="android.permission.INTERNET"/>\n    <application#' $manifest
           sed -i 's/android:label="nelabele"/android:label="NelaBele"/' $manifest
+          # Accept listings shared from other apps (text/plain)
+          sed -i 's#</activity>#    <intent-filter>\n                <action android:name="android.intent.action.SEND"/>\n                <category android:name="android.intent.category.DEFAULT"/>\n                <data android:mimeType="text/plain"/>\n            </intent-filter>\n        </activity>#' $manifest
+          grep -c "action.SEND" $manifest
+          cp android_extra/MainActivity.kt "$(find android/app/src/main -name 'MainActivity.kt')"
           # MapLibre needs Android 7.0 (API 24) or newer
           for g in android/app/build.gradle.kts android/app/build.gradle; do
             [ -f "$g" ] && sed -i -E 's/minSdk( =|Version) flutter\.minSdkVersion/minSdk\1 24/' "$g" && grep -n "minSdk" "$g" || true
@@ -51,7 +55,9 @@ jobs:
         run: dart run flutter_launcher_icons
 
       - name: Check the code
-        run: flutter analyze --no-fatal-infos lib
+        run: |
+          flutter analyze --no-fatal-infos lib
+          dart run tool/check_listing.dart
 
       - name: Build Android APKs
         run: |

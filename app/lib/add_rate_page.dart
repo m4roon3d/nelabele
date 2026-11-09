@@ -29,9 +29,22 @@ const _approvals = {
 
 /// Form for logging a market rate seen for an area. Pops `true` when saved.
 class AddRatePage extends StatefulWidget {
-  const AddRatePage({super.key, required this.area});
+  const AddRatePage({
+    super.key,
+    required this.area,
+    this.initialType,
+    this.initialRate,
+    this.initialUnit,
+    this.initialNote,
+    this.initialSource,
+  });
 
   final Area area;
+  final String? initialType;
+  final double? initialRate;
+  final String? initialUnit;
+  final String? initialNote;
+  final String? initialSource;
 
   @override
   State<AddRatePage> createState() => _AddRatePageState();
@@ -39,11 +52,11 @@ class AddRatePage extends StatefulWidget {
 
 class _AddRatePageState extends State<AddRatePage> {
   final _form = GlobalKey<FormState>();
-  final _rate = TextEditingController();
-  final _note = TextEditingController();
-  String _type = 'plot';
-  String _unit = 'sqft';
-  String _source = 'listing';
+  late final _rate = TextEditingController(text: _initialRateText());
+  late final _note = TextEditingController(text: widget.initialNote ?? '');
+  late String _type = widget.initialType ?? 'plot';
+  late String _unit = _units.containsKey(widget.initialUnit) ? widget.initialUnit! : (_type == 'agricultural_land' ? 'acre' : 'sqft');
+  late String _source = widget.initialSource ?? 'listing';
   String _approval = 'unknown';
   DateTime _date = DateTime.now();
   LatLng? _pin;
@@ -55,6 +68,12 @@ class _AddRatePageState extends State<AddRatePage> {
     _rate.dispose();
     _note.dispose();
     super.dispose();
+  }
+
+  String _initialRateText() {
+    final r = widget.initialRate;
+    if (r == null) return '';
+    return r >= 100 ? r.round().toString() : r.toStringAsFixed(2);
   }
 
   double? get _rateValue => double.tryParse(_rate.text.replaceAll(',', '').trim());
