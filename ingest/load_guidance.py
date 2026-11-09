@@ -16,6 +16,7 @@ Usage:
 
 import argparse
 import csv
+import difflib
 import os
 import sys
 from datetime import date
@@ -26,7 +27,7 @@ import psycopg
 REQUIRED = ["district", "area_name", "area_level", "property_type", "rate", "unit"]
 OPTIONAL = ["parent_name", "parent_level", "approval_status", "source_ref"]
 DISTRICTS = {"Bangalore Urban", "Bangalore Rural"}
-SIMILAR = 0.75  # pg_trgm similarity above which a new name looks like a duplicate
+SIMILAR = 0.85  # name similarity above which a new area looks like an existing one
 
 
 def enum_values(cur, name):
@@ -83,52 +84,51 @@ def read_rows(path, enums):
 
 
 class AreaResolver:
+    """Matches area names to geo_area ids with a handful of queries in total,
+    so loads stay fast even when the database is far away."""
+
     def __init__(self, cur):
         self.cur = cur
-        self.cache = {}
+        self.index = {}       # (district, level, parent_id, lower name/alias) -> id
+        self.existing = {}    # (district, level) -> names already in the database
         self.created = []
         self.warnings = []
+        cur.execute("SELECT id, district, level::text, parent_id, name, aliases FROM nelabele.geo_area")
+        for area_id, district, level, parent_id, name, aliases in cur.fetchall():
+            for n in [name, *aliases]:
+                self.index[(district, level, parent_id, n.lower())] = area_id
+            self.existing.setdefault((district, level), []).append(name)
 
-    def find(self, district, level, name, parent_id):
-        self.cur.execute(
-            """SELECT id FROM nelabele.geo_area
-               WHERE district = %s AND level = %s
-                 AND parent_id IS NOT DISTINCT FROM %s
-                 AND (lower(name) = lower(%s)
-                      OR EXISTS (SELECT 1 FROM unnest(aliases) a WHERE lower(a) = lower(%s)))
-               LIMIT 1""",
-            (district, level, parent_id, name, name),
-        )
-        hit = self.cur.fetchone()
-        return hit[0] if hit else None
+    def get(self, district, level, name, parent_id=None):
+        return self.index[(district, level, parent_id, name.lower())]
 
-    def resolve(self, district, level, name, parent_id=None):
-        key = (district, level, name.lower(), parent_id)
-        if key in self.cache:
-            return self.cache[key]
-        area_id = self.find(district, level, name, parent_id)
-        if area_id is None:
-            self.cur.execute(
-                """SELECT name, round(similarity(name, %s)::numeric, 2) FROM nelabele.geo_area
-                   WHERE district = %s AND level = %s AND similarity(name, %s) >= %s
-                   ORDER BY similarity(name, %s) DESC LIMIT 1""",
-                (name, district, level, name, SIMILAR, name),
-            )
-            near = self.cur.fetchone()
+    def ensure(self, wanted):
+        """Create any of (district, level, name, parent_id) that don't exist yet."""
+        missing = {}
+        for district, level, name, parent_id in wanted:
+            key = (district, level, parent_id, name.lower())
+            if key not in self.index and key not in missing:
+                missing[key] = (district, level, name, parent_id)
+        if not missing:
+            return
+        for district, level, name, parent_id in missing.values():
+            near = difflib.get_close_matches(name, self.existing.get((district, level), []),
+                                             n=1, cutoff=SIMILAR)
             if near:
                 self.warnings.append(
-                    f"new {level} '{name}' looks like existing '{near[0]}' (similarity {near[1]}) "
+                    f"new {level} '{name}' looks like existing '{near[0]}' "
                     f"– if same place, add '{name}' to that area's aliases and re-run"
                 )
-            self.cur.execute(
-                """INSERT INTO nelabele.geo_area (name, level, parent_id, district)
-                   VALUES (%s, %s, %s, %s) RETURNING id""",
-                (name, level, parent_id, district),
-            )
-            area_id = self.cur.fetchone()[0]
+        cols = list(zip(*missing.values()))
+        self.cur.execute(
+            """INSERT INTO nelabele.geo_area (district, level, name, parent_id)
+               SELECT * FROM unnest(%s::text[], %s::nelabele.geo_level[], %s::text[], %s::bigint[])
+               RETURNING id, district, level::text, parent_id, name""",
+            [list(c) for c in cols],
+        )
+        for area_id, district, level, parent_id, name in self.cur.fetchall():
+            self.index[(district, level, parent_id, name.lower())] = area_id
             self.created.append(f"{level} '{name}' ({district})")
-        self.cache[key] = area_id
-        return area_id
 
 
 def main():
@@ -164,12 +164,17 @@ def main():
             cur.execute("DELETE FROM nelabele.rate_observation WHERE batch_id = %s", (batch,))
             replaced = cur.rowcount
 
+            areas.ensure({(r["district"], r["parent_level"], r["parent_name"], None)
+                          for r in rows if r["parent_name"]})
+            for r in rows:
+                r["parent_id"] = (areas.get(r["district"], r["parent_level"], r["parent_name"])
+                                  if r["parent_name"] else None)
+            areas.ensure({(r["district"], r["area_level"], r["area_name"], r["parent_id"])
+                          for r in rows})
+
             data = []
             for r in rows:
-                parent_id = None
-                if r["parent_name"]:
-                    parent_id = areas.resolve(r["district"], r["parent_level"], r["parent_name"])
-                area_id = areas.resolve(r["district"], r["area_level"], r["area_name"], parent_id)
+                area_id = areas.get(r["district"], r["area_level"], r["area_name"], r["parent_id"])
                 data.append((area_id, r["property_type"], r["approval_status"], source_id,
                              r["rate"], r["unit"], args.effective_date,
                              r["source_ref"] or f"{args.csv.name}:{r['line']}", batch))
