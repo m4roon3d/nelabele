@@ -204,8 +204,22 @@ ALTER TABLE geo_area         ENABLE ROW LEVEL SECURITY;
 ALTER TABLE rate_observation ENABLE ROW LEVEL SECURITY;
 ALTER TABLE source           ENABLE ROW LEVEL SECURITY;
 
-GRANT USAGE ON SCHEMA nelabele TO anonymous;
-GRANT SELECT ON api_area, api_rate TO anonymous;
-GRANT EXECUTE ON FUNCTION area_at(double precision, double precision) TO anonymous;
-GRANT EXECUTE ON FUNCTION search_area(text) TO anonymous;
-REVOKE ALL ON geo_area, rate_observation, source, rate_summary FROM anonymous;
+-- Functions are executable by everyone by default; limit them to the API role.
+REVOKE EXECUTE ON FUNCTION area_at(double precision, double precision), search_area(text) FROM PUBLIC;
+
+-- The API role only exists once the Data API is enabled, so grant only if
+-- it's there. Run this block again after enabling the Data API.
+DO $$
+BEGIN
+  IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'anonymous') THEN
+    GRANT USAGE ON SCHEMA nelabele TO anonymous;
+    GRANT SELECT ON nelabele.api_area, nelabele.api_rate TO anonymous;
+    GRANT EXECUTE ON FUNCTION nelabele.area_at(double precision, double precision) TO anonymous;
+    GRANT EXECUTE ON FUNCTION nelabele.search_area(text) TO anonymous;
+    REVOKE ALL ON nelabele.geo_area, nelabele.rate_observation, nelabele.source,
+                  nelabele.rate_summary FROM anonymous;
+    RAISE NOTICE 'Read-only access granted to anonymous';
+  ELSE
+    RAISE NOTICE 'Role anonymous not found – enable the Data API, then re-run this block';
+  END IF;
+END $$;

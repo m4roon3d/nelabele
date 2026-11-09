@@ -1,0 +1,47 @@
+name: Load guidance values
+
+on:
+  workflow_dispatch:
+    inputs:
+      file:
+        description: Parsed guidance CSV to load
+        default: data/guidance/bengaluru_rural_2023.csv
+      effective_date:
+        description: Date the guidance values took effect (YYYY-MM-DD)
+        default: "2023-10-01"
+
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r ingest/requirements.txt
+
+      - name: Check the database secret is set
+        run: |
+          if [ -z "$DATABASE_URL" ]; then
+            echo "::error::Add your Neon connection string as the DATABASE_URL repository secret"
+            exit 1
+          fi
+
+      - name: Create the schema if it doesn't exist yet
+        run: |
+          exists=$(psql "$DATABASE_URL" -tAc "SELECT 1 FROM pg_namespace WHERE nspname = 'nelabele'")
+          if [ "$exists" = "1" ]; then
+            echo "Schema already exists – skipping"
+          else
+            psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/nelabele_schema.sql
+          fi
+
+      - name: Load guidance values
+        run: |
+          python ingest/load_guidance.py "${{ inputs.file }}" \
+            --effective-date "${{ inputs.effective_date }}"
