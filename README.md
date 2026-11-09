@@ -20,7 +20,8 @@ value alongside and a confidence level based on how much data there is.
 
 ```
 db/nelabele_schema.sql   tables, rate engine, read-only API views
-ingest/                  guidance value extract and load scripts
+ingest/                  guidance value extract, parse and load scripts
+data/guidance/           parsed guidance values, ready to load
 ```
 
 ## Getting started

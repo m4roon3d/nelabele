@@ -26,7 +26,7 @@ import psycopg
 REQUIRED = ["district", "area_name", "area_level", "property_type", "rate", "unit"]
 OPTIONAL = ["parent_name", "parent_level", "approval_status", "source_ref"]
 DISTRICTS = {"Bangalore Urban", "Bangalore Rural"}
-SIMILAR = 0.6  # pg_trgm similarity above which a new name looks like a duplicate
+SIMILAR = 0.75  # pg_trgm similarity above which a new name looks like a duplicate
 
 
 def enum_values(cur, name):
@@ -184,8 +184,10 @@ def main():
         print(f"Batch {batch}: {len(data)} rate(s)"
               + (f", replacing {replaced} from an earlier run" if replaced else ""))
         print(f"New areas: {len(areas.created)}")
-        for w in areas.warnings:
+        for w in areas.warnings[:20]:
             print("  check:", w)
+        if len(areas.warnings) > 20:
+            print(f"  ...and {len(areas.warnings) - 20} more possible duplicates")
 
         if args.dry_run:
             conn.rollback()
