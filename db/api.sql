@@ -35,13 +35,24 @@ FROM nelabele.geo_area;
 
 -- Indicative rates with area names, the taluk/zone they sit in and a map point
 CREATE VIEW public.api_rate AS
-SELECT r.*, a.name AS area_name, a.level, a.district,
+SELECT r.*, a.name AS area_name, a.name_kn, a.level, a.district,
+       a.boundary IS NOT NULL AS has_boundary,
        p.name AS parent_name, p.level AS parent_level,
        ST_Y(coalesce(a.centroid, a.point)) AS lat,
        ST_X(coalesce(a.centroid, a.point)) AS lon
 FROM nelabele.rate_summary r
 JOIN nelabele.geo_area a ON a.id = r.geo_area_id
 LEFT JOIN nelabele.geo_area p ON p.id = a.parent_id;
+
+-- Village outlines for the map, simplified to about 15 m, as GeoJSON
+CREATE VIEW public.api_area_shape AS
+SELECT id, ST_AsGeoJSON(ST_SimplifyPreserveTopology(boundary, 0.00015), 5)::json AS shape
+FROM nelabele.geo_area
+WHERE boundary IS NOT NULL;
+
+-- Latest city-wide price change (NHB RESIDEX)
+CREATE VIEW public.api_city_trend AS
+SELECT city, period, yoy_pct, measure, source_url, updated_on FROM nelabele.city_trend;
 
 -- Which area is this point in? (GET /rpc/area_at?lon=..&lat=..)
 CREATE FUNCTION public.area_at(lon double precision, lat double precision)
@@ -136,7 +147,7 @@ DO $$
 BEGIN
   IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'anonymous') THEN
     GRANT USAGE ON SCHEMA public TO anonymous;
-    GRANT SELECT ON public.api_area, public.api_rate TO anonymous;
+    GRANT SELECT ON public.api_area, public.api_rate, public.api_area_shape, public.api_city_trend TO anonymous;
     GRANT EXECUTE ON FUNCTION public.area_at(double precision, double precision),
                               public.search_area(text) TO anonymous;
     REVOKE ALL ON ALL TABLES IN SCHEMA nelabele FROM anonymous;
@@ -148,7 +159,7 @@ BEGIN
 
   IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'authenticated') THEN
     GRANT USAGE ON SCHEMA public TO authenticated;
-    GRANT SELECT ON public.api_area, public.api_rate TO authenticated;
+    GRANT SELECT ON public.api_area, public.api_rate, public.api_area_shape, public.api_city_trend TO authenticated;
     GRANT EXECUTE ON FUNCTION public.area_at(double precision, double precision),
                               public.search_area(text),
                               public.add_market_rate(bigint, text, numeric, text, date, text, text, text, double precision, double precision)

@@ -44,6 +44,9 @@ jobs:
       - name: Apply schema updates
         run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/migrate.sql
 
+      - name: Update the city price trend
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/city_trend.sql
+
       - name: Apply the Data API layer
         run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/api.sql
 
@@ -60,3 +63,6 @@ jobs:
 
       - name: Put areas on the map
         run: python ingest/load_points.py data/geo/area_points.csv
+
+      - name: Put village boundaries on the map
+        run: python ingest/load_boundaries.py data/geo/village_boundaries.geojson

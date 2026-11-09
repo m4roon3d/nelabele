@@ -16,3 +16,14 @@ ALTER TABLE nelabele.rate_observation ADD COLUMN IF NOT EXISTS entered_by text;
 ALTER TABLE nelabele.geo_area DROP CONSTRAINT IF EXISTS geo_area_district_check;
 ALTER TABLE nelabele.geo_area ADD CONSTRAINT geo_area_district_check
   CHECK (district IN ('Bangalore Urban', 'Bangalore Rural', 'Ramanagara'));
+
+-- City-wide price trend (NHB RESIDEX), shown beside guidance values
+CREATE TABLE IF NOT EXISTS nelabele.city_trend (
+  city        text PRIMARY KEY,
+  period      text NOT NULL,          -- e.g. 'Jul–Sep 2025'
+  yoy_pct     numeric(5,1) NOT NULL,  -- change over the same quarter a year earlier
+  measure     text NOT NULL,          -- e.g. 'NHB RESIDEX, assessment prices'
+  source_url  text NOT NULL,
+  updated_on  date NOT NULL DEFAULT current_date
+);
+ALTER TABLE nelabele.city_trend ENABLE ROW LEVEL SECURITY;

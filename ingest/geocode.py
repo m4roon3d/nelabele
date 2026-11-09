@@ -72,6 +72,7 @@ def load_places(path):
             names.update(a.strip() for a in alt.split(";"))
         kn = (t.get("name:kn") or "").replace(" ", "")
         places.append({"name": t.get("name"), "names": names, "place": t.get("place"), "kn": kn,
+                       "name_kn": t.get("name:kn") or "",
                        "pt": (float(lat), float(lon)),
                        "keys": {norm(n) for n in names if n}})
     return places
@@ -188,10 +189,13 @@ def main():
         if pick:
             out.append({"district": district, "parent_name": parent, "area_name": name,
                         "lat": f"{pick['pt'][0]:.6f}", "lon": f"{pick['pt'][1]:.6f}",
-                        "match": method, "osm_name": pick["name"]})
+                        "match": method, "osm_name": pick["name"],
+                        # a Kannada name only when it's this place's own, not a nearby one's
+                        "osm_name_kn": pick["name_kn"] if method in ("exact", "fuzzy", "kannada") else ""})
 
     with open(sys.argv[2], "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["district", "parent_name", "area_name", "lat", "lon", "match", "osm_name"])
+        w = csv.DictWriter(f, fieldnames=["district", "parent_name", "area_name", "lat", "lon", "match",
+                                           "osm_name", "osm_name_kn"])
         w.writeheader()
         w.writerows(out)
     total = len(areas)
