@@ -46,6 +46,20 @@ jobs:
           done
           test -s out/osm/places.json
 
+      - name: List guidance value files on the Stamps & Registration site
+        continue-on-error: true
+        run: |
+          mkdir -p out/igr
+          ua="Mozilla/5.0 (X11; Linux x86_64) NelaBele/0.1"
+          for u in "https://igr.karnataka.gov.in/page/revised+guidelines+value/en" \
+                   "https://igr.karnataka.gov.in/page/Revised+Guidelines+Value/en"; do
+            curl -fsSL -A "$ua" --max-time 60 "$u" -o out/igr/page.html && break
+          done
+          if [ -s out/igr/page.html ]; then
+            grep -oiE 'href="[^"]+"' out/igr/page.html | sed -E 's/^href="//; s/"$//' | sort -u > out/igr/links.txt
+            echo "$(wc -l < out/igr/links.txt) links; PDFs:"; grep -ci '\.pdf' out/igr/links.txt || true
+          fi
+
       - name: Save to the sources branch
         run: |
           cd out
