@@ -6,25 +6,25 @@ import 'api.dart';
 import 'area_sheet.dart';
 import 'format.dart';
 import 'models.dart';
-import 'theme.dart';
 
-const _taluks = ['Nelamangala', 'Doddaballapur', 'Devanahalli', 'Hoskote'];
+const _districts = ['Bangalore Urban', 'Bangalore Rural'];
 const _types = ['plot', 'agricultural_land', 'apartment'];
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+/// Searchable list of places and their rates.
+class RatesListView extends StatefulWidget {
+  const RatesListView({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<RatesListView> createState() => _RatesListViewState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _RatesListViewState extends State<RatesListView> {
   final _api = NelaBeleApi();
   final _search = TextEditingController();
   Timer? _debounce;
   int _requestId = 0;
 
-  String? _taluk;
+  String? _district;
   String? _type;
   bool _loading = true;
   String? _error;
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
       _error = null;
     });
     try {
-      final areas = await _api.fetchAreas(query: _search.text, taluk: _taluk, type: _type);
+      final areas = await _api.fetchAreas(query: _search.text, district: _district, type: _type);
       if (id != _requestId || !mounted) return;
       setState(() {
         _areas = areas;
@@ -74,38 +74,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 64,
-        titleSpacing: 16,
-        title: Row(
-          children: [
-            Image.asset('assets/logo.png', height: 36, semanticLabel: 'NelaBele logo'),
-            const SizedBox(width: 12),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text.rich(
-                  TextSpan(children: [
-                    const TextSpan(text: 'Nela'),
-                    TextSpan(
-                      text: 'Bele',
-                      style: TextStyle(
-                        color: theme.brightness == Brightness.dark ? Brand.redEarthDark : Brand.redEarthText,
-                      ),
-                    ),
-                  ]),
-                  style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600),
-                ),
-                Text('ನೆಲ ಬೆಲೆ · indicative property rates',
-                    style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
-              ],
-            ),
-          ],
-        ),
-      ),
-      body: Column(
+    return Column(
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
@@ -135,12 +104,12 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           _ChipRow(
-            options: _taluks,
-            labelOf: (t) => t,
-            selected: _taluk,
-            allLabel: 'All taluks',
-            onSelected: (t) {
-              setState(() => _taluk = t);
+            options: _districts,
+            labelOf: (d) => d.replaceFirst('Bangalore ', ''),
+            selected: _district,
+            allLabel: 'All areas',
+            onSelected: (d) {
+              setState(() => _district = d);
               _load();
             },
           ),
@@ -157,7 +126,6 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(height: 4),
           Expanded(child: _body(theme)),
         ],
-      ),
     );
   }
 

@@ -68,6 +68,9 @@ class Area {
     required this.level,
     required this.district,
     required this.parentName,
+    required this.parentLevel,
+    required this.lat,
+    required this.lon,
   });
 
   final int id;
@@ -75,7 +78,21 @@ class Area {
   final String level;
   final String district;
   final String? parentName;
+  final String? parentLevel;
+  final double? lat;
+  final double? lon;
   final Map<String, Rate> rates = {};
+
+  factory Area.fromJson(Map<String, dynamic> j) => Area(
+        id: (j['geo_area_id'] as num).toInt(),
+        name: j['area_name'] as String,
+        level: j['level'] as String,
+        district: j['district'] as String,
+        parentName: j['parent_name'] as String?,
+        parentLevel: j['parent_level'] as String?,
+        lat: _num(j['lat']),
+        lon: _num(j['lon']),
+      );
 
   List<Rate> get sortedRates => [
         for (final t in propertyTypes)
@@ -85,7 +102,7 @@ class Area {
 
   String get subtitle => [
         levelLabel(level),
-        if (parentName != null) '$parentName taluk',
+        if (parentName != null) parentLevel == 'zone' ? '$parentName area' : '$parentName taluk',
         district,
       ].join(' · ');
 }

@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
+import 'settings.dart';
+import 'shell.dart';
 import 'theme.dart';
 
-void main() => runApp(const NelaBeleApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await EditorKey.load();
+  runApp(const NelaBeleApp());
+}
 
 class NelaBeleApp extends StatelessWidget {
   const NelaBeleApp({super.key});
@@ -15,7 +20,7 @@ class NelaBeleApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: nelabeleTheme(Brightness.light),
       darkTheme: nelabeleTheme(Brightness.dark),
-      home: const HomePage(),
+      home: const AppShell(),
     );
   }
 }

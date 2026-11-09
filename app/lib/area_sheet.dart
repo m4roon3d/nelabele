@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'add_rate_page.dart';
+import 'api.dart';
 import 'format.dart';
 import 'models.dart';
+import 'settings.dart';
 
 Future<void> showAreaSheet(BuildContext context, Area area) {
   return showModalBottomSheet<void>(
@@ -18,17 +21,36 @@ Future<void> showAreaSheet(BuildContext context, Area area) {
   );
 }
 
-class _AreaDetails extends StatelessWidget {
+class _AreaDetails extends StatefulWidget {
   const _AreaDetails({required this.area, required this.controller});
 
   final Area area;
   final ScrollController controller;
 
   @override
+  State<_AreaDetails> createState() => _AreaDetailsState();
+}
+
+class _AreaDetailsState extends State<_AreaDetails> {
+  late Area _area = widget.area;
+
+  Future<void> _logRate() async {
+    final saved = await Navigator.of(context).push<bool>(
+      MaterialPageRoute(builder: (_) => AddRatePage(area: _area)),
+    );
+    if (saved != true || !mounted) return;
+    try {
+      final fresh = await NelaBeleApi().fetchArea(_area.id);
+      if (fresh != null && mounted) setState(() => _area = fresh);
+    } catch (_) {}
+  }
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final area = _area;
     return ListView(
-      controller: controller,
+      controller: widget.controller,
       padding: const EdgeInsets.fromLTRB(20, 0, 20, 32),
       children: [
         Text(area.name, style: theme.textTheme.headlineSmall),
@@ -37,6 +59,19 @@ class _AreaDetails extends StatelessWidget {
             style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
         const SizedBox(height: 16),
         for (final r in area.sortedRates) _RateCard(rate: r),
+        ValueListenableBuilder<String?>(
+          valueListenable: EditorKey.current,
+          builder: (context, key, _) => key == null
+              ? const SizedBox.shrink()
+              : Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: FilledButton.tonalIcon(
+                    onPressed: _logRate,
+                    icon: const Icon(Icons.add),
+                    label: const Text('Log a market rate'),
+                  ),
+                ),
+        ),
         const SizedBox(height: 8),
         Text(
           'Indicative only. Guidance values are the government minimum used for '
@@ -80,12 +115,13 @@ class _RateCard extends StatelessWidget {
                 '${rate.guidanceEffective != null ? ' · from ${monthYear(rate.guidanceEffective!)}' : ''}',
                 style: muted,
               ),
-            ],
+            ] else
+              Text('No guidance value for this type', style: muted),
             const Divider(height: 24),
             if (rate.hasMarket)
               Text(
                 'Market range: ${headline(type, rate.marketLow!)} – ${headline(type, rate.marketHigh!)}'
-                ' · ${rate.marketObs} data points, ${rate.confidence} confidence',
+                ' · ${rate.marketObs} data point${rate.marketObs == 1 ? '' : 's'}, ${rate.confidence} confidence',
                 style: theme.textTheme.bodyMedium,
               )
             else
