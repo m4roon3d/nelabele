@@ -1,27 +1,20 @@
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
+import 'theme.dart';
 
 void main() => runApp(const NelaBeleApp());
 
 class NelaBeleApp extends StatelessWidget {
   const NelaBeleApp({super.key});
 
-  static const _seed = Color(0xFF8A5A2B); // red-earth brown
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'NelaBele',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: _seed),
-        useMaterial3: true,
-      ),
-      darkTheme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: _seed, brightness: Brightness.dark),
-        useMaterial3: true,
-      ),
+      theme: nelabeleTheme(Brightness.light),
+      darkTheme: nelabeleTheme(Brightness.dark),
       home: const HomePage(),
     );
   }

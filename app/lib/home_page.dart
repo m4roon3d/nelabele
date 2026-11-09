@@ -6,6 +6,7 @@ import 'api.dart';
 import 'area_sheet.dart';
 import 'format.dart';
 import 'models.dart';
+import 'theme.dart';
 
 const _taluks = ['Nelamangala', 'Doddaballapur', 'Devanahalli', 'Hoskote'];
 const _types = ['plot', 'agricultural_land', 'apartment'];
@@ -75,12 +76,32 @@ class _HomePageState extends State<HomePage> {
     final theme = Theme.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        toolbarHeight: 64,
+        titleSpacing: 16,
+        title: Row(
           children: [
-            const Text('NelaBele'),
-            Text('ನೆಲ ಬೆಲೆ · indicative property rates',
-                style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
+            Image.asset('assets/logo.png', height: 36, semanticLabel: 'NelaBele logo'),
+            const SizedBox(width: 12),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text.rich(
+                  TextSpan(children: [
+                    const TextSpan(text: 'Nela'),
+                    TextSpan(
+                      text: 'Bele',
+                      style: TextStyle(
+                        color: theme.brightness == Brightness.dark ? Brand.redEarthDark : Brand.redEarthText,
+                      ),
+                    ),
+                  ]),
+                  style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600),
+                ),
+                Text('ನೆಲ ಬೆಲೆ · indicative property rates',
+                    style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
+              ],
+            ),
           ],
         ),
       ),

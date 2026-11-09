@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>NelaBele app icon: the mark on a deep field-green tile</title>
+  <rect width="512" height="512" rx="112" fill="#24331F"/>
+  <g transform="translate(256 262) scale(0.78) translate(-256 -290)">
+  <defs>
+    <clipPath id="pin">
+      <path d="M256 468 C214 410 112 318 112 214 A144 144 0 1 1 400 214 C400 318 298 410 256 468 Z"/>
+    </clipPath>
+    <clipPath id="earth">
+      <path d="M90 312 Q256 282 422 312 L422 512 L90 512 Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#pin)">
+    <rect width="512" height="512" fill="#F4E4C4"/>
+    <circle cx="256" cy="184" r="50" fill="#E3A21A"/>
+    <path d="M90 256 Q256 222 422 256 L422 512 L90 512 Z" fill="#5C8A38"/>
+    <path d="M90 312 Q256 282 422 312 L422 512 L90 512 Z" fill="#B4532A"/>
+    <g clip-path="url(#earth)" stroke="#82361A" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M200 300 L60 512"/>
+      <path d="M228 298 L158 512"/>
+      <path d="M256 296 L256 512"/>
+      <path d="M284 298 L354 512"/>
+      <path d="M312 300 L452 512"/>
+    </g>
+  </g>
+  </g>
+</svg>

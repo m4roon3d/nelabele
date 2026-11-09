@@ -34,8 +34,12 @@ jobs:
           sed -i 's#<application#<uses-permission android:name="android.permission.INTERNET"/>\n    <application#' $manifest
           sed -i 's/android:label="nelabele"/android:label="NelaBele"/' $manifest
           sed -i 's#<title>nelabele</title>#<title>NelaBele</title>#' web/index.html
+          sed -i 's/"background_color": "[^"]*"/"background_color": "#FBF6EE"/; s/"theme_color": "[^"]*"/"theme_color": "#B4532A"/; s/"name": "nelabele"/"name": "NelaBele"/; s/"short_name": "nelabele"/"short_name": "NelaBele"/' web/manifest.json
 
       - run: flutter pub get
+
+      - name: Generate app icons from the brand mark
+        run: dart run flutter_launcher_icons
 
       - name: Check the code
         run: flutter analyze --no-fatal-infos lib

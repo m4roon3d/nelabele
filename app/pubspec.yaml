@@ -13,6 +13,23 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/logo.png
+
+# App icons, generated in CI from the NelaBele mark (brand/*.svg)
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/icon/icon.png
+  adaptive_icon_background: "#24331F"
+  adaptive_icon_foreground: assets/icon/foreground.png
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: assets/icon/icon.png
+    background_color: "#FBF6EE"
+    theme_color: "#B4532A"
