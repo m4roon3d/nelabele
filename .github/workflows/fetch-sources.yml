@@ -38,8 +38,8 @@ jobs:
           );
           out center tags;
           EOF
-          for url in https://overpass-api.de/api/interpreter https://overpass.kumi.systems/api/interpreter; do
-            if curl -fsS --retry 2 --max-time 240 --data-urlencode data@query.overpass "$url" -o out/osm/places.json; then
+          for url in https://overpass-api.de/api/interpreter https://overpass.private.coffee/api/interpreter https://overpass.kumi.systems/api/interpreter; do
+            if curl -fsS --retry 2 --retry-delay 20 --max-time 300 -A "NelaBele/0.1 (+https://github.com/m4roon3d/nelabele)" -H "Accept: application/json" --data-urlencode data@query.overpass "$url" -o out/osm/places.json; then
               echo "Got $(jq '.elements | length' out/osm/places.json) places from $url"; break
             fi
           done
