@@ -48,15 +48,23 @@ jobs:
       - name: Check the code
         run: flutter analyze --no-fatal-infos lib
 
-      - name: Build Android APK
-        run: flutter build apk --release --dart-define-from-file=../config/data_api.json
+      - name: Build Android APKs
+        run: |
+          flutter build apk --release --split-per-abi --dart-define-from-file=../config/data_api.json
+          flutter build apk --release --dart-define-from-file=../config/data_api.json
 
       - name: Build web app
         run: flutter build web --release --base-href /nelabele/ --dart-define-from-file=../config/data_api.json
 
+      # Most phones: 64-bit ARM (smaller download). Universal: works everywhere.
       - uses: actions/upload-artifact@v4
         with:
           name: nelabele-android
+          path: app/build/app/outputs/flutter-apk/app-arm64-v8a-release.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nelabele-android-universal
           path: app/build/app/outputs/flutter-apk/app-release.apk
 
       - uses: actions/upload-artifact@v4

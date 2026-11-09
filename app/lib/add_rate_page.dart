@@ -168,7 +168,8 @@ class _AddRatePageState extends State<AddRatePage> {
                 SizedBox(
                   width: 150,
                   child: DropdownButtonFormField<String>(
-                    value: _unit,
+                    key: ValueKey('unit-$_unit'),
+                    initialValue: _unit,
                     decoration: const InputDecoration(labelText: 'Unit', border: OutlineInputBorder()),
                     items: [for (final e in _units.entries) DropdownMenuItem(value: e.key, child: Text(e.value))],
                     onChanged: (v) => setState(() => _unit = v!),
@@ -178,14 +179,14 @@ class _AddRatePageState extends State<AddRatePage> {
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
-              value: _source,
+              initialValue: _source,
               decoration: const InputDecoration(labelText: 'Where it came from', border: OutlineInputBorder()),
               items: [for (final e in _sources.entries) DropdownMenuItem(value: e.key, child: Text(e.value))],
               onChanged: (v) => setState(() => _source = v!),
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
-              value: _approval,
+              initialValue: _approval,
               decoration: const InputDecoration(labelText: 'Khata / approval', border: OutlineInputBorder()),
               items: [for (final e in _approvals.entries) DropdownMenuItem(value: e.key, child: Text(e.value))],
               onChanged: (v) => setState(() => _approval = v!),
