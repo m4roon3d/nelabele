@@ -53,6 +53,7 @@ ROADLIKE = re.compile(r"\b(road|rd|cross|main|street|st|lane|circle|avenue|marg|
 PROJECT = re.compile(r"apartment|\bapts?\b|residency|enclave|heights|towers?\b|\bpid\b|khata|katha|villas?\b|"
                      r"projects?\b|infrastructure|developers|builders|\bphase\b|\bsite no|\b0\d\d-|w0\d", re.I)
 APT_HINT = re.compile(r"apartment|\bapts?\b|flats?\b|residency|towers?\b|heights", re.I)
+VILLAGE_SUB = re.compile(r"survey numbers?|identified|attached|attach to|abutting|pheri|periph|near to|\bland\b$", re.I)
 NOT_RESIDENTIAL = re.compile(r"commercial|industrial|kiadb|office space", re.I)
 HEADER_WORDS = re.compile(r"^(village|area|road|name|hobli|ward|sl|no|property|id|division|block|sy|[/ .])+$", re.I)
 
@@ -81,6 +82,10 @@ def english_name(cells):
             if letters >= 4 and len(run) > len(best):
                 best = run
     best = re.sub(r"\s+", " ", best)
+    # letter-spaced text ("M a in R o a d", "P r a s h a n t h a N a g a r"): close it up
+    toks = best.split()
+    if len(toks) >= 4 and sum(bool(re.fullmatch(r"[A-Za-z]{1,2}", t)) for t in toks) >= 0.6 * len(toks):
+        best = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", "".join(toks))
     if "cid:" in best:
         return ""
     # "Balaji gold city ( 96/3, 96/7, ..." → "Balaji gold city"; a bare list of
@@ -225,6 +230,42 @@ def main():
                 skipped.append([page, "no English name"] + body)
                 continue
             nums = numbers(body)
+            if args.mode == "city":
+                # peri-urban village rows mix site rates (₹/sq m) with farmland
+                # (₹ lakh/acre) in one row: tell them apart by size
+                key = name.lower()[:12]
+                idx = next((i for i, c in enumerate(body) if key and key in c.lower()), None)
+                after = numbers(body[idx + 1:]) if idx is not None else nums
+                small = [v for v in after if 5 <= v < 1000]
+                large = [v for v in after if v >= 1000]
+                if small and not PROJECT.search(name):
+                    if NOT_RESIDENTIAL.search(name):
+                        reasons["commercial/industrial"] += 1
+                        continue
+                    if SUB_ROW.search(name) or FRONTAGE.search(name) or VILLAGE_SUB.search(name):
+                        reasons["road-frontage sub-row"] += 1
+                        continue
+                    result = [("agricultural_land", small[0] * 100000, "acre", "village")]
+                    if large:
+                        result.append(("plot", max(large), "sqm", "village"))
+                    for ptype, rate, unit, level in result:
+                        key2 = (taluk, name.lower(), ptype)
+                        if key2 in seen:
+                            reasons["duplicate"] += 1
+                            continue
+                        if unit == "sqm" and not CITY_BOUNDS["plot"][0] <= rate <= CITY_BOUNDS["plot"][1]:
+                            reasons["implausible value"] += 1
+                            continue
+                        seen.add(key2)
+                        out.append({
+                            "district": args.district, "area_name": name, "name_kn": "", "area_level": level,
+                            "context": "", "parent_name": taluk, "parent_level": args.parent_level,
+                            "property_type": ptype, "approval_status": "",
+                            "rate": f"{rate:.0f}", "unit": unit,
+                            "source_ref": f"{taluk} SRO gazette p.{page}",
+                        })
+                    reasons["peri-urban village row"] += 1
+                    continue
             if args.mode == "city" and len(nums) < 3:
                 if NOT_RESIDENTIAL.search(name):
                     reasons["commercial/industrial"] += 1
