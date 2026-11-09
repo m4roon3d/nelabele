@@ -1,0 +1,28 @@
+name: Check Data API
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Query the Data API with the app token
+        run: |
+          url=$(jq -r .data_api_url config/data_api.json)
+          token=$(jq -r .app_token config/data_api.json)
+          for path in \
+            "api_rate?limit=3&select=area_name,property_type,guidance_rate" \
+            "rpc/search_area?q=Hoskote&select=name,level&limit=2"; do
+            echo "GET /$path"
+            code=$(curl -sS -o body.json -w '%{http_code}' -H "Authorization: Bearer $token" "$url/$path")
+            cat body.json; echo; echo "HTTP $code"; echo
+            [ "$code" = 200 ] || failed=1
+          done
+          echo "Without a token (should be refused):"
+          curl -sS -o /dev/null -w 'HTTP %{http_code}\n' "$url/api_rate?limit=1"
+          echo "Raw table (should be refused):"
+          curl -sS -H "Authorization: Bearer $token" "$url/geo_area?limit=1"; echo
+          [ -z "$failed" ]

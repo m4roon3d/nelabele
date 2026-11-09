@@ -1,0 +1,5 @@
+{
+  "_note": "Public by design: this token can only read the api_* views. Regenerate with auth/make_app_token.py.",
+  "data_api_url": "https://ep-morning-block-ao9wluvw.apirest.c-2.ap-southeast-1.aws.neon.tech/neondb/rest/v1",
+  "app_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Im5lbGFiZWxlLTIwMjYxMTA5IiwidHlwIjoiSldUIn0.eyJyb2xlIjoiYW5vbnltb3VzIiwiaXNzIjoibmVsYWJlbGUiLCJhdWQiOiJuZWxhYmVsZS1kYXRhLWFwaSIsInN1YiI6Im5lbGFiZWxlLWFwcCIsImlhdCI6MTc5NDIzNjM5NSwiZXhwIjoxOTUxOTE2Mzk1fQ.sHXh4kY1l-glaI5sI2naRng_oE1Mh2d_Rry81cQ86C_9M40gHlTAl5eJh5UtYUnkYqv39tEDxQEaftiWSx-6VmvPv3bi7mp9xRjxdklvFgrE2IRvE24BK3ePOzlgds2G_YAz16htn2Yh71lw-Xx-Tkb5N2bvjIX73Sv1tqgof-XHuyPdgFzGC-W-Pw9BtFz8H2sMrsykxF5UcNOIVkXRUuESGwt1k7zVEGjVNpDW9Ixt3tbmVhR_OypON3hnJ4A7WrmLBWLpbkZY-Gte0yRg63Hn0HpSY8gM0YW-zQbbXbR8JglcY0Rhh7Fu-WIi0h5J3q77aGEM6DtEJDwdGTQ5rw"
+}

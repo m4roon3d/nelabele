@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "alg": "RS256",
+      "kid": "nelabele-20261109",
+      "n": "yYqxPHbbwljQ211Dku4jpjThVku_PnHGDo4GT1R09dsMXPmAulpErfLTs0fEtRBhhnQMhbbikkBiw2ouXiuIhGK1uJUETGTGiU8zLRrEzLIwYg07W-MfNUZ8QOEqaxkhyCP_eEoA-VreCAHRmaZztUYoP_4EEnCdazJGlc7ZyiuksDqdFvI2woOeaBIeMh1S8jTbi9XWXpy5NkCZHWy1WB3qxyOXypXaZUR3vTWaaFiQJXhhqzMyD48qhQX3U2b9QTwXwsHYlgtj76s2_yeBesyRskYQxAGq-4Be_SB7x5GfA2-933feTvJdVTT13jXNEln00JXB7A7EiXRkPga41Q",
+      "e": "AQAB"
+    }
+  ]
+}
