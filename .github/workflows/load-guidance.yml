@@ -41,6 +41,9 @@ jobs:
             psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/nelabele_schema.sql
           fi
 
+      - name: Apply the Data API layer
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/api.sql
+
       - name: Load guidance values
         run: |
           python ingest/load_guidance.py "${{ inputs.file }}" \

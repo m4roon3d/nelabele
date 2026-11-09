@@ -156,70 +156,10 @@ CREATE UNIQUE INDEX rate_summary_pk
   ON rate_summary (geo_area_id, property_type, approval_status);
 
 -- ---------------------------------------------------------------------
--- 6. App-facing views and functions (what the Data API exposes)
--- ---------------------------------------------------------------------
-
--- Areas for the map: name, level, boundary as GeoJSON
-CREATE VIEW api_area AS
-SELECT id, name, name_kn, level, parent_id, district, aliases,
-       ST_AsGeoJSON(boundary)::json AS boundary,
-       ST_AsGeoJSON(centroid)::json AS centroid
-FROM geo_area;
-
--- Rates joined with area names
-CREATE VIEW api_rate AS
-SELECT r.*, a.name AS area_name, a.level, a.district
-FROM rate_summary r
-JOIN geo_area a ON a.id = r.geo_area_id;
-
--- Which area is this point in? (call via /rpc/area_at)
-CREATE FUNCTION area_at(lon double precision, lat double precision)
-RETURNS SETOF api_area
-LANGUAGE sql STABLE SECURITY DEFINER SET search_path = nelabele, public AS $$
-  SELECT v.*
-  FROM geo_area g
-  JOIN api_area v ON v.id = g.id
-  WHERE ST_Contains(g.boundary, ST_SetSRID(ST_MakePoint(lon, lat), 4326))
-  ORDER BY g.level DESC          -- most specific level first
-$$;
-
--- Fuzzy search by name or alias (call via /rpc/search_area)
-CREATE FUNCTION search_area(q text)
-RETURNS SETOF api_area
-LANGUAGE sql STABLE SECURITY DEFINER SET search_path = nelabele, public AS $$
-  SELECT v.*
-  FROM geo_area g
-  JOIN api_area v ON v.id = g.id
-  WHERE g.name % q OR q ILIKE ANY (g.aliases)
-  ORDER BY similarity(g.name, q) DESC
-  LIMIT 20
-$$;
-
--- ---------------------------------------------------------------------
--- 7. Read-only access for the Neon Data API
---    Role name: check Neon console → Data API (commonly 'anonymous').
---    Base tables stay private; only the api_* views and RPCs are granted.
+-- 6. Lock down the base tables
+--    The app never reads these directly. What the Data API exposes is
+--    defined in db/api.sql, which lives in the public schema.
 -- ---------------------------------------------------------------------
 ALTER TABLE geo_area         ENABLE ROW LEVEL SECURITY;
 ALTER TABLE rate_observation ENABLE ROW LEVEL SECURITY;
 ALTER TABLE source           ENABLE ROW LEVEL SECURITY;
-
--- Functions are executable by everyone by default; limit them to the API role.
-REVOKE EXECUTE ON FUNCTION area_at(double precision, double precision), search_area(text) FROM PUBLIC;
-
--- The API role only exists once the Data API is enabled, so grant only if
--- it's there. Run this block again after enabling the Data API.
-DO $$
-BEGIN
-  IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'anonymous') THEN
-    GRANT USAGE ON SCHEMA nelabele TO anonymous;
-    GRANT SELECT ON nelabele.api_area, nelabele.api_rate TO anonymous;
-    GRANT EXECUTE ON FUNCTION nelabele.area_at(double precision, double precision) TO anonymous;
-    GRANT EXECUTE ON FUNCTION nelabele.search_area(text) TO anonymous;
-    REVOKE ALL ON nelabele.geo_area, nelabele.rate_observation, nelabele.source,
-                  nelabele.rate_summary FROM anonymous;
-    RAISE NOTICE 'Read-only access granted to anonymous';
-  ELSE
-    RAISE NOTICE 'Role anonymous not found – enable the Data API, then re-run this block';
-  END IF;
-END $$;
