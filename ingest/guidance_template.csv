@@ -1,0 +1,5 @@
+district,area_name,area_level,parent_name,parent_level,property_type,approval_status,rate,unit,source_ref
+Bangalore Urban,Yelahanka New Town,locality,Yelahanka,zone,plot,,52000,sqm,Yelahanka SRO p.4
+Bangalore Urban,Yelahanka New Town,locality,Yelahanka,zone,apartment,,5800,sqft,Yelahanka SRO p.4
+Bangalore Rural,Kundana,village,Devanahalli,taluk,agricultural_land,,9500000,acre,Devanahalli SRO p.12
+Bangalore Rural,Kundana,village,Devanahalli,taluk,plot,dc_converted,2200,sqft,Devanahalli SRO p.12
