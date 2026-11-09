@@ -16,7 +16,7 @@ jobs:
         with:
           path: main
 
-      - name: Download Bangalore Urban guidance value gazettes (OpenCity, 2023)
+      - name: Download Bangalore Urban and Ramanagara guidance value gazettes (OpenCity, 2023)
         run: |
           mkdir -p out/gazettes
           base=https://data.opencity.in/dataset/ddea06de-731c-4d5d-af1f-6d5e7ab65b07/resource
@@ -26,6 +26,7 @@ jobs:
           dl shivajinagar_2023  449fa448-1703-4acf-9852-4acc1b85ab83/download/bd945bca-abf5-4029-90bf-a382509ba149.pdf
           dl basavanagudi_2023  dccb6bf7-97af-4021-8e52-a43c0797cac3/download/221a81fa-1256-424a-a9e7-60496b902914.pdf
           dl jayanagar_2023     c4e22ab3-8fb4-4c36-b85a-47505282fb7c/download/26128f2e-5ec3-412d-a3b8-f902d785d317.pdf
+          dl ramanagara_2023    a8bacc2b-68d9-41a8-9e29-6c9acc69dd5c/download/e0cede52-b1f5-4dcf-823e-5e4ae03b0f09.pdf
 
       - name: Download place locations from OpenStreetMap (Bangalore Urban and Rural)
         run: |
@@ -33,8 +34,8 @@ jobs:
           cat > query.overpass <<'EOF'
           [out:json][timeout:180];
           (
-            node["place"~"^(city|town|village|hamlet|suburb|neighbourhood|quarter|locality|isolated_dwelling)$"]["name"](12.60,77.15,13.60,78.10);
-            way["place"~"^(village|hamlet|suburb|neighbourhood|quarter|locality)$"]["name"](12.60,77.15,13.60,78.10);
+            node["place"~"^(city|town|village|hamlet|suburb|neighbourhood|quarter|locality|isolated_dwelling)$"]["name"](12.30,76.90,13.60,78.10);
+            way["place"~"^(village|hamlet|suburb|neighbourhood|quarter|locality)$"]["name"](12.30,76.90,13.60,78.10);
           );
           out center tags;
           EOF
