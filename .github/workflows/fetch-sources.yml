@@ -1,0 +1,57 @@
+name: Fetch sources
+
+# Downloads public source data and saves it on the `sources` branch, so it
+# can be parsed and reviewed without re-downloading.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: main
+
+      - name: Download Bangalore Urban guidance value gazettes (OpenCity, 2023)
+        run: |
+          mkdir -p out/gazettes
+          base=https://data.opencity.in/dataset/ddea06de-731c-4d5d-af1f-6d5e7ab65b07/resource
+          dl() { curl -fsSL --retry 3 -o "out/gazettes/$1.pdf" "$base/$2"; echo "$1: $(stat -c %s out/gazettes/$1.pdf) bytes"; }
+          dl gandhinagar_2023   9cfe893d-6db9-4c63-ace5-0b12762dc578/download/182e91ef-df63-4010-951e-0d9fd9c00aa2.pdf
+          dl rajajinagar_2023   dabb5fdf-f1e0-41e6-b791-1c97440fa921/download/c8e55884-e785-492d-b5b8-1b37b780d14f.pdf
+          dl shivajinagar_2023  449fa448-1703-4acf-9852-4acc1b85ab83/download/bd945bca-abf5-4029-90bf-a382509ba149.pdf
+          dl basavanagudi_2023  dccb6bf7-97af-4021-8e52-a43c0797cac3/download/221a81fa-1256-424a-a9e7-60496b902914.pdf
+          dl jayanagar_2023     c4e22ab3-8fb4-4c36-b85a-47505282fb7c/download/26128f2e-5ec3-412d-a3b8-f902d785d317.pdf
+
+      - name: Download place locations from OpenStreetMap (Bangalore Urban and Rural)
+        run: |
+          mkdir -p out/osm
+          cat > query.overpass <<'EOF'
+          [out:json][timeout:180];
+          (
+            node["place"~"^(city|town|village|hamlet|suburb|neighbourhood|quarter|locality|isolated_dwelling)$"]["name"](12.60,77.15,13.60,78.10);
+            way["place"~"^(village|hamlet|suburb|neighbourhood|quarter|locality)$"]["name"](12.60,77.15,13.60,78.10);
+          );
+          out center tags;
+          EOF
+          for url in https://overpass-api.de/api/interpreter https://overpass.kumi.systems/api/interpreter; do
+            if curl -fsS --retry 2 --max-time 240 --data-urlencode data@query.overpass "$url" -o out/osm/places.json; then
+              echo "Got $(jq '.elements | length' out/osm/places.json) places from $url"; break
+            fi
+          done
+          test -s out/osm/places.json
+
+      - name: Save to the sources branch
+        run: |
+          cd out
+          git init -q -b sources
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          printf '# NelaBele source data\n\nPublic inputs fetched by the "Fetch sources" workflow on %s.\n\n- gazettes/: Karnataka guidance value gazettes 2023 (via OpenCity, public domain)\n- osm/places.json: place names and locations, (c) OpenStreetMap contributors, ODbL\n' "$(date -u +%Y-%m-%d)" > README.md
+          git add -A
+          git commit -qm "Fetch sources $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sources
