@@ -928,28 +928,89 @@ Bangalore Rural,Nelamangala,Vinayaka New Town,12.963142,77.508647,contains,Vinay
 Bangalore Rural,Nelamangala,Yalachagere,13.103052,77.348200,fuzzy,Yalachegere
 Bangalore Rural,Nelamangala,Yanataganahalli,13.061270,77.345613,fuzzy,Yantaganahalli
 Bangalore Rural,Nelamangala,Yaramanchanahalli,13.156006,77.355682,exact,Yaramanchanahalli
+Bangalore Urban,Anekal,A.B.M Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,ARATT ATLANTIS and ARATT BREEZE,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,"Akshaya Quiet Lands Layout Nos.59/1, 60, 61, 88 )",12.708637,77.699397,near contains,Anekal
 Bangalore Urban,Anekal,Anekal Town Limits,12.708637,77.699397,contains,Anekal
+Bangalore Urban,Anekal,Bahaddurpura,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Basaveshwara Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Bhuvaneshwari Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,C.K.Aditya,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Chinnappaswamy Layout (Bannerughatta Road),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Chowdeshwari Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Church Road,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Doddakere Bagilu Brahmin's Street,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Golden Infra ASTER PARK,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Green Home's THE TROVE,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Hulluthigalara Pete,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,J.R. Habitat,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,K.Shivanna S/o. Mariyanna North Road,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Lakshmi Layout (Bidaragere Road),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,M.A.Ramu Shivabhadraiah Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,M.B.T. Layout (Near Kurubarahatti),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Manjunatha Layout (Near A.K.Colony),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Muniyappa Layout (Homphalaghatta Road),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Mutton Stall Road,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,N.R.Colony,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,NAKSHATRA MORGANITE Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,NAKSHATRA Township,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Nagarth Pete Road,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Narasimhaiah Layout (Hosur Road),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Narasimhaiah Layout (Near Gowramma Layout),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Pappuramma Galli to Anjaneya Swamy Temple Road,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Rajarajeshwari Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,S.M.P. Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,S.R.Lakshminarayana and Lakshmikanthappa Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,S.S.B.V. Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Sai Ashirwad Layout (Muthagatti and Homphalaghatta),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Sapthagiri Layout (Kulsum Nagara),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Shirdi Sai Layout (Hosur Road),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Taluk Office Road,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Thali Road (Basavanagudi to Downwards),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Thimmarayaswamy Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,VAKIL Whispering Woods-3- Residences,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Vinayaka Layout (Near Thimmarayaswamy Temple),12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Vishweshwaraiah Layout,12.708637,77.699397,near contains,Anekal
+Bangalore Urban,Anekal,Weaver's Colony,12.708637,77.699397,near contains,Anekal
 Bangalore Urban,BTM Layout,"A,B,C,D MainRoad,South Block,Marenahalli",12.918259,77.591665,contains,Marenahalli
+Bangalore Urban,BTM Layout,"B,O,H,B co-operative limited society",12.914001,77.610282,near exact,BTM Layout
+Bangalore Urban,BTM Layout,"BDA approved society, BTM Layout",12.914001,77.610282,near exact,BTM Layout
 Bangalore Urban,BTM Layout,"BTM 2nd Stage , N.S.Palya",12.914008,77.607945,contains,BTM Layout 2nd Stage
+Bangalore Urban,BTM Layout,BTM EWS Layout,12.914001,77.610282,near exact,BTM Layout
 Bangalore Urban,BTM Layout,BTM Layout,12.914001,77.610282,exact,BTM Layout
 Bangalore Urban,BTM Layout,Bangalore ces House Building Society,12.976794,77.590082,contains,Bengaluru
 Bangalore Urban,BTM Layout,"Bank Layout, N.S.Palya",12.908951,77.603500,contains,NS Palya
+Bangalore Urban,BTM Layout,Btm LayOut 3rd stage (New Insertation),12.914001,77.610282,near exact,BTM Layout
+Bangalore Urban,BTM Layout,Btm LayOut 5th Stage,12.914001,77.610282,near exact,BTM Layout
+Bangalore Urban,BTM Layout,BtmLayOut 4th stage,12.914001,77.610282,near exact,BTM Layout
+Bangalore Urban,BTM Layout,BtmLayOut 6th Stage,12.914001,77.610282,near exact,BTM Layout
+Bangalore Urban,BTM Layout,Cashier Layout,12.922004,77.609635,near fuzzy,Tavarekere
 Bangalore Urban,BTM Layout,"Dollars Schemes,BTM 2nd Stage (N.S.Palya and Bilekahalli)",12.914008,77.607945,contains,BTM Layout 2nd Stage
 Bangalore Urban,BTM Layout,Gurappana Palya,12.920758,77.603333,exact,Gurappana Palya
+Bangalore Urban,BTM Layout,Housing Society,12.923815,77.617629,near exact,Madiwala
 Bangalore Urban,BTM Layout,I.A.S Officers colony,12.911592,77.611496,exact,IAS Officers Colony
 Bangalore Urban,BTM Layout,"Janata Colony, N.S.Palya",12.908951,77.603500,contains,NS Palya
+Bangalore Urban,BTM Layout,KAS House Building Society presently BTM,12.923815,77.617629,near exact,Madiwala
 Bangalore Urban,BTM Layout,Kaveri Layout/Maruti HBCS,12.973102,77.526857,contains,Kaveri Layout
 Bangalore Urban,BTM Layout,Krishnappa Garden,12.977456,77.659325,exact,Krishnappa Garden
 Bangalore Urban,BTM Layout,Madiwala,12.923815,77.617629,exact,Madiwala
 Bangalore Urban,BTM Layout,Marenahalli,12.918259,77.591665,exact,Marenahalli
+Bangalore Urban,BTM Layout,Metropolitan HBCS Limited,12.914001,77.610282,near exact,BTM Layout
+Bangalore Urban,BTM Layout,Mico Layout. BTMLayout 2nd stage,12.914001,77.610282,near exact,BTM Layout
+Bangalore Urban,BTM Layout,N A L Society/ K E B Society/Icoob Nagar,12.914001,77.610282,near exact,BTM Layout
 Bangalore Urban,BTM Layout,New Gurappana Palya,12.920758,77.603333,contains,Gurappana Palya
+Bangalore Urban,BTM Layout,Nimahns Society Layout,12.922004,77.609635,near fuzzy,Tavarekere
 Bangalore Urban,BTM Layout,Old Gurappana Palya,12.920758,77.603333,contains,Gurappana Palya
 Bangalore Urban,BTM Layout,"Ramaiah Garden , Chikka Adugodi",12.944023,77.608887,contains,Adugodi
 Bangalore Urban,BTM Layout,Society Layout Gurappa na Palya,12.920758,77.603333,contains,Gurappana Palya
 Bangalore Urban,BTM Layout,Tavareker Gurappana Palya/Taverekere Hosa Gurappana Palya,12.920758,77.603333,contains,Gurappana Palya
+Bangalore Urban,BTM Layout,TavereKere BDA Layout,12.922004,77.609635,near fuzzy,Tavarekere
+Bangalore Urban,BTM Layout,Taverekere Narayanappa Garden,12.922004,77.609635,near fuzzy,Tavarekere
 Bangalore Urban,BTM Layout,Thaverekere,12.922004,77.609635,fuzzy,Tavarekere
+Bangalore Urban,BTM Layout,UCO Bank Layout,12.923815,77.617629,near exact,Madiwala
 Bangalore Urban,BTM Layout,Wilson Garden HBCS BTM 1st Stage,12.919000,77.611291,contains,BTM Layout 1st Stage
 Bangalore Urban,BTM Layout,old Madiwala Village,12.923815,77.617629,contains,Madiwala
+Bangalore Urban,BTM Layout,vysya Bank House Building co-op society Layout,12.914001,77.610282,near exact,BTM Layout
 Bangalore Urban,Banashankari,AGS Layout,12.912765,77.534050,exact,AGS Layout
 Bangalore Urban,Banashankari,Avalahalli,12.943746,77.540204,exact,Avalahalli
 Bangalore Urban,Banashankari,Avalahalli/ Telecom Layout,12.965528,77.546705,contains,Telecom Layout
@@ -989,25 +1050,42 @@ Bangalore Urban,Banashankari,Uttarahalli Main Road 197-W,12.905568,77.545544,con
 Bangalore Urban,Banashankari,Vaddarapalya,12.836453,77.527041,exact,Vaddarapalya
 Bangalore Urban,Banashankari,Vasanthapura,12.898255,77.549832,exact,Vasanthapura
 Bangalore Urban,Banashankari,Yelachenahalli,12.897971,77.570085,exact,Yelachenahalli
+Bangalore Urban,Banaswadi,A nugraha Medona Layout,13.027331,77.660151,near contains,Horamavu
 Bangalore Urban,Banaswadi,A r k avathi Layout K. Narayanapura,13.063280,77.641808,contains,K Narayanapura
 Bangalore Urban,Banaswadi,A rkavathi Layout Dasarahalli,13.056245,77.611528,contains,Dasarahalli
 Bangalore Urban,Banaswadi,A rkavathi Layout Geddalahalli,13.048634,77.644669,contains,Geddalahalli
 Bangalore Urban,Banaswadi,A rkavathy Layout Thanisandra,13.067129,77.621897,contains,Arkavathy Layout
+Bangalore Urban,Banaswadi,Akshaj Spring Leaf,13.035090,77.673808,near exact,Kalkere
 Bangalore Urban,Banaswadi,Arkavathi Layout Amani Byrathi Kane,13.041247,77.649801,contains,Byrathikhane
 Bangalore Urban,Banaswadi,Arkavathi Layout Chellakere,13.028656,77.642500,contains,Chelekere
 Bangalore Urban,Banaswadi,Arkavathy Layout,13.067129,77.621897,exact,Arkavathy Layout
+Bangalore Urban,Banaswadi,Ashirwad Colony,13.027331,77.660151,near exact,Horamavu
+Bangalore Urban,Banaswadi,B a n j a r a Layout,13.027331,77.660151,near contains,Horamavu
+Bangalore Urban,Banaswadi,B h a g y a s ree Layout,13.054713,77.633926,near exact,Thanisandra
 Bangalore Urban,Banaswadi,B h uvaneshwari Layout / Bhuvaneshwari Nagara,13.056410,77.602430,contains,Buvaneswari Nagara
+Bangalore Urban,Banaswadi,B r i n d a v ana Layout / K.Chikkapillappa Layout,13.027331,77.660151,near exact,Horamavu
 Bangalore Urban,Banaswadi,B y r a t h i Khane,13.041247,77.649801,fuzzy,Byrathikhane
 Bangalore Urban,Banaswadi,B y rathi Khane,13.041247,77.649801,exact,Byrathikhane
 Bangalore Urban,Banaswadi,B.Channasandra,13.009915,77.660272,exact,B Channasandra
+Bangalore Urban,Banaswadi,B.D.S Nagar Garden,13.063280,77.641808,near exact,K Narayanapura
+Bangalore Urban,Banaswadi,Banjara Layout,13.035090,77.673808,near exact,Kalkere
+Bangalore Urban,Banaswadi,Bhagyasree Royal Layout,13.058859,77.623258,near exact,Rachenahalli
+Bangalore Urban,Banaswadi,Boulevard Residences,13.054713,77.633926,near exact,Thanisandra
 Bangalore Urban,Banaswadi,C e n t r a l Excise,13.040281,77.581257,exact,Central Excise Layout
+Bangalore Urban,Banaswadi,C e n t r a l Revenue,13.058859,77.623258,near exact,Rachenahalli
 Bangalore Urban,Banaswadi,C hellakere,13.028656,77.642500,exact,Chelekere
 Bangalore Urban,Banaswadi,C offee Board Layout,13.050325,77.606080,exact,Coffee Board Layout
+Bangalore Urban,Banaswadi,Chowdeshwari Layout,13.056245,77.611528,near exact,Dasarahalli
+Bangalore Urban,Banaswadi,Cosmos Calista,13.035090,77.673808,near exact,Kalkere
 Bangalore Urban,Banaswadi,D asarahalli,13.056245,77.611528,exact,Dasarahalli
 Bangalore Urban,Banaswadi,D o c t o r ' s Layout,13.005337,77.658185,exact,Doctors Layout
+Bangalore Urban,Banaswadi,D.L.R. Pride,13.035090,77.673808,near exact,Kalkere
 Bangalore Urban,Banaswadi,East of N.G.E.F,12.995999,77.657876,exact,Sadananda Nagar
+Bangalore Urban,Banaswadi,F e r n 's,13.056458,77.659132,near fuzzy,Kyalasanahalli
 Bangalore Urban,Banaswadi,G eddalahalli,13.048634,77.644669,exact,Geddalahalli
+Bangalore Urban,Banaswadi,G reen Garden Layout,13.035090,77.673808,near exact,Kalkere
 Bangalore Urban,Banaswadi,Geddalahalli W,13.048634,77.644669,fuzzy,Geddalahalli
+Bangalore Urban,Banaswadi,Gina Ronville,13.063280,77.641808,near exact,K Narayanapura
 Bangalore Urban,Banaswadi,H . R . B.R 2nd Block,13.024040,77.640027,exact,HRBR Layout 2nd Block
 Bangalore Urban,Banaswadi,H . R.B.R. 3rd Block,13.025056,77.634710,exact,HRBR Layout 3rd Block
 Bangalore Urban,Banaswadi,H .B.R. 4th Block,13.034041,77.630996,exact,HBR Layout 4th Block
@@ -1016,39 +1094,66 @@ Bangalore Urban,Banaswadi,H e g d e Nagar,13.072035,77.633391,exact,R K Hegde Na
 Bangalore Urban,Banaswadi,H.B.R. Layout,13.031992,77.628079,exact,HBR Layout
 Bangalore Urban,Banaswadi,Horamavu,13.027331,77.660151,exact,Horamavu
 Bangalore Urban,Banaswadi,Horamavu Agara,13.027331,77.660151,contains,Horamavu
+Bangalore Urban,Banaswadi,K a n a k a shree H.B.C.S,13.056458,77.659132,near fuzzy,Kyalasanahalli
 Bangalore Urban,Banaswadi,K. Narayanapura,13.063280,77.641808,exact,K Narayanapura
 Bangalore Urban,Banaswadi,K.Channasandra,13.040022,77.679625,exact,K. Channasandra
+Bangalore Urban,Banaswadi,K.H.B. Sites,13.063280,77.641808,near exact,K Narayanapura
 Bangalore Urban,Banaswadi,Kalkere,13.035090,77.673808,exact,Kalkere
 Bangalore Urban,Banaswadi,Kanakanagar,13.037411,77.608206,exact,Kanaka Nagar
 Bangalore Urban,Banaswadi,Kaveri Layout,13.096015,77.559928,exact,Kaveri Layout
 Bangalore Urban,Banaswadi,Kothanuru,13.061360,77.649389,fuzzy,Kothanur
 Bangalore Urban,Banaswadi,Kylasanahalli,13.056458,77.659132,fuzzy,Kyalasanahalli
 Bangalore Urban,Banaswadi,L a l Bahadur Sastry Nagar,12.967810,77.671548,fuzzy,Lal Bahadur Shastri Nagar
+Bangalore Urban,Banaswadi,Lake View,13.040022,77.679625,near exact,K. Channasandra
 Bangalore Urban,Banaswadi,M .C.E.H.S Layout,13.072580,77.615245,fuzzy,MCECHS Layout
 Bangalore Urban,Banaswadi,M C E H S,13.072580,77.615245,fuzzy,MCECHS Layout
+Bangalore Urban,Banaswadi,M a n y a t h a,13.058859,77.623258,near exact,Rachenahalli
+Bangalore Urban,Banaswadi,Manyatha Tech Park,13.058859,77.623258,near exact,Rachenahalli
+Bangalore Urban,Banaswadi,Mariyannana Palya,13.056245,77.611528,near exact,Dasarahalli
 Bangalore Urban,Banaswadi,Maruthi Layout,12.963118,77.708217,exact,Maruthi Layout
 Bangalore Urban,Banaswadi,Meghana Palya,13.031289,77.639375,exact,Meghanapalya
+Bangalore Urban,Banaswadi,Mestri Palya,13.058859,77.623258,near exact,Rachenahalli
+Bangalore Urban,Banaswadi,N a n d h a n Layout,13.056245,77.611528,near exact,Dasarahalli
 Bangalore Urban,Banaswadi,N a n j a p p a Layout,13.068259,77.556682,fuzzy,Nanjappa Layout
+Bangalore Urban,Banaswadi,N.R.I Layout,13.035090,77.673808,near exact,Kalkere
+Bangalore Urban,Banaswadi,Nandanavan Layout / Colony,13.027331,77.660151,near exact,Horamavu
 Bangalore Urban,Banaswadi,O .M.B.R Layout,13.008211,77.652778,exact,OMBR Layout
+Bangalore Urban,Banaswadi,P & T Layout,13.027331,77.660151,near exact,Horamavu
+Bangalore Urban,Banaswadi,P o o j a G arden,13.040022,77.679625,near exact,K. Channasandra
 Bangalore Urban,Banaswadi,P r a k r u t h i Township,13.030877,77.652153,fuzzy,Prakruthi Township
+Bangalore Urban,Banaswadi,P r a k r u t hi Layout,13.027331,77.660151,near contains,Horamavu
 Bangalore Urban,Banaswadi,P r akruthi Layout / Balaji Layout,13.001463,77.623644,contains,Balaji Layout
+Bangalore Urban,Banaswadi,P rakruthi Layout / Colony,13.056245,77.611528,near exact,Dasarahalli
 Bangalore Urban,Banaswadi,Palm Groves,13.029504,77.637972,fuzzy,Palm Grove
 Bangalore Urban,Banaswadi,R K Hegde Nagar,13.072035,77.633391,exact,R K Hegde Nagara
 Bangalore Urban,Banaswadi,Rachenahalli,13.058859,77.623258,exact,Rachenahalli
+Bangalore Urban,Banaswadi,Riches Garden,13.035090,77.673808,near exact,Kalkere
+Bangalore Urban,Banaswadi,S h a b ari Layout,13.054713,77.633926,near exact,Thanisandra
+Bangalore Urban,Banaswadi,S hiridi Sai Ratna Layout,13.054713,77.633926,near exact,Thanisandra
+Bangalore Urban,Banaswadi,S i d darth Layout / Sarayipalya,13.054713,77.633926,near exact,Thanisandra
 Bangalore Urban,Banaswadi,Shiridi Sai Nagar,13.067951,77.636604,fuzzy,Shirdi Sai Nagara
+Bangalore Urban,Banaswadi,Shubash Layout - H.B.R 1st Block,13.031992,77.628079,near exact,HBR Layout
+Bangalore Urban,Banaswadi,Subin Layout,13.063280,77.641808,near exact,K Narayanapura
 Bangalore Urban,Banaswadi,Teacher's Colony H.B.R 1st Block,12.918826,77.634118,contains,Teacher's Colony
 Bangalore Urban,Banaswadi,Telecom Layout,13.069178,77.615477,exact,Telecom Layout
 Bangalore Urban,Banaswadi,Thanisandra,13.054713,77.633926,exact,Thanisandra
 Bangalore Urban,Banaswadi,Uttamsagar Hotel Junction to Vemana Cercale to Horamavu Ring Road Junction,13.027331,77.660151,contains,Horamavu
+Bangalore Urban,Banaswadi,V i d yanagar / Vidyasagara Layout,13.054713,77.633926,near exact,Thanisandra
 Bangalore Urban,Banaswadi,V ijaya Bank Colony,13.015575,77.659222,exact,Vijaya Bank Colony
+Bangalore Urban,Banaswadi,Vaibhav Green Garden,13.035090,77.673808,near exact,Kalkere
 Bangalore Urban,Basavanagudi,Adithya Paradise,12.926677,77.524928,contains,Aditya Layout
 Bangalore Urban,Basavanagudi,Basavanagudi,12.941726,77.575502,exact,Basavanagudi
+Bangalore Urban,Basavanagudi,Diagonal Road (Minarva Circle to Sajjan Rao Carcle),12.941726,77.575502,near exact,Basavanagudi
+Bangalore Urban,Basavanagudi,Dr. Oomar Shariff Road (New Addition),12.941726,77.575502,near exact,Basavanagudi
 Bangalore Urban,Basavanagudi,Gavipura,12.947934,77.562393,exact,Gavipuram
 Bangalore Urban,Basavanagudi,Gavipura Guttahalli,12.947934,77.562393,contains,Gavipuram
 Bangalore Urban,Basavanagudi,Hanumanthanagar,12.940641,77.563543,exact,Hanumantha Nagar
+Bangalore Urban,Basavanagudi,Kumara Paradise,12.941726,77.575502,near exact,Basavanagudi
 Bangalore Urban,Basavanagudi,Kumaraswamy Layout,12.906768,77.559502,exact,Kumaraswamy Layout
+Bangalore Urban,Basavanagudi,Millennia Ventures,12.941726,77.575502,near exact,Basavanagudi
 Bangalore Urban,Basavanagudi,N R Colony,12.938816,77.568326,exact,NR Colony
 Bangalore Urban,Basavanagudi,N R Colony Other Unidentified Main Roads and Cross Roads,12.938816,77.568326,contains,NR Colony
+Bangalore Urban,Basavanagudi,Pranag Arch,12.941726,77.575502,near exact,Basavanagudi
 Bangalore Urban,Basavanagudi,Shankarapuram,12.952854,77.570331,exact,Shankarapuram
 Bangalore Urban,Basavanagudi,Srinagara,12.943882,77.554177,exact,Srinagar
 Bangalore Urban,Basavanagudi,Thyagarajanagar,12.931392,77.568301,exact,Thyagaraja Nagar
@@ -1061,33 +1166,72 @@ Bangalore Urban,Bidarahalli,Kadugodi New Extn,12.998577,77.760972,contains,Kadug
 Bangalore Urban,Bidarahalli,Kumbena Agrahara,13.001796,77.747388,exact,Kumbena Agrahara
 Bangalore Urban,Bidarahalli,Properties Attached to Kumbena Agrahara Main Road,13.001796,77.747388,contains,Kumbena Agrahara
 Bangalore Urban,Bidarahalli,Vinayaka Layout,12.972442,77.702483,exact,Vinayaka Layout
+Bangalore Urban,Bommanahalli,A.K. Colony,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Adjoined To Hongasandra - Garvebhavipalya Properties,12.897489,77.625087,contains,Hongasandra
+Bangalore Urban,Bommanahalli,Agara Corporation Area,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Aleem Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Anugraha Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere - Brindavan Lyt,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Arakere - Jai Hanuman Nagar,12.970095,77.656115,contains,Hanuman Nagar
+Bangalore Urban,Bommanahalli,Arakere - Krishnareddy Lyt,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere - Mico Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere - Nanjappa Lyt,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere - Omkar Nagar,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere - Shanthinikethan Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere - Singh Compound And Sorround,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Arakere - Syndicate Bank Colony,12.979877,77.528643,contains,Syndicate Bank Colony
+Bangalore Urban,Bommanahalli,Arakere - Vijayashree Lyt,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere Gate,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere-B.T.S. Lyt. (R.T.H.B.Co-Op. Society),12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere-Coconut Garden,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere-Gopalareddy Lyt,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere-S.R. Compound,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Arakere-Samrat Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Ashwini Layout (B.C.C.),12.939669,77.628960,exact,Ashwini Layout
+Bangalore Urban,Bommanahalli,Avani Shringeri Nagar - Nayanappanahalli,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,B.D.A. Layout - Thavarekere,12.922004,77.609635,contains,Tavarekere
 Bangalore Urban,Bommanahalli,Balaji Layout,12.926389,77.606829,exact,Balaji Layout
+Bangalore Urban,Bommanahalli,Basappa Colony,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Basavalingappa Nagar,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Bda Layout - Jakkasandra,12.924350,77.637603,contains,Jakkasandra
+Bangalore Urban,Bommanahalli,Bharathi Nagar,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Bilekahalli Corporation Area,12.897970,77.608570,contains,Bilekahalli
 Bangalore Urban,Bommanahalli,Bismillah Nagar,12.926338,77.603385,exact,Bismillah Nagar
 Bangalore Urban,Bommanahalli,Bommanahalli - Bharath Housing Co-Op. Society Layout,12.908945,77.623904,contains,Bommanahalli
 Bangalore Urban,Bommanahalli,Bommanahalli Corporation Area,12.908945,77.623904,contains,Bommanahalli
 Bangalore Urban,Bommanahalli,Bommanahalli Layout,12.908945,77.623904,exact,Bommanahalli
+Bangalore Urban,Bommanahalli,Canara Bank Layout - Nayanappanahalli,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Chalukya Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Chamundeshwari Layout (Vinayaka Nagar),12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Chandrareddy Layout,12.935229,77.630100,exact,Chandra Reddy Layout
+Bangalore Urban,Bommanahalli,Devarachikkanahalli - Royal Shelter,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Devarachikkanahalli Corporation Area,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Devarachikkanahalli-Raghavendra Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Doresanipalya,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Ejipura - Corporation Area,12.945245,77.627478,contains,Ejipura
 Bangalore Urban,Bommanahalli,Ejipura - Slum Area,12.945245,77.627478,contains,Ejipura
+Bangalore Urban,Bommanahalli,Embassy Pristine,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Free Site-Ashraya Scheme,12.985824,77.705454,contains,Ashraya Layout
+Bangalore Urban,Bommanahalli,Free Sites,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Garvebhavipalya - Hongasandra Dakhale,12.895066,77.634582,contains,GarvebhaviPalya
+Bangalore Urban,Bommanahalli,Govindarajareddy Layout & Surround,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,H.A.L. H.B.Co-Op.Society - Singasandra,12.881022,77.649007,contains,Singasandra
 Bangalore Urban,Bommanahalli,H.A.L. H.B.Co-Op.Society - Thavarekere,12.922004,77.609635,contains,Tavarekere
 Bangalore Urban,Bommanahalli,H.S.R. Layout (Agara),12.911623,77.638862,exact,HSR Layout
+Bangalore Urban,Bommanahalli,Hakkupathra Niveshana (Free Site) - New,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Hanumantha Nagar,12.940641,77.563543,exact,Hanumantha Nagar
+Bangalore Urban,Bommanahalli,Haralukunte Corporation Area,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Hongasandra Corporation Area,12.897489,77.625087,contains,Hongasandra
+Bangalore Urban,Bommanahalli,Hosapalya - Haralukunte Dakhale,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Hosapalya Layout (Ward No.6),12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Hsr Layout - Sector,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Hulimavu - Madhuvana Colony,12.877349,77.602803,contains,Hulimavu
 Bangalore Urban,Bommanahalli,Hulimavu - Pai Layout,12.877349,77.602803,contains,Hulimavu
 Bangalore Urban,Bommanahalli,Hulimavu Corporation Area,12.877349,77.602803,contains,Hulimavu
+Bangalore Urban,Bommanahalli,Ibbalur Corporaton Area,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Jakkasandra Corporation Area,12.924350,77.637603,contains,Jakkasandra
 Bangalore Urban,Bommanahalli,KORAMANGALA - 8TH BLOCK - (BDA Site),12.940869,77.617338,exact,Koramangala 8th Block
+Bangalore Urban,Bommanahalli,Kendriya Upadhyayara Sangha Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Kodichikkanahalli - Free Sites (Rotary Nagar),12.896700,77.612427,contains,Kodichikkanahalli
 Bangalore Urban,Bommanahalli,Kodichikkanahalli - Royal Shelter Layout,12.896700,77.612427,contains,Kodichikkanahalli
 Bangalore Urban,Bommanahalli,Kodichikkanahalli Corporation Area,12.896700,77.612427,contains,Kodichikkanahalli
@@ -1101,32 +1245,75 @@ Bangalore Urban,Bommanahalli,Koramangala - 7Th Block,12.936328,77.614147,exact,K
 Bangalore Urban,Bommanahalli,Koramangala - J-Block (Jakkasandra Block),12.936485,77.613478,fuzzy,Koramangala 7th Block
 Bangalore Urban,Bommanahalli,Koramangala - Khb Colony,12.934963,77.617771,contains,KHB Colony
 Bangalore Urban,Bommanahalli,Koramangala 1St Block,12.927151,77.633074,exact,Koramangala 1st Block
+Bangalore Urban,Bommanahalli,Kormanalgala Corporation Area,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Krishnam Raju Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Krishnareddy Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Kuttiyappa Garden,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Lakshmishree Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Madeena Nagar,12.906739,77.609986,exact,Madeena Nagar
 Bangalore Urban,Bommanahalli,Madiwala - Corporation Area,12.923815,77.617629,contains,Madiwala
 Bangalore Urban,Bommanahalli,Mangammanapalya - Yellukunte Dakhale,12.905811,77.632374,contains,Mangamannapalya
 Bangalore Urban,Bommanahalli,Manjunatha H.B.Co-Op. Society - Thavarekere,12.922004,77.609635,contains,Tavarekere
+Bangalore Urban,Bommanahalli,Mestripalya,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Metro Urbano,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Metropolitan House Building Co-Op Society,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Mico Layout - Hongasandra,12.897489,77.625087,contains,Hongasandra
 Bangalore Urban,Bommanahalli,Muneshwara Layout,13.018181,77.671650,exact,Muneshwara Layout
 Bangalore Urban,Bommanahalli,Munireddy Layout,12.913384,77.701626,exact,Muni Reddy Layout
+Bangalore Urban,Bommanahalli,Munivenkatappa Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,N.G.R. & N.R. Layout - Rupena Agrahara,12.910640,77.623826,contains,Roopena Agrahara
 Bangalore Urban,Bommanahalli,N.S. Palya Bank Layout,12.908951,77.603500,contains,NS Palya
+Bangalore Urban,Bommanahalli,Nadamma Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Naidu Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Nayanappanahalli Corporation Area,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,New Krishna Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Panduranga Nagar,12.893076,77.596135,exact,Panduranga Nagar
 Bangalore Urban,Bommanahalli,Parangipalya,12.907479,77.651067,exact,Parangipalya
+Bangalore Urban,Bommanahalli,Popular Colony,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Prestige Pine,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Purva Westend,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Raghavendra Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Rajanna Layout,12.930774,77.596900,exact,Rajanna Layout
 Bangalore Urban,Bommanahalli,Rajendra Nagar And Slum Area,12.946637,77.617496,contains,Rajendranagar
 Bangalore Urban,Bommanahalli,Ramakrishna Layout,13.027232,77.580649,exact,Ramakrishna Layout
+Bangalore Urban,Bommanahalli,Ramanuja Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Reliable Occacia,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Royal Shelter Layout - Nayanappanahalli,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Rupena Agrahara Corporation Area,12.910640,77.623826,contains,Roopena Agrahara
+Bangalore Urban,Bommanahalli,S.B.I. Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Sahyadri Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Saibya Sterling,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Sarakki Agrahara Corporation Area,12.909694,77.586607,contains,JP Nagar
 Bangalore Urban,Bommanahalli,Saraswathipura - Nayanappanahalli,12.974806,77.631636,contains,Saraswathipuram
+Bangalore Urban,Bommanahalli,Sarvabhoumanagar,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Shanbhog Nagappa & Yajaman Narayanappa Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Siddartha Colony Slum,12.923100,77.620393,contains,Sidhartha Colony
 Bangalore Urban,Bommanahalli,Singasandra Corporation Area,12.881022,77.649007,contains,Singasandra
+Bangalore Urban,Bommanahalli,Sir. M. Vishweshwaraiah Colony,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Somasundara Palya,12.899436,77.652457,exact,Somasundarapalya
+Bangalore Urban,Bommanahalli,Someshwara Layout And Arasappa Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Sri Vishnu Paradise,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Srinivagilu Corporation Area,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Srinivasa Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Subramanyeshwara Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Sun City,12.885362,77.585409,exact,Sun City Layout
+Bangalore Urban,Bommanahalli,Sundaresha Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Thavarekere Corporation Area,12.922004,77.609635,contains,Tavarekere
+Bangalore Urban,Bommanahalli,Thayappa Garden,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Tirumala Sunnidhi Desire,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Urban Lakefront,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Vajramuniyappa Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Vakeel Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Varasiddhi Vinayaka Layout,12.972442,77.702483,contains,Vinayaka Layout
+Bangalore Urban,Bommanahalli,Venkatadri Layoiut,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Venkatareddy Layout,12.888728,77.560844,exact,Venkata Reddy Layout
+Bangalore Urban,Bommanahalli,Venkateshwara Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Vidyajyothi Layout,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Vijaya Bank H.B.Co-Op. Society- Bilekahalli,12.892943,77.607763,contains,Vijaya Bank Layout
+Bangalore Urban,Bommanahalli,Vijayashree Layout,12.911623,77.638862,near exact,HSR Layout
+Bangalore Urban,Bommanahalli,Vijetha Gardenia,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Vinayaka Nagar,12.949889,77.599252,exact,Vinayaka Nagara
+Bangalore Urban,Bommanahalli,Virat Nagar,12.911623,77.638862,near exact,HSR Layout
 Bangalore Urban,Bommanahalli,Vivekananda Nagar,13.004425,77.628045,exact,Vivekananda Nagar
 Bangalore Urban,Bommanahalli,Yellukunte Corporation Area,12.904496,77.641582,contains,Yellukunte
 Bangalore Urban,Byatarayanapura,Approching road to Kodigehalli Main Road attached Property,13.060113,77.576773,contains,Kodigehalli
@@ -1134,6 +1321,11 @@ Bangalore Urban,Byatarayanapura,Byatarayanapura,13.066653,77.591967,exact,Byatar
 Bangalore Urban,Byatarayanapura,Byatarayanapura),13.066653,77.591967,exact,Byatarayanapura
 Bangalore Urban,Byatarayanapura,Doddabommasandra Vidyaranyapura Main Road (From Nagaland Circle to Nanjappa Circle),13.062754,77.558513,contains,Doddabomasandra
 Bangalore Urban,Byatarayanapura,Doddabommasandra Vidyaranyapura Main Road (From Nanjappa Circle Onwards),13.062754,77.558513,contains,Doddabomasandra
+Bangalore Urban,Byatarayanapura,Doddachannappa Layout Slum (8th Ward),13.073717,77.566977,near contains,Thindlu
+Bangalore Urban,Byatarayanapura,From Gold Finch Hospital To Road End,13.062907,77.585882,near exact,Sahakaranagara
+Bangalore Urban,Byatarayanapura,From Royal Mart to Police Chowki 60 feet Road (New Edition),13.062907,77.585882,near exact,Sahakaranagara
+Bangalore Urban,Byatarayanapura,Gas Pipeline Road ( Approach to Peripheral Ring Road),13.073717,77.566977,near contains,Thindlu
+Bangalore Urban,Byatarayanapura,Green Aspire Aparment (Tetra Grand,13.083460,77.598002,near fuzzy,Jakkur Plantation
 Bangalore Urban,Byatarayanapura,Honnenahalli Village,13.159864,77.566459,exact,Honnenahalli
 Bangalore Urban,Byatarayanapura,Jakkuru Plantation dP,13.083460,77.598002,fuzzy,Jakkur Plantation
 Bangalore Urban,Byatarayanapura,K.E.B.Layout,13.030928,77.580476,exact,KEB Layout
@@ -1145,6 +1337,10 @@ Bangalore Urban,Byatarayanapura,N.T.I Layout Rajeev Gandhinagara J,13.070256,77.
 Bangalore Urban,Byatarayanapura,Nagenahalli (Harohalli Dhakle) Village,13.131046,77.574511,exact,Nagenahalli
 Bangalore Urban,Byatarayanapura,Narasipura (Vidyaranyapura),13.082240,77.560487,exact,Narasipura Layout
 Bangalore Urban,Byatarayanapura,Narasipura Layout Govt Granted Hakku Patra,13.082240,77.560487,contains,Narasipura Layout
+Bangalore Urban,Byatarayanapura,Navanaami Lavender,13.081635,77.618267,near exact,Sampigehalli
+Bangalore Urban,Byatarayanapura,Provident Niyora,13.081635,77.618267,near exact,Sampigehalli
+Bangalore Urban,Byatarayanapura,SLV Durga Kataksha Archana Aparment,13.082240,77.560487,near exact,Narasipura Layout
+Bangalore Urban,Byatarayanapura,SLV Narayana Nilayam Aparment,13.073717,77.566977,near contains,Thindlu
 Bangalore Urban,Byatarayanapura,Sampigehalli,13.081635,77.618267,exact,Sampigehalli
 Bangalore Urban,Byatarayanapura,Shrirampura,13.066029,77.619681,exact,Srirampura
 Bangalore Urban,Byatarayanapura,Singapura Garden Main Road to Abbigere Main Road,13.078239,77.537706,contains,Singapura
@@ -1157,22 +1353,34 @@ Bangalore Urban,Dasanapura,Kadabagere Shivani Greens,12.996550,77.433375,contain
 Bangalore Urban,Dasanapura,Kadabagere Vinayaka Layout,12.996550,77.433375,contains,Kadabagere
 Bangalore Urban,Dasanapura,Ravi Kirloskar Layout,13.066964,77.500931,contains,Kirloskar Layout
 Bangalore Urban,Dasanapura,Sondekoppa Ishwerya Suncrest,13.020442,77.382548,contains,Sondekoppa
+Bangalore Urban,Gandhinagar,A.S.Achar street (from Chickpet Circle to Mysore Road),12.973118,77.575932,near fuzzy,Balepet
+Bangalore Urban,Gandhinagar,B.V.K Iyengar road (from K.G road to Chickpet Circle),12.973118,77.575932,near fuzzy,Balepet
+Bangalore Urban,Gandhinagar,Balabrui Guest House to BDA junction (Newly Added),12.986513,77.583077,near exact,High Grounds
 Bangalore Urban,Gandhinagar,Balepete,12.973118,77.575932,fuzzy,Balepet
 Bangalore Urban,Gandhinagar,Bashyam Road/Cotton pete main road(From kengeri Gate Police Staion to Mysore Road),12.965633,77.565886,contains,Cottonpete
+Bangalore Urban,Gandhinagar,Bashyam road (Cotton pete main road)(From Shantala Silks to kengeri Gate Police Staion),12.965633,77.565886,near exact,Cottonpete
 Bangalore Urban,Gandhinagar,Chickpete,12.969784,77.575690,exact,Chikkapete
+Bangalore Urban,Gandhinagar,Cunningham Road (from Chandrika Hotel to Balekundri Circle),12.986513,77.583077,near exact,High Grounds
+Bangalore Urban,Gandhinagar,Cunningham circle to sankey road (B.W.S.S.B.watertank),12.986513,77.583077,near exact,High Grounds
 Bangalore Urban,Gandhinagar,Gandhinagar,12.977153,77.580031,exact,Gandhinagar
 Bangalore Urban,Gandhinagar,Gandhinagara 1st cross (Petrol Bunk to K.G.Road),12.977153,77.580031,contains,Gandhinagar
 Bangalore Urban,Gandhinagar,"Gandhinagara 1st main road, kalidasa circle to K.G. Road",12.977153,77.580031,contains,Gandhinagar
 Bangalore Urban,Gandhinagar,High Grounds,12.986513,77.583077,exact,High Grounds
+Bangalore Urban,Gandhinagar,Laldas Venkataramana Swamy Temple Street,12.973118,77.575932,near fuzzy,Balepet
 Bangalore Urban,Gandhinagar,Sampangiramanagara,12.966456,77.592261,exact,Sampangirama Nagar
+Bangalore Urban,Gandhinagar,Sanky Tank road/ Bellary National Highway road/ New Airport road From Golf Course East Entrance to BDA Head Office And Palace Cross Road Junction,12.986513,77.583077,near exact,High Grounds
+Bangalore Urban,Gandhinagar,Sheshadri road(From Anand Rao circle to Freedom Park),12.977153,77.580031,near exact,Gandhinagar
+Bangalore Urban,Gandhinagar,Sheshadri road(from Freedom Park to K R Cirle),12.977153,77.580031,near exact,Gandhinagar
 Bangalore Urban,Gangenahalli,Ananda Nagar,12.961037,77.700531,exact,Ananda Nagara
 Bangalore Urban,Gangenahalli,Ananda Nagar 1st and 2nd Cross,12.961037,77.700531,contains,Ananda Nagara
 Bangalore Urban,Gangenahalli,Ananda Nagar 5th Main,12.961037,77.700531,contains,Ananda Nagara
 Bangalore Urban,Gangenahalli,Ananda Nagar Other Cross Roads,12.961037,77.700531,contains,Ananda Nagara
 Bangalore Urban,Gangenahalli,Ananda Nagar Other Main Roads,12.961037,77.700531,contains,Ananda Nagara
+Bangalore Urban,Gangenahalli,Anjanappa Block,13.007077,77.600405,near exact,Munireddypalya
 Bangalore Urban,Gangenahalli,Bhoopasandra),13.042001,77.578262,exact,Bhoopasandra
 Bangalore Urban,Gangenahalli,Lottegollahalli),13.044135,77.565150,exact,Lottegollahalli
 Bangalore Urban,Gangenahalli,Munireddy Palya,13.007077,77.600405,exact,Munireddypalya
+Bangalore Urban,Gangenahalli,N.K. Comlex,13.007077,77.600405,near exact,Munireddypalya
 Bangalore Urban,Gangenahalli,Sadashivanagar),13.011019,77.580864,exact,Sadashivanagar
 Bangalore Urban,Gangenahalli,The Residenace at Benson Town,12.997343,77.603681,contains,Benson Town
 Bangalore Urban,Halasuru,A mani Byrathi Kane,13.041247,77.649801,contains,Byrathikhane
@@ -1195,9 +1403,14 @@ Bangalore Urban,Hebbal,Banashankari Coral,12.927820,77.556621,contains,Banashank
 Bangalore Urban,Hebbal,Banashankari Homes,12.927820,77.556621,contains,Banashankari
 Bangalore Urban,Hebbal,Bhoopasandra New extention,13.042001,77.578262,contains,Bhoopasandra
 Bangalore Urban,Hebbal,Bhoopasandra(Pin Code,13.042001,77.578262,exact,Bhoopasandra
+Bangalore Urban,Hebbal,Byrappa Layout,13.060113,77.576773,near contains,Kodigehalli
 Bangalore Urban,Hebbal,Canara Bank Layout Or Colony,12.931190,77.590894,fuzzy,Canara Bank Colony
+Bangalore Urban,Hebbal,ENN AAR Kay,13.042001,77.578262,near exact,Bhoopasandra
+Bangalore Urban,Hebbal,Embassy Lake Terraces,13.060113,77.576773,near contains,Kodigehalli
+Bangalore Urban,Hebbal,Godrej woods man Appartment,13.060113,77.576773,near contains,Kodigehalli
 Bangalore Urban,Hebbal,Hebbala,13.038218,77.591900,fuzzy,Hebbal
 Bangalore Urban,Hebbal,Kanakanagar 2A to 6A Cross,13.037411,77.608206,contains,Kanaka Nagar
+Bangalore Urban,Hebbal,Kempaiah Layout,13.060113,77.576773,near contains,Kodigehalli
 Bangalore Urban,Hebbal,Kodigehalli gate) Hebbal Sy,13.060113,77.576773,contains,Kodigehalli
 Bangalore Urban,Hebbal,Krishnappa Garden,12.977456,77.659325,exact,Krishnappa Garden
 Bangalore Urban,Hebbal,Lottegollahalli,13.044135,77.565150,exact,Lottegollahalli
@@ -1208,6 +1421,7 @@ Bangalore Urban,Hebbal,Nagashetty Halli(Service Road),13.046814,77.573683,exact,
 Bangalore Urban,Hebbal,Papanna layout,13.048314,77.579388,exact,Papanna Layout
 Bangalore Urban,Hebbal,Ramakrishna Garden,13.027232,77.580649,contains,Ramakrishna Layout
 Bangalore Urban,Hebbal,Royal Baveri a Sai Balaji,13.001463,77.623644,contains,Balaji Layout
+Bangalore Urban,Hebbal,Sadahalli Baiayanna Layout,13.060113,77.576773,near contains,Kodigehalli
 Bangalore Urban,Hebbal,Sanjaynagar,13.036499,77.577971,exact,Sanjay Nagara
 Bangalore Urban,Hebbal,Sanjaynagar All Cross Roads,13.036499,77.577971,contains,Sanjay Nagara
 Bangalore Urban,Hebbal,Shree Balaji Garden,13.001463,77.623644,contains,Balaji Layout
@@ -1234,6 +1448,7 @@ Bangalore Urban,Hesaraghatta,Kadatanamale,13.209699,77.545913,exact,Kadathanamal
 Bangalore Urban,Hesaraghatta,Kakkenahalli,13.016537,77.456971,fuzzy,KG Lakkenahalli
 Bangalore Urban,Hesaraghatta,Kakolu,13.187500,77.519846,exact,Kakolu
 Bangalore Urban,Hesaraghatta,Kalenahalli,13.147543,77.511721,exact,Kalenahalli
+Bangalore Urban,Hesaraghatta,Kamakshipura,13.215276,77.528405,near exact,Kakkehalli
 Bangalore Urban,Hesaraghatta,Karlapura (Byatha,13.198794,77.488428,exact,Karlapura
 Bangalore Urban,Hesaraghatta,Kasaghattapura,13.110090,77.504332,exact,Kasaghattapura
 Bangalore Urban,Hesaraghatta,Kempapura,13.096152,77.499806,fuzzy,Kempapure
@@ -1282,6 +1497,11 @@ Bangalore Urban,Indiranagar,L akshmipuram,12.977547,77.630678,exact,Lakshmipuram
 Bangalore Urban,Indiranagar,L.B.S.Nagar Ulsoor,12.976475,77.632272,contains,LBS Nagar
 Bangalore Urban,Indiranagar,Micheal Palya,12.981094,77.646595,fuzzy,Michaelpalya
 Bangalore Urban,Indiranagar,Someshwarapuram,12.969332,77.631417,exact,Someshwarapura
+Bangalore Urban,JP Nagar,"A. 196) S+G+3UF, RERA sssssssssssssss NO.PRM/KA/RERA/1251/310/P R",12.884924,77.515485,near exact,Banashankari 6th Stage
+Bangalore Urban,JP Nagar,AXIS ASPIRA Sy.131/3C,12.884924,77.515485,near exact,Banashankari 6th Stage
+Bangalore Urban,JP Nagar,AXIS VEDAM Sy.131/3C 131/4P,12.884924,77.515485,near exact,Banashankari 6th Stage
+Bangalore Urban,JP Nagar,Alahalli,12.884924,77.515485,near exact,Banashankari 6th Stage
+Bangalore Urban,JP Nagar,Alaku Belalu,12.884924,77.515485,near exact,Banashankari 6th Stage
 Bangalore Urban,JP Nagar,Anjanapura 10T Block 80Ft Road,12.855998,77.570354,contains,Anjanapura 10th Block
 Bangalore Urban,JP Nagar,Anjanapura 10Th Block,12.855998,77.570354,exact,Anjanapura 10th Block
 Bangalore Urban,JP Nagar,Anjanapura 11Th Block,12.855998,77.570354,fuzzy,Anjanapura 10th Block
@@ -1316,11 +1536,18 @@ Bangalore Urban,JP Nagar,Banashankari 2Nd Block,12.933128,77.471981,contains,2nd
 Bangalore Urban,JP Nagar,Banashankari 3Rd Block,12.944588,77.482281,contains,3rd Block
 Bangalore Urban,JP Nagar,Banashankari 4Th Block,12.944421,77.475242,contains,4th Block
 Bangalore Urban,JP Nagar,Banashankari 6Th Stage,12.884924,77.515485,exact,Banashankari 6th Stage
+Bangalore Urban,JP Nagar,Broocks Heaven Layout,12.884924,77.515485,near exact,Banashankari 6th Stage
 Bangalore Urban,JP Nagar,Byrasandra,12.934456,77.587886,exact,Byrasandra
+Bangalore Urban,JP Nagar,Classic Orchid,12.884924,77.515485,near exact,Banashankari 6th Stage
+Bangalore Urban,JP Nagar,Club House) 2BF+GF+15UF & Block C-2BF+GF+11UF,12.884924,77.515485,near exact,Banashankari 6th Stage
 Bangalore Urban,JP Nagar,Concorde Napa Valley,12.907138,77.509373,contains,Concorde Layout
 Bangalore Urban,JP Nagar,Gottigere,12.856532,77.587724,exact,Gottigere
 Bangalore Urban,JP Nagar,Gottigere (Wievers Colony Hakku Pathra),12.856532,77.587724,exact,Gottigere
+Bangalore Urban,JP Nagar,Gunina Mellow Measuring 24000 Sq Ft,12.884924,77.515485,near exact,Banashankari 6th Stage
+Bangalore Urban,JP Nagar,H.M.Indigo,12.884924,77.515485,near exact,Banashankari 6th Stage
+Bangalore Urban,JP Nagar,Hara Fresh Field Layout,12.884924,77.515485,near exact,Banashankari 6th Stage
 Bangalore Urban,JP Nagar,I.T.I Layout-J.P.Nagar 1St Stage,12.909694,77.586607,contains,JP Nagar
+Bangalore Urban,JP Nagar,Jayachamrajendra Layout,12.881885,77.555398,near contains,Narayana Nagara
 Bangalore Urban,JP Nagar,Jayaprakash Narayana Nagar 1St Stage,12.881885,77.555398,contains,Narayana Nagara
 Bangalore Urban,JP Nagar,Jayaprakash Narayana Nagar 2Nd Stage,12.881885,77.555398,contains,Narayana Nagara
 Bangalore Urban,JP Nagar,Jayaprakash Narayana Nagar 3Rd Stage,12.881885,77.555398,contains,Narayana Nagara
@@ -1335,6 +1562,7 @@ Bangalore Urban,JP Nagar,Kadugondanahalli,13.020703,77.621546,exact,Kadugondanah
 Bangalore Urban,JP Nagar,Konanakunte,12.879286,77.569753,exact,Konanakunte
 Bangalore Urban,JP Nagar,Kothanur,12.874255,77.583725,fuzzy,Kothnur
 Bangalore Urban,JP Nagar,Kothanur (Hakku Pathra),12.874255,77.583725,fuzzy,Kothnur
+Bangalore Urban,JP Nagar,M.S.Ramaiah Layout,12.884924,77.515485,near exact,Banashankari 6th Stage
 Bangalore Urban,JP Nagar,Mallasandra,12.915939,77.493228,fuzzy,Mailasandra
 Bangalore Urban,JP Nagar,Marappa Garden,13.006701,77.603538,exact,Marappa Garden
 Bangalore Urban,JP Nagar,Marena Halli,12.918259,77.591665,exact,Marenahalli
@@ -1344,12 +1572,15 @@ Bangalore Urban,JP Nagar,Pillaganahalli,12.847278,77.581898,fuzzy,Pillaganahlli
 Bangalore Urban,JP Nagar,Puttena Halli,12.895432,77.580699,exact,Puttenahalli
 Bangalore Urban,JP Nagar,Raghuvana Halli Village Bengaluru,12.976794,77.590082,contains,Bengaluru
 Bangalore Urban,JP Nagar,Rbi Layout,12.888440,77.580509,exact,RBI Layout
+Bangalore Urban,JP Nagar,Royal County Layout,12.884924,77.515485,near exact,Banashankari 6th Stage
+Bangalore Urban,JP Nagar,S-Square,12.884924,77.515485,near exact,Banashankari 6th Stage
 Bangalore Urban,JP Nagar,Sarakki,12.909694,77.586607,exact,JP Nagar
 Bangalore Urban,JP Nagar,Sarakki J.P.Nagar 1St Stage (Orr),12.909694,77.586607,contains,JP Nagar
 Bangalore Urban,JP Nagar,Sarakki Kere,12.909694,77.586607,contains,JP Nagar
 Bangalore Urban,JP Nagar,Shakambari Nagar,12.913578,77.575943,exact,Shakambari Nagar
 Bangalore Urban,JP Nagar,Singapor Gardnen,12.885548,77.549127,fuzzy,Singapore Gardens
 Bangalore Urban,JP Nagar,Slv Krishna Garden,12.913285,77.506908,contains,Krishna Garden Layout
+Bangalore Urban,JP Nagar,Somana Halli,12.881885,77.555398,near contains,Narayana Nagara
 Bangalore Urban,JP Nagar,Srinidhi Layout,12.883086,77.570895,exact,Srinidhi Layout
 Bangalore Urban,JP Nagar,Sunkada Katte,12.995024,77.506527,exact,Sunkadakatte
 Bangalore Urban,JP Nagar,Tippasandra,12.874438,77.557903,exact,Thippasandra
@@ -1364,17 +1595,26 @@ Bangalore Urban,Jala,"24th Cross, ( 60 ft Road) Sahakaranagara",13.062907,77.585
 Bangalore Urban,Jala,"7th CQAL Main Road, ( 60 ft Road) ( UCO Bank) Kodigehalli, Maruthi Nagara Main Road",12.922450,77.613893,contains,Maruthi Nagara
 Bangalore Urban,Jala,Brindavana),13.001226,77.439167,fuzzy,Brundavana Layout
 Bangalore Urban,Jala,Canara Bank,13.068572,77.578355,exact,Canara Bank Layout
+Bangalore Urban,Jala,Gallim Brigade EL Dorado Residential,13.059871,77.585178,near contains,Defence Layout
 Bangalore Urban,Jala,Kattigenahalli Main Road (Bagaluru Cross,13.117774,77.626122,contains,Kattigenahalli
+Bangalore Urban,Jala,Sites Infront of the Road Facing Reva,13.132372,77.646859,near contains,Satanuru
 Bangalore Urban,Jala,Sites Opposite to Vidyanagara Cross Road upto Venkateshwara Engineer College,13.159029,77.624335,contains,Vidyanagar
 Bangalore Urban,Jala,"To 14th Main Sahakaranagara Kodigehalli ( Ganapathi Temple, Kanthi Sweet Street",13.062907,77.585882,contains,Sahakaranagara
+Bangalore Urban,Jayanagar,BDA Area,12.930749,77.578221,near exact,Jayanagar 6th Block
+Bangalore Urban,Jayanagar,BDA Layout Present Corporation Limits,12.944588,77.482281,near contains,3rd Block
 Bangalore Urban,Jayanagar,BHEL Layout,12.918437,77.509250,exact,BHEL Layout
+Bangalore Urban,Jayanagar,"BSK 2nd Stage, Chennamanakere C.T. Bed",12.926867,77.563719,near exact,Banashankari 2nd Stage
 Bangalore Urban,Jayanagar,Banashankari 2nd Stage,12.926867,77.563719,exact,Banashankari 2nd Stage
+Bangalore Urban,Jayanagar,"Bhavani Nagar Slum / Jawaharlal Nehru Slum / Mariyamma Slum, Yarab Nagar Slum",12.926867,77.563719,near exact,Banashankari 2nd Stage
 Bangalore Urban,Jayanagar,Byrasandra,12.934456,77.587886,exact,Byrasandra
 Bangalore Urban,Jayanagar,Byrasandra BDA Layout & Society Layout,12.934456,77.587886,contains,Byrasandra
 Bangalore Urban,Jayanagar,Byrasandra Slum Colony/ Nakalu Bande / Slum Area Tank Bund Area,12.934456,77.587886,contains,Byrasandra
 Bangalore Urban,Jayanagar,Canara Bank Colony,12.931190,77.590894,exact,Canara Bank Colony
+Bangalore Urban,Jayanagar,Dasara Colony,12.939904,77.582638,near exact,Jayanagar 2nd Block
 Bangalore Urban,Jayanagar,Dasarahalli,12.978413,77.542719,exact,Dasarahalli
+Bangalore Urban,Jayanagar,"Dhobhi Ghat, BSK 2nd Stage",12.926867,77.563719,near exact,Banashankari 2nd Stage
 Bangalore Urban,Jayanagar,Geetha Colony,12.929726,77.585493,exact,Geetha Colony
+Bangalore Urban,Jayanagar,Gulbarga Colony,12.934456,77.587886,near exact,Byrasandra
 Bangalore Urban,Jayanagar,Jayanagar 1st Block,12.941849,77.586898,exact,Jayanagar 1st Block
 Bangalore Urban,Jayanagar,Jayanagar 1st and 3rd Block East,12.944588,77.482281,contains,3rd Block
 Bangalore Urban,Jayanagar,Jayanagar 2nd Block,12.939904,77.582638,exact,Jayanagar 2nd Block
@@ -1388,20 +1628,33 @@ Bangalore Urban,Jayanagar,Jayanagar 6th Block,12.930749,77.578221,exact,Jayanaga
 Bangalore Urban,Jayanagar,Jayanagar 7th Block,12.925465,77.577550,exact,Jayanagar 7th Block
 Bangalore Urban,Jayanagar,Jayanagar 8th Block,12.919715,77.577631,exact,Jayanagar 8th Block
 Bangalore Urban,Jayanagar,Jayanagar 9th Block,12.918999,77.592127,exact,Jayanagar 9th Block
+Bangalore Urban,Jayanagar,K V Layout,12.926574,77.583504,near contains,Jayanagar 4th Block
+Bangalore Urban,Jayanagar,K.V. Layout / Kashi Vishweshwaraiah Layout,12.934456,77.587886,near exact,Byrasandra
 Bangalore Urban,Jayanagar,KHB Colony,12.934963,77.617771,exact,KHB Colony
 Bangalore Urban,Jayanagar,Kadirenahalli S.No. BDA Area,12.914616,77.566151,contains,Kadirenahalli
 Bangalore Urban,Jayanagar,Kanakana Palya,12.942119,77.583983,fuzzy,Kankanpalya
+Bangalore Urban,Jayanagar,Kanakana Palya Slum,12.939904,77.582638,near exact,Jayanagar 2nd Block
+Bangalore Urban,Jayanagar,"Karisandra BSK 2nd Stage, S.No",12.926867,77.563719,near exact,Banashankari 2nd Stage
+Bangalore Urban,Jayanagar,Karisandra Slum,12.926867,77.563719,near exact,Banashankari 2nd Stage
 Bangalore Urban,Jayanagar,Kaveri Nagar,12.957427,77.655397,exact,Kaveri Nagara
 Bangalore Urban,Jayanagar,LIC Colony,12.930301,77.589921,exact,LIC Colony
 Bangalore Urban,Jayanagar,LIC Colony/RBI Colony (G H Layout),12.930301,77.589921,contains,LIC Colony
+Bangalore Urban,Jayanagar,Madhavan Park Area,12.933863,77.583034,near exact,Jayanagar 3rd Block
+Bangalore Urban,Jayanagar,Muniswamyraju Layout,12.926574,77.583504,near fuzzy,Jayanagar 4th Block
 Bangalore Urban,Jayanagar,Nimhans Quarters Byrasandra,12.934456,77.587886,contains,Byrasandra
+Bangalore Urban,Jayanagar,No. 7 and 8 Yadiyur,12.925465,77.577550,near exact,Jayanagar 7th Block
 Bangalore Urban,Jayanagar,Puttaiah Palya and Corporation Colony,12.958343,77.646836,contains,Corporation Colony
 Bangalore Urban,Jayanagar,RBI Layout,12.888440,77.580509,exact,RBI Layout
 Bangalore Urban,Jayanagar,SRK Garden,13.004568,77.606993,fuzzy,SK Garden
+Bangalore Urban,Jayanagar,Shastri Nagar,12.926867,77.563719,near exact,Banashankari 2nd Stage
 Bangalore Urban,Jayanagar,T.P.Layout Jayanagar 7th Block,12.925465,77.577550,contains,Jayanagar 7th Block
 Bangalore Urban,Jayanagar,Teachers Colony,12.915150,77.567567,exact,Teacher's Colony
 Bangalore Urban,Jayanagar,Upparalli 6th Block Jayanagar/Rajaram Gupta Layout/Vijaya Rangam Layout,12.960147,77.475843,contains,6th Block
 Bangalore Urban,Jayanagar,Venkata Garden Jayanagar 7th Block,12.925465,77.577550,contains,Jayanagar 7th Block
+Bangalore Urban,Jayanagar,Vijaya College Slum,12.926867,77.563719,near exact,Banashankari 2nd Stage
+Bangalore Urban,Jayanagar,Vijayarangam Layout,12.978413,77.542719,near exact,Dasarahalli
+Bangalore Urban,Jayanagar,Yarab Nagar,12.926867,77.563719,near exact,Banashankari 2nd Stage
+Bangalore Urban,Jayanagar,swagath slum,12.926574,77.583504,near fuzzy,Jayanagar 4th Block
 Bangalore Urban,Jigani,"BESCOM Office, Jigani Main",12.785253,77.638093,contains,Jigani
 Bangalore Urban,Jigani,Bannerughatta to Bangalore,12.813337,77.578951,contains,Bannerughatta
 Bangalore Urban,Jigani,"Janatha Colony, Umesh Layut",12.869481,77.696080,contains,Janatha Colony
@@ -1410,48 +1663,94 @@ Bangalore Urban,Jigani,Jigani Villlage J.V.Nagaraj,12.785253,77.638093,contains,
 Bangalore Urban,Jigani,Kallubalu Road Left Side,12.771203,77.622794,contains,Kallubalu
 Bangalore Urban,Jigani,"Yamanna House, Kallubalu",12.771203,77.622794,contains,Kallubalu
 Bangalore Urban,KR Puram,Anandapura,13.023928,77.692362,exact,Anandapura
+Bangalore Urban,KR Puram,Anna Reddy Compound,12.993080,77.675359,near contains,A Narayanapura
 Bangalore Urban,KR Puram,B.M.Kaval to Benniganahalli Railway Bridge (NH4),12.981694,77.648371,contains,BM Kaval
+Bangalore Urban,KR Puram,BSV Reddy and Srinivasa Layout,13.019415,77.679281,near exact,Kowdenahalli
 Bangalore Urban,KR Puram,Baiyappanahalli,12.996341,77.653320,exact,Baiyyappanahalli
 Bangalore Urban,KR Puram,Baiyappanahalli M Kaval,12.996341,77.653320,contains,Baiyyappanahalli
 Bangalore Urban,KR Puram,Baiyappanahalli Slum,12.996341,77.653320,contains,Baiyyappanahalli
 Bangalore Urban,KR Puram,"Bandappa Colony Ward No. 50, Benniganahalli",12.994919,77.662603,contains,Benniganahalli
+Bangalore Urban,KR Puram,Basavanagara,12.981962,77.678464,near exact,Kaggadasapura
 Bangalore Urban,KR Puram,Benniganahalli,12.994919,77.662603,exact,Benniganahalli
 Bangalore Urban,KR Puram,Benniganahalli (Tin Factory) to T C Palya Signal (New Addition),13.022615,77.705733,contains,TC Palya
+Bangalore Urban,KR Puram,Bhoo Samartha Layout,13.016485,77.717480,near exact,Seegehalli
 Bangalore Urban,KR Puram,Bhuvaneshwari Nagara (NGEF Society),13.056410,77.602430,exact,Buvaneswari Nagara
 Bangalore Urban,KR Puram,Binnamangala M Kaval,12.983988,77.641677,contains,Binnamangala
 Bangalore Urban,KR Puram,Byrasandra,12.982217,77.665784,exact,Byrasandra
+Bangalore Urban,KR Puram,Cheluvaiah Extension,13.019415,77.679281,near exact,Kowdenahalli
+Bangalore Urban,KR Puram,Chikkadevasandra,13.016485,77.717480,near exact,Seegehalli
+Bangalore Urban,KR Puram,Chinappa Extension,13.019415,77.679281,near exact,Kowdenahalli
+Bangalore Urban,KR Puram,Dasappa Layout,13.019415,77.679281,near exact,Kowdenahalli
+Bangalore Urban,KR Puram,Deepa Lake View,12.981962,77.678464,near exact,Kaggadasapura
+Bangalore Urban,KR Puram,Deepa Lake View Madison,12.981962,77.678464,near exact,Kaggadasapura
 Bangalore Urban,KR Puram,Devasandra,13.003932,77.705676,exact,Devasandra
 Bangalore Urban,KR Puram,Garukamanthanapalya,12.974779,77.665408,fuzzy,GM Palya
+Bangalore Urban,KR Puram,Gayathri Extension,13.019415,77.679281,near exact,Kowdenahalli
+Bangalore Urban,KR Puram,Gokula Extension,13.003932,77.705676,near contains,Devasandra
+Bangalore Urban,KR Puram,Gurumurthy Reddy Layout,13.019415,77.679281,near exact,Kowdenahalli
+Bangalore Urban,KR Puram,Hoysala Extension,13.012022,77.677782,near contains,Ramamurthy Nagar
+Bangalore Urban,KR Puram,I T I Industries K.S.I.T Ltd,12.993080,77.675359,near contains,A Narayanapura
 Bangalore Urban,KR Puram,Islampura,12.963033,77.669231,exact,Islampur
 Bangalore Urban,KR Puram,Jyothipura Slum Area/ Vijinapura Slum,13.101859,77.750243,contains,Jyotipura
 Bangalore Urban,KR Puram,Kaggadasapura,12.981962,77.678464,exact,Kaggadasapura
+Bangalore Urban,KR Puram,Kailasagiri,12.981962,77.678464,near exact,Kaggadasapura
+Bangalore Urban,KR Puram,Kamakshi Nilaya,12.982217,77.665784,near exact,Byrasandra
 Bangalore Urban,KR Puram,Kowdenahalli,13.019415,77.679281,exact,Kowdenahalli
 Bangalore Urban,KR Puram,Krishnaiahnapalya,12.997274,77.652762,exact,Krishnaiahnapalya
+Bangalore Urban,KR Puram,Krishnanagara,13.016485,77.717480,near exact,Seegehalli
+Bangalore Urban,KR Puram,L.B.Shastrinagara Brundavana Layout,12.981962,77.678464,near exact,Kaggadasapura
+Bangalore Urban,KR Puram,Lakshmi Tent Extension,13.019415,77.679281,near exact,Kowdenahalli
+Bangalore Urban,KR Puram,MANYATA AMBHRINYI Layout,13.016485,77.717480,near exact,Seegehalli
 Bangalore Urban,KR Puram,Malleshpalya,12.974413,77.674353,exact,Malleshpalya
+Bangalore Urban,KR Puram,Maple Tree,13.012022,77.677782,near contains,Ramamurthy Nagar
 Bangalore Urban,KR Puram,Mottappanapalya,12.973165,77.638873,exact,Motappanapalya
+Bangalore Urban,KR Puram,Muninanjappa Layout,13.019415,77.679281,near exact,Kowdenahalli
+Bangalore Urban,KR Puram,Muniramaiah Compound,12.993080,77.675359,near contains,A Narayanapura
 Bangalore Urban,KR Puram,"N.G.E.F Society Ward No. 86, Sarvagnanagara",12.995483,77.623926,contains,Cox Town
 Bangalore Urban,KR Puram,NGEF Gate to Benniganahalli (Tin Factory) (New Addition),12.994919,77.662603,contains,Benniganahalli
+Bangalore Urban,KR Puram,Nagaiahnapalya,12.996341,77.653320,near exact,Baiyyappanahalli
 Bangalore Urban,KR Puram,Nagavarapalya,12.989888,77.664014,exact,Nagavarapalaya
 Bangalore Urban,KR Puram,Naidu Layout/ Kuvempu Nagara/ Subramanya Nagara,12.914447,77.613753,contains,Kuvempu Nagar
+Bangalore Urban,KR Puram,Neharu Extension,13.019415,77.679281,near exact,Kowdenahalli
 Bangalore Urban,KR Puram,New Thippasandra,12.973696,77.653693,exact,New Thippasandra
 Bangalore Urban,KR Puram,Old Thippasandra,12.972082,77.646499,exact,Old Thippasandra
 Bangalore Urban,KR Puram,"Pai Layout, Benniganahalli",12.994919,77.662603,contains,Benniganahalli
 Bangalore Urban,KR Puram,Part of Annasandrapalya (HAL Factory and HAL Estate),12.963659,77.672986,contains,Annasandra Palya
+Bangalore Urban,KR Puram,Priyadarshini Extension,13.016485,77.717480,near exact,Seegehalli
+Bangalore Urban,KR Puram,Priyanka Nagara (Slum),13.016485,77.717480,near exact,Seegehalli
+Bangalore Urban,KR Puram,Puravankara 270 Degree,12.981962,77.678464,near exact,Kaggadasapura
+Bangalore Urban,KR Puram,R.E.G Layout,13.016485,77.717480,near exact,Seegehalli
 Bangalore Urban,KR Puram,Ramakrishna Extension,13.027232,77.580649,exact,Ramakrishna Layout
 Bangalore Urban,KR Puram,Ramamurthy Nagara,13.012022,77.677782,exact,Ramamurthy Nagar
+Bangalore Urban,KR Puram,S.M. Malyadri Silver Oak,13.012022,77.677782,near contains,Ramamurthy Nagar
 Bangalore Urban,KR Puram,Sadduguntepalya,12.931546,77.609625,fuzzy,Sadgunte Palya
+Bangalore Urban,KR Puram,Sai Palace,13.012022,77.677782,near contains,Ramamurthy Nagar
 Bangalore Urban,KR Puram,Seegehalli,13.016485,77.717480,exact,Seegehalli
+Bangalore Urban,KR Puram,Shakthi Regency,12.981962,77.678464,near exact,Kaggadasapura
+Bangalore Urban,KR Puram,Shanimahatma Extension,13.019415,77.679281,near exact,Kowdenahalli
+Bangalore Urban,KR Puram,Singaiahnapalya,13.003932,77.705676,near contains,Devasandra
+Bangalore Urban,KR Puram,Soorya Sapphire,13.012022,77.677782,near contains,Ramamurthy Nagar
+Bangalore Urban,KR Puram,Sri Ramanasri Maple,13.016485,77.717480,near exact,Seegehalli
 Bangalore Urban,KR Puram,Srinivasapura,13.106209,77.623901,exact,Srinivasapura
+Bangalore Urban,KR Puram,Swatantranagara (Slum),13.016485,77.717480,near exact,Seegehalli
+Bangalore Urban,KR Puram,Tamarind Tree,12.981962,77.678464,near exact,Kaggadasapura
+Bangalore Urban,KR Puram,Thimmaiah Garden,12.983988,77.641677,near contains,Binnamangala
 Bangalore Urban,KR Puram,Thippasandra,12.973936,77.650998,exact,Thippasandra
 Bangalore Urban,KR Puram,Thippasandra 515 K. Workshop,12.973936,77.650998,contains,Thippasandra
 Bangalore Urban,KR Puram,Thippasandra M Kaval,12.973936,77.650998,contains,Thippasandra
 Bangalore Urban,KR Puram,Udayanagara (Vijinapura),12.996362,77.672450,exact,Udaya Nagar
+Bangalore Urban,KR Puram,"Versova Sky (Ward No. 87, HAL Airport)",12.981962,77.678464,near exact,Kaggadasapura
+Bangalore Urban,KR Puram,Vibha Elite,13.003932,77.705676,near contains,Devasandra
 Bangalore Urban,KR Puram,Vignananagara,12.973616,77.682462,exact,Vignananagar
 Bangalore Urban,KR Puram,Vijaya Bank Colony,13.015575,77.659222,exact,Vijaya Bank Colony
+Bangalore Urban,KR Puram,Vijinapura I T I Layout,12.993080,77.675359,near contains,A Narayanapura
 Bangalore Urban,KR Puram,"Vivekananda Extension, Ramamurthy Nagara Extension",13.012022,77.677782,contains,Ramamurthy Nagar
 Bangalore Urban,KR Puram,"Ward No. 26, Ramamurthy Nagara",13.012022,77.677782,contains,Ramamurthy Nagar
 Bangalore Urban,KR Puram,"Ward No. 55, Devasandra",13.003932,77.705676,contains,Devasandra
 Bangalore Urban,KR Puram,"Ward No. 56, A. Narayanapura",12.993080,77.675359,contains,A Narayanapura
+Bangalore Urban,KR Puram,Whitecity Layout,13.016485,77.717480,near exact,Seegehalli
+Bangalore Urban,KR Puram,Wind Flower Layout,13.016485,77.717480,near exact,Seegehalli
+Bangalore Urban,KR Puram,Yerraiahnapalya,13.019415,77.679281,near exact,Kowdenahalli
 Bangalore Urban,Kacharakanahalli,Adarsha Nagara,13.030545,77.609433,fuzzy,Adarsh Nagar
 Bangalore Urban,Kacharakanahalli,Ananda Gokula Layout,13.040969,77.556230,contains,Gokula
 Bangalore Urban,Kacharakanahalli,Ashoka Nagara,12.935948,77.564172,exact,Ashokanagara
@@ -1541,6 +1840,7 @@ Bangalore Urban,Laggere,Hosahalli Gollarapalya,12.993675,77.477973,exact,Hosahal
 Bangalore Urban,Laggere,Kaverinagar Shiva Temple,13.032613,77.609617,contains,Kaveri Nagar
 Bangalore Urban,Laggere,Laggere,13.010868,77.520730,exact,Laggere
 Bangalore Urban,Laggere,Lingadhiranahalli,12.999812,77.481272,exact,Lingadeeranahalli
+Bangalore Urban,Laggere,Mahaveer Fortune,12.993675,77.477973,near exact,Hosahalli Golarapalya
 Bangalore Urban,Laggere,Mantapa to Maruthinagar,13.057474,77.581131,contains,Maruthi Nagara
 Bangalore Urban,Laggere,Peenya 2nd Stage,13.028317,77.512963,exact,Peenya 2nd Stage
 Bangalore Urban,Laggere,Saneguruvanahalli,12.990429,77.542244,exact,Saneguruvanahalli
@@ -1558,24 +1858,34 @@ Bangalore Urban,Madanayakanahalli,Nagarur,13.091167,77.433947,fuzzy,Nagaruru
 Bangalore Urban,Madanayakanahalli,Pillahalli,13.102529,77.428800,exact,Pillahalli
 Bangalore Urban,Madanayakanahalli,Thorenagasandra,13.114944,77.475134,exact,Thore Nagasandra
 Bangalore Urban,Madanayakanahalli,Vaderahalli,13.099156,77.452767,exact,Vaderahalli
+Bangalore Urban,Mahadevapura,Abhinanva Amara Courtyard,12.969637,77.749745,near exact,Whitefield
 Bangalore Urban,Mahadevapura,Andhra Colony Udayanagar,12.996362,77.672450,contains,Udaya Nagar
+Bangalore Urban,Mahadevapura,Arya Hub Mall / Vishnu Priya Group of,12.969637,77.749745,near exact,Whitefield
 Bangalore Urban,Mahadevapura,B Narayanapura Kamadenu Layout Main,12.998056,77.684862,contains,B. Narayanapura
 Bangalore Urban,Mahadevapura,B Narayanapura Outer Ring Road Sy Nos,12.998056,77.684862,contains,B. Narayanapura
 Bangalore Urban,Mahadevapura,B.Narayanapura,12.998056,77.684862,exact,B. Narayanapura
 Bangalore Urban,Mahadevapura,Balaji Eternal BlissSy No. 131/123 New,12.963556,77.734294,contains,Balaji Layout
 Bangalore Urban,Mahadevapura,Bangalore,12.976794,77.590082,exact,Bengaluru
 Bangalore Urban,Mahadevapura,Defence Acadamy H. B. C. S,13.059871,77.585178,contains,Defence Layout
+Bangalore Urban,Mahadevapura,GODREJ AIR (constructed by M/s Godrej,12.976794,77.590082,near exact,Bengaluru
 Bangalore Urban,Mahadevapura,GSR Constructiosn / Sri Sai White Pearl,13.039596,77.644540,contains,Sri Sai Layout
+Bangalore Urban,Mahadevapura,ITPL Road,12.969637,77.749745,near exact,Whitefield
 Bangalore Urban,Mahadevapura,Layout,12.969637,77.749745,exact,Whitefield
 Bangalore Urban,Mahadevapura,Layout),12.969637,77.749745,exact,Whitefield
 Bangalore Urban,Mahadevapura,Mahadevapura Outer Ring Road Facing Lands,12.991240,77.689733,contains,Mahadevapura
+Bangalore Urban,Mahadevapura,Mahalaskhmi Green Homes / Jaya,12.969637,77.749745,near exact,Whitefield
 Bangalore Urban,Mahadevapura,Prestige Shantiniketan (Residencial) Sy,12.992357,77.728683,fuzzy,Prestige Shantiniketan
 Bangalore Urban,Mahadevapura,Ramagondanahalli) Sy No,12.955897,77.740583,contains,Ramagondanahalli
 Bangalore Urban,Mahadevapura,Republic of Whitefield / Divyashree,12.969637,77.749745,contains,Whitefield
+Bangalore Urban,Mahadevapura,"Sumadhura Shangrila, Vasantham",12.955897,77.740583,near contains,Ramagondanahalli
 Bangalore Urban,Mahadevapura,White Field Main Road to ITPL,12.969637,77.749745,contains,Whitefield
 Bangalore Urban,Mahadevapura,Whitefield Main Road,12.969637,77.749745,contains,Whitefield
+Bangalore Urban,Malleshwaram,Coconut Avenue Road (From 8th Cross Road to 13th Cross Road of Malleshwaram),13.002735,77.570325,near exact,Malleswaram
+Bangalore Urban,Malleshwaram,Kumar Kino Platinum Residential,12.993188,77.575342,near exact,Seshadripuram
 Bangalore Urban,Malleshwaram,Malleshwaram,13.002735,77.570325,exact,Malleswaram
 Bangalore Urban,Malleshwaram,Malleshwaram),13.002735,77.570325,exact,Malleswaram
+Bangalore Urban,Malleshwaram,Nandidurga Road,13.001106,77.596958,near exact,Jayamahal Extension
+Bangalore Urban,Malleshwaram,Nandidurga Road 2nd Cross Road,13.001106,77.596958,near exact,Jayamahal Extension
 Bangalore Urban,Malleshwaram,Palace Guttahalli,13.000417,77.580386,contains,Guttahalli
 Bangalore Urban,Malleshwaram,Sadashiva Nagar,13.011019,77.580864,exact,Sadashivanagar
 Bangalore Urban,Malleshwaram,Sadashivanagara adjacent),13.011019,77.580864,contains,Sadashivanagar
@@ -1583,7 +1893,11 @@ Bangalore Urban,Malleshwaram,Sheshadripuram,12.993188,77.575342,exact,Seshadripu
 Bangalore Urban,Malleshwaram,Vyalikaval,13.004264,77.575170,exact,Vyalikaval
 Bangalore Urban,Nagarbhavi,AG's Layout,12.912765,77.534050,exact,AGS Layout
 Bangalore Urban,Nagarbhavi,Adarshanagar,13.030545,77.609433,fuzzy,Adarsh Nagar
+Bangalore Urban,Nagarbhavi,Aprameeya Prasidhi,13.022184,77.553082,near contains,Yeswanthpur
+Bangalore Urban,Nagarbhavi,Arundathinagar Slum,12.944507,77.522012,near contains,Nayandahalli
 Bangalore Urban,Nagarbhavi,Ashwath nagar,13.025441,77.579403,exact,Ashwath Nagar
+Bangalore Urban,Nagarbhavi,B.C.C Hbcs,12.944507,77.522012,near contains,Nayandahalli
+Bangalore Urban,Nagarbhavi,Brahmadevara Gudda,12.976657,77.464564,near contains,Kodigehalli
 Bangalore Urban,Nagarbhavi,Byraveswaranagar,13.037380,77.491124,exact,Byraveshwara Nagara
 Bangalore Urban,Nagarbhavi,Canara Bank Colony,12.931190,77.590894,exact,Canara Bank Colony
 Bangalore Urban,Nagarbhavi,Chandana Layout,12.986383,77.506753,exact,Chandana Layout
@@ -1594,15 +1908,19 @@ Bangalore Urban,Nagarbhavi,Hanumanthanagar,12.940641,77.563543,exact,Hanumantha 
 Bangalore Urban,Nagarbhavi,Hosahalli,12.969069,77.542780,exact,Hosahalli
 Bangalore Urban,Nagarbhavi,Hoysala nagar,12.980209,77.627377,exact,Hoysala Nagar
 Bangalore Urban,Nagarbhavi,Jnanabharathi),12.943349,77.511233,exact,Jnana Bharathi
+Bangalore Urban,Nagarbhavi,K.N.S Anirvan,12.976657,77.464564,near contains,Kodigehalli
 Bangalore Urban,Nagarbhavi,Kalyana nagar,12.896275,77.553719,fuzzy,Kalyani Nagara
 Bangalore Urban,Nagarbhavi,Kanakanagar,13.037411,77.608206,exact,Kanaka Nagar
 Bangalore Urban,Nagarbhavi,Kaveri Layout,12.973102,77.526857,exact,Kaveri Layout
 Bangalore Urban,Nagarbhavi,Kodigehalli Colony,12.976657,77.464564,contains,Kodigehalli
 Bangalore Urban,Nagarbhavi,"Kodigehalli, Yeshwantpura",12.976657,77.464564,contains,Kodigehalli
 Bangalore Urban,Nagarbhavi,Kottigepalya,12.984549,77.511805,exact,Kottigepalya
+Bangalore Urban,Nagarbhavi,Lawyer Palya,13.022190,77.467528,near fuzzy,Gangodanahalli
 Bangalore Urban,Nagarbhavi,"Mallathahalli, Yeshwantpura",12.962321,77.505723,contains,Mallathahalli
 Bangalore Urban,Nagarbhavi,"Manganahalli, Yeshwantpura",13.022184,77.553082,contains,Yeswanthpur
 Bangalore Urban,Nagarbhavi,Maruthinagar,12.938163,77.481460,exact,Maruthi Nagara
+Bangalore Urban,Nagarbhavi,Muthuraya Swamy Layout,12.943349,77.511233,near exact,Jnana Bharathi
+Bangalore Urban,Nagarbhavi,NGEF 60 feet road,12.943794,77.477946,near contains,Sir MV Layout
 Bangalore Urban,Nagarbhavi,Nagarabavi B.D.A Block,12.966418,77.513078,contains,Nagarabhavi
 Bangalore Urban,Nagarbhavi,Nagarabavi B.D.A Block-10 (60 feet road),12.966418,77.513078,contains,Nagarabhavi
 Bangalore Urban,Nagarbhavi,"Nagarabavi, Yeshwantpura",12.966418,77.513078,contains,Nagarabhavi
@@ -1613,7 +1931,10 @@ Bangalore Urban,Nagarbhavi,Pulakeshinagar,12.997585,77.613674,exact,Frazer Town
 Bangalore Urban,Nagarbhavi,Rajiv Gandhi nagar (Slum),13.070256,77.583845,exact,Rajiv Gandhi Nagar
 Bangalore Urban,Nagarbhavi,Ramakrishna Layout,13.027232,77.580649,exact,Ramakrishna Layout
 Bangalore Urban,Nagarbhavi,Rhcs),12.979708,77.497730,exact,RHCS Layout
+Bangalore Urban,Nagarbhavi,SLV Park View,12.943794,77.477946,near contains,Sir MV Layout
+Bangalore Urban,Nagarbhavi,Sallapuradamma Layout,12.943349,77.511233,near exact,Jnana Bharathi
 Bangalore Urban,Nagarbhavi,Sampige Layout,12.976470,77.528243,exact,Sampige Layout
+Bangalore Urban,Nagarbhavi,Shanthilal mutha Layout,13.022184,77.553082,near contains,Yeswanthpur
 Bangalore Urban,Nagarbhavi,Sir.M.Visveshwariah Layout,12.943794,77.477946,contains,Sir MV Layout
 Bangalore Urban,Nagarbhavi,Sree rama Layout,12.892952,77.581091,exact,Sri Rama Layout
 Bangalore Urban,Nagarbhavi,Sri Vinayaka HBCS ltd,12.963142,77.508647,contains,Vinayaka Layout
@@ -1621,6 +1942,8 @@ Bangalore Urban,Nagarbhavi,Srigandadakavalu,12.978654,77.501745,fuzzy,Srigandhak
 Bangalore Urban,Nagarbhavi,Srigandadakavalu),12.978654,77.501745,fuzzy,Srigandhakavalu
 Bangalore Urban,Nagarbhavi,Srinivasa nagar,12.936357,77.554129,fuzzy,Srinivas Nagar
 Bangalore Urban,Nagarbhavi,Sunkadakatte,12.995024,77.506527,exact,Sunkadakatte
+Bangalore Urban,Nagarbhavi,Udaya Layout,13.022184,77.553082,near contains,Yeswanthpur
+Bangalore Urban,Nagarbhavi,Vallabha Sanitary Appartment,12.944507,77.522012,near contains,Nayandahalli
 Bangalore Urban,Peenya,Abbigere,13.074274,77.528865,exact,Abbigere
 Bangalore Urban,Peenya,Abbigere main road,13.074274,77.528865,contains,Abbigere
 Bangalore Urban,Peenya,"Abbigere main road, (Kammagondanahalli abbigere main road)",13.074274,77.528865,contains,Abbigere
@@ -1688,11 +2011,17 @@ Bangalore Urban,Peenya,Vaishnavi Rathnam (Survey No,13.076842,77.552997,contains
 Bangalore Urban,Peenya,Vinayaka layout,12.967507,77.530193,exact,Vinayaka Layout
 Bangalore Urban,Peenya,Vivekananda nagara,13.004425,77.628045,exact,Vivekananda Nagar
 Bangalore Urban,Rajajinagar,"23 (104/45) 2nd Cross Road, Ganesha Block, Nandini Layout",13.011974,77.534826,contains,Nandini Layout
+Bangalore Urban,Rajajinagar,A r a le pete HBCS (NEW),12.978413,77.542719,near contains,Dasarahalli
 Bangalore Urban,Rajajinagar,Agrahara Dasarahalli,12.978413,77.542719,contains,Dasarahalli
+Bangalore Urban,Rajajinagar,Asha Jyothi Sanjaygandhinagar Slum,12.978413,77.542719,near contains,Dasarahalli
+Bangalore Urban,Rajajinagar,Astagrama Society,12.978413,77.542719,near contains,Dasarahalli
+Bangalore Urban,Rajajinagar,"Bheemajyothi Society (LIC, WOC)",12.978413,77.542719,near contains,Dasarahalli
+Bangalore Urban,Rajajinagar,G a y a th rinagar HBCS,12.978413,77.542719,near contains,Dasarahalli
 Bangalore Urban,Rajajinagar,Gayathrinagar BDA Block,13.000037,77.559011,contains,Gayatri Nagar
 Bangalore Urban,Rajajinagar,"Geleyarabalaga , BBMP",13.071282,77.506150,fuzzy,Geleyara Balaga Layout
 Bangalore Urban,Rajajinagar,Geleyarabalaga Society,13.071282,77.506150,contains,Geleyara Balaga Layout
 Bangalore Urban,Rajajinagar,"Huchappana Palya, Rajajinagar 1st N Block",13.005177,77.552305,contains,Rajajinagara 1st N Block
+Bangalore Urban,Rajajinagar,"I n d u s t r i a l T o w n , R a ja ji nagar",12.988234,77.554883,near contains,Rajajinagar
 Bangalore Urban,Rajajinagar,JC Nagar Slum (WOC 3rd Stage 4th Block),13.004041,77.538804,contains,JC Nagar
 Bangalore Urban,Rajajinagar,"Jedarahalli Village, 5th Block, Rajajinagar",12.959979,77.482195,contains,5th Block
 Bangalore Urban,Rajajinagar,Juganahalli Village Rajajinagar 2nd Block,12.994661,77.553299,contains,Rajajinagar 2nd Block
@@ -1713,6 +2042,8 @@ Bangalore Urban,Rajajinagar,Nagapura,13.001202,77.546024,exact,Mahalakshmipuram
 Bangalore Urban,Rajajinagar,"Nandini Layout, Dollars Scheme",13.011974,77.534826,contains,Nandini Layout
 Bangalore Urban,Rajajinagar,Nandini Layout. BBMP,13.011974,77.534826,contains,Nandini Layout
 Bangalore Urban,Rajajinagar,Papaiah Garden Agrahara Dasarahalli,13.027160,77.654806,contains,Papaiah Layout
+Bangalore Urban,Rajajinagar,RGI Colony (Prakashnagar),12.988234,77.554883,near contains,Rajajinagar
+Bangalore Urban,Rajajinagar,RGI Colony (Rajajinagar 3rd Stage),12.988234,77.554883,near contains,Rajajinagar
 Bangalore Urban,Rajajinagar,Rajajinagar 1 to 6th Block,12.978335,77.553749,fuzzy,Rajajinagar 6th Block
 Bangalore Urban,Rajajinagar,Rajajinagar 2nd Stage,12.988234,77.554883,contains,Rajajinagar
 Bangalore Urban,Rajajinagar,"Rajajinagar 2nd Stage C Block, Gayathrinagara",12.988234,77.554883,contains,Rajajinagar
@@ -1726,6 +2057,7 @@ Bangalore Urban,Rajajinagar,"Rajajinagar 5th Block, Chamundinagar Slum",12.98332
 Bangalore Urban,Rajajinagar,"Rajajinagar 6th Block, KB Temple, Gubbanna Garden",12.978335,77.553749,contains,Rajajinagar 6th Block
 Bangalore Urban,Rajajinagar,Rajajinagar Industrial Town,12.988234,77.554883,contains,Rajajinagar
 Bangalore Urban,Rajajinagar,Rajeevgandhi Nagar (BDA),13.070256,77.583845,exact,Rajiv Gandhi Nagar
+Bangalore Urban,Rajajinagar,SSI Area,12.978335,77.553749,near fuzzy,Rajajinagar 6th Block
 Bangalore Urban,Rajajinagar,"SSI Area, Rajajinagar",12.988234,77.554883,contains,Rajajinagar
 Bangalore Urban,Rajajinagar,Saneguruvanahalli (BDA),12.990429,77.542244,exact,Saneguruvanahalli
 Bangalore Urban,Rajajinagar,Saraswathipura,12.974806,77.631636,exact,Saraswathipuram
@@ -1735,6 +2067,7 @@ Bangalore Urban,Rajajinagar,Someshwaranagar,12.942092,77.592135,exact,Someshwara
 Bangalore Urban,Rajajinagar,Sriramanagar,12.958199,77.657139,fuzzy,Sri Ram Nagar
 Bangalore Urban,Rajajinagar,Subramanyanagar,13.003905,77.557942,fuzzy,Subrahmanya Nagar
 Bangalore Urban,Rajajinagar,"Subramanyanagar, Near Kirloskar Factory",13.066964,77.500931,contains,Kirloskar Layout
+Bangalore Urban,Rajajinagar,Thimmaiah Layout,12.978413,77.542719,near contains,Dasarahalli
 Bangalore Urban,Rajarajeshwarinagar,Agara (Tataguni),12.844601,77.487940,exact,Agara
 Bangalore Urban,Rajarajeshwarinagar,B.E.M.L. 3rd Stage,12.919653,77.520220,exact,BEML Layout 3rd Stage
 Bangalore Urban,Rajarajeshwarinagar,B.E.M.L. 4th Stage,12.908359,77.520906,fuzzy,BEML Layout 5th Stage
@@ -1753,6 +2086,8 @@ Bangalore Urban,Shantinagar,Akkithimmanahalli Layout,12.959885,77.595449,exact,A
 Bangalore Urban,Shantinagar,Attached to Hosur Main Road Lakkasandra,12.943223,77.599706,contains,Lakkasandra
 Bangalore Urban,Shantinagar,BDA Flats Neelasandra,12.952179,77.614092,contains,Neelasandra
 Bangalore Urban,Shantinagar,Extension Lakkasandra,12.943223,77.599706,exact,Lakkasandra
+Bangalore Urban,Shantinagar,Heritage Signature,12.959885,77.595449,near exact,Akkithimmanahalli
+Bangalore Urban,Shantinagar,Infant Jesus Church Road (Bazaar Street),12.952179,77.614092,near exact,Neelasandra
 Bangalore Urban,Shantinagar,Lakkasandra,12.943223,77.599706,exact,Lakkasandra
 Bangalore Urban,Shantinagar,Lakkasandra Layout,12.943223,77.599706,exact,Lakkasandra
 Bangalore Urban,Shantinagar,Lakkasandra Ward,12.943223,77.599706,contains,Lakkasandra
@@ -1769,18 +2104,24 @@ Bangalore Urban,Shivajinagar,Elegant Edward House - Pottery Town,13.001385,77.60
 Bangalore Urban,Shivajinagar,Phoenix Victoria - Victoria Road,12.965658,77.614268,contains,Victoria Layout
 Bangalore Urban,Srirampura,Ambedkar Nagara Cross Roads,12.949085,77.618487,contains,Ambedkar Nagar
 Bangalore Urban,Srirampura,Ambedkar Nagara Main Roads,12.949085,77.618487,contains,Ambedkar Nagar
+Bangalore Urban,Srirampura,B.Puttaswamaiah Road,13.066029,77.619681,near contains,Srirampura
 Bangalore Urban,Srirampura,Goripalya,12.962944,77.549500,exact,Goripalya
 Bangalore Urban,Srirampura,Goripalya Cross Road,12.962944,77.549500,contains,Goripalya
+Bangalore Urban,Srirampura,Harijana Colony,13.066029,77.619681,near contains,Srirampura
 Bangalore Urban,Srirampura,Hosahalli Main Roads,13.140620,77.641836,contains,Hosahalli
 Bangalore Urban,Srirampura,K.P.Agrahara All cross Roads,13.097893,77.625960,contains,Agrahara Layout
 Bangalore Urban,Srirampura,Kempapura Agrahara,12.970623,77.555376,exact,Kempapura Agrahara
+Bangalore Urban,Srirampura,Kranthikavi Sarvagna Road,13.066029,77.619681,near contains,Srirampura
 Bangalore Urban,Srirampura,Maruthi Extension Main roads Ward No,12.997642,77.563101,contains,Maruthi Extension
 Bangalore Urban,Srirampura,Maruthinagar,13.057474,77.581131,exact,Maruthi Nagara
+Bangalore Urban,Srirampura,Narayanappa Colony,13.066029,77.619681,near contains,Srirampura
 Bangalore Urban,Srirampura,Okalipuram,12.983282,77.566032,exact,Okalipuram
 Bangalore Urban,Srirampura,Okalipuram All Cross Roads,12.983282,77.566032,contains,Okalipuram
 Bangalore Urban,Srirampura,Okalipuram All Main Roads Ward No,12.983282,77.566032,contains,Okalipuram
+Bangalore Urban,Srirampura,Park West(Sharpooji Pallonji),12.978335,77.553749,near exact,Rajajinagar 6th Block
 Bangalore Urban,Srirampura,Rajajinagar 6th Block,12.978335,77.553749,exact,Rajajinagar 6th Block
 Bangalore Urban,Srirampura,Ramachandrapura,13.062095,77.551773,exact,Ramachandrapura
+Bangalore Urban,Srirampura,Ramamurthy Road,13.066029,77.619681,near contains,Srirampura
 Bangalore Urban,Srirampura,Srirampura All Cross Roads,13.066029,77.619681,contains,Srirampura
 Bangalore Urban,Srirampura,Srirampura All Main Roads,13.066029,77.619681,contains,Srirampura
 Bangalore Urban,Srirampura,Srirampura Market Road,13.066029,77.619681,contains,Srirampura
@@ -1794,6 +2135,9 @@ Bangalore Urban,Tavarekere,RBI Layout,12.888440,77.580509,exact,RBI Layout
 Bangalore Urban,Tavarekere,Srinidhi Layout,12.883086,77.570895,exact,Srinidhi Layout
 Bangalore Urban,Tavarekere,Varthutu Narasipura,12.976870,77.494442,contains,Narasipura
 Bangalore Urban,Varthur,AECS Layout (Ref Kundalahalli Rate),12.964118,77.713037,exact,AECS Layout
+Bangalore Urban,Varthur,ARK s,12.958606,77.662337,near exact,Konena Agrahara
+Bangalore Urban,Varthur,Adithi Evora (M/s. Adithi s),12.958606,77.662337,near exact,Konena Agrahara
+Bangalore Urban,Varthur,Aditya Arena,12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,Ambalipura,12.917330,77.667161,exact,Ambalipura
 Bangalore Urban,Varthur,Ambalipura (Old village),12.917330,77.667161,exact,Ambalipura
 Bangalore Urban,Varthur,Ayyappa Layout (Badavane),12.954037,77.702842,exact,Ayappa Layout
@@ -1806,7 +2150,9 @@ Bangalore Urban,Varthur,Chikkanayakanahalli Gramathana,12.892338,77.694199,exact
 Bangalore Urban,Varthur,Devarabeesanahalli,12.926862,77.689514,exact,Devarabeesanahalli
 Bangalore Urban,Varthur,Dimond District to Kodihalli (Left & Right,12.962845,77.647902,contains,Kodihalli
 Bangalore Urban,Varthur,Doddakannelli,12.908241,77.694885,fuzzy,Doddakannalli
+Bangalore Urban,Varthur,Essem 18 Construction,12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,GUNJUR BDA Flats,12.920977,77.736102,contains,Gunjur
+Bangalore Urban,Varthur,Golden Homes,12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,Gunjuru,12.920977,77.736102,fuzzy,Gunjur
 Bangalore Urban,Varthur,Hado Siddapura,12.954260,77.730974,contains,Siddapura
 Bangalore Urban,Varthur,Hado Siddapura Gramathana,12.954260,77.730974,contains,Siddapura
@@ -1814,6 +2160,7 @@ Bangalore Urban,Varthur,Halanayakana Halli,12.900731,77.687607,exact,Halanayakan
 Bangalore Urban,Varthur,Halanayakana Halli Gramathana,12.900731,77.687607,exact,Halanayakanahalli
 Bangalore Urban,Varthur,Halasahalli Road,12.924052,77.762646,contains,Halasahalli
 Bangalore Urban,Varthur,Ittina Layout - Kasavanahalli,12.910866,77.680004,contains,Kasavanahalli
+Bangalore Urban,Varthur,Ittina Soupernika (150-W1053-6/1),12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,Junnasandra,12.906420,77.683516,exact,Junnasandra
 Bangalore Urban,Varthur,K.P.C. Layout - Kasavanahalli,12.910866,77.680004,contains,Kasavanahalli
 Bangalore Urban,Varthur,K.R. Garden- Murugeshpalya,12.954921,77.656597,contains,KR Garden
@@ -1821,6 +2168,7 @@ Bangalore Urban,Varthur,Kachamarana Halli,12.912330,77.732780,exact,Kachamaranah
 Bangalore Urban,Varthur,Kachamarana Halli Gramathana,12.912330,77.732780,exact,Kachamaranahalli
 Bangalore Urban,Varthur,Kadubeesanahalli,12.939533,77.696793,exact,Kaadubeesanahalli
 Bangalore Urban,Varthur,Kaikondara Halli,12.913835,77.677527,fuzzy,Kaikondrahalli
+Bangalore Urban,Varthur,Kapila (Golden Squire ),12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,Kariyammana Agrahara,12.937150,77.687303,exact,Kariyammana Agrahara
 Bangalore Urban,Varthur,Kasavanahalli,12.910866,77.680004,exact,Kasavanahalli
 Bangalore Urban,Varthur,Kempapura,12.946476,77.672516,exact,Kempapura
@@ -1829,22 +2177,30 @@ Bangalore Urban,Varthur,Kodathi Gramathana,12.887262,77.715899,exact,Kodati
 Bangalore Urban,Varthur,Kodihalli,12.962845,77.647902,exact,Kodihalli
 Bangalore Urban,Varthur,Konena Agrahara,12.958606,77.662337,exact,Konena Agrahara
 Bangalore Urban,Varthur,Konena agrahara to Kundalahali Junction,12.958606,77.662337,contains,Konena Agrahara
+Bangalore Urban,Varthur,Kumari Nivas,12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,Laughing Water Layout- Ramagondanahalli,12.955897,77.740583,contains,Ramagondanahalli
+Bangalore Urban,Varthur,Lotus Palace(M/s First futureiest holding Ltd),12.958606,77.662337,near exact,Konena Agrahara
+Bangalore Urban,Varthur,M/s. Axis Concept Construction,12.958606,77.662337,near exact,Konena Agrahara
+Bangalore Urban,Varthur,M/s. Keystone constructions (Evergreens),12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,Maratha Halli,12.955257,77.698416,exact,Marathahalli
 Bangalore Urban,Varthur,Mullur,12.904873,77.725131,fuzzy,Mulluru
 Bangalore Urban,Varthur,Mullur Gramathana,12.904873,77.725131,fuzzy,Mulluru
 Bangalore Urban,Varthur,Munnekolalu,12.948084,77.709018,fuzzy,Munekolala
 Bangalore Urban,Varthur,Murugeshpalya,12.956128,77.657571,exact,Murugeshpalaya
 Bangalore Urban,Varthur,Old Air Port Road- Konena Agrahara (113- M0088-1 to 113-M0088-167),12.958606,77.662337,contains,Konena Agrahara
+Bangalore Urban,Varthur,Owners Court Layout,12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,Panathuru,12.935146,77.704754,fuzzy,Panathur
 Bangalore Urban,Varthur,Prithvi Stargaze (149-M0096-33G),12.977178,77.743645,contains,Prithvi Layout
 Bangalore Urban,Varthur,Ramagondanahalli,12.955897,77.740583,exact,Ramagondanahalli
 Bangalore Urban,Varthur,Ring Road- Maratha Halli,12.955257,77.698416,contains,Marathahalli
 Bangalore Urban,Varthur,Royal Placid Layout,12.900768,77.657762,exact,Royal Placid Layout
 Bangalore Urban,Varthur,S.R Layout - Murugeshpalya,12.956128,77.657571,contains,Murugeshpalaya
+Bangalore Urban,Varthur,Sai Nandanam,12.958606,77.662337,near exact,Konena Agrahara
+Bangalore Urban,Varthur,Sanjana Bhrundavan,12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,Sarjapura Main Road (80 Feet Road),12.860087,77.786135,contains,Sarjapura
 Bangalore Urban,Varthur,Siddapura,12.954260,77.730974,exact,Siddapura
 Bangalore Urban,Varthur,Sorahunase,12.947255,77.753827,exact,Sorahunase
+Bangalore Urban,Varthur,Sreeda Pride,12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Varthur,Sulikunte,12.888182,77.729219,exact,Sulikunte
 Bangalore Urban,Varthur,Sulikunte Gramathana,12.888182,77.729219,exact,Sulikunte
 Bangalore Urban,Varthur,Sunny Brooks Layout,12.913059,77.688588,exact,Sunny Brooks
@@ -1854,6 +2210,7 @@ Bangalore Urban,Varthur,Valepura Gramathana,12.956225,77.766079,exact,Valepura
 Bangalore Urban,Varthur,Varthur,12.940651,77.746988,exact,Varthur
 Bangalore Urban,Varthur,Varthur- Muthsandra Road (50 Feet Road),12.940651,77.746988,contains,Varthur
 Bangalore Urban,Varthur,Vinayaka Nagar Layout,12.964558,77.754106,exact,Vinayakanagar
+Bangalore Urban,Varthur,Wind Tunul Road,12.958606,77.662337,near exact,Konena Agrahara
 Bangalore Urban,Vijayanagar,Agrahara Dasarahalli 1stCross Road,12.978413,77.542719,contains,Dasarahalli
 Bangalore Urban,Vijayanagar,Agrahara Dasarahalli 2nd and 9th C r o s s & O t h e r s R o a d,12.978413,77.542719,contains,Dasarahalli
 Bangalore Urban,Vijayanagar,Attiguppe Petrol Bunk Road (Chandra Layout Main Road),12.962847,77.529168,contains,Attiguppe
@@ -1863,11 +2220,15 @@ Bangalore Urban,Vijayanagar,C .H.B.C.S.) Layout Vijayanagar,12.966399,77.535409,
 Bangalore Urban,Vijayanagar,Central Excise Employees H.B.C.S. L a yout,12.973854,77.532980,contains,Central Excise Layout
 Bangalore Urban,Vijayanagar,Chandra Layout1st Main Road 80 feet Road Or 60 feet Road (Adigas Hotel and Petrol Bunk Road),12.959041,77.525091,contains,Chandra Layout
 Bangalore Urban,Vijayanagar,Deepanjalinagar),12.952694,77.535647,exact,Deepanjali Nagar
+Bangalore Urban,Vijayanagar,Govindarajanagar (Thimmenahalli) other Main Roads,12.977161,77.536112,near fuzzy,Govindaraj Nagara
+Bangalore Urban,Vijayanagar,Govindarajanagar 22nd Cross Road,12.977161,77.536112,near fuzzy,Govindaraj Nagara
 Bangalore Urban,Vijayanagar,Govindrajanagara),12.977161,77.536112,fuzzy,Govindaraj Nagara
 Bangalore Urban,Vijayanagar,"Hosahalli (B.D.A., C.I.T.B., K.H.B.) (Vijayanagar)",12.969069,77.542780,exact,Hosahalli
+Bangalore Urban,Vijayanagar,Karnataka Housing Board colony,12.977619,77.531325,near fuzzy,Prashanth Nagar
 Bangalore Urban,Vijayanagar,Kempe Gowda Housing Co- o p e r a t i v e Society Limited,13.000789,77.526473,contains,Kempegowda Layout
 Bangalore Urban,Vijayanagar,M.C. Layout ( 9th Main onwards all main roads),12.973096,77.535394,exact,M C Layout
 Bangalore Urban,Vijayanagar,M.C. Layout (4th & 6th Main Roads),12.973096,77.535394,exact,M C Layout
+Bangalore Urban,Vijayanagar,M.C. Layout 32nd & 33rd Main R o ads,12.977161,77.536112,near fuzzy,Govindaraj Nagara
 Bangalore Urban,Vijayanagar,"Magadi Chord Road & Service Road, Vijayanagar (Magadi Road Tolgate to 1st Main Road and V i j a y a n a g a r S e r vice Road)",12.966399,77.535409,contains,Vijaya Nagar
 Bangalore Urban,Vijayanagar,Magadi Main road Agrahara Dasarahalli,12.978413,77.542719,contains,Dasarahalli
 Bangalore Urban,Vijayanagar,"Nagarabhavai Main Road, Malagala Main Road",12.977870,77.516101,contains,Malagala
@@ -1879,61 +2240,122 @@ Bangalore Urban,Vijayanagar,"Vijayanagar Pipeline (From Magadi Road Tolgate to P
 Bangalore Urban,Vijayanagar,"Vijayanagar R.P.C. 2nd Stage, 4th Cross",12.966399,77.535409,contains,Vijaya Nagar
 Bangalore Urban,Vijayanagar,Vijayanagara 9th A.B.C.D.F Main,12.966399,77.535409,contains,Vijaya Nagar
 Bangalore Urban,Yelahanka,Agrahara Village,13.097893,77.625960,exact,Agrahara Layout
+Bangalore Urban,Yelahanka,Akshaya Aerosan Ruby,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Akshaya Nagara,13.098538,77.565614,exact,Akshaya Nagar
 Bangalore Urban,Yelahanka,Allalasandra Railway Under Pass to BWSSB STP plant,13.086592,77.587625,contains,Allalasandra
 Bangalore Urban,Yelahanka,Allalasandra Village,13.086592,77.587625,exact,Allalasandra
+Bangalore Urban,Yelahanka,Ambedkar nagara,13.100698,77.596345,near contains,Yelahanka
 Bangalore Urban,Yelahanka,Ananda Nagara,13.034699,77.594456,fuzzy,Anand Nagar
 Bangalore Urban,Yelahanka,Ananthapura Village,13.115089,77.567997,exact,Anantapura
+Bangalore Urban,Yelahanka,"Archid Pikality (CVC 200/2022-23, dtd. 20/03/2022)",13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,Arun Koustubha,13.034109,77.619803,near exact,Govindapura
 Bangalore Urban,Yelahanka,Atturu Village,13.107470,77.565685,exact,Atturu
+Bangalore Urban,Yelahanka,August Center Commecial,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Avalahalli Village,13.135632,77.565174,exact,Avalahalli
 Bangalore Urban,Yelahanka,B.E.L layout,13.072968,77.554357,exact,BEL Layout
 Bangalore Urban,Yelahanka,Balaji Greens Layout,13.001463,77.623644,contains,Balaji Layout
 Bangalore Urban,Yelahanka,Balaji layout,13.001463,77.623644,exact,Balaji Layout
+Bangalore Urban,Yelahanka,Behind Railway station,13.100698,77.596345,near contains,Yelahanka
 Bangalore Urban,Yelahanka,Bellahalli Village,13.099768,77.642715,exact,Bellahalli
+Bangalore Urban,Yelahanka,Bhadranna layout,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Bisanahalli Thota,13.100698,77.596345,near contains,Yelahanka
 Bangalore Urban,Yelahanka,C h in n a nna Layout,13.025611,77.611060,fuzzy,Chinnanna Layout
 Bangalore Urban,Yelahanka,C.Q.A.L Layout,13.107164,77.568291,exact,CQAL Layout
+Bangalore Urban,Yelahanka,Century artizan,13.034109,77.619803,near exact,Govindapura
 Bangalore Urban,Yelahanka,Chikkabommasandra Village,13.091669,77.580393,exact,Chikkabommasandra
+Bangalore Urban,Yelahanka,Chowdeshwari layout,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,"Classic Woods Villae As per CVC 103/23-24, dtd",13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,D.S.Max,13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,Flam Spring,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,From Bengaluru Bellary main road N.H.7 to Judicial Layout Main Road and 14th main road,13.083769,77.586044,contains,Judicial Layout
 Bangalore Urban,Yelahanka,From Yelahanka police station to puttenahalli,13.100698,77.596345,contains,Yelahanka
+Bangalore Urban,Yelahanka,GR Onyx (CVC 485/2017-18),13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,GR Opal (CVC 485/2017-18),13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Gandhinagara,13.098755,77.595283,exact,Gandhinagar
 Bangalore Urban,Yelahanka,Gandhinagara housing board colony,13.098755,77.595283,contains,Gandhinagar
 Bangalore Urban,Yelahanka,Gantiganahalli Village,13.144498,77.589087,exact,Gantiganahalli
 Bangalore Urban,Yelahanka,Gasthi Kempanahalli Village,13.090493,77.615050,exact,Gastikempanahalli
 Bangalore Urban,Yelahanka,Govindapura,13.034109,77.619803,exact,Govindapura
 Bangalore Urban,Yelahanka,Harohalli Village,13.130503,77.580460,exact,Harohalli
+Bangalore Urban,Yelahanka,Housing board colony B sector,13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,Jahnavi,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Jarakabandekaval survey no. 60 to,13.120380,77.547607,contains,Jarakabande Kaval
+Bangalore Urban,Yelahanka,Jayanna layout,13.100698,77.596345,near contains,Yelahanka
 Bangalore Urban,Yelahanka,Judicial Layout (Allalasandra/ Chikkabommasandra/Jakkuru Plantation),13.083769,77.586044,exact,Judicial Layout
+Bangalore Urban,Yelahanka,Kamakshamma Layout,13.100698,77.596345,near contains,Yelahanka
 Bangalore Urban,Yelahanka,Kanakanagara,13.037411,77.608206,exact,Kanaka Nagar
 Bangalore Urban,Yelahanka,Kempanahalli Village,13.111361,77.556996,exact,Kempanahalli
 Bangalore Urban,Yelahanka,Kenchenahalli Village,13.120012,77.584934,exact,Kenchenahalli
 Bangalore Urban,Yelahanka,Kogilu Main Road (from Kogilu Circle to Papayya layout),13.103973,77.616772,contains,Kogilu
 Bangalore Urban,Yelahanka,Kogilu Village,13.103973,77.616772,exact,Kogilu
+Bangalore Urban,Yelahanka,Koltepatil Raga,13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,Kondappa layout,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Kotebeedi,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Krishnaveni,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,L.B.S.Nagara,13.065738,77.640048,exact,LBS Nagar
+Bangalore Urban,Yelahanka,Lake mist,13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,Lakshmisagara Village,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,M.S.R Nagara (Marisonnappanagara),13.033310,77.566820,exact,MSR Nagar
+Bangalore Urban,Yelahanka,Mahaveer clover (Maruthi nagar),13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Maheshwari Nagara,13.100698,77.596345,near contains,Yelahanka
 Bangalore Urban,Yelahanka,Malleshwaram H.B.C.S,13.002735,77.570325,contains,Malleswaram
+Bangalore Urban,Yelahanka,Manavarthi Thota Layout,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Manchenahalli Village,13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,Mandalakunte Village,13.034109,77.619803,near exact,Govindapura
 Bangalore Urban,Yelahanka,Manjunatha nagara,12.993951,77.548053,fuzzy,Manjunath Nagar
 Bangalore Urban,Yelahanka,Maruthinagara,13.107620,77.607052,exact,Maruthi Nagara
 Bangalore Urban,Yelahanka,Maruthinagara housing co-operative society,13.107620,77.607052,contains,Maruthi Nagara
+Bangalore Urban,Yelahanka,Mathru layout and someshwara nagara,13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,Max worth meridian / Madura,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Mikasa Spanish Splendor,13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,Mittal Plam,13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,Muddenahalli Village,13.034109,77.619803,near exact,Govindapura
 Bangalore Urban,Yelahanka,Muneshwara layout,13.096841,77.540742,exact,Muneshwara Layout
 Bangalore Urban,Yelahanka,Nagadasanahalli Village,13.160135,77.578054,exact,Nagadasanahalli
 Bangalore Urban,Yelahanka,Neharu nagara,12.986963,77.575558,fuzzy,Nehru Nagar
+Bangalore Urban,Yelahanka,Nestate and Y.R.S Emporium BDA approved,13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,Old middle school,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Papayya layout,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Prithvinagara,13.034109,77.619803,near exact,Govindapura
 Bangalore Urban,Yelahanka,Puravankara namma Bangalore Nanna Koduge,12.976794,77.590082,contains,Bengaluru
 Bangalore Urban,Yelahanka,Puttenahalli Village,13.110425,77.580759,exact,Puttenahalli
+Bangalore Urban,Yelahanka,R.N.G Elite,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Ramagondanahalli Village,13.119647,77.558619,exact,Ramagondanahalli
+Bangalore Urban,Yelahanka,Ramanashri California,13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,SCST colony,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Sanitarycore,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Sapthagiri Layout,13.036805,77.496041,exact,Sapthagiri Layout
+Bangalore Urban,Yelahanka,Shankarappa layout,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Shantham sadan,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Sharadanagara Layout,13.094239,77.576394,exact,Sharadhanagar
 Bangalore Urban,Yelahanka,Shivanahalli Village,12.987922,77.546791,exact,Shivanahalli
+Bangalore Urban,Yelahanka,Shivashankari layout,13.100698,77.596345,near contains,Yelahanka
 Bangalore Urban,Yelahanka,Singanayakanahalli Village,13.147862,77.569321,exact,Singanayakanahalli
 Bangalore Urban,Yelahanka,Singanayakanahalli amanikere Village,13.147862,77.569321,contains,Singanayakanahalli
+Bangalore Urban,Yelahanka,Sonnappa Nagara,13.034109,77.619803,near exact,Govindapura
 Bangalore Urban,Yelahanka,Srinivasapura Village,13.106209,77.623901,exact,Srinivasapura
+Bangalore Urban,Yelahanka,Suggappa layout,13.100698,77.596345,near contains,Yelahanka
+Bangalore Urban,Yelahanka,Summer Bey,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Surabhi Layout,13.093037,77.600244,exact,Surabhi Layout
 Bangalore Urban,Yelahanka,Thirumenahalli Village,13.090179,77.633413,exact,Thirumenahalli
 Bangalore Urban,Yelahanka,Tirumala Nagara,13.098581,77.563789,exact,Tirumala Nagar
 Bangalore Urban,Yelahanka,"Triguna Palm Grove (CVC/143/18-19, 4/12/2019)",13.029504,77.637972,contains,Palm Grove
+Bangalore Urban,Yelahanka,U.A.S Layout,13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,Unica bella tattva A holic,13.034109,77.619803,near exact,Govindapura
+Bangalore Urban,Yelahanka,Unicon North Broks S,13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,Vaderapura Village,13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,Vasudevapura Village,13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,Vaswani Estates Dev Pvt Ltd,13.034109,77.619803,near exact,Govindapura
 Bangalore Urban,Yelahanka,Veerasagara Village,13.105075,77.553939,exact,Veerasagara
+Bangalore Urban,Yelahanka,Venkat Estate,13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Venkatala Village,13.112207,77.602648,exact,Venkatala
+Bangalore Urban,Yelahanka,Venkatappa layout,13.100698,77.596345,near contains,Yelahanka
 Bangalore Urban,Yelahanka,Vinayaka layout,13.113665,77.578019,exact,Vinayaka Layout
+Bangalore Urban,Yelahanka,Vini Vink Shastry Layout BDA,13.100698,77.596345,near contains,Yelahanka
 Bangalore Urban,Yelahanka,Vishwa Prakruthi/ Prakruthinagara,13.097897,77.615737,contains,Prakruthi Nagar
+Bangalore Urban,Yelahanka,Y.V.Narayanaswamappa Layout,13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,Yafa Squares,13.097804,77.581189,near contains,Yelahanka New Town
+Bangalore Urban,Yelahanka,Yediyurappa Nagara Hakkupatra Layout (New Add),13.097804,77.581189,near contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Yelahanka Amanikere Village,13.100698,77.596345,contains,Yelahanka
 Bangalore Urban,Yelahanka,Yelahanka New Town A sector,13.097804,77.581189,contains,Yelahanka New Town
 Bangalore Urban,Yelahanka,Yelahanka New Town A sector (for above 4000 Sq.ft sites measurement),13.097804,77.581189,contains,Yelahanka New Town

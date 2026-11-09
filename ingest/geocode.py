@@ -89,8 +89,10 @@ def main():
     areas = {}
     for f in sorted(glob.glob("data/guidance/*.csv")):
         for r in csv.DictReader(open(f, encoding="utf-8")):
-            areas[(r["district"], r["parent_name"], r["parent_level"], r["area_name"])] = (
-                r["area_level"], (r.get("name_kn") or "").replace(" ", ""))
+            key = (r["district"], r["parent_name"], r["parent_level"], r["area_name"])
+            prev = areas.get(key, ("", "", ""))
+            areas[key] = (r["area_level"], (r.get("name_kn") or "").replace(" ", ""),
+                          r.get("context") or prev[2])
 
     # Centre of each taluk / sub-registrar office: the OSM place of that name
     centres = {}
@@ -113,7 +115,28 @@ def main():
         if p["kn"]:
             by_kn[p["kn"]].append(p)
 
-    for (district, parent, plevel, name), (level, name_kn) in sorted(areas.items()):
+    def find(name, near, cand_keys, cand_idx, centre, radius):
+        """Exact, then fuzzy, then a place named inside the name. Returns (place, method)."""
+        key = norm(name)
+        exact = [p for p in by_key.get(key, []) if km(p["pt"], centre) <= radius]
+        if exact:
+            return min(exact, key=lambda p: km(p["pt"], centre)), "exact"
+        best = process.extractOne(key, cand_keys, scorer=fuzz.ratio, score_cutoff=FUZZY_MIN) if key else None
+        if best and best[0][:1] == key[:1]:
+            return near[cand_idx[best[2]]], "fuzzy"
+        words = re.sub(r"\(.*?(\)|$)", " ", name)
+        words = re.sub(r"[^A-Za-z0-9 ]", " ", words).split()
+        for n in range(min(4, len(words)), 0, -1):
+            for i in range(len(words) - n + 1):
+                k = norm(" ".join(words[i:i + n]))
+                if len(k) < 6:
+                    continue
+                hits = [p for p in by_key.get(k, []) if km(p["pt"], centre) <= radius]
+                if hits:
+                    return min(hits, key=lambda p: km(p["pt"], centre)), "contains"
+        return None, None
+
+    for (district, parent, plevel, name), (level, name_kn, ctx) in sorted(areas.items()):
         centre = centres[parent]
         radius = RADIUS_KM.get(plevel, 25) * (2 if centre == BANGALORE else 1)
         if parent not in nearby:
@@ -156,6 +179,11 @@ def main():
                         break
                 if found:
                     pick, method = found, "contains"
+        if not pick and ctx and ctx != name:
+            # listed under a locality heading: put it at that locality
+            pick, m = find(ctx, near, cand_keys, cand_idx, centre, radius)
+            if pick:
+                method = "near " + m
         how[method or "not found"] += 1
         if pick:
             out.append({"district": district, "parent_name": parent, "area_name": name,

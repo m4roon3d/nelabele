@@ -166,6 +166,7 @@ def main():
     seen = set()
     groups = {}            # (taluk, locality, type) -> [(rate, page)]
     heading = {}           # taluk -> current locality heading (city mode)
+    context = {}           # (taluk, area) -> the heading it was listed under, a map-location hint
 
     def slot_values(body, name):
         """Site and apartment values from the two columns after the name."""
@@ -244,6 +245,8 @@ def main():
                         continue
                     if site is not None and site >= 1000:
                         target = group if group and (ROADLIKE.search(name) or SUB_ROW.search(name)) else name
+                        if group and target == name:
+                            context[(taluk, name)] = group
                         groups.setdefault((taluk, target, "plot"), []).append((site, page))
                     if apt is not None and apt >= 1000:
                         target = group or name
@@ -276,6 +279,7 @@ def main():
                 seen.add(key)
                 out.append({
                     "district": args.district, "area_name": name, "name_kn": name_kn, "area_level": level,
+                    "context": heading.get(taluk, "") if args.mode == "city" else "",
                     "parent_name": taluk, "parent_level": args.parent_level,
                     "property_type": ptype, "approval_status": "",
                     "rate": f"{rate:.0f}", "unit": unit,
@@ -298,6 +302,7 @@ def main():
         rates = sorted(v for v, _ in vals)
         out.append({
             "district": args.district, "area_name": area, "name_kn": "", "area_level": "locality",
+            "context": context.get((taluk, area), ""),
             "parent_name": taluk, "parent_level": args.parent_level,
             "property_type": ptype, "approval_status": "",
             "rate": f"{statistics.median(rates):.0f}", "unit": "sqm",
@@ -306,7 +311,7 @@ def main():
         })
 
     fields = ["district", "area_name", "name_kn", "area_level", "parent_name", "parent_level",
-              "property_type", "approval_status", "rate", "unit", "source_ref"]
+              "property_type", "approval_status", "rate", "unit", "source_ref", "context"]
     with open(args.out_csv, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()

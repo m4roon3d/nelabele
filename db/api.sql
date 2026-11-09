@@ -19,6 +19,7 @@ DROP FUNCTION IF EXISTS nelabele.search_area(text);
 DROP VIEW IF EXISTS nelabele.api_rate;
 DROP VIEW IF EXISTS nelabele.api_area;
 DROP FUNCTION IF EXISTS public.add_market_rate(bigint, text, numeric, text, date, text, text, text);
+DROP FUNCTION IF EXISTS public.add_market_rate(bigint, text, numeric, text, date, text, text, text, double precision, double precision);
 DROP FUNCTION IF EXISTS public.area_at(double precision, double precision);
 DROP FUNCTION IF EXISTS public.search_area(text);
 DROP VIEW IF EXISTS public.api_rate;
@@ -68,6 +69,7 @@ $$;
 -- Log a market rate seen for an area (POST /rpc/add_market_rate).
 -- Editor token only. Checks every value, records who entered it, and
 -- refreshes the rate summary so the new range shows straight away.
+-- An optional lat/lon (a pin dropped in the app) puts the area on the map.
 CREATE FUNCTION public.add_market_rate(
   area_id bigint,
   property_type text,
@@ -76,7 +78,9 @@ CREATE FUNCTION public.add_market_rate(
   observed_on date DEFAULT current_date,
   approval_status text DEFAULT 'unknown',
   source text DEFAULT 'manual',
-  note text DEFAULT NULL
+  note text DEFAULT NULL,
+  lat double precision DEFAULT NULL,
+  lon double precision DEFAULT NULL
 )
 RETURNS json
 LANGUAGE plpgsql VOLATILE SECURITY DEFINER SET search_path = nelabele, public AS $$
@@ -98,6 +102,15 @@ BEGIN
     RAISE EXCEPTION 'Source must be manual or listing' USING ERRCODE = '22023';
   END IF;
   SELECT id INTO src FROM nelabele.source s WHERE s.code = add_market_rate.source;
+  IF (lat IS NULL) <> (lon IS NULL) OR lat NOT BETWEEN 11.5 AND 14.5 OR lon NOT BETWEEN 76 AND 79 THEN
+    RAISE EXCEPTION 'Location must be a point in or around Bengaluru' USING ERRCODE = '22023';
+  END IF;
+  IF lat IS NOT NULL THEN
+    UPDATE geo_area
+       SET point = ST_SetSRID(ST_MakePoint(add_market_rate.lon, add_market_rate.lat), 4326),
+           point_source = 'pin:' || who
+     WHERE id = area_id;
+  END IF;
 
   INSERT INTO rate_observation (geo_area_id, property_type, approval_status, source_id,
                                 raw_rate, raw_unit, observed_on, source_ref, batch_id, entered_by)
@@ -106,7 +119,8 @@ BEGIN
   RETURNING id INTO new_id;
 
   REFRESH MATERIALIZED VIEW nelabele.rate_summary;
-  RETURN json_build_object('id', new_id, 'area_id', area_id, 'property_type', property_type);
+  RETURN json_build_object('id', new_id, 'area_id', area_id, 'property_type', property_type,
+                           'located', lat IS NOT NULL);
 EXCEPTION
   WHEN invalid_text_representation THEN
     RAISE EXCEPTION 'Unknown property type, unit or approval status' USING ERRCODE = '22023';
@@ -115,7 +129,7 @@ END $$;
 -- Functions are executable by everyone by default; limit them to the API roles
 REVOKE EXECUTE ON FUNCTION public.area_at(double precision, double precision),
                            public.search_area(text),
-                           public.add_market_rate(bigint, text, numeric, text, date, text, text, text)
+                           public.add_market_rate(bigint, text, numeric, text, date, text, text, text, double precision, double precision)
   FROM PUBLIC;
 
 DO $$
@@ -137,7 +151,7 @@ BEGIN
     GRANT SELECT ON public.api_area, public.api_rate TO authenticated;
     GRANT EXECUTE ON FUNCTION public.area_at(double precision, double precision),
                               public.search_area(text),
-                              public.add_market_rate(bigint, text, numeric, text, date, text, text, text)
+                              public.add_market_rate(bigint, text, numeric, text, date, text, text, text, double precision, double precision)
       TO authenticated;
     REVOKE ALL ON ALL TABLES IN SCHEMA nelabele FROM authenticated;
     REVOKE USAGE ON SCHEMA nelabele FROM authenticated;

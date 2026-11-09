@@ -105,6 +105,8 @@ class NelaBeleApi {
     required String source,
     String approvalStatus = 'unknown',
     String? note,
+    double? lat,
+    double? lon,
   }) async {
     final uri = Uri.parse('$_baseUrl/rpc/add_market_rate');
     final body = jsonEncode({
@@ -116,6 +118,8 @@ class NelaBeleApi {
       'approval_status': approvalStatus,
       'source': source,
       if (note != null && note.trim().isNotEmpty) 'note': note.trim(),
+      if (lat != null && lon != null) 'lat': lat,
+      if (lat != null && lon != null) 'lon': lon,
     });
     final http.Response res;
     try {
