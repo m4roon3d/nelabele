@@ -7,3 +7,5 @@ __pycache__/
 pdfs/
 raw/
 *.pdf
+# editor tokens are private
+*token*.txt

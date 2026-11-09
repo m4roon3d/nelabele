@@ -15,7 +15,9 @@ jobs:
           token=$(jq -r .app_token config/data_api.json)
           for path in \
             "api_rate?limit=3&select=area_name,property_type,guidance_rate" \
-            "rpc/search_area?q=Hoskote&select=name,level&limit=2"; do
+            "rpc/search_area?q=Hoskote&select=name,level&limit=2" \
+            "api_rate?area_name=eq.Jayanagar%204th%20Block&select=area_name,parent_name,property_type,guidance_rate,lat,lon" \
+            "api_rate?select=district,lat&lat=not.is.null&limit=1&district=eq.Bangalore%20Urban"; do
             echo "GET /$path"
             code=$(curl -sS -o body.json -w '%{http_code}' -H "Authorization: Bearer $token" "$url/$path")
             cat body.json; echo; echo "HTTP $code"; echo
@@ -23,6 +25,10 @@ jobs:
           done
           echo "Without a token (should be refused):"
           curl -sS -o /dev/null -w 'HTTP %{http_code}\n' "$url/api_rate?limit=1"
+          echo "Logging a market rate with the public token (should be refused):"
+          curl -sS -o /dev/null -w 'HTTP %{http_code}\n' -X POST -H "Authorization: Bearer $token" \
+            -H "Content-Type: application/json" -d '{"area_id":1,"property_type":"plot","rate":1,"unit":"sqft"}' \
+            "$url/rpc/add_market_rate"
           echo "Raw table (should be refused):"
           curl -sS -H "Authorization: Bearer $token" "$url/geo_area?limit=1"; echo
           [ -z "$failed" ]

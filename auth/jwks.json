@@ -7,6 +7,14 @@
       "kid": "nelabele-20261109",
       "n": "yYqxPHbbwljQ211Dku4jpjThVku_PnHGDo4GT1R09dsMXPmAulpErfLTs0fEtRBhhnQMhbbikkBiw2ouXiuIhGK1uJUETGTGiU8zLRrEzLIwYg07W-MfNUZ8QOEqaxkhyCP_eEoA-VreCAHRmaZztUYoP_4EEnCdazJGlc7ZyiuksDqdFvI2woOeaBIeMh1S8jTbi9XWXpy5NkCZHWy1WB3qxyOXypXaZUR3vTWaaFiQJXhhqzMyD48qhQX3U2b9QTwXwsHYlgtj76s2_yeBesyRskYQxAGq-4Be_SB7x5GfA2-933feTvJdVTT13jXNEln00JXB7A7EiXRkPga41Q",
       "e": "AQAB"
+    },
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "alg": "RS256",
+      "kid": "nelabele-authenticated-20261109-3a3a0b",
+      "n": "xAszcZEDRYoiVvmSOuaotyPj9kLfrncLGc83KHWk-ZI4iExvvv4UMtPPocnzkfkm8oQzSy2fNE7xE4UWVhMLpUgttgtH-AXE_Ubb-VL444fZsXudedHPg3DvOpcqDFbROaotyY2_or3oZYSlCAVzsbs2zFxsgKNznzHIFFpnrJ-4FcIrNhFDpcyWAmw35g1U6IWYTzG4RL6S5bMlLfNmx78bXL_RyTPzH5yAqcr1sT_9aAy11iiqFoe9L4S14u_h3healfbgF6jI4QZtnhAe4jJboMYg7RxbDfS2-WP9BWwkrYSwd1GwL1jaJqM8Z775FzsHfvrb9KR6NF6UY4vpcQ",
+      "e": "AQAB"
     }
   ]
 }

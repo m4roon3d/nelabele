@@ -1,23 +1,31 @@
 """
-NelaBele – create the app's read-only key for the Neon Data API.
+NelaBele – create tokens for the Neon Data API.
 
 Neon's Data API only accepts requests that carry a signed token. This makes
-a fresh signing key pair, publishes the public half as auth/jwks.json (Neon
-checks tokens against it), and prints a long-lived token for the app.
+a fresh signing key pair, adds its public half to auth/jwks.json (Neon
+checks tokens against it), and prints a token.
 
-The token only maps to the 'anonymous' database role, which can do nothing
-but read the public api_* views and lookups. It ships inside the app, so
-treat it as public. The private key is never saved: to rotate, run this
-again, commit the new jwks.json and update the app's token.
+Two kinds of token:
+
+  --role anonymous      the app's read-only token. Ships inside the app, so
+                        treat it as public. It can only read the api_* views.
+  --role authenticated  an editor token for logging market rates. Keep it
+                        private: anyone holding it can add rates.
+
+Keys already in jwks.json are kept, so existing tokens keep working. The
+private key is never saved. To revoke a token, delete its key (matched by
+the token's "kid") from jwks.json and push.
 
 Usage:
   pip install pyjwt cryptography
-  python auth/make_app_token.py [--years 5]
+  python auth/make_app_token.py --role anonymous [--years 5]
+  python auth/make_app_token.py --role authenticated --subject ramanaa [--years 2]
 """
 
 import argparse
 import base64
 import json
+import secrets
 import time
 from pathlib import Path
 
@@ -35,26 +43,30 @@ def b64url(n):
 
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--role", choices=["anonymous", "authenticated"], default="anonymous")
+    ap.add_argument("--subject", default="nelabele-app", help="who the token is for")
     ap.add_argument("--years", type=int, default=5, help="token lifetime")
     args = ap.parse_args()
 
     key = rsa.generate_private_key(public_exponent=65537, key_size=2048)
     pub = key.public_key().public_numbers()
-    kid = f"nelabele-{time.strftime('%Y%m%d')}"
+    kid = f"nelabele-{args.role}-{time.strftime('%Y%m%d')}-{secrets.token_hex(3)}"
 
-    jwks = {"keys": [{"kty": "RSA", "use": "sig", "alg": "RS256", "kid": kid,
-                      "n": b64url(pub.n), "e": b64url(pub.e)}]}
-    out = Path(__file__).with_name("jwks.json")
-    out.write_text(json.dumps(jwks, indent=2) + "\n")
+    path = Path(__file__).with_name("jwks.json")
+    jwks = json.loads(path.read_text()) if path.exists() else {"keys": []}
+    jwks["keys"].append({"kty": "RSA", "use": "sig", "alg": "RS256", "kid": kid,
+                         "n": b64url(pub.n), "e": b64url(pub.e)})
+    path.write_text(json.dumps(jwks, indent=2) + "\n")
 
     now = int(time.time())
     token = jwt.encode(
-        {"role": "anonymous", "iss": ISSUER, "aud": AUDIENCE, "sub": "nelabele-app",
+        {"role": args.role, "iss": ISSUER, "aud": AUDIENCE, "sub": args.subject,
          "iat": now, "exp": now + args.years * 365 * 24 * 3600},
         key, algorithm="RS256", headers={"kid": kid},
     )
-    print(f"Wrote {out}")
-    print(f"Issuer: {ISSUER}\nAudience: {AUDIENCE}\n\nApp token:\n{token}")
+    print(f"Added key {kid} to {path} ({len(jwks['keys'])} keys) – commit and push it")
+    print(f"Role: {args.role}  Subject: {args.subject}  Valid for {args.years} years\n")
+    print(token)
 
 
 if __name__ == "__main__":

@@ -1,11 +1,11 @@
-name: Load guidance values
+name: Load data
 
 on:
   workflow_dispatch:
     inputs:
       file:
-        description: Parsed guidance CSV to load
-        default: data/guidance/bengaluru_rural_2023.csv
+        description: Parsed guidance CSV to load, or "all" for every file in data/guidance
+        default: all
       effective_date:
         description: Date the guidance values took effect (YYYY-MM-DD)
         default: "2023-10-01"
@@ -41,10 +41,22 @@ jobs:
             psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/nelabele_schema.sql
           fi
 
+      - name: Apply schema updates
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/migrate.sql
+
       - name: Apply the Data API layer
         run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f db/api.sql
 
       - name: Load guidance values
+        env:
+          FILE: ${{ inputs.file || 'all' }}
+          EFFECTIVE: ${{ inputs.effective_date || '2023-10-01' }}
         run: |
-          python ingest/load_guidance.py "${{ inputs.file }}" \
-            --effective-date "${{ inputs.effective_date }}"
+          if [ "$FILE" = all ]; then files=(data/guidance/*.csv); else files=("$FILE"); fi
+          for f in "${files[@]}"; do
+            echo "== $f"
+            python ingest/load_guidance.py "$f" --effective-date "$EFFECTIVE"
+          done
+
+      - name: Put areas on the map
+        run: python ingest/load_points.py data/geo/area_points.csv

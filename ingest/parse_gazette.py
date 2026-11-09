@@ -13,6 +13,12 @@ of their numbers:
   2 numbers  town area: site and apartment (₹ per sq m)
   1 number   town area: site (₹ per sq m), or apartment if the name says so
 
+City gazettes (--mode city) list roads under block or locality headings,
+with a site rate and an apartment rate (₹ per sq m) in fixed columns. Road
+rows are rolled up into their heading (median), apartment complexes too, so
+each locality gets one plot and one apartment rate. Commercial and
+industrial rates are skipped. Rows with 3+ numbers are villages, as above.
+
 Stored per area:
   agricultural_land – dry land rate (the base rate), per acre
   plot              – approved-layout site rate, else gramathana site rate
@@ -28,6 +34,7 @@ Usage:
 import argparse
 import csv
 import re
+import statistics
 import sys
 from collections import Counter
 
@@ -36,13 +43,24 @@ ENGLISH_RUN = re.compile(r"[A-Za-z0-9][A-Za-z0-9 .,()/&'+:-]*[A-Za-z)]")
 SUB_ROW = re.compile(r"\bSY\.?\s*NOS?\b|ADJACENT|ABBET|ABUTT|RESIDENTIAL OTHER|^[A-C]\)", re.I)
 FRONTAGE = re.compile(r"\bNH\b|\bN\.?\s?H\b|\bSH\b|HIGHWAY|\bROAD\b|\bRD\b|\bMAIN\b", re.I)
 APARTMENT = re.compile(r"APARTMENT|RESIDENCY|RESIDENCE|HEIGHTS|TOWERS?\b|FLATS?\b", re.I)
+ROADLIKE = re.compile(r"\b(road|rd|cross|main|street|st|lane|circle|avenue|marg|beedi|others?)\b|^[(\d]", re.I)
+PROJECT = re.compile(r"apartment|\bapts?\b|residency|enclave|heights|towers?\b|\bpid\b|khata|katha|villas?\b|"
+                     r"projects?\b|infrastructure|developers|builders|\bphase\b|\bsite no|\b0\d\d-|w0\d", re.I)
+APT_HINT = re.compile(r"apartment|\bapts?\b|flats?\b|residency|towers?\b|heights", re.I)
+NOT_RESIDENTIAL = re.compile(r"commercial|industrial|kiadb|office space", re.I)
 HEADER_WORDS = re.compile(r"^(village|area|road|name|hobli|ward|sl|no|property|id|division|block|sy|[/ .])+$", re.I)
+
+
+CID = re.compile(r"\(cid:\d+\)")
+# Plausible ₹ per sq m for city rows; anything outside is a misread column
+CITY_BOUNDS = {"plot": (3000, 600000), "apartment": (15000, 400000)}
 
 
 def english_name(cells):
     """Longest run of plain English text in the row, ignoring legacy-font junk."""
     best = ""
     for c in cells:
+        c = CID.sub(" ", c)
         if NUMBER.match(c):
             continue
         for m in ENGLISH_RUN.finditer(c):
@@ -57,6 +75,8 @@ def english_name(cells):
             if letters >= 4 and len(run) > len(best):
                 best = run
     best = re.sub(r"\s+", " ", best)
+    if "cid:" in best:
+        return ""
     if not best or HEADER_WORDS.match(best):
         return ""
     return best.title() if best.isupper() else best
@@ -106,6 +126,10 @@ def main():
     ap.add_argument("--district", required=True, choices=["Bangalore Urban", "Bangalore Rural"])
     ap.add_argument("--section", action="append", required=True,
                     help="page range and taluk/SRO, e.g. 12-68:Nelamangala")
+    ap.add_argument("--parent-level", default="taluk",
+                    help="level of the --section areas: taluk (rural SROs) or zone (city SROs)")
+    ap.add_argument("--mode", choices=["rural", "city"], default="rural",
+                    help="city: roll road rows up into their locality heading")
     ap.add_argument("--skipped", help="optional CSV listing skipped rows for review")
     args = ap.parse_args()
 
@@ -123,6 +147,22 @@ def main():
 
     out, skipped, reasons = [], [], Counter()
     seen = set()
+    groups = {}            # (taluk, locality, type) -> [(rate, page)]
+    heading = {}           # taluk -> current locality heading (city mode)
+
+    def slot_values(body, name):
+        """Site and apartment values from the two columns after the name."""
+        key = name.lower()[:12]
+        idx = next((i for i, c in enumerate(body) if key and key in c.lower()), None)
+        if idx is None:
+            return None
+        vals = []
+        for c in body[idx + 1:idx + 3]:
+            c = c.strip()
+            vals.append(float(c.replace(",", "")) if NUMBER.match(c) and float(c.replace(",", "")) > 0 else None)
+        while len(vals) < 2:
+            vals.append(None)
+        return vals
     with open(args.raw_csv, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
         next(reader)
@@ -130,7 +170,15 @@ def main():
             page = int(row[0])
             taluk = taluk_for(page)
             cells = [c.strip() for c in row[2:]]
-            if taluk is None or not cells or not cells[0].isdigit():
+            if taluk is None or not cells:
+                continue
+            if args.mode == "city" and not cells[0].isdigit():
+                h = english_name(cells[1:])
+                if (h and not numbers(cells[1:]) and not PROJECT.search(h) and not ROADLIKE.search(h)
+                        and not re.search(r"village|area name|hobli|apt|flat|layout road", h, re.I)):
+                    heading[taluk] = h
+                continue
+            if not cells[0].isdigit():
                 continue
             body = cells[1:]
             name = english_name(body)
@@ -138,12 +186,52 @@ def main():
                 reasons["no English name"] += 1
                 skipped.append([page, "no English name"] + body)
                 continue
-            result = classify(name, numbers(body))
+            nums = numbers(body)
+            if args.mode == "city" and len(nums) < 3:
+                if NOT_RESIDENTIAL.search(name):
+                    reasons["commercial/industrial"] += 1
+                    continue
+                slots = slot_values(body, name)
+                if slots and any(v is not None for v in slots):
+                    site, apt = slots
+                    group = heading.get(taluk)
+                    if PROJECT.search(name):
+                        # a named project or a khata/PID entry: only useful rolled into its locality
+                        if not group:
+                            reasons["project with no locality heading"] += 1
+                            continue
+                        vals = [v for v in (site, apt) if v is not None and v >= 1000]
+                        if vals:
+                            ptype = "apartment" if (APT_HINT.search(name) or apt is not None) else "plot"
+                            groups.setdefault((taluk, group, ptype), []).append((vals[-1], page))
+                        continue
+                    if site is not None and site >= 1000:
+                        target = group if group and (ROADLIKE.search(name) or SUB_ROW.search(name)) else name
+                        groups.setdefault((taluk, target, "plot"), []).append((site, page))
+                    if apt is not None and apt >= 1000:
+                        target = group or name
+                        groups.setdefault((taluk, target, "apartment"), []).append((apt, page))
+                    continue
+            result = classify(name, nums)
+            if args.mode == "city" and not isinstance(result, str) and PROJECT.search(name):
+                group = heading.get(taluk)
+                if not group:
+                    reasons["project with no locality heading"] += 1
+                    continue
+                for ptype, rate, unit, _ in result:
+                    if unit == "sqm":
+                        groups.setdefault((taluk, group, ptype), []).append((rate, page))
+                continue
             if isinstance(result, str):
                 reasons[result] += 1
                 skipped.append([page, result, name] + body)
                 continue
             for ptype, rate, unit, level in result:
+                if args.mode == "city" and unit == "sqm":
+                    lo, hi = CITY_BOUNDS.get(ptype, (0, float("inf")))
+                    if not lo <= rate <= hi:
+                        reasons["implausible value"] += 1
+                        continue
                 key = (taluk, name.lower(), ptype)
                 if key in seen:  # repeated listing: keep the first, which is the main row
                     reasons["duplicate"] += 1
@@ -151,11 +239,34 @@ def main():
                 seen.add(key)
                 out.append({
                     "district": args.district, "area_name": name, "area_level": level,
-                    "parent_name": taluk, "parent_level": "taluk",
+                    "parent_name": taluk, "parent_level": args.parent_level,
                     "property_type": ptype, "approval_status": "",
                     "rate": f"{rate:.0f}", "unit": unit,
                     "source_ref": f"{taluk} SRO gazette p.{page}",
                 })
+
+    for (taluk, area, ptype), vals in groups.items():
+        lo, hi = CITY_BOUNDS.get(ptype, (0, float("inf")))
+        kept = [(v, p) for v, p in vals if lo <= v <= hi]
+        if len(kept) < len(vals):
+            reasons["implausible value"] += len(vals) - len(kept)
+        if not kept:
+            continue
+        vals = kept
+        key = (taluk, area.lower(), ptype)
+        if key in seen:
+            reasons["duplicate"] += 1
+            continue
+        seen.add(key)
+        rates = sorted(v for v, _ in vals)
+        out.append({
+            "district": args.district, "area_name": area, "area_level": "locality",
+            "parent_name": taluk, "parent_level": args.parent_level,
+            "property_type": ptype, "approval_status": "",
+            "rate": f"{statistics.median(rates):.0f}", "unit": "sqm",
+            "source_ref": f"{taluk} SRO gazette p.{vals[0][1]}"
+                          + (f" (median of {len(rates)})" if len(rates) > 1 else ""),
+        })
 
     fields = ["district", "area_name", "area_level", "parent_name", "parent_level",
               "property_type", "approval_status", "rate", "unit", "source_ref"]
