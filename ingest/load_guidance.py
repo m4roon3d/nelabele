@@ -25,8 +25,8 @@ from pathlib import Path
 import psycopg
 
 REQUIRED = ["district", "area_name", "area_level", "property_type", "rate", "unit"]
-OPTIONAL = ["parent_name", "parent_level", "approval_status", "source_ref"]
-DISTRICTS = {"Bangalore Urban", "Bangalore Rural"}
+OPTIONAL = ["parent_name", "parent_level", "approval_status", "source_ref", "name_kn"]
+DISTRICTS = {"Bangalore Urban", "Bangalore Rural", "Ramanagara"}
 SIMILAR = 0.85  # name similarity above which a new area looks like an existing one
 
 
@@ -102,8 +102,9 @@ class AreaResolver:
     def get(self, district, level, name, parent_id=None):
         return self.index[(district, level, parent_id, name.lower())]
 
-    def ensure(self, wanted):
+    def ensure(self, wanted, kannada=None):
         """Create any of (district, level, name, parent_id) that don't exist yet."""
+        kannada = kannada or {}
         missing = {}
         for district, level, name, parent_id in wanted:
             key = (district, level, parent_id, name.lower())
@@ -119,12 +120,13 @@ class AreaResolver:
                     f"new {level} '{name}' looks like existing '{near[0]}' "
                     f"– if same place, add '{name}' to that area's aliases and re-run"
                 )
-        cols = list(zip(*missing.values()))
+        cols = [list(c) for c in zip(*missing.values())]
+        cols.append([kannada.get(k) or None for k in missing])
         self.cur.execute(
-            """INSERT INTO nelabele.geo_area (district, level, name, parent_id)
-               SELECT * FROM unnest(%s::text[], %s::nelabele.geo_level[], %s::text[], %s::bigint[])
+            """INSERT INTO nelabele.geo_area (district, level, name, parent_id, name_kn)
+               SELECT * FROM unnest(%s::text[], %s::nelabele.geo_level[], %s::text[], %s::bigint[], %s::text[])
                RETURNING id, district, level::text, parent_id, name""",
-            [list(c) for c in cols],
+            cols,
         )
         for area_id, district, level, parent_id, name in self.cur.fetchall():
             self.index[(district, level, parent_id, name.lower())] = area_id
@@ -170,7 +172,9 @@ def main():
                 r["parent_id"] = (areas.get(r["district"], r["parent_level"], r["parent_name"])
                                   if r["parent_name"] else None)
             areas.ensure({(r["district"], r["area_level"], r["area_name"], r["parent_id"])
-                          for r in rows})
+                          for r in rows},
+                         kannada={(r["district"], r["area_level"], r["parent_id"], r["area_name"].lower()): r["name_kn"]
+                                  for r in rows if r.get("name_kn")})
 
             data = []
             for r in rows:

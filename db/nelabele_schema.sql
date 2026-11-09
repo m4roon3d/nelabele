@@ -38,7 +38,7 @@ CREATE TABLE geo_area (
   name_kn     text,                              -- Kannada name
   level       geo_level   NOT NULL,
   parent_id   bigint REFERENCES geo_area(id),
-  district    text        NOT NULL CHECK (district IN ('Bangalore Urban', 'Bangalore Rural')),
+  district    text        NOT NULL CHECK (district IN ('Bangalore Urban', 'Bangalore Rural', 'Ramanagara')),
   aliases     text[]      NOT NULL DEFAULT '{}', -- spellings: "Yelahanka", "Yalahanka"
   boundary    geometry(MultiPolygon, 4326),
   centroid    geometry(Point, 4326)

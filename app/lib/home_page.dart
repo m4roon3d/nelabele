@@ -7,7 +7,7 @@ import 'area_sheet.dart';
 import 'format.dart';
 import 'models.dart';
 
-const _districts = ['Bangalore Urban', 'Bangalore Rural'];
+const _districts = ['Bangalore Urban', 'Bangalore Rural', 'Ramanagara'];
 const _types = ['plot', 'agricultural_land', 'apartment'];
 
 /// Searchable list of places and their rates.

@@ -59,6 +59,7 @@ Bangalore Rural,Devanahalli,Defence Colony,12.976171,77.643531,exact,Defence Col
 Bangalore Rural,Devanahalli,Dev-in Contractor Mallappa enclave,13.027073,77.651152,contains,Malappa Layout
 Bangalore Rural,Devanahalli,Devaganahalli,13.253140,77.648530,exact,Devaganahalli
 Bangalore Rural,Devanahalli,Devanahalli,13.248350,77.713438,exact,Devanahalli
+Bangalore Rural,Devanahalli,Devanahalli Town,13.248350,77.713438,contains,Devanahalli
 Bangalore Rural,Devanahalli,Devanahalli Vijayapura Road Layout,13.248350,77.713438,contains,Devanahalli
 Bangalore Rural,Devanahalli,Devanayakanahlli,13.175462,77.771856,fuzzy,Devanayakanahalli
 Bangalore Rural,Devanahalli,Devenahalli,13.282717,77.703470,exact,Devenahalli
@@ -231,6 +232,7 @@ Bangalore Rural,Doddaballapur,Chilenahalli,13.363357,77.460459,exact,Chilenahall
 Bangalore Rural,Doddaballapur,Chokkanahalli,13.085079,77.626354,exact,Chokkanahalli
 Bangalore Rural,Doddaballapur,Dadighattamadagu,13.447773,77.366573,fuzzy,Dadagattamadagu
 Bangalore Rural,Doddaballapur,Dargajogihalli,13.296651,77.531774,exact,Dargajogihalli
+Bangalore Rural,Doddaballapur,Doddaballapur Town,13.292958,77.543146,contains,Doddaballapura
 Bangalore Rural,Doddaballapur,Doddabelavangala,13.288880,77.421575,exact,Doddabelavangala
 Bangalore Rural,Doddaballapur,Doddahejjaji,13.270818,77.415237,exact,Doddahejjaji
 Bangalore Rural,Doddaballapur,Doddarayappanahalli,13.376051,77.636702,exact,Doddarayappanahalli
@@ -434,7 +436,7 @@ Bangalore Rural,Hoskote,Bagalur,13.133187,77.668709,exact,Bagaluru
 Bangalore Rural,Hoskote,Bagalur Hithaishi IFB,13.133187,77.668709,contains,Bagaluru
 Bangalore Rural,Hoskote,Bagalur Indutrial area,13.133187,77.668709,contains,Bagaluru
 Bangalore Rural,Hoskote,Baguru,12.896645,77.841680,exact,Baguru
-Bangalore Rural,Hoskote,"Balaji gold city ( 96/3, 96/7, 118/2, 118/5 (old No 118/2, 119D",12.963556,77.734294,contains,Balaji Layout
+Bangalore Rural,Hoskote,Balaji gold city,12.963556,77.734294,contains,Balaji Layout
 Bangalore Rural,Hoskote,Balaji golden City,12.963556,77.734294,contains,Balaji Layout
 Bangalore Rural,Hoskote,Balenahalli,13.199253,77.848874,exact,Balenahalli
 Bangalore Rural,Hoskote,Banahalli,13.214126,77.911947,exact,Banahalli
@@ -490,7 +492,7 @@ Bangalore Rural,Hoskote,Dalasagere,13.241693,77.956512,exact,Dalasagere
 Bangalore Rural,Hoskote,Dandupalya,13.074589,77.811462,exact,Dandupalya
 Bangalore Rural,Hoskote,Dandupalya (Chennai,13.074589,77.811462,exact,Dandupalya
 Bangalore Rural,Hoskote,Dandupalya (NH207 ),13.074589,77.811462,exact,Dandupalya
-Bangalore Rural,Hoskote,"Dandupalya Anugraha milana S No 16/2, 171/2, 171/3, 171/10, 172, 173, 174, 175/1, 175/2, 175/3 A, 175/3B",13.074589,77.811462,contains,Dandupalya
+Bangalore Rural,Hoskote,Dandupalya Anugraha milana,13.074589,77.811462,contains,Dandupalya
 Bangalore Rural,Hoskote,Dandupalya SH Attached,13.074589,77.811462,contains,Dandupalya
 Bangalore Rural,Hoskote,Dandupalya Siddharthnagara,13.074589,77.811462,contains,Dandupalya
 Bangalore Rural,Hoskote,Dandupalya road,13.074589,77.811462,contains,Dandupalya
@@ -549,7 +551,7 @@ Bangalore Rural,Hoskote,Honachanahalli,13.019088,77.854753,exact,Honachanahalli
 Bangalore Rural,Hoskote,Hosahalli E,12.969069,77.542780,fuzzy,Hosahalli
 Bangalore Rural,Hoskote,Hosahalli N,12.969069,77.542780,fuzzy,Hosahalli
 Bangalore Rural,Hoskote,Hosakote,13.073014,77.792138,fuzzy,Hoskote
-Bangalore Rural,Hoskote,"Hoskote Town M. V Extenction, Satya Sai Royal Gardan Layout (BMRDA) Sserve No 197/3, 197/6, 198/1, 198/2, 198/3, 198/4, 198/5, 199/1, 201, 203/1A1, 201/1A6, 201/1A7, 201/1A8, 201/1A10, 201/1A11, 201/1A12, 201/1A",13.073014,77.792138,contains,Hoskote
+Bangalore Rural,Hoskote,Hoskote Town M. V Extenction,13.073014,77.792138,contains,Hoskote
 Bangalore Rural,Hoskote,Hoskote Venkatadri Layout S. No,13.073014,77.792138,contains,Hoskote
 Bangalore Rural,Hoskote,Huluvanahalli,13.165177,77.922097,exact,Huluvanahalli
 Bangalore Rural,Hoskote,Indutrial area Dandupalya,13.074589,77.811462,contains,Dandupalya
@@ -951,7 +953,9 @@ Bangalore Urban,BTM Layout,old Madiwala Village,12.923815,77.617629,contains,Mad
 Bangalore Urban,Banashankari,AGS Layout,12.912765,77.534050,exact,AGS Layout
 Bangalore Urban,Banashankari,Avalahalli,12.943746,77.540204,exact,Avalahalli
 Bangalore Urban,Banashankari,Avalahalli/ Telecom Layout,12.965528,77.546705,contains,Telecom Layout
+Bangalore Urban,Banashankari,Avalahalli/ Telecom Layout Main Road,12.965528,77.546705,contains,Telecom Layout
 Bangalore Urban,Banashankari,Banashankari 5th Stage,12.884924,77.515485,fuzzy,Banashankari 6th Stage
+Bangalore Urban,Banashankari,Banashankari 6th Stage,12.884924,77.515485,exact,Banashankari 6th Stage
 Bangalore Urban,Banashankari,Banashankari 6th Stage (11th Block),12.884924,77.515485,exact,Banashankari 6th Stage
 Bangalore Urban,Banashankari,Banashankari 6th Stage (5th Block),12.884924,77.515485,exact,Banashankari 6th Stage
 Bangalore Urban,Banashankari,Banashankari 6th Stage (6th Block),12.884924,77.515485,exact,Banashankari 6th Stage
@@ -968,9 +972,11 @@ Bangalore Urban,Banashankari,Hosakerehalli BDA,12.934592,77.542341,contains,Hosa
 Bangalore Urban,Banashankari,ISRO Layout,12.897428,77.557383,exact,ISRO Layout
 Bangalore Urban,Banashankari,Ittamadu,12.925005,77.544457,exact,Ittamadu
 Bangalore Urban,Banashankari,Ittamadu BDA,12.925005,77.544457,contains,Ittamadu
+Bangalore Urban,Banashankari,Ittamadu Main Road,12.925005,77.544457,contains,Ittamadu
 Bangalore Urban,Banashankari,Jayanagara HBCS,12.929273,77.582423,contains,Jayanagar
 Bangalore Urban,Banashankari,KSRTC Layout,12.912839,77.593493,exact,KSRTC Layout
 Bangalore Urban,Banashankari,Kadirenahalli,12.914616,77.566151,exact,Kadirenahalli
+Bangalore Urban,Banashankari,Kadirenahalli Main Road 180-M,12.914616,77.566151,contains,Kadirenahalli
 Bangalore Urban,Banashankari,"Karishma Hills (Sy Nos. 51/1, 51/P1, 51/2A, 51/2B, 51/2C,51/2A",12.888614,77.533818,exact,Karishma Hills
 Bangalore Urban,Banashankari,Padmanabhanagar 1st Stage,12.916279,77.556075,contains,Padmanabha Nagar
 Bangalore Urban,Banashankari,Padmanabhanagar 2nd Stage,12.916279,77.556075,contains,Padmanabha Nagar
@@ -979,6 +985,7 @@ Bangalore Urban,Banashankari,Shivanagara Judicial,12.987922,77.546791,contains,S
 Bangalore Urban,Banashankari,Subramanyapura,12.896396,77.537786,exact,Subramanyapura
 Bangalore Urban,Banashankari,Thalaghattapura,12.869817,77.535669,exact,Thalaghattapura
 Bangalore Urban,Banashankari,Uttarahalli,12.905568,77.545544,exact,Uttarahalli
+Bangalore Urban,Banashankari,Uttarahalli Main Road 197-W,12.905568,77.545544,contains,Uttarahalli
 Bangalore Urban,Banashankari,Vaddarapalya,12.836453,77.527041,exact,Vaddarapalya
 Bangalore Urban,Banashankari,Vasanthapura,12.898255,77.549832,exact,Vasanthapura
 Bangalore Urban,Banashankari,Yelachenahalli,12.897971,77.570085,exact,Yelachenahalli
@@ -1000,6 +1007,7 @@ Bangalore Urban,Banaswadi,D asarahalli,13.056245,77.611528,exact,Dasarahalli
 Bangalore Urban,Banaswadi,D o c t o r ' s Layout,13.005337,77.658185,exact,Doctors Layout
 Bangalore Urban,Banaswadi,East of N.G.E.F,12.995999,77.657876,exact,Sadananda Nagar
 Bangalore Urban,Banaswadi,G eddalahalli,13.048634,77.644669,exact,Geddalahalli
+Bangalore Urban,Banaswadi,Geddalahalli W,13.048634,77.644669,fuzzy,Geddalahalli
 Bangalore Urban,Banaswadi,H . R . B.R 2nd Block,13.024040,77.640027,exact,HRBR Layout 2nd Block
 Bangalore Urban,Banaswadi,H . R.B.R. 3rd Block,13.025056,77.634710,exact,HRBR Layout 3rd Block
 Bangalore Urban,Banaswadi,H .B.R. 4th Block,13.034041,77.630996,exact,HBR Layout 4th Block
@@ -1024,6 +1032,7 @@ Bangalore Urban,Banaswadi,N a n j a p p a Layout,13.068259,77.556682,fuzzy,Nanja
 Bangalore Urban,Banaswadi,O .M.B.R Layout,13.008211,77.652778,exact,OMBR Layout
 Bangalore Urban,Banaswadi,P r a k r u t h i Township,13.030877,77.652153,fuzzy,Prakruthi Township
 Bangalore Urban,Banaswadi,P r akruthi Layout / Balaji Layout,13.001463,77.623644,contains,Balaji Layout
+Bangalore Urban,Banaswadi,Palm Groves,13.029504,77.637972,fuzzy,Palm Grove
 Bangalore Urban,Banaswadi,R K Hegde Nagar,13.072035,77.633391,exact,R K Hegde Nagara
 Bangalore Urban,Banaswadi,Rachenahalli,13.058859,77.623258,exact,Rachenahalli
 Bangalore Urban,Banaswadi,Shiridi Sai Nagar,13.067951,77.636604,fuzzy,Shirdi Sai Nagara
@@ -1050,6 +1059,7 @@ Bangalore Urban,Bidarahalli,Bidare Agrahara alias Chinnagenahalli,13.030921,77.7
 Bangalore Urban,Bidarahalli,Channasandra,13.009915,77.660272,exact,B Channasandra
 Bangalore Urban,Bidarahalli,Kadugodi New Extn,12.998577,77.760972,contains,Kadugodi
 Bangalore Urban,Bidarahalli,Kumbena Agrahara,13.001796,77.747388,exact,Kumbena Agrahara
+Bangalore Urban,Bidarahalli,Properties Attached to Kumbena Agrahara Main Road,13.001796,77.747388,contains,Kumbena Agrahara
 Bangalore Urban,Bidarahalli,Vinayaka Layout,12.972442,77.702483,exact,Vinayaka Layout
 Bangalore Urban,Bommanahalli,Adjoined To Hongasandra - Garvebhavipalya Properties,12.897489,77.625087,contains,Hongasandra
 Bangalore Urban,Bommanahalli,Arakere - Jai Hanuman Nagar,12.970095,77.656115,contains,Hanuman Nagar
@@ -1178,6 +1188,8 @@ Bangalore Urban,Halasuru,Madras Sappers Officers Colony,12.963253,77.615086,cont
 Bangalore Urban,Halasuru,Muniyappa Garden,12.953064,77.653202,contains,Muniyappa Layout
 Bangalore Urban,Halasuru,Papanna Garden,13.048224,77.579307,contains,Papanna Layout
 Bangalore Urban,Halasuru,Pillanna Garden And Street,13.010454,77.617353,contains,Pillana Garden
+Bangalore Urban,Halasuru,Sagayapura,13.005410,77.613241,exact,Sagayapura
+Bangalore Urban,Halasuru,Vivekananda Nagara,13.004425,77.628045,exact,Vivekananda Nagar
 Bangalore Urban,Hebbal,Balaji Layout,13.001463,77.623644,exact,Balaji Layout
 Bangalore Urban,Hebbal,Banashankari Coral,12.927820,77.556621,contains,Banashankari
 Bangalore Urban,Hebbal,Banashankari Homes,12.927820,77.556621,contains,Banashankari
@@ -1186,6 +1198,7 @@ Bangalore Urban,Hebbal,Bhoopasandra(Pin Code,13.042001,77.578262,exact,Bhoopasan
 Bangalore Urban,Hebbal,Canara Bank Layout Or Colony,12.931190,77.590894,fuzzy,Canara Bank Colony
 Bangalore Urban,Hebbal,Hebbala,13.038218,77.591900,fuzzy,Hebbal
 Bangalore Urban,Hebbal,Kanakanagar 2A to 6A Cross,13.037411,77.608206,contains,Kanaka Nagar
+Bangalore Urban,Hebbal,Kodigehalli gate) Hebbal Sy,13.060113,77.576773,contains,Kodigehalli
 Bangalore Urban,Hebbal,Krishnappa Garden,12.977456,77.659325,exact,Krishnappa Garden
 Bangalore Urban,Hebbal,Lottegollahalli,13.044135,77.565150,exact,Lottegollahalli
 Bangalore Urban,Hebbal,Maruthi Nagar,13.057474,77.581131,exact,Maruthi Nagara
@@ -1542,6 +1555,7 @@ Bangalore Urban,Madanayakanahalli,Madanayakanahalli,13.059247,77.461511,exact,Ma
 Bangalore Urban,Madanayakanahalli,Mariyanapalya,12.944729,77.496467,fuzzy,Mariyappanapalya
 Bangalore Urban,Madanayakanahalli,Mattahalli,13.107758,77.457273,exact,Mattahalli
 Bangalore Urban,Madanayakanahalli,Nagarur,13.091167,77.433947,fuzzy,Nagaruru
+Bangalore Urban,Madanayakanahalli,Pillahalli,13.102529,77.428800,exact,Pillahalli
 Bangalore Urban,Madanayakanahalli,Thorenagasandra,13.114944,77.475134,exact,Thore Nagasandra
 Bangalore Urban,Madanayakanahalli,Vaderahalli,13.099156,77.452767,exact,Vaderahalli
 Bangalore Urban,Mahadevapura,Andhra Colony Udayanagar,12.996362,77.672450,contains,Udaya Nagar
@@ -1554,6 +1568,7 @@ Bangalore Urban,Mahadevapura,Defence Acadamy H. B. C. S,13.059871,77.585178,cont
 Bangalore Urban,Mahadevapura,GSR Constructiosn / Sri Sai White Pearl,13.039596,77.644540,contains,Sri Sai Layout
 Bangalore Urban,Mahadevapura,Layout,12.969637,77.749745,exact,Whitefield
 Bangalore Urban,Mahadevapura,Layout),12.969637,77.749745,exact,Whitefield
+Bangalore Urban,Mahadevapura,Mahadevapura Outer Ring Road Facing Lands,12.991240,77.689733,contains,Mahadevapura
 Bangalore Urban,Mahadevapura,Prestige Shantiniketan (Residencial) Sy,12.992357,77.728683,fuzzy,Prestige Shantiniketan
 Bangalore Urban,Mahadevapura,Ramagondanahalli) Sy No,12.955897,77.740583,contains,Ramagondanahalli
 Bangalore Urban,Mahadevapura,Republic of Whitefield / Divyashree,12.969637,77.749745,contains,Whitefield
@@ -1993,3 +2008,330 @@ Bangalore Urban,Yeshwanthpur,Yeshwanthpur Pipeline Road,13.022184,77.553082,cont
 Bangalore Urban,Yeshwanthpur,Yeshwanthpur Railway Parallel Road,13.022184,77.553082,contains,Yeswanthpur
 Bangalore Urban,Yeshwanthpur,Yeshwanthpur Subedhar Chatram Road,13.022184,77.553082,contains,Yeswanthpur
 Bangalore Urban,Yeshwanthpur,to Malleshwaram Side Sampige Road left side property,13.002735,77.570325,contains,Malleswaram
+Ramanagara,Channapatna,Abburu,12.701400,77.176848,kannada,Abburu
+Ramanagara,Channapatna,Agrahara Varagarahalli (e.vi. Halli),12.574683,77.160211,fuzzy,Agrahara Varagerahalli
+Ramanagara,Channapatna,Akkuru,12.564224,77.198472,kannada,Akkuru
+Ramanagara,Channapatna,Ambadahalli,12.524943,77.189874,exact,Ambadahalli
+Ramanagara,Channapatna,Ammallidoddi,12.716933,77.125362,kannada,Ammallidoddi
+Ramanagara,Channapatna,Anigere,12.660262,77.129437,kannada,Anigere
+Ramanagara,Channapatna,Ankushanahalli,12.573099,77.142694,kannada,Ankushanahalli
+Ramanagara,Channapatna,Aralalusanra,12.587135,77.411334,fuzzy,Aralalusandra
+Ramanagara,Channapatna,Aralapura,12.683032,77.077670,kannada,Aralapura
+Ramanagara,Channapatna,Attiguppe,12.625555,77.280524,kannada,Attiguppe
+Ramanagara,Channapatna,Bachahalli,12.527044,77.216776,kannada,Bachahalli
+Ramanagara,Channapatna,Bairanayakanalli,12.793827,77.002699,fuzzy,Bhairanayakanahalli
+Ramanagara,Channapatna,Ballapattana,12.554541,77.221273,kannada,Ballapattana
+Ramanagara,Channapatna,Banagahalli,12.544976,77.195201,kannada,Banagahalli
+Ramanagara,Channapatna,Banantalli,12.522850,77.203558,fuzzy,Banantahalli
+Ramanagara,Channapatna,Bhairashettilli,12.559203,77.258958,fuzzy,Bairashettihalli
+Ramanagara,Channapatna,Bhuhalli,12.560905,77.286996,kannada,Bhuhalli
+Ramanagara,Channapatna,Brmanipura,12.640070,77.237928,fuzzy,Brahmanipura
+Ramanagara,Channapatna,Bukkasagara,12.544593,77.315440,kannada,Bukkasagara
+Ramanagara,Channapatna,Byadaralli,12.682556,77.122139,fuzzy,Byadarahalli
+Ramanagara,Channapatna,Chakkere,12.610035,77.171186,kannada,Chakkere
+Ramanagara,Channapatna,Che .mogenahalli,12.699383,77.132119,contains,Mogenahalli
+Ramanagara,Channapatna,Chikkamaluru,12.647584,77.185164,kannada,Chikkamaluru
+Ramanagara,Channapatna,Chikkenahalli,12.707317,77.164997,kannada,Chikkenahalli
+Ramanagara,Channapatna,Devarahalli,12.654178,77.156171,kannada,Devarahalli
+Ramanagara,Channapatna,Devaru Sahalli,12.654178,77.156171,fuzzy,Devarahalli
+Ramanagara,Channapatna,Dyavapattana,12.578444,77.268248,kannada,Dyavapattana
+Ramanagara,Channapatna,Eletotadahalli,12.511380,77.193025,exact,Eletotadahalli
+Ramanagara,Channapatna,Elo Sahalli,12.721238,77.189255,fuzzy,Elehosahalli
+Ramanagara,Channapatna,Garakahalli,12.532917,77.145604,kannada,Garakahalli
+Ramanagara,Channapatna,Govindahalli,12.616487,77.148904,kannada,Govindahalli
+Ramanagara,Channapatna,Gudde Hosuru,12.766647,77.235753,contains,Hosuru
+Ramanagara,Channapatna,Harokoppa,12.521173,77.170562,kannada,Harokoppa
+Ramanagara,Channapatna,Honganuru,12.604518,77.217693,kannada,Honganuru
+Ramanagara,Channapatna,Honnayakanalli,12.619769,76.926577,fuzzy,Honnayakanahalli
+Ramanagara,Channapatna,Honniganahalli,12.434957,77.281452,kannada,Honniganahalli
+Ramanagara,Channapatna,Honniganahalli (vi.pura),12.434957,77.281452,exact,Honniganahalli
+Ramanagara,Channapatna,Hunasanalli,12.527496,77.229883,fuzzy,Hunasanahalli
+Ramanagara,Channapatna,Iggaluru,12.481744,77.138897,kannada,Iggaluru
+Ramanagara,Channapatna,Jagadapura,12.505357,77.226467,kannada,Jagadapura
+Ramanagara,Channapatna,Kadaramangala,12.736100,77.088077,kannada,Kadaramangala
+Ramanagara,Channapatna,Kallapura,12.497511,77.215116,kannada,Kallapura
+Ramanagara,Channapatna,Kannamangala,12.714555,77.205290,kannada,Kannamangala
+Ramanagara,Channapatna,Kannasanra,12.699519,77.147163,fuzzy,Kannasandra
+Ramanagara,Channapatna,Karekoppa,12.520195,77.241998,kannada,Karekoppa
+Ramanagara,Channapatna,Kelagere,12.728208,77.136779,kannada,Kelagere
+Ramanagara,Channapatna,Kile Channapattana,12.654456,77.204259,contains,Channapattana
+Ramanagara,Channapatna,Kodambahalli,12.544730,77.217698,kannada,Kodambahalli
+Ramanagara,Channapatna,Kodipura,12.607981,77.231341,kannada,Kodipura
+Ramanagara,Channapatna,Koluru,12.639554,77.109878,kannada,Koluru
+Ramanagara,Channapatna,Kondapura,12.542351,77.204135,exact,Kondapura
+Ramanagara,Channapatna,Kottanahalli,12.626553,77.027613,kannada,Kottanahalli
+Ramanagara,Channapatna,Kudluru,12.613098,77.187770,kannada,Kudluru
+Ramanagara,Channapatna,Kukkuru,12.591276,77.129416,kannada,Kukkuru
+Ramanagara,Channapatna,Kuranagere,12.609238,77.144724,kannada,Kuranagere
+Ramanagara,Channapatna,Madapura,12.534102,77.191219,kannada,Madapura
+Ramanagara,Channapatna,Mailanayakanahalli Dakhle/mailanathapura,12.676903,77.169270,contains,Mailanayakanahalli
+Ramanagara,Channapatna,Mailanayakanalli,12.676903,77.169270,fuzzy,Mailanayakanahalli
+Ramanagara,Channapatna,Makali,12.774094,77.159210,kannada,Makali
+Ramanagara,Channapatna,Makali Planteshan,12.774094,77.159210,contains,Makali
+Ramanagara,Channapatna,Makali Rilis Pharest,12.774094,77.159210,contains,Makali
+Ramanagara,Channapatna,Malagalu,12.584668,77.198820,kannada,Malagalu
+Ramanagara,Channapatna,Maluru,12.646936,77.180168,kannada,Maluru
+Ramanagara,Channapatna,Maluru Pattana,12.596153,77.183547,kannada,Malurupattana
+Ramanagara,Channapatna,Mangadahalli,12.563318,77.220671,kannada,Mangadahalli
+Ramanagara,Channapatna,Marchanalli,12.610204,77.117345,fuzzy,Marchanahalli
+Ramanagara,Channapatna,Nagavara,12.716352,77.152217,kannada,Nagavara
+Ramanagara,Channapatna,Nayidolle,12.774961,77.184578,kannada,Nayidolle
+Ramanagara,Channapatna,Neraluru,12.502125,77.156686,kannada,Neraluru
+Ramanagara,Channapatna,Nilakanthanahalli,12.558469,77.073207,kannada,Nilakanthanahalli
+Ramanagara,Channapatna,Nilasandra,12.622137,77.227190,kannada,Nilasandra
+Ramanagara,Channapatna,Nunnuru,12.510493,77.165002,kannada,Nunnuru
+Ramanagara,Channapatna,Patlu,12.678102,77.184520,kannada,Patlu
+Ramanagara,Channapatna,Rampura,12.672436,77.197361,kannada,Rampura
+Ramanagara,Channapatna,Sahalli,12.412182,77.109918,exact,Sahalli
+Ramanagara,Channapatna,Sankalage,12.629195,77.162938,fuzzy,Sankalagere
+Ramanagara,Channapatna,Santemogenahalli,12.587957,77.208019,kannada,Santemogenahalli
+Ramanagara,Channapatna,Saraguru,12.484885,77.160053,kannada,Saraguru
+Ramanagara,Channapatna,Shibanahalli,12.657801,77.107948,exact,Sibanahalli
+Ramanagara,Channapatna,Shyanuboganahalli,12.757833,77.230174,fuzzy,Shanuboganahalli
+Ramanagara,Channapatna,Singarajapura,12.554166,77.273272,fuzzy,Singarajipura
+Ramanagara,Channapatna,Sogala,12.543146,77.173303,kannada,Sogala
+Ramanagara,Channapatna,Sulleri,12.575591,77.172696,kannada,Sulleri
+Ramanagara,Channapatna,Sumanathapura,12.574251,77.211050,fuzzy,Somanathapura
+Ramanagara,Channapatna,Sunnaghatta,12.617603,77.214957,kannada,Sunnaghatta
+Ramanagara,Channapatna,Tagachage,12.629340,77.231089,fuzzy,Tagachagere
+Ramanagara,Channapatna,Tenkanahalli,12.683330,77.106002,kannada,Tenkanahalli
+Ramanagara,Channapatna,Timmasanra,12.644584,77.214869,fuzzy,Timmasandra
+Ramanagara,Channapatna,Ttiganu Sahalli,12.412182,77.109918,contains,Sahalli
+Ramanagara,Channapatna,Vaddarahalli,12.527747,77.221649,kannada,Vaddarahalli
+Ramanagara,Channapatna,Vandaraguppe,12.680517,77.226233,kannada,Vandaraguppe
+Ramanagara,Channapatna,Virupakshipura,12.580084,77.231301,exact,Virupakshipura
+Ramanagara,Channapatna,Virupasanra,12.810130,77.159507,fuzzy,Virupasandra
+Ramanagara,Channapatna,Vithalenahalli,12.573043,77.277412,kannada,Vithalenahalli
+Ramanagara,Channapatna,Yaliyuru,12.506694,77.198771,kannada,Yaliyuru
+Ramanagara,Kanakapura,Achalu,12.474899,77.363014,exact,Achalu
+Ramanagara,Kanakapura,Agara,12.620112,77.479307,exact,Agara
+Ramanagara,Kanakapura,Ajjabasavanahalli,12.446780,77.520949,exact,Ajjabasavanahalli
+Ramanagara,Kanakapura,Alahalli,12.400743,77.388814,exact,Alahalli
+Ramanagara,Kanakapura,Allimaranahalli,12.610132,77.388306,exact,Allimaranahalli
+Ramanagara,Kanakapura,Anamanahalli,12.577444,77.441601,exact,Anamanahalli
+Ramanagara,Kanakapura,Anehosahalli,12.491711,77.332259,fuzzy,Arehosahalli
+Ramanagara,Kanakapura,Arakere,12.460717,77.501547,exact,Arakere
+Ramanagara,Kanakapura,Aralalu,12.521781,77.429638,exact,Aralalu
+Ramanagara,Kanakapura,Aralalusandra,12.587135,77.411334,exact,Aralalusandra
+Ramanagara,Kanakapura,Aranakuppe,12.566478,77.443381,exact,Aranakuppe
+Ramanagara,Kanakapura,Arehosahalli,12.491711,77.332259,exact,Arehosahalli
+Ramanagara,Kanakapura,Athihalli,12.504060,77.328798,exact,Attihalli
+Ramanagara,Kanakapura,Bachahalli,12.614376,77.352179,exact,Bachahalli
+Ramanagara,Kanakapura,Banavasi,12.641345,77.545796,exact,Banavasi
+Ramanagara,Kanakapura,Bandiganah Alli,12.618082,77.399120,exact,Bandiganahalli
+Ramanagara,Kanakapura,Bannikuppe,12.673432,77.428570,exact,Bannikuppe
+Ramanagara,Kanakapura,Bannimukkodlu,12.355137,77.567046,exact,Bannimukodlu
+Ramanagara,Kanakapura,Baradanahalli,12.558089,77.440149,exact,Baradanahalli
+Ramanagara,Kanakapura,Basavanahalli,12.574565,77.319414,exact,Basavanahalli
+Ramanagara,Kanakapura,Belaguli,12.652052,77.392640,exact,Belaguli
+Ramanagara,Kanakapura,Belikothanuru,12.588799,77.314533,exact,Belikottanuru
+Ramanagara,Kanakapura,Bettahalli Kaval,12.735479,77.508253,exact,Bettahalli Kaval
+Ramanagara,Kanakapura,Bettihalli Kaval,12.735479,77.508253,fuzzy,Bettahalli Kaval
+Ramanagara,Kanakapura,Bheemasand Ra,12.690951,77.457333,exact,Bhimasandra
+Ramanagara,Kanakapura,Bheemasandra,12.690951,77.457333,exact,Bhimasandra
+Ramanagara,Kanakapura,Bhuhalli,12.560905,77.286996,exact,Bhuhalli
+Ramanagara,Kanakapura,Bijjahalli,12.449760,77.543833,exact,Bijjahalli
+Ramanagara,Kanakapura,Bilaganakuppe,12.674238,77.543530,fuzzy,Biliganakuppe
+Ramanagara,Kanakapura,Bommanahalli,12.486785,77.357835,exact,Bommanahalli
+Ramanagara,Kanakapura,Bommasandra,12.441251,77.552746,exact,Bommasandra
+Ramanagara,Kanakapura,Bylalu,12.598935,77.340092,fuzzy,Byalalu
+Ramanagara,Kanakapura,Chakanahalli,12.546692,77.463748,exact,Chakanahalli
+Ramanagara,Kanakapura,Channasandra,12.416257,77.497436,exact,Channasandra
+Ramanagara,Kanakapura,Cheeranakuppe Road,12.537095,77.432229,contains,Chiranakuppe
+Ramanagara,Kanakapura,Chikka Alahalli,12.431899,77.351174,exact,Chikka Alahalli
+Ramanagara,Kanakapura,Chikkakalba Lu,12.653282,77.409988,exact,Chikkakalbalu
+Ramanagara,Kanakapura,Chikkamuduvadi,12.620871,77.373991,exact,Chikka Muduvadi
+Ramanagara,Kanakapura,Chikkamukkodlu,12.356540,77.580252,exact,Chikkamukkodlu
+Ramanagara,Kanakapura,Chiranakuppe,12.537095,77.432229,exact,Chiranakuppe
+Ramanagara,Kanakapura,Choodahalli,12.540237,77.333901,exact,Chudahalli
+Ramanagara,Kanakapura,Dalimba,12.466240,77.321085,exact,Dalimba
+Ramanagara,Kanakapura,Devarahalli,12.596087,77.521664,exact,Devarahalli
+Ramanagara,Kanakapura,Devarakagg Alahalli,12.400743,77.388814,contains,Alahalli
+Ramanagara,Kanakapura,Dodda Kabballi,12.441843,77.516077,exact,Doddakabballi
+Ramanagara,Kanakapura,Doddakalabalu,12.670824,77.405074,fuzzy,Doddakalbalu
+Ramanagara,Kanakapura,Doddakoppa,12.379247,77.474496,exact,Doddakoppa
+Ramanagara,Kanakapura,Doddamaralavadi,12.610428,77.525630,exact,Dodda Maralawadi
+Ramanagara,Kanakapura,Doddamuduv Adi,12.627193,77.385914,fuzzy,Dodda Mudavadi
+Ramanagara,Kanakapura,Doddasadenahalli,12.644630,77.477957,exact,Doddasadenahalli
+Ramanagara,Kanakapura,Doddguli,12.476731,77.511557,fuzzy,Doddaguli
+Ramanagara,Kanakapura,Dunthuru,12.416725,77.332599,exact,Dunturu
+Ramanagara,Kanakapura,Dyvasandra,12.672317,77.502228,fuzzy,Dyavasandra
+Ramanagara,Kanakapura,Entire Melekote North side,12.557066,77.415193,contains,Melekote
+Ramanagara,Kanakapura,"Entire Melekote North side (Block No 38 ,Street No 5)38-5-336A",12.557066,77.415193,contains,Melekote
+Ramanagara,Kanakapura,"Entire Melekote North side (Block No 47 ,Street No 506)(Block No",12.557066,77.415193,contains,Melekote
+Ramanagara,Kanakapura,Fort Kithuru Channamma Street Malagalu Road to Sherugaara,12.544804,77.431090,contains,Malagalu
+Ramanagara,Kanakapura,Ganalu,12.600960,77.396035,exact,Ganalu
+Ramanagara,Kanakapura,Garalapura,12.444515,77.494936,exact,Garalapura
+Ramanagara,Kanakapura,Gattigunda,12.458729,77.599285,exact,Gattigunda
+Ramanagara,Kanakapura,Gerahalli,12.505886,77.348979,exact,Gerahalli
+Ramanagara,Kanakapura,Goduru,12.659083,77.535766,exact,Goduru
+Ramanagara,Kanakapura,Gollahalli,12.418194,77.483021,exact,Gollahalli
+Ramanagara,Kanakapura,Gottigehalli,12.720959,77.526767,exact,Gottigehalli
+Ramanagara,Kanakapura,Guddeveeranahosah alli,12.386865,77.541915,exact,Guddeviranahosahalli
+Ramanagara,Kanakapura,Gullahattik Aval,12.729860,77.546650,exact,Gullahatti Kaval
+Ramanagara,Kanakapura,Halasooru,12.481604,77.517686,exact,Halasuru
+Ramanagara,Kanakapura,Halasuru,12.481604,77.517686,exact,Halasuru
+Ramanagara,Kanakapura,Hanakadaburu,12.400412,77.547262,exact,Hanakadaburu
+Ramanagara,Kanakapura,Hanumanahalli,12.529790,77.376295,exact,Hanumanahalli
+Ramanagara,Kanakapura,Harihara,12.416103,77.291606,exact,Harihara
+Ramanagara,Kanakapura,Harohalli,12.680169,77.473355,exact,Harohalli
+Ramanagara,Kanakapura,Haroshivanahalli,12.356290,77.420546,exact,Haroshivanahalli
+Ramanagara,Kanakapura,Hegganooru,12.326876,77.411350,exact,Hegganuru
+Ramanagara,Kanakapura,Herindyapanahalli,12.472650,77.526731,fuzzy,Herandyapanahalli
+Ramanagara,Kanakapura,Honnahalli,12.518165,77.337302,exact,Honnahalli
+Ramanagara,Kanakapura,Honniganahalli,12.434957,77.281452,exact,Honniganahalli
+Ramanagara,Kanakapura,Hookunda,12.407263,77.464013,exact,Hukunda
+Ramanagara,Kanakapura,Horalagallu,12.476941,77.399041,exact,Horalagallu
+Ramanagara,Kanakapura,Hosadurga,12.415621,77.554706,exact,Hosadurga
+Ramanagara,Kanakapura,Hosahalli,12.634604,77.458602,exact,Hosahalli
+Ramanagara,Kanakapura,Hosakote,12.699788,77.475082,exact,Hosakote
+Ramanagara,Kanakapura,Hulugondanahalli,12.689654,77.432024,exact,Hulugondanahalli
+Ramanagara,Kanakapura,Hunasanahalli,12.692177,77.309399,exact,Hunasanahalli
+Ramanagara,Kanakapura,Hunasanakodihalli,12.370853,77.603445,exact,Hunasanakodihalli
+Ramanagara,Kanakapura,Jakkasandra,12.649305,77.439396,exact,Jakkasandra
+Ramanagara,Kanakapura,K.Gollahalli,12.418194,77.483021,contains,Gollahalli
+Ramanagara,Kanakapura,Kabbalu,12.500880,77.304275,exact,Kabbalu
+Ramanagara,Kanakapura,Kabbalu Forest,12.500880,77.304275,contains,Kabbalu
+Ramanagara,Kanakapura,Kachanahalli,12.484295,77.242362,fuzzy,Kanchanahalli
+Ramanagara,Kanakapura,Kachuvanahalli,12.486041,77.325394,exact,Kachuvanahalli
+Ramanagara,Kanakapura,Kadahalli,12.420913,77.309336,exact,Kadahalli
+Ramanagara,Kanakapura,Kadujakkas Andra,12.701011,77.512869,exact,Kadu Jakkasandra
+Ramanagara,Kanakapura,Kaggalahal Li,12.728389,77.486103,fuzzy,Kaggalahalli
+Ramanagara,Kanakapura,Kallahalli,12.572787,77.419567,exact,Kallahalli
+Ramanagara,Kanakapura,Kallanakuppe,12.623233,77.563509,exact,Kallanakuppe
+Ramanagara,Kanakapura,Kamsagara,12.511894,77.300885,exact,Kamsagara
+Ramanagara,Kanakapura,Kanakapura,12.545027,77.419910,exact,Kanakapura
+Ramanagara,Kanakapura,Kanakapura Town,12.545027,77.419910,contains,Kanakapura
+Ramanagara,Kanakapura,Kanchanahalli,12.484295,77.242362,exact,Kanchanahalli
+Ramanagara,Kanakapura,Kebbare,12.508729,77.526940,exact,Kebare
+Ramanagara,Kanakapura,Kebbehalli,12.472900,77.460370,exact,Kebbehalli
+Ramanagara,Kanakapura,Kemmale,12.440843,77.308782,exact,Kemmale
+Ramanagara,Kanakapura,Kempalanatha,12.395700,77.534919,exact,Kempalanatha
+Ramanagara,Kanakapura,Keralalusandra,12.524570,77.455741,exact,Keralalusandra
+Ramanagara,Kanakapura,Kiranagere,12.651776,77.456254,exact,Kiranagere
+Ramanagara,Kanakapura,Kodihalli,12.433741,77.495501,exact,Kodihalli
+Ramanagara,Kanakapura,Kodihalli Road,12.433741,77.495501,contains,Kodihalli
+Ramanagara,Kanakapura,Kodihalli Road (East Side) Kengal Hanumanthaiah Circle to Ment,12.433741,77.495501,contains,Kodihalli
+Ramanagara,Kanakapura,Kodihalli Road (West Side),12.433741,77.495501,contains,Kodihalli
+Ramanagara,Kanakapura,Kokkarehosahalli,12.426986,77.455814,exact,Kokkare Hosahalli
+Ramanagara,Kanakapura,Kolagondanahalli,12.460768,77.609524,exact,Kolagondanahalli
+Ramanagara,Kanakapura,Kolliganaha Lli,12.711162,77.407399,exact,Kolliganahalli
+Ramanagara,Kanakapura,Konasandra,12.665059,77.510158,exact,Konasandra
+Ramanagara,Kanakapura,Koonuru,12.470368,77.431610,exact,Kunuru
+Ramanagara,Kanakapura,Koothagale,12.441858,77.456532,exact,Kutagale
+Ramanagara,Kanakapura,Kotekoppa,12.368962,77.482758,exact,Kottekoppa
+Ramanagara,Kanakapura,Kottagalu,12.664465,77.388745,exact,Kottagalu
+Ramanagara,Kanakapura,Kurubaraha Lli,12.747032,77.246851,exact,Kurubarahalli
+Ramanagara,Kanakapura,Mahimanahalli,12.419312,77.396367,exact,Mahimanahalli
+Ramanagara,Kanakapura,Malagalu Road,12.544804,77.431090,contains,Malagalu
+Ramanagara,Kanakapura,Mallapura,12.413108,77.514721,exact,Mallapura
+Ramanagara,Kanakapura,Malligemetlu,12.615123,77.494227,exact,Malligemetlu
+Ramanagara,Kanakapura,Maralebekkuppe,12.436998,77.411767,exact,Maralebekuppe
+Ramanagara,Kanakapura,Marasandra,12.433443,77.462778,exact,Marasandra
+Ramanagara,Kanakapura,Medamaranahalli,12.701506,77.451599,exact,Medamaranahalli
+Ramanagara,Kanakapura,Melekote A.K.Colony,12.557066,77.415193,contains,Melekote
+Ramanagara,Kanakapura,"Melekote A.K.Colony(Block No 36 ,Street No 518)(Block No",12.557066,77.415193,contains,Melekote
+Ramanagara,Kanakapura,"Melekote A.K.Colony(Block No 36 ,Street No 531)",12.557066,77.415193,contains,Melekote
+Ramanagara,Kanakapura,Melekote South Side Extention,12.557066,77.415193,contains,Melekote
+Ramanagara,Kanakapura,Melekote South Side Extention (Thigalara Colony),12.557066,77.415193,contains,Melekote
+Ramanagara,Kanakapura,Melekote South Side Extention (Thigalara Colony)(Block No,12.557066,77.415193,contains,Melekote
+Ramanagara,Kanakapura,Mudenahalli,12.699376,77.466625,exact,Mudenahalli
+Ramanagara,Kanakapura,Mugguru,12.320188,77.528349,exact,Mugguru
+Ramanagara,Kanakapura,Mugguru Forest,12.320188,77.528349,contains,Mugguru
+Ramanagara,Kanakapura,Mukkodlu,12.756330,77.528012,exact,Mukkodlu
+Ramanagara,Kanakapura,Mullahalli,12.391893,77.447260,exact,Mullahalli
+Ramanagara,Kanakapura,Muradihosahalli,12.551170,77.354527,exact,Muradi Hosahalli
+Ramanagara,Kanakapura,Nagarasanakote,12.438723,77.339649,exact,Nagarasanakote
+Ramanagara,Kanakapura,Narayanapura,12.692684,77.416548,exact,Narayanapura
+Ramanagara,Kanakapura,Naykanahalli,12.421407,77.360124,fuzzy,Nayakanahalli
+Ramanagara,Kanakapura,Nidagallu,12.482860,77.432946,exact,Nidagallu
+Ramanagara,Kanakapura,Nidagallu Aralalusandra,12.482860,77.432946,contains,Nidagallu
+Ramanagara,Kanakapura,Paduvanagere,12.616770,77.464854,exact,Paduvanagere
+Ramanagara,Kanakapura,Ragihalli State Forest,12.738643,77.574580,contains,Ragihalli
+Ramanagara,Kanakapura,Ramanagara Road South Side,12.725277,77.280480,contains,Ramanagara
+Ramanagara,Kanakapura,Ramanagara road,12.725277,77.280480,contains,Ramanagara
+Ramanagara,Kanakapura,"Ramanagara road (South Side)(Block No 16 ,Street No 5)",12.725277,77.280480,contains,Ramanagara
+Ramanagara,Kanakapura,Ramanagara road East side Bhajanemane street to Ramanagara Cross,12.725277,77.280480,contains,Ramanagara
+Ramanagara,Kanakapura,Ramanagara road North Side,12.725277,77.280480,contains,Ramanagara
+Ramanagara,Kanakapura,Ramanahalli,12.741252,77.400951,exact,Ramanahalli
+Ramanagara,Kanakapura,Rampura,12.607137,77.409656,exact,Rampura
+Ramanagara,Kanakapura,Rampura Karuvina Hatti,12.607137,77.409656,contains,Rampura
+Ramanagara,Kanakapura,Raysandra,12.590998,77.437730,fuzzy,Rayasandra
+Ramanagara,Kanakapura,Salabanni,12.389941,77.554675,exact,Salabanni
+Ramanagara,Kanakapura,Sasalapura,12.455193,77.288378,exact,Sasalapura
+Ramanagara,Kanakapura,Sathanuru,12.451706,77.321049,exact,Satanuru
+Ramanagara,Kanakapura,Shigekote,12.498627,77.398015,exact,Shigekote
+Ramanagara,Kanakapura,Shivanahalli,12.516907,77.398410,exact,Shivanahalli
+Ramanagara,Kanakapura,Singasandra,12.647742,77.362536,exact,Singasandra
+Ramanagara,Kanakapura,Soligere,12.358829,77.289946,exact,Soligere
+Ramanagara,Kanakapura,Somanathapura,12.574251,77.211050,exact,Somanathapura
+Ramanagara,Kanakapura,Somedypanahalli,12.568394,77.333542,fuzzy,Somedyapanahalli
+Ramanagara,Kanakapura,Sooranahalli,12.799742,77.319629,fuzzy,Sugganahalli
+Ramanagara,Kanakapura,Sri.Rampura,12.607137,77.409656,contains,Rampura
+Ramanagara,Kanakapura,Sundaghatta,12.523924,77.503883,exact,Sundaghatta
+Ramanagara,Kanakapura,T.Bekuppe,12.509251,77.433736,contains,Bekuppe
+Ramanagara,Kanakapura,T.Gollahalli,12.418194,77.483021,contains,Gollahalli
+Ramanagara,Kanakapura,Tenganaikanahalli,12.531518,77.344809,fuzzy,Tenganayakanahalli
+Ramanagara,Kanakapura,Thamasandra,12.672943,77.466809,exact,Tamasandra
+Ramanagara,Kanakapura,Thattekere,12.672868,77.573794,exact,Tattekere
+Ramanagara,Kanakapura,Thigalarahalli,12.580211,77.417190,exact,Tigalarahalli
+Ramanagara,Kanakapura,Thigalarahosahalli,12.498175,77.428056,fuzzy,Thigalara Hosalli
+Ramanagara,Kanakapura,Thippuru,12.461959,77.539592,exact,Tippuru
+Ramanagara,Kanakapura,Thokasandra,12.587797,77.490220,exact,Thokkasandra
+Ramanagara,Kanakapura,Thotahalli,12.481730,77.343548,exact,Totahalli
+Ramanagara,Kanakapura,Thugani,12.592964,77.424827,fuzzy,Tungani
+Ramanagara,Kanakapura,Udarahalli,12.584734,77.347631,exact,Udarahalli
+Ramanagara,Kanakapura,Uyyamballi,12.387833,77.398213,exact,Uyyamballi
+Ramanagara,Kanakapura,Vadakekatte,12.361866,77.418293,exact,Vadake katte
+Ramanagara,Kanakapura,Vaderahalli,12.740537,77.479990,exact,Vaderahalli
+Ramanagara,Kanakapura,Veerasandra,12.528470,77.348475,fuzzy,Virupasandra
+Ramanagara,Kanakapura,Virupasandra,12.551516,77.433464,exact,Virupasandra
+Ramanagara,Kanakapura,Yadamaranahalli,12.427249,77.379083,exact,Yadamaranahalli
+Ramanagara,Kanakapura,Yakkuli,12.456889,77.524888,exact,Yakkuli
+Ramanagara,Kanakapura,Yalachavadi,12.605725,77.560021,exact,Yalachavadi
+Ramanagara,Kanakapura,Yalavalli,12.499086,77.354479,exact,Yalavalli
+Ramanagara,Kanakapura,Yarehalli,12.705461,77.428791,exact,Yarehalli
+Ramanagara,Magadi,Balaji Badavane (Ward No. 2),12.998959,77.439394,contains,Balaji Layout
+Ramanagara,Magadi,"Gudemaranahalli Road (Ward No. 1, 2, 4 & 6)",13.051422,77.263879,contains,Gudemaranahalli
+Ramanagara,Magadi,"Hombalammanapete (Ward No. 9, 10)",12.949179,77.225679,exact,Hombalammanapete
+Ramanagara,Magadi,Hosapete Circle (Ward No. 6),12.951767,77.234828,contains,Hosapete
+Ramanagara,Magadi,"Hosapete Extension (Ward No. 4, 6)",12.951767,77.234828,exact,Hosapete
+Ramanagara,Magadi,"Hosapete New Extention (Ward No. 6, 4)",12.951767,77.234828,contains,Hosapete
+Ramanagara,Magadi,Hosapete Ramanagara Main Road (Ward No. 7),12.951767,77.234828,contains,Hosapete
+Ramanagara,Magadi,"Hosapete Thirumale Road (Ward No.4, 6)",12.951767,77.234828,contains,Hosapete
+Ramanagara,Magadi,Kalyagate Hosahalli Road. (Ward No. 15),12.965798,77.217111,contains,Hosahalli
+Ramanagara,Magadi,Near Balaji Film theatre (Ward No. 2),12.998959,77.439394,contains,Balaji Layout
+Ramanagara,Magadi,Nethenahalli Road (Ward No. 10),12.943303,77.219837,contains,Netenahalli
+Ramanagara,Magadi,Sri Vishveshwariah Residential Layout,12.943794,77.477946,contains,Sir MV Layout
+Ramanagara,Magadi,"Taggikuppe Road (Ward No. 15, 16, 17)",12.987293,77.220304,contains,Taggikuppe
+Ramanagara,Magadi,"Thirumale Main Road (Ward No. 2, 3, 4)",12.956737,77.242055,contains,Tirumale
+Ramanagara,Magadi,Tirumale Extension (Ward No. 4),12.956737,77.242055,exact,Tirumale
+Ramanagara,Ramanagara,Abbanakuppe Colony,12.770589,77.407747,contains,Abbanakuppe
+Ramanagara,Ramanagara,Angarahalli,12.730149,77.211601,exact,Angarahalli
+Ramanagara,Ramanagara,Bannikuppe,12.663656,77.289430,exact,Bannikuppe
+Ramanagara,Ramanagara,Hallimala village,12.756825,77.290637,exact,Hallimala
+Ramanagara,Ramanagara,Heggadagere,12.762211,77.377725,exact,Heggadagere
+Ramanagara,Ramanagara,Heggadagere Colony,12.762211,77.377725,contains,Heggadagere
+Ramanagara,Ramanagara,Hosur,12.766647,77.235753,fuzzy,Hosuru
+Ramanagara,Ramanagara,Ijoor Magadi Road (Ijoor Circle to Magadi g,12.956735,77.224228,contains,Magadi
+Ramanagara,Ramanagara,Ijoor Magadi Road Ld,12.956735,77.224228,contains,Magadi
+Ramanagara,Ramanagara,Ittamadu,12.756529,77.403381,exact,Ittamadu
+Ramanagara,Ramanagara,Jalamangala (Jalamangala Road After Magadi Circle),12.820985,77.221087,exact,Jalamangala
+Ramanagara,Ramanagara,Jalamangala Road) 2nd Stage,12.820985,77.221087,contains,Jalamangala
+Ramanagara,Ramanagara,Jalamangala Road) 3rd Stage,12.820985,77.221087,contains,Jalamangala
+Ramanagara,Ramanagara,Kempadyapanahalli,12.867472,77.354436,exact,Kempadyapanahalli
+Ramanagara,Ramanagara,Kenchanakuppe Gate,12.796020,77.374957,contains,Kenchanakuppe
+Ramanagara,Ramanagara,Kethiganahalli,12.813251,77.391074,fuzzy,Ketaganahalli
+Ramanagara,Ramanagara,Lakshmipura,12.830607,77.294852,exact,Lakshmipura
+Ramanagara,Ramanagara,Magadi Road,12.956735,77.224228,contains,Magadi
+Ramanagara,Ramanagara,Magadi Road After,12.956735,77.224228,contains,Magadi
+Ramanagara,Ramanagara,Magadi Road behind),12.956735,77.224228,contains,Magadi
+Ramanagara,Ramanagara,Ramanagara,12.725277,77.280480,exact,Ramanagara
+Ramanagara,Ramanagara,Ramanagara Town,12.725277,77.280480,contains,Ramanagara
+Ramanagara,Ramanagara,Rangarayaradoddi Road,12.718455,77.256997,contains,Rangarayara Doddi
+Ramanagara,Ramanagara,Shanubhoganahalli,12.757833,77.230174,exact,Shanuboganahalli
+Ramanagara,Ramanagara,Thoredoddi,12.758082,77.397856,exact,Toredoddi
+Ramanagara,Ramanagara,Vaderahalli Dhakle Hallimala:,12.737496,77.301328,contains,Vaderahalli
+Ramanagara,Ramanagara,Vaderahalli Maruthinagara,12.737496,77.301328,contains,Vaderahalli
+Ramanagara,Ramanagara,Vinayaka Nagara 1st Stage,12.903099,77.428576,contains,Vinayaka Nagara
+Ramanagara,Ramanagara,Vinayaka Nagara 2nd Stage,12.903099,77.428576,contains,Vinayaka Nagara

@@ -70,7 +70,8 @@ def load_places(path):
         names = {t.get(k) for k in ("name", "name:en", "alt_name", "old_name", "official_name")} - {None}
         for alt in list(names):
             names.update(a.strip() for a in alt.split(";"))
-        places.append({"name": t.get("name"), "names": names, "place": t.get("place"),
+        kn = (t.get("name:kn") or "").replace(" ", "")
+        places.append({"name": t.get("name"), "names": names, "place": t.get("place"), "kn": kn,
                        "pt": (float(lat), float(lon)),
                        "keys": {norm(n) for n in names if n}})
     return places
@@ -88,7 +89,8 @@ def main():
     areas = {}
     for f in sorted(glob.glob("data/guidance/*.csv")):
         for r in csv.DictReader(open(f, encoding="utf-8")):
-            areas[(r["district"], r["parent_name"], r["parent_level"], r["area_name"])] = r["area_level"]
+            areas[(r["district"], r["parent_name"], r["parent_level"], r["area_name"])] = (
+                r["area_level"], (r.get("name_kn") or "").replace(" ", ""))
 
     # Centre of each taluk / sub-registrar office: the OSM place of that name
     centres = {}
@@ -106,7 +108,12 @@ def main():
 
     out, how = [], Counter()
     nearby = {}
-    for (district, parent, plevel, name), level in sorted(areas.items()):
+    by_kn = defaultdict(list)
+    for p in places:
+        if p["kn"]:
+            by_kn[p["kn"]].append(p)
+
+    for (district, parent, plevel, name), (level, name_kn) in sorted(areas.items()):
         centre = centres[parent]
         radius = RADIUS_KM.get(plevel, 25) * (2 if centre == BANGALORE else 1)
         if parent not in nearby:
@@ -118,7 +125,10 @@ def main():
 
         pick, method = None, None
         exact = [p for p in by_key.get(key, []) if km(p["pt"], centre) <= radius]
-        if exact:
+        kn_hits = [p for p in by_kn.get(name_kn, []) if km(p["pt"], centre) <= radius] if name_kn else []
+        if kn_hits:
+            pick, method = min(kn_hits, key=lambda p: km(p["pt"], centre)), "kannada"
+        elif exact:
             pick, method = min(exact, key=lambda p: km(p["pt"], centre)), "exact"
         else:
             best = process.extractOne(key, cand_keys, scorer=fuzz.ratio, score_cutoff=FUZZY_MIN) if key else None

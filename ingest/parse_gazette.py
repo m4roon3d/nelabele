@@ -19,6 +19,10 @@ rows are rolled up into their heading (median), apartment complexes too, so
 each locality gets one plot and one apartment rate. Commercial and
 industrial rates are skipped. Rows with 3+ numbers are villages, as above.
 
+--town-rollup: town streets printed only in Kannada can't be named, but
+their site rates still describe the town, so they become one "<office>
+Town" area with the median rate.
+
 Stored per area:
   agricultural_land – dry land rate (the base rate), per acre
   plot              – approved-layout site rate, else gramathana site rate
@@ -36,6 +40,8 @@ import csv
 import re
 import statistics
 import sys
+
+import nudi
 from collections import Counter
 
 NUMBER = re.compile(r"^\d[\d,]*(\.\d+)?$")
@@ -76,6 +82,14 @@ def english_name(cells):
                 best = run
     best = re.sub(r"\s+", " ", best)
     if "cid:" in best:
+        return ""
+    # "Balaji gold city ( 96/3, 96/7, ..." → "Balaji gold city"; a bare list of
+    # property IDs or survey numbers ("16-3-520-19A,16-3-520-23C") is no name
+    if sum(ch.isdigit() for ch in best) > sum(ch.isalpha() for ch in best):
+        head = re.split(r"\s*(?:\(|,|\b(?:S\.?\s*No|Sy\.?\s*No|Survey|Sserve|Khata)\b)", best, maxsplit=1)[0]
+        head = re.sub(r"[\s\d/.-]+$", "", head).strip()
+        if sum(ch.isalpha() for ch in head) >= 4 and sum(ch.isdigit() for ch in head) <= sum(ch.isalpha() for ch in head):
+            return head.title() if head.isupper() else head
         return ""
     if not best or HEADER_WORDS.match(best):
         return ""
@@ -123,13 +137,16 @@ def main():
     ap = argparse.ArgumentParser(description="Gazette extract → loader CSV")
     ap.add_argument("raw_csv")
     ap.add_argument("out_csv")
-    ap.add_argument("--district", required=True, choices=["Bangalore Urban", "Bangalore Rural"])
+    ap.add_argument("--district", required=True, choices=["Bangalore Urban", "Bangalore Rural", "Ramanagara"])
     ap.add_argument("--section", action="append", required=True,
                     help="page range and taluk/SRO, e.g. 12-68:Nelamangala")
     ap.add_argument("--parent-level", default="taluk",
                     help="level of the --section areas: taluk (rural SROs) or zone (city SROs)")
     ap.add_argument("--mode", choices=["rural", "city"], default="rural",
                     help="city: roll road rows up into their locality heading")
+    ap.add_argument("--town-rollup", action="store_true",
+                    help="roll Kannada-only town street rows (one site rate, no English name) "
+                         "into a '<office> Town' area")
     ap.add_argument("--skipped", help="optional CSV listing skipped rows for review")
     args = ap.parse_args()
 
@@ -182,6 +199,26 @@ def main():
                 continue
             body = cells[1:]
             name = english_name(body)
+            if not name and args.town_rollup:
+                nums = numbers(body)
+                if len(nums) == 1 and 1000 <= nums[0] <= 600000:
+                    groups.setdefault((taluk, f"{taluk} Town", "plot"), []).append((nums[0], page))
+                    reasons["rolled into town"] += 1
+                    continue
+            name_kn = ""
+            if not name:
+                # Kannada-only row in the old Nudi font: recover the name from Kannada
+                for c in body:
+                    kn = nudi.to_unicode(c)
+                    if kn:
+                        if nudi.SUB_ROW_KN.search(kn):
+                            kn = None
+                        break
+                else:
+                    kn = None
+                if kn and len(numbers(body)) >= 3:
+                    name_kn, name = kn, nudi.to_english(kn)
+                    reasons["name read from Kannada"] += 1
             if not name:
                 reasons["no English name"] += 1
                 skipped.append([page, "no English name"] + body)
@@ -238,7 +275,7 @@ def main():
                     continue
                 seen.add(key)
                 out.append({
-                    "district": args.district, "area_name": name, "area_level": level,
+                    "district": args.district, "area_name": name, "name_kn": name_kn, "area_level": level,
                     "parent_name": taluk, "parent_level": args.parent_level,
                     "property_type": ptype, "approval_status": "",
                     "rate": f"{rate:.0f}", "unit": unit,
@@ -260,7 +297,7 @@ def main():
         seen.add(key)
         rates = sorted(v for v, _ in vals)
         out.append({
-            "district": args.district, "area_name": area, "area_level": "locality",
+            "district": args.district, "area_name": area, "name_kn": "", "area_level": "locality",
             "parent_name": taluk, "parent_level": args.parent_level,
             "property_type": ptype, "approval_status": "",
             "rate": f"{statistics.median(rates):.0f}", "unit": "sqm",
@@ -268,7 +305,7 @@ def main():
                           + (f" (median of {len(rates)})" if len(rates) > 1 else ""),
         })
 
-    fields = ["district", "area_name", "area_level", "parent_name", "parent_level",
+    fields = ["district", "area_name", "name_kn", "area_level", "parent_name", "parent_level",
               "property_type", "approval_status", "rate", "unit", "source_ref"]
     with open(args.out_csv, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
