@@ -19,7 +19,11 @@ value alongside and a confidence level based on how much data there is.
 ## Layout
 
 ```
-db/nelabele_schema.sql   tables, rate engine, read-only API views
+app/                     Flutter app (Android + web), built by GitHub Actions
+auth/                    signing key for the app's read-only API token
+config/data_api.json     Data API URL and the app's public read-only token
+db/nelabele_schema.sql   tables and rate engine (private nelabele schema)
+db/api.sql               read-only views and lookups the Data API exposes
 ingest/                  guidance value extract, parse and load scripts
 data/guidance/           parsed guidance values, ready to load
 ```

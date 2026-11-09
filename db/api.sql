@@ -26,11 +26,12 @@ SELECT id, name, name_kn, level, parent_id, district, aliases,
        ST_AsGeoJSON(centroid)::json AS centroid
 FROM nelabele.geo_area;
 
--- Indicative rates with area names
+-- Indicative rates with area names and the taluk/zone they sit in
 CREATE VIEW public.api_rate AS
-SELECT r.*, a.name AS area_name, a.level, a.district
+SELECT r.*, a.name AS area_name, a.level, a.district, p.name AS parent_name
 FROM nelabele.rate_summary r
-JOIN nelabele.geo_area a ON a.id = r.geo_area_id;
+JOIN nelabele.geo_area a ON a.id = r.geo_area_id
+LEFT JOIN nelabele.geo_area p ON p.id = a.parent_id;
 
 -- Which area is this point in? (GET /rpc/area_at?lon=..&lat=..)
 CREATE FUNCTION public.area_at(lon double precision, lat double precision)

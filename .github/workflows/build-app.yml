@@ -1,0 +1,57 @@
+name: Build app
+
+on:
+  push:
+    branches: [main]
+    paths: [app/**, config/**, .github/workflows/build-app.yml]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      # Platform folders aren't kept in the repo; generate them fresh.
+      - name: Generate Android and web project files
+        run: |
+          flutter create --platforms=android,web --project-name nelabele --org app.nelabele .
+          rm -rf test
+          manifest=android/app/src/main/AndroidManifest.xml
+          sed -i 's#<application#<uses-permission android:name="android.permission.INTERNET"/>\n    <application#' $manifest
+          sed -i 's/android:label="nelabele"/android:label="NelaBele"/' $manifest
+          sed -i 's#<title>nelabele</title>#<title>NelaBele</title>#' web/index.html
+
+      - run: flutter pub get
+
+      - name: Check the code
+        run: flutter analyze --no-fatal-infos lib
+
+      - name: Build Android APK
+        run: flutter build apk --release --dart-define-from-file=../config/data_api.json
+
+      - name: Build web app
+        run: flutter build web --release --base-href /nelabele/ --dart-define-from-file=../config/data_api.json
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nelabele-android
+          path: app/build/app/outputs/flutter-apk/app-release.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nelabele-web
+          path: app/build/web
