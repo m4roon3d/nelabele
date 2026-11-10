@@ -34,8 +34,8 @@ jobs:
           cat > query.overpass <<'EOF'
           [out:json][timeout:180];
           (
-            node["place"~"^(city|town|village|hamlet|suburb|neighbourhood|quarter|locality|isolated_dwelling)$"]["name"](12.30,76.90,13.60,78.10);
-            way["place"~"^(village|hamlet|suburb|neighbourhood|quarter|locality)$"]["name"](12.30,76.90,13.60,78.10);
+            node["place"~"^(city|town|village|hamlet|suburb|neighbourhood|quarter|locality|isolated_dwelling)$"]["name"](12.30,76.20,14.40,78.65);
+            way["place"~"^(village|hamlet|suburb|neighbourhood|quarter|locality)$"]["name"](12.30,76.20,14.40,78.65);
           );
           out center tags;
           EOF
@@ -81,8 +81,8 @@ jobs:
             node["public_transport"="station"]["subway"="yes"](12.55,77.15,13.45,77.95);
             node["railway"="station"]["construction"="subway"](12.55,77.15,13.45,77.95);
             way["aeroway"="aerodrome"]["name"~"Kempegowda|HAL|Bengaluru|Bangalore"](12.55,77.15,13.45,77.95);
-            way["highway"]["name"~"Peripheral Ring Road|Satellite Town Ring Road|Outer Ring Road|Business Corridor|STRR|PRR",i](12.30,76.90,13.60,78.10);
-            way["highway"~"construction|proposed"]["name"~"Ring Road|Corridor|STRR|PRR",i](12.30,76.90,13.60,78.10);
+            way["highway"]["name"~"Peripheral Ring Road|Satellite Town Ring Road|Outer Ring Road|Business Corridor|STRR|PRR",i](12.30,76.20,14.40,78.65);
+            way["highway"~"construction|proposed"]["name"~"Ring Road|Corridor|STRR|PRR",i](12.30,76.20,14.40,78.65);
           );
           out geom tags;
           EOF
