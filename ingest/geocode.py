@@ -155,8 +155,9 @@ def main():
             areas[key] = (r["area_level"], (r.get("name_kn") or "").replace(" ", ""),
                           r.get("context") or prev[2])
 
-    # Centre of each taluk / sub-registrar office: the OSM place of that name
-    centres = {}
+    # Centre of each taluk / sub-registrar office: the OSM place of that name.
+    # Offices named after a hobli OSM doesn't have get a hand-placed centre.
+    centres = {"Jala": (13.150, 77.650)}   # Jala hobli: Bagalur, Kattigenahalli, Sathanur
     for district, parent, plevel, _ in areas:
         if parent in centres:
             continue

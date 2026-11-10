@@ -219,9 +219,12 @@ class SearchIndex {
       final s = _score(q, qTri, _osm[i].$2, () => _osm[i].$5);
       if (s > bestOsm.$1) bestOsm = (s, i);
     }
+    // roads are keyed without "main": "Bagalur Main Road" = "Bagalur Road"
+    final qRoad = searchKey(raw.replaceAll(RegExp(r'\bmain\b', caseSensitive: false), ''));
+    final qRoadTri = _trigrams(qRoad);
     var bestRoad = (0.0, -1);
     for (var i = 0; i < _roads.length; i++) {
-      final s = _score(q, qTri, _roads[i].$2, () => _roads[i].$4);
+      final s = _score(qRoad, qRoadTri, _roads[i].$2, () => _roads[i].$4);
       if (s > bestRoad.$1) bestRoad = (s, i);
     }
     final roadWins = bestRoad.$1 >= 80 && bestRoad.$1 >= bestOsm.$1;

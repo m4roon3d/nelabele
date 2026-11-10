@@ -220,6 +220,11 @@ def main():
             cells = [c.strip() for c in row[2:]]
             if taluk is None or not cells:
                 continue
+            if not cells[0]:
+                # many gazettes print village serial numbers one column to the right
+                i = next((k for k, c in enumerate(cells) if c), None)
+                if i is not None and i <= 2 and cells[i].isdigit():
+                    cells = cells[i:]
             if args.mode == "city" and not cells[0].isdigit():
                 h = english_name(cells[1:])
                 if (h and not numbers(cells[1:]) and not PROJECT.search(h) and not ROADLIKE.search(h)
@@ -240,11 +245,6 @@ def main():
                     if village:
                         cells = ["0", village] + [f"{v:.0f}" for v in nums_here]
                         reasons["village from heading"] += 1
-            if ACRE_RUPEES and not cells[0]:
-                # district gazettes print village serial numbers one column to the right
-                i = next((k for k, c in enumerate(cells) if c), None)
-                if i is not None and i <= 2 and cells[i].isdigit():
-                    cells = cells[i:]
             if not cells[0].isdigit():
                 continue
             body = cells[1:]

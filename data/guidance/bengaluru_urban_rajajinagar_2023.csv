@@ -125,6 +125,7 @@ Bangalore Urban,Pillamma Block Main Roads,,locality,Srirampura,zone,plot,,50000,
 Bangalore Urban,Pillamma Block Cross Roads,,locality,Srirampura,zone,plot,,45000,sqm,Srirampura SRO gazette p.53,Roads
 Bangalore Urban,Muddappa Thota,,locality,Srirampura,zone,plot,,60000,sqm,Srirampura SRO gazette p.53,Roads
 Bangalore Urban,Robertson Block,,locality,Srirampura,zone,plot,,50000,sqm,Srirampura SRO gazette p.53,Roads
+Bangalore Urban,Goutamanagara,,locality,Srirampura,zone,plot,,40000,sqm,Srirampura SRO gazette p.54,Roads
 Bangalore Urban,Okalipuram All Main Roads,,locality,Srirampura,zone,plot,,85000,sqm,Srirampura SRO gazette p.54,to R.R.R Kalyana Mantapa (Old
 Bangalore Urban,Okalipuram All Cross Roads,,locality,Srirampura,zone,plot,,75000,sqm,Srirampura SRO gazette p.54,to R.R.R Kalyana Mantapa (Old
 Bangalore Urban,Brahmapura Main Roads,,locality,Srirampura,zone,plot,,55000,sqm,Srirampura SRO gazette p.54,Roads
@@ -165,14 +166,141 @@ Bangalore Urban,Anantha Nagar,,locality,Srirampura,zone,plot,,35000,sqm,Srirampu
 Bangalore Urban,Goripalya Cross Road,,locality,Srirampura,zone,plot,,45000,sqm,Srirampura SRO gazette p.57,Goripalya
 Bangalore Urban,Rayapuram Main Roads,,locality,Srirampura,zone,plot,,43000,sqm,Srirampura SRO gazette p.58,Rayapuram Ward No
 Bangalore Urban,Rayapuram Cross Roads,,locality,Srirampura,zone,plot,,33000,sqm,Srirampura SRO gazette p.58,Rayapuram Ward No
+Bangalore Urban,Andharahalli,,village,Laggere,zone,agricultural_land,,35000000,acre,Laggere SRO gazette p.59,
+Bangalore Urban,Andharahalli,,village,Laggere,zone,plot,,25000,sqm,Laggere SRO gazette p.59,
+Bangalore Urban,Siddaganga Layout,,locality,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.59,Andharahalli
 Bangalore Urban,Herohalli Anjenaya Temple to Andrahalli Govt School,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.59,Herohalli Anjenaya Temple
+Bangalore Urban,Maruthinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.59,Peenya 2nd Stage
+Bangalore Urban,Rameshwaranagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.59,operative Society Ltd
+Bangalore Urban,Shusruthinagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.59,operative Society Ltd
+Bangalore Urban,Vidyamananagara,,village,Laggere,zone,agricultural_land,,20000000,acre,Laggere SRO gazette p.59,
+Bangalore Urban,Vidyamananagara,,village,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.59,
+Bangalore Urban,Chakranagara,,locality,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.59,operative Society Ltd
+Bangalore Urban,Navilunagara,,locality,Laggere,zone,plot,,25000,sqm,Laggere SRO gazette p.59,operative Society Ltd
+Bangalore Urban,Saibabangra,,locality,Laggere,zone,plot,,25000,sqm,Laggere SRO gazette p.59,operative Society Ltd
+Bangalore Urban,Hegganahalli,,village,Laggere,zone,agricultural_land,,35000000,acre,Laggere SRO gazette p.60,
+Bangalore Urban,Hegganahalli,,village,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.60,
+Bangalore Urban,Hegganahalli Slum Area,,locality,Laggere,zone,plot,,20000,sqm,Laggere SRO gazette p.60,Sollapuradamma Temple
+Bangalore Urban,Sanjeevininagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.60,Sollapuradamma Temple
+Bangalore Urban,Lakshmananagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.60,Sollapuradamma Temple
+Bangalore Urban,K.T.G. College Main Road,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.60,Sollapuradamma Temple
+Bangalore Urban,Ekadanthanagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.60,East-West College
+Bangalore Urban,Anjanagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.60,East-West College
+Bangalore Urban,B.E.L. Layout 1st Stage,,locality,Laggere,zone,plot,,75000,sqm,Laggere SRO gazette p.60,East-West College
+Bangalore Urban,B.E.L.2nd Stage,,locality,Laggere,zone,plot,,65000,sqm,Laggere SRO gazette p.61,East-West College
+Bangalore Urban,B.T.S.Layout,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.61,East-West College
+Bangalore Urban,Herohalli,,village,Laggere,zone,agricultural_land,,35000000,acre,Laggere SRO gazette p.61,
+Bangalore Urban,Herohalli,,village,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.61,
 Bangalore Urban,The Treeby Provident,,locality,Laggere,zone,plot,,55000,sqm,Laggere SRO gazette p.61,East-West College
 Bangalore Urban,Laksh Royal Manor,,locality,Laggere,zone,plot,,42000,sqm,Laggere SRO gazette p.61,East-West College
+Bangalore Urban,Byadarahalli,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.61,East-West College
+Bangalore Urban,I.T. Layout,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.61,East-West College
+Bangalore Urban,Kempegowdanagara,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.61,East-West College
+Bangalore Urban,Mahadeswaranagara,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.61,East-West College
+Bangalore Urban,Prakruthi Nagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.61,Site
+Bangalore Urban,Tunganagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.61,Housing Co-Society
+Bangalore Urban,Vasanthappa Layout,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.61,Housing Co-Society
+Bangalore Urban,Venkateshwara Layout,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.61,Housing Co-Society
+Bangalore Urban,Srinidhi Layout,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.61,Housing Co-Society
+Bangalore Urban,Nagaraholenagara,,locality,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.61,Housing Co-Society
+Bangalore Urban,Prasanna Layout,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.61,Housing Co-Society
 Bangalore Urban,D.S.Max Splendid,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.61,Housing Co-Society
-Bangalore Urban,Hosahalli Gollarapalya,,village,Laggere,zone,agricultural_land,,50000000,acre,Laggere SRO gazette p.62,
+Bangalore Urban,Hosahalli Gollarapalya,,village,Laggere,zone,agricultural_land,,35000000,acre,Laggere SRO gazette p.61,
+Bangalore Urban,Hosahalli Gollarapalya,,village,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.61,
+Bangalore Urban,Doddagollarahatti,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.61,Hosahalli Gollarapalya
 Bangalore Urban,Mahaveer Fortune,,locality,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.62,Hosahalli Gollarapalya
+Bangalore Urban,Karivobhanahalli,,village,Laggere,zone,agricultural_land,,30000000,acre,Laggere SRO gazette p.62,
+Bangalore Urban,Karivobhanahalli,,village,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.62,
+Bangalore Urban,Basaveshwara Badavane,,locality,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.62,Karivobhanahalli
+Bangalore Urban,Valmikinagar,,locality,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.62,Karivobhanahalli
+Bangalore Urban,Suprabathanagar,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.62,Karivobhanahalli
+Bangalore Urban,Brundavana Layout,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.62,Karivobhanahalli
+Bangalore Urban,Blue Jay layout,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.62,Karivobhanahalli
+Bangalore Urban,Pillappa Badavane,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.62,Layout
+Bangalore Urban,Thigalarapalya,,locality,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.62,Layout
+Bangalore Urban,Ragavendra Layout,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.62,Site
+Bangalore Urban,Prahalladanagar,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.62,Site
+Bangalore Urban,Annapurneshwarinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.62,Site
+Bangalore Urban,Balajinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.62,Site
+Bangalore Urban,Vinayaka Layout,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.62,Site
+Bangalore Urban,Byla Anjineiahnagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.62,Site
+Bangalore Urban,Kadambhanagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.62,Layout
+Bangalore Urban,Laggere,,village,Laggere,zone,agricultural_land,,50000000,acre,Laggere SRO gazette p.62,
+Bangalore Urban,Laggere,,village,Laggere,zone,plot,,70000,sqm,Laggere SRO gazette p.62,
+Bangalore Urban,L G Ramanna Layout,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.62,Laggere
+Bangalore Urban,Chamundinagar,,locality,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.62,Laggere
+Bangalore Urban,Rajeshwarinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.63,Laggere
+Bangalore Urban,BHEL Layout,,locality,Laggere,zone,plot,,75000,sqm,Laggere SRO gazette p.63,Quarters
+Bangalore Urban,Ravi Badavane,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.63,Quarters
+Bangalore Urban,Ramaiah Badavane,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.63,Quarters
+Bangalore Urban,Mico Layout,,locality,Laggere,zone,plot,,65000,sqm,Laggere SRO gazette p.63,Nirmana sangha Sites
+Bangalore Urban,17th Main Road J C Nagar,,locality,Laggere,zone,plot,,80000,sqm,Laggere SRO gazette p.63,Mantapa to Maruthinagar
+Bangalore Urban,15th Main Road J C Nagar,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.63,Mantapa to Maruthinagar
+Bangalore Urban,Laggere Mian Road,,locality,Laggere,zone,plot,,120000,sqm,Laggere SRO gazette p.63,Mantapa to Maruthinagar
+Bangalore Urban,Lakshmidevainagara,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.63,Mantapa to Maruthinagar
+Bangalore Urban,Muneshwara Layout,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.64,Co.op.Society Ltd
+Bangalore Urban,BFW Layout,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.64,Co.op.Society Ltd
+Bangalore Urban,Karnataka Layout H.B.C.S,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.64,Co.op.Society Ltd
+Bangalore Urban,Parvathinagara,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.64,Site
+Bangalore Urban,Prethinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.64,Site
+Bangalore Urban,Rajagopalanagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.64,Site
+Bangalore Urban,Sanjaygandhinagara,,locality,Laggere,zone,plot,,20000,sqm,Laggere SRO gazette p.64,Bridge)
+Bangalore Urban,Kaverinagara,,locality,Laggere,zone,plot,,20000,sqm,Laggere SRO gazette p.64,Bridge)
+Bangalore Urban,Basappanakatte,,locality,Laggere,zone,plot,,20000,sqm,Laggere SRO gazette p.64,Bridge)
+Bangalore Urban,Shambhavinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.64,building co-op Society
+Bangalore Urban,Srinivasanagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.64,building co-op Society
+Bangalore Urban,MEILayout,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.64,building co-op Society
+Bangalore Urban,Vidhanasoudha Layout,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.64,building co-op Society
+Bangalore Urban,Chowdeshwarinagara,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.64,Co.op.Society
+Bangalore Urban,G.K.W.Layout,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.64,Co.op.Society
+Bangalore Urban,Ganapathinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.64,Co.op.Society
+Bangalore Urban,J.C.Nagara,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.64,Co.op.Society
+Bangalore Urban,JaimaruthiNagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.64,Co.op.Society
+Bangalore Urban,Kirloskar Layout,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Kurubarahalli,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Lakshminagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Mahathma Gandhinagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Preemanagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Freedom Fighter Layout,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Narshimhaswamy Layout,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Rajevagandhinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Lavakushanagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Kempegowda Layout,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Shakamma Layout,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Byrveshwaranagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Duglamma Layout,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.65,Areas)
+Bangalore Urban,Iyengar Layout,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.65,Areas)
 Bangalore Urban,Sree Sumukha Serinity,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.65,Housing co-op society ltd
+Bangalore Urban,Nallakadaranahalli,,village,Laggere,zone,agricultural_land,,35000000,acre,Laggere SRO gazette p.65,
+Bangalore Urban,Nallakadaranahalli,,village,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.65,
+Bangalore Urban,Shivapura,,village,Laggere,zone,agricultural_land,,35000000,acre,Laggere SRO gazette p.65,
+Bangalore Urban,Shivapura,,village,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.65,
+Bangalore Urban,HMT Layout,,village,Laggere,zone,agricultural_land,,40000000,acre,Laggere SRO gazette p.65,
+Bangalore Urban,HMT Layout,,village,Laggere,zone,plot,,80000,sqm,Laggere SRO gazette p.65,
+Bangalore Urban,Lingadhiranahalli,,village,Laggere,zone,agricultural_land,,40000000,acre,Laggere SRO gazette p.66,
+Bangalore Urban,Lingadhiranahalli,,village,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.66,
+Bangalore Urban,Lingdhiranahalli 60ft Road,,locality,Laggere,zone,plot,,80000,sqm,Laggere SRO gazette p.66,Group 4rd Stage
+Bangalore Urban,B.E.M.L. 1st Stage,,locality,Laggere,zone,plot,,90000,sqm,Laggere SRO gazette p.66,Association layout
+Bangalore Urban,B.E.M.L. 2st Stage,,locality,Laggere,zone,plot,,90000,sqm,Laggere SRO gazette p.66,Association layout
+Bangalore Urban,H.V.R.Layout,,locality,Laggere,zone,plot,,80000,sqm,Laggere SRO gazette p.66,building co-op society ltd
+Bangalore Urban,Kamakshipalaya,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.66,building co-op society ltd
+Bangalore Urban,Kamakshipalya Main Road,,locality,Laggere,zone,plot,,80000,sqm,Laggere SRO gazette p.66,Station to Summanahalli
+Bangalore Urban,Kamalanagara,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.66,Station to Summanahalli
+Bangalore Urban,Kamalanagara Main Road,,locality,Laggere,zone,plot,,70000,sqm,Laggere SRO gazette p.67,Station to Summanahalli
+Bangalore Urban,Karekallu,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.67,Station to Summanahalli
+Bangalore Urban,Kaveripura,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.67,Station to Summanahalli
+Bangalore Urban,Kaveripura Main Road,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.67,Station to Summanahalli
+Bangalore Urban,Meenakshinagara,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.67,Station to Summanahalli
+Bangalore Urban,Ranganathapura,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.67,Station to Summanahalli
+Bangalore Urban,Sannakkibayalu,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.67,Station to Summanahalli
 Bangalore Urban,Saneguruvanahalli Near,,village,Laggere,zone,agricultural_land,,60000000,acre,Laggere SRO gazette p.67,
+Bangalore Urban,Saneguruvanahlli,,locality,Laggere,zone,plot,,75000,sqm,Laggere SRO gazette p.67,Layout
+Bangalore Urban,Sharadha Colony,,locality,Laggere,zone,plot,,85000,sqm,Laggere SRO gazette p.67,Nagara
+Bangalore Urban,Vrushabhavathinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.67,Nagara
+Bangalore Urban,SBIColony,,locality,Laggere,zone,plot,,65000,sqm,Laggere SRO gazette p.68,Station) to K H B Bus Stop
+Bangalore Urban,NGOColony,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.68,Station) to K H B Bus Stop
+Bangalore Urban,Kasthuri Badavane,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.68,Station) to K H B Bus Stop
+Bangalore Urban,Manivilas Garden,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.68,Station) to K H B Bus Stop
 Bangalore Urban,Kodigehalli,,village,Nagarbhavi,zone,agricultural_land,,15000000,acre,Nagarbhavi SRO gazette p.69,
 Bangalore Urban,Kodigehalli,,village,Nagarbhavi,zone,plot,,20000,sqm,Nagarbhavi SRO gazette p.69,
 Bangalore Urban,Chikka kodigehalli,,village,Nagarbhavi,zone,agricultural_land,,15000000,acre,Nagarbhavi SRO gazette p.69,
@@ -216,6 +344,7 @@ Bangalore Urban,Canara Bank Colony,,locality,Nagarbhavi,zone,plot,,70000,sqm,Nag
 Bangalore Urban,Anubhavanagar,,locality,Nagarbhavi,zone,plot,,61000,sqm,Nagarbhavi SRO gazette p.73,Moodalapalya Circal to
 Bangalore Urban,Maruthinagar,,locality,Nagarbhavi,zone,plot,,61000,sqm,Nagarbhavi SRO gazette p.73,Moodalapalya Circal to
 Bangalore Urban,Adarshanagar,,locality,Nagarbhavi,zone,plot,,50000,sqm,Nagarbhavi SRO gazette p.73,Moodalapalya Circal to
+Bangalore Urban,Shivanandanagar,,locality,Nagarbhavi,zone,plot,,50000,sqm,Nagarbhavi SRO gazette p.73,Moodalapalya Circal to
 Bangalore Urban,Coconut Garden,,locality,Nagarbhavi,zone,plot,,50000,sqm,Nagarbhavi SRO gazette p.73,Moodalapalya Circal to
 Bangalore Urban,Anika Red Wood Homes,,locality,Nagarbhavi,zone,plot,,57000,sqm,Nagarbhavi SRO gazette p.73,Moodalapalya Circal to
 Bangalore Urban,Hoysala nagar,,locality,Nagarbhavi,zone,plot,,50000,sqm,Nagarbhavi SRO gazette p.73,Moodalapalya Circal to
@@ -226,6 +355,7 @@ Bangalore Urban,Madhuranagar,,locality,Nagarbhavi,zone,plot,,50000,sqm,Nagarbhav
 Bangalore Urban,Nanjarasappa Layout,,locality,Nagarbhavi,zone,plot,,50000,sqm,Nagarbhavi SRO gazette p.73,Moodalapalya Circal to
 Bangalore Urban,Nagarabhavi ring road,,locality,Nagarbhavi,zone,plot,,90000,sqm,Nagarbhavi SRO gazette p.73,Moodalapalya Circal to
 Bangalore Urban,Vicheta Comfort,,locality,Nagarbhavi,zone,plot,,61000,sqm,Nagarbhavi SRO gazette p.74,Moodalapalya Circal to
+Bangalore Urban,Income Tax Layout,,locality,Nagarbhavi,zone,plot,,68000,sqm,Nagarbhavi SRO gazette p.74,HBCS ltd
 Bangalore Urban,Mallathahalli,,village,Nagarbhavi,zone,agricultural_land,,30000000,acre,Nagarbhavi SRO gazette p.74,
 Bangalore Urban,Mallathahalli,,village,Nagarbhavi,zone,plot,,55000,sqm,Nagarbhavi SRO gazette p.74,
 Bangalore Urban,MPM Layout,,locality,Nagarbhavi,zone,plot,,60000,sqm,Nagarbhavi SRO gazette p.75,Stage)
@@ -255,6 +385,7 @@ Bangalore Urban,Pattegarapalya,,locality,Nagarbhavi,zone,plot,,42000,sqm,Nagarbh
 Bangalore Urban,Pattegarapalya 60 feet road,,locality,Nagarbhavi,zone,plot,,78000,sqm,Nagarbhavi SRO gazette p.77,Malagalu)
 Bangalore Urban,Kanakanagar,,locality,Nagarbhavi,zone,plot,,42000,sqm,Nagarbhavi SRO gazette p.77,Malagalu)
 Bangalore Urban,Sampige Layout,,locality,Nagarbhavi,zone,plot,,72000,sqm,Nagarbhavi SRO gazette p.77,Malagalu)
+Bangalore Urban,Sampige Layout 60 feet road,,locality,Nagarbhavi,zone,plot,,78000,sqm,Nagarbhavi SRO gazette p.77,Malagalu)
 Bangalore Urban,Moodalapalya,,locality,Nagarbhavi,zone,plot,,55000,sqm,Nagarbhavi SRO gazette p.77,Malagalu)
 Bangalore Urban,Manganahalli,,village,Nagarbhavi,zone,agricultural_land,,30000000,acre,Nagarbhavi SRO gazette p.77,
 Bangalore Urban,Manganahalli,,village,Nagarbhavi,zone,plot,,20000,sqm,Nagarbhavi SRO gazette p.77,
@@ -274,6 +405,7 @@ Bangalore Urban,Muthuraya Swamy Layout,,locality,Nagarbhavi,zone,plot,,40000,sqm
 Bangalore Urban,Sallapuradamma Layout,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,Jnanabharathi)
 Bangalore Urban,Madhuramma Layout,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
 Bangalore Urban,Ashwath nagar,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
+Bangalore Urban,P &T Layout,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
 Bangalore Urban,Pillappana katte,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
 Bangalore Urban,Chandana Layout,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
 Bangalore Urban,Rajiv Gandhi nagar (Slum),,locality,Nagarbhavi,zone,plot,,25000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
@@ -375,6 +507,7 @@ Bangalore Urban,Ravi Kirloskar Layout,,locality,Dasanapura,zone,plot,,40000,sqm,
 Bangalore Urban,Dasanapura,,village,Dasanapura,zone,agricultural_land,,30500000,acre,Dasanapura SRO gazette p.95,
 Bangalore Urban,Dasanapura,,village,Dasanapura,zone,plot,,33000,sqm,Dasanapura SRO gazette p.95,
 Bangalore Urban,Dasanapura Potential Land Use,,village,Dasanapura,zone,agricultural_land,,41500000,acre,Dasanapura SRO gazette p.95,
+Bangalore Urban,Dasanapura Unibic Industry Sy,,village,Dasanapura,zone,agricultural_land,,40000000,acre,Dasanapura SRO gazette p.95,
 Bangalore Urban,Dombarahalli,,village,Dasanapura,zone,agricultural_land,,20000000,acre,Dasanapura SRO gazette p.96,
 Bangalore Urban,Dombarahalli,,village,Dasanapura,zone,plot,,28000,sqm,Dasanapura SRO gazette p.96,
 Bangalore Urban,Dombarahalli Sy,,village,Dasanapura,zone,agricultural_land,,18500000,acre,Dasanapura SRO gazette p.96,
@@ -431,6 +564,12 @@ Bangalore Urban,Makali,,village,Dasanapura,zone,agricultural_land,,27500000,acre
 Bangalore Urban,Makali,,village,Dasanapura,zone,plot,,32000,sqm,Dasanapura SRO gazette p.101,
 Bangalore Urban,Makali Himalaya Industry Area,,village,Dasanapura,zone,agricultural_land,,37000000,acre,Dasanapura SRO gazette p.101,
 Bangalore Urban,Makali Himalaya Industry Area,,village,Dasanapura,zone,plot,,60000,sqm,Dasanapura SRO gazette p.101,
+Bangalore Urban,Mallasandra,,village,Dasanapura,zone,agricultural_land,,9500000,acre,Dasanapura SRO gazette p.101,
+Bangalore Urban,Mallasandra,,village,Dasanapura,zone,plot,,15000,sqm,Dasanapura SRO gazette p.101,
+Bangalore Urban,Nagasandra,,village,Dasanapura,zone,agricultural_land,,9000000,acre,Dasanapura SRO gazette p.101,
+Bangalore Urban,Nagasandra,,village,Dasanapura,zone,plot,,15000,sqm,Dasanapura SRO gazette p.101,
+Bangalore Urban,Narayanappana Palya,,village,Dasanapura,zone,agricultural_land,,9000000,acre,Dasanapura SRO gazette p.101,
+Bangalore Urban,Narayanappana Palya,,village,Dasanapura,zone,plot,,15000,sqm,Dasanapura SRO gazette p.101,
 Bangalore Urban,Narayanappana Palya Sy,,village,Dasanapura,zone,agricultural_land,,12000000,acre,Dasanapura SRO gazette p.102,
 Bangalore Urban,Narayanappana Palya Sy,,village,Dasanapura,zone,plot,,30000,sqm,Dasanapura SRO gazette p.102,
 Bangalore Urban,Ravuthanahalli,,village,Dasanapura,zone,agricultural_land,,10000000,acre,Dasanapura SRO gazette p.102,
@@ -453,41 +592,96 @@ Bangalore Urban,Vaddarahalli,,village,Dasanapura,zone,plot,,15000,sqm,Dasanapura
 Bangalore Urban,Vaddarahalli Potential Land Use,,village,Dasanapura,zone,agricultural_land,,13500000,acre,Dasanapura SRO gazette p.103,
 Bangalore Urban,Venkatapur,,village,Dasanapura,zone,agricultural_land,,10000000,acre,Dasanapura SRO gazette p.103,
 Bangalore Urban,Venkatapur,,village,Dasanapura,zone,plot,,12000,sqm,Dasanapura SRO gazette p.103,
+Bangalore Urban,Vijayanagar3rd Cross,,locality,Vijayanagar,zone,plot,,125000,sqm,Vijayanagar SRO gazette p.104,
+Bangalore Urban,Vijayanagar9th Main Road,,locality,Vijayanagar,zone,plot,,125000,sqm,Vijayanagar SRO gazette p.104,
 Bangalore Urban,"Vijayanagar Pipeline (From Magadi Road Tolgate to Padarayanapura, 1st Railway Gate Krishnadevaraya Road)",,locality,Vijayanagar,zone,plot,,120000,sqm,Vijayanagar SRO gazette p.104,
+Bangalore Urban,Vijayanagar 1st to 8th Main Road,,locality,Vijayanagar,zone,plot,,120000,sqm,Vijayanagar SRO gazette p.104,
 Bangalore Urban,Vijayangar 10 th 17th Main Road and other Main Roads,,locality,Vijayanagar,zone,plot,,120000,sqm,Vijayanagar SRO gazette p.104,
 Bangalore Urban,Vijayanagar5th Cross(from3rd Main Roadto10th Main Road),,locality,Vijayanagar,zone,plot,,120000,sqm,Vijayanagar SRO gazette p.104,
+Bangalore Urban,Vijayanagar other Cross Roads,,locality,Vijayanagar,zone,plot,,120000,sqm,Vijayanagar SRO gazette p.104,
 Bangalore Urban,"Magadi Chord Road & Service Road, Vijayanagar (Magadi Road Tolgate to 1st Main Road and V i j a y a n a g a r S e r vice Road)",,locality,Vijayanagar,zone,plot,,150000,sqm,Vijayanagar SRO gazette p.104,
+Bangalore Urban,East of chord road,,locality,Vijayanagar,zone,plot,,150000,sqm,Vijayanagar SRO gazette p.104,
 Bangalore Urban,Manuvana,,locality,Vijayanagar,zone,plot,,120000,sqm,Vijayanagar SRO gazette p.104,
 Bangalore Urban,"Hosahalli (B.D.A., C.I.T.B., K.H.B.) (Vijayanagar)",,locality,Vijayanagar,zone,plot,,120000,sqm,Vijayanagar SRO gazette p.104,
 Bangalore Urban,Chickpet H.B.C.S.Limited(Vijayanagar),,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.104,
+Bangalore Urban,Hosahalli Grama,,locality,Vijayanagar,zone,plot,,76000,sqm,Vijayanagar SRO gazette p.105,C .H.B.C.S.) Layout Vijayanagar
+Bangalore Urban,M.C.Layout(1stto3rd Main Road),,locality,Vijayanagar,zone,plot,,150000,sqm,Vijayanagar SRO gazette p.105,M.C.Layout)
 Bangalore Urban,M.C. Layout (4th & 6th Main Roads),,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.105,M.C.Layout)
+Bangalore Urban,M.C.Layout5th Main Road,,locality,Vijayanagar,zone,plot,,150000,sqm,Vijayanagar SRO gazette p.105,M.C.Layout)
 Bangalore Urban,"Magadi Chord Road, 8th Main Road (Vijayanagar Bus Stand to Moodalapalya)",,locality,Vijayanagar,zone,plot,,150000,sqm,Vijayanagar SRO gazette p.105,M.C.Layout)
 Bangalore Urban,M.C. Layout ( 9th Main onwards all main roads),,locality,Vijayanagar,zone,plot,,129000,sqm,Vijayanagar SRO gazette p.105,M.C.Layout)
 Bangalore Urban,"M.C. Layout 17th Cross (Service Road i.e., Canara Bank, Indraprastha Hotel, Veerashaiva Sahakari Bank, Maruthi Bande Behind, New BMTC Bus stand)",,locality,Vijayanagar,zone,plot,,150000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,M.C.Layout18th Cross,,locality,Vijayanagar,zone,plot,,120000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,M.C.Layoutothercrossroads,,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,Lakshmaiah Layout,,locality,Vijayanagar,zone,plot,,90000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,Vaibhav Palace,,locality,Vijayanagar,zone,plot,,75000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,R .P .C . B . D . A,,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,R .P . C . (B & A .S . O . ),,locality,Vijayanagar,zone,plot,,103000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,R.P.C.5th Main,,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,R.P.C.4th Cross,,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,R.P.C.Corporation Allotment,,locality,Vijayanagar,zone,plot,,75000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
 Bangalore Urban,R.P.C. 1st Main Road (Vijayanagar C l ub Road),,locality,Vijayanagar,zone,plot,,160000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
 Bangalore Urban,R.P.C. 10th Main Road to Railway flyover (R.P.C. Layout 10th Main R o a d ),,locality,Vijayanagar,zone,plot,,107000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
 Bangalore Urban,"Vijayanagar R.P.C. 2nd Stage, 4th Cross",,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
+Bangalore Urban,R.P.C.Layout9th Cross,,locality,Vijayanagar,zone,plot,,120000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
 Bangalore Urban,R.P.C. Service Road (East of Chord R oad) (E.O.C.),,locality,Vijayanagar,zone,plot,,150000,sqm,Vijayanagar SRO gazette p.106,M.C.Layout)
 Bangalore Urban,Kalyan H.B.C.S Layout,,locality,Vijayanagar,zone,plot,,103000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
+Bangalore Urban,Kalyan H.B.C.S.Service Road,,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
+Bangalore Urban,Co-operative Department Layout,,locality,Vijayanagar,zone,plot,,103000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
+Bangalore Urban,M.G.E.H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,103000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
+Bangalore Urban,Maruthi H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,103000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
 Bangalore Urban,Industriesand Commerce Department H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,109000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
 Bangalore Urban,Vivekananda Janatha H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,109000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
+Bangalore Urban,Marenahalli1st Main Road,,locality,Vijayanagar,zone,plot,,110000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
+Bangalore Urban,Marenahalliother Main Roads,,locality,Vijayanagar,zone,plot,,100000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
+Bangalore Urban,Marenahalli Cross Roads,,locality,Vijayanagar,zone,plot,,86000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
+Bangalore Urban,Income Tax Layout,,locality,Vijayanagar,zone,plot,,95000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
 Bangalore Urban,"Provident Fund Employees H.B.C,S, Layout",,locality,Vijayanagar,zone,plot,,95000,sqm,Vijayanagar SRO gazette p.107,M.C.Layout)
+Bangalore Urban,G.K.W.Layout,,locality,Vijayanagar,zone,plot,,95000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Basaveshwara H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,108000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Vyalikaval H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,108000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Saraswathinagar,,locality,Vijayanagar,zone,plot,,108000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Vinayaka H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,108000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
 Bangalore Urban,Central Excise Employees H.B.C.S. L a yout,,locality,Vijayanagar,zone,plot,,108000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Secretariat Layout,,locality,Vijayanagar,zone,plot,,108000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Subbanna Garden Main Roads,,locality,Vijayanagar,zone,plot,,97000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Subbanna Garden Cross Roads,,locality,Vijayanagar,zone,plot,,81000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Hariram Oildas Layout,,locality,Vijayanagar,zone,plot,,97000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Agrahara Dasarahalli,,locality,Vijayanagar,zone,plot,,90000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
 Bangalore Urban,Magadi Main road Agrahara Dasarahalli,,locality,Vijayanagar,zone,plot,,160000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
 Bangalore Urban,Agrahara Dasarahalli 1stCross Road,,locality,Vijayanagar,zone,plot,,90000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
 Bangalore Urban,Agrahara Dasarahalli2ndand9th Cross&Others Road,,locality,Vijayanagar,zone,plot,,90000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Attiguppe1st Main Road,,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Attiguppe,,locality,Vijayanagar,zone,plot,,80000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
+Bangalore Urban,Indra Colony,,locality,Vijayanagar,zone,plot,,22000,sqm,Vijayanagar SRO gazette p.108,M.C.Layout)
 Bangalore Urban,Towards Mysore Road (Chord Road),,locality,Vijayanagar,zone,plot,,139000,sqm,Vijayanagar SRO gazette p.109,Addition)
 Bangalore Urban,Attiguppe Petrol Bunk Road (Chandra Layout Main Road),,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.109,Addition)
 Bangalore Urban,Chamarajapet Hard Silks Society L a y o u t,,locality,Vijayanagar,zone,plot,,90000,sqm,Vijayanagar SRO gazette p.109,Addition)
 Bangalore Urban,Widia (India) Employees H.B.C.S. L ayout,,locality,Vijayanagar,zone,plot,,100000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,Amarajyothi H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,97000,sqm,Vijayanagar SRO gazette p.109,Addition)
 Bangalore Urban,"Nagarabhavai Main Road, Malagala Main Road",,locality,Vijayanagar,zone,plot,,110000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,Cholur Palya Main Roads,,locality,Vijayanagar,zone,plot,,54000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,Channel Road(New Entry),,locality,Vijayanagar,zone,plot,,64000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,Cholur Palya Cross Road,,locality,Vijayanagar,zone,plot,,49000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,Ganesha Temple Road,,locality,Vijayanagar,zone,plot,,65000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,Manjunathanagar(Cholur Palya),,locality,Vijayanagar,zone,plot,,64000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,Mallige Thota Main Road,,locality,Vijayanagar,zone,plot,,54000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,Mallige Thota Cross Road,,locality,Vijayanagar,zone,plot,,49000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,P&TLayout,,locality,Vijayanagar,zone,plot,,60000,sqm,Vijayanagar SRO gazette p.109,Addition)
+Bangalore Urban,Padarayanapura Pipeline,,locality,Vijayanagar,zone,plot,,60000,sqm,Vijayanagar SRO gazette p.109,Addition)
 Bangalore Urban,Pipeline 1st Cross to 16th Cross (Cholur Palya),,locality,Vijayanagar,zone,plot,,80000,sqm,Vijayanagar SRO gazette p.109,Addition)
 Bangalore Urban,Pipeline,,locality,Vijayanagar,zone,plot,,80000,sqm,Vijayanagar SRO gazette p.109,Addition)
 Bangalore Urban,Telecom Employees H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,80000,sqm,Vijayanagar SRO gazette p.110,Addition)
+Bangalore Urban,Swathi Park(Swatjoconstruction),,locality,Vijayanagar,zone,plot,,54000,sqm,Vijayanagar SRO gazette p.110,Addition)
+Bangalore Urban,Vidyaranyanagar Main Road,,locality,Vijayanagar,zone,plot,,70000,sqm,Vijayanagar SRO gazette p.110,toll gate ( New addition)
+Bangalore Urban,Vidyaranyanagar Cross Road,,locality,Vijayanagar,zone,plot,,65000,sqm,Vijayanagar SRO gazette p.110,toll gate ( New addition)
 Bangalore Urban,Govindarajanagar (Thimmenahalli) other Main Roads,,locality,Vijayanagar,zone,plot,,86500,sqm,Vijayanagar SRO gazette p.110,Govindrajanagara)
 Bangalore Urban,M.C. Layout 32nd & 33rd Main R o ads,,locality,Vijayanagar,zone,plot,,130000,sqm,Vijayanagar SRO gazette p.110,Govindrajanagara)
+Bangalore Urban,Govindarajanagar Cross Roads,,locality,Vijayanagar,zone,plot,,85000,sqm,Vijayanagar SRO gazette p.110,Govindrajanagara)
 Bangalore Urban,Govindarajanagar 22nd Cross Road,,locality,Vijayanagar,zone,plot,,105000,sqm,Vijayanagar SRO gazette p.110,Govindrajanagara)
 Bangalore Urban,Kempe Gowda Housing Co-operative Society Limited,,locality,Vijayanagar,zone,plot,,86500,sqm,Vijayanagar SRO gazette p.110,Govindrajanagara)
+Bangalore Urban,Venkateshwara H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,86500,sqm,Vijayanagar SRO gazette p.110,Govindrajanagara)
+Bangalore Urban,Chandra Layout,,locality,Vijayanagar,zone,plot,,110000,sqm,Vijayanagar SRO gazette p.110,Agrahara)
 Bangalore Urban,Chandra Layout1st Main Road 80 feet Road Or 60 feet Road (Adigas Hotel and Petrol Bunk Road),,locality,Vijayanagar,zone,plot,,150000,sqm,Vijayanagar SRO gazette p.110,Agrahara)
 Bangalore Urban,"Bapuji H.B.C.S. Layout- Chandra Layout, Bapuji H.B.C.S. Layout - Chandra Layout",,locality,Vijayanagar,zone,plot,,108000,sqm,Vijayanagar SRO gazette p.111,Agrahara)
 Bangalore Urban,Deevatige Ramanahalli (Deepanjalinagar),,locality,Vijayanagar,zone,plot,,50000,sqm,Vijayanagar SRO gazette p.111,Ramanahalli (New Addition)
@@ -499,6 +693,7 @@ Bangalore Urban,Prashantha Nagar,,locality,Vijayanagar,zone,plot,,80000,sqm,Vija
 Bangalore Urban,Prashanthanagar1st Main Road,,locality,Vijayanagar,zone,plot,,80000,sqm,Vijayanagar SRO gazette p.111,Ramanahalli (New Addition)
 Bangalore Urban,Prashantha nagar 12th Cross,,locality,Vijayanagar,zone,plot,,75000,sqm,Vijayanagar SRO gazette p.111,Ramanahalli (New Addition)
 Bangalore Urban,National H.B.C.S. Layout,,locality,Vijayanagar,zone,plot,,80000,sqm,Vijayanagar SRO gazette p.111,Ramanahalli (New Addition)
+Bangalore Urban,Khushi Mansion,,locality,Vijayanagar,zone,plot,,54000,sqm,Vijayanagar SRO gazette p.112,Prashanthnagar)
 Bangalore Urban,Rajajinagar Industrial Town,,locality,Rajajinagar,zone,plot,,137500,sqm,Rajajinagar SRO gazette p.12 (median of 4),
 Bangalore Urban,Agrahara Dasarahalli,,locality,Rajajinagar,zone,plot,,93000,sqm,Rajajinagar SRO gazette p.13 (median of 33),Agrahara Dasarahalli
 Bangalore Urban,Agrahara Dasarahalli,,locality,Rajajinagar,zone,apartment,,63000,sqm,Rajajinagar SRO gazette p.13 (median of 7),Agrahara Dasarahalli
@@ -792,6 +987,7 @@ Bangalore Urban,Goripalya,,locality,Srirampura,zone,apartment,,52500,sqm,Sriramp
 Bangalore Urban,Rayapuram,,locality,Srirampura,zone,apartment,,35000,sqm,Srirampura SRO gazette p.58,
 Bangalore Urban,Andharahalli,,locality,Laggere,zone,apartment,,50000,sqm,Laggere SRO gazette p.59,
 Bangalore Urban,Peenya 2nd Stage,,locality,Laggere,zone,apartment,,45000,sqm,Laggere SRO gazette p.59,
+Bangalore Urban,operative Society Ltd,,locality,Laggere,zone,apartment,,45000,sqm,Laggere SRO gazette p.59,
 Bangalore Urban,Hegganahalli,,locality,Laggere,zone,apartment,,75000,sqm,Laggere SRO gazette p.60,
 Bangalore Urban,Sollapuradamma Temple,,locality,Laggere,zone,apartment,,60000,sqm,Laggere SRO gazette p.60,
 Bangalore Urban,Herohalli,,locality,Laggere,zone,apartment,,120000,sqm,Laggere SRO gazette p.60,
@@ -811,7 +1007,7 @@ Bangalore Urban,Industrial Area,,locality,Laggere,zone,apartment,,120000,sqm,Lag
 Bangalore Urban,Bridge,,locality,Laggere,zone,apartment,,60000,sqm,Laggere SRO gazette p.64,
 Bangalore Urban,building co-op Society,,locality,Laggere,zone,apartment,,60000,sqm,Laggere SRO gazette p.64,
 Bangalore Urban,Co.op.Society,,locality,Laggere,zone,apartment,,20000,sqm,Laggere SRO gazette p.64,
-Bangalore Urban,Housing co-op society ltd,,locality,Laggere,zone,apartment,,40000,sqm,Laggere SRO gazette p.65,
+Bangalore Urban,Housing co-op society ltd,,locality,Laggere,zone,apartment,,42500,sqm,Laggere SRO gazette p.65 (median of 4),
 Bangalore Urban,Shivapura,,locality,Laggere,zone,apartment,,60000,sqm,Laggere SRO gazette p.65,
 Bangalore Urban,Lingadhiranahalli,,locality,Laggere,zone,apartment,,60000,sqm,Laggere SRO gazette p.66,
 Bangalore Urban,Group 1st Stage,,locality,Laggere,zone,apartment,,60000,sqm,Laggere SRO gazette p.66,
@@ -846,7 +1042,7 @@ Bangalore Urban,Malagalu,,locality,Nagarbhavi,zone,plot,,50000,sqm,Nagarbhavi SR
 Bangalore Urban,Malagalu,,locality,Nagarbhavi,zone,apartment,,53250,sqm,Nagarbhavi SRO gazette p.76 (median of 2),
 Bangalore Urban,Srigandadakavalu,,locality,Nagarbhavi,zone,apartment,,65000,sqm,Nagarbhavi SRO gazette p.78,
 Bangalore Urban,Rhcs,,locality,Nagarbhavi,zone,apartment,,70000,sqm,Nagarbhavi SRO gazette p.78 (median of 3),
-Bangalore Urban,Rhcs,,locality,Nagarbhavi,zone,plot,,58000,sqm,Nagarbhavi SRO gazette p.78 (median of 2),
+Bangalore Urban,Rhcs,,locality,Nagarbhavi,zone,plot,,58000,sqm,Nagarbhavi SRO gazette p.78 (median of 3),
 Bangalore Urban,Sumanahalli to Janapriya,,locality,Nagarbhavi,zone,apartment,,55000,sqm,Nagarbhavi SRO gazette p.78,
 Bangalore Urban,Sallapuradamma Temple,,locality,Nagarbhavi,zone,apartment,,90000,sqm,Nagarbhavi SRO gazette p.78,
 Bangalore Urban,Jnanabharathi,,locality,Nagarbhavi,zone,apartment,,40000,sqm,Nagarbhavi SRO gazette p.78 (median of 2),
@@ -874,8 +1070,8 @@ Bangalore Urban,Sathyanarayana HBCS Layout,,locality,Dasanapura,zone,apartment,,
 Bangalore Urban,Residential area Sy,,locality,Dasanapura,zone,plot,,32000,sqm,Dasanapura SRO gazette p.98 (median of 5),
 Bangalore Urban,Residential area Sy,,locality,Dasanapura,zone,apartment,,38000,sqm,Dasanapura SRO gazette p.99,
 Bangalore Urban,Vijayanagara 9th A.B.C.D.F Main,,locality,Vijayanagar,zone,apartment,,125000,sqm,Vijayanagar SRO gazette p.104,
-Bangalore Urban,C .H.B.C.S. Layout Vijayanagar,,locality,Vijayanagar,zone,apartment,,65000,sqm,Vijayanagar SRO gazette p.105 (median of 8),
-Bangalore Urban,M.C.Layout,,locality,Vijayanagar,zone,apartment,,70000,sqm,Vijayanagar SRO gazette p.106 (median of 9),
+Bangalore Urban,C .H.B.C.S. Layout Vijayanagar,,locality,Vijayanagar,zone,apartment,,65000,sqm,Vijayanagar SRO gazette p.105 (median of 10),
+Bangalore Urban,M.C.Layout,,locality,Vijayanagar,zone,apartment,,75000,sqm,Vijayanagar SRO gazette p.106 (median of 14),
 Bangalore Urban,Govindrajanagara,,locality,Vijayanagar,zone,apartment,,104500,sqm,Vijayanagar SRO gazette p.110 (median of 2),
 Bangalore Urban,Deepanjalinagar,,locality,Vijayanagar,zone,apartment,,102000,sqm,Vijayanagar SRO gazette p.111 (median of 2),
 Bangalore Urban,Karnataka Housing Board colony,,locality,Vijayanagar,zone,plot,,80000,sqm,Vijayanagar SRO gazette p.112,Prashanthnagar)

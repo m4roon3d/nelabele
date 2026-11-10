@@ -1,22 +1,244 @@
 district,area_name,name_kn,area_level,parent_name,parent_level,property_type,approval_status,rate,unit,source_ref,context
+Bangalore Urban,A Number & Street (Chikkabazar Road),,locality,Shivajinagar,zone,plot,,45000,sqm,Shivajinagar SRO gazette p.12,
+Bangalore Urban,A K Colony,,locality,Shivajinagar,zone,plot,,29000,sqm,Shivajinagar SRO gazette p.12,
+Bangalore Urban,Abdul Hafeez Road / Ramakrishnappa Road,,locality,Shivajinagar,zone,plot,,49000,sqm,Shivajinagar SRO gazette p.12,
+Bangalore Urban,Meridian Dreams - Alfred Road,,locality,Shivajinagar,zone,plot,,70000,sqm,Shivajinagar SRO gazette p.12,
+Bangalore Urban,Krishna Apatments - Ali Askar Road,,locality,Shivajinagar,zone,plot,,119000,sqm,Shivajinagar SRO gazette p.12,
+Bangalore Urban,Shah Sultan Complex - Ali Askar Road,,locality,Shivajinagar,zone,plot,,119000,sqm,Shivajinagar SRO gazette p.12,
+Bangalore Urban,Prestige Lansdowne,,locality,Shivajinagar,zone,plot,,177000,sqm,Shivajinagar SRO gazette p.12,
+Bangalore Urban,The Embassy,,locality,Shivajinagar,zone,plot,,151000,sqm,Shivajinagar SRO gazette p.12,
+Bangalore Urban,Anjaneya Temple Road,,locality,Shivajinagar,zone,plot,,52000,sqm,Shivajinagar SRO gazette p.12,
+Bangalore Urban,Arabline and Street,,locality,Shivajinagar,zone,plot,,58000,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Asherkhan Street,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Ashil Road/Park,,locality,Shivajinagar,zone,plot,,100500,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Ashok Nagar,,locality,Shivajinagar,zone,plot,,97500,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Ashok Road,,locality,Shivajinagar,zone,plot,,115500,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,BDAFlats(Austin Town),,locality,Shivajinagar,zone,apartment,,44500,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Corporation Quarters,,locality,Shivajinagar,zone,plot,,64500,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Gangmen Quarters,,locality,Shivajinagar,zone,plot,,64500,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,BDA Row House,,locality,Shivajinagar,zone,plot,,68000,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Ayyappa Block,,locality,Shivajinagar,zone,plot,,58000,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Ayyappa Temple Street,,locality,Shivajinagar,zone,plot,,56000,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Bamboo Bazar,,locality,Shivajinagar,zone,plot,,72500,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Bamboocherry,,locality,Shivajinagar,zone,plot,,67500,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Beau Monde,,locality,Shivajinagar,zone,plot,,84000,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Sterling Clifton,,locality,Shivajinagar,zone,plot,,84000,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Brigade Crescent,,locality,Shivajinagar,zone,plot,,84000,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Bloomsbury - Benson Road,,locality,Shivajinagar,zone,plot,,100000,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Glendale - Benson Road,,locality,Shivajinagar,zone,plot,,104000,sqm,Shivajinagar SRO gazette p.13,
+Bangalore Urban,Prestiage Capri - Benson Cross Road,,locality,Shivajinagar,zone,plot,,87000,sqm,Shivajinagar SRO gazette p.14,
+Bangalore Urban,Brigade Crescent -Benson Cross Road,,locality,Shivajinagar,zone,plot,,134500,sqm,Shivajinagar SRO gazette p.14,
+Bangalore Urban,Prestige Aster - Berlie Road,,locality,Shivajinagar,zone,plot,,86000,sqm,Shivajinagar SRO gazette p.14,
+Bangalore Urban,Amber - Berlie Road,,locality,Shivajinagar,zone,plot,,87500,sqm,Shivajinagar SRO gazette p.14,
 Bangalore Urban,Ganga Vasajita Aprt - Bore Bank Road,,locality,Shivajinagar,zone,plot,,73500,sqm,Shivajinagar SRO gazette p.14,
 Bangalore Urban,Maria Nivas - Bore Bank Road & Lyt,,locality,Shivajinagar,zone,plot,,72000,sqm,Shivajinagar SRO gazette p.14,
 Bangalore Urban,Emerald Exotica - Bore Bank Road & Lyt,,locality,Shivajinagar,zone,plot,,73000,sqm,Shivajinagar SRO gazette p.14,
 Bangalore Urban,Arfa Citadel - Bore Bank Road & Lyt,,locality,Shivajinagar,zone,plot,,72000,sqm,Shivajinagar SRO gazette p.14,
+Bangalore Urban,Boundillion Street,,locality,Shivajinagar,zone,plot,,79000,sqm,Shivajinagar SRO gazette p.14,
+Bangalore Urban,Nitesh Canary Wharf - Bride Road,,locality,Shivajinagar,zone,plot,,99500,sqm,Shivajinagar SRO gazette p.15,
+Bangalore Urban,Broad Way Cross Road,,locality,Shivajinagar,zone,plot,,76000,sqm,Shivajinagar SRO gazette p.15,
+Bangalore Urban,Prestige Four Seasons - Brunton Road,,locality,Shivajinagar,zone,plot,,119000,sqm,Shivajinagar SRO gazette p.15,
+Bangalore Urban,Brigade Orchid II - Brunton Road,,locality,Shivajinagar,zone,plot,,120500,sqm,Shivajinagar SRO gazette p.15,
+Bangalore Urban,Butcher Street,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.15,
+Bangalore Urban,Byderahalli & Road,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.15,
+Bangalore Urban,Calpham Street,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.15,
+Bangalore Urban,Carlston Heaven Road,,locality,Shivajinagar,zone,plot,,75000,sqm,Shivajinagar SRO gazette p.15,
+Bangalore Urban,Grace Heaven Road,,locality,Shivajinagar,zone,plot,,92000,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Cassuriana Road,,locality,Shivajinagar,zone,plot,,90000,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Inclover Iris-Grende,,locality,Shivajinagar,zone,plot,,57500,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Chikka Bazar Road,,locality,Shivajinagar,zone,plot,,63500,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Queens Manor - Chikka Bazar Road,,locality,Shivajinagar,zone,plot,,58000,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Chinnaswmy Mudaliar Road,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Chinnaswamy Pillai Road,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Kalpak Arcade - Church Street,,locality,Shivajinagar,zone,plot,,184000,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Brigade Gardens - Church Street,,locality,Shivajinagar,zone,plot,,142000,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Phoenix Arcade - Church Street,,locality,Shivajinagar,zone,plot,,184000,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Cornnel Hill Road,,locality,Shivajinagar,zone,plot,,57000,sqm,Shivajinagar SRO gazette p.16,
+Bangalore Urban,Manish Complex - Convent Road,,locality,Shivajinagar,zone,plot,,99000,sqm,Shivajinagar SRO gazette p.17,
 Bangalore Urban,Prestige Cedars - Convent Road,,locality,Shivajinagar,zone,plot,,102500,sqm,Shivajinagar SRO gazette p.17,
+Bangalore Urban,Brigade Odyseey -Convent Road,,locality,Shivajinagar,zone,plot,,113500,sqm,Shivajinagar SRO gazette p.17,
+Bangalore Urban,Cornwel Road,,locality,Shivajinagar,zone,plot,,72500,sqm,Shivajinagar SRO gazette p.17,
+Bangalore Urban,Regency Bliss - Cornwel Road,,locality,Shivajinagar,zone,plot,,86500,sqm,Shivajinagar SRO gazette p.17,
+Bangalore Urban,Crage Park Lyt & Road,,locality,Shivajinagar,zone,plot,,102500,sqm,Shivajinagar SRO gazette p.17,
+Bangalore Urban,Mantri Elites - Cubbon Road,,locality,Shivajinagar,zone,plot,,173000,sqm,Shivajinagar SRO gazette p.17,
+Bangalore Urban,Cunningham Cross Road,,locality,Shivajinagar,zone,plot,,179000,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,Legacy Cataleya,,locality,Shivajinagar,zone,plot,,168000,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,Skav Mekhri Ratz,,locality,Shivajinagar,zone,plot,,151500,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
 Bangalore Urban,Prestiage Exotica - Cunningham,,locality,Shivajinagar,zone,plot,,113500,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,August Mansion - Curly Road,,locality,Shivajinagar,zone,plot,,88000,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,Curve Road,,locality,Shivajinagar,zone,plot,,79000,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,D No. Street(Shivajinagar),,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,Parth Kristal,,locality,Shivajinagar,zone,plot,,59500,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,Dhankote Lane,,locality,Shivajinagar,zone,plot,,54500,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,Dickenson Road - Manipal Center,,locality,Shivajinagar,zone,plot,,130500,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,Dhobhi Street,,locality,Shivajinagar,zone,plot,,54500,sqm,Shivajinagar SRO gazette p.18,Chandrika Hotel)
+Bangalore Urban,Haydon Manor - Eagle Road,,locality,Shivajinagar,zone,plot,,80500,sqm,Shivajinagar SRO gazette p.19,Chandrika Hotel)
+Bangalore Urban,Elgin Court - Eagle Road,,locality,Shivajinagar,zone,plot,,86500,sqm,Shivajinagar SRO gazette p.19,Chandrika Hotel)
+Bangalore Urban,Park Land - Eagle Road,,locality,Shivajinagar,zone,plot,,81000,sqm,Shivajinagar SRO gazette p.19,Chandrika Hotel)
+Bangalore Urban,Uma Skanda - Eagle Road,,locality,Shivajinagar,zone,plot,,82500,sqm,Shivajinagar SRO gazette p.19,Chandrika Hotel)
 Bangalore Urban,Prestige Centre Point - Edward Road,,locality,Shivajinagar,zone,plot,,107500,sqm,Shivajinagar SRO gazette p.19,Chandrika Hotel)
+Bangalore Urban,Prestige Edwardin,,locality,Shivajinagar,zone,plot,,250500,sqm,Shivajinagar SRO gazette p.19,Commercial)
+Bangalore Urban,Garden Ayyappa,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.19,Commercial)
+Bangalore Urban,Garden Balappa,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.19,Commercial)
+Bangalore Urban,Garden Kodandarama,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.19,Commercial)
+Bangalore Urban,Garden Krishnappa,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.19,Commercial)
+Bangalore Urban,Garden Manickappa,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.19,Commercial)
+Bangalore Urban,Garden Mid Ford,,locality,Shivajinagar,zone,plot,,140000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Mudaliar,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Muddamma,,locality,Shivajinagar,zone,plot,,44000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Muniswamy,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Papayya,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Shankuntala Arcade,,locality,Shivajinagar,zone,plot,,43500,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Ramaiah,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Rangamma,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Rayappa,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Rudrappa,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Sampangi Ramiah,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Garden Yerrappa,,locality,Shivajinagar,zone,plot,,36000,sqm,Shivajinagar SRO gazette p.20,Commercial)
 Bangalore Urban,Govindachetty Road,,locality,Shivajinagar,zone,plot,,47500,sqm,Shivajinagar SRO gazette p.20,Commercial)
 Bangalore Urban,Oorgaum House - Grant Road,,locality,Shivajinagar,zone,plot,,147000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Eden Park - Grant Road,,locality,Shivajinagar,zone,plot,,158000,sqm,Shivajinagar SRO gazette p.20,Commercial)
+Bangalore Urban,Grass Cutters Lane,,locality,Shivajinagar,zone,plot,,54500,sqm,Shivajinagar SRO gazette p.21,Commercial)
+Bangalore Urban,Nandhini Building - Hospital Road,,locality,Shivajinagar,zone,plot,,86500,sqm,Shivajinagar SRO gazette p.21,S+G+3Uf)
+Bangalore Urban,Redifice Signature - Hospital Road,,locality,Shivajinagar,zone,plot,,88000,sqm,Shivajinagar SRO gazette p.21,S+G+3Uf)
+Bangalore Urban,Kedia Arcade - Infantry Road,,locality,Shivajinagar,zone,plot,,179500,sqm,Shivajinagar SRO gazette p.22,S+G+3Uf)
+Bangalore Urban,Momdi Business Centre - Infantry Road,,locality,Shivajinagar,zone,plot,,179500,sqm,Shivajinagar SRO gazette p.22,S+G+3Uf)
+Bangalore Urban,Infantry Cross Road,,locality,Shivajinagar,zone,plot,,173500,sqm,Shivajinagar SRO gazette p.22,Residential)
+Bangalore Urban,J No. Road (Shivaji Nagar),,locality,Shivajinagar,zone,plot,,54500,sqm,Shivajinagar SRO gazette p.22,Residential)
+Bangalore Urban,Jain Temple Road,,locality,Shivajinagar,zone,plot,,77500,sqm,Shivajinagar SRO gazette p.22,Residential)
+Bangalore Urban,Kaliamma Koil Road,,locality,Shivajinagar,zone,plot,,54500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Golden Orchid,,locality,Shivajinagar,zone,plot,,158500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Rock Lines,,locality,Shivajinagar,zone,plot,,175000,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,West End - Kasturba Road,,locality,Shivajinagar,zone,plot,,158500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Prestiage Obliex - Kasturba Road,,locality,Shivajinagar,zone,plot,,158500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Casa Lavelle - Kasturba Road,,locality,Shivajinagar,zone,plot,,158500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Total Van Goghs Garden,,locality,Shivajinagar,zone,plot,,152000,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Kemp Road,,locality,Shivajinagar,zone,plot,,72500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Coral Plaza - Kemp Road,,locality,Shivajinagar,zone,plot,,63500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,King Road,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Kingston Road,,locality,Shivajinagar,zone,plot,,94000,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Indraprastha Enero - Kingston Road,,locality,Shivajinagar,zone,plot,,99000,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Kodandaramanagar,,locality,Shivajinagar,zone,plot,,49000,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Koracharapalya,,locality,Shivajinagar,zone,plot,,43500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Koracharpalya & Road,,locality,Shivajinagar,zone,plot,,46000,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Krishnappa Road,,locality,Shivajinagar,zone,plot,,54500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Kumaraswmy Naidu Road,,locality,Shivajinagar,zone,plot,,56000,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Kumbara Road,,locality,Shivajinagar,zone,plot,,54500,sqm,Shivajinagar SRO gazette p.23,Residential)
+Bangalore Urban,Ladyacurzon Rd,,locality,Shivajinagar,zone,plot,,100000,sqm,Shivajinagar SRO gazette p.24,Residential)
+Bangalore Urban,Lakshmaiah Rd,,locality,Shivajinagar,zone,plot,,54500,sqm,Shivajinagar SRO gazette p.24,Residential)
+Bangalore Urban,Lavelle Cross Road,,locality,Shivajinagar,zone,plot,,189000,sqm,Shivajinagar SRO gazette p.24,Residential)
+Bangalore Urban,Brigade Chancery - Lavelle Cross Road,,locality,Shivajinagar,zone,plot,,136000,sqm,Shivajinagar SRO gazette p.24,Residential)
+Bangalore Urban,Charu Jasmine - Leonard Lane,,locality,Shivajinagar,zone,plot,,84000,sqm,Shivajinagar SRO gazette p.24,Residential)
+Bangalore Urban,Longford Road,,locality,Shivajinagar,zone,plot,,149000,sqm,Shivajinagar SRO gazette p.24,Residential)
 Bangalore Urban,Redife Petunia-Langford Road,,locality,Shivajinagar,zone,plot,,136000,sqm,Shivajinagar SRO gazette p.24,Residential)
 Bangalore Urban,Longford Garden - Longford Road,,locality,Shivajinagar,zone,plot,,107500,sqm,Shivajinagar SRO gazette p.25,Residential)
+Bangalore Urban,City Mansion - Longford Road,,locality,Shivajinagar,zone,plot,,102500,sqm,Shivajinagar SRO gazette p.25,Residential)
+Bangalore Urban,Peace Haven - Longford Road,,locality,Shivajinagar,zone,plot,,98000,sqm,Shivajinagar SRO gazette p.25,Residential)
+Bangalore Urban,Shivaprasad Complex - M.G. Road,,locality,Shivajinagar,zone,plot,,207000,sqm,Shivajinagar SRO gazette p.25,Residential)
+Bangalore Urban,M.No.Road (Shivajinagar),,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.25,Residential)
+Bangalore Urban,Mackan Cross Road,,locality,Shivajinagar,zone,plot,,51000,sqm,Shivajinagar SRO gazette p.25,Residential)
+Bangalore Urban,Freeda Regency,,locality,Shivajinagar,zone,plot,,48000,sqm,Shivajinagar SRO gazette p.25,Residential)
 Bangalore Urban,Royal Heritage Aprts - Magarath Rd,,locality,Shivajinagar,zone,plot,,146500,sqm,Shivajinagar SRO gazette p.26,Residential)
+Bangalore Urban,Meane Avenue Rd,,locality,Shivajinagar,zone,plot,,93000,sqm,Shivajinagar SRO gazette p.26,Residential)
+Bangalore Urban,Gold Coin - Meane Avenue Road,,locality,Shivajinagar,zone,plot,,75500,sqm,Shivajinagar SRO gazette p.26,Residential)
+Bangalore Urban,Avenue Court - Meane Avenue Rd,,locality,Shivajinagar,zone,plot,,76500,sqm,Shivajinagar SRO gazette p.26,Residential)
+Bangalore Urban,Meenakshi Koil Strt,,locality,Shivajinagar,zone,plot,,74500,sqm,Shivajinagar SRO gazette p.26,Residential)
+Bangalore Urban,Milkman Street,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.26,Residential)
+Bangalore Urban,Milkman Village,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.26,Residential)
+Bangalore Urban,M 3 Manor - Millers Road,,locality,Shivajinagar,zone,plot,,95000,sqm,Shivajinagar SRO gazette p.26,Station
+Bangalore Urban,Redifice Ambrosia - Millers Road,,locality,Shivajinagar,zone,plot,,96500,sqm,Shivajinagar SRO gazette p.27,Station
+Bangalore Urban,Imperum Endellion,,locality,Shivajinagar,zone,plot,,176000,sqm,Shivajinagar SRO gazette p.27,Station
+Bangalore Urban,Milton Road,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Mirti Lane,,locality,Shivajinagar,zone,plot,,67000,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Southern Cross - Mirti Lane,,locality,Shivajinagar,zone,plot,,65000,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Darul Qaim - Mirti Lane,,locality,Shivajinagar,zone,plot,,66000,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Mottucherry,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
 Bangalore Urban,Ambern Aprts - Moyenvile Road,,locality,Shivajinagar,zone,plot,,69000,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Shamrock - Moyenvile Road,,locality,Shivajinagar,zone,plot,,69000,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Muniswamy Naidu Rd,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Muniswamy Lane / Road,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Munshi Galli,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Murugapillai Rd,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Mohini Aprts - Museum Rd,,locality,Shivajinagar,zone,plot,,102000,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Skip House - Museum Road,,locality,Shivajinagar,zone,plot,,103500,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Mutmal Lane,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Nala Road,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.27,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Nandaram Singh Lane,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Naronha Road,,locality,Shivajinagar,zone,plot,,63000,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Nehrupuram,,locality,Shivajinagar,zone,plot,,53000,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,New Bamboo Bazar,,locality,Shivajinagar,zone,plot,,70500,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,New Korchara Palya,,locality,Shivajinagar,zone,plot,,45000,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,New Pottery Rd,,locality,Shivajinagar,zone,plot,,59000,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Sona Palace - Norries Rd,,locality,Shivajinagar,zone,plot,,70000,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Norries Cottage - Norries Road,,locality,Shivajinagar,zone,plot,,73000,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,O' Shangnessy Road,,locality,Shivajinagar,zone,plot,,72500,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Old Cement Lane,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Old Cement Rd(Shivajinagar),,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.28,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Ookakda Palya,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.29,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Prestige Soranto - Palmgroove Rd,,locality,Shivajinagar,zone,plot,,89500,sqm,Shivajinagar SRO gazette p.29,No.91-96-60 extent 1321.21 Sq. Mtr
 Bangalore Urban,Elegant Edward House - Pottery Town,,locality,Shivajinagar,zone,plot,,61500,sqm,Shivajinagar SRO gazette p.29,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Prime Street,,locality,Shivajinagar,zone,plot,,72500,sqm,Shivajinagar SRO gazette p.30,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Nishant Prime - Prime Street,,locality,Shivajinagar,zone,plot,,74000,sqm,Shivajinagar SRO gazette p.30,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Raheja Haven - Prime Rose Road,,locality,Shivajinagar,zone,plot,,88500,sqm,Shivajinagar SRO gazette p.30,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Azore Prime,,locality,Shivajinagar,zone,plot,,102000,sqm,Shivajinagar SRO gazette p.30,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Prince Of Wales Road,,locality,Shivajinagar,zone,plot,,88000,sqm,Shivajinagar SRO gazette p.30,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Race Cource Road,,locality,Shivajinagar,zone,plot,,157500,sqm,Shivajinagar SRO gazette p.30,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Rest House Crescent,,locality,Shivajinagar,zone,plot,,150000,sqm,Shivajinagar SRO gazette p.30,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Willo Chrisa - Rest House Crescent,,locality,Shivajinagar,zone,plot,,96000,sqm,Shivajinagar SRO gazette p.30,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Tulasi - Rest House Crescent,,locality,Shivajinagar,zone,plot,,112500,sqm,Shivajinagar SRO gazette p.31,No.91-96-60 extent 1321.21 Sq. Mtr
 Bangalore Urban,Sterling Nowroji Crescent - Rest House,,locality,Shivajinagar,zone,plot,,115000,sqm,Shivajinagar SRO gazette p.31,No.91-96-60 extent 1321.21 Sq. Mtr
+Bangalore Urban,Clairmont - Rest House Crescent,,locality,Shivajinagar,zone,plot,,108500,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Silver Crest - Rest House Road,,locality,Shivajinagar,zone,plot,,107500,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Phoenix Crescent - Rest House Road,,locality,Shivajinagar,zone,plot,,110000,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Charles Court - Rest House Road,,locality,Shivajinagar,zone,plot,,106500,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Emmanuel Pearl - Rest House Road,,locality,Shivajinagar,zone,plot,,107000,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,SKY Garden - Rhenuis Road,,locality,Shivajinagar,zone,plot,,118000,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Colonel's Nest - Rhenuis Road,,locality,Shivajinagar,zone,plot,,102500,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Rain Tree Hall - Rhenuis Road,,locality,Shivajinagar,zone,plot,,92000,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Bailey - Rhenuis Road,,locality,Shivajinagar,zone,plot,,93000,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,The Wama Regency -Rhenuis Road,,locality,Shivajinagar,zone,plot,,94000,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Richmond Plaza - Richmond Road,,locality,Shivajinagar,zone,plot,,135500,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Sparturn Height - Richmond Road,,locality,Shivajinagar,zone,plot,,135500,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Thomas Manor - Richmond Road,,locality,Shivajinagar,zone,plot,,135500,sqm,Shivajinagar SRO gazette p.31,Crescent
+Bangalore Urban,Silver Lake Terrace - Richmond Road,,locality,Shivajinagar,zone,plot,,135500,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Chartered Rathna - Richmond Road,,locality,Shivajinagar,zone,plot,,156000,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Charter Resorts - II - Richmond Road,,locality,Shivajinagar,zone,plot,,135500,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Rich Home - Richmond Road,,locality,Shivajinagar,zone,plot,,135500,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Nitesh Canary Wharf,,locality,Shivajinagar,zone,plot,,176000,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Prestige Richmond,,locality,Shivajinagar,zone,plot,,135500,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Le Prc Richmonde - Richmond Road,,locality,Shivajinagar,zone,plot,,135500,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Rose Lane,,locality,Shivajinagar,zone,plot,,83500,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Russel Market Square,,locality,Shivajinagar,zone,plot,,82000,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Sabhapathi Lane,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Shaikah Nathad Lane,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Shivaji Road (Balekundre Circle),,locality,Shivajinagar,zone,plot,,69000,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Sidney Road,,locality,Shivajinagar,zone,plot,,82000,sqm,Shivajinagar SRO gazette p.32,Crescent
+Bangalore Urban,Sumadhura Srinivasa,,locality,Shivajinagar,zone,plot,,63000,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,White House,,locality,Shivajinagar,zone,plot,,63000,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,Maa Nandanam,,locality,Shivajinagar,zone,plot,,63000,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,Pavani Divine,,locality,Shivajinagar,zone,plot,,63000,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,Sultan Nagar,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,Tasckar Town (Remaining),,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,Park Plaza - Tasckar Town,,locality,Shivajinagar,zone,plot,,59500,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,Tasker Park - Tasker Town,,locality,Shivajinagar,zone,plot,,71500,sqm,Shivajinagar SRO gazette p.33,Crescent
 Bangalore Urban,Tata Lane,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.33,Crescent
 Bangalore Urban,Excelsior Manor - Thope Mudaliar Road,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,Union Road,,locality,Shivajinagar,zone,plot,,90000,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,Monalisa - Vannarapet,,locality,Shivajinagar,zone,plot,,58500,sqm,Shivajinagar SRO gazette p.33,Crescent
+Bangalore Urban,Vellaryamman Koil Rd,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Velu Mudaliar Road,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Venkatappa Road,,locality,Shivajinagar,zone,plot,,63000,sqm,Shivajinagar SRO gazette p.34,Crescent
 Bangalore Urban,Phoenix Victoria - Victoria Road,,locality,Shivajinagar,zone,plot,,91500,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Elegant Queens Burry,,locality,Shivajinagar,zone,plot,,104500,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Viveknagar,,locality,Shivajinagar,zone,plot,,73500,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,W. No.&Road,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Walker Lane,,locality,Shivajinagar,zone,plot,,60500,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Wellington Accord - Willington Road,,locality,Shivajinagar,zone,plot,,76500,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Royalton - Willington Road,,locality,Shivajinagar,zone,plot,,76500,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Farah Garden - Willington Road,,locality,Shivajinagar,zone,plot,,76500,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Willams Town,,locality,Shivajinagar,zone,plot,,54000,sqm,Shivajinagar SRO gazette p.34,Crescent
+Bangalore Urban,Yellagondapalya,,locality,Shivajinagar,zone,plot,,54500,sqm,Shivajinagar SRO gazette p.35,Crescent
+Bangalore Urban,Admirlity Premier,,locality,Indiranagar,zone,plot,,83000,sqm,Indiranagar SRO gazette p.36,
 Bangalore Urban,Zen Garden,,locality,Indiranagar,zone,plot,,100000,sqm,Indiranagar SRO gazette p.36,
 Bangalore Urban,Cambridge Main Road(30ft),,locality,Indiranagar,zone,plot,,144100,sqm,Indiranagar SRO gazette p.37,
 Bangalore Urban,Skav Audel,,locality,Indiranagar,zone,plot,,102000,sqm,Indiranagar SRO gazette p.37,
@@ -129,43 +351,328 @@ Bangalore Urban,Baiyappanahalli and Other Lands,,village,KR Puram,zone,agricultu
 Bangalore Urban,Baiyappanahalli and Other Lands,,village,KR Puram,zone,plot,,62000,sqm,KR Puram SRO gazette p.127,
 Bangalore Urban,Baiyappanahalli M Kaval,,village,KR Puram,zone,agricultural_land,,28000000,acre,KR Puram SRO gazette p.129,
 Bangalore Urban,Baiyappanahalli M Kaval,,village,KR Puram,zone,plot,,38000,sqm,KR Puram SRO gazette p.129,
+Bangalore Urban,A Narayanapura,,locality,KR Puram,zone,plot,,59000,sqm,KR Puram SRO gazette p.130,Baiyappanahalli M Kaval
+Bangalore Urban,A Narayanapura BDA,,locality,KR Puram,zone,plot,,67600,sqm,KR Puram SRO gazette p.130,Baiyappanahalli M Kaval
+Bangalore Urban,Akkappa Road,,locality,KR Puram,zone,plot,,37500,sqm,KR Puram SRO gazette p.130,Baiyappanahalli M Kaval
+Bangalore Urban,Munishamappa layoout,,locality,KR Puram,zone,plot,,37500,sqm,KR Puram SRO gazette p.130,Baiyappanahalli M Kaval
+Bangalore Urban,Transport Main,,locality,KR Puram,zone,plot,,37500,sqm,KR Puram SRO gazette p.130,Baiyappanahalli M Kaval
+Bangalore Urban,ITI Gruha Nimana Sanga,,locality,KR Puram,zone,plot,,63000,sqm,KR Puram SRO gazette p.130,Baiyappanahalli M Kaval
+Bangalore Urban,White Field Main Road Right Side,,locality,KR Puram,zone,plot,,63000,sqm,KR Puram SRO gazette p.130,Baiyappanahalli M Kaval
+Bangalore Urban,Ashraya House,,locality,KR Puram,zone,plot,,21500,sqm,KR Puram SRO gazette p.130,Baiyappanahalli M Kaval
+Bangalore Urban,B.Narayanapura,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,B.Narayanapura BDA Approved,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,B.Narayanapura State Highway,,locality,Mahadevapura,zone,plot,,75000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,Akashanagar,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,M.E.G. Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,Guruppa Reddy Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,Ankareddy Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,Rajarajeshwari Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,PWD Main Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,Indiragandhi Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,Medan School Main,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.131,
+Bangalore Urban,Subhash Street,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.132,
+Bangalore Urban,Om Shakthi Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.132,
+Bangalore Urban,Giddamma Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.132,
+Bangalore Urban,Nagarajarao Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.132,
+Bangalore Urban,Jayalakshmamma Giddamma A Main,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.132,
+Bangalore Urban,Nagarajappa & Ramanjinappa Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.132,
+Bangalore Urban,Aravind Amar Jai Javan Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.132,
+Bangalore Urban,New Brillient School Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.132,
+Bangalore Urban,Muniswamappa Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.132,
+Bangalore Urban,Shamalamma Lane,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.133,
+Bangalore Urban,Chikka Subbanna 1st & 2nd Cross,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.133,
+Bangalore Urban,Church Road 1st & 2nd Cross Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.133,B.Narayanapura
+Bangalore Urban,Vinayaka Temple 1st& 2nd Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.133,B.Narayanapura
+Bangalore Urban,Venkatappa Garden,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.133,B.Narayanapura
+Bangalore Urban,C. Krisnappa Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.133,B.Narayanapura
+Bangalore Urban,Munivenkatappa Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.133,B.Narayanapura
 Bangalore Urban,Defence Acadamy H. B. C. S,,locality,Mahadevapura,zone,plot,,66000,sqm,Mahadevapura SRO gazette p.133,B.Narayanapura
+Bangalore Urban,Samaikhya,,locality,Mahadevapura,zone,plot,,50380,sqm,Mahadevapura SRO gazette p.134,B.Narayanapura
+Bangalore Urban,AR Vasvani Nivas,,locality,Mahadevapura,zone,plot,,50380,sqm,Mahadevapura SRO gazette p.134,B.Narayanapura
+Bangalore Urban,Anjana Iris,,locality,Mahadevapura,zone,plot,,50380,sqm,Mahadevapura SRO gazette p.134,B.Narayanapura
+Bangalore Urban,Chinnappanahalli,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.134,B.Narayanapura
+Bangalore Urban,Chinnappanahalli BDA,,locality,Mahadevapura,zone,plot,,68000,sqm,Mahadevapura SRO gazette p.134,B.Narayanapura
+Bangalore Urban,Silver Stane,,locality,Mahadevapura,zone,plot,,50380,sqm,Mahadevapura SRO gazette p.135,Sy Nos
+Bangalore Urban,G S Mansions,,locality,Mahadevapura,zone,plot,,50380,sqm,Mahadevapura SRO gazette p.135,Sy Nos
+Bangalore Urban,AECSLayout,,locality,Mahadevapura,zone,plot,,90000,sqm,Mahadevapura SRO gazette p.135,Sy Nos
+Bangalore Urban,Srinivasa Emerald,,locality,Mahadevapura,zone,plot,,45430,sqm,Mahadevapura SRO gazette p.135,Sy Nos
 Bangalore Urban,Jyothi Woods Row House,,locality,Mahadevapura,zone,plot,,93500,sqm,Mahadevapura SRO gazette p.136,Ppty No
+Bangalore Urban,Doddanekkundi,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.136,Ppty No
+Bangalore Urban,Doddanekkundi BDA,,locality,Mahadevapura,zone,plot,,75000,sqm,Mahadevapura SRO gazette p.136,Ppty No
+Bangalore Urban,Ring Road Bagini Hotel to Church,,locality,Mahadevapura,zone,plot,,80000,sqm,Mahadevapura SRO gazette p.136,Ppty No
+Bangalore Urban,A K Colony Main road,,locality,Mahadevapura,zone,plot,,49100,sqm,Mahadevapura SRO gazette p.137,Ppty No
+Bangalore Urban,Marathahalli Main Road,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.137,Ppty No
+Bangalore Urban,Harichandra Colony Road,,locality,Mahadevapura,zone,plot,,49000,sqm,Mahadevapura SRO gazette p.137,Ppty No
+Bangalore Urban,MTB Bagmane Tech Park,,locality,Mahadevapura,zone,plot,,105100,sqm,Mahadevapura SRO gazette p.137,Ppty No
+Bangalore Urban,MTB Bagmane Tech Park,,locality,Mahadevapura,zone,apartment,,77000,sqm,Mahadevapura SRO gazette p.137,Ppty No
+Bangalore Urban,Idea Build Con,,locality,Mahadevapura,zone,plot,,55880,sqm,Mahadevapura SRO gazette p.137,Ppty No
+Bangalore Urban,Sigma Buildcon,,locality,Mahadevapura,zone,plot,,58960,sqm,Mahadevapura SRO gazette p.138,Ppty No
 Bangalore Urban,Soul Space Arista Property,,locality,Mahadevapura,zone,plot,,56100,sqm,Mahadevapura SRO gazette p.138,Ppty No
+Bangalore Urban,Samhita Blossoms,,locality,Mahadevapura,zone,plot,,55880,sqm,Mahadevapura SRO gazette p.139,Ppty No
+Bangalore Urban,SR Brindavana,,locality,Mahadevapura,zone,plot,,55880,sqm,Mahadevapura SRO gazette p.139,Ppty No
 Bangalore Urban,Sparkling Wings,,locality,Mahadevapura,zone,plot,,61380,sqm,Mahadevapura SRO gazette p.139,Ppty No
+Bangalore Urban,Hagaduru Main road,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.139,S+G+3Uf)
+Bangalore Urban,Hagaduru,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.139,S+G+3Uf)
+Bangalore Urban,Hagaduru BDA,,locality,Mahadevapura,zone,plot,,67500,sqm,Mahadevapura SRO gazette p.140,S+G+3Uf)
+Bangalore Urban,Hagadur Varthur Road,,locality,Mahadevapura,zone,plot,,62000,sqm,Mahadevapura SRO gazette p.140,S+G+3Uf)
+Bangalore Urban,Dombara Palya,,locality,Mahadevapura,zone,plot,,35000,sqm,Mahadevapura SRO gazette p.140,B+G+3Uf)
+Bangalore Urban,Cherridial Layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.140,B+G+3Uf)
+Bangalore Urban,Vinayaka Nagar ( Dhanamande ),,locality,Mahadevapura,zone,plot,,38000,sqm,Mahadevapura SRO gazette p.140,B+G+3Uf)
+Bangalore Urban,Gandhipura,,locality,Mahadevapura,zone,plot,,38000,sqm,Mahadevapura SRO gazette p.140,B+G+3Uf)
+Bangalore Urban,Christmas Realator,,locality,Mahadevapura,zone,plot,,54010,sqm,Mahadevapura SRO gazette p.140,B+G+3Uf)
+Bangalore Urban,Glenmorgan layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.141,B+G+3Uf)
+Bangalore Urban,Olympia Enchante,,locality,Mahadevapura,zone,plot,,163875,sqm,Mahadevapura SRO gazette p.141,Coconut Garden Layout
+Bangalore Urban,Camelia Eligent,,locality,Mahadevapura,zone,plot,,54010,sqm,Mahadevapura SRO gazette p.141,Coconut Garden Layout
+Bangalore Urban,HP Homes,,locality,Mahadevapura,zone,plot,,54010,sqm,Mahadevapura SRO gazette p.142,Coconut Garden Layout
+Bangalore Urban,Srivens Gokulam,,locality,Mahadevapura,zone,plot,,54010,sqm,Mahadevapura SRO gazette p.143,Prop No
+Bangalore Urban,Jeevan Ornate,,locality,Mahadevapura,zone,plot,,54010,sqm,Mahadevapura SRO gazette p.143,Prop No
+Bangalore Urban,Hoodi,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.144,Pr/Kn
+Bangalore Urban,Hoodi BDA,,locality,Mahadevapura,zone,plot,,75000,sqm,Mahadevapura SRO gazette p.144,Pr/Kn
+Bangalore Urban,Hoodi to K R Puram Main Road,,locality,Mahadevapura,zone,plot,,75000,sqm,Mahadevapura SRO gazette p.144,Pr/Kn
+Bangalore Urban,Ayyappa Nagar,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.144,Pr/Kn
+Bangalore Urban,Hoodi to White Field Main road,,locality,Mahadevapura,zone,plot,,64000,sqm,Mahadevapura SRO gazette p.144,Pr/Kn
+Bangalore Urban,Kaveri Nagar Main Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.144,Pr/Kn
 Bangalore Urban,White Field Main Road to ITPL,,locality,Mahadevapura,zone,plot,,78000,sqm,Mahadevapura SRO gazette p.144,Pr/Kn
+Bangalore Urban,Rajpalya,,locality,Mahadevapura,zone,plot,,47000,sqm,Mahadevapura SRO gazette p.144,Gudi
+Bangalore Urban,Thigalarapalya,,locality,Mahadevapura,zone,plot,,47000,sqm,Mahadevapura SRO gazette p.144,Gudi
+Bangalore Urban,Jayamma Farm Road,,locality,Mahadevapura,zone,plot,,47000,sqm,Mahadevapura SRO gazette p.144,Gudi
+Bangalore Urban,Anugraha Layout,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.145,Gudi
+Bangalore Urban,Sai Brindhavan Mansion,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.145,Gudi
+Bangalore Urban,Mahaveer Dazal,,locality,Mahadevapura,zone,plot,,48070,sqm,Mahadevapura SRO gazette p.145,Gudi
+Bangalore Urban,Swarna Silicon Kyastal,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.145,Gudi
+Bangalore Urban,Sneha Grandour,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.145,Gudi
+Bangalore Urban,Mahaveer Tuscon,,locality,Mahadevapura,zone,plot,,48070,sqm,Mahadevapura SRO gazette p.145,Gudi
+Bangalore Urban,Sai Saptagiri,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.145,Gudi
+Bangalore Urban,Red Corel,,locality,Mahadevapura,zone,plot,,48070,sqm,Mahadevapura SRO gazette p.146,Gudi
+Bangalore Urban,Raja Gold Fields,,locality,Mahadevapura,zone,plot,,51260,sqm,Mahadevapura SRO gazette p.146,Gudi
 Bangalore Urban,Janapriya Hanumareddy Complex,,locality,Mahadevapura,zone,plot,,72380,sqm,Mahadevapura SRO gazette p.146,Gudi
+Bangalore Urban,Srinidhi Moon Stone Park,,locality,Mahadevapura,zone,plot,,52470,sqm,Mahadevapura SRO gazette p.146,Right Side)
+Bangalore Urban,Aratt Premier,,locality,Mahadevapura,zone,plot,,55990,sqm,Mahadevapura SRO gazette p.147,Right Side)
+Bangalore Urban,Samarth Reality,,locality,Mahadevapura,zone,plot,,51260,sqm,Mahadevapura SRO gazette p.147,Right Side)
+Bangalore Urban,India Build Homes,,locality,Mahadevapura,zone,plot,,52470,sqm,Mahadevapura SRO gazette p.147,Right Side)
+Bangalore Urban,Habitat Crest,,locality,Mahadevapura,zone,plot,,81840,sqm,Mahadevapura SRO gazette p.147,Right Side)
+Bangalore Urban,Sri Mitra Symphony,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.147,Right Side)
+Bangalore Urban,S.J.R. Vogue Residences,,locality,Mahadevapura,zone,apartment,,62920,sqm,Mahadevapura SRO gazette p.147,Right Side)
+Bangalore Urban,S.V. Signature,,locality,Mahadevapura,zone,plot,,44220,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Sumadhura's Nandhanam,,locality,Mahadevapura,zone,plot,,44220,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Habitat Aster,,locality,Mahadevapura,zone,plot,,55660,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Aqua Front,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,sai nitya meadows,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,SBB Royal,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Sai Sannidhi,,locality,Mahadevapura,zone,plot,,44220,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Vikayath Sarovar,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Vishnu,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Amaravthi,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Pranathi,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Maabhoomi,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.148,Right Side)
+Bangalore Urban,Godrej United,,locality,Mahadevapura,zone,plot,,71610,sqm,Mahadevapura SRO gazette p.149,Right Side)
+Bangalore Urban,5G Tulaa,,locality,Mahadevapura,zone,plot,,47000,sqm,Mahadevapura SRO gazette p.149,Right Side)
+Bangalore Urban,Vaswani Technology park (Residential),,locality,Mahadevapura,zone,plot,,59730,sqm,Mahadevapura SRO gazette p.149,Right Side)
+Bangalore Urban,Siddarth Shelters / Gagan Lake view,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.149,Right Side)
+Bangalore Urban,Embassy Property,,locality,Mahadevapura,zone,plot,,59730,sqm,Mahadevapura SRO gazette p.149,Right Side)
+Bangalore Urban,Sraddha Lake Front,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.149,Right Side)
 Bangalore Urban,GODREJ AIR,,locality,Mahadevapura,zone,plot,,60500,sqm,Mahadevapura SRO gazette p.150,Bangalore
+Bangalore Urban,BRRClassic,,locality,Mahadevapura,zone,plot,,40500,sqm,Mahadevapura SRO gazette p.150,Bangalore
+Bangalore Urban,Immadihalli,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.150,Bangalore
+Bangalore Urban,Immadihalli Main Road,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.150,Bangalore
+Bangalore Urban,Immadihalli BDA,,locality,Mahadevapura,zone,plot,,69000,sqm,Mahadevapura SRO gazette p.150,Bangalore
+Bangalore Urban,MAAN Sri Balaji Sunflower,,locality,Mahadevapura,zone,plot,,52250,sqm,Mahadevapura SRO gazette p.150,Bangalore
+Bangalore Urban,Kodigehalli Main road,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.150,Bangalore
+Bangalore Urban,Kodigehalli,,locality,Mahadevapura,zone,plot,,40000,sqm,Mahadevapura SRO gazette p.150,Bangalore
+Bangalore Urban,Kodigehalli BDA,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Kodigehalli to K R Puram Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Kodigehalli to Sadaramangala Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Ramakrishna Layout,,locality,Mahadevapura,zone,plot,,40000,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Sri Basaveshwara Layout,,locality,Mahadevapura,zone,plot,,40000,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Cambridge Layout,,locality,Mahadevapura,zone,plot,,40000,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Residencial layout,,locality,Mahadevapura,zone,plot,,40000,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,VRR Vista,,locality,Mahadevapura,zone,plot,,46530,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Sri Sai Sukrithi,,locality,Mahadevapura,zone,plot,,71610,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Sai Aradhana Municipal,,locality,Mahadevapura,zone,plot,,46530,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Shreya Crescent,,locality,Mahadevapura,zone,plot,,46530,sqm,Mahadevapura SRO gazette p.151,Bangalore
+Bangalore Urban,Vikayath Citadel,,locality,Mahadevapura,zone,plot,,46530,sqm,Mahadevapura SRO gazette p.152,Bangalore
+Bangalore Urban,Midtown Infra,,locality,Mahadevapura,zone,plot,,38500,sqm,Mahadevapura SRO gazette p.152,Bangalore
+Bangalore Urban,Adhitya Green Garden,,locality,Mahadevapura,zone,plot,,36500,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,Kundalahalli,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,Kundalahalli Main road,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,Kundalahalli BDA,,locality,Mahadevapura,zone,plot,,88000,sqm,Mahadevapura SRO gazette p.153,Layout
 Bangalore Urban,ITPL Road,,locality,Mahadevapura,zone,plot,,90000,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,AECS Layout,,locality,Mahadevapura,zone,plot,,88000,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,Kundalahalli Village Main road,,locality,Mahadevapura,zone,plot,,63000,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,Dream Meadows Layout,,locality,Mahadevapura,zone,plot,,80000,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,Krishvi Layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,Jayarama Reddy Layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,Annaiah Reddy Layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.153,Layout
+Bangalore Urban,Eminent Lakshmi Homes,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.155,Layout
+Bangalore Urban,CMRS Celestia,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.155,Layout
+Bangalore Urban,SV Mayfair,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.155,Layout
+Bangalore Urban,Vibrant Flora,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.155,Layout
+Bangalore Urban,Ashers Nest,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.155,Layout
 Bangalore Urban,Abhinanva Amara Courtyard,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.155,Layout
+Bangalore Urban,Bogineni Residence (AECS Layout),,locality,Mahadevapura,zone,apartment,,68200,sqm,Mahadevapura SRO gazette p.155,Layout
 Bangalore Urban,Republic of Whitefield / Divyashree,,locality,Mahadevapura,zone,plot,,76010,sqm,Mahadevapura SRO gazette p.155,Layout
+Bangalore Urban,R J Brook Square,,locality,Mahadevapura,zone,plot,,63000,sqm,Mahadevapura SRO gazette p.155,Shyamraju&co Sy No
+Bangalore Urban,Shraddha Brindavanam,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.156,Shyamraju&co Sy No
+Bangalore Urban,Onyx Mansion,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.156,Shyamraju&co Sy No
+Bangalore Urban,Deccan Fields,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.156,Shyamraju&co Sy No
+Bangalore Urban,Mahadevapura,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.156,Prm/Ka/Rera/1251/446/Pr
+Bangalore Urban,Mahadevapura BDA,,locality,Mahadevapura,zone,plot,,70000,sqm,Mahadevapura SRO gazette p.156,Prm/Ka/Rera/1251/446/Pr
 Bangalore Urban,Mahadevapura Outer Ring Road Facing Lands,,locality,Mahadevapura,zone,plot,,90000,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
 Bangalore Urban,Phoenix Market City,,locality,Mahadevapura,zone,plot,,80000,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
+Bangalore Urban,Garudachar Palya,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
+Bangalore Urban,Gurumurthy Reddy Layout,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
+Bangalore Urban,Mahadevapura Main Road,,locality,Mahadevapura,zone,plot,,75000,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
+Bangalore Urban,Rajarajeshwari Extension,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
+Bangalore Urban,Motappa Layout,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
+Bangalore Urban,Shivaganga Extension,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
+Bangalore Urban,Anugraha Extension,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
 Bangalore Urban,Brigade Metropolice Summit,,locality,Mahadevapura,zone,plot,,91850,sqm,Mahadevapura SRO gazette p.157,Prm/Ka/Rera/1251/446/Pr
 Bangalore Urban,Brigade Metropolice Arked,,locality,Mahadevapura,zone,plot,,91850,sqm,Mahadevapura SRO gazette p.157,Commercial) Sy No
+Bangalore Urban,Poorva Park Ridz,,locality,Mahadevapura,zone,plot,,65780,sqm,Mahadevapura SRO gazette p.158,Commercial) Sy No
+Bangalore Urban,Ambika Regency,,locality,Mahadevapura,zone,plot,,52250,sqm,Mahadevapura SRO gazette p.158,Commercial) Sy No
+Bangalore Urban,Altis Arcade,,locality,Mahadevapura,zone,plot,,59840,sqm,Mahadevapura SRO gazette p.158,Commercial) Sy No
+Bangalore Urban,Gopalan Urban woods (Row Houses),,locality,Mahadevapura,zone,plot,,69960,sqm,Mahadevapura SRO gazette p.159,Commercial) Sy No
+Bangalore Urban,Chourasia Sapphire,,locality,Mahadevapura,zone,plot,,69630,sqm,Mahadevapura SRO gazette p.159,Commercial) Sy No
+Bangalore Urban,Garuda Green Fields,,locality,Mahadevapura,zone,plot,,52250,sqm,Mahadevapura SRO gazette p.159,Commercial) Sy No
+Bangalore Urban,Neni Paradise,,locality,Mahadevapura,zone,plot,,52250,sqm,Mahadevapura SRO gazette p.159,Commercial) Sy No
+Bangalore Urban,Spoorti Sahitya,,locality,Mahadevapura,zone,plot,,64680,sqm,Mahadevapura SRO gazette p.160,Commercial) Sy No
+Bangalore Urban,Chethana Heritage (Guruva Reddy),,locality,Mahadevapura,zone,plot,,52250,sqm,Mahadevapura SRO gazette p.160,Commercial) Sy No
 Bangalore Urban,Ozone / Elegant Residential (Main Road),,locality,Mahadevapura,zone,plot,,74910,sqm,Mahadevapura SRO gazette p.160,Commercial) Sy No
 Bangalore Urban,Possession Football LLP / Universal,,locality,Mahadevapura,zone,plot,,52250,sqm,Mahadevapura SRO gazette p.160,"Residential Sy No. 183/1A, 183/1B"
 Bangalore Urban,Dhaaruni Residences Block-A,,locality,Mahadevapura,zone,apartment,,74690,sqm,Mahadevapura SRO gazette p.161,Carburizing works
+Bangalore Urban,Nagondanahalli (Old village),,locality,Mahadevapura,zone,plot,,35000,sqm,Mahadevapura SRO gazette p.162,Commercial) Sy No. 10 and Khatha No
+Bangalore Urban,Nagondanahalli,,locality,Mahadevapura,zone,plot,,44000,sqm,Mahadevapura SRO gazette p.162,Commercial) Sy No. 10 and Khatha No
+Bangalore Urban,Nagondanahalli Main road,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.162,Commercial) Sy No. 10 and Khatha No
+Bangalore Urban,L.R.D.E Hbcs,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.162,Commercial) Sy No. 10 and Khatha No
+Bangalore Urban,D.R.D.O Hbcs,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.162,Commercial) Sy No. 10 and Khatha No
+Bangalore Urban,Glen Morgan Layout,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.162,Commercial) Sy No. 10 and Khatha No
+Bangalore Urban,RS Infra,,locality,Mahadevapura,zone,plot,,41030,sqm,Mahadevapura SRO gazette p.163,Commercial) Sy No. 10 and Khatha No
 Bangalore Urban,NVT Quality lifestyle / Mamatha,,locality,Mahadevapura,zone,plot,,41030,sqm,Mahadevapura SRO gazette p.163,Commercial) Sy No. 10 and Khatha No
 Bangalore Urban,Balaji Eternal BlissSy No. 131/123 New,,locality,Mahadevapura,zone,plot,,41030,sqm,Mahadevapura SRO gazette p.163,Sowmya
+Bangalore Urban,Desai Grandeur,,locality,Mahadevapura,zone,plot,,40810,sqm,Mahadevapura SRO gazette p.163,Sowmya
+Bangalore Urban,Surya Humming Bird,,locality,Mahadevapura,zone,plot,,43000,sqm,Mahadevapura SRO gazette p.163,Sowmya
+Bangalore Urban,Nallurahalli,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.163,Sowmya
+Bangalore Urban,Nallurahalli BDA,,locality,Mahadevapura,zone,plot,,75000,sqm,Mahadevapura SRO gazette p.163,Sowmya
+Bangalore Urban,Adarsha layout,,locality,Mahadevapura,zone,plot,,95000,sqm,Mahadevapura SRO gazette p.164,Sowmya
+Bangalore Urban,Red Coral,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.164,than 4000 Sft)
+Bangalore Urban,Sunshine Silicon Citi,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.164,than 4000 Sft)
 Bangalore Urban,Trifecta SollievoSy,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.165,than 4000 Sft)
 Bangalore Urban,Amrutha Value / Amrutha Construction,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.165,than 4000 Sft)
+Bangalore Urban,Afallon,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.165,than 4000 Sft)
+Bangalore Urban,SLV Greens,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.165,than 4000 Sft)
+Bangalore Urban,Sri Nivasam,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.165,than 4000 Sft)
+Bangalore Urban,Neeladri,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.166,than 4000 Sft)
+Bangalore Urban,S.V Mayfair,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.166,than 4000 Sft)
+Bangalore Urban,Pattandur Agrahara,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.167,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Pattandur Agrahara BDA,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.167,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Prashanth Layout,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.167,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Mythri Layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.167,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Upkar Layout,,locality,Mahadevapura,zone,plot,,58000,sqm,Mahadevapura SRO gazette p.167,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Prithvi layout,,locality,Mahadevapura,zone,plot,,58000,sqm,Mahadevapura SRO gazette p.167,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Pai Layout,,locality,Mahadevapura,zone,plot,,58000,sqm,Mahadevapura SRO gazette p.167,Rama Constructions Pvt Ltd.)
+Bangalore Urban,De Silva Layout,,locality,Mahadevapura,zone,plot,,58000,sqm,Mahadevapura SRO gazette p.167,Rama Constructions Pvt Ltd.)
+Bangalore Urban,V Raheja Dsigns,,locality,Mahadevapura,zone,plot,,55990,sqm,Mahadevapura SRO gazette p.167,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Shobha Habitat,,locality,Mahadevapura,zone,plot,,63140,sqm,Mahadevapura SRO gazette p.168,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Happy Valley,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.168,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Ambedkar Nagar,,locality,Mahadevapura,zone,plot,,35000,sqm,Mahadevapura SRO gazette p.168,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Happy Nest,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.168,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Splendid Times Square,,locality,Mahadevapura,zone,plot,,48400,sqm,Mahadevapura SRO gazette p.169,Rama Constructions Pvt Ltd.)
+Bangalore Urban,The Cove,,locality,Mahadevapura,zone,plot,,56870,sqm,Mahadevapura SRO gazette p.169,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Prestige Parkview,,locality,Mahadevapura,zone,plot,,64900,sqm,Mahadevapura SRO gazette p.170,Rama Constructions Pvt Ltd.)
+Bangalore Urban,S6 Square Infra,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.170,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Marvel Infra Build,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.170,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Sree Mahaveer,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.170,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Sreenivasa Sunrise,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.170,Rama Constructions Pvt Ltd.)
+Bangalore Urban,S.V. Legency,,locality,Mahadevapura,zone,plot,,41910,sqm,Mahadevapura SRO gazette p.170,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Saroj Daffodils,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.170,Rama Constructions Pvt Ltd.)
+Bangalore Urban,SLV Moksha / Sri Saroj Nest,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.170,Rama Constructions Pvt Ltd.)
 Bangalore Urban,Sree Manjunatha Swamy,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.170,Rama Constructions Pvt Ltd.)
+Bangalore Urban,Green Investments,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.171,Layout)
+Bangalore Urban,Aswan Ventures,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.171,Layout)
 Bangalore Urban,Arya Hub Mall / Vishnu Priya Group of,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.171,Layout)
 Bangalore Urban,Mahalaskhmi Green Homes / Jaya,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.171,Layout)
 Bangalore Urban,Prestige Dolce Vita Residential,,locality,Mahadevapura,zone,plot,,72380,sqm,Mahadevapura SRO gazette p.172,Extent: 5385.60 Sq. M
+Bangalore Urban,R Narayanapura,,locality,Mahadevapura,zone,plot,,48000,sqm,Mahadevapura SRO gazette p.172,Acre 26.08 Gunta
+Bangalore Urban,R Narayanapura BDA,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.172,Acre 26.08 Gunta
+Bangalore Urban,Blume Fileds,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.173,more than 4000 Sft)
 Bangalore Urban,SVS Silver Woods,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.174,more than 4000 Sft)
+Bangalore Urban,Sadaramangala,,locality,Mahadevapura,zone,plot,,48000,sqm,Mahadevapura SRO gazette p.174,Ramagondanahalli) Sy No
+Bangalore Urban,Sadaramangala BDA,,locality,Mahadevapura,zone,plot,,61000,sqm,Mahadevapura SRO gazette p.174,Ramagondanahalli) Sy No
+Bangalore Urban,Sadaramangala White Field Road,,locality,Mahadevapura,zone,plot,,70000,sqm,Mahadevapura SRO gazette p.174,Ramagondanahalli) Sy No
+Bangalore Urban,Kadugodi to Sadaramangala Road,,locality,Mahadevapura,zone,plot,,70000,sqm,Mahadevapura SRO gazette p.174,Ramagondanahalli) Sy No
+Bangalore Urban,Sadaramangala Kodigehalli Road,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.174,Ramagondanahalli) Sy No
 Bangalore Urban,Prestige Shantiniketan (Residencial) Sy,,locality,Mahadevapura,zone,plot,,72380,sqm,Mahadevapura SRO gazette p.174,Ramagondanahalli) Sy No
+Bangalore Urban,ITPL Tech Park,,locality,Mahadevapura,zone,plot,,120000,sqm,Mahadevapura SRO gazette p.174,Ramagondanahalli) Sy No
+Bangalore Urban,ITPL Tech Park,,locality,Mahadevapura,zone,apartment,,72380,sqm,Mahadevapura SRO gazette p.174,Ramagondanahalli) Sy No
+Bangalore Urban,Cosmocity BDA Layout,,locality,Mahadevapura,zone,plot,,90000,sqm,Mahadevapura SRO gazette p.174,Ramagondanahalli) Sy No
+Bangalore Urban,Mahaveer Promenade,,locality,Mahadevapura,zone,plot,,49500,sqm,Mahadevapura SRO gazette p.175,Ramagondanahalli) Sy No
+Bangalore Urban,Bollineni,,locality,Mahadevapura,zone,plot,,49500,sqm,Mahadevapura SRO gazette p.175,Ramagondanahalli) Sy No
+Bangalore Urban,Ennessar,,locality,Mahadevapura,zone,plot,,49500,sqm,Mahadevapura SRO gazette p.175,Ramagondanahalli) Sy No
+Bangalore Urban,Sonnenahalli,,locality,Mahadevapura,zone,plot,,48000,sqm,Mahadevapura SRO gazette p.175,Ramagondanahalli) Sy No
+Bangalore Urban,Sonnenahalli Main road,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.175,Ramagondanahalli) Sy No
+Bangalore Urban,Sonnenahalli BDA,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.175,Ramagondanahalli) Sy No
 Bangalore Urban,"Sumadhura Shangrila, Vasantham",,locality,Mahadevapura,zone,plot,,49500,sqm,Mahadevapura SRO gazette p.175,Ramagondanahalli) Sy No
+Bangalore Urban,Christmas Relator,,locality,Mahadevapura,zone,plot,,49500,sqm,Mahadevapura SRO gazette p.176,Srinivasam Sy No
 Bangalore Urban,"MAA Gokulam, Nandanam",,locality,Mahadevapura,zone,plot,,49500,sqm,Mahadevapura SRO gazette p.176,Mills Of Your Mind) Sy No
+Bangalore Urban,Vibhutipura,,locality,Mahadevapura,zone,plot,,48000,sqm,Mahadevapura SRO gazette p.176,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhuthipura Main road,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.176,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura BDA,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.176,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura Syed Block,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura( Matada Rasthe),,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura Vinayaka Nagar,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura Shivashakthi Colony,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura Ramaiah Reddy Sector,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura Basavanagar main Road,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura Kalappa Layout,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Basavanagara,,locality,Mahadevapura,zone,plot,,48000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Veerabhadra Nagar,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,HAL Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura Shankarappa Reddy Layout,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura Rajanna Colony,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vibhutipura Ramesh Nagar Main Road,,locality,Mahadevapura,zone,plot,,45000,sqm,Mahadevapura SRO gazette p.177,"Infra Pavani Divine, Sy No"
 Bangalore Urban,"Heritage-2 Property No. 171, 188/1, 2A",,locality,Mahadevapura,zone,plot,,50380,sqm,Mahadevapura SRO gazette p.178,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Srivari Manstion,,locality,Mahadevapura,zone,plot,,47300,sqm,Mahadevapura SRO gazette p.178,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Vijay Amrutha,,locality,Mahadevapura,zone,plot,,47300,sqm,Mahadevapura SRO gazette p.178,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Balaji Abodi,,locality,Mahadevapura,zone,plot,,47300,sqm,Mahadevapura SRO gazette p.178,"Infra Pavani Divine, Sy No"
 Bangalore Urban,R.T.Rayappa S.M.R. Vinay Cascades,,locality,Mahadevapura,zone,plot,,47300,sqm,Mahadevapura SRO gazette p.178,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Srinidhi Singar,,locality,Mahadevapura,zone,plot,,47300,sqm,Mahadevapura SRO gazette p.178,"Infra Pavani Divine, Sy No"
+Bangalore Urban,V.S.R Associates,,locality,Mahadevapura,zone,plot,,47300,sqm,Mahadevapura SRO gazette p.179,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Sri Nidhi Central Park,,locality,Mahadevapura,zone,plot,,54000,sqm,Mahadevapura SRO gazette p.179,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Ramaiah Reddy Colony,,locality,Mahadevapura,zone,plot,,48000,sqm,Mahadevapura SRO gazette p.179,"Infra Pavani Divine, Sy No"
 Bangalore Urban,GSR Constructiosn / Sri Sai White Pearl,,locality,Mahadevapura,zone,plot,,45980,sqm,Mahadevapura SRO gazette p.179,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Whitefield,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.180,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Whitefield BDA,,locality,Mahadevapura,zone,plot,,75000,sqm,Mahadevapura SRO gazette p.180,"Infra Pavani Divine, Sy No"
 Bangalore Urban,Whitefield Main Road,,locality,Mahadevapura,zone,plot,,80000,sqm,Mahadevapura SRO gazette p.180,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Venkataramana Tempale Behind Road,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.180,"Infra Pavani Divine, Sy No"
+Bangalore Urban,Alembic Glass Colony,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.180,School to Ujwal School
+Bangalore Urban,Meera Sab Compound,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.180,School to Ujwal School
+Bangalore Urban,Vinayaka Layout,,locality,Mahadevapura,zone,plot,,50000,sqm,Mahadevapura SRO gazette p.180,School to Ujwal School
 Bangalore Urban,Whiteield Main Road LIC to Church,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Hagadur Main Road,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Ajimpremji House Side Outer Circle,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Dalswarth Layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Saibaba Layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Bairappa Layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Doctors layout,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Borewell Layout (Road),,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Narayanappa Garden,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Old Pump Road,,locality,Mahadevapura,zone,plot,,55000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Inner Circle,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Outer Circle,,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,ECC Road,,locality,Mahadevapura,zone,plot,,65000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,"Victoriyan View, Pukkatte Palya",,locality,Mahadevapura,zone,plot,,60000,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,G. N. Homes,,locality,Mahadevapura,zone,plot,,48070,sqm,Mahadevapura SRO gazette p.181,School to Ujwal School
+Bangalore Urban,Eastline Hills,,locality,Mahadevapura,zone,plot,,55220,sqm,Mahadevapura SRO gazette p.182,Sy No. 12/4 (A)
 Bangalore Urban,Prestige White Meadows,,locality,Mahadevapura,zone,plot,,109480,sqm,Mahadevapura SRO gazette p.182,Sy No. 12/4 (A)
 Bangalore Urban,Prestige White Meadows,,locality,Mahadevapura,zone,apartment,,72710,sqm,Mahadevapura SRO gazette p.182,Sy No. 12/4 (A)
 Bangalore Urban,Gopalan,,locality,Mahadevapura,zone,plot,,58960,sqm,Mahadevapura SRO gazette p.183,more than 4000 Sft)
+Bangalore Urban,Sumadhura By Follium,,locality,Mahadevapura,zone,plot,,76000,sqm,Mahadevapura SRO gazette p.183,Builder/Properties/Constructions
+Bangalore Urban,Ezy Group The Avenue,,locality,Mahadevapura,zone,plot,,75900,sqm,Mahadevapura SRO gazette p.183,Builder/Properties/Constructions
+Bangalore Urban,Malibhu Shelters,,locality,Mahadevapura,zone,plot,,55220,sqm,Mahadevapura SRO gazette p.184,Builder/Properties/Constructions
+Bangalore Urban,Nusa Dua Chromatic,,locality,Mahadevapura,zone,plot,,66550,sqm,Mahadevapura SRO gazette p.184,Builder/Properties/Constructions
+Bangalore Urban,Purple lake District,,locality,Mahadevapura,zone,plot,,55220,sqm,Mahadevapura SRO gazette p.184,Builder/Properties/Constructions
+Bangalore Urban,Indraprastha Ruhe,,locality,Mahadevapura,zone,plot,,63580,sqm,Mahadevapura SRO gazette p.184,Builder/Properties/Constructions
+Bangalore Urban,Oceanus Dwellings Pvt Ltd,,locality,Mahadevapura,zone,plot,,55220,sqm,Mahadevapura SRO gazette p.184,Builder/Properties/Constructions
 Bangalore Urban,Waverly / Manishankar Dattuluri,,locality,Mahadevapura,zone,plot,,55220,sqm,Mahadevapura SRO gazette p.185,Builder/Properties/Constructions
 Bangalore Urban,Vishnu Swaroop Avenues,,locality,Mahadevapura,zone,plot,,55220,sqm,Mahadevapura SRO gazette p.185,Builder/Properties/Constructions
 Bangalore Urban,White Orchid Villament,,locality,Mahadevapura,zone,plot,,60720,sqm,Mahadevapura SRO gazette p.185,Builder/Properties/Constructions
@@ -586,15 +1093,17 @@ Bangalore Urban,Commissariat Street,,locality,Shivajinagar,zone,apartment,,18950
 Bangalore Urban,Convent Road,,locality,Shivajinagar,zone,apartment,,106500,sqm,Shivajinagar SRO gazette p.17,
 Bangalore Urban,Cubbon Road,,locality,Shivajinagar,zone,apartment,,186000,sqm,Shivajinagar SRO gazette p.17,
 Bangalore Urban,Prestige Minsk Square Commercial,,locality,Shivajinagar,zone,apartment,,322000,sqm,Shivajinagar SRO gazette p.17,
-Bangalore Urban,Chandrika Hotel,,locality,Shivajinagar,zone,apartment,,85250,sqm,Shivajinagar SRO gazette p.17 (median of 12),
+Bangalore Urban,Chandrika Hotel,,locality,Shivajinagar,zone,apartment,,81250,sqm,Shivajinagar SRO gazette p.17 (median of 16),
+Bangalore Urban,Chandrika Hotel,,locality,Shivajinagar,zone,plot,,189500,sqm,Shivajinagar SRO gazette p.17 (median of 7),
 Bangalore Urban,Station,,locality,Shivajinagar,zone,apartment,,125000,sqm,Shivajinagar SRO gazette p.26,
-Bangalore Urban,Station,,locality,Shivajinagar,zone,plot,,83000,sqm,Shivajinagar SRO gazette p.27,
-Bangalore Urban,No.91-96-60 extent 1321.21 Sq. Mtr,,locality,Shivajinagar,zone,apartment,,60500,sqm,Shivajinagar SRO gazette p.27 (median of 28),
-Bangalore Urban,No.91-96-60 extent 1321.21 Sq. Mtr,,locality,Shivajinagar,zone,plot,,77000,sqm,Shivajinagar SRO gazette p.29 (median of 2),
-Bangalore Urban,Crescent,,locality,Shivajinagar,zone,apartment,,74000,sqm,Shivajinagar SRO gazette p.31 (median of 23),
-Bangalore Urban,Crescent,,locality,Shivajinagar,zone,plot,,151000,sqm,Shivajinagar SRO gazette p.32,
+Bangalore Urban,Station,,locality,Shivajinagar,zone,plot,,93750,sqm,Shivajinagar SRO gazette p.27 (median of 2),
+Bangalore Urban,No.91-96-60 extent 1321.21 Sq. Mtr,,locality,Shivajinagar,zone,apartment,,60500,sqm,Shivajinagar SRO gazette p.27 (median of 33),
+Bangalore Urban,No.91-96-60 extent 1321.21 Sq. Mtr,,locality,Shivajinagar,zone,plot,,82750,sqm,Shivajinagar SRO gazette p.29 (median of 4),
+Bangalore Urban,Crescent,,locality,Shivajinagar,zone,apartment,,79000,sqm,Shivajinagar SRO gazette p.31 (median of 27),
+Bangalore Urban,Crescent,,locality,Shivajinagar,zone,plot,,135500,sqm,Shivajinagar SRO gazette p.31 (median of 6),
 Bangalore Urban,A ppareddy Palya,,locality,Indiranagar,zone,plot,,55000,sqm,Indiranagar SRO gazette p.36,
 Bangalore Urban,Artilary Road,,locality,Indiranagar,zone,plot,,35600,sqm,Indiranagar SRO gazette p.36,
+Bangalore Urban,A ppaiah Garden,,locality,Indiranagar,zone,plot,,43700,sqm,Indiranagar SRO gazette p.36,
 Bangalore Urban,B.No. Street Halasuru,,locality,Indiranagar,zone,plot,,39600,sqm,Indiranagar SRO gazette p.36,
 Bangalore Urban,B innamangala/Indiranagar,,locality,Indiranagar,zone,plot,,150000,sqm,Indiranagar SRO gazette p.36,
 Bangalore Urban,Ramya Regent,,locality,Indiranagar,zone,plot,,94800,sqm,Indiranagar SRO gazette p.37,
@@ -619,7 +1128,7 @@ Bangalore Urban,S anna Gyalen,,locality,Indiranagar,zone,apartment,,122000,sqm,I
 Bangalore Urban,A paranji,,locality,Indiranagar,zone,apartment,,122000,sqm,Indiranagar SRO gazette p.38,
 Bangalore Urban,V a nishree,,locality,Indiranagar,zone,apartment,,122000,sqm,Indiranagar SRO gazette p.38,
 Bangalore Urban,Domlur,,locality,Indiranagar,zone,apartment,,220000,sqm,Indiranagar SRO gazette p.39,
-Bangalore Urban,Diamond District,,locality,Indiranagar,zone,apartment,,84000,sqm,Indiranagar SRO gazette p.39 (median of 26),
+Bangalore Urban,Diamond District,,locality,Indiranagar,zone,apartment,,84000,sqm,Indiranagar SRO gazette p.39 (median of 27),
 Bangalore Urban,Domlur Village,,locality,Indiranagar,zone,plot,,60300,sqm,Indiranagar SRO gazette p.40,Diamond District)
 Bangalore Urban,Diamond District,,locality,Indiranagar,zone,plot,,61200,sqm,Indiranagar SRO gazette p.40 (median of 18),
 Bangalore Urban,Krishna Reddy Layout,,locality,Indiranagar,zone,plot,,67500,sqm,Indiranagar SRO gazette p.40,Diamond District)
@@ -636,8 +1145,11 @@ Bangalore Urban,L.B.S.Nagar Ulsoor,,locality,Indiranagar,zone,plot,,44100,sqm,In
 Bangalore Urban,L akshmipuram,,locality,Indiranagar,zone,plot,,42200,sqm,Indiranagar SRO gazette p.42,Diamond District)
 Bangalore Urban,Ulsoor Station to Adarsha Theatre,,locality,Indiranagar,zone,plot,,150000,sqm,Indiranagar SRO gazette p.42,Diamond District)
 Bangalore Urban,Adarsha Theatre to B.D.A.Complex,,locality,Indiranagar,zone,plot,,120100,sqm,Indiranagar SRO gazette p.43,Diamond District)
+Bangalore Urban,Saraswathipuram,,locality,Indiranagar,zone,plot,,46800,sqm,Indiranagar SRO gazette p.43,Diamond District)
 Bangalore Urban,Someshwarapuram,,locality,Indiranagar,zone,plot,,58000,sqm,Indiranagar SRO gazette p.43,Diamond District)
+Bangalore Urban,S h amanna Gowda Layout,,locality,Indiranagar,zone,plot,,51600,sqm,Indiranagar SRO gazette p.43,Diamond District)
 Bangalore Urban,Eshwar Layout,,locality,Indiranagar,zone,plot,,49700,sqm,Indiranagar SRO gazette p.43,Diamond District)
+Bangalore Urban,U ls oor Village,,locality,Indiranagar,zone,plot,,50800,sqm,Indiranagar SRO gazette p.43,Diamond District)
 Bangalore Urban,Micheal Palya,,locality,Indiranagar,zone,plot,,67600,sqm,Indiranagar SRO gazette p.43,Diamond District)
 Bangalore Urban,Andhra Block,,locality,Indiranagar,zone,plot,,38000,sqm,Indiranagar SRO gazette p.44,Diamond District)
 Bangalore Urban,Assayi Road,,locality,Halasuru,zone,plot,,110000,sqm,Halasuru SRO gazette p.45,
@@ -952,44 +1464,48 @@ Bangalore Urban,Gurumurthy Reddy Layout 1st Cross,,locality,Mahadevapura,zone,ap
 Bangalore Urban,Tagur Street or 1st & 4th Main Cross,,locality,Mahadevapura,zone,apartment,,50000,sqm,Mahadevapura SRO gazette p.132,
 Bangalore Urban,Chi. Udayashankar 1st 2nd Main Road,,locality,Mahadevapura,zone,apartment,,50000,sqm,Mahadevapura SRO gazette p.132,
 Bangalore Urban,Andhra Colony Udayanagar,,locality,Mahadevapura,zone,apartment,,50000,sqm,Mahadevapura SRO gazette p.133,
-Bangalore Urban,B.Narayanapura,,locality,Mahadevapura,zone,apartment,,51345,sqm,Mahadevapura SRO gazette p.133 (median of 4),
-Bangalore Urban,Ppty,,locality,Mahadevapura,zone,apartment,,60000,sqm,Mahadevapura SRO gazette p.136 (median of 9),
-Bangalore Urban,Ppty,,locality,Mahadevapura,zone,plot,,58960,sqm,Mahadevapura SRO gazette p.137,
-Bangalore Urban,Coconut Garden Layout,,locality,Mahadevapura,zone,apartment,,54010,sqm,Mahadevapura SRO gazette p.141 (median of 2),
-Bangalore Urban,Coconut Garden Layout,,locality,Mahadevapura,zone,plot,,54010,sqm,Mahadevapura SRO gazette p.142 (median of 5),
-Bangalore Urban,Prop,,locality,Mahadevapura,zone,apartment,,54010,sqm,Mahadevapura SRO gazette p.142 (median of 3),
+Bangalore Urban,B.Narayanapura,,locality,Mahadevapura,zone,apartment,,50380,sqm,Mahadevapura SRO gazette p.133 (median of 5),
+Bangalore Urban,Ppty,,locality,Mahadevapura,zone,apartment,,55880,sqm,Mahadevapura SRO gazette p.136 (median of 17),
+Bangalore Urban,Ppty,,locality,Mahadevapura,zone,plot,,57530,sqm,Mahadevapura SRO gazette p.136 (median of 8),
+Bangalore Urban,Coconut Garden Layout,,locality,Mahadevapura,zone,apartment,,54010,sqm,Mahadevapura SRO gazette p.141 (median of 5),
+Bangalore Urban,Coconut Garden Layout,,locality,Mahadevapura,zone,plot,,54010,sqm,Mahadevapura SRO gazette p.141 (median of 9),
+Bangalore Urban,Prop,,locality,Mahadevapura,zone,apartment,,54010,sqm,Mahadevapura SRO gazette p.142 (median of 7),
 Bangalore Urban,Prop,,locality,Mahadevapura,zone,plot,,54010,sqm,Mahadevapura SRO gazette p.143,
 Bangalore Urban,Pr/Kn,,locality,Mahadevapura,zone,apartment,,57500,sqm,Mahadevapura SRO gazette p.144 (median of 4),
-Bangalore Urban,Gudi,,locality,Mahadevapura,zone,plot,,58960,sqm,Mahadevapura SRO gazette p.145 (median of 2),
-Bangalore Urban,Your Mind,,locality,Mahadevapura,zone,apartment,,75000,sqm,Mahadevapura SRO gazette p.146 (median of 3),
-Bangalore Urban,Right Side,,locality,Mahadevapura,zone,apartment,,53790,sqm,Mahadevapura SRO gazette p.147 (median of 2),
-Bangalore Urban,Right Side,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.147 (median of 7),
+Bangalore Urban,Gudi,,locality,Mahadevapura,zone,plot,,47905,sqm,Mahadevapura SRO gazette p.145 (median of 8),
+Bangalore Urban,Your Mind,,locality,Mahadevapura,zone,apartment,,75000,sqm,Mahadevapura SRO gazette p.146 (median of 5),
+Bangalore Urban,Your Mind,,locality,Mahadevapura,zone,plot,,69520,sqm,Mahadevapura SRO gazette p.146 (median of 2),
+Bangalore Urban,Right Side,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.146 (median of 16),
+Bangalore Urban,Right Side,,locality,Mahadevapura,zone,apartment,,47740,sqm,Mahadevapura SRO gazette p.147 (median of 6),
 Bangalore Urban,No 333/A-409 and B+G+4UF,,locality,Mahadevapura,zone,plot,,47740,sqm,Mahadevapura SRO gazette p.149,
-Bangalore Urban,Bangalore,,locality,Mahadevapura,zone,apartment,,46530,sqm,Mahadevapura SRO gazette p.150 (median of 5),
-Bangalore Urban,Bangalore,,locality,Mahadevapura,zone,plot,,49390,sqm,Mahadevapura SRO gazette p.150 (median of 2),
-Bangalore Urban,Shyamraju&co,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.156 (median of 2),
+Bangalore Urban,Bangalore,,locality,Mahadevapura,zone,apartment,,46530,sqm,Mahadevapura SRO gazette p.150 (median of 14),
+Bangalore Urban,Bangalore,,locality,Mahadevapura,zone,plot,,46530,sqm,Mahadevapura SRO gazette p.150 (median of 10),
+Bangalore Urban,Shyamraju&co,,locality,Mahadevapura,zone,plot,,64240,sqm,Mahadevapura SRO gazette p.156 (median of 3),
 Bangalore Urban,Shyamraju&co,,locality,Mahadevapura,zone,apartment,,64240,sqm,Mahadevapura SRO gazette p.156,
 Bangalore Urban,Prm/Ka,,locality,Mahadevapura,zone,apartment,,71600,sqm,Mahadevapura SRO gazette p.156,
-Bangalore Urban,Carburizing works,,locality,Mahadevapura,zone,apartment,,52250,sqm,Mahadevapura SRO gazette p.160 (median of 4),
+Bangalore Urban,Prm/Ka,,locality,Mahadevapura,zone,plot,,68000,sqm,Mahadevapura SRO gazette p.157,
+Bangalore Urban,Carburizing works,,locality,Mahadevapura,zone,apartment,,52250,sqm,Mahadevapura SRO gazette p.160 (median of 6),
 Bangalore Urban,Carburizing works,,locality,Mahadevapura,zone,plot,,52250,sqm,Mahadevapura SRO gazette p.160,
+Bangalore Urban,Sowmya,,locality,Mahadevapura,zone,plot,,41030,sqm,Mahadevapura SRO gazette p.163,
 Bangalore Urban,Sowmya,,locality,Mahadevapura,zone,apartment,,150000,sqm,Mahadevapura SRO gazette p.164 (median of 3),
-Bangalore Urban,than 4000 Sft,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.166 (median of 3),
-Bangalore Urban,than 4000 Sft,,locality,Mahadevapura,zone,apartment,,61435,sqm,Mahadevapura SRO gazette p.166 (median of 2),
-Bangalore Urban,Rama Constructions Pvt Ltd,,locality,Mahadevapura,zone,apartment,,90000,sqm,Mahadevapura SRO gazette p.167 (median of 7),
-Bangalore Urban,Rama Constructions Pvt Ltd,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.169 (median of 5),
+Bangalore Urban,than 4000 Sft,,locality,Mahadevapura,zone,plot,,57090,sqm,Mahadevapura SRO gazette p.164 (median of 5),
+Bangalore Urban,than 4000 Sft,,locality,Mahadevapura,zone,apartment,,59400,sqm,Mahadevapura SRO gazette p.164 (median of 3),
+Bangalore Urban,Rama Constructions Pvt Ltd,,locality,Mahadevapura,zone,apartment,,79310,sqm,Mahadevapura SRO gazette p.167 (median of 13),
+Bangalore Urban,Rama Constructions Pvt Ltd,,locality,Mahadevapura,zone,plot,,53460,sqm,Mahadevapura SRO gazette p.167 (median of 12),
 Bangalore Urban,Acre 26.08 Gunta,,locality,Mahadevapura,zone,apartment,,127500,sqm,Mahadevapura SRO gazette p.173 (median of 2),
 Bangalore Urban,between 2000 to 4000 Sft,,locality,Mahadevapura,zone,apartment,,140000,sqm,Mahadevapura SRO gazette p.173,
+Bangalore Urban,more than 4000 Sft,,locality,Mahadevapura,zone,plot,,54340,sqm,Mahadevapura SRO gazette p.173 (median of 4),
 Bangalore Urban,more than 4000 Sft,,locality,Mahadevapura,zone,apartment,,53460,sqm,Mahadevapura SRO gazette p.173,
-Bangalore Urban,more than 4000 Sft,,locality,Mahadevapura,zone,plot,,54340,sqm,Mahadevapura SRO gazette p.173 (median of 2),
-Bangalore Urban,Ramagondanahalli,,locality,Mahadevapura,zone,apartment,,80000,sqm,Mahadevapura SRO gazette p.174 (median of 7),
+Bangalore Urban,Ramagondanahalli,,locality,Mahadevapura,zone,apartment,,72890,sqm,Mahadevapura SRO gazette p.174 (median of 8),
+Bangalore Urban,Ramagondanahalli,,locality,Mahadevapura,zone,plot,,70510,sqm,Mahadevapura SRO gazette p.174 (median of 3),
 Bangalore Urban,Srinivasam,,locality,Mahadevapura,zone,plot,,66110,sqm,Mahadevapura SRO gazette p.176,
 Bangalore Urban,Technology park (Residential),,locality,Mahadevapura,zone,apartment,,99000,sqm,Mahadevapura SRO gazette p.176,
-Bangalore Urban,Infra Pavani Divine,,locality,Mahadevapura,zone,apartment,,51150,sqm,Mahadevapura SRO gazette p.177 (median of 10),
-Bangalore Urban,Infra Pavani Divine,,locality,Mahadevapura,zone,plot,,49170,sqm,Mahadevapura SRO gazette p.178 (median of 4),
-Bangalore Urban,School to Ujwal School,,locality,Mahadevapura,zone,apartment,,51535,sqm,Mahadevapura SRO gazette p.181 (median of 2),
+Bangalore Urban,Infra Pavani Divine,,locality,Mahadevapura,zone,apartment,,47300,sqm,Mahadevapura SRO gazette p.177 (median of 19),
+Bangalore Urban,Infra Pavani Divine,,locality,Mahadevapura,zone,plot,,48070,sqm,Mahadevapura SRO gazette p.178 (median of 11),
+Bangalore Urban,School to Ujwal School,,locality,Mahadevapura,zone,apartment,,55000,sqm,Mahadevapura SRO gazette p.181 (median of 3),
 Bangalore Urban,between 2000 to 4000 Sft,,locality,Mahadevapura,zone,plot,,170890,sqm,Mahadevapura SRO gazette p.182,
-Bangalore Urban,Builder/Properties/Constructions,,locality,Mahadevapura,zone,apartment,,105350,sqm,Mahadevapura SRO gazette p.183,
-Bangalore Urban,Builder/Properties/Constructions,,locality,Mahadevapura,zone,plot,,55220,sqm,Mahadevapura SRO gazette p.183 (median of 13),
+Bangalore Urban,Builder/Properties/Constructions,,locality,Mahadevapura,zone,apartment,,55220,sqm,Mahadevapura SRO gazette p.183 (median of 5),
+Bangalore Urban,Builder/Properties/Constructions,,locality,Mahadevapura,zone,plot,,55220,sqm,Mahadevapura SRO gazette p.183 (median of 19),
 Bangalore Urban,Siddharath Layout,,locality,Bidarahalli,zone,apartment,,42000,sqm,Bidarahalli SRO gazette p.187,
 Bangalore Urban,Kadugodi New Extn,,locality,Bidarahalli,zone,apartment,,42000,sqm,Bidarahalli SRO gazette p.187,
 Bangalore Urban,Phak Ruddien Layout,,locality,Bidarahalli,zone,apartment,,42000,sqm,Bidarahalli SRO gazette p.187,
@@ -1015,7 +1531,7 @@ Bangalore Urban,Towards Devanahalli International Airport,,locality,Bidarahalli,
 Bangalore Urban,Towards Devanahalli International Airport,,locality,Bidarahalli,zone,plot,,55000,sqm,Bidarahalli SRO gazette p.212 (median of 3),
 Bangalore Urban,Cosmos Shelters & Interiors (Layout),,locality,Bidarahalli,zone,plot,,38000,sqm,Bidarahalli SRO gazette p.218,S+G+3Uf
 Bangalore Urban,Casa Grande Luxus ( Row House),,locality,Bidarahalli,zone,plot,,40000,sqm,Bidarahalli SRO gazette p.218,B+G+4Uf )
-Bangalore Urban,"ECO SPRINGS RESIDENTIAL LAYOUT (33/2 (P), 34/2 (P), 36/1 (P), 36/2 (P), 36/3 (P), 46/1 (P), 46/2 (P), 46/4 (P), 46/5 (P), 46/6",,locality,Bidarahalli,zone,plot,,25000,sqm,Bidarahalli SRO gazette p.221,Survey No
+Bangalore Urban,"ECO SPRINGS RESIDENTIAL LAYOUT (33/2 (P), 34/2 (P), 36/1 (P), 36/2 (P), 36/3 (P), 46/1 (P), 46/2 (P), 46/4 (P), 46/5 (P), 46/6 (P), 46/7",,locality,Bidarahalli,zone,plot,,25000,sqm,Bidarahalli SRO gazette p.221,Survey No
 Bangalore Urban,Army Welfare Housing Organisation ( AWHO),,locality,Bidarahalli,zone,plot,,45000,sqm,Bidarahalli SRO gazette p.222,Survey No
 Bangalore Urban,Pr/Kn,,locality,Bidarahalli,zone,plot,,75000,sqm,Bidarahalli SRO gazette p.228,
 Bangalore Urban,Mahaveer Amaze ( Mahaveer Group),,locality,Bidarahalli,zone,plot,,42000,sqm,Bidarahalli SRO gazette p.233,Commercial) Sy No
