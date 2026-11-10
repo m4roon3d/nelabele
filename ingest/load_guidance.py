@@ -26,7 +26,7 @@ import psycopg
 
 REQUIRED = ["district", "area_name", "area_level", "property_type", "rate", "unit"]
 OPTIONAL = ["parent_name", "parent_level", "approval_status", "source_ref", "name_kn"]
-DISTRICTS = {"Bangalore Urban", "Bangalore Rural", "Ramanagara"}
+DISTRICTS = {"Bangalore Urban", "Bangalore Rural", "Ramanagara", "Tumakuru", "Kolar", "Chikkaballapura"}
 SIMILAR = 0.85  # name similarity above which a new area looks like an existing one
 
 

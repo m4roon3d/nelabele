@@ -35,4 +35,40 @@ for f in "${!SEC[@]}"; do
   python ingest/parse_gazette.py "raw/${f}_2023.csv" "data/guidance/bengaluru_urban_${f}_2023.csv" \
     --district "Bangalore Urban" --parent-level zone --mode city "${args[@]}"
 done
+# Neighbouring districts: one gazette per sub-registrar office, from the IGR site
+# (igr.karnataka.gov.in, "Revised Guidelines Value"; reachable only from India),
+# saved in $IGR as <file>.pdf. Land rates there are printed in ₹ per acre.
+IGR=${IGR:-../igr}
+OFFICES="Tumkuru:Tumakuru:Tumakuru thipaturu:Tiptur:Tumakuru Gubbi:Gubbi:Tumakuru Kunigal:Kunigal:Tumakuru
+Huliyadurga:Huliyurdurga:Tumakuru Sira:Sira:Tumakuru Madhugiri:Madhugiri:Tumakuru Koratagere:Koratagere:Tumakuru
+Chikkanayakanahalli:Chikkanayakanahalli:Tumakuru Pavagada:Pavagada:Tumakuru Turuvekere:Turuvekere:Tumakuru
+Kolara:Kolar:Kolar Bangarapete:Bangarapet:Kolar Malur:Malur:Kolar Srinivasapura:Srinivaspur:Kolar
+Mulabagilu:Mulbagal:Kolar KGF:KGF:Kolar Chikkaballapura:Chikkaballapura:Chikkaballapura
+Gudibande:Gudibande:Chikkaballapura Bagepalli:Bagepalli:Chikkaballapura Gowribidanuru:Gauribidanur:Chikkaballapura
+Chinthamani:Chintamani:Chikkaballapura Shidlagatta:Sidlaghatta:Chikkaballapura"
+if [ -d "$IGR" ]; then
+  mkdir -p raw/igr raw/igr_out
+  for o in $OFFICES; do
+    IFS=: read -r f office dist <<< "$o"
+    python ingest/extract_pdf_tables.py "$IGR/$f.pdf" raw/igr/
+    pages=$(python -c "import pdfplumber,sys; print(len(pdfplumber.open(sys.argv[1]).pages))" "$IGR/$f.pdf")
+    python ingest/parse_gazette.py "raw/igr/$f.csv" "raw/igr_out/$f.csv" --district "$dist" \
+      --town-rollup --acre-rupees --section "1-$pages:$office"
+  done
+  # one file per district, office by office
+  python - <<'PY'
+import csv, glob, collections
+rows, fields = collections.defaultdict(list), None
+for path in sorted(glob.glob("raw/igr_out/*.csv")):
+    for r in csv.DictReader(open(path, encoding="utf-8")):
+        fields = fields or list(r)
+        if not (r["property_type"] in ("plot", "apartment") and float(r["rate"]) > 60000):
+            rows[r["district"]].append(r)
+for district, rs in rows.items():
+    with open(f"data/guidance/{district.lower()}_2023.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        w.writerows(rs)
+PY
+fi
 python3 ingest/clean_names.py data/guidance/*.csv

@@ -50,7 +50,10 @@ def to_unicode(text):
     conv = _load()
     if not conv or not text or not _NUDI_HINT.search(text):
         return None
-    out = conv.process_line(text)
+    try:
+        out = conv.process_line(text)
+    except Exception:  # the converter trips on a few odd glyph sequences
+        return None
     out = re.sub(r"[^ಀ-೿0-9 ,./()-]", "", out)
     out = re.sub(r"\s+", " ", out).strip(" ,./-")
     # line-wrapped cells leave vowel signs and viramas cut off from their letter

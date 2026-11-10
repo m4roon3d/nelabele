@@ -12,10 +12,10 @@ CREATE INDEX IF NOT EXISTS geo_area_point_gix ON nelabele.geo_area USING gist (p
 -- Who logged a market rate (the token's subject), for manual entries
 ALTER TABLE nelabele.rate_observation ADD COLUMN IF NOT EXISTS entered_by text;
 
--- Ramanagara (now Bengaluru South) district
+-- Districts covered: Bengaluru's three, then the neighbouring ones
 ALTER TABLE nelabele.geo_area DROP CONSTRAINT IF EXISTS geo_area_district_check;
 ALTER TABLE nelabele.geo_area ADD CONSTRAINT geo_area_district_check
-  CHECK (district IN ('Bangalore Urban', 'Bangalore Rural', 'Ramanagara'));
+  CHECK (district IN ('Bangalore Urban', 'Bangalore Rural', 'Ramanagara', 'Tumakuru', 'Kolar', 'Chikkaballapura'));
 
 -- City-wide price trend (NHB RESIDEX), shown beside guidance values
 CREATE TABLE IF NOT EXISTS nelabele.city_trend (

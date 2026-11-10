@@ -112,12 +112,32 @@ def numbers(cells):
     return out
 
 
+ACRE_RUPEES = False  # --acre-rupees: land rates printed in ₹ per acre, not ₹ lakh per acre
+
+
 def classify(name, nums):
     """Return a list of (property_type, rate, unit, level) or a reason to skip."""
     n = len(nums)
     land = nums[:3]
     if SUB_ROW.search(name):
         return "road-frontage sub-row"
+    if ACRE_RUPEES:
+        # 2023 district gazettes (Tumakuru, Kolar, Chikkaballapura): dry / wet / garden
+        # land in ₹ per acre (e.g. 400000 500000 600000), then site rates in ₹ per sq m
+        if n >= 3 and all(v >= 20000 for v in land) and land[0] <= land[1] <= land[2]:
+            sites = [v for v in nums[3:] if 100 <= v < min(land[0] / 10, 60000)]
+            if n == 3 and FRONTAGE.search(name):
+                return "road-frontage sub-row"
+            out = [("agricultural_land", land[0], "acre", "village")]
+            if sites:
+                out.append(("plot", sites[-1], "sqm", "village"))
+            return out
+        if n <= 2 and max(nums, default=0) >= 200000:
+            return "land along a road (per acre)"
+        if n <= 2 and max(nums, default=0) > 60000:
+            return "implausible value"   # far above any town site rate here; likely a land rate
+        if n == 2 and not 3000 <= nums[1] <= 60000:
+            return [("plot", nums[0], "sqm", "locality")]
     if n >= 3 and all(v < 1000 for v in land):
         if n == 3:
             if FRONTAGE.search(name):
@@ -142,7 +162,7 @@ def main():
     ap = argparse.ArgumentParser(description="Gazette extract → loader CSV")
     ap.add_argument("raw_csv")
     ap.add_argument("out_csv")
-    ap.add_argument("--district", required=True, choices=["Bangalore Urban", "Bangalore Rural", "Ramanagara"])
+    ap.add_argument("--district", required=True, choices=["Bangalore Urban", "Bangalore Rural", "Ramanagara", "Tumakuru", "Kolar", "Chikkaballapura"])
     ap.add_argument("--section", action="append", required=True,
                     help="page range and taluk/SRO, e.g. 12-68:Nelamangala")
     ap.add_argument("--parent-level", default="taluk",
@@ -152,8 +172,12 @@ def main():
     ap.add_argument("--town-rollup", action="store_true",
                     help="roll Kannada-only town street rows (one site rate, no English name) "
                          "into a '<office> Town' area")
+    ap.add_argument("--acre-rupees", action="store_true",
+                    help="land rates are in ₹ per acre (district gazettes), not ₹ lakh per acre")
     ap.add_argument("--skipped", help="optional CSV listing skipped rows for review")
     args = ap.parse_args()
+    global ACRE_RUPEES
+    ACRE_RUPEES = args.acre_rupees
 
     sections = []
     for s in args.section:
@@ -186,6 +210,7 @@ def main():
         while len(vals) < 2:
             vals.append(None)
         return vals
+    last_village = {}
     with open(args.raw_csv, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
         next(reader)
@@ -201,6 +226,25 @@ def main():
                         and not re.search(r"village|area name|hobli|apt|flat|layout road", h, re.I)):
                     heading[taluk] = h
                 continue
+            if ACRE_RUPEES:
+                # Madhugiri style: "465 | Amaravathi" heading, then "Gramatana and Others Sy.No's"
+                # (or "<village> Gramatana & Others") rows carrying that village's rates
+                lead = cells[1:] if cells[0].isdigit() else cells
+                nm = english_name(lead)
+                nums_here = numbers(lead)
+                if cells[0].isdigit() and nm and not nums_here:
+                    last_village[taluk] = nm
+                m = re.match(r"^(.*?)\s*grama?th?ana\s*(and|&)\s*other", nm or "", re.I)
+                if m and len(nums_here) >= 3:
+                    village = m.group(1).strip(" ,.-") or last_village.get(taluk)
+                    if village:
+                        cells = ["0", village] + [f"{v:.0f}" for v in nums_here]
+                        reasons["village from heading"] += 1
+            if ACRE_RUPEES and not cells[0]:
+                # district gazettes print village serial numbers one column to the right
+                i = next((k for k, c in enumerate(cells) if c), None)
+                if i is not None and i <= 2 and cells[i].isdigit():
+                    cells = cells[i:]
             if not cells[0].isdigit():
                 continue
             body = cells[1:]

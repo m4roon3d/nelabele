@@ -31,6 +31,17 @@ TALUKS = {
     "Devanahalli": ["Devanhalli"], "Hoskote": ["Hoskote"],
     "Ramanagara": ["Ramanagaram"], "Channapatna": ["Channapatna"],
     "Kanakapura": ["Kankapura"], "Magadi": ["Magadi"],
+    # Tumakuru
+    "Tumakuru": ["Tumkur"], "Tiptur": ["Tiptur"], "Gubbi": ["Gubbi"], "Kunigal": ["Kunigal"],
+    "Huliyurdurga": ["Kunigal"], "Sira": ["Sira"], "Madhugiri": ["Madhugiri"],
+    "Koratagere": ["Korategere"], "Chikkanayakanahalli": ["Chiknayakanhalli"],
+    "Pavagada": ["Pavagada"], "Turuvekere": ["Turuvekere"],
+    # Kolar (KGF taluk was part of Bangarpet in 2011)
+    "Kolar": ["Kolar"], "Bangarapet": ["Bangarpet"], "KGF": ["Bangarpet"], "Malur": ["Malur"],
+    "Srinivaspur": ["Srinivaspur"], "Mulbagal": ["Mulbagal"],
+    # Chikkaballapura (still part of Kolar district in the 2011 census)
+    "Chikkaballapura": ["Chikballapur"], "Gudibande": ["Gudibanda"], "Bagepalli": ["Bagepalli"],
+    "Gauribidanur": ["Gauribidanur"], "Chintamani": ["Chintamani"], "Sidlaghatta": ["Sidlaghatta"],
 }
 CITY = ["Anekal", "Bangalore North", "Bangalore South"]   # every Bangalore Urban office
 SIMPLIFY = 0.00015      # degrees, about 15 m: plenty for a phone map
@@ -43,7 +54,7 @@ def main():
     census = defaultdict(list)            # census taluk -> [(key, name, geometry)]
     for f in json.load(open(sys.argv[1]))["features"]:
         p = f["properties"]
-        if p.get("DISTRICT") in ("Bangalore", "Bangalore Rural") and p.get("NAME"):
+        if p.get("DISTRICT") in ("Bangalore", "Bangalore Rural", "Tumkur", "Kolar") and p.get("NAME"):
             census[p["TALUK"]].append((norm(p["NAME"]), p["NAME"], f["geometry"]))
 
     areas = {}

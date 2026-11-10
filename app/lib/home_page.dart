@@ -8,7 +8,7 @@ import 'format.dart';
 import 'location.dart';
 import 'models.dart';
 
-const _districts = ['Bangalore Urban', 'Bangalore Rural', 'Ramanagara'];
+const _districts = ['Bangalore Urban', 'Bangalore Rural', 'Ramanagara', 'Tumakuru', 'Kolar', 'Chikkaballapura'];
 const _types = ['plot', 'agricultural_land', 'apartment'];
 
 /// Searchable list of places and their rates.
