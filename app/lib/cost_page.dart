@@ -86,7 +86,8 @@ class _CostPageState extends State<CostPage> {
     final sqft = _sizeSqft;
     final agreed = parseMoney(_price.text);
     final guidanceValue = g != null && sqft != null ? g * sqft : null;
-    final marketValue = widget.rate.marketMid != null && sqft != null ? widget.rate.marketMid! * sqft : null;
+    final estimated = widget.rate.marketMid == null && widget.rate.estMid != null;
+    final marketValue = widget.rate.bestMarketMid != null && sqft != null ? widget.rate.bestMarketMid! * sqft : null;
     final price = agreed ?? marketValue ?? guidanceValue;
     final base = [guidanceValue, agreed].whereType<double>().fold<double?>(null, (a, b) => a == null || b > a ? b : a);
     final charges = base == null ? null : Charges(base, urban: _urban);
@@ -149,7 +150,7 @@ class _CostPageState extends State<CostPage> {
               helperText: agreed != null
                   ? rupees(agreed)
                   : marketValue != null
-                      ? 'Leave empty to use the market mid, ${rupeesShort(marketValue)}'
+                      ? 'Leave empty to use the ${estimated ? 'estimated ' : ''}market mid, ${rupeesShort(marketValue)}'
                       : 'Leave empty to use the guidance value',
               border: const OutlineInputBorder(),
             ),
@@ -185,7 +186,7 @@ class _CostPageState extends State<CostPage> {
                       agreed != null
                           ? 'Agreed price'
                           : marketValue != null
-                              ? 'Price at market mid'
+                              ? (estimated ? 'Price at estimated market mid' : 'Price at market mid')
                               : 'Price at guidance value',
                       price,
                     ),

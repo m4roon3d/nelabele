@@ -256,7 +256,11 @@ class _AreaCard extends StatelessWidget {
                       _RatePill(
                         label: propertyLabel(r.propertyType),
                         value: headline(r.propertyType, r.guidanceRate!),
-                        extra: r.marketRatio == null ? null : 'market ${r.marketRatio!.toStringAsFixed(1)}×',
+                        extra: r.marketRatio != null
+                            ? 'market ${r.marketRatio!.toStringAsFixed(1)}×'
+                            : r.hasEstimate
+                                ? 'est. ~${headline(r.propertyType, r.estMid!)}'
+                                : null,
                       ),
                 ],
               ),

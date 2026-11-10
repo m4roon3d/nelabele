@@ -212,9 +212,11 @@ class ComparePage extends StatelessWidget {
                 }, strong: true),
                 row('Market', (a) {
                   final r = a.rates[t];
-                  return r == null || !r.hasMarket
-                      ? 'no data yet'
-                      : '${headline(t, r.marketLow!)} – ${headline(t, r.marketHigh!)}';
+                  if (r != null && r.hasMarket) return '${headline(t, r.marketLow!)} – ${headline(t, r.marketHigh!)}';
+                  if (r != null && r.hasEstimate) {
+                    return 'est. ${headline(t, r.estLow!)} – ${headline(t, r.estHigh!)}';
+                  }
+                  return 'no data yet';
                 }),
                 row('Market ÷ guidance', (a) {
                   final x = a.rates[t]?.marketRatio;
@@ -234,7 +236,7 @@ class ComparePage extends StatelessWidget {
             ),
           ],
           const SizedBox(height: 16),
-          Text('Guidance values are the government minimum (Oct 2023). Market ranges come from rates you have logged.',
+          Text('Guidance values are the government minimum (Oct 2023). Market ranges come from published reports and rates you log; "est." ranges are estimates from guidance.',
               style: muted),
         ],
       ),

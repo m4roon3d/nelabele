@@ -61,6 +61,9 @@ jobs:
             python ingest/load_guidance.py "$f" --effective-date "$EFFECTIVE"
           done
 
+      - name: Load prices from published market reports
+        run: python ingest/load_published.py data/market/published.csv
+
       - name: Put areas on the map
         run: python ingest/load_points.py data/geo/area_points.csv
 

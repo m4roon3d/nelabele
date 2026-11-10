@@ -15,7 +15,7 @@ class NelaBeleApi {
   static const _token = String.fromEnvironment('app_token');
   static const _rateColumns = 'geo_area_id,area_name,name_kn,has_boundary,level,district,parent_name,parent_level,'
       'lat,lon,property_type,guidance_rate,guidance_effective,market_low,market_mid,'
-      'market_high,market_obs,confidence';
+      'market_high,market_obs,confidence,sources,est_low,est_mid,est_high,est_ratio,est_places';
 
   static bool get isConfigured => _baseUrl.isNotEmpty && _token.isNotEmpty;
 

@@ -27,3 +27,8 @@ CREATE TABLE IF NOT EXISTS nelabele.city_trend (
   updated_on  date NOT NULL DEFAULT current_date
 );
 ALTER TABLE nelabele.city_trend ENABLE ROW LEVEL SECURITY;
+
+-- Prices quoted in published market reports (e.g. ANAROCK), kept apart from listings
+INSERT INTO nelabele.source (code, name, notes)
+VALUES ('published', 'Published market reports', 'Average quoted prices from research reports; figure and link only')
+ON CONFLICT (code) DO NOTHING;

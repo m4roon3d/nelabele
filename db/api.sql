@@ -23,6 +23,8 @@ DROP FUNCTION IF EXISTS public.add_market_rate(bigint, text, numeric, text, date
 DROP FUNCTION IF EXISTS public.area_at(double precision, double precision);
 DROP FUNCTION IF EXISTS public.search_area(text);
 DROP VIEW IF EXISTS public.api_rate;
+DROP VIEW IF EXISTS public.api_area_shape;
+DROP VIEW IF EXISTS public.api_city_trend;
 DROP VIEW IF EXISTS public.api_area;
 
 -- Areas for the map: name, level, a map point and boundary as GeoJSON
@@ -33,16 +35,66 @@ SELECT id, name, name_kn, level, parent_id, district, aliases,
        ST_AsGeoJSON(boundary)::json AS boundary
 FROM nelabele.geo_area;
 
--- Indicative rates with area names, the taluk/zone they sit in and a map point
+-- Indicative rates with area names, the taluk/zone they sit in and a map point.
+--
+-- Estimated market range (est_*): where a place has no market data of its own,
+-- its guidance value × how far above guidance market prices run elsewhere.
+-- The multiplier is learnt per property type from every place that has both a
+-- market price (published reports, listings, entries) and a guidance value to
+-- compare with – the place's own, or else the median for its taluk/zone. Needs
+-- at least 3 such places, so a type gets estimates only once there is data.
+-- The multiplier isn't the same everywhere (guidance sits closer to market in
+-- pricey central areas), so it is only applied to places whose guidance value
+-- is within the range of the places it was learnt from (0.6× lowest to 1.5×
+-- highest); the range widens by itself as market data comes in.
 CREATE VIEW public.api_rate AS
+WITH compared AS (
+  SELECT r.property_type,
+         coalesce(r.guidance_rate, z.zone_guidance) AS ref,
+         r.market_mid / coalesce(r.guidance_rate, z.zone_guidance) AS ratio
+  FROM nelabele.rate_summary r
+  JOIN nelabele.geo_area a ON a.id = r.geo_area_id
+  LEFT JOIN LATERAL (
+    SELECT percentile_cont(0.5) WITHIN GROUP (ORDER BY s.guidance_rate) AS zone_guidance
+    FROM nelabele.rate_summary s
+    JOIN nelabele.geo_area b ON b.id = s.geo_area_id
+    WHERE b.parent_id = a.parent_id
+      AND s.property_type = r.property_type
+      AND s.guidance_rate IS NOT NULL
+  ) z ON r.guidance_rate IS NULL
+  WHERE r.market_mid IS NOT NULL
+),
+calibration AS (
+  SELECT property_type,
+         count(*) AS places,
+         percentile_cont(0.25) WITHIN GROUP (ORDER BY ratio) AS lo,
+         percentile_cont(0.50) WITHIN GROUP (ORDER BY ratio) AS mid,
+         percentile_cont(0.75) WITHIN GROUP (ORDER BY ratio) AS hi,
+         min(ref) AS min_ref,
+         max(ref) AS max_ref
+  FROM compared
+  WHERE ratio IS NOT NULL AND ratio > 0
+  GROUP BY property_type
+  HAVING count(*) >= 3
+)
 SELECT r.*, a.name AS area_name, a.name_kn, a.level, a.district,
        a.boundary IS NOT NULL AS has_boundary,
        p.name AS parent_name, p.level AS parent_level,
        ST_Y(coalesce(a.centroid, a.point)) AS lat,
-       ST_X(coalesce(a.centroid, a.point)) AS lon
+       ST_X(coalesce(a.centroid, a.point)) AS lon,
+       -- the range is at least ±15% around the mid: places differ more than the sample shows
+       round(r.guidance_rate * least(c.lo, c.mid * 0.85))    AS est_low,
+       round(r.guidance_rate * c.mid)                        AS est_mid,
+       round(r.guidance_rate * greatest(c.hi, c.mid * 1.15)) AS est_high,
+       round(c.mid::numeric, 2)                              AS est_ratio,
+       c.places                                              AS est_places
 FROM nelabele.rate_summary r
 JOIN nelabele.geo_area a ON a.id = r.geo_area_id
-LEFT JOIN nelabele.geo_area p ON p.id = a.parent_id;
+LEFT JOIN nelabele.geo_area p ON p.id = a.parent_id
+LEFT JOIN calibration c
+  ON c.property_type = r.property_type
+ AND r.market_mid IS NULL
+ AND r.guidance_rate BETWEEN c.min_ref * 0.6 AND c.max_ref * 1.5;
 
 -- Village outlines for the map, simplified to about 15 m, as GeoJSON
 CREATE VIEW public.api_area_shape AS

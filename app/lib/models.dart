@@ -33,6 +33,12 @@ class Rate {
     required this.marketHigh,
     required this.marketObs,
     required this.confidence,
+    this.sources = const [],
+    this.estLow,
+    this.estMid,
+    this.estHigh,
+    this.estRatio,
+    this.estPlaces,
   });
 
   final String propertyType;
@@ -43,6 +49,20 @@ class Rate {
   final double? marketHigh;
   final int marketObs;
   final String confidence;
+  final List<String> sources;
+
+  /// Estimated market range for places without market data of their own.
+  final double? estLow;
+  final double? estMid;
+  final double? estHigh;
+  final double? estRatio;
+  final int? estPlaces;
+
+  bool get hasEstimate => estLow != null && estHigh != null;
+  bool get fromReports => sources.contains('published');
+
+  /// Market mid if known, else the estimate's mid.
+  double? get bestMarketMid => marketMid ?? estMid;
 
   bool get hasMarket => marketLow != null && marketHigh != null;
 
@@ -64,6 +84,12 @@ class Rate {
         marketHigh: _num(j['market_high']),
         marketObs: (j['market_obs'] as num?)?.toInt() ?? 0,
         confidence: (j['confidence'] as String?) ?? 'low',
+        sources: [for (final s in (j['sources'] as List?) ?? const []) s as String],
+        estLow: _num(j['est_low']),
+        estMid: _num(j['est_mid']),
+        estHigh: _num(j['est_high']),
+        estRatio: _num(j['est_ratio']),
+        estPlaces: (j['est_places'] as num?)?.toInt(),
       );
 }
 

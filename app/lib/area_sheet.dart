@@ -150,9 +150,14 @@ class _RateCard extends StatelessWidget {
             const Divider(height: 24),
             if (rate.hasMarket) ...[
               Text(
-                'Market range: ${headline(type, rate.marketLow!)} – ${headline(type, rate.marketHigh!)}'
-                ' · ${rate.marketObs} data point${rate.marketObs == 1 ? '' : 's'}, ${rate.confidence} confidence',
-                style: theme.textTheme.bodyMedium,
+                'Market range: ${headline(type, rate.marketLow!)} – ${headline(type, rate.marketHigh!)}',
+                style: theme.textTheme.titleMedium,
+              ),
+              const SizedBox(height: 2),
+              Text(
+                '${rate.marketObs} data point${rate.marketObs == 1 ? '' : 's'}, ${rate.confidence} confidence'
+                '${rate.fromReports ? ' · includes published reports (ANAROCK)' : ''}',
+                style: muted,
               ),
               if (rate.marketRatio != null) ...[
                 const SizedBox(height: 4),
@@ -161,9 +166,20 @@ class _RateCard extends StatelessWidget {
                   style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.primary),
                 ),
               ],
+            ] else if (rate.hasEstimate) ...[
+              Text(
+                'Estimated market: ${headline(type, rate.estLow!)} – ${headline(type, rate.estHigh!)}',
+                style: theme.textTheme.titleMedium?.copyWith(fontStyle: FontStyle.italic),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                'Estimate, not data: about ${rate.estRatio?.toStringAsFixed(1) ?? '–'}× guidance, the ratio seen in '
+                '${rate.estPlaces ?? 'several'} areas with published prices. Log or share a listing to replace it.',
+                style: muted,
+              ),
             ] else
-              Text('Market range: not enough data yet', style: muted),
-            if (g != null || rate.hasMarket) ...[
+              Text('Market range: no data or estimate yet', style: muted),
+            if (g != null || rate.hasMarket || rate.hasEstimate) ...[
               const SizedBox(height: 8),
               Align(
                 alignment: Alignment.centerLeft,
