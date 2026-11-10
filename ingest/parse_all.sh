@@ -35,3 +35,4 @@ for f in "${!SEC[@]}"; do
   python ingest/parse_gazette.py "raw/${f}_2023.csv" "data/guidance/bengaluru_urban_${f}_2023.csv" \
     --district "Bangalore Urban" --parent-level zone --mode city "${args[@]}"
 done
+python3 ingest/clean_names.py data/guidance/*.csv

@@ -121,6 +121,15 @@ class NelaBeleApi {
     return shapes;
   }
 
+  /// Places with rates nearest a point, closest first, with distance in km.
+  Future<List<(Area, double)>> nearbyAreas(double lat, double lon, {int limit = 15}) async {
+    final hits = (await _get('rpc/nearby_areas', {'lat': '$lat', 'lon': '$lon', 'lim': '$limit'}))
+        .cast<Map<String, dynamic>>();
+    final km = {for (final h in hits) (h['id'] as num).toInt(): (h['km'] as num).toDouble()};
+    final areas = await fetchAreasByIds(km.keys.toList());
+    return [for (final a in areas) (a, km[a.id] ?? 0)];
+  }
+
   static CityTrend? _trend;
 
   /// Latest city-wide price change, cached for the session.

@@ -156,7 +156,7 @@ class _RateCard extends StatelessWidget {
               const SizedBox(height: 2),
               Text(
                 '${rate.marketObs} data point${rate.marketObs == 1 ? '' : 's'}, ${rate.confidence} confidence'
-                '${rate.fromReports ? ' · includes published reports (ANAROCK)' : ''}',
+                '${rate.fromReports ? ' · includes published prices (ANAROCK reports, BDA auction reserves)' : ''}',
                 style: muted,
               ),
               if (rate.marketRatio != null) ...[

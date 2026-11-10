@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'api.dart';
 import 'area_sheet.dart';
 import 'format.dart';
+import 'location.dart';
 import 'models.dart';
 
 const _districts = ['Bangalore Urban', 'Bangalore Rural', 'Ramanagara'];
@@ -29,6 +30,8 @@ class _RatesListViewState extends State<RatesListView> {
   bool _loading = true;
   String? _error;
   List<Area> _areas = [];
+  Map<int, double>? _nearKm; // set while showing places near the user
+  bool _locating = false;
 
   @override
   void initState() {
@@ -43,7 +46,37 @@ class _RatesListViewState extends State<RatesListView> {
     super.dispose();
   }
 
+  Future<void> _nearMe() async {
+    final id = ++_requestId;
+    setState(() {
+      _locating = true;
+      _error = null;
+    });
+    try {
+      final here = await currentLocation();
+      if (outsideCoverage(here)) {
+        throw const LocationException('You seem to be outside Bengaluru and nearby districts, which NelaBele covers.');
+      }
+      final near = await _api.nearbyAreas(here.lat, here.lon);
+      if (id != _requestId || !mounted) return;
+      _search.clear();
+      setState(() {
+        _district = null;
+        _type = null;
+        _areas = [for (final (a, _) in near) a];
+        _nearKm = {for (final (a, km) in near) a.id: km};
+        _locating = false;
+        _loading = false;
+      });
+    } catch (e) {
+      if (id != _requestId || !mounted) return;
+      setState(() => _locating = false);
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(e.toString())));
+    }
+  }
+
   Future<void> _load() async {
+    _nearKm = null;
     final id = ++_requestId;
     setState(() {
       _loading = true;
@@ -86,7 +119,13 @@ class _RatesListViewState extends State<RatesListView> {
                 hintText: 'Search a place · ಸ್ಥಳ ಹುಡುಕಿ',
                 prefixIcon: const Icon(Icons.search),
                 suffixIcon: _search.text.isEmpty
-                    ? null
+                    ? IconButton(
+                        tooltip: 'Places near me',
+                        icon: _locating
+                            ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2))
+                            : const Icon(Icons.my_location),
+                        onPressed: _locating ? null : _nearMe,
+                      )
                     : IconButton(
                         tooltip: 'Clear',
                         icon: const Icon(Icons.close),
@@ -123,6 +162,18 @@ class _RatesListViewState extends State<RatesListView> {
               _load();
             },
           ),
+          if (_nearKm != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 4, 8, 0),
+              child: Row(
+                children: [
+                  Icon(Icons.near_me, size: 18, color: theme.colorScheme.primary),
+                  const SizedBox(width: 6),
+                  Expanded(child: Text('Places near you', style: theme.textTheme.titleSmall)),
+                  TextButton(onPressed: _load, child: const Text('Show all')),
+                ],
+              ),
+            ),
           const SizedBox(height: 4),
           Expanded(child: _body(theme)),
         ],
@@ -153,7 +204,9 @@ class _RatesListViewState extends State<RatesListView> {
             return Padding(
               padding: const EdgeInsets.all(16),
               child: Text(
-                _areas.length >= 100
+                _nearKm != null
+                    ? 'Distances are to the middle of each place.'
+                    : _areas.length >= 100
                     ? 'Showing the first ${_areas.length} places. Search to narrow down.'
                     : 'Government guidance values, Oct 2023. Market prices are usually higher.',
                 textAlign: TextAlign.center,
@@ -161,7 +214,7 @@ class _RatesListViewState extends State<RatesListView> {
               ),
             );
           }
-          return _AreaCard(area: _areas[i]);
+          return _AreaCard(area: _areas[i], km: _nearKm?[_areas[i].id]);
         },
       ),
     );
@@ -215,9 +268,10 @@ class _ChipRow extends StatelessWidget {
 }
 
 class _AreaCard extends StatelessWidget {
-  const _AreaCard({required this.area});
+  const _AreaCard({required this.area, this.km});
 
   final Area area;
+  final double? km;
 
   @override
   Widget build(BuildContext context) {
@@ -244,7 +298,10 @@ class _AreaCard extends StatelessWidget {
                 style: theme.textTheme.titleMedium,
               ),
               const SizedBox(height: 2),
-              Text(area.subtitle,
+              Text(
+                  km == null
+                      ? area.subtitle
+                      : '${km! < 1 ? '${(km! * 1000).round()} m' : '${km!.toStringAsFixed(1)} km'} away · ${area.subtitle}',
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
               const SizedBox(height: 10),
               Wrap(

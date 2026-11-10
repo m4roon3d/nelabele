@@ -22,6 +22,7 @@ DROP FUNCTION IF EXISTS public.add_market_rate(bigint, text, numeric, text, date
 DROP FUNCTION IF EXISTS public.add_market_rate(bigint, text, numeric, text, date, text, text, text, double precision, double precision);
 DROP FUNCTION IF EXISTS public.area_at(double precision, double precision);
 DROP FUNCTION IF EXISTS public.search_area(text);
+DROP FUNCTION IF EXISTS public.nearby_areas(double precision, double precision, integer);
 DROP VIEW IF EXISTS public.api_rate;
 DROP VIEW IF EXISTS public.api_area_shape;
 DROP VIEW IF EXISTS public.api_city_trend;
@@ -129,6 +130,23 @@ LANGUAGE sql STABLE SECURITY DEFINER SET search_path = nelabele, public AS $$
   LIMIT 20
 $$;
 
+-- Places with rates closest to a point, for "Near me" (GET /rpc/nearby_areas?lat=..&lon=..).
+-- The place whose outline contains the point comes first.
+CREATE FUNCTION public.nearby_areas(lat double precision, lon double precision, lim integer DEFAULT 15)
+RETURNS TABLE (id bigint, name text, km double precision, inside boolean)
+LANGUAGE sql STABLE SECURITY DEFINER SET search_path = nelabele, public AS $$
+  WITH here AS (SELECT ST_SetSRID(ST_MakePoint(lon, lat), 4326) AS pt)
+  SELECT g.id, g.name,
+         round((ST_DistanceSphere(coalesce(g.centroid, g.point), here.pt) / 1000)::numeric, 2)::double precision,
+         coalesce(ST_Contains(g.boundary, here.pt), false)
+  FROM nelabele.geo_area g, here
+  WHERE coalesce(g.centroid, g.point) IS NOT NULL
+    AND EXISTS (SELECT 1 FROM nelabele.rate_summary r WHERE r.geo_area_id = g.id)
+  ORDER BY coalesce(ST_Contains(g.boundary, here.pt), false) DESC,
+           coalesce(g.centroid, g.point) <-> here.pt
+  LIMIT least(greatest(lim, 1), 50)
+$$;
+
 -- Log a market rate seen for an area (POST /rpc/add_market_rate).
 -- Editor token only. Checks every value, records who entered it, and
 -- refreshes the rate summary so the new range shows straight away.
@@ -192,6 +210,7 @@ END $$;
 -- Functions are executable by everyone by default; limit them to the API roles
 REVOKE EXECUTE ON FUNCTION public.area_at(double precision, double precision),
                            public.search_area(text),
+                           public.nearby_areas(double precision, double precision, integer),
                            public.add_market_rate(bigint, text, numeric, text, date, text, text, text, double precision, double precision)
   FROM PUBLIC;
 
@@ -201,7 +220,8 @@ BEGIN
     GRANT USAGE ON SCHEMA public TO anonymous;
     GRANT SELECT ON public.api_area, public.api_rate, public.api_area_shape, public.api_city_trend TO anonymous;
     GRANT EXECUTE ON FUNCTION public.area_at(double precision, double precision),
-                              public.search_area(text) TO anonymous;
+                              public.search_area(text),
+                              public.nearby_areas(double precision, double precision, integer) TO anonymous;
     REVOKE ALL ON ALL TABLES IN SCHEMA nelabele FROM anonymous;
     REVOKE USAGE ON SCHEMA nelabele FROM anonymous;
     RAISE NOTICE 'Read-only API access granted to anonymous';
@@ -214,6 +234,7 @@ BEGIN
     GRANT SELECT ON public.api_area, public.api_rate, public.api_area_shape, public.api_city_trend TO authenticated;
     GRANT EXECUTE ON FUNCTION public.area_at(double precision, double precision),
                               public.search_area(text),
+                              public.nearby_areas(double precision, double precision, integer),
                               public.add_market_rate(bigint, text, numeric, text, date, text, text, text, double precision, double precision)
       TO authenticated;
     REVOKE ALL ON ALL TABLES IN SCHEMA nelabele FROM authenticated;

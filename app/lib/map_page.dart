@@ -2,11 +2,13 @@ import 'dart:convert';
 import 'dart:math' show Point;
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:maplibre_gl/maplibre_gl.dart';
 
 import 'api.dart';
 import 'area_sheet.dart';
 import 'format.dart';
+import 'location.dart';
 import 'models.dart';
 
 const _styleUrl = 'https://tiles.openfreemap.org/styles/positron';
@@ -16,6 +18,12 @@ const _shapeSourceId = 'area-shapes';
 const _fillLayerId = 'areas-fill';
 const _lineLayerId = 'areas-outline';
 const _mapTypes = ['plot', 'agricultural_land', 'apartment'];
+const _infraSourceId = 'infra';
+const _infraLayers = ['infra-ring', 'infra-ring-planned', 'infra-metro', 'infra-metro-planned', 'infra-stations', 'infra-places', 'infra-station-names'];
+const _meSourceId = 'me';
+const _meLayerId = 'me-dot';
+const _metroColor = '#7A3E9D';
+const _ringColor = '#3D4A5C';
 
 /// Five rate bands, cheapest to priciest: field green through to deep red earth.
 const _bandColors = ['#5C8A38', '#A3B84A', '#E3A21A', '#D9774A', '#9C3F1C'];
@@ -37,6 +45,9 @@ class _MapPageState extends State<MapPage> {
   List<double> _breaks = [];
   bool _loading = false;
   String? _error;
+  bool _showInfra = true;
+  bool _infraAdded = false;
+  bool _locating = false;
 
   Future<void> _show(String type) async {
     setState(() {
@@ -142,6 +153,8 @@ class _MapPageState extends State<MapPage> {
       belowLayerId: below,
     );
     await map.addGeoJsonSource(_sourceId, geojson);
+    // infrastructure sits above outlines but below the dots
+    if (!_infraAdded) await _addInfra();
     await map.addCircleLayer(
       _sourceId,
       _layerId,
@@ -153,6 +166,114 @@ class _MapPageState extends State<MapPage> {
         circleOpacity: 0.92,
       ),
     );
+  }
+
+  /// Metro lines and stations, ring roads and airports (OpenStreetMap), drawn once.
+  Future<void> _addInfra() async {
+    final map = _map;
+    if (map == null || _infraAdded) return;
+    _infraAdded = true;
+    try {
+      final data = jsonDecode(await rootBundle.loadString('assets/infra.geojson')) as Map<String, dynamic>;
+      await map.addGeoJsonSource(_infraSourceId, data);
+      Future<void> line(String id, String kind, String color, double width, {bool dashed = false}) =>
+          map.addLineLayer(
+            _infraSourceId,
+            id,
+            LineLayerProperties(
+              lineColor: color,
+              lineWidth: ['interpolate', ['linear'], ['zoom'], 8, width * 0.6, 14, width * 1.6],
+              lineOpacity: dashed ? 0.7 : 0.9,
+              lineDasharray: dashed ? [2, 1.5] : null,
+              lineCap: dashed ? 'butt' : 'round',
+            ),
+            filter: ['==', ['get', 'kind'], kind],
+          );
+      await line('infra-ring', 'ring', _ringColor, 2.2);
+      await line('infra-ring-planned', 'ring_planned', _ringColor, 2.2, dashed: true);
+      await line('infra-metro', 'metro', _metroColor, 2.6);
+      await line('infra-metro-planned', 'metro_planned', _metroColor, 2.6, dashed: true);
+      await map.addCircleLayer(
+        _infraSourceId,
+        'infra-stations',
+        const CircleLayerProperties(
+          circleColor: '#FFFFFF',
+          circleStrokeColor: _metroColor,
+          circleStrokeWidth: 2,
+          circleRadius: ['interpolate', ['linear'], ['zoom'], 9, 2, 14, 5],
+        ),
+        filter: ['==', ['get', 'kind'], 'station'],
+        minzoom: 10,
+      );
+      SymbolLayerProperties label(double size) => SymbolLayerProperties(
+            textField: ['get', 'name'],
+            textFont: const ['Noto Sans Regular'],
+            textSize: size,
+            textColor: _metroColor,
+            textHaloColor: '#FFFFFF',
+            textHaloWidth: 1.4,
+            textOffset: const [0, 1.1],
+            textAnchor: 'top',
+            textOptional: true,
+          );
+      await map.addSymbolLayer(_infraSourceId, 'infra-places', label(12),
+          filter: ['==', ['get', 'kind'], 'airport']);
+      await map.addSymbolLayer(_infraSourceId, 'infra-station-names', label(11),
+          filter: ['==', ['get', 'kind'], 'station'], minzoom: 12.5);
+      if (!_showInfra) await _setInfraVisible(false);
+    } catch (_) {
+      _infraAdded = false;
+    }
+  }
+
+  Future<void> _setInfraVisible(bool visible) async {
+    final map = _map;
+    if (map == null) return;
+    for (final id in _infraLayers) {
+      try {
+        await map.setLayerVisibility(id, visible);
+      } catch (_) {}
+    }
+  }
+
+  Future<void> _locate() async {
+    final map = _map;
+    if (map == null) return;
+    setState(() => _locating = true);
+    try {
+      final here = await currentLocation();
+      final me = {
+        'type': 'FeatureCollection',
+        'features': [
+          {'type': 'Feature', 'geometry': {'type': 'Point', 'coordinates': [here.lon, here.lat]}, 'properties': {}},
+        ],
+      };
+      try {
+        await map.setGeoJsonSource(_meSourceId, me);
+      } catch (_) {
+        await map.addGeoJsonSource(_meSourceId, me);
+        await map.addCircleLayer(
+          _meSourceId,
+          _meLayerId,
+          const CircleLayerProperties(
+            circleColor: '#1A73E8',
+            circleRadius: 7,
+            circleStrokeColor: '#FFFFFF',
+            circleStrokeWidth: 2.5,
+          ),
+        );
+      }
+      await map.animateCamera(CameraUpdate.newLatLngZoom(LatLng(here.lat, here.lon), 13.5));
+      if (outsideCoverage(here) && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+          content: Text('You seem to be outside the area NelaBele covers.'),
+        ));
+      }
+    } catch (e) {
+      if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(e.toString())));
+    } finally {
+      if (mounted) setState(() => _locating = false);
+    }
   }
 
   Future<void> _onTap(Point<double> point, LatLng _) async {
@@ -225,6 +346,20 @@ class _MapPageState extends State<MapPage> {
                       backgroundColor: scheme.surfaceContainerLow,
                     ),
                   ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 4),
+                  child: FilterChip(
+                    avatar: const Icon(Icons.train_outlined, size: 18),
+                    label: const Text('Metro & roads'),
+                    selected: _showInfra,
+                    showCheckmark: false,
+                    onSelected: (on) {
+                      setState(() => _showInfra = on);
+                      _setInfraVisible(on);
+                    },
+                    backgroundColor: scheme.surfaceContainerLow,
+                  ),
+                ),
               ],
             ),
           ),
@@ -244,10 +379,22 @@ class _MapPageState extends State<MapPage> {
             ),
           ),
         Positioned(
+          right: 12,
+          bottom: 56,
+          child: FloatingActionButton.small(
+            heroTag: 'locate',
+            tooltip: 'Show where I am',
+            onPressed: _locating ? null : _locate,
+            child: _locating
+                ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2))
+                : const Icon(Icons.my_location),
+          ),
+        ),
+        Positioned(
           right: 8,
           bottom: 34,
           child: Text(
-            'Village outlines: Census 2011 via DataMeet (ODbL)',
+            'Outlines: Census 2011 via DataMeet · Metro & roads: © OpenStreetMap',
             style: theme.textTheme.labelSmall?.copyWith(color: const Color(0xFF6B6157), fontSize: 9),
           ),
         ),
@@ -264,6 +411,12 @@ class _MapPageState extends State<MapPage> {
                   children: [
                     Text('${propertyLabel(_type)} · guidance value', style: theme.textTheme.labelMedium),
                     const SizedBox(height: 6),
+                    if (_showInfra) ...[
+                      const SizedBox(height: 2),
+                      _LineKey(color: _metroColor, label: 'Metro', dashedLabel: 'building'),
+                      _LineKey(color: _ringColor, label: 'Ring roads', dashedLabel: 'planned'),
+                      const SizedBox(height: 4),
+                    ],
                     for (var b = 4; b >= 0; b--)
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 2),
@@ -289,6 +442,48 @@ class _MapPageState extends State<MapPage> {
             ),
           ),
       ],
+    );
+  }
+}
+
+Color _hex(String hex) => Color(int.parse('FF${hex.substring(1)}', radix: 16));
+
+/// Legend row: a solid and a dashed line sample.
+class _LineKey extends StatelessWidget {
+  const _LineKey({required this.color, required this.label, required this.dashedLabel});
+
+  final String color;
+  final String label;
+  final String dashedLabel;
+
+  @override
+  Widget build(BuildContext context) {
+    final style = Theme.of(context).textTheme.bodySmall;
+    final c = _hex(color);
+    Widget dash(bool dashed) => SizedBox(
+          width: 16,
+          height: 3,
+          child: dashed
+              ? Row(children: [
+                  Expanded(child: Container(color: c)),
+                  const SizedBox(width: 2),
+                  Expanded(child: Container(color: c)),
+                  const SizedBox(width: 2),
+                  Expanded(child: Container(color: c)),
+                ])
+              : Container(color: c),
+        );
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 2),
+      child: Row(mainAxisSize: MainAxisSize.min, children: [
+        dash(false),
+        const SizedBox(width: 6),
+        Text(label, style: style),
+        const SizedBox(width: 8),
+        dash(true),
+        const SizedBox(width: 4),
+        Text(dashedLabel, style: style),
+      ]),
     );
   }
 }

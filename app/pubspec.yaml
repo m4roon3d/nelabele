@@ -1,7 +1,7 @@
 name: nelabele
 description: Indicative land and property rates for Bangalore Urban and Rural.
 publish_to: none
-version: 0.3.1+4
+version: 0.4.0+5
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  geolocator: ^13.0.0
   http: ^1.2.0
   maplibre_gl: ^0.28.0
   shared_preferences: ^2.3.0
@@ -21,6 +22,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/logo.png
+    - assets/infra.geojson
 
 # App icons, generated in CI from the NelaBele mark (brand/*.svg)
 flutter_launcher_icons:

@@ -10,8 +10,13 @@ so names are normalised for common transliteration variants, then matched
 exactly, then fuzzily, always near the area's own taluk or sub-registrar
 office so a common name like "Kodihalli" isn't put in the wrong place.
 
+Streets and layouts that aren't places ("Whitefield Main Road", "12th Cross
+Road", "Brigade Meadows") are then matched to OSM roads and named residential
+areas (osm/roads.json): the piece of road nearest the zone's centre wins, and
+generic numbered streets must be close to it.
+
 Usage:
-  python ingest/geocode.py ../nb-sources/osm/places.json data/geo/area_points.csv
+  python ingest/geocode.py places.json data/geo/area_points.csv [roads.json]
 """
 
 import csv
@@ -59,6 +64,58 @@ def norm(name):
     return s.replace(" ", "")
 
 
+ROAD_WORDS = re.compile(r"\b(road|rd|street|st|main|cross|lane|highway|avenue|circle|marga|ring)\b", re.I)
+GENERIC_STREET = re.compile(r"^\s*\d+\s*(st|nd|rd|th)?\s*(main|cross|a|b|c|d)?\s*(main|cross)?\s*(road|street|lane)?\s*$", re.I)
+ROAD_RADIUS_GENERIC = 4
+# Town streets and extensions under a taluk: put them in the taluk town when nothing better is found
+TOWN_STREET = re.compile(
+    r"\b(road|rd|street|beedi|beedhi|badavane|extension|extention|ward|colony|nagar|nagara|layout|circle|"
+    r"galli|bazaar|bazar|pete|pet|block|cross|main|lane|mohalla|halli)\b", re.I)
+
+
+def spread(centre, i):
+    """The i-th point of a small sunflower spiral around a town centre (100–700 m out)."""
+    angle = i * 2.39996
+    r_km = 0.1 + 0.6 * math.sqrt((i % 60) / 60)
+    dlat = r_km / 111.0 * math.cos(angle)
+    dlon = r_km / (111.0 * math.cos(math.radians(centre[0]))) * math.sin(angle)
+    return (centre[0] + dlat, centre[1] + dlon)
+
+
+def road_variants(name):
+    """Normalised keys to look a street name up by, most specific first."""
+    s = re.sub(r"\(.*?(\)|$)", " ", name)
+    s = re.split(r"\b(from|between|upto|up to|till)\b", s, flags=re.I)[0]
+    s = re.sub(r"^\s*(adjacent to|attached to|towards|near|behind|opp(osite)?\.?)\s+", "", s, flags=re.I)
+    s = re.sub(r"\brd\b\.?", "road", s, flags=re.I)
+    s = re.sub(r"\bmn\b", "main", s, flags=re.I)
+    s = re.sub(r"\bft\b\.?", "feet", s, flags=re.I)
+    s = re.sub(r"\bst\b\.?$", "street", s, flags=re.I)
+    s = s.strip(" ,.-")
+    keys = [norm(s)]
+    no_main = re.sub(r"\bmain\b", " ", s, flags=re.I)
+    keys.append(norm(no_main))
+    if not re.search(r"\b(road|street|lane|cross|main)\b", s, re.I):
+        keys.append(norm(s + " road"))
+    return [k for i, k in enumerate(keys) if k and len(k) >= 5 and k not in keys[:i]], s
+
+
+def load_roads(path):
+    """Named roads and residential areas: one point per OSM way (its centre)."""
+    by_key = defaultdict(list)
+    for e in json.load(open(path))["elements"]:
+        t = e.get("tags", {})
+        c = e.get("center") or ({"lat": e.get("lat"), "lon": e.get("lon")} if "lat" in e else None)
+        if not c:
+            continue
+        pt = (float(c["lat"]), float(c["lon"]))
+        names = {t.get(k) for k in ("name", "name:en", "alt_name", "old_name")} - {None}
+        for n in names:
+            for v in road_variants(n)[0]:
+                by_key[v].append((pt, n))
+    return by_key
+
+
 def load_places(path):
     places = []
     for e in json.load(open(path))["elements"]:
@@ -79,9 +136,10 @@ def load_places(path):
 
 
 def main():
-    if len(sys.argv) != 3:
+    if len(sys.argv) not in (3, 4):
         sys.exit(__doc__)
     places = load_places(sys.argv[1])
+    roads = load_roads(sys.argv[3]) if len(sys.argv) == 4 else {}
     by_key = defaultdict(list)
     for p in places:
         for k in p["keys"]:
@@ -110,6 +168,7 @@ def main():
     missing_centres = [p for p, c in centres.items() if c == BANGALORE]
 
     out, how = [], Counter()
+    town_count = Counter()
     nearby = {}
     by_kn = defaultdict(list)
     for p in places:
@@ -180,11 +239,27 @@ def main():
                         break
                 if found:
                     pick, method = found, "contains"
+        if not pick and roads:
+            keys, cleaned = road_variants(name)
+            generic = bool(GENERIC_STREET.match(cleaned))
+            limit = ROAD_RADIUS_GENERIC if generic else radius
+            for k in keys:
+                hits = [h for h in roads.get(k, []) if km(h[0], centre) <= limit]
+                if hits:
+                    pt, osm = min(hits, key=lambda h: km(h[0], centre))
+                    pick = {"pt": pt, "name": osm, "name_kn": ""}
+                    method = "street (generic)" if generic else "street"
+                    break
         if not pick and ctx and ctx != name:
             # listed under a locality heading: put it at that locality
             pick, m = find(ctx, near, cand_keys, cand_idx, centre, radius)
             if pick:
                 method = "near " + m
+        if (not pick and plevel == "taluk" and level == "locality" and centre != BANGALORE
+                and TOWN_STREET.search(name)):
+            town_count[parent] += 1
+            pick = {"pt": spread(centre, town_count[parent]), "name": parent, "name_kn": ""}
+            method = "in town (approximate)"
         how[method or "not found"] += 1
         if pick:
             out.append({"district": district, "parent_name": parent, "area_name": name,
