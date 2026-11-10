@@ -59,7 +59,42 @@ jobs:
           flutter analyze --no-fatal-infos lib
           dart run tool/check_listing.dart
 
+      # One permanent signing key, so updates install over the previous version.
+      # The key is in the repo encrypted; ANDROID_SIGNING_PASSWORD unlocks it.
+      - name: Use the NelaBele signing key
+        env:
+          NB_SIGNING_PASSWORD: ${{ secrets.ANDROID_SIGNING_PASSWORD }}
+        run: |
+          if [ -z "$NB_SIGNING_PASSWORD" ]; then
+            echo "::warning::ANDROID_SIGNING_PASSWORD not set: APKs get a throwaway key and can't update an installed app"
+            exit 0
+          fi
+          openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in android_extra/release.jks.enc \
+            -out android/app/release.jks -pass env:NB_SIGNING_PASSWORD
+          python3 - <<'PY'
+          import re
+          p = "android/app/build.gradle.kts"
+          s = open(p).read()
+          block = """    signingConfigs {
+                  create("release") {
+                      storeFile = file("release.jks")
+                      storePassword = System.getenv("NB_SIGNING_PASSWORD")
+                      keyAlias = "nelabele"
+                      keyPassword = System.getenv("NB_SIGNING_PASSWORD")
+                  }
+              }
+
+          """
+          s = s.replace("    buildTypes {", block + "    buildTypes {", 1)
+          s = s.replace('signingConfig = signingConfigs.getByName("debug")', 'signingConfig = signingConfigs.getByName("release")')
+          assert 'getByName("release")' in s, "release signing not wired"
+          open(p, "w").write(s)
+          PY
+          echo "NB_SIGNED=1" >> "$GITHUB_ENV"
+
       - name: Build Android APKs
+        env:
+          NB_SIGNING_PASSWORD: ${{ secrets.ANDROID_SIGNING_PASSWORD }}
         run: |
           flutter build apk --release --split-per-abi --dart-define-from-file=../config/data_api.json
           flutter build apk --release --dart-define-from-file=../config/data_api.json
