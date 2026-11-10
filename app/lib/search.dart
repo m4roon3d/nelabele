@@ -50,6 +50,26 @@ const _aliases = {
   'dodbalapur': 'dodabalapur',
 };
 
+/// Words that don't tell places apart: "Akriti Homes" should match "M/s Akruthi Developers".
+const _generic = {
+  'home', 'homes', 'apartment', 'apartments', 'apt', 'apts', 'layout', 'developers', 'developer',
+  'builders', 'builder', 'enclave', 'residency', 'villa', 'villas', 'project', 'projects', 'ms', 'm',
+  's', 'the', 'pvt', 'ltd', 'limited', 'and', 'phase', 'block', 'stage', 'sector', 'main', 'road',
+  'cross', 'extension', 'extn', 'new', 'old',
+};
+
+List<String> _words(String s) => [
+      for (final w in s.toLowerCase().split(RegExp(r'[^a-z0-9]+')))
+        if (w.isNotEmpty && !_generic.contains(w)) w,
+    ];
+
+/// A word's consonants: Akriti = Akruthi = Aakruti → "akrt". Spellings of Kannada
+/// names in English mostly differ in their vowels.
+String _skeleton(String w) {
+  final k = searchKey(w);
+  return k.isEmpty ? '' : k[0] + k.substring(1).replaceAll(RegExp('[aeiouy]'), '');
+}
+
 Set<String> _trigrams(String s) => {for (var i = 0; i + 3 <= s.length; i++) s.substring(i, i + 3)};
 
 /// 0..1: how alike two keys are, by shared three-letter pieces.
@@ -76,6 +96,8 @@ class IndexPlace {
   final String kn;
   Set<String>? _tri;
   Set<String> get tri => _tri ??= _trigrams(key);
+  List<String>? _sk;
+  List<String> get skeleton => _sk ??= [for (final w in _words(name)) _skeleton(w)];
 }
 
 /// An area (taluk or city zone) whose name matched.
@@ -203,9 +225,16 @@ class SearchIndex {
 
     // places
     final scored = <(double, IndexPlace)>[];
+    final qSkeleton = [for (final w in _words(raw)) if (_skeleton(w).length >= 3) _skeleton(w)];
     for (final p in places) {
       if (!inDistrict(p.district)) continue;
-      final s = _score(q, qTri, p.key, () => p.tri);
+      var s = _score(q, qTri, p.key, () => p.tri);
+      // same consonants, word by word: every query word starts some word of the name
+      if (s == 0 &&
+          qSkeleton.isNotEmpty &&
+          qSkeleton.every((w) => p.skeleton.any((n) => n.startsWith(w)))) {
+        s = 62;
+      }
       if (s > 0) scored.add((s, p));
     }
     scored.sort((a, b) => b.$1 != a.$1 ? b.$1.compareTo(a.$1) : a.$2.name.length.compareTo(b.$2.name.length));
