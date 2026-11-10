@@ -20,7 +20,7 @@ jobs:
             "api_rate?select=district,lat&lat=not.is.null&limit=1&district=eq.Bangalore%20Urban" \
             "api_city_trend?select=city,period,yoy_pct,measure" \
             "api_area_shape?select=id&limit=2" \
-            "rpc/nearby_areas?lat=12.9352&lon=77.6245&lim=3" \
+            "api_rate?select=area_name,lat,lon&and=(lat.gte.12.92,lat.lte.12.95,lon.gte.77.61,lon.lte.77.64)&limit=3" \
             "api_rate?select=area_name,property_type,market_mid,est_mid&area_name=eq.Kumaraswamy%20Layout" \
             "api_rate?select=area_name,name_kn,has_boundary&name_kn=ilike.*%E0%B2%9C%E0%B2%AF%E0%B2%A8%E0%B2%97%E0%B2%B0*&limit=2" \
             "api_rate?select=area_name,name_kn&or=(area_name.ilike.%22*attiguppe*%22,name_kn.ilike.%22*attiguppe*%22)&limit=2"; do

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:http/http.dart' as http;
 
@@ -122,12 +123,28 @@ class NelaBeleApi {
   }
 
   /// Places with rates nearest a point, closest first, with distance in km.
+  /// Looks in a small box around the point and widens it until enough turn up.
   Future<List<(Area, double)>> nearbyAreas(double lat, double lon, {int limit = 15}) async {
-    final hits = (await _get('rpc/nearby_areas', {'lat': '$lat', 'lon': '$lon', 'lim': '$limit'}))
-        .cast<Map<String, dynamic>>();
-    final km = {for (final h in hits) (h['id'] as num).toInt(): (h['km'] as num).toDouble()};
-    final areas = await fetchAreasByIds(km.keys.toList());
-    return [for (final a in areas) (a, km[a.id] ?? 0)];
+    var found = <Area>[];
+    for (final d in const [0.02, 0.05, 0.12]) {
+      found = _group(await _get('api_rate', {
+        'select': _rateColumns,
+        'and': '(lat.gte.${lat - d},lat.lte.${lat + d},lon.gte.${lon - d},lon.lte.${lon + d})',
+        'limit': '600',
+      }));
+      if (found.length >= limit) break;
+    }
+    final withKm = [for (final a in found) if (a.lat != null && a.lon != null) (a, _km(lat, lon, a.lat!, a.lon!))]
+      ..sort((x, y) => x.$2.compareTo(y.$2));
+    return withKm.take(limit).toList();
+  }
+
+  static double _km(double lat1, double lon1, double lat2, double lon2) {
+    const r = 6371.0;
+    final dLat = (lat2 - lat1) * pi / 180, dLon = (lon2 - lon1) * pi / 180;
+    final h = sin(dLat / 2) * sin(dLat / 2) +
+        cos(lat1 * pi / 180) * cos(lat2 * pi / 180) * sin(dLon / 2) * sin(dLon / 2);
+    return 2 * r * asin(sqrt(h));
   }
 
   static CityTrend? _trend;
