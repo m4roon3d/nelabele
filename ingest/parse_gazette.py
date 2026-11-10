@@ -120,7 +120,13 @@ def classify(name, nums):
     n = len(nums)
     land = nums[:3]
     if SUB_ROW.search(name):
-        return "road-frontage sub-row"
+        # a layout named with its survey numbers ("Air Port City-1 Sy No. 67, 70") carrying
+        # a site rate is a place, not a roadside land sub-row
+        layout = (re.search(r"\bSY\.?\s*NOS?\b", name, re.I)
+                  and not re.search(r"ADJACENT|ABB?ET|ABUTT|RESIDENTIAL|\bNEAR\b|^ROAD|ATTACHED|LANDS?\b|^\W*SY", name, re.I)
+                  and 1 <= n <= 2 and all(v >= 1000 for v in nums))
+        if not layout:
+            return "road-frontage sub-row"
     if ACRE_RUPEES:
         # 2023 district gazettes (Tumakuru, Kolar, Chikkaballapura): dry / wet / garden
         # land in ₹ per acre (e.g. 400000 500000 600000), then site rates in ₹ per sq m
