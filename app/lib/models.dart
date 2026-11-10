@@ -39,6 +39,9 @@ class Rate {
     this.estHigh,
     this.estRatio,
     this.estPlaces,
+    this.prevGuidanceRate,
+    this.prevGuidanceEffective,
+    this.guidanceChangePct,
   });
 
   final String propertyType;
@@ -57,6 +60,13 @@ class Rate {
   final double? estHigh;
   final double? estRatio;
   final int? estPlaces;
+
+  /// Guidance value before the latest revision, when there has been one.
+  final double? prevGuidanceRate;
+  final DateTime? prevGuidanceEffective;
+  final double? guidanceChangePct;
+
+  bool get revised => guidanceChangePct != null && prevGuidanceEffective != null;
 
   bool get hasEstimate => estLow != null && estHigh != null;
   bool get fromReports => sources.contains('published');
@@ -90,6 +100,11 @@ class Rate {
         estHigh: _num(j['est_high']),
         estRatio: _num(j['est_ratio']),
         estPlaces: (j['est_places'] as num?)?.toInt(),
+        prevGuidanceRate: _num(j['prev_guidance_rate']),
+        prevGuidanceEffective: j['prev_guidance_effective'] == null
+            ? null
+            : DateTime.tryParse(j['prev_guidance_effective'] as String),
+        guidanceChangePct: _num(j['guidance_change_pct']),
       );
 }
 

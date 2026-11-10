@@ -48,6 +48,8 @@ def main():
 
     areas = {}
     for path in sorted(glob.glob("data/guidance/*.csv")):
+        if path.endswith("effective_dates.csv"):
+            continue
         for r in csv.DictReader(open(path, encoding="utf-8")):
             if r["area_level"] == "village":
                 areas[(r["district"], r["parent_name"], r["area_name"])] = True

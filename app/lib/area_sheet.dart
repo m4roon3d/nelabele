@@ -145,6 +145,17 @@ class _RateCard extends StatelessWidget {
                 '${rate.guidanceEffective != null ? ' · from ${monthYear(rate.guidanceEffective!)}' : ''}',
                 style: muted,
               ),
+              if (rate.revised) ...[
+                const SizedBox(height: 4),
+                Text(
+                  '${changeLabel(rate.guidanceChangePct!)} from ${headline(type, rate.prevGuidanceRate!)} '
+                  '(${monthYear(rate.prevGuidanceEffective!)})',
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    color: rate.guidanceChangePct! >= 0 ? theme.colorScheme.error : theme.colorScheme.primary,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
             ] else
               Text('No guidance value for this type', style: muted),
             const Divider(height: 24),

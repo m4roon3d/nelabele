@@ -147,6 +147,8 @@ def main():
 
     areas = {}
     for f in sorted(glob.glob("data/guidance/*.csv")):
+        if f.endswith("effective_dates.csv"):
+            continue
         for r in csv.DictReader(open(f, encoding="utf-8")):
             key = (r["district"], r["parent_name"], r["parent_level"], r["area_name"])
             prev = areas.get(key, ("", "", ""))

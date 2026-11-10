@@ -7,7 +7,7 @@ on:
         description: Parsed guidance CSV to load, or "all" for every file in data/guidance
         default: all
       effective_date:
-        description: Date the guidance values took effect (YYYY-MM-DD)
+        description: Date the guidance values took effect (YYYY-MM-DD), for files not listed in data/guidance/effective_dates.csv
         default: "2023-10-01"
 
 jobs:
@@ -57,8 +57,11 @@ jobs:
         run: |
           if [ "$FILE" = all ]; then files=(data/guidance/*.csv); else files=("$FILE"); fi
           for f in "${files[@]}"; do
-            echo "== $f"
-            python ingest/load_guidance.py "$f" --effective-date "$EFFECTIVE"
+            [ "$(basename "$f")" = effective_dates.csv ] && continue
+            # each gazette's own date (a revision is a new file with a later date)
+            date=$(awk -F, -v n="$(basename "$f")" '$1 == n {print $2}' data/guidance/effective_dates.csv)
+            echo "== $f (in force from ${date:-$EFFECTIVE})"
+            python ingest/load_guidance.py "$f" --effective-date "${date:-$EFFECTIVE}"
           done
 
       - name: Load prices from published market reports

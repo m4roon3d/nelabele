@@ -23,6 +23,7 @@ const _infraLayers = ['infra-ring', 'infra-ring-planned', 'infra-metro', 'infra-
 const _meSourceId = 'me';
 const _meLayerId = 'me-dot';
 const _metroColor = '#7A3E9D';
+const _noDataColor = '#B9B2A6';
 const _ringColor = '#3D4A5C';
 
 /// Five rate bands, cheapest to priciest: field green through to deep red earth.
@@ -46,6 +47,8 @@ class _MapPageState extends State<MapPage> {
   bool _loading = false;
   String? _error;
   bool _showInfra = true;
+  bool _market = false; // colour by market price (real or estimated) instead of guidance
+  int _noData = 0;      // places with no market figure in market mode
   bool _infraAdded = false;
   bool _locating = false;
 
@@ -61,7 +64,8 @@ class _MapPageState extends State<MapPage> {
       final areas = _cache[type] ??= await _api.fetchMapAreas(type);
       await _shapes;
       if (!mounted || _type != type) return;
-      final rates = [for (final a in areas) a.rates[type]!.guidanceRate!]..sort();
+      final rates = [for (final a in areas) if (_value(a) != null) _value(a)!]..sort();
+      _noData = areas.length - rates.length;
       _breaks = rates.isEmpty
           ? []
           : [for (final q in [0.2, 0.4, 0.6, 0.8]) rates[(q * (rates.length - 1)).round()]];
@@ -89,11 +93,25 @@ class _MapPageState extends State<MapPage> {
     return null;
   }
 
+  /// The figure a place is coloured by: guidance, or market mid (real, else estimated).
+  double? _value(Area a) {
+    final r = a.rates[_type];
+    if (r == null) return null;
+    return _market ? r.bestMarketMid : r.guidanceRate;
+  }
+
+  Future<void> _setMarket(bool market) async {
+    if (market == _market) return;
+    setState(() => _market = market);
+    await _show(_type);
+  }
+
   Future<void> _draw(List<Area> areas) async {
     final map = _map;
     if (map == null || !_styleReady) return;
     final shapes = await (_shapes ?? Future.value(<int, Map<String, dynamic>>{}));
-    Map<String, dynamic> props(Area a) => {'id': a.id, 'name': a.name, 'rate': a.rates[_type]!.guidanceRate};
+    // no figure in market mode: -1, drawn grey
+    Map<String, dynamic> props(Area a) => {'id': a.id, 'name': a.name, 'rate': _value(a) ?? -1};
     final geojson = {
       'type': 'FeatureCollection',
       'features': [
@@ -118,6 +136,7 @@ class _MapPageState extends State<MapPage> {
     final color = _breaks.length == 4
         ? [
             'step', ['get', 'rate'],
+            _noDataColor, 0,
             _bandColors[0], _breaks[0], _bandColors[1], _breaks[1], _bandColors[2],
             _breaks[2], _bandColors[3], _breaks[3], _bandColors[4],
           ]
@@ -364,10 +383,27 @@ class _MapPageState extends State<MapPage> {
             ),
           ),
         ),
-        if (_loading) const Positioned(top: 60, left: 0, right: 0, child: Center(child: CircularProgressIndicator())),
+        Positioned(
+          top: 54,
+          left: 16,
+          child: SegmentedButton<bool>(
+            style: SegmentedButton.styleFrom(
+              visualDensity: VisualDensity.compact,
+              backgroundColor: scheme.surfaceContainerLow,
+            ),
+            showSelectedIcon: false,
+            segments: const [
+              ButtonSegment(value: false, label: Text('Guidance')),
+              ButtonSegment(value: true, label: Text('Market')),
+            ],
+            selected: {_market},
+            onSelectionChanged: (v) => _setMarket(v.first),
+          ),
+        ),
+        if (_loading) const Positioned(top: 100, left: 0, right: 0, child: Center(child: CircularProgressIndicator())),
         if (_error != null)
           Positioned(
-            top: 60,
+            top: 100,
             left: 16,
             right: 16,
             child: Card(
@@ -409,7 +445,10 @@ class _MapPageState extends State<MapPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text('${propertyLabel(_type)} · guidance value', style: theme.textTheme.labelMedium),
+                    Text(
+                      '${propertyLabel(_type)} · ${_market ? 'market (incl. estimates)' : 'guidance value'}',
+                      style: theme.textTheme.labelMedium,
+                    ),
                     const SizedBox(height: 6),
                     if (_showInfra) ...[
                       const SizedBox(height: 2),
@@ -417,6 +456,19 @@ class _MapPageState extends State<MapPage> {
                       _LineKey(color: _ringColor, label: 'Ring roads', dashedLabel: 'planned'),
                       const SizedBox(height: 4),
                     ],
+                    if (_market && _noData > 0)
+                      Padding(
+                        padding: const EdgeInsets.only(bottom: 2),
+                        child: Row(mainAxisSize: MainAxisSize.min, children: [
+                          Container(
+                            width: 12,
+                            height: 12,
+                            decoration: BoxDecoration(color: _hex(_noDataColor), shape: BoxShape.circle),
+                          ),
+                          const SizedBox(width: 8),
+                          Text('no market figure yet', style: theme.textTheme.bodySmall),
+                        ]),
+                      ),
                     for (var b = 4; b >= 0; b--)
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 2),

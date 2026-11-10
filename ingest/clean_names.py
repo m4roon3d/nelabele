@@ -61,6 +61,8 @@ def clean(name: str) -> str | None:
 
 def main(paths):
     for path in paths:
+        if path.endswith("effective_dates.csv"):
+            continue
         with open(path, newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             fields, rows = reader.fieldnames, list(reader)

@@ -65,6 +65,14 @@ WITH compared AS (
   ) z ON r.guidance_rate IS NULL
   WHERE r.market_mid IS NOT NULL
 ),
+-- Guidance history: each area's values by the date they took effect, newest first
+guidance_history AS (
+  SELECT o.geo_area_id, o.property_type, o.observed_on, max(o.rate_per_sqft) AS rate,
+         dense_rank() OVER (PARTITION BY o.geo_area_id, o.property_type ORDER BY o.observed_on DESC) AS rn
+  FROM nelabele.rate_observation o
+  JOIN nelabele.source s ON s.id = o.source_id AND s.code = 'guidance'
+  GROUP BY o.geo_area_id, o.property_type, o.observed_on
+),
 calibration AS (
   SELECT property_type,
          count(*) AS places,
@@ -88,10 +96,16 @@ SELECT r.*, a.name AS area_name, a.name_kn, a.level, a.district,
        round(r.guidance_rate * c.mid)                        AS est_mid,
        round(r.guidance_rate * greatest(c.hi, c.mid * 1.15)) AS est_high,
        round(c.mid::numeric, 2)                              AS est_ratio,
-       c.places                                              AS est_places
+       c.places                                              AS est_places,
+       -- the guidance value before the latest revision, and the change
+       prev.rate                                             AS prev_guidance_rate,
+       prev.observed_on                                      AS prev_guidance_effective,
+       round((r.guidance_rate / nullif(prev.rate, 0) - 1) * 100, 1) AS guidance_change_pct
 FROM nelabele.rate_summary r
 JOIN nelabele.geo_area a ON a.id = r.geo_area_id
 LEFT JOIN nelabele.geo_area p ON p.id = a.parent_id
+LEFT JOIN guidance_history prev
+  ON prev.geo_area_id = r.geo_area_id AND prev.property_type = r.property_type AND prev.rn = 2
 LEFT JOIN calibration c
   ON c.property_type = r.property_type
  AND r.market_mid IS NULL

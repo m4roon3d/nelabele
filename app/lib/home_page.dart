@@ -313,11 +313,13 @@ class _AreaCard extends StatelessWidget {
                       _RatePill(
                         label: propertyLabel(r.propertyType),
                         value: headline(r.propertyType, r.guidanceRate!),
-                        extra: r.marketRatio != null
-                            ? 'market ${r.marketRatio!.toStringAsFixed(1)}×'
-                            : r.hasEstimate
-                                ? 'est. ~${headline(r.propertyType, r.estMid!)}'
-                                : null,
+                        extra: [
+                          if (r.revised) changeLabel(r.guidanceChangePct!),
+                          if (r.marketRatio != null)
+                            'market ${r.marketRatio!.toStringAsFixed(1)}×'
+                          else if (r.hasEstimate)
+                            'est. ~${headline(r.propertyType, r.estMid!)}',
+                        ].join('  ·  ').ifEmptyNull,
                       ),
                 ],
               ),
@@ -383,4 +385,8 @@ class _Message extends StatelessWidget {
       ),
     );
   }
+}
+
+extension on String {
+  String? get ifEmptyNull => isEmpty ? null : this;
 }

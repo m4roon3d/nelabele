@@ -48,3 +48,6 @@ List<String> otherUnits(String type, double perSqft) => switch (type) {
 const _months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 String monthYear(DateTime d) => '${_months[d.month - 1]} ${d.year}';
+
+/// "▲ 22%" / "▼ 5%" for a percentage change.
+String changeLabel(double pct) => '${pct >= 0 ? '▲' : '▼'} ${pct.abs().toStringAsFixed(pct.abs() < 10 ? 1 : 0)}%';

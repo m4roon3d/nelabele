@@ -103,8 +103,30 @@ class _SavedPageState extends State<SavedPage> {
       );
     }
     final picked = [for (final a in _areas) if (_picked.contains(a.id)) a];
+    final changes = [
+      for (final a in _areas)
+        for (final r in a.rates.values)
+          if (r.revised) r.guidanceChangePct!,
+    ]..sort();
+    final revisedFrom = [
+      for (final a in _areas)
+        for (final r in a.rates.values)
+          if (r.revised) r.guidanceEffective,
+    ].whereType<DateTime>().fold<DateTime?>(null, (a, b) => a == null || b.isAfter(a) ? b : a);
     return Column(
       children: [
+        if (changes.isNotEmpty)
+          Card(
+            margin: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+            color: theme.colorScheme.tertiaryContainer,
+            child: ListTile(
+              leading: const Icon(Icons.gavel_outlined),
+              title: Text('Guidance values revised${revisedFrom != null ? ' from ${monthYear(revisedFrom)}' : ''}'),
+              subtitle: Text(changes.first == changes.last
+                  ? 'Your saved places: ${changeLabel(changes.first)}'
+                  : 'Your saved places: ${changeLabel(changes.first)} to ${changeLabel(changes.last)}'),
+            ),
+          ),
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
           child: Text('Pick two or three to compare', style: muted),
@@ -210,6 +232,13 @@ class ComparePage extends StatelessWidget {
                   final g = a.rates[t]?.guidanceRate;
                   return g == null ? '–' : headline(t, g);
                 }, strong: true),
+                if (areas.any((a) => a.rates[t]?.revised ?? false))
+                  row('Revision', (a) {
+                    final r = a.rates[t];
+                    return r == null || !r.revised
+                        ? '–'
+                        : '${changeLabel(r.guidanceChangePct!)} since ${monthYear(r.prevGuidanceEffective!)}';
+                  }),
                 row('Market', (a) {
                   final r = a.rates[t];
                   if (r != null && r.hasMarket) return '${headline(t, r.marketLow!)} – ${headline(t, r.marketHigh!)}';
