@@ -65,7 +65,22 @@ jobs:
           flutter build apk --release --dart-define-from-file=../config/data_api.json
 
       - name: Build web app
-        run: flutter build web --release --base-href /nelabele/ --dart-define-from-file=../config/data_api.json
+        run: |
+          # No offline caching: updates show up on the next visit instead of being stuck behind a saved copy
+          flutter build web --release --pwa-strategy=none --base-href /nelabele/ --dart-define-from-file=../config/data_api.json
+          # Browsers that saved an older version get this worker instead: it clears the saved copy,
+          # removes itself and reloads the page once
+          cat > build/web/flutter_service_worker.js <<'EOF'
+          self.addEventListener('install', () => self.skipWaiting());
+          self.addEventListener('activate', (event) => {
+            event.waitUntil((async () => {
+              for (const key of await caches.keys()) await caches.delete(key);
+              await self.registration.unregister();
+              for (const client of await self.clients.matchAll({ type: 'window' })) client.navigate(client.url);
+            })());
+          });
+          EOF
+          grep -c "serviceWorkerVersion" build/web/flutter_bootstrap.js || true
 
       # Most phones: 64-bit ARM (smaller download). Universal: works everywhere.
       - uses: actions/upload-artifact@v4
