@@ -46,6 +46,46 @@ jobs:
           done
           test -s out/osm/places.json
 
+      - name: Download named roads and infrastructure from OpenStreetMap
+        run: |
+          overpass() {  # overpass <query file> <output>
+            for url in https://overpass-api.de/api/interpreter https://overpass.private.coffee/api/interpreter https://overpass.kumi.systems/api/interpreter; do
+              if curl -fsS --retry 2 --retry-delay 30 --max-time 600 -A "NelaBele/0.1 (+https://github.com/m4roon3d/nelabele)" -H "Accept: application/json" --data-urlencode data@"$1" "$url" -o "$2"; then
+                echo "Got $(jq '.elements | length' "$2") elements for $2 from $url"; return 0
+              fi
+              sleep 30
+            done
+            return 1
+          }
+          # Roads, layouts and residential areas with a name: one point per piece of road
+          cat > roads.overpass <<'EOF'
+          [out:json][timeout:500];
+          (
+            way["highway"~"^(motorway|trunk|primary|secondary|tertiary|unclassified|residential|living_street|service)$"]["name"](12.55,77.15,13.45,77.95);
+            way["landuse"="residential"]["name"](12.55,77.15,13.45,77.95);
+            node["place"]["name"](12.55,77.15,13.45,77.95);
+          );
+          out center tags;
+          EOF
+          overpass roads.overpass out/osm/roads.json
+          # Metro (built, under construction, planned), airport and ring roads, with shapes
+          cat > infra.overpass <<'EOF'
+          [out:json][timeout:300];
+          (
+            way["railway"~"^(subway|light_rail)$"](12.55,77.15,13.45,77.95);
+            way["railway"~"^(construction|proposed)$"]["construction"~"subway|light_rail"](12.55,77.15,13.45,77.95);
+            way["railway"="proposed"]["proposed"~"subway|light_rail"](12.55,77.15,13.45,77.95);
+            node["railway"="station"]["station"="subway"](12.55,77.15,13.45,77.95);
+            node["public_transport"="station"]["subway"="yes"](12.55,77.15,13.45,77.95);
+            node["railway"="station"]["construction"="subway"](12.55,77.15,13.45,77.95);
+            way["aeroway"="aerodrome"]["name"~"Kempegowda|HAL|Bengaluru|Bangalore"](12.55,77.15,13.45,77.95);
+            way["highway"]["name"~"Peripheral Ring Road|Satellite Town Ring Road|Outer Ring Road|Business Corridor|STRR|PRR",i](12.30,76.90,13.60,78.10);
+            way["highway"~"construction|proposed"]["name"~"Ring Road|Corridor|STRR|PRR",i](12.30,76.90,13.60,78.10);
+          );
+          out geom tags;
+          EOF
+          overpass infra.overpass out/osm/infra.json || echo "::warning::Infrastructure download failed"
+
       - name: List guidance value files on the Stamps & Registration site
         continue-on-error: true
         run: |
@@ -66,7 +106,7 @@ jobs:
           git init -q -b sources
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          printf '# NelaBele source data\n\nPublic inputs fetched by the "Fetch sources" workflow on %s.\n\n- gazettes/: Karnataka guidance value gazettes 2023 (via OpenCity, public domain)\n- osm/places.json: place names and locations, (c) OpenStreetMap contributors, ODbL\n' "$(date -u +%Y-%m-%d)" > README.md
+          printf '# NelaBele source data\n\nPublic inputs fetched by the "Fetch sources" workflow on %s.\n\n- gazettes/: Karnataka guidance value gazettes 2023 (via OpenCity, public domain)\n- osm/places.json, roads.json, infra.json: places, named roads, metro and ring roads, (c) OpenStreetMap contributors, ODbL\n' "$(date -u +%Y-%m-%d)" > README.md
           git add -A
           git commit -qm "Fetch sources $(date -u +%Y-%m-%dT%H:%MZ)"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" sources
