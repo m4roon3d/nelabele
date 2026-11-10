@@ -2,7 +2,9 @@
 
 Strips list numbering ("1. K R Road No" -> "K R Road"), survey-number and
 building-spec tails, and broken brackets; drops rows whose name is only a
-fragment ("B+G+4Uf)", "Appartment", "Area)"). Rewrites the files in place and
+fragment ("B+G+4Uf)", "Appartment", "Area)"), and layout site rates a quarter
+or less of their own village's, which are misprints (Elite Woods,
+Doddacheemanahalli: 1,400 against the village's 8,500). Rewrites the files in place and
 reports what changed, so it can be re-run safely.
 
   python ingest/clean_names.py data/guidance/*.csv
@@ -66,8 +68,17 @@ def main(paths):
         with open(path, newline="", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             fields, rows = reader.fieldnames, list(reader)
+        village_rate = {(r["parent_name"], r["area_name"]): float(r["rate"]) for r in rows
+                        if r["area_level"] == "village" and r["property_type"] == "plot"}
         out, changed, dropped = [], 0, 0
         for r in rows:
+            v = village_rate.get((r["parent_name"], r.get("context") or ""))
+            if (r["area_level"] == "locality" and r["property_type"] == "plot" and v
+                    and r["parent_level"] != "zone"   # city slums are rightly cheap
+                    and float(r["rate"]) <= v / 4):
+                print(f"  misprint? {r['area_name']} {r['rate']} vs village {r['context']} {v:.0f}: dropped")
+                dropped += 1
+                continue
             new = clean(r["area_name"])
             if new is None:
                 dropped += 1

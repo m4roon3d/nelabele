@@ -42,7 +42,8 @@ import statistics
 import sys
 
 import nudi
-from collections import Counter
+from collections import Counter, defaultdict
+from pathlib import Path
 
 NUMBER = re.compile(r"^\d[\d,]*(\.\d+)?$")
 ENGLISH_RUN = re.compile(r"[A-Za-z0-9][A-Za-z0-9 .,()/&'+:-]*[A-Za-z)]")
@@ -164,6 +165,38 @@ def classify(name, nums):
     return f"unrecognised shape ({n} numbers)"
 
 
+
+WRAPPED_PREFIX = re.compile(r"^(.*?\bvill+age)\b[\s,]*(beml)?[\s,]*$", re.I)
+
+
+def join_wrapped_names(rows):
+    """Rejoin a place name that wrapped onto an unnumbered row of its own.
+
+    RR Nagar's gazette prints "Halagevaderahalli Village," on the numbered row
+    and the part that matters ("B.E.M.L. 3rd Stage Neharu Road") on the line
+    below, which the table reader returns as a separate row. Those rows become
+    "B.E.M.L. 3rd Stage Neharu Road", not one more "Halagevaderahalli Village".
+    """
+    out, skip = [], False
+    for i, row in enumerate(rows):
+        if skip:
+            skip = False
+            continue
+        nxt = rows[i + 1] if i + 1 < len(rows) else None
+        cells = row[2:]
+        if (nxt and nxt[:2] == row[:2] and any(c.strip().isdigit() for c in cells[:3])
+                and not numbers(nxt[2:])):
+            for j, c in enumerate(cells):
+                m = WRAPPED_PREFIX.match(CID.sub(" ", c).strip())
+                tail = english_name(nxt[2:])
+                if m and tail and not any(ch.isdigit() for ch in nxt[2] if nxt[2].strip()[:1].isdigit()):
+                    row = row[:2 + j] + [tail] + row[3 + j:]
+                    skip = True
+                    break
+        out.append(row)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description="Gazette extract → loader CSV")
     ap.add_argument("raw_csv")
@@ -203,8 +236,26 @@ def main():
     heading = {}           # taluk -> current locality heading (city mode)
     context = {}           # (taluk, area) -> the heading it was listed under, a map-location hint
 
-    def slot_values(body, name):
-        """Site and apartment values from the two columns after the name."""
+    # which column holds which rate, per page and table (see extract_pdf_tables.py)
+    roles = defaultdict(dict)
+    roles_path = Path(args.raw_csv).with_name(Path(args.raw_csv).stem + "_roles.csv")
+    if roles_path.exists():
+        for r in csv.DictReader(open(roles_path, encoding="utf-8")):
+            roles[(int(r["page"]), r["table"])][int(r["col"])] = r["role"]
+
+    def slot_values(body, name, page=None, table=None, raw=None):
+        """Site and apartment values: from the columns the headers name, else the two after the name."""
+        cols = roles.get((page, table))
+        if cols and raw is not None and "apartment" in cols.values():
+            got = {}
+            for i, c in enumerate(raw):
+                c = c.strip()
+                role = cols.get(i)
+                if role in ("site", "apartment") and role not in got and NUMBER.match(c):
+                    v = float(c.replace(",", ""))
+                    if v >= 1000:
+                        got[role] = v
+            return [got.get("site"), got.get("apartment")]
         key = name.lower()[:12]
         idx = next((i for i, c in enumerate(body) if key and key in c.lower()), None)
         if idx is None:
@@ -220,166 +271,170 @@ def main():
     with open(args.raw_csv, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
         next(reader)
-        for row in reader:
-            page = int(row[0])
-            taluk = taluk_for(page)
-            cells = [c.strip() for c in row[2:]]
-            if taluk is None or not cells:
-                continue
-            if not cells[0]:
-                # many gazettes print village serial numbers one column to the right
-                i = next((k for k, c in enumerate(cells) if c), None)
-                if i is not None and i <= 2 and cells[i].isdigit():
-                    cells = cells[i:]
-            if args.mode == "city" and not cells[0].isdigit():
-                h = english_name(cells[1:])
-                if (h and not numbers(cells[1:]) and not PROJECT.search(h) and not ROADLIKE.search(h)
-                        and not re.search(r"village|area name|hobli|apt|flat|layout road", h, re.I)):
-                    heading[taluk] = h
-                continue
-            if ACRE_RUPEES:
-                # Madhugiri style: "465 | Amaravathi" heading, then "Gramatana and Others Sy.No's"
-                # (or "<village> Gramatana & Others") rows carrying that village's rates
-                lead = cells[1:] if cells[0].isdigit() else cells
-                nm = english_name(lead)
-                nums_here = numbers(lead)
-                if cells[0].isdigit() and nm and not nums_here:
-                    last_village[taluk] = nm
-                m = re.match(r"^(.*?)\s*grama?th?ana\s*(and|&)\s*other", nm or "", re.I)
-                if m and len(nums_here) >= 3:
-                    village = m.group(1).strip(" ,.-") or last_village.get(taluk)
-                    if village:
-                        cells = ["0", village] + [f"{v:.0f}" for v in nums_here]
-                        reasons["village from heading"] += 1
-            if not cells[0].isdigit():
-                continue
-            body = cells[1:]
-            name = english_name(body)
-            if not name and args.town_rollup:
-                nums = numbers(body)
-                if len(nums) == 1 and 1000 <= nums[0] <= 600000:
-                    groups.setdefault((taluk, f"{taluk} Town", "plot"), []).append((nums[0], page))
-                    reasons["rolled into town"] += 1
-                    continue
-            name_kn = ""
-            if not name:
-                # Kannada-only row in the old Nudi font: recover the name from Kannada
-                for c in body:
-                    kn = nudi.to_unicode(c)
-                    if kn:
-                        if nudi.SUB_ROW_KN.search(kn):
-                            kn = None
-                        break
-                else:
-                    kn = None
-                if kn and len(numbers(body)) >= 3:
-                    name_kn, name = kn, nudi.to_english(kn)
-                    reasons["name read from Kannada"] += 1
-            if not name:
-                reasons["no English name"] += 1
-                skipped.append([page, "no English name"] + body)
-                continue
+        rows = list(reader)
+    if args.mode == "city":
+        rows = join_wrapped_names(rows)
+    for row in rows:
+        page = int(row[0])
+        taluk = taluk_for(page)
+        cells = [c.strip() for c in row[2:]]
+        raw_cells, table_no = row[2:], row[1]
+        if taluk is None or not cells:
+            continue
+        if not cells[0]:
+            # many gazettes print village serial numbers one column to the right
+            i = next((k for k, c in enumerate(cells) if c), None)
+            if i is not None and i <= 2 and cells[i].isdigit():
+                cells = cells[i:]
+        if args.mode == "city" and not cells[0].isdigit():
+            h = english_name(cells[1:])
+            if (h and not numbers(cells[1:]) and not PROJECT.search(h) and not ROADLIKE.search(h)
+                    and not re.search(r"village|area name|hobli|apt|flat|layout road", h, re.I)):
+                heading[taluk] = h
+            continue
+        if ACRE_RUPEES:
+            # Madhugiri style: "465 | Amaravathi" heading, then "Gramatana and Others Sy.No's"
+            # (or "<village> Gramatana & Others") rows carrying that village's rates
+            lead = cells[1:] if cells[0].isdigit() else cells
+            nm = english_name(lead)
+            nums_here = numbers(lead)
+            if cells[0].isdigit() and nm and not nums_here:
+                last_village[taluk] = nm
+            m = re.match(r"^(.*?)\s*grama?th?ana\s*(and|&)\s*other", nm or "", re.I)
+            if m and len(nums_here) >= 3:
+                village = m.group(1).strip(" ,.-") or last_village.get(taluk)
+                if village:
+                    cells = ["0", village] + [f"{v:.0f}" for v in nums_here]
+                    reasons["village from heading"] += 1
+        if not cells[0].isdigit():
+            continue
+        body = cells[1:]
+        name = english_name(body)
+        if not name and args.town_rollup:
             nums = numbers(body)
-            if args.mode == "city":
-                # peri-urban village rows mix site rates (₹/sq m) with farmland
-                # (₹ lakh/acre) in one row: tell them apart by size
-                key = name.lower()[:12]
-                idx = next((i for i, c in enumerate(body) if key and key in c.lower()), None)
-                after = numbers(body[idx + 1:]) if idx is not None else nums
-                small = [v for v in after if 5 <= v < 1000]
-                large = [v for v in after if v >= 1000]
-                if small and not PROJECT.search(name):
-                    if NOT_RESIDENTIAL.search(name):
-                        reasons["commercial/industrial"] += 1
-                        continue
-                    if SUB_ROW.search(name) or FRONTAGE.search(name) or VILLAGE_SUB.search(name):
-                        reasons["road-frontage sub-row"] += 1
-                        continue
-                    result = [("agricultural_land", small[0] * 100000, "acre", "village")]
-                    if large:
-                        result.append(("plot", max(large), "sqm", "village"))
-                    for ptype, rate, unit, level in result:
-                        key2 = (taluk, name.lower(), ptype)
-                        if key2 in seen:
-                            reasons["duplicate"] += 1
-                            continue
-                        if unit == "sqm" and not CITY_BOUNDS["plot"][0] <= rate <= CITY_BOUNDS["plot"][1]:
-                            reasons["implausible value"] += 1
-                            continue
-                        seen.add(key2)
-                        out.append({
-                            "district": args.district, "area_name": name, "name_kn": "", "area_level": level,
-                            "context": "", "parent_name": taluk, "parent_level": args.parent_level,
-                            "property_type": ptype, "approval_status": "",
-                            "rate": f"{rate:.0f}", "unit": unit,
-                            "source_ref": f"{taluk} SRO gazette p.{page}",
-                        })
-                    reasons["peri-urban village row"] += 1
-                    continue
-            if args.mode == "city" and len(nums) < 3:
+            if len(nums) == 1 and 1000 <= nums[0] <= 600000:
+                groups.setdefault((taluk, f"{taluk} Town", "plot"), []).append((nums[0], page))
+                reasons["rolled into town"] += 1
+                continue
+        name_kn = ""
+        if not name:
+            # Kannada-only row in the old Nudi font: recover the name from Kannada
+            for c in body:
+                kn = nudi.to_unicode(c)
+                if kn:
+                    if nudi.SUB_ROW_KN.search(kn):
+                        kn = None
+                    break
+            else:
+                kn = None
+            if kn and len(numbers(body)) >= 3:
+                name_kn, name = kn, nudi.to_english(kn)
+                reasons["name read from Kannada"] += 1
+        if not name:
+            reasons["no English name"] += 1
+            skipped.append([page, "no English name"] + body)
+            continue
+        nums = numbers(body)
+        if args.mode == "city":
+            # peri-urban village rows mix site rates (₹/sq m) with farmland
+            # (₹ lakh/acre) in one row: tell them apart by size
+            key = name.lower()[:12]
+            idx = next((i for i, c in enumerate(body) if key and key in c.lower()), None)
+            after = numbers(body[idx + 1:]) if idx is not None else nums
+            small = [v for v in after if 5 <= v < 1000]
+            large = [v for v in after if v >= 1000]
+            if small and not PROJECT.search(name):
                 if NOT_RESIDENTIAL.search(name):
                     reasons["commercial/industrial"] += 1
                     continue
-                slots = slot_values(body, name)
-                if slots and any(v is not None for v in slots):
-                    site, apt = slots
-                    group = heading.get(taluk)
-                    if PROJECT.search(name):
-                        # a named project or a khata/PID entry: only useful rolled into its locality
-                        if not group:
-                            reasons["project with no locality heading"] += 1
-                            continue
-                        vals = [v for v in (site, apt) if v is not None and v >= 1000]
-                        if vals:
-                            ptype = "apartment" if (APT_HINT.search(name) or apt is not None) else "plot"
-                            groups.setdefault((taluk, group, ptype), []).append((vals[-1], page))
+                if SUB_ROW.search(name) or FRONTAGE.search(name) or VILLAGE_SUB.search(name):
+                    reasons["road-frontage sub-row"] += 1
+                    continue
+                result = [("agricultural_land", small[0] * 100000, "acre", "village")]
+                if large:
+                    result.append(("plot", max(large), "sqm", "village"))
+                for ptype, rate, unit, level in result:
+                    key2 = (taluk, name.lower(), ptype)
+                    if key2 in seen:
+                        reasons["duplicate"] += 1
                         continue
-                    if site is not None and site >= 1000:
-                        target = group if group and (ROADLIKE.search(name) or SUB_ROW.search(name)) else name
-                        if group and target == name:
-                            context[(taluk, name)] = group
-                        groups.setdefault((taluk, target, "plot"), []).append((site, page))
-                    if apt is not None and apt >= 1000:
-                        target = group or name
-                        groups.setdefault((taluk, target, "apartment"), []).append((apt, page))
-                    continue
-            result = classify(name, nums)
-            if args.mode == "city" and not isinstance(result, str) and PROJECT.search(name):
-                group = heading.get(taluk)
-                if not group:
-                    reasons["project with no locality heading"] += 1
-                    continue
-                for ptype, rate, unit, _ in result:
-                    if unit == "sqm":
-                        groups.setdefault((taluk, group, ptype), []).append((rate, page))
-                continue
-            if isinstance(result, str):
-                reasons[result] += 1
-                skipped.append([page, result, name] + body)
-                continue
-            if args.mode != "city" and any(lv == "village" for _, _, _, lv in result):
-                last_village[("ctx", taluk)] = name
-            for ptype, rate, unit, level in result:
-                if args.mode == "city" and unit == "sqm":
-                    lo, hi = CITY_BOUNDS.get(ptype, (0, float("inf")))
-                    if not lo <= rate <= hi:
+                    if unit == "sqm" and not CITY_BOUNDS["plot"][0] <= rate <= CITY_BOUNDS["plot"][1]:
                         reasons["implausible value"] += 1
                         continue
-                key = (taluk, name.lower(), ptype)
-                if key in seen:  # repeated listing: keep the first, which is the main row
-                    reasons["duplicate"] += 1
+                    seen.add(key2)
+                    out.append({
+                        "district": args.district, "area_name": name, "name_kn": "", "area_level": level,
+                        "context": "", "parent_name": taluk, "parent_level": args.parent_level,
+                        "property_type": ptype, "approval_status": "",
+                        "rate": f"{rate:.0f}", "unit": unit,
+                        "source_ref": f"{taluk} SRO gazette p.{page}",
+                    })
+                reasons["peri-urban village row"] += 1
+                continue
+        if args.mode == "city" and len(nums) < 3:
+            if NOT_RESIDENTIAL.search(name):
+                reasons["commercial/industrial"] += 1
+                continue
+            slots = slot_values(body, name, page, table_no, raw_cells)
+            if slots and any(v is not None for v in slots):
+                site, apt = slots
+                group = heading.get(taluk)
+                if PROJECT.search(name):
+                    # a named project or a khata/PID entry: only useful rolled into its locality
+                    if not group:
+                        reasons["project with no locality heading"] += 1
+                        continue
+                    vals = [v for v in (site, apt) if v is not None and v >= 1000]
+                    if vals:
+                        ptype = "apartment" if (APT_HINT.search(name) or apt is not None) else "plot"
+                        groups.setdefault((taluk, group, ptype), []).append((vals[-1], page))
                     continue
-                seen.add(key)
-                out.append({
-                    "district": args.district, "area_name": name, "name_kn": name_kn, "area_level": level,
-                    # rural gazettes list layouts right after the village they sit in
-                    "context": heading.get(taluk, "") if args.mode == "city"
-                    else (last_village.get(("ctx", taluk), "") if level == "locality" else ""),
-                    "parent_name": taluk, "parent_level": args.parent_level,
-                    "property_type": ptype, "approval_status": "",
-                    "rate": f"{rate:.0f}", "unit": unit,
-                    "source_ref": f"{taluk} SRO gazette p.{page}",
-                })
+                if site is not None and site >= 1000:
+                    target = group if group and (ROADLIKE.search(name) or SUB_ROW.search(name)) else name
+                    if group and target == name:
+                        context[(taluk, name)] = group
+                    groups.setdefault((taluk, target, "plot"), []).append((site, page))
+                if apt is not None and apt >= 1000:
+                    target = group or name
+                    groups.setdefault((taluk, target, "apartment"), []).append((apt, page))
+                continue
+        result = classify(name, nums)
+        if args.mode == "city" and not isinstance(result, str) and PROJECT.search(name):
+            group = heading.get(taluk)
+            if not group:
+                reasons["project with no locality heading"] += 1
+                continue
+            for ptype, rate, unit, _ in result:
+                if unit == "sqm":
+                    groups.setdefault((taluk, group, ptype), []).append((rate, page))
+            continue
+        if isinstance(result, str):
+            reasons[result] += 1
+            skipped.append([page, result, name] + body)
+            continue
+        if args.mode != "city" and any(lv == "village" for _, _, _, lv in result):
+            last_village[("ctx", taluk)] = name
+        for ptype, rate, unit, level in result:
+            if args.mode == "city" and unit == "sqm":
+                lo, hi = CITY_BOUNDS.get(ptype, (0, float("inf")))
+                if not lo <= rate <= hi:
+                    reasons["implausible value"] += 1
+                    continue
+            key = (taluk, name.lower(), ptype)
+            if key in seen:  # repeated listing: keep the first, which is the main row
+                reasons["duplicate"] += 1
+                continue
+            seen.add(key)
+            out.append({
+                "district": args.district, "area_name": name, "name_kn": name_kn, "area_level": level,
+                # rural gazettes list layouts right after the village they sit in
+                "context": heading.get(taluk, "") if args.mode == "city"
+                else (last_village.get(("ctx", taluk), "") if level == "locality" else ""),
+                "parent_name": taluk, "parent_level": args.parent_level,
+                "property_type": ptype, "approval_status": "",
+                "rate": f"{rate:.0f}", "unit": unit,
+                "source_ref": f"{taluk} SRO gazette p.{page}",
+            })
 
     for (taluk, area, ptype), vals in groups.items():
         lo, hi = CITY_BOUNDS.get(ptype, (0, float("inf")))

@@ -617,8 +617,6 @@ Kolar,Haradakothuru,,village,KGF,taluk,agricultural_land,,1000000,acre,KGF SRO g
 Kolar,Haradakothuru,,village,KGF,taluk,plot,,2000,sqm,KGF SRO gazette p.27,
 Kolar,Plummer Road,,village,KGF,taluk,agricultural_land,,1900000,acre,KGF SRO gazette p.27,
 Kolar,Plummer Road,,village,KGF,taluk,plot,,4800,sqm,KGF SRO gazette p.27,
-Kolar,"Ashok Nagar Others,Main Road",,locality,KGF,taluk,plot,,19,sqm,KGF SRO gazette p.28,Plummer Road
-Kolar,"Ashoknagar (including Loganatha Choultry) Minor Road, Main Road",,locality,KGF,taluk,plot,,19,sqm,KGF SRO gazette p.30,Plummer Road
 Kolar,Sreerama Nagar,,village,KGF,taluk,agricultural_land,,2000000,acre,KGF SRO gazette p.32,
 Kolar,Sreerama Nagar,,village,KGF,taluk,plot,,8000,sqm,KGF SRO gazette p.32,
 Kolar,"Sreerama Nagar , Ward No.20 Block No.1, PID",,village,KGF,taluk,agricultural_land,,2000000,acre,KGF SRO gazette p.33,
@@ -635,7 +633,6 @@ Kolar,M/S. white,,village,KGF,taluk,agricultural_land,,2100000,acre,KGF SRO gaze
 Kolar,M/S. white,,village,KGF,taluk,plot,,6000,sqm,KGF SRO gazette p.44,
 Kolar,T.Srinivasa S/o.N.Thimmai ah. R-pet. KGF,,locality,KGF,taluk,plot,,8000,sqm,KGF SRO gazette p.47,M/S. white
 Kolar,"Baskar And Other,Ganesh pura. R-pet ,KGF",,locality,KGF,taluk,plot,,8000,sqm,KGF SRO gazette p.47,M/S. white
-Kolar,"Madhaiah Layout, Main Road",,locality,KGF,taluk,plot,,22,sqm,KGF SRO gazette p.50,M/S. white
 Kolar,Sammadh,,village,KGF,taluk,agricultural_land,,2300000,acre,KGF SRO gazette p.52,
 Kolar,Sammadh,,village,KGF,taluk,plot,,6400,sqm,KGF SRO gazette p.52,
 Kolar,Fish Line,,village,KGF,taluk,agricultural_land,,2300000,acre,KGF SRO gazette p.53,
@@ -643,7 +640,6 @@ Kolar,Fish Line,,village,KGF,taluk,plot,,2000,sqm,KGF SRO gazette p.53,
 Kolar,Between,,village,KGF,taluk,agricultural_land,,2400000,acre,KGF SRO gazette p.54,
 Kolar,"Between Pritchard Road to Geetha Road, 5th, 6th Cross Road and 7th Cross Road",,village,KGF,taluk,agricultural_land,,2400000,acre,KGF SRO gazette p.55,
 Kolar,"Between Pritchard Road to Geetha Road, 5th, 6th Cross Road and 7th Cross Road",,village,KGF,taluk,plot,,9600,sqm,KGF SRO gazette p.55,
-Kolar,Pritchard Road (Up to Veternity Hospital),,locality,KGF,taluk,plot,,24,sqm,KGF SRO gazette p.55,"Between Pritchard Road to Geetha Road, 5th, 6th Cross Road and 7th Cross Road"
 Kolar,"Robertsonpet, Gandhi Circle to Police Circle",,village,KGF,taluk,agricultural_land,,2400000,acre,KGF SRO gazette p.57,
 Kolar,"Robertsonpet, Gandhi Circle to Police Circle Commercial",,village,KGF,taluk,agricultural_land,,2400000,acre,KGF SRO gazette p.57,
 Kolar,Geetha Road,,village,KGF,taluk,agricultural_land,,2400000,acre,KGF SRO gazette p.58,
@@ -667,8 +663,6 @@ Kolar,Civil Hospital to Coronation Circle,,village,KGF,taluk,agricultural_land,,
 Kolar,Civil Hospital to Coronation Circle,,village,KGF,taluk,plot,,21000,sqm,KGF SRO gazette p.72,
 Kolar,Civil Hospital to Coronation Circle Commercial,,village,KGF,taluk,agricultural_land,,2700000,acre,KGF SRO gazette p.72,
 Kolar,Civil Hospital to Coronation Circle Commercial,,village,KGF,taluk,plot,,31000,sqm,KGF SRO gazette p.72,
-Kolar,Cross Roads PID,,locality,KGF,taluk,plot,,6400,sqm,KGF SRO gazette p.74,Civil Hospital to Coronation Circle Commercial
-Kolar,"Sri.K.S.Venugopala Reddy, S/o. G.Narayana Reddy, Pottepalli, KGF",,locality,KGF,taluk,plot,,5000,sqm,KGF SRO gazette p.77,Civil Hospital to Coronation Circle Commercial
 Kolar,Ganesh puram Commercial,,locality,KGF,taluk,plot,,8000,sqm,KGF SRO gazette p.77,Civil Hospital to Coronation Circle Commercial
 Kolar,Nachapalli,,village,KGF,taluk,agricultural_land,,2900000,acre,KGF SRO gazette p.79,
 Kolar,Nachapalli,,village,KGF,taluk,plot,,6400,sqm,KGF SRO gazette p.79,
@@ -3692,7 +3686,6 @@ Kolar,Kadukachanahalli,,village,Mulbagal,taluk,agricultural_land,,550000,acre,Mu
 Kolar,Kadukachanahalli,,village,Mulbagal,taluk,plot,,2000,sqm,Mulbagal SRO gazette p.162,
 Kolar,Kammadatti Kamanuru,,village,Mulbagal,taluk,agricultural_land,,2400000,acre,Mulbagal SRO gazette p.162,
 Kolar,Kammadatti Kamanuru,,village,Mulbagal,taluk,plot,,6000,sqm,Mulbagal SRO gazette p.162,
-Kolar,Kammadatti,,locality,Mulbagal,taluk,plot,,1000,sqm,Mulbagal SRO gazette p.163,Kammadatti Kamanuru
 Kolar,Gottakunte,,village,Mulbagal,taluk,agricultural_land,,230000,acre,Mulbagal SRO gazette p.163,
 Kolar,Gottakunte,,village,Mulbagal,taluk,plot,,2000,sqm,Mulbagal SRO gazette p.163,
 Kolar,Ganjigunte,,village,Mulbagal,taluk,agricultural_land,,380000,acre,Mulbagal SRO gazette p.164,

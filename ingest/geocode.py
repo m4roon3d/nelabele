@@ -29,6 +29,8 @@ from collections import Counter, defaultdict
 
 from rapidfuzz import fuzz, process
 
+from dedupe_points import dedupe
+
 BANGALORE = (12.9716, 77.5946)
 RADIUS_KM = {"taluk": 32, "zone": 14}
 FUZZY_MIN = 90
@@ -277,6 +279,9 @@ def main():
                         # a Kannada name only when it's this place's own, not a nearby one's
                         "osm_name_kn": pick["name_kn"] if method in ("exact", "fuzzy", "kannada") else ""})
 
+    out, dropped = dedupe(out)
+    if dropped:
+        print(f"Left {len(dropped)} off the map: a nearer office's place of the same name holds that point")
     with open(sys.argv[2], "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["district", "parent_name", "area_name", "lat", "lon", "match",
                                            "osm_name", "osm_name_kn"])
