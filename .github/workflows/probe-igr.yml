@@ -1,0 +1,26 @@
+name: Probe IGR
+
+# Checks whether the Karnataka registration sites answer from GitHub, and
+# lists any guidance value PDFs they link to. Read-only; saves nothing.
+on: workflow_dispatch
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Try the IGR and Kaveri sites
+        run: |
+          ua="Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/124 Mobile Safari/537.36"
+          for u in https://igr.karnataka.gov.in/ \
+                   https://igr.karnataka.gov.in/page/Revised+Guidelines+Value/en \
+                   https://igr.karnataka.gov.in/english \
+                   http://igr.karnataka.gov.in/ \
+                   https://kaveri.karnataka.gov.in/ \
+                   https://kaverionline.karnataka.gov.in/ ; do
+            code=$(curl -sSL -A "$ua" --max-time 45 -o page.html -w '%{http_code} %{size_download}B %{url_effective}' "$u" 2>&1 || true)
+            echo "$u -> $code"
+            if [ -s page.html ]; then
+              grep -oiE 'href="[^"]*(guid|valu|market|\.pdf)[^"]*"' page.html | sort -u | head -40
+            fi
+            rm -f page.html
+          done
