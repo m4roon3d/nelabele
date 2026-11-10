@@ -357,6 +357,8 @@ def main():
                 reasons[result] += 1
                 skipped.append([page, result, name] + body)
                 continue
+            if args.mode != "city" and any(lv == "village" for _, _, _, lv in result):
+                last_village[("ctx", taluk)] = name
             for ptype, rate, unit, level in result:
                 if args.mode == "city" and unit == "sqm":
                     lo, hi = CITY_BOUNDS.get(ptype, (0, float("inf")))
@@ -370,7 +372,9 @@ def main():
                 seen.add(key)
                 out.append({
                     "district": args.district, "area_name": name, "name_kn": name_kn, "area_level": level,
-                    "context": heading.get(taluk, "") if args.mode == "city" else "",
+                    # rural gazettes list layouts right after the village they sit in
+                    "context": heading.get(taluk, "") if args.mode == "city"
+                    else (last_village.get(("ctx", taluk), "") if level == "locality" else ""),
                     "parent_name": taluk, "parent_level": args.parent_level,
                     "property_type": ptype, "approval_status": "",
                     "rate": f"{rate:.0f}", "unit": unit,

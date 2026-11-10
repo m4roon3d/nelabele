@@ -242,6 +242,12 @@ def main():
                         break
                 if found:
                     pick, method = found, "contains"
+        # a rural layout matched to a same-named place far from the village it is listed
+        # under ("Telecom Layout" in Devanahalli -> the one in Jakkur): trust the village
+        if pick and plevel == "taluk" and level == "locality" and ctx and ctx != name and method != "kannada":
+            village, vm = find(ctx, near, cand_keys, cand_idx, centre, radius)
+            if village and km(pick["pt"], village["pt"]) > 5:
+                pick, method = village, "at its village"
         if not pick and roads:
             keys, cleaned = road_variants(name)
             generic = bool(GENERIC_STREET.match(cleaned))

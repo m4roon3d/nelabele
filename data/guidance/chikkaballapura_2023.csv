@@ -22,8 +22,8 @@ Chikkaballapura,Kadirannagaripalli Village,,village,Bagepalli,taluk,agricultural
 Chikkaballapura,Kadirannagaripalli Village,,village,Bagepalli,taluk,plot,,3000,sqm,Bagepalli SRO gazette p.69,
 Chikkaballapura,Karkur,,village,Bagepalli,taluk,agricultural_land,,500000,acre,Bagepalli SRO gazette p.69,
 Chikkaballapura,Karkur,,village,Bagepalli,taluk,plot,,3000,sqm,Bagepalli SRO gazette p.69,
-Chikkaballapura,Karkur Jeevan sagar Garden layout,,locality,Bagepalli,taluk,plot,,3000,sqm,Bagepalli SRO gazette p.70,
-Chikkaballapura,Jeevan sagar GardenTown ship,,locality,Bagepalli,taluk,plot,,3500,sqm,Bagepalli SRO gazette p.70,
+Chikkaballapura,Karkur Jeevan sagar Garden layout,,locality,Bagepalli,taluk,plot,,3000,sqm,Bagepalli SRO gazette p.70,Karkur
+Chikkaballapura,Jeevan sagar GardenTown ship,,locality,Bagepalli,taluk,plot,,3500,sqm,Bagepalli SRO gazette p.70,Karkur
 Chikkaballapura,Kothakota,,village,Bagepalli,taluk,agricultural_land,,1500000,acre,Bagepalli SRO gazette p.70,
 Chikkaballapura,Kothakota,,village,Bagepalli,taluk,plot,,7000,sqm,Bagepalli SRO gazette p.70,
 Chikkaballapura,Krishnapura,,village,Bagepalli,taluk,agricultural_land,,800000,acre,Bagepalli SRO gazette p.70,
@@ -38,10 +38,10 @@ Chikkaballapura,Guraaladinne,,village,Bagepalli,taluk,agricultural_land,,500000,
 Chikkaballapura,Guraaladinne,,village,Bagepalli,taluk,plot,,3000,sqm,Bagepalli SRO gazette p.71,
 Chikkaballapura,Gantamvaripalli,,village,Bagepalli,taluk,agricultural_land,,1500000,acre,Bagepalli SRO gazette p.71,
 Chikkaballapura,Gantamvaripalli,,village,Bagepalli,taluk,plot,,8000,sqm,Bagepalli SRO gazette p.71,
-Chikkaballapura,Gantamvaripalli- KHB layout (Ews),,locality,Bagepalli,taluk,plot,,3510,sqm,Bagepalli SRO gazette p.71,
-Chikkaballapura,Gantamvaripalli- KHB layout,,locality,Bagepalli,taluk,plot,,6350,sqm,Bagepalli SRO gazette p.71,
-Chikkaballapura,Gantamvaripalli-KHB Layout HIG-Resale layout,,locality,Bagepalli,taluk,plot,,8000,sqm,Bagepalli SRO gazette p.72,
-Chikkaballapura,Gantamvaripalli- APMC Yard,,locality,Bagepalli,taluk,plot,,9000,sqm,Bagepalli SRO gazette p.72,
+Chikkaballapura,Gantamvaripalli- KHB layout (Ews),,locality,Bagepalli,taluk,plot,,3510,sqm,Bagepalli SRO gazette p.71,Gantamvaripalli
+Chikkaballapura,Gantamvaripalli- KHB layout,,locality,Bagepalli,taluk,plot,,6350,sqm,Bagepalli SRO gazette p.71,Gantamvaripalli
+Chikkaballapura,Gantamvaripalli-KHB Layout HIG-Resale layout,,locality,Bagepalli,taluk,plot,,8000,sqm,Bagepalli SRO gazette p.72,Gantamvaripalli
+Chikkaballapura,Gantamvaripalli- APMC Yard,,locality,Bagepalli,taluk,plot,,9000,sqm,Bagepalli SRO gazette p.72,Gantamvaripalli
 Chikkaballapura,Gollapalli,,village,Bagepalli,taluk,agricultural_land,,300000,acre,Bagepalli SRO gazette p.72,
 Chikkaballapura,Gollapalli,,village,Bagepalli,taluk,plot,,3000,sqm,Bagepalli SRO gazette p.72,
 Chikkaballapura,Chinnepalli,,village,Bagepalli,taluk,agricultural_land,,1000000,acre,Bagepalli SRO gazette p.72,
@@ -156,7 +156,7 @@ Chikkaballapura,Narasapura,,village,Bagepalli,taluk,agricultural_land,,600000,ac
 Chikkaballapura,Narasapura,,village,Bagepalli,taluk,plot,,3000,sqm,Bagepalli SRO gazette p.83,
 Chikkaballapura,Nallappareddypalli,,village,Bagepalli,taluk,agricultural_land,,600000,acre,Bagepalli SRO gazette p.84,
 Chikkaballapura,Nallappareddypalli,,village,Bagepalli,taluk,plot,,3000,sqm,Bagepalli SRO gazette p.84,
-Chikkaballapura,Nallappareddypalli Kalpatharu Layout,,locality,Bagepalli,taluk,plot,,4500,sqm,Bagepalli SRO gazette p.84,
+Chikkaballapura,Nallappareddypalli Kalpatharu Layout,,locality,Bagepalli,taluk,plot,,4500,sqm,Bagepalli SRO gazette p.84,Nallappareddypalli
 Chikkaballapura,Narayanaswamy Kote,,village,Bagepalli,taluk,agricultural_land,,600000,acre,Bagepalli SRO gazette p.84,
 Chikkaballapura,Narayanaswamy Kote,,village,Bagepalli,taluk,plot,,3500,sqm,Bagepalli SRO gazette p.84,
 Chikkaballapura,Pichalavaripalli,,village,Bagepalli,taluk,agricultural_land,,400000,acre,Bagepalli SRO gazette p.84,
@@ -690,25 +690,25 @@ Chikkaballapura,D.C.Shantharam Layout,,locality,Chikkaballapura,taluk,plot,,1500
 Chikkaballapura,A.V.Lakshmipathi & Ragunath.V. Layout,,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.124,
 Chikkaballapura,Agalagurki,,village,Chikkaballapura,taluk,agricultural_land,,3600000,acre,Chikkaballapura SRO gazette p.125,
 Chikkaballapura,Agalagurki,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.125,
-Chikkaballapura,"Agalagurki, P.Lalithavani",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.125,
-Chikkaballapura,"Agalagurki, D.Pichireddy",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.125,
-Chikkaballapura,"Agalagurki, H.A.Krishnappa",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.126,
+Chikkaballapura,"Agalagurki, P.Lalithavani",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.125,Agalagurki
+Chikkaballapura,"Agalagurki, D.Pichireddy",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.125,Agalagurki
+Chikkaballapura,"Agalagurki, H.A.Krishnappa",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.126,Agalagurki
 Chikkaballapura,Arasnahalli,,village,Chikkaballapura,taluk,agricultural_land,,2500000,acre,Chikkaballapura SRO gazette p.126,
 Chikkaballapura,Arasnahalli,,village,Chikkaballapura,taluk,plot,,7200,sqm,Chikkaballapura SRO gazette p.126,
-Chikkaballapura,"Arasnahalli, Sitrus Valley",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.126,
-Chikkaballapura,"Arasnahalli, Sitrus Medows",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.126,
-Chikkaballapura,"Arasnahalli, P.Gopala Gowda",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.126,
+Chikkaballapura,"Arasnahalli, Sitrus Valley",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.126,Arasnahalli
+Chikkaballapura,"Arasnahalli, Sitrus Medows",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.126,Arasnahalli
+Chikkaballapura,"Arasnahalli, P.Gopala Gowda",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.126,Arasnahalli
 Chikkaballapura,Angatta,,village,Chikkaballapura,taluk,agricultural_land,,5000000,acre,Chikkaballapura SRO gazette p.126,
 Chikkaballapura,Angatta,,village,Chikkaballapura,taluk,plot,,14500,sqm,Chikkaballapura SRO gazette p.126,
-Chikkaballapura,"Angatta, M/S.V.R.Holdings Palm",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.126,
-Chikkaballapura,"Angatta, Aparanji Elite Layout",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.126,
-Chikkaballapura,"Angatta, Q.V.C. Layout",,locality,Chikkaballapura,taluk,plot,,22000,sqm,Chikkaballapura SRO gazette p.126,
-Chikkaballapura,"Angatta, Manthri Hills Layout",,locality,Chikkaballapura,taluk,plot,,24000,sqm,Chikkaballapura SRO gazette p.127,
+Chikkaballapura,"Angatta, M/S.V.R.Holdings Palm",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.126,Angatta
+Chikkaballapura,"Angatta, Aparanji Elite Layout",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.126,Angatta
+Chikkaballapura,"Angatta, Q.V.C. Layout",,locality,Chikkaballapura,taluk,plot,,22000,sqm,Chikkaballapura SRO gazette p.126,Angatta
+Chikkaballapura,"Angatta, Manthri Hills Layout",,locality,Chikkaballapura,taluk,plot,,24000,sqm,Chikkaballapura SRO gazette p.127,Angatta
 Chikkaballapura,Amani Gopalakrishnakere,,village,Chikkaballapura,taluk,agricultural_land,,2000000,acre,Chikkaballapura SRO gazette p.127,
 Chikkaballapura,Amani Gopalakrishnakere,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.127,
 Chikkaballapura,Ajjavara,,village,Chikkaballapura,taluk,agricultural_land,,1800000,acre,Chikkaballapura SRO gazette p.127,
 Chikkaballapura,Ajjavara,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.127,
-Chikkaballapura,"Ajjavara, N.Prema Layout",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.128,
+Chikkaballapura,"Ajjavara, N.Prema Layout",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.128,Ajjavara
 Chikkaballapura,Andarlahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.128,
 Chikkaballapura,Andarlahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.128,
 Chikkaballapura,Elehalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.128,
@@ -719,20 +719,20 @@ Chikkaballapura,Obalenahalli,,village,Chikkaballapura,taluk,agricultural_land,,1
 Chikkaballapura,Obalenahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.129,
 Chikkaballapura,Kandavara,,village,Chikkaballapura,taluk,agricultural_land,,4500000,acre,Chikkaballapura SRO gazette p.129,
 Chikkaballapura,Kandavara,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.129,
-Chikkaballapura,"Kandavara, K.I.A.D.B Area",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.130,
+Chikkaballapura,"Kandavara, K.I.A.D.B Area",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.130,Kandavara
 Chikkaballapura,Kuduvathi,,village,Chikkaballapura,taluk,agricultural_land,,5000000,acre,Chikkaballapura SRO gazette p.130,
 Chikkaballapura,Kuduvathi,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.130,
-Chikkaballapura,"Kuduvathi, M/S. V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.131,
-Chikkaballapura,"Kuduvathi, M/S.. M.S.K. Shelters",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.131,
-Chikkaballapura,"Kuduvathi, Vayatla",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.131,
-Chikkaballapura,"Kuduvathi, M/S..Wellnest India",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.131,
-Chikkaballapura,"Kuduvathi, M/S..V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.131,
-Chikkaballapura,"Kuduvathi ,M/S..V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.131,
-Chikkaballapura,"Kuduvathi, N.Ravendrakumar",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.131,
-Chikkaballapura,"Kuduvathi, Samrudhi Realty",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.131,
+Chikkaballapura,"Kuduvathi, M/S. V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.131,Kuduvathi
+Chikkaballapura,"Kuduvathi, M/S.. M.S.K. Shelters",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.131,Kuduvathi
+Chikkaballapura,"Kuduvathi, Vayatla",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.131,Kuduvathi
+Chikkaballapura,"Kuduvathi, M/S..Wellnest India",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.131,Kuduvathi
+Chikkaballapura,"Kuduvathi, M/S..V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.131,Kuduvathi
+Chikkaballapura,"Kuduvathi ,M/S..V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.131,Kuduvathi
+Chikkaballapura,"Kuduvathi, N.Ravendrakumar",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.131,Kuduvathi
+Chikkaballapura,"Kuduvathi, Samrudhi Realty",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.131,Kuduvathi
 Chikkaballapura,Kothanuru,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.132,
 Chikkaballapura,Kothanuru,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.132,
-Chikkaballapura,"Kothanuru, Sitrus Layout",,locality,Chikkaballapura,taluk,plot,,20000,sqm,Chikkaballapura SRO gazette p.132,
+Chikkaballapura,"Kothanuru, Sitrus Layout",,locality,Chikkaballapura,taluk,plot,,20000,sqm,Chikkaballapura SRO gazette p.132,Kothanuru
 Chikkaballapura,Kanithahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.132,
 Chikkaballapura,Kanithahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.132,
 Chikkaballapura,Kolavanahalli,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.133,
@@ -743,7 +743,7 @@ Chikkaballapura,Kadashigenahalli,,village,Chikkaballapura,taluk,agricultural_lan
 Chikkaballapura,Kadashigenahalli,,village,Chikkaballapura,taluk,plot,,4800,sqm,Chikkaballapura SRO gazette p.133,
 Chikkaballapura,Kokkarepade,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.134,
 Chikkaballapura,Kokkarepade,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.134,
-Chikkaballapura,"Kokkarepade, M/S..Manani",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.134,
+Chikkaballapura,"Kokkarepade, M/S..Manani",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.134,Kokkarepade
 Chikkaballapura,Kanganahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.134,
 Chikkaballapura,Kanganahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.134,
 Chikkaballapura,Kenchenahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.134,
@@ -760,10 +760,10 @@ Chikkaballapura,Korlahalli,,village,Chikkaballapura,taluk,agricultural_land,,180
 Chikkaballapura,Korlahalli,,village,Chikkaballapura,taluk,plot,,5500,sqm,Chikkaballapura SRO gazette p.136,
 Chikkaballapura,Kuppahalli,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.136,
 Chikkaballapura,Kuppahalli,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.136,
-Chikkaballapura,"Kuppahalli, Nandi View Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.136,
-Chikkaballapura,"Kuppahalli, Nandi Medows",,locality,Chikkaballapura,taluk,plot,,15500,sqm,Chikkaballapura SRO gazette p.136,
-Chikkaballapura,"Kuppahalli, Ananda Kumar",,locality,Chikkaballapura,taluk,plot,,14000,sqm,Chikkaballapura SRO gazette p.137,
-Chikkaballapura,"Kuppahalli, Madalambike",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.137,
+Chikkaballapura,"Kuppahalli, Nandi View Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.136,Kuppahalli
+Chikkaballapura,"Kuppahalli, Nandi Medows",,locality,Chikkaballapura,taluk,plot,,15500,sqm,Chikkaballapura SRO gazette p.136,Kuppahalli
+Chikkaballapura,"Kuppahalli, Ananda Kumar",,locality,Chikkaballapura,taluk,plot,,14000,sqm,Chikkaballapura SRO gazette p.137,Kuppahalli
+Chikkaballapura,"Kuppahalli, Madalambike",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.137,Kuppahalli
 Chikkaballapura,Gantiganahalli,,village,Chikkaballapura,taluk,agricultural_land,,1800000,acre,Chikkaballapura SRO gazette p.137,
 Chikkaballapura,Gantiganahalli,,village,Chikkaballapura,taluk,plot,,9600,sqm,Chikkaballapura SRO gazette p.137,
 Chikkaballapura,Gavichinnappanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.137,
@@ -778,16 +778,16 @@ Chikkaballapura,Gungirlahalli,,village,Chikkaballapura,taluk,agricultural_land,,
 Chikkaballapura,Gungirlahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.138,
 Chikkaballapura,Chadalapura,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.138,
 Chikkaballapura,Chadalapura,,village,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.138,
-Chikkaballapura,"Chadalapura, Sitrus Vally",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.139,
-Chikkaballapura,"Chadalapura, M.Prashanth",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.139,
-Chikkaballapura,"Chadalapura, Aparanji Elight",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.139,
+Chikkaballapura,"Chadalapura, Sitrus Vally",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.139,Chadalapura
+Chikkaballapura,"Chadalapura, M.Prashanth",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.139,Chadalapura
+Chikkaballapura,"Chadalapura, Aparanji Elight",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.139,Chadalapura
 Chikkaballapura,Chokkahalli,,village,Chikkaballapura,taluk,agricultural_land,,5000000,acre,Chikkaballapura SRO gazette p.139,
 Chikkaballapura,Chokkahalli,,village,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.139,
-Chikkaballapura,"Chokkahalli, Holten Home'S",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.139,
-Chikkaballapura,"Chokkahalli, S.Srinivasalu And",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.139,
-Chikkaballapura,"Chokkahalli, K.Shanthamma",,locality,Chikkaballapura,taluk,plot,,14000,sqm,Chikkaballapura SRO gazette p.139,
-Chikkaballapura,"Chokkahalli, Ramamohan",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.139,
-Chikkaballapura,"Chokkahalli, Mahalakshmi Developers Layout",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.140,
+Chikkaballapura,"Chokkahalli, Holten Home'S",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.139,Chokkahalli
+Chikkaballapura,"Chokkahalli, S.Srinivasalu And",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.139,Chokkahalli
+Chikkaballapura,"Chokkahalli, K.Shanthamma",,locality,Chikkaballapura,taluk,plot,,14000,sqm,Chikkaballapura SRO gazette p.139,Chokkahalli
+Chikkaballapura,"Chokkahalli, Ramamohan",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.139,Chokkahalli
+Chikkaballapura,"Chokkahalli, Mahalakshmi Developers Layout",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.140,Chokkahalli
 Chikkaballapura,Chikkakadiganahalli,,village,Chikkaballapura,taluk,agricultural_land,,2500000,acre,Chikkaballapura SRO gazette p.140,
 Chikkaballapura,Chikkakadiganahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.140,
 Chikkaballapura,Chidachikkanahalli,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.140,
@@ -800,49 +800,49 @@ Chikkaballapura,Chikka Muddenahalli,,village,Chikkaballapura,taluk,agricultural_
 Chikkaballapura,Chikka Muddenahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.141,
 Chikkaballapura,Chikkasagarahalli,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.141,
 Chikkaballapura,Chikkasagarahalli,,village,Chikkaballapura,taluk,plot,,9800,sqm,Chikkaballapura SRO gazette p.141,
-Chikkaballapura,"Chikkasagarahalli, M.Srinivas",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.141,
-Chikkaballapura,Chikkasagarahalli Certainant,,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.141,
+Chikkaballapura,"Chikkasagarahalli, M.Srinivas",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.141,Chikkasagarahalli
+Chikkaballapura,Chikkasagarahalli Certainant,,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.141,Chikkasagarahalli
 Chikkaballapura,Chigatenahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.141,
 Chikkaballapura,Chigatenahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.141,
 Chikkaballapura,Chikkanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.141,
 Chikkaballapura,Chikkanahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.141,
 Chikkaballapura,Cheluvathimmanahalli,,village,Chikkaballapura,taluk,agricultural_land,,4500000,acre,Chikkaballapura SRO gazette p.142,
 Chikkaballapura,Cheluvathimmanahalli,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.142,
-Chikkaballapura,"Cheluvathimmanahalli, Adeppa",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.142,
+Chikkaballapura,"Cheluvathimmanahalli, Adeppa",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.142,Cheluvathimmanahalli
 Chikkaballapura,Jakkalamadugu,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.143,
 Chikkaballapura,Jakkalamadugu,,village,Chikkaballapura,taluk,plot,,4800,sqm,Chikkaballapura SRO gazette p.143,
 Chikkaballapura,Jathavara,,village,Chikkaballapura,taluk,agricultural_land,,1800000,acre,Chikkaballapura SRO gazette p.143,
 Chikkaballapura,Jathavara,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.143,
-Chikkaballapura,"Jathavara, Srinivasa Layout",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.144,
+Chikkaballapura,"Jathavara, Srinivasa Layout",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.144,Jathavara
 Chikkaballapura,Jathavara Hosahalli,,village,Chikkaballapura,taluk,agricultural_land,,1800000,acre,Chikkaballapura SRO gazette p.144,
 Chikkaballapura,Jathavara Hosahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.144,
 Chikkaballapura,Thammanayakanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.144,
 Chikkaballapura,Thammanayakanahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.144,
 Chikkaballapura,Thirnahalli,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.145,
 Chikkaballapura,Thirnahalli,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.145,
-Chikkaballapura,"Thirnahalli, M/S.. V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.145,
-Chikkaballapura,"Thirnahalli, N.S. And Natures",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.145,
-Chikkaballapura,"Thirnahalli, V.R.Holdings Hill View Greens Layout",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.145,
-Chikkaballapura,"Thirnahalli,G.Jayachandran",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.146,
+Chikkaballapura,"Thirnahalli, M/S.. V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.145,Thirnahalli
+Chikkaballapura,"Thirnahalli, N.S. And Natures",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.145,Thirnahalli
+Chikkaballapura,"Thirnahalli, V.R.Holdings Hill View Greens Layout",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.145,Thirnahalli
+Chikkaballapura,"Thirnahalli,G.Jayachandran",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.146,Thirnahalli
 Chikkaballapura,Thumakalahalli,,village,Chikkaballapura,taluk,agricultural_land,,5000000,acre,Chikkaballapura SRO gazette p.146,
 Chikkaballapura,Thumakalahalli,,village,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.146,
-Chikkaballapura,"Thumakalahalli, Sitrus Layout",,locality,Chikkaballapura,taluk,plot,,20000,sqm,Chikkaballapura SRO gazette p.146,
-Chikkaballapura,"Thumakalahalli, Sitrus Vally",,locality,Chikkaballapura,taluk,plot,,20000,sqm,Chikkaballapura SRO gazette p.146,
-Chikkaballapura,"Thumakalahalli, Sitrus",,locality,Chikkaballapura,taluk,plot,,20000,sqm,Chikkaballapura SRO gazette p.146,
-Chikkaballapura,"Thumakalahalli, Sai Medows",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.146,
-Chikkaballapura,"Thumakalahalli, Aparanji",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.146,
+Chikkaballapura,"Thumakalahalli, Sitrus Layout",,locality,Chikkaballapura,taluk,plot,,20000,sqm,Chikkaballapura SRO gazette p.146,Thumakalahalli
+Chikkaballapura,"Thumakalahalli, Sitrus Vally",,locality,Chikkaballapura,taluk,plot,,20000,sqm,Chikkaballapura SRO gazette p.146,Thumakalahalli
+Chikkaballapura,"Thumakalahalli, Sitrus",,locality,Chikkaballapura,taluk,plot,,20000,sqm,Chikkaballapura SRO gazette p.146,Thumakalahalli
+Chikkaballapura,"Thumakalahalli, Sai Medows",,locality,Chikkaballapura,taluk,plot,,18000,sqm,Chikkaballapura SRO gazette p.146,Thumakalahalli
+Chikkaballapura,"Thumakalahalli, Aparanji",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.146,Thumakalahalli
 Chikkaballapura,Thimmanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1700000,acre,Chikkaballapura SRO gazette p.146,
 Chikkaballapura,Thimmanahalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.146,
 Chikkaballapura,Thowdanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.147,
 Chikkaballapura,Thowdanahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.147,
-Chikkaballapura,"Thowdanahalli, L.F.Patil And",,locality,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.147,
-Chikkaballapura,"Thowdanahalli, Thirive",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.147,
+Chikkaballapura,"Thowdanahalli, L.F.Patil And",,locality,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.147,Thowdanahalli
+Chikkaballapura,"Thowdanahalli, Thirive",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.147,Thowdanahalli
 Chikkaballapura,Devishettahalli,,village,Chikkaballapura,taluk,agricultural_land,,4400000,acre,Chikkaballapura SRO gazette p.147,
 Chikkaballapura,Devishettahalli,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.147,
-Chikkaballapura,"Devishettahalli, Aero View",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.148,
+Chikkaballapura,"Devishettahalli, Aero View",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.148,Devishettahalli
 Chikkaballapura,Doddamarali,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.148,
 Chikkaballapura,Doddamarali,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.148,
-Chikkaballapura,"Doddamarali, L.G.Green County",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.148,
+Chikkaballapura,"Doddamarali, L.G.Green County",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.148,Doddamarali
 Chikkaballapura,Doddakirugambi,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.149,
 Chikkaballapura,Doddakirugambi,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.149,
 Chikkaballapura,Doddamarali Amanikere,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.149,
@@ -863,7 +863,7 @@ Chikkaballapura,Nelamakalahalli,,village,Chikkaballapura,taluk,agricultural_land
 Chikkaballapura,Nelamakalahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.151,
 Chikkaballapura,Bannikuppe,,village,Chikkaballapura,taluk,agricultural_land,,1800000,acre,Chikkaballapura SRO gazette p.152,
 Chikkaballapura,Bannikuppe,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.152,
-Chikkaballapura,"Bannikuppe, Vijetha Ventures",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.152,
+Chikkaballapura,"Bannikuppe, Vijetha Ventures",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.152,Bannikuppe
 Chikkaballapura,Bommanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1800000,acre,Chikkaballapura SRO gazette p.152,
 Chikkaballapura,Bommanahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.152,
 Chikkaballapura,Bandahalli,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.153,
@@ -878,17 +878,17 @@ Chikkaballapura,Balakuntahalli,,village,Chikkaballapura,taluk,agricultural_land,
 Chikkaballapura,Balakuntahalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.154,
 Chikkaballapura,Balajigapade,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.154,
 Chikkaballapura,Balajigapade,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.154,
-Chikkaballapura,"Balajigapade, Umashanthi",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.155,
-Chikkaballapura,"Balajigapade, P.Venkatesh",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.155,
+Chikkaballapura,"Balajigapade, Umashanthi",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.155,Balajigapade
+Chikkaballapura,"Balajigapade, P.Venkatesh",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.155,Balajigapade
 Chikkaballapura,Byranayakanahalli,,village,Chikkaballapura,taluk,agricultural_land,,2000000,acre,Chikkaballapura SRO gazette p.155,
 Chikkaballapura,Byranayakanahalli,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.155,
-Chikkaballapura,Byranayakanahalli M/S..V.R,,locality,Chikkaballapura,taluk,plot,,14000,sqm,Chikkaballapura SRO gazette p.155,
-Chikkaballapura,"Byranayakanahalli, H.J.Sanjay",,locality,Chikkaballapura,taluk,plot,,14000,sqm,Chikkaballapura SRO gazette p.155,
-Chikkaballapura,"BYRANAYAKANAHALLI, NBR HILL VIEW LAYOUT",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.155,
+Chikkaballapura,Byranayakanahalli M/S..V.R,,locality,Chikkaballapura,taluk,plot,,14000,sqm,Chikkaballapura SRO gazette p.155,Byranayakanahalli
+Chikkaballapura,"Byranayakanahalli, H.J.Sanjay",,locality,Chikkaballapura,taluk,plot,,14000,sqm,Chikkaballapura SRO gazette p.155,Byranayakanahalli
+Chikkaballapura,"BYRANAYAKANAHALLI, NBR HILL VIEW LAYOUT",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.155,Byranayakanahalli
 Chikkaballapura,Nandi,,village,Chikkaballapura,taluk,agricultural_land,,3500000,acre,Chikkaballapura SRO gazette p.155,
 Chikkaballapura,Nandi,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.155,
-Chikkaballapura,"Nandi, M/S..Welnest India",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.156,
-Chikkaballapura,"NANDI, NBR HILL VIEW LAYOUT",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.156,
+Chikkaballapura,"Nandi, M/S..Welnest India",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.156,Nandi
+Chikkaballapura,"NANDI, NBR HILL VIEW LAYOUT",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.156,Nandi
 Chikkaballapura,Bommenahalli,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.156,
 Chikkaballapura,Bommenahalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.156,
 Chikkaballapura,Poshettahalli,,village,Chikkaballapura,taluk,agricultural_land,,1700000,acre,Chikkaballapura SRO gazette p.157,
@@ -897,25 +897,25 @@ Chikkaballapura,Buddathimmanahalli,,village,Chikkaballapura,taluk,agricultural_l
 Chikkaballapura,Buddathimmanahalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.157,
 Chikkaballapura,Motaluru,,village,Chikkaballapura,taluk,agricultural_land,,2500000,acre,Chikkaballapura SRO gazette p.157,
 Chikkaballapura,Motaluru,,village,Chikkaballapura,taluk,plot,,5500,sqm,Chikkaballapura SRO gazette p.157,
-Chikkaballapura,"Motaluru, L.G.Tranqil Woods",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.157,
-Chikkaballapura,"Motaluru, Radha Kumari",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.158,
-Chikkaballapura,"Motaluru, Muthappa Layout",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.158,
+Chikkaballapura,"Motaluru, L.G.Tranqil Woods",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.157,Motaluru
+Chikkaballapura,"Motaluru, Radha Kumari",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.158,Motaluru
+Chikkaballapura,"Motaluru, Muthappa Layout",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.158,Motaluru
 Chikkaballapura,Mylappanahalli,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.158,
 Chikkaballapura,Mylappanahalli,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.158,
-Chikkaballapura,"Mylappanahalli, M/S..V.R. Holdings Elexia Layout",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.158,
-Chikkaballapura,"Mylappanahalli, Preethi",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.158,
-Chikkaballapura,"Mylappanahalli, N.Srinivas",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.158,
-Chikkaballapura,"Mylappanahalli, N.Radhaiah",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.159,
+Chikkaballapura,"Mylappanahalli, M/S..V.R. Holdings Elexia Layout",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.158,Mylappanahalli
+Chikkaballapura,"Mylappanahalli, Preethi",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.158,Mylappanahalli
+Chikkaballapura,"Mylappanahalli, N.Srinivas",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.158,Mylappanahalli
+Chikkaballapura,"Mylappanahalli, N.Radhaiah",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.159,Mylappanahalli
 Chikkaballapura,Muthukadahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.159,
 Chikkaballapura,Muthukadahalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.159,
 Chikkaballapura,Marimakalahalli,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.159,
 Chikkaballapura,Marimakalahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.159,
-Chikkaballapura,"Marimakalahalli, N.M.Murthy",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.159,
+Chikkaballapura,"Marimakalahalli, N.M.Murthy",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.159,Marimakalahalli
 Chikkaballapura,Muddenahalli,,village,Chikkaballapura,taluk,agricultural_land,,3200000,acre,Chikkaballapura SRO gazette p.159,
 Chikkaballapura,Muddenahalli,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.159,
 Chikkaballapura,Mavalli,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.160,
 Chikkaballapura,Mavalli,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.160,
-Chikkaballapura,"Mavalli, M/S..V.R.Holdings Hill",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.160,
+Chikkaballapura,"Mavalli, M/S..V.R.Holdings Hill",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.160,Mavalli
 Chikkaballapura,Marathammanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.160,
 Chikkaballapura,Marathammanahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.160,
 Chikkaballapura,Mannarapura,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.160,
@@ -924,11 +924,11 @@ Chikkaballapura,Madhurenahalli,,village,Chikkaballapura,taluk,agricultural_land,
 Chikkaballapura,Madhurenahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.160,
 Chikkaballapura,Madukuhosahalli,,village,Chikkaballapura,taluk,agricultural_land,,3500000,acre,Chikkaballapura SRO gazette p.161,
 Chikkaballapura,Madukuhosahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.161,
-Chikkaballapura,"Madukuhosahalli, The Estate",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.161,
+Chikkaballapura,"Madukuhosahalli, The Estate",,locality,Chikkaballapura,taluk,plot,,19000,sqm,Chikkaballapura SRO gazette p.161,Madukuhosahalli
 Chikkaballapura,Yaluvahalli,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.161,
 Chikkaballapura,Yaluvahalli,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.161,
-Chikkaballapura,"Yaluvahalli, L.G.Champions Green County Layout",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.162,
-Chikkaballapura,"Yaluvahalli, N.G.Srinivasan",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.162,
+Chikkaballapura,"Yaluvahalli, L.G.Champions Green County Layout",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.162,Yaluvahalli
+Chikkaballapura,"Yaluvahalli, N.G.Srinivasan",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.162,Yaluvahalli
 Chikkaballapura,Ragimakalahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.162,
 Chikkaballapura,Ragimakalahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.162,
 Chikkaballapura,Ramachandra Hosuru,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.162,
@@ -937,24 +937,24 @@ Chikkaballapura,Varadahalli,,village,Chikkaballapura,taluk,agricultural_land,,20
 Chikkaballapura,Varadahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.162,
 Chikkaballapura,Varamallenahalli,,village,Chikkaballapura,taluk,agricultural_land,,5000000,acre,Chikkaballapura SRO gazette p.163,
 Chikkaballapura,Varamallenahalli,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.163,
-Chikkaballapura,Varamallenahalli Hill View,,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.163,
-Chikkaballapura,Varamallenahalli Pragna,,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.163,
+Chikkaballapura,Varamallenahalli Hill View,,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.163,Varamallenahalli
+Chikkaballapura,Varamallenahalli Pragna,,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.163,Varamallenahalli
 Chikkaballapura,Valasenahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.163,
 Chikkaballapura,Valasenahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.163,
 Chikkaballapura,Sriramapura,,village,Chikkaballapura,taluk,agricultural_land,,1800000,acre,Chikkaballapura SRO gazette p.163,
 Chikkaballapura,Sriramapura,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.163,
-Chikkaballapura,"Sriramapura, L.F.Patil Layout",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.164,
+Chikkaballapura,"Sriramapura, L.F.Patil Layout",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.164,Sriramapura
 Chikkaballapura,Shingatikadirenahalli,,village,Chikkaballapura,taluk,agricultural_land,,1600000,acre,Chikkaballapura SRO gazette p.164,
 Chikkaballapura,Shingatikadirenahalli,,village,Chikkaballapura,taluk,plot,,5500,sqm,Chikkaballapura SRO gazette p.164,
-Chikkaballapura,"Shingatikadirenahalli,Ramesh",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.164,
+Chikkaballapura,"Shingatikadirenahalli,Ramesh",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.164,Shingatikadirenahalli
 Chikkaballapura,Sulthanpete,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.164,
 Chikkaballapura,Sulthanpete,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.164,
-Chikkaballapura,"Sulthanpete, J.Naveen Reddy",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.165,
-Chikkaballapura,"Sulthanpete, Sujay.M.R.Gowda",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.165,
-Chikkaballapura,"Sulthanpete, P.Prashnth",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.165,
+Chikkaballapura,"Sulthanpete, J.Naveen Reddy",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.165,Sulthanpete
+Chikkaballapura,"Sulthanpete, Sujay.M.R.Gowda",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.165,Sulthanpete
+Chikkaballapura,"Sulthanpete, P.Prashnth",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.165,Sulthanpete
 Chikkaballapura,Sambarugidakavalu,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.165,
 Chikkaballapura,Sambarugidakavalu,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.165,
-Chikkaballapura,"Sambarugidakavalu, R.R",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.165,
+Chikkaballapura,"Sambarugidakavalu, R.R",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.165,Sambarugidakavalu
 Chikkaballapura,Suddahalli,,village,Chikkaballapura,taluk,agricultural_land,,1600000,acre,Chikkaballapura SRO gazette p.165,
 Chikkaballapura,Suddahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.165,
 Chikkaballapura,Somenahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.166,
@@ -963,10 +963,10 @@ Chikkaballapura,Sonnapura,,village,Chikkaballapura,taluk,agricultural_land,,1200
 Chikkaballapura,Sonnapura,,village,Chikkaballapura,taluk,plot,,4800,sqm,Chikkaballapura SRO gazette p.166,
 Chikkaballapura,Hosahudya,,village,Chikkaballapura,taluk,agricultural_land,,2200000,acre,Chikkaballapura SRO gazette p.166,
 Chikkaballapura,Hosahudya,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.166,
-Chikkaballapura,"Hosahudya, R.M.Ravi Layout",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.167,
-Chikkaballapura,"Hosahudya, T.C.Jagadish Layout",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.167,
-Chikkaballapura,"Hosahudya, Umashanthi",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.167,
-Chikkaballapura,"Hosahudya, Bhuvanadevi",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.167,
+Chikkaballapura,"Hosahudya, R.M.Ravi Layout",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.167,Hosahudya
+Chikkaballapura,"Hosahudya, T.C.Jagadish Layout",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.167,Hosahudya
+Chikkaballapura,"Hosahudya, Umashanthi",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.167,Hosahudya
+Chikkaballapura,"Hosahudya, Bhuvanadevi",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.167,Hosahudya
 Chikkaballapura,Hirepade,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.167,
 Chikkaballapura,Hirepade,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.167,
 Chikkaballapura,Hosahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.167,
@@ -977,14 +977,14 @@ Chikkaballapura,Amanimavukere,,village,Chikkaballapura,taluk,agricultural_land,,
 Chikkaballapura,Amanimavukere,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.168,
 Chikkaballapura,Anakanuru,,village,Chikkaballapura,taluk,agricultural_land,,3200000,acre,Chikkaballapura SRO gazette p.168,
 Chikkaballapura,Anakanuru,,village,Chikkaballapura,taluk,plot,,8500,sqm,Chikkaballapura SRO gazette p.168,
-Chikkaballapura,"Anakanuru, P.S.Gopalakrishna",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.168,
-Chikkaballapura,"Anakanuru, A.C.Umesh And",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.168,
-Chikkaballapura,"Anakanuru, Royal City Layout",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.169,
+Chikkaballapura,"Anakanuru, P.S.Gopalakrishna",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.168,Anakanuru
+Chikkaballapura,"Anakanuru, A.C.Umesh And",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.168,Anakanuru
+Chikkaballapura,"Anakanuru, Royal City Layout",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.169,Anakanuru
 Chikkaballapura,Ankanagondhi,,village,Chikkaballapura,taluk,agricultural_land,,3800000,acre,Chikkaballapura SRO gazette p.169,
 Chikkaballapura,Ankanagondhi,,village,Chikkaballapura,taluk,plot,,8500,sqm,Chikkaballapura SRO gazette p.169,
 Chikkaballapura,Ankanagondhi,,village,Chikkaballapura,taluk,agricultural_land,,4180000,acre,Chikkaballapura SRO gazette p.169,
-Chikkaballapura,"Ankanagondhi, C.J.Rayappa",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.169,
-Chikkaballapura,"Ankanagondhi, Anjinamma",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.169,
+Chikkaballapura,"Ankanagondhi, C.J.Rayappa",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.169,"Ankanagondhi, (Potential Area"
+Chikkaballapura,"Ankanagondhi, Anjinamma",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.169,"Ankanagondhi, (Potential Area"
 Chikkaballapura,Arikere,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.169,
 Chikkaballapura,Arikere,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.169,
 Chikkaballapura,Angarekanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.169,
@@ -1001,9 +1001,9 @@ Chikkaballapura,Avalahalli,,village,Chikkaballapura,taluk,agricultural_land,,120
 Chikkaballapura,Avalahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.171,
 Chikkaballapura,Kanajenahalli,,village,Chikkaballapura,taluk,agricultural_land,,2800000,acre,Chikkaballapura SRO gazette p.171,
 Chikkaballapura,Kanajenahalli,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.171,
-Chikkaballapura,"Kanajenahalli, V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.172,
-Chikkaballapura,"Kanajenahalli, N.Srinivas",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.172,
-Chikkaballapura,"Kanajenahalli, M.V.Nanjappa",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.172,
+Chikkaballapura,"Kanajenahalli, V.R.Holdings",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.172,Kanajenahalli
+Chikkaballapura,"Kanajenahalli, N.Srinivas",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.172,Kanajenahalli
+Chikkaballapura,"Kanajenahalli, M.V.Nanjappa",,locality,Chikkaballapura,taluk,plot,,11000,sqm,Chikkaballapura SRO gazette p.172,Kanajenahalli
 Chikkaballapura,Kandavara Amanikere,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.172,
 Chikkaballapura,Kandavara Amanikere,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.172,
 Chikkaballapura,Kalavara,,village,Chikkaballapura,taluk,agricultural_land,,2000000,acre,Chikkaballapura SRO gazette p.172,
@@ -1020,18 +1020,18 @@ Chikkaballapura,Kariganapalya,,village,Chikkaballapura,taluk,agricultural_land,,
 Chikkaballapura,Kariganapalya,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.174,
 Chikkaballapura,Kathriguppe,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.175,
 Chikkaballapura,Kathriguppe,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.175,
-Chikkaballapura,"Kathriguppe, Sriram Godhuli",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.175,
+Chikkaballapura,"Kathriguppe, Sriram Godhuli",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.175,Kathriguppe
 Chikkaballapura,D.Kurubarahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.175,
 Chikkaballapura,D.Kurubarahalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.175,
 Chikkaballapura,Konegarahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.175,
 Chikkaballapura,Konegarahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.175,
-Chikkaballapura,"Konegarahalli, Arnald Edward",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.176,
+Chikkaballapura,"Konegarahalli, Arnald Edward",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.176,Konegarahalli
 Chikkaballapura,Ganganamidde,,village,Chikkaballapura,taluk,agricultural_land,,7400000,acre,Chikkaballapura SRO gazette p.176,
 Chikkaballapura,Ganganamidde,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.176,
 Chikkaballapura,Gerahalli,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.177,
 Chikkaballapura,Gerahalli,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.177,
-Chikkaballapura,"Gerahalli, Jagannath Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.177,
-Chikkaballapura,"Gerahalli, P.Nagaraj Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.177,
+Chikkaballapura,"Gerahalli, Jagannath Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.177,Gerahalli
+Chikkaballapura,"Gerahalli, P.Nagaraj Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.177,Gerahalli
 Chikkaballapura,Gundlagurki,,village,Chikkaballapura,taluk,agricultural_land,,1800000,acre,Chikkaballapura SRO gazette p.177,
 Chikkaballapura,Gundlagurki,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.177,
 Chikkaballapura,Golluchinnappanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.178,
@@ -1046,7 +1046,7 @@ Chikkaballapura,Gerumaradahalli,,village,Chikkaballapura,taluk,agricultural_land
 Chikkaballapura,Gerumaradahalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.179,
 Chikkaballapura,Gangarekaluve,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.179,
 Chikkaballapura,Gangarekaluve,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.179,
-Chikkaballapura,S California County Layout,,locality,Chikkaballapura,taluk,plot,,6500,sqm,Chikkaballapura SRO gazette p.180,
+Chikkaballapura,S California County Layout,,locality,Chikkaballapura,taluk,plot,,6500,sqm,Chikkaballapura SRO gazette p.180,Gangarekaluve
 Chikkaballapura,Gondhihalli,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.180,
 Chikkaballapura,Gondhihalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.180,
 Chikkaballapura,Golladoddi,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.180,
@@ -1059,12 +1059,12 @@ Chikkaballapura,Jadalathimmanahalli,,village,Chikkaballapura,taluk,agricultural_
 Chikkaballapura,Jadalathimmanahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.181,
 Chikkaballapura,Thippenahalli,,village,Chikkaballapura,taluk,agricultural_land,,3000000,acre,Chikkaballapura SRO gazette p.181,
 Chikkaballapura,Thippenahalli,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.181,
-Chikkaballapura,"Thippenahalli, M.Sriramulu",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.181,
+Chikkaballapura,"Thippenahalli, M.Sriramulu",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.181,Thippenahalli
 Chikkaballapura,Thandramaradahalli,,village,Chikkaballapura,taluk,agricultural_land,,2500000,acre,Chikkaballapura SRO gazette p.181,
 Chikkaballapura,Thandramaradahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.181,
-Chikkaballapura,"Thandramaradahalli, Bharath",,locality,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.181,
-Chikkaballapura,"Thandramaradahalli, Pragna",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.182,
-Chikkaballapura,"Thandramaradahalli, Icon",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.182,
+Chikkaballapura,"Thandramaradahalli, Bharath",,locality,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.181,Thandramaradahalli
+Chikkaballapura,"Thandramaradahalli, Pragna",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.182,Thandramaradahalli
+Chikkaballapura,"Thandramaradahalli, Icon",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.182,Thandramaradahalli
 Chikkaballapura,Doddathammanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.182,
 Chikkaballapura,Doddathammanahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.182,
 Chikkaballapura,Dibburu,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.182,
@@ -1083,7 +1083,7 @@ Chikkaballapura,Nallaguttapalya,,village,Chikkaballapura,taluk,agricultural_land
 Chikkaballapura,Nallaguttapalya,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.184,
 Chikkaballapura,Patrenahalli,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.185,
 Chikkaballapura,Patrenahalli,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.185,
-Chikkaballapura,"Patrenahalli, Umesh A.C",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.185,
+Chikkaballapura,"Patrenahalli, Umesh A.C",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.185,Patrenahalli
 Chikkaballapura,Pavandahalli,,village,Chikkaballapura,taluk,agricultural_land,,1500000,acre,Chikkaballapura SRO gazette p.185,
 Chikkaballapura,Pavandahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.185,
 Chikkaballapura,Puttathimmanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.185,
@@ -1094,27 +1094,27 @@ Chikkaballapura,Beeraganahalli,,village,Chikkaballapura,taluk,agricultural_land,
 Chikkaballapura,Beeraganahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.185,
 Chikkaballapura,Balagere,,village,Chikkaballapura,taluk,agricultural_land,,2800000,acre,Chikkaballapura SRO gazette p.186,
 Chikkaballapura,Balagere,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.186,
-Chikkaballapura,"Balagere, Narayana Murthy",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.186,
+Chikkaballapura,"Balagere, Narayana Murthy",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.186,Balagere
 Chikkaballapura,Bairojanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.186,
 Chikkaballapura,Bairojanahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.186,
 Chikkaballapura,Baiyappanahalli,,village,Chikkaballapura,taluk,agricultural_land,,2500000,acre,Chikkaballapura SRO gazette p.186,
 Chikkaballapura,Baiyappanahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.186,
-Chikkaballapura,"Baiyappanahalli, Concorde Hill Crest Layout",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.186,
+Chikkaballapura,"Baiyappanahalli, Concorde Hill Crest Layout",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.186,Baiyappanahalli
 Chikkaballapura,Bilvanagenahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.186,
 Chikkaballapura,Bilvanagenahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.186,
 Chikkaballapura,Buragamakalahalli,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.187,
 Chikkaballapura,Buragamakalahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.187,
 Chikkaballapura,Mogalukuppe,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.187,
 Chikkaballapura,Mogalukuppe,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.187,
-Chikkaballapura,"Mogalukuppe, N.Prakash",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.187,
+Chikkaballapura,"Mogalukuppe, N.Prakash",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.187,Mogalukuppe
 Chikkaballapura,Musturu,,village,Chikkaballapura,taluk,agricultural_land,,7000000,acre,Chikkaballapura SRO gazette p.187,
 Chikkaballapura,Musturu,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.187,
-Chikkaballapura,"Musturu, P.Nagaraj Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.188,
-Chikkaballapura,"Mustur, N.Bachegowda Layout",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.188,
-Chikkaballapura,"Mustur, Veerapparaju Layout",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.188,
-Chikkaballapura,"Mustur, C.J.Rayappa Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.188,
-Chikkaballapura,"Mustur, Maxwarth Realty",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.188,
-Chikkaballapura,"Mustur, Chandrashekar",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.188,
+Chikkaballapura,"Musturu, P.Nagaraj Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.188,Musturu
+Chikkaballapura,"Mustur, N.Bachegowda Layout",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.188,Musturu
+Chikkaballapura,"Mustur, Veerapparaju Layout",,locality,Chikkaballapura,taluk,plot,,17000,sqm,Chikkaballapura SRO gazette p.188,Musturu
+Chikkaballapura,"Mustur, C.J.Rayappa Layout",,locality,Chikkaballapura,taluk,plot,,15000,sqm,Chikkaballapura SRO gazette p.188,Musturu
+Chikkaballapura,"Mustur, Maxwarth Realty",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.188,Musturu
+Chikkaballapura,"Mustur, Chandrashekar",,locality,Chikkaballapura,taluk,plot,,16000,sqm,Chikkaballapura SRO gazette p.188,Musturu
 Chikkaballapura,Manchanabale,,village,Chikkaballapura,taluk,agricultural_land,,2500000,acre,Chikkaballapura SRO gazette p.188,
 Chikkaballapura,Manchanabale,,village,Chikkaballapura,taluk,plot,,7000,sqm,Chikkaballapura SRO gazette p.188,
 Chikkaballapura,Manchanabale Amanikere,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.189,
@@ -1131,7 +1131,7 @@ Chikkaballapura,Yalagere,,village,Chikkaballapura,taluk,agricultural_land,,15000
 Chikkaballapura,Yalagere,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.192,
 Chikkaballapura,Inaminchenahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.192,
 Chikkaballapura,Inaminchenahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.192,
-Chikkaballapura,"Inaminchenahalli, Nagireddy",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.192,
+Chikkaballapura,"Inaminchenahalli, Nagireddy",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.192,Inaminchenahalli
 Chikkaballapura,Ittappanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.192,
 Chikkaballapura,Ittappanahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.192,
 Chikkaballapura,Ethamakalahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.192,
@@ -1158,8 +1158,8 @@ Chikkaballapura,Shettivarahalli,,village,Chikkaballapura,taluk,agricultural_land
 Chikkaballapura,Shettivarahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.197,
 Chikkaballapura,Sabbenahalli,,village,Chikkaballapura,taluk,agricultural_land,,2500000,acre,Chikkaballapura SRO gazette p.197,
 Chikkaballapura,Sabbenahalli,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.197,
-Chikkaballapura,"Sabbenahalli, Narendraraju",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.198,
-Chikkaballapura,"Sabbenahalli, M.S.Sridhar",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.198,
+Chikkaballapura,"Sabbenahalli, Narendraraju",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.198,Sabbenahalli
+Chikkaballapura,"Sabbenahalli, M.S.Sridhar",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.198,Sabbenahalli
 Chikkaballapura,Sulakunte,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.198,
 Chikkaballapura,Sulakunte,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.198,
 Chikkaballapura,Soppahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.198,
@@ -1170,10 +1170,10 @@ Chikkaballapura,Honnenahalli,,village,Chikkaballapura,taluk,agricultural_land,,5
 Chikkaballapura,Honnenahalli,,village,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.199,
 Chikkaballapura,Hunegallu,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.199,
 Chikkaballapura,Hunegallu,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.199,
-Chikkaballapura,Sheshadri Nagara,,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.200,
+Chikkaballapura,Sheshadri Nagara,,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.200,Hunegallu
 Chikkaballapura,Harobande,,village,Chikkaballapura,taluk,agricultural_land,,4000000,acre,Chikkaballapura SRO gazette p.200,
 Chikkaballapura,Harobande,,village,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.200,
-Chikkaballapura,"Harobande, A.C.Nagraju",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.200,
+Chikkaballapura,"Harobande, A.C.Nagraju",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.200,Harobande
 Chikkaballapura,Hiriyannanahalli,,village,Chikkaballapura,taluk,agricultural_land,,1200000,acre,Chikkaballapura SRO gazette p.200,
 Chikkaballapura,Hiriyannanahalli,,village,Chikkaballapura,taluk,plot,,4500,sqm,Chikkaballapura SRO gazette p.200,
 Chikkaballapura,Doddapailagurki,,village,Chikkaballapura,taluk,agricultural_land,,2000000,acre,Chikkaballapura SRO gazette p.200,
@@ -1196,8 +1196,8 @@ Chikkaballapura,Kambalahalli.R,,village,Chikkaballapura,taluk,agricultural_land,
 Chikkaballapura,Kambalahalli.R,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.203,
 Chikkaballapura,Kakalachinthe,,village,Chikkaballapura,taluk,agricultural_land,,1000000,acre,Chikkaballapura SRO gazette p.203,
 Chikkaballapura,Kakalachinthe,,village,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.203,
-Chikkaballapura,"Kakalachinthe, Tefilla",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.204,
-Chikkaballapura,"Kakalachinthe, Manoj Kumar",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.204,
+Chikkaballapura,"Kakalachinthe, Tefilla",,locality,Chikkaballapura,taluk,plot,,12000,sqm,Chikkaballapura SRO gazette p.204,Kakalachinthe
+Chikkaballapura,"Kakalachinthe, Manoj Kumar",,locality,Chikkaballapura,taluk,plot,,13000,sqm,Chikkaballapura SRO gazette p.204,Kakalachinthe
 Chikkaballapura,Kommalamari,,village,Chikkaballapura,taluk,agricultural_land,,400000,acre,Chikkaballapura SRO gazette p.204,
 Chikkaballapura,Kommalamari,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.204,
 Chikkaballapura,Kammaguttahalli,,village,Chikkaballapura,taluk,agricultural_land,,800000,acre,Chikkaballapura SRO gazette p.204,
@@ -1210,7 +1210,7 @@ Chikkaballapura,Kethenahalli,,village,Chikkaballapura,taluk,agricultural_land,,4
 Chikkaballapura,Kethenahalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.205,
 Chikkaballapura,Kachakaditha,,village,Chikkaballapura,taluk,agricultural_land,,400000,acre,Chikkaballapura SRO gazette p.205,
 Chikkaballapura,Kachakaditha,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.205,
-Chikkaballapura,"Kachakaditha, M/S..Shara",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.205,
+Chikkaballapura,"Kachakaditha, M/S..Shara",,locality,Chikkaballapura,taluk,plot,,10000,sqm,Chikkaballapura SRO gazette p.205,Kachakaditha
 Chikkaballapura,Kurubarahalli.H,,village,Chikkaballapura,taluk,agricultural_land,,400000,acre,Chikkaballapura SRO gazette p.206,
 Chikkaballapura,Kurubarahalli.H,,village,Chikkaballapura,taluk,plot,,4200,sqm,Chikkaballapura SRO gazette p.206,
 Chikkaballapura,Karakamakalahalli,,village,Chikkaballapura,taluk,agricultural_land,,300000,acre,Chikkaballapura SRO gazette p.206,
@@ -1221,7 +1221,7 @@ Chikkaballapura,Kammaguttapalya,,village,Chikkaballapura,taluk,agricultural_land
 Chikkaballapura,Kammaguttapalya,,village,Chikkaballapura,taluk,plot,,4200,sqm,Chikkaballapura SRO gazette p.206,
 Chikkaballapura,Gundlamandikal,,village,Chikkaballapura,taluk,agricultural_land,,500000,acre,Chikkaballapura SRO gazette p.206,
 Chikkaballapura,Gundlamandikal,,village,Chikkaballapura,taluk,plot,,4400,sqm,Chikkaballapura SRO gazette p.206,
-Chikkaballapura,"Gundlamandikal, M.K.Sridhar",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.206,
+Chikkaballapura,"Gundlamandikal, M.K.Sridhar",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.206,Gundlamandikal
 Chikkaballapura,Gudisihalli,,village,Chikkaballapura,taluk,agricultural_land,,400000,acre,Chikkaballapura SRO gazette p.206,
 Chikkaballapura,Gudisihalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.206,
 Chikkaballapura,Gummalapura,,village,Chikkaballapura,taluk,agricultural_land,,400000,acre,Chikkaballapura SRO gazette p.207,
@@ -1234,8 +1234,8 @@ Chikkaballapura,R.Chokkanahalli,,village,Chikkaballapura,taluk,agricultural_land
 Chikkaballapura,R.Chokkanahalli,,village,Chikkaballapura,taluk,plot,,4400,sqm,Chikkaballapura SRO gazette p.207,
 Chikkaballapura,Chikkapailagurki,,village,Chikkaballapura,taluk,agricultural_land,,500000,acre,Chikkaballapura SRO gazette p.208,
 Chikkaballapura,Chikkapailagurki,,village,Chikkaballapura,taluk,plot,,4800,sqm,Chikkaballapura SRO gazette p.208,
-Chikkaballapura,"Chikkapailagurki, Ramesh",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.208,
-Chikkaballapura,"Chikkapailagurki, Meenakshi",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.208,
+Chikkaballapura,"Chikkapailagurki, Ramesh",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.208,Chikkapailagurki
+Chikkaballapura,"Chikkapailagurki, Meenakshi",,locality,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.208,Chikkapailagurki
 Chikkaballapura,Chikkanagavalli,,village,Chikkaballapura,taluk,agricultural_land,,900000,acre,Chikkaballapura SRO gazette p.208,
 Chikkaballapura,Chikkanagavalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.208,
 Chikkaballapura,Chikkanareppanahalli,,village,Chikkaballapura,taluk,agricultural_land,,300000,acre,Chikkaballapura SRO gazette p.208,
@@ -1302,8 +1302,8 @@ Chikkaballapura,Yarrabapanahalli,,village,Chikkaballapura,taluk,agricultural_lan
 Chikkaballapura,Yarrabapanahalli,,village,Chikkaballapura,taluk,plot,,4000,sqm,Chikkaballapura SRO gazette p.217,
 Chikkaballapura,Yalagalahalli,,village,Chikkaballapura,taluk,agricultural_land,,2500000,acre,Chikkaballapura SRO gazette p.217,
 Chikkaballapura,Yalagalahalli,,village,Chikkaballapura,taluk,plot,,6000,sqm,Chikkaballapura SRO gazette p.217,
-Chikkaballapura,"Yalagalahalli, Guruvindar",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.218,
-Chikkaballapura,"Yalagalahalli, Thejas K",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.218,
+Chikkaballapura,"Yalagalahalli, Guruvindar",,locality,Chikkaballapura,taluk,plot,,9000,sqm,Chikkaballapura SRO gazette p.218,Yalagalahalli
+Chikkaballapura,"Yalagalahalli, Thejas K",,locality,Chikkaballapura,taluk,plot,,8000,sqm,Chikkaballapura SRO gazette p.218,Yalagalahalli
 Chikkaballapura,Yarramarenahalli,,village,Chikkaballapura,taluk,agricultural_land,,500000,acre,Chikkaballapura SRO gazette p.218,
 Chikkaballapura,Yarramarenahalli,,village,Chikkaballapura,taluk,plot,,5000,sqm,Chikkaballapura SRO gazette p.218,
 Chikkaballapura,Ramapatna,,village,Chikkaballapura,taluk,agricultural_land,,500000,acre,Chikkaballapura SRO gazette p.219,
@@ -1926,7 +1926,7 @@ Chikkaballapura,Nallaguttahalli Village Side Survy,,village,Chintamani,taluk,agr
 Chikkaballapura,Nallaguttahalli MDR Attached Sy,,village,Chintamani,taluk,agricultural_land,,1100000,acre,Chintamani SRO gazette p.175,
 Chikkaballapura,Santheykallhalli,,village,Chintamani,taluk,agricultural_land,,2200000,acre,Chintamani SRO gazette p.175,
 Chikkaballapura,Santheykallhalli,,village,Chintamani,taluk,plot,,7000,sqm,Chintamani SRO gazette p.175,
-Chikkaballapura,Hemadri Eagle View Layout,,locality,Chintamani,taluk,plot,,8000,sqm,Chintamani SRO gazette p.176,
+Chikkaballapura,Hemadri Eagle View Layout,,locality,Chintamani,taluk,plot,,8000,sqm,Chintamani SRO gazette p.176,Santheykallhalli
 Chikkaballapura,Bachappanahalli,,village,Chintamani,taluk,agricultural_land,,1200000,acre,Chintamani SRO gazette p.176,
 Chikkaballapura,Bachappanahalli,,village,Chintamani,taluk,plot,,5500,sqm,Chintamani SRO gazette p.176,
 Chikkaballapura,Bachappanhalli Village Side Survy,,village,Chintamani,taluk,agricultural_land,,1500000,acre,Chintamani SRO gazette p.176,
@@ -1979,12 +1979,12 @@ Chikkaballapura,Tippenahalli,,village,Chintamani,taluk,agricultural_land,,400000
 Chikkaballapura,Tippenahalli,,village,Chintamani,taluk,plot,,3500,sqm,Chintamani SRO gazette p.181,
 Chikkaballapura,Konapalli,,village,Chintamani,taluk,agricultural_land,,1500000,acre,Chintamani SRO gazette p.181,
 Chikkaballapura,Konapalli,,village,Chintamani,taluk,plot,,8000,sqm,Chintamani SRO gazette p.181,
-Chikkaballapura,V.R. Properties,,locality,Chintamani,taluk,plot,,9000,sqm,Chintamani SRO gazette p.182,
+Chikkaballapura,V.R. Properties,,locality,Chintamani,taluk,plot,,9000,sqm,Chintamani SRO gazette p.182,Konapalli
 Chikkaballapura,Thimmasandra,,village,Chintamani,taluk,agricultural_land,,4500000,acre,Chintamani SRO gazette p.182,
 Chikkaballapura,Thimmasandra,,village,Chintamani,taluk,plot,,4500,sqm,Chintamani SRO gazette p.182,
 Chikkaballapura,Nayanahalli,,village,Chintamani,taluk,agricultural_land,,800000,acre,Chintamani SRO gazette p.183,
 Chikkaballapura,Nayanahalli,,village,Chintamani,taluk,plot,,5000,sqm,Chintamani SRO gazette p.183,
-Chikkaballapura,V.R. Properties,,locality,Chintamani,taluk,plot,,6000,sqm,Chintamani SRO gazette p.183,
+Chikkaballapura,V.R. Properties,,locality,Chintamani,taluk,plot,,6000,sqm,Chintamani SRO gazette p.183,Nayanahalli
 Chikkaballapura,Nayanahalli Village Side Survy Nos,,village,Chintamani,taluk,agricultural_land,,1200000,acre,Chintamani SRO gazette p.183,
 Chikkaballapura,Chokkahalli,,village,Chintamani,taluk,agricultural_land,,600000,acre,Chintamani SRO gazette p.183,
 Chikkaballapura,Chokkahalli,,village,Chintamani,taluk,plot,,5000,sqm,Chintamani SRO gazette p.183,
@@ -2860,19 +2860,19 @@ Chikkaballapura,Kalludi Village Ground,,village,Gauribidanur,taluk,agricultural_
 Chikkaballapura,Kalludi - Gowribidanur,,village,Gauribidanur,taluk,agricultural_land,,2200000,acre,Gauribidanur SRO gazette p.87,
 Chikkaballapura,Kalludi,,village,Gauribidanur,taluk,agricultural_land,,2000000,acre,Gauribidanur SRO gazette p.87,
 Chikkaballapura,Kalludi Residentcial,,village,Gauribidanur,taluk,agricultural_land,,2200000,acre,Gauribidanur SRO gazette p.87,
-Chikkaballapura,Dr// H N Green city,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.89,
-Chikkaballapura,KCNLayout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.89,
+Chikkaballapura,Dr// H N Green city,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.89,Kalludi Residentcial
+Chikkaballapura,KCNLayout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.89,Kalludi Residentcial
 Chikkaballapura,Konganahalli,,village,Gauribidanur,taluk,agricultural_land,,600000,acre,Gauribidanur SRO gazette p.89,
 Chikkaballapura,Konganahalli,,village,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.89,
 Chikkaballapura,Kudamala Kunte,,village,Gauribidanur,taluk,agricultural_land,,1400000,acre,Gauribidanur SRO gazette p.89,
 Chikkaballapura,Kudamala Kunte,,village,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.89,
-Chikkaballapura,A.R Aswathappa Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.89,
-Chikkaballapura,Subhadramma Layout Sy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.89,
-Chikkaballapura,Ranganath Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.90,
-Chikkaballapura,Baba Fuqurdeen,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.90,
-Chikkaballapura,Huseen Sab And Other,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.90,
+Chikkaballapura,A.R Aswathappa Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.89,Kudamala Kunte
+Chikkaballapura,Subhadramma Layout Sy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.89,Kudamala Kunte
+Chikkaballapura,Ranganath Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.90,Kudamala Kunte
+Chikkaballapura,Baba Fuqurdeen,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.90,Kudamala Kunte
+Chikkaballapura,Huseen Sab And Other,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.90,Kudamala Kunte
 Chikkaballapura,Kudamalakunte ( S H-09 ),,village,Gauribidanur,taluk,agricultural_land,,2200000,acre,Gauribidanur SRO gazette p.90,
-Chikkaballapura,Kudamalakunte,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.90,
+Chikkaballapura,Kudamalakunte,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.90,Kudamalakunte ( S H-09 )
 Chikkaballapura,Kudamalakunte Grama,,village,Gauribidanur,taluk,agricultural_land,,1500000,acre,Gauribidanur SRO gazette p.90,
 Chikkaballapura,Kudamalakunte- TO-B H,,village,Gauribidanur,taluk,agricultural_land,,1500000,acre,Gauribidanur SRO gazette p.90,
 Chikkaballapura,Kudamalakunte--TO,,village,Gauribidanur,taluk,agricultural_land,,1500000,acre,Gauribidanur SRO gazette p.90,
@@ -2907,9 +2907,9 @@ Chikkaballapura,Gowdasandra,,village,Gauribidanur,taluk,agricultural_land,,90000
 Chikkaballapura,Gowdasandra,,village,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.97,
 Chikkaballapura,Gowadasandra Grama,,village,Gauribidanur,taluk,agricultural_land,,1000000,acre,Gauribidanur SRO gazette p.97,
 Chikkaballapura,Gowdasandra,,village,Gauribidanur,taluk,agricultural_land,,1200000,acre,Gauribidanur SRO gazette p.97,
-Chikkaballapura,Gowadasandra Ham India,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.97,
-Chikkaballapura,Jayalakshmamma,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.97,
-Chikkaballapura,Mahalakshmi Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.97,
+Chikkaballapura,Gowadasandra Ham India,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.97,Gowdasandra (Districct
+Chikkaballapura,Jayalakshmamma,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.97,Gowdasandra (Districct
+Chikkaballapura,Mahalakshmi Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.97,Gowdasandra (Districct
 Chikkaballapura,Gundapura,,village,Gauribidanur,taluk,agricultural_land,,2500000,acre,Gauribidanur SRO gazette p.97,
 Chikkaballapura,Gundapura Grama Tana,,village,Gauribidanur,taluk,agricultural_land,,3000000,acre,Gauribidanur SRO gazette p.97,
 Chikkaballapura,Gundapura,,village,Gauribidanur,taluk,agricultural_land,,3500000,acre,Gauribidanur SRO gazette p.98,
@@ -2922,8 +2922,8 @@ Chikkaballapura,Chikkakurugodu,,village,Gauribidanur,taluk,plot,,4000,sqm,Gaurib
 Chikkaballapura,Chikkakurugodu Grama,,village,Gauribidanur,taluk,agricultural_land,,1700000,acre,Gauribidanur SRO gazette p.99,
 Chikkaballapura,Chikkakurugodu (S H -09),,village,Gauribidanur,taluk,agricultural_land,,2200000,acre,Gauribidanur SRO gazette p.99,
 Chikkaballapura,Chikkakurugodu,,village,Gauribidanur,taluk,agricultural_land,,1800000,acre,Gauribidanur SRO gazette p.100,
-Chikkaballapura,San City Layout Sy,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.100,
-Chikkaballapura,Maruthi Sandal City,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.100,
+Chikkaballapura,San City Layout Sy,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.100,Chikkakurugodu (District
+Chikkaballapura,Maruthi Sandal City,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.100,Chikkakurugodu (District
 Chikkaballapura,Chandanduru,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.100,
 Chikkaballapura,Chandanduru,,village,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.100,
 Chikkaballapura,Chandanduru Grama Tana,,village,Gauribidanur,taluk,agricultural_land,,1000000,acre,Gauribidanur SRO gazette p.100,
@@ -2934,15 +2934,15 @@ Chikkaballapura,Dodda Kurugodu,,village,Gauribidanur,taluk,agricultural_land,,12
 Chikkaballapura,Dodda Kurugodu,,village,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.100,
 Chikkaballapura,Dodda Kurugodu Grama,,village,Gauribidanur,taluk,agricultural_land,,1300000,acre,Gauribidanur SRO gazette p.100,
 Chikkaballapura,Dodda Kurugodu,,village,Gauribidanur,taluk,agricultural_land,,1700000,acre,Gauribidanur SRO gazette p.101,
-Chikkaballapura,A.B.S. Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.101,
-Chikkaballapura,A.N.S Chiathanya Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.101,
-Chikkaballapura,Gangadharaia Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.101,
+Chikkaballapura,A.B.S. Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.101,Dodda Kurugodu (District
+Chikkaballapura,A.N.S Chiathanya Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.101,Dodda Kurugodu (District
+Chikkaballapura,Gangadharaia Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.101,Dodda Kurugodu (District
 Chikkaballapura,Doddakurugodu ( S H -09),,village,Gauribidanur,taluk,agricultural_land,,2200000,acre,Gauribidanur SRO gazette p.101,
 Chikkaballapura,Devarahosahalli,,village,Gauribidanur,taluk,agricultural_land,,2000000,acre,Gauribidanur SRO gazette p.101,
 Chikkaballapura,Devarahosahalli,,village,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.101,
 Chikkaballapura,Devarahosahalli,,village,Gauribidanur,taluk,agricultural_land,,3000000,acre,Gauribidanur SRO gazette p.102,
-Chikkaballapura,M.N.S. Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.102,
-Chikkaballapura,Sai Nagara Layout Sy,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.102,
+Chikkaballapura,M.N.S. Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.102,Devarahosahalli ( S H
+Chikkaballapura,Sai Nagara Layout Sy,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.102,Devarahosahalli ( S H
 Chikkaballapura,Devaganahalli,,village,Gauribidanur,taluk,agricultural_land,,700000,acre,Gauribidanur SRO gazette p.102,
 Chikkaballapura,Devaganahalli,,village,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.102,
 Chikkaballapura,Devaganahalli Grama,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.102,
@@ -2981,7 +2981,7 @@ Chikkaballapura,Maraluru,,village,Gauribidanur,taluk,agricultural_land,,1300000,
 Chikkaballapura,Maraluru,,village,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.107,
 Chikkaballapura,MaraluruGrama Tana Limt,,village,Gauribidanur,taluk,agricultural_land,,1500000,acre,Gauribidanur SRO gazette p.107,
 Chikkaballapura,Maraluru,,village,Gauribidanur,taluk,agricultural_land,,1600000,acre,Gauribidanur SRO gazette p.107,
-Chikkaballapura,Skanda Layuot,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.107,
+Chikkaballapura,Skanda Layuot,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.107,Maraluru- (District Major
 Chikkaballapura,Mittenahalli,,village,Gauribidanur,taluk,agricultural_land,,2400000,acre,Gauribidanur SRO gazette p.107,
 Chikkaballapura,Mittenahalli,,village,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.107,
 Chikkaballapura,Mittenahalli ( S H - 09 ),,village,Gauribidanur,taluk,agricultural_land,,3300000,acre,Gauribidanur SRO gazette p.107,
@@ -3000,10 +3000,10 @@ Chikkaballapura,Yarrahalli,,village,Gauribidanur,taluk,agricultural_land,,120000
 Chikkaballapura,Yarrahalli,,village,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.110,
 Chikkaballapura,Yarahalli Grama Tana,,village,Gauribidanur,taluk,agricultural_land,,1400000,acre,Gauribidanur SRO gazette p.110,
 Chikkaballapura,Yarahalli,,village,Gauribidanur,taluk,agricultural_land,,1600000,acre,Gauribidanur SRO gazette p.110,
-Chikkaballapura,Selvaraju LayoutSy,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.110,
-Chikkaballapura,Alpthp Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.110,
-Chikkaballapura,Vanajakshi Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.110,
-Chikkaballapura,Lilavathi Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.110,
+Chikkaballapura,Selvaraju LayoutSy,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.110,Yarahalli
+Chikkaballapura,Alpthp Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.110,Yarahalli
+Chikkaballapura,Vanajakshi Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.110,Yarahalli
+Chikkaballapura,Lilavathi Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.110,Yarahalli
 Chikkaballapura,Yarahalli ( S H-234),,village,Gauribidanur,taluk,agricultural_land,,2000000,acre,Gauribidanur SRO gazette p.110,
 Chikkaballapura,Yarahalli,,village,Gauribidanur,taluk,agricultural_land,,1600000,acre,Gauribidanur SRO gazette p.110,
 Chikkaballapura,Ramachandrapura,,village,Gauribidanur,taluk,agricultural_land,,1000000,acre,Gauribidanur SRO gazette p.110,
@@ -3019,7 +3019,7 @@ Chikkaballapura,Vychakurlahalli Grama,,village,Gauribidanur,taluk,agricultural_l
 Chikkaballapura,Vychakurlahalli,,village,Gauribidanur,taluk,agricultural_land,,1200000,acre,Gauribidanur SRO gazette p.112,
 Chikkaballapura,Vedalaveni,,village,Gauribidanur,taluk,agricultural_land,,1500000,acre,Gauribidanur SRO gazette p.113,
 Chikkaballapura,Vedalaveni Grama Tana,,village,Gauribidanur,taluk,agricultural_land,,2500000,acre,Gauribidanur SRO gazette p.113,
-Chikkaballapura,Anjnadri Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.113,
+Chikkaballapura,Anjnadri Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.113,Vedalaveni Grama Tana
 Chikkaballapura,Vedalaveni ( S H-09),,village,Gauribidanur,taluk,agricultural_land,,3000000,acre,Gauribidanur SRO gazette p.113,
 Chikkaballapura,Vedalaveni,,village,Gauribidanur,taluk,agricultural_land,,2600000,acre,Gauribidanur SRO gazette p.113,
 Chikkaballapura,Uchodanahalli,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.113,
@@ -3052,7 +3052,7 @@ Chikkaballapura,KurugoduThammanahalli,,village,Gauribidanur,taluk,plot,,3500,sqm
 Chikkaballapura,Kadaranahalli,,village,Gauribidanur,taluk,agricultural_land,,600000,acre,Gauribidanur SRO gazette p.118,
 Chikkaballapura,Kadaranahalli,,village,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.118,
 Chikkaballapura,Kadaranahalli Village,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.118,
-Chikkaballapura,Scan City Layout,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.118,
+Chikkaballapura,Scan City Layout,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.118,Kadaranahalli Village
 Chikkaballapura,Konaganahalli,,village,Gauribidanur,taluk,agricultural_land,,600000,acre,Gauribidanur SRO gazette p.118,
 Chikkaballapura,Konaganahalli,,village,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.118,
 Chikkaballapura,Konaganahalli Grama,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.118,
@@ -3094,7 +3094,7 @@ Chikkaballapura,Gedare,,village,Gauribidanur,taluk,agricultural_land,,700000,acr
 Chikkaballapura,Gedare,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.122,
 Chikkaballapura,Gedere Grama Tana Limt,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.122,
 Chikkaballapura,Gedare,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.122,
-Chikkaballapura,Veerbhdraiah Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.122,
+Chikkaballapura,Veerbhdraiah Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.122,Gedare (District Major
 Chikkaballapura,Guruppanahalli,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.122,
 Chikkaballapura,Guruppanahalli,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.122,
 Chikkaballapura,Guruppanahalli Grama,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.122,
@@ -3108,7 +3108,7 @@ Chikkaballapura,Dronakunte Grama Tana,,village,Gauribidanur,taluk,agricultural_l
 Chikkaballapura,Dinamagattanahalli,,village,Gauribidanur,taluk,agricultural_land,,600000,acre,Gauribidanur SRO gazette p.123,
 Chikkaballapura,Dinamagattanahalli,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.123,
 Chikkaballapura,Dinamaghattanahalli,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.123,
-Chikkaballapura,Lakshmipathi Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.123,
+Chikkaballapura,Lakshmipathi Layout,,locality,Gauribidanur,taluk,plot,,4200,sqm,Gauribidanur SRO gazette p.123,Dinamaghattanahalli
 Chikkaballapura,Narasimhanahalli,,village,Gauribidanur,taluk,agricultural_land,,500000,acre,Gauribidanur SRO gazette p.123,
 Chikkaballapura,Narasimhanahalli,,village,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.123,
 Chikkaballapura,Naduvalahalli,,village,Gauribidanur,taluk,agricultural_land,,500000,acre,Gauribidanur SRO gazette p.124,
@@ -3151,7 +3151,7 @@ Chikkaballapura,Ranganahalli,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribid
 Chikkaballapura,Rnganahalli Grama Tana,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.127,
 Chikkaballapura,Singanahalli,,village,Gauribidanur,taluk,agricultural_land,,500000,acre,Gauribidanur SRO gazette p.127,
 Chikkaballapura,Singanahalli,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.127,
-Chikkaballapura,Singanahalli Ashraya,,locality,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.127,
+Chikkaballapura,Singanahalli Ashraya,,locality,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.127,Singanahalli
 Chikkaballapura,Shinganahalli,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.127,
 Chikkaballapura,Sonaganahalli,,village,Gauribidanur,taluk,agricultural_land,,500000,acre,Gauribidanur SRO gazette p.128,
 Chikkaballapura,Sonaganahalli,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.128,
@@ -3167,7 +3167,7 @@ Chikkaballapura,Somashettihalli -Hossuru,,village,Gauribidanur,taluk,agricultura
 Chikkaballapura,Somashettihalli,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.129,
 Chikkaballapura,Hossuru,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.129,
 Chikkaballapura,Hossuru,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.129,
-Chikkaballapura,Hossuru Majara,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.129,
+Chikkaballapura,Hossuru Majara,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.129,Hossuru
 Chikkaballapura,Hossuru Grama Tana Limt,,village,Gauribidanur,taluk,agricultural_land,,1200000,acre,Gauribidanur SRO gazette p.129,
 Chikkaballapura,Hossuru,,village,Gauribidanur,taluk,agricultural_land,,1600000,acre,Gauribidanur SRO gazette p.130,
 Chikkaballapura,Hosuru,,village,Gauribidanur,taluk,agricultural_land,,1600000,acre,Gauribidanur SRO gazette p.130,
@@ -3194,8 +3194,8 @@ Chikkaballapura,Alkapura,,village,Gauribidanur,taluk,agricultural_land,,1200000,
 Chikkaballapura,Alkapura,,village,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.132,
 Chikkaballapura,Alkapura Grama Tana,,village,Gauribidanur,taluk,agricultural_land,,1600000,acre,Gauribidanur SRO gazette p.132,
 Chikkaballapura,Alkapura Village,,village,Gauribidanur,taluk,agricultural_land,,1600000,acre,Gauribidanur SRO gazette p.133,
-Chikkaballapura,Alkapura Asrya Badavane,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.133,
-Chikkaballapura,Prashnthareddy Layout,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.133,
+Chikkaballapura,Alkapura Asrya Badavane,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.133,Alkapura Village
+Chikkaballapura,Prashnthareddy Layout,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.133,Alkapura Village
 Chikkaballapura,Alkapura,,village,Gauribidanur,taluk,agricultural_land,,2000000,acre,Gauribidanur SRO gazette p.133,
 Chikkaballapura,Alkapura (S H-09 ),,village,Gauribidanur,taluk,agricultural_land,,2500000,acre,Gauribidanur SRO gazette p.133,
 Chikkaballapura,Agrahara Hossahalli,,village,Gauribidanur,taluk,agricultural_land,,700000,acre,Gauribidanur SRO gazette p.133,
@@ -3206,7 +3206,7 @@ Chikkaballapura,Allipur,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur 
 Chikkaballapura,Allipur Village Grama,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.134,
 Chikkaballapura,Allipur- ( S H-94),,village,Gauribidanur,taluk,agricultural_land,,1800000,acre,Gauribidanur SRO gazette p.134,
 Chikkaballapura,Alipura,,village,Gauribidanur,taluk,agricultural_land,,1000000,acre,Gauribidanur SRO gazette p.134,
-Chikkaballapura,Allipur Village Jayn,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.134,
+Chikkaballapura,Allipur Village Jayn,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.134,Alipura (District Major
 Chikkaballapura,Kallinayakanahalli,,village,Gauribidanur,taluk,agricultural_land,,440000,acre,Gauribidanur SRO gazette p.134,
 Chikkaballapura,Kallinayakanahalli,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.134,
 Chikkaballapura,Kallinayakanahalli (S H - 09),,village,Gauribidanur,taluk,agricultural_land,,1160000,acre,Gauribidanur SRO gazette p.135,
@@ -3243,8 +3243,8 @@ Chikkaballapura,Thondebhavi,,village,Gauribidanur,taluk,agricultural_land,,15000
 Chikkaballapura,Thondebhavi,,village,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.137,
 Chikkaballapura,Thondebhavi Grama Tana,,village,Gauribidanur,taluk,agricultural_land,,1700000,acre,Gauribidanur SRO gazette p.137,
 Chikkaballapura,Thodebhavi,,village,Gauribidanur,taluk,agricultural_land,,2000000,acre,Gauribidanur SRO gazette p.138,
-Chikkaballapura,Thondebhavi Railway,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.138,
-Chikkaballapura,Sharavathi Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.138,
+Chikkaballapura,Thondebhavi Railway,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.138,Thondebhavi
+Chikkaballapura,Sharavathi Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.138,Thondebhavi
 Chikkaballapura,Thondebhavi BHRaod,,village,Gauribidanur,taluk,agricultural_land,,3000000,acre,Gauribidanur SRO gazette p.138,
 Chikkaballapura,Thimmenahalli,,village,Gauribidanur,taluk,agricultural_land,,600000,acre,Gauribidanur SRO gazette p.138,
 Chikkaballapura,Thimmenahalli,,village,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.138,
@@ -3270,7 +3270,7 @@ Chikkaballapura,Dasarahalli,,village,Gauribidanur,taluk,plot,,3000,sqm,Gauribida
 Chikkaballapura,Nandiganhalli,,village,Gauribidanur,taluk,agricultural_land,,700000,acre,Gauribidanur SRO gazette p.140,
 Chikkaballapura,Nandiganhalli,,village,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.140,
 Chikkaballapura,Nandiganhalli Grama,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.140,
-Chikkaballapura,Nandiganahalli Asrya,,locality,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.140,
+Chikkaballapura,Nandiganahalli Asrya,,locality,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.140,Nandiganhalli Grama
 Chikkaballapura,Nachakunte,,village,Gauribidanur,taluk,agricultural_land,,600000,acre,Gauribidanur SRO gazette p.140,
 Chikkaballapura,Nachakunte,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.140,
 Chikkaballapura,Nachakunte Grama Tana,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.140,
@@ -3286,7 +3286,7 @@ Chikkaballapura,Pothenahalli,,village,Gauribidanur,taluk,agricultural_land,,1400
 Chikkaballapura,Pothenahalli,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.140,
 Chikkaballapura,Pothenahalli (S H-09 ),,village,Gauribidanur,taluk,agricultural_land,,2300000,acre,Gauribidanur SRO gazette p.140,
 Chikkaballapura,Pothenahalli,,village,Gauribidanur,taluk,agricultural_land,,1500000,acre,Gauribidanur SRO gazette p.141,
-Chikkaballapura,Pothenahalli Village jain,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.141,
+Chikkaballapura,Pothenahalli Village jain,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.141,Pothenahalli (District
 Chikkaballapura,Pinjarlahalli,,village,Gauribidanur,taluk,agricultural_land,,600000,acre,Gauribidanur SRO gazette p.141,
 Chikkaballapura,Pinjarlahalli,,village,Gauribidanur,taluk,plot,,3000,sqm,Gauribidanur SRO gazette p.141,
 Chikkaballapura,Pulaganahalli,,village,Gauribidanur,taluk,agricultural_land,,600000,acre,Gauribidanur SRO gazette p.141,
@@ -3315,9 +3315,9 @@ Chikkaballapura,G Bommasandra,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribi
 Chikkaballapura,G Bommasandra Grama,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.143,
 Chikkaballapura,G Bommasandra Village,,village,Gauribidanur,taluk,agricultural_land,,1000000,acre,Gauribidanur SRO gazette p.143,
 Chikkaballapura,G Bommasandra,,village,Gauribidanur,taluk,agricultural_land,,1000000,acre,Gauribidanur SRO gazette p.143,
-Chikkaballapura,Happy Developers Layout,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.143,
-Chikkaballapura,Anjani Layout,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.143,
-Chikkaballapura,Someswara Layout,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.143,
+Chikkaballapura,Happy Developers Layout,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.143,G Bommasandra (District
+Chikkaballapura,Anjani Layout,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.143,G Bommasandra (District
+Chikkaballapura,Someswara Layout,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.143,G Bommasandra (District
 Chikkaballapura,Basavanahalli,,village,Gauribidanur,taluk,agricultural_land,,310000,acre,Gauribidanur SRO gazette p.143,
 Chikkaballapura,Basavanahalli,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.143,
 Chikkaballapura,Basavanahalli Grama,,village,Gauribidanur,taluk,agricultural_land,,340000,acre,Gauribidanur SRO gazette p.144,
@@ -3470,8 +3470,8 @@ Chikkaballapura,Namagondlu,,village,Gauribidanur,taluk,agricultural_land,,320000
 Chikkaballapura,Namagondlu,,village,Gauribidanur,taluk,agricultural_land,,350000,acre,Gauribidanur SRO gazette p.154,
 Chikkaballapura,Huduguru,,village,Gauribidanur,taluk,agricultural_land,,1200000,acre,Gauribidanur SRO gazette p.154,
 Chikkaballapura,Huduguru,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.154,
-Chikkaballapura,Paramount Nityostava,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.154,
-Chikkaballapura,Srini Project,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.155,
+Chikkaballapura,Paramount Nityostava,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.154,Huduguru
+Chikkaballapura,Srini Project,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.155,Huduguru
 Chikkaballapura,Huduguru,,village,Gauribidanur,taluk,agricultural_land,,2000000,acre,Gauribidanur SRO gazette p.155,
 Chikkaballapura,Huduguru ( MDR-6),,village,Gauribidanur,taluk,agricultural_land,,1600000,acre,Gauribidanur SRO gazette p.155,
 Chikkaballapura,Huduguru ( MDR-16),,village,Gauribidanur,taluk,agricultural_land,,1600000,acre,Gauribidanur SRO gazette p.155,
@@ -3561,7 +3561,7 @@ Chikkaballapura,Nagarabhavi,,village,Gauribidanur,taluk,agricultural_land,,80000
 Chikkaballapura,Nagarabhavi,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.162,
 Chikkaballapura,Nagarabhavi Grama Tana,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.162,
 Chikkaballapura,Nagarabhavi,,village,Gauribidanur,taluk,agricultural_land,,1000000,acre,Gauribidanur SRO gazette p.162,
-Chikkaballapura,N D Ravi Layout,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.162,
+Chikkaballapura,N D Ravi Layout,,locality,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.162,Nagarabhavi (Districct
 Chikkaballapura,Pura,,village,Gauribidanur,taluk,agricultural_land,,1200000,acre,Gauribidanur SRO gazette p.162,
 Chikkaballapura,Pura,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.162,
 Chikkaballapura,Pidichalahalli,,village,Gauribidanur,taluk,agricultural_land,,700000,acre,Gauribidanur SRO gazette p.162,
@@ -3580,7 +3580,7 @@ Chikkaballapura,Budagathamannahalli,,village,Gauribidanur,taluk,plot,,3000,sqm,G
 Chikkaballapura,Beeramangala,,village,Gauribidanur,taluk,agricultural_land,,800000,acre,Gauribidanur SRO gazette p.164,
 Chikkaballapura,Beeramangala,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.164,
 Chikkaballapura,Beeramangala Grama,,village,Gauribidanur,taluk,agricultural_land,,1200000,acre,Gauribidanur SRO gazette p.164,
-Chikkaballapura,Beeramangala Village,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.164,
+Chikkaballapura,Beeramangala Village,,locality,Gauribidanur,taluk,plot,,4000,sqm,Gauribidanur SRO gazette p.164,Beeramangala Grama
 Chikkaballapura,Bhumanahalli,,village,Gauribidanur,taluk,agricultural_land,,700000,acre,Gauribidanur SRO gazette p.164,
 Chikkaballapura,Bhumanahalli,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.164,
 Chikkaballapura,Bhumanahalli Grama,,village,Gauribidanur,taluk,agricultural_land,,900000,acre,Gauribidanur SRO gazette p.164,
@@ -3593,19 +3593,19 @@ Chikkaballapura,M Nagenahalli Grama,,village,Gauribidanur,taluk,agricultural_lan
 Chikkaballapura,Manchenahalli,,village,Gauribidanur,taluk,agricultural_land,,530000,acre,Gauribidanur SRO gazette p.165,
 Chikkaballapura,Manchenahalli,,village,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.165,
 Chikkaballapura,Manchenahalli,,village,Gauribidanur,taluk,agricultural_land,,1000000,acre,Gauribidanur SRO gazette p.165,
-Chikkaballapura,Vigneswara Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.165,
-Chikkaballapura,M.P Mallaiah Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,Shafi Ujama Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,Someswara LayoutSy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,Eswara Viswanatha,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,Madhu Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,M.S.Suresh LayoutSy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,M.N. GuruShankaraiah,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,G.V. Krrishnamurthy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,Ravishankareddy And,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,Prasannakumar Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,K.S.Rajashekarareddy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
-Chikkaballapura,Somaiah Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,
+Chikkaballapura,Vigneswara Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.165,Manchenahalli( State
+Chikkaballapura,M.P Mallaiah Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,Shafi Ujama Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,Someswara LayoutSy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,Eswara Viswanatha,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,Madhu Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,M.S.Suresh LayoutSy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,M.N. GuruShankaraiah,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,G.V. Krrishnamurthy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,Ravishankareddy And,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,Prasannakumar Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,K.S.Rajashekarareddy,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
+Chikkaballapura,Somaiah Layout,,locality,Gauribidanur,taluk,plot,,4500,sqm,Gauribidanur SRO gazette p.166,Manchenahalli( State
 Chikkaballapura,Minakanagurki,,village,Gauribidanur,taluk,agricultural_land,,280000,acre,Gauribidanur SRO gazette p.166,
 Chikkaballapura,Minakanagurki,,village,Gauribidanur,taluk,plot,,3500,sqm,Gauribidanur SRO gazette p.166,
 Chikkaballapura,Minakanagurki Grama,,village,Gauribidanur,taluk,agricultural_land,,310000,acre,Gauribidanur SRO gazette p.166,
@@ -3907,24 +3907,24 @@ Chikkaballapura,Kataigarahalli,,village,Gudibande,taluk,agricultural_land,,40000
 Chikkaballapura,Kataigarahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.31,
 Chikkaballapura,Kanthrlahalli,,village,Gudibande,taluk,agricultural_land,,700000,acre,Gudibande SRO gazette p.31,
 Chikkaballapura,Kanthrlahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.31,
-Chikkaballapura,Kanthrlahalli Venkatareddy layout,,locality,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.32,
-Chikkaballapura,Kanthrlahalli Suresh layout,,locality,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.32,
+Chikkaballapura,Kanthrlahalli Venkatareddy layout,,locality,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.32,kanthrlahalli
+Chikkaballapura,Kanthrlahalli Suresh layout,,locality,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.32,kanthrlahalli
 Chikkaballapura,Kadenahalli Dinne,,village,Gudibande,taluk,agricultural_land,,1200000,acre,Gudibande SRO gazette p.32,
 Chikkaballapura,Kadenahalli Dinne,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.32,
-Chikkaballapura,Kadenahalli Dinne D.N. Nagireddy California Holiday Village,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.32,
-Chikkaballapura,Kadenahalli Dinne NanjundaLayout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.32,
-Chikkaballapura,Kadenahalli Dinne M/S vsan infrastructure pvt ltd Layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.32,
-Chikkaballapura,Kadenahalli Dinne Sri Lakshminaryanashetty layout (Sy no16/3),,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.32,
+Chikkaballapura,Kadenahalli Dinne D.N. Nagireddy California Holiday Village,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.32,Kadenahalli Dinne
+Chikkaballapura,Kadenahalli Dinne NanjundaLayout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.32,Kadenahalli Dinne
+Chikkaballapura,Kadenahalli Dinne M/S vsan infrastructure pvt ltd Layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.32,Kadenahalli Dinne
+Chikkaballapura,Kadenahalli Dinne Sri Lakshminaryanashetty layout (Sy no16/3),,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.32,Kadenahalli Dinne
 Chikkaballapura,Kondavalahalli,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.32,
 Chikkaballapura,Kondavalahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.32,
 Chikkaballapura,Kondareddyhalli,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.33,
 Chikkaballapura,Kondareddyhalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.33,
 Chikkaballapura,Rural Gudibande,,village,Gudibande,taluk,agricultural_land,,1500000,acre,Gudibande SRO gazette p.33,
 Chikkaballapura,Rural Gudibande,,village,Gudibande,taluk,plot,,8000,sqm,Gudibande SRO gazette p.33,
-Chikkaballapura,Rural Gudibande N. Subramanyam layout,,locality,Gudibande,taluk,plot,,8000,sqm,Gudibande SRO gazette p.34,
-Chikkaballapura,Rural Gudibande R. Pratap layout,,locality,Gudibande,taluk,plot,,8000,sqm,Gudibande SRO gazette p.34,
-Chikkaballapura,Rural Gudibande new lay out,,locality,Gudibande,taluk,plot,,8000,sqm,Gudibande SRO gazette p.34,
-Chikkaballapura,Rural Gudibande new lay out,,locality,Gudibande,taluk,plot,,8000,sqm,Gudibande SRO gazette p.34,
+Chikkaballapura,Rural Gudibande N. Subramanyam layout,,locality,Gudibande,taluk,plot,,8000,sqm,Gudibande SRO gazette p.34,Rural Gudibande
+Chikkaballapura,Rural Gudibande R. Pratap layout,,locality,Gudibande,taluk,plot,,8000,sqm,Gudibande SRO gazette p.34,Rural Gudibande
+Chikkaballapura,Rural Gudibande new lay out,,locality,Gudibande,taluk,plot,,8000,sqm,Gudibande SRO gazette p.34,Rural Gudibande
+Chikkaballapura,Rural Gudibande new lay out,,locality,Gudibande,taluk,plot,,8000,sqm,Gudibande SRO gazette p.34,Rural Gudibande
 Chikkaballapura,Gerumaradhahalli,,village,Gudibande,taluk,agricultural_land,,300000,acre,Gudibande SRO gazette p.35,
 Chikkaballapura,Gerumaradhahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.35,
 Chikkaballapura,Gyadhrlahalli,,village,Gudibande,taluk,agricultural_land,,300000,acre,Gudibande SRO gazette p.35,
@@ -3945,7 +3945,7 @@ Chikkaballapura,Nicchanabandahalli,,village,Gudibande,taluk,agricultural_land,,3
 Chikkaballapura,Nicchanabandahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.36,
 Chikkaballapura,Nilugumba,,village,Gudibande,taluk,agricultural_land,,800000,acre,Gudibande SRO gazette p.37,
 Chikkaballapura,Nilugumba,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.37,
-Chikkaballapura,"Nilugumba, D.N. Nagireddy California Holiday Village",,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.37,
+Chikkaballapura,"Nilugumba, D.N. Nagireddy California Holiday Village",,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.37,Nilugumba
 Chikkaballapura,Nimmalahalli,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.37,
 Chikkaballapura,Nimmalahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.37,
 Chikkaballapura,Pulavamakalahalli,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.37,
@@ -3960,7 +3960,7 @@ Chikkaballapura,Brahmanarahalli,,village,Gudibande,taluk,agricultural_land,,5000
 Chikkaballapura,Brahmanarahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.39,
 Chikkaballapura,Bhatthalahalli,,village,Gudibande,taluk,agricultural_land,,600000,acre,Gudibande SRO gazette p.39,
 Chikkaballapura,Bhatthalahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.39,
-Chikkaballapura,Bhatthalahalli Srinivas Layout,,locality,Gudibande,taluk,plot,,3000,sqm,Gudibande SRO gazette p.39,
+Chikkaballapura,Bhatthalahalli Srinivas Layout,,locality,Gudibande,taluk,plot,,3000,sqm,Gudibande SRO gazette p.39,Bhatthalahalli
 Chikkaballapura,Bullasandra,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.40,
 Chikkaballapura,Bullasandra,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.40,
 Chikkaballapura,Byrareddyhalli,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.40,
@@ -4009,10 +4009,10 @@ Chikkaballapura,Halegudibande,,village,Gudibande,taluk,agricultural_land,,800000
 Chikkaballapura,Halegudibande,,village,Gudibande,taluk,plot,,4500,sqm,Gudibande SRO gazette p.45,
 Chikkaballapura,Hampasandra,,village,Gudibande,taluk,agricultural_land,,1500000,acre,Gudibande SRO gazette p.45,
 Chikkaballapura,Hampasandra,,village,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.45,
-Chikkaballapura,Hampasandra D. Prabhakara Rao Shankar Agrahara layout,,locality,Gudibande,taluk,plot,,7500,sqm,Gudibande SRO gazette p.46,
-Chikkaballapura,Hampasandra D. Prabhakara Rao Shankar Agrahara layout,,locality,Gudibande,taluk,plot,,7500,sqm,Gudibande SRO gazette p.46,
-Chikkaballapura,Hampasandra Krishnappa Layout ( Sy no187),,locality,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.46,
-Chikkaballapura,Hampasandra V.S. Aravindan Layout,,locality,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.46,
+Chikkaballapura,Hampasandra D. Prabhakara Rao Shankar Agrahara layout,,locality,Gudibande,taluk,plot,,7500,sqm,Gudibande SRO gazette p.46,Hampasandra
+Chikkaballapura,Hampasandra D. Prabhakara Rao Shankar Agrahara layout,,locality,Gudibande,taluk,plot,,7500,sqm,Gudibande SRO gazette p.46,Hampasandra
+Chikkaballapura,Hampasandra Krishnappa Layout ( Sy no187),,locality,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.46,Hampasandra
+Chikkaballapura,Hampasandra V.S. Aravindan Layout,,locality,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.46,Hampasandra
 Chikkaballapura,Voddumaravenahalli,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.46,
 Chikkaballapura,Voddumaravenahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.46,
 Chikkaballapura,Somalapura,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.47,
@@ -4055,8 +4055,8 @@ Chikkaballapura,Chikkanancherlu,,village,Gudibande,taluk,agricultural_land,,6000
 Chikkaballapura,Chikkanancherlu,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.51,
 Chikkaballapura,Chendur,,village,Gudibande,taluk,agricultural_land,,2000000,acre,Gudibande SRO gazette p.51,
 Chikkaballapura,Chendur,,village,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.51,
-Chikkaballapura,Chenduru Sri Ramulu Layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.52,
-Chikkaballapura,Chenduru Davis Layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.52,
+Chikkaballapura,Chenduru Sri Ramulu Layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.52,Chendur
+Chikkaballapura,Chenduru Davis Layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.52,Chendur
 Chikkaballapura,Jantiboyinahalli,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.52,
 Chikkaballapura,Jantiboyinahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.52,
 Chikkaballapura,Jambigemaradahalli,,village,Gudibande,taluk,agricultural_land,,500000,acre,Gudibande SRO gazette p.52,
@@ -4081,12 +4081,12 @@ Chikkaballapura,Doddakurubarahalli,,village,Gudibande,taluk,agricultural_land,,1
 Chikkaballapura,Doddakurubarahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.54,
 Chikkaballapura,Doddanancherlu,,village,Gudibande,taluk,agricultural_land,,2000000,acre,Gudibande SRO gazette p.55,
 Chikkaballapura,Doddanancherlu,,village,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.55,
-Chikkaballapura,Doddanancherlu T.K.B.swamy Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,
-Chikkaballapura,Doddanancherlu K. Naganandareddy Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,
-Chikkaballapura,Doddanancherlu Mohammed shafique Ulla Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,
-Chikkaballapura,Doddanancherlu Sai gold Orchids,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,
-Chikkaballapura,Doddanancherlu new layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,
-Chikkaballapura,Doddanancherlu new layout SY,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,
+Chikkaballapura,Doddanancherlu T.K.B.swamy Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,Doddanancherlu
+Chikkaballapura,Doddanancherlu K. Naganandareddy Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,Doddanancherlu
+Chikkaballapura,Doddanancherlu Mohammed shafique Ulla Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,Doddanancherlu
+Chikkaballapura,Doddanancherlu Sai gold Orchids,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,Doddanancherlu
+Chikkaballapura,Doddanancherlu new layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,Doddanancherlu
+Chikkaballapura,Doddanancherlu new layout SY,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.55,Doddanancherlu
 Chikkaballapura,Dinnahalli,,village,Gudibande,taluk,agricultural_land,,500000,acre,Gudibande SRO gazette p.56,
 Chikkaballapura,Dinnahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.56,
 Chikkaballapura,Dhoomakuntahalli,,village,Gudibande,taluk,agricultural_land,,500000,acre,Gudibande SRO gazette p.56,
@@ -4103,14 +4103,14 @@ Chikkaballapura,Puradahalli,,village,Gudibande,taluk,agricultural_land,,400000,a
 Chikkaballapura,Puradahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.57,
 Chikkaballapura,Polampalli,,village,Gudibande,taluk,agricultural_land,,600000,acre,Gudibande SRO gazette p.57,
 Chikkaballapura,Polampalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.57,
-Chikkaballapura,Polampalli Atmagnana trust layout,,locality,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.57,
+Chikkaballapura,Polampalli Atmagnana trust layout,,locality,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.57,Polampalli
 Chikkaballapura,Polampalli Chickballapur taluk Attached,,village,Gudibande,taluk,agricultural_land,,600000,acre,Gudibande SRO gazette p.57,
 Chikkaballapura,Beechaganahalli,,village,Gudibande,taluk,agricultural_land,,800000,acre,Gudibande SRO gazette p.57,
 Chikkaballapura,Beechaganahalli,,village,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.57,
 Chikkaballapura,Bandarlahalli,,village,Gudibande,taluk,agricultural_land,,1000000,acre,Gudibande SRO gazette p.58,
 Chikkaballapura,Bandarlahalli,,village,Gudibande,taluk,plot,,4500,sqm,Gudibande SRO gazette p.58,
-Chikkaballapura,Bandarlahalli Swithin Shylesh Layout,,locality,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.58,
-Chikkaballapura,Bandarlahalli Sathyanarayana Layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.58,
+Chikkaballapura,Bandarlahalli Swithin Shylesh Layout,,locality,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.58,Bandarlahalli
+Chikkaballapura,Bandarlahalli Sathyanarayana Layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.58,Bandarlahalli
 Chikkaballapura,Bommanahalli,,village,Gudibande,taluk,agricultural_land,,300000,acre,Gudibande SRO gazette p.58,
 Chikkaballapura,Bommanahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.58,
 Chikkaballapura,Bommanahalli,,village,Gudibande,taluk,agricultural_land,,300000,acre,Gudibande SRO gazette p.58,
@@ -4124,21 +4124,21 @@ Chikkaballapura,Ergareddyhalli,,village,Gudibande,taluk,agricultural_land,,60000
 Chikkaballapura,Ergareddyhalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.59,
 Chikkaballapura,Yerralakkenahalli,,village,Gudibande,taluk,agricultural_land,,2000000,acre,Gudibande SRO gazette p.60,
 Chikkaballapura,Yerralakkenahalli,,village,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.60,
-Chikkaballapura,"Yerralakkenahalli Celtom in frastructure pvt ltd layout( 122/1A,122/1b3,122/3,4,7,8,9,10)",,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,
-Chikkaballapura,Yerralakkenahalli Suresh layout( 155/8B),,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,
-Chikkaballapura,Yerralakkenahalli Sai gold Orchids layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,
-Chikkaballapura,Yerralakkenahalli A.K. Maxks properties pri Ltd layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,
-Chikkaballapura,Yerralakkenahalli newlayoutsy,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,
+Chikkaballapura,"Yerralakkenahalli Celtom in frastructure pvt ltd layout( 122/1A,122/1b3,122/3,4,7,8,9,10)",,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,Yerralakkenahalli
+Chikkaballapura,Yerralakkenahalli Suresh layout( 155/8B),,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,Yerralakkenahalli
+Chikkaballapura,Yerralakkenahalli Sai gold Orchids layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,Yerralakkenahalli
+Chikkaballapura,Yerralakkenahalli A.K. Maxks properties pri Ltd layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,Yerralakkenahalli
+Chikkaballapura,Yerralakkenahalli newlayoutsy,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,Yerralakkenahalli
 Chikkaballapura,Ragimakalahalli,,village,Gudibande,taluk,agricultural_land,,2000000,acre,Gudibande SRO gazette p.60,
 Chikkaballapura,Ragimakalahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.60,
-Chikkaballapura,Ragimakalahalli D. N. Nagireddy layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,
+Chikkaballapura,Ragimakalahalli D. N. Nagireddy layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.60,Ragimakalahalli
 Chikkaballapura,Lakshmi sagar,,village,Gudibande,taluk,agricultural_land,,2000000,acre,Gudibande SRO gazette p.61,
 Chikkaballapura,Lakshmi sagar,,village,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.61,
 Chikkaballapura,Varlakonda,,village,Gudibande,taluk,agricultural_land,,2000000,acre,Gudibande SRO gazette p.62,
 Chikkaballapura,Varlakonda,,village,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.62,
 Chikkaballapura,Varlakonda( chickballaput taluk attachedsyno),,village,Gudibande,taluk,agricultural_land,,2200000,acre,Gudibande SRO gazette p.62,
-Chikkaballapura,Varlakonda B. Murali layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.62,
-Chikkaballapura,Varlakonda peddamallappa layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.62,
+Chikkaballapura,Varlakonda B. Murali layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.62,Varlakonda( chickballaput taluk attachedsyno)
+Chikkaballapura,Varlakonda peddamallappa layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.62,Varlakonda( chickballaput taluk attachedsyno)
 Chikkaballapura,Varlakondahalli,,village,Gudibande,taluk,agricultural_land,,800000,acre,Gudibande SRO gazette p.62,
 Chikkaballapura,Varlakondahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.62,
 Chikkaballapura,Veerravuthnahalli,,village,Gudibande,taluk,agricultural_land,,300000,acre,Gudibande SRO gazette p.63,
@@ -4146,19 +4146,19 @@ Chikkaballapura,Veerravuthnahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudiba
 Chikkaballapura,Veerravuthnahalli,,village,Gudibande,taluk,agricultural_land,,300000,acre,Gudibande SRO gazette p.63,
 Chikkaballapura,Uppakuntahalli,,village,Gudibande,taluk,agricultural_land,,2000000,acre,Gudibande SRO gazette p.63,
 Chikkaballapura,Uppakuntahalli,,village,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.63,
-Chikkaballapura,Uppakuntahalli Seem jain layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.63,
-Chikkaballapura,Uppakuntahalli Mahadevappa layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.63,
-Chikkaballapura,Uppakuntahalli Celtom Infrastructure pvt ltd layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.63,
+Chikkaballapura,Uppakuntahalli Seem jain layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.63,Uppakuntahalli
+Chikkaballapura,Uppakuntahalli Mahadevappa layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.63,Uppakuntahalli
+Chikkaballapura,Uppakuntahalli Celtom Infrastructure pvt ltd layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.63,Uppakuntahalli
 Chikkaballapura,Shinganahalli,,village,Gudibande,taluk,agricultural_land,,800000,acre,Gudibande SRO gazette p.63,
 Chikkaballapura,Shinganahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.63,
-Chikkaballapura,Shinganahalli D.N. Nagireddy layout,,locality,Gudibande,taluk,plot,,7000,sqm,Gudibande SRO gazette p.64,
-Chikkaballapura,Shinganahalli new layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.64,
+Chikkaballapura,Shinganahalli D.N. Nagireddy layout,,locality,Gudibande,taluk,plot,,7000,sqm,Gudibande SRO gazette p.64,Shinganahalli
+Chikkaballapura,Shinganahalli new layout,,locality,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.64,Shinganahalli
 Chikkaballapura,Shinganadinne,,village,Gudibande,taluk,agricultural_land,,400000,acre,Gudibande SRO gazette p.64,
 Chikkaballapura,Shinganadinne,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.64,
 Chikkaballapura,Somenahalli,,village,Gudibande,taluk,agricultural_land,,1000000,acre,Gudibande SRO gazette p.64,
 Chikkaballapura,Somenahalli,,village,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.64,
-Chikkaballapura,Somenahalli R. Ramakrishna Rao lay out,,locality,Gudibande,taluk,plot,,5500,sqm,Gudibande SRO gazette p.65,
-Chikkaballapura,Somenahalli New Lay out,,locality,Gudibande,taluk,plot,,5500,sqm,Gudibande SRO gazette p.65,
+Chikkaballapura,Somenahalli R. Ramakrishna Rao lay out,,locality,Gudibande,taluk,plot,,5500,sqm,Gudibande SRO gazette p.65,Somenahalli
+Chikkaballapura,Somenahalli New Lay out,,locality,Gudibande,taluk,plot,,5500,sqm,Gudibande SRO gazette p.65,Somenahalli
 Chikkaballapura,Sadashivanahalli,,village,Gudibande,taluk,agricultural_land,,800000,acre,Gudibande SRO gazette p.65,
 Chikkaballapura,Sadashivanahalli,,village,Gudibande,taluk,plot,,6000,sqm,Gudibande SRO gazette p.65,
 Chikkaballapura,Sadashivanahall,,village,Gudibande,taluk,agricultural_land,,800000,acre,Gudibande SRO gazette p.65,
@@ -4168,10 +4168,10 @@ Chikkaballapura,Hosayerrahalli,,village,Gudibande,taluk,agricultural_land,,40000
 Chikkaballapura,Hosayerrahalli,,village,Gudibande,taluk,plot,,4000,sqm,Gudibande SRO gazette p.65,
 Chikkaballapura,Ramaganahalli,,village,Gudibande,taluk,agricultural_land,,2000000,acre,Gudibande SRO gazette p.66,
 Chikkaballapura,Ramaganahalli,,village,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.66,
-Chikkaballapura,Ramaganahalli K. N. Radha Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.66,
-Chikkaballapura,Ramaganahalli Venkatesh Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.66,
-Chikkaballapura,Ramaganahalli Sathya Narayana Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.66,
-Chikkaballapura,Ramaganahalli new Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.66,
+Chikkaballapura,Ramaganahalli K. N. Radha Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.66,Ramaganahalli
+Chikkaballapura,Ramaganahalli Venkatesh Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.66,Ramaganahalli
+Chikkaballapura,Ramaganahalli Sathya Narayana Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.66,Ramaganahalli
+Chikkaballapura,Ramaganahalli new Layout,,locality,Gudibande,taluk,plot,,6500,sqm,Gudibande SRO gazette p.66,Ramaganahalli
 Chikkaballapura,KalkipapanadinneNH,,village,Gudibande,taluk,agricultural_land,,6000000,acre,Gudibande SRO gazette p.66,
 Chikkaballapura,Kalkipapanadinne,,village,Gudibande,taluk,agricultural_land,,2000000,acre,Gudibande SRO gazette p.67,
 Chikkaballapura,Kalkipapanadinne,,village,Gudibande,taluk,plot,,5000,sqm,Gudibande SRO gazette p.67,
@@ -4478,7 +4478,7 @@ Chikkaballapura,Abloodu,,village,Sidlaghatta,taluk,agricultural_land,,1500000,ac
 Chikkaballapura,Abloodu,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.66,
 Chikkaballapura,Ammanakere,,village,Sidlaghatta,taluk,agricultural_land,,2400000,acre,Sidlaghatta SRO gazette p.66,
 Chikkaballapura,Ammanakere,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.66,
-Chikkaballapura,Ammanakere Smt Umashanthi,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.67,
+Chikkaballapura,Ammanakere Smt Umashanthi,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.67,Ammanakere
 Chikkaballapura,Anooru,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.67,
 Chikkaballapura,Anooru,,village,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.67,
 Chikkaballapura,Iddaloodu,,village,Sidlaghatta,taluk,agricultural_land,,3500000,acre,Sidlaghatta SRO gazette p.67,
@@ -4487,7 +4487,7 @@ Chikkaballapura,"Iddaludu (Potential area for future development) 2 to 4, 6, 7, 
 Chikkaballapura,Kadankunte,,village,Sidlaghatta,taluk,agricultural_land,,3500000,acre,Sidlaghatta SRO gazette p.67,
 Chikkaballapura,Kadankunte,,village,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.67,
 Chikkaballapura,Kadadankunte,,village,Sidlaghatta,taluk,agricultural_land,,6000000,acre,Sidlaghatta SRO gazette p.68,
-Chikkaballapura,Kadankunte JANMA BHUMI SY,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.68,
+Chikkaballapura,Kadankunte JANMA BHUMI SY,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.68,Kadadankunte (Potential area
 Chikkaballapura,Kadirinayakanahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.68,
 Chikkaballapura,Kadirinayakanahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.68,
 Chikkaballapura,Kannamangala,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.68,
@@ -4508,7 +4508,7 @@ Chikkaballapura,Keshvapura,,village,Sidlaghatta,taluk,agricultural_land,,2500000
 Chikkaballapura,Keshvapura,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.70,
 Chikkaballapura,Kokkaremakalahalli,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.70,
 Chikkaballapura,Kokkaremakalahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.70,
-Chikkaballapura,Kokkaremakalahalli Smt,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.70,
+Chikkaballapura,Kokkaremakalahalli Smt,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.70,Kokkaremakalahalli
 Chikkaballapura,Kothnur,,village,Sidlaghatta,taluk,agricultural_land,,1300000,acre,Sidlaghatta SRO gazette p.70,
 Chikkaballapura,Kothnur,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.70,
 Chikkaballapura,Kotahalli,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.70,
@@ -4550,12 +4550,12 @@ Chikkaballapura,Channahalli,,village,Sidlaghatta,taluk,agricultural_land,,130000
 Chikkaballapura,Channahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.74,
 Chikkaballapura,Cheluvanayakanapade,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.74,
 Chikkaballapura,Cheluvanayakanapade,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.74,
-Chikkaballapura,Cheluvanayakanapade Sri Syad,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.74,
+Chikkaballapura,Cheluvanayakanapade Sri Syad,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.74,Cheluvanayakanapade
 Chikkaballapura,Chage,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.74,
 Chikkaballapura,Chage,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.74,
 Chikkaballapura,Chikkadasarahalli,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.74,
 Chikkaballapura,Chikkadasarahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.74,
-Chikkaballapura,Chikkadasarahalli Sri,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.74,
+Chikkaballapura,Chikkadasarahalli Sri,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.74,Chikkadasarahalli
 Chikkaballapura,Chikkadasenahalli,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.75,
 Chikkaballapura,Chikkadasenahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.75,
 Chikkaballapura,Chikkadasenahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,1250000,acre,Sidlaghatta SRO gazette p.75,
@@ -4564,18 +4564,18 @@ Chikkaballapura,Chikkapapanahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidl
 Chikkaballapura,Cheemanahalli,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.75,
 Chikkaballapura,Cheemanahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.75,
 Chikkaballapura,Cheemanahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,1300000,acre,Sidlaghatta SRO gazette p.75,
-Chikkaballapura,Cheemanahalli Ananth Botla Sy,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.75,
+Chikkaballapura,Cheemanahalli Ananth Botla Sy,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.75,Cheemanahalli Village and
 Chikkaballapura,Chowdasandra,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.75,
 Chikkaballapura,Chowdasandra,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.75,
-Chikkaballapura,Chowdasandra M/s Trancity,,locality,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.76,
-Chikkaballapura,Chowdasandra ANUGRAHA,,locality,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.76,
+Chikkaballapura,Chowdasandra M/s Trancity,,locality,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.76,Chowdasandra
+Chikkaballapura,Chowdasandra ANUGRAHA,,locality,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.76,Chowdasandra
 Chikkaballapura,Chintadapi,,village,Sidlaghatta,taluk,agricultural_land,,550000,acre,Sidlaghatta SRO gazette p.76,
 Chikkaballapura,Chintadapi,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.76,
 Chikkaballapura,Japthi Hosahalli,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.76,
 Chikkaballapura,Japthi Hosahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.76,
 Chikkaballapura,Japthi Hosahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,1950000,acre,Sidlaghatta SRO gazette p.76,
-Chikkaballapura,Japthi Hosahalli Sri,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.77,
-Chikkaballapura,Japthi Hosahalli Dayanidhi Sy,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.77,
+Chikkaballapura,Japthi Hosahalli Sri,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.77,Japthi Hosahalli Village and
+Chikkaballapura,Japthi Hosahalli Dayanidhi Sy,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.77,Japthi Hosahalli Village and
 Chikkaballapura,Thaladummanahalli,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.77,
 Chikkaballapura,Thaladummanahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.77,
 Chikkaballapura,Thaladummanahalli Village,,village,Sidlaghatta,taluk,agricultural_land,,3250000,acre,Sidlaghatta SRO gazette p.77,
@@ -4636,9 +4636,9 @@ Chikkaballapura,Boodala,,village,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SR
 Chikkaballapura,Boodala,,village,Sidlaghatta,taluk,agricultural_land,,6000000,acre,Sidlaghatta SRO gazette p.82,
 Chikkaballapura,Belluti,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.83,
 Chikkaballapura,Belluti,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.83,
-Chikkaballapura,Belluti GMGGroups,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.83,
-Chikkaballapura,Belluti M/S North East Property,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.83,
-Chikkaballapura,Belluti Oguru Prasad,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.84,
+Chikkaballapura,Belluti GMGGroups,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.83,Belluti
+Chikkaballapura,Belluti M/S North East Property,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.83,Belluti
+Chikkaballapura,Belluti Oguru Prasad,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.84,Belluti
 Chikkaballapura,Byranayakanahalli,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.84,
 Chikkaballapura,Byranayakanahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.84,
 Chikkaballapura,Bommanahalli,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.84,
@@ -4646,12 +4646,12 @@ Chikkaballapura,Bommanahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghat
 Chikkaballapura,Bommanahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,3125000,acre,Sidlaghatta SRO gazette p.84,
 Chikkaballapura,Bodaguru,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.84,
 Chikkaballapura,Bodaguru,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.84,
-Chikkaballapura,Bodaguru Chenchuramayya,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.85,
-Chikkaballapura,Bodaguru M/S North East Property,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.85,
+Chikkaballapura,Bodaguru Chenchuramayya,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.85,Bodaguru
+Chikkaballapura,Bodaguru M/S North East Property,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.85,Bodaguru
 Chikkaballapura,Bandappanahalli,,village,Sidlaghatta,taluk,agricultural_land,,1600000,acre,Sidlaghatta SRO gazette p.85,
 Chikkaballapura,Bandappanahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.85,
 Chikkaballapura,BandappanahalliVillage and,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.85,
-Chikkaballapura,Sri Rudresh,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.85,
+Chikkaballapura,Sri Rudresh,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.85,BandappanahalliVillage and
 Chikkaballapura,Mallashettipura,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.85,
 Chikkaballapura,Mallashettipura,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.85,
 Chikkaballapura,Mallishettipura Village and,,village,Sidlaghatta,taluk,agricultural_land,,1250000,acre,Sidlaghatta SRO gazette p.85,
@@ -4675,19 +4675,19 @@ Chikkaballapura,Lakkahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta
 Chikkaballapura,Vardanayakanahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.87,
 Chikkaballapura,Vardanayakanahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.87,
 Chikkaballapura,Vardanayakanahalli Village,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.87,
-Chikkaballapura,Sri Chandra Shekar,,locality,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.87,
+Chikkaballapura,Sri Chandra Shekar,,locality,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.87,Vardanayakanahalli Village
 Chikkaballapura,Varahunsenahalli,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.87,
 Chikkaballapura,Varahunsenahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.87,
 Chikkaballapura,Venkatapur,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.87,
 Chikkaballapura,Venkatapur,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.87,
-Chikkaballapura,North East Properties,,locality,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.87,
+Chikkaballapura,North East Properties,,locality,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.87,Venkatapur
 Chikkaballapura,Vankamardahalli,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.87,
 Chikkaballapura,Vankamardahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.87,
 Chikkaballapura,Vankamardahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,1250000,acre,Sidlaghatta SRO gazette p.88,
 Chikkaballapura,Shidlaghatta,,village,Sidlaghatta,taluk,agricultural_land,,5000000,acre,Sidlaghatta SRO gazette p.88,
 Chikkaballapura,Shidlaghatta,,village,Sidlaghatta,taluk,plot,,15000,sqm,Sidlaghatta SRO gazette p.88,
-Chikkaballapura,Shidlaghatta KSSIDC,,locality,Sidlaghatta,taluk,plot,,11000,sqm,Sidlaghatta SRO gazette p.88,
-Chikkaballapura,Shidlaghatta KSSIDC,,locality,Sidlaghatta,taluk,apartment,,16000,sqm,Sidlaghatta SRO gazette p.88,
+Chikkaballapura,Shidlaghatta KSSIDC,,locality,Sidlaghatta,taluk,plot,,11000,sqm,Sidlaghatta SRO gazette p.88,Shidlaghatta
+Chikkaballapura,Shidlaghatta KSSIDC,,locality,Sidlaghatta,taluk,apartment,,16000,sqm,Sidlaghatta SRO gazette p.88,Shidlaghatta
 Chikkaballapura,Shegehalli,,village,Sidlaghatta,taluk,agricultural_land,,1400000,acre,Sidlaghatta SRO gazette p.89,
 Chikkaballapura,Shegehalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.89,
 Chikkaballapura,Shettihalli,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.89,
@@ -4705,8 +4705,8 @@ Chikkaballapura,Hanumantapura,,village,Sidlaghatta,taluk,agricultural_land,,6000
 Chikkaballapura,Hanumenahalli,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.91,
 Chikkaballapura,Hanumenahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.91,
 Chikkaballapura,Hanumenahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,3125000,acre,Sidlaghatta SRO gazette p.91,
-Chikkaballapura,Hanumenahalli Charmiyan,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.91,
-Chikkaballapura,Hanumenahalli Sri,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.91,
+Chikkaballapura,Hanumenahalli Charmiyan,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.91,Hanumenahalli Village and
+Chikkaballapura,Hanumenahalli Sri,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.91,Hanumenahalli Village and
 Chikkaballapura,Haralahalli,,village,Sidlaghatta,taluk,agricultural_land,,1600000,acre,Sidlaghatta SRO gazette p.91,
 Chikkaballapura,Haralahalli,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.91,
 Chikkaballapura,Halsurudinne,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.91,
@@ -4714,7 +4714,7 @@ Chikkaballapura,Halsurudinne,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghat
 Chikkaballapura,Halsuru Dinne Village and,,village,Sidlaghatta,taluk,agricultural_land,,750000,acre,Sidlaghatta SRO gazette p.91,
 Chikkaballapura,Hittalahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.92,
 Chikkaballapura,Hittalahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.92,
-Chikkaballapura,Hittalahalli M/S North East Property,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.92,
+Chikkaballapura,Hittalahalli M/S North East Property,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.92,Hittalahalli
 Chikkaballapura,Hujaguru,,village,Sidlaghatta,taluk,agricultural_land,,1400000,acre,Sidlaghatta SRO gazette p.92,
 Chikkaballapura,Hujaguru,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.92,
 Chikkaballapura,Hunasenahalli.Y,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.92,
@@ -4723,7 +4723,7 @@ Chikkaballapura,Hunasenahalli .A,,village,Sidlaghatta,taluk,agricultural_land,,1
 Chikkaballapura,Hunasenahalli .A,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.93,
 Chikkaballapura,Handiganahala,,village,Sidlaghatta,taluk,agricultural_land,,2800000,acre,Sidlaghatta SRO gazette p.93,
 Chikkaballapura,Handiganahala,,village,Sidlaghatta,taluk,plot,,7000,sqm,Sidlaghatta SRO gazette p.93,
-Chikkaballapura,"Umashanthi 71/2A2, 71/2A",,locality,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.93,
+Chikkaballapura,"Umashanthi 71/2A2, 71/2A",,locality,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.93,Handiganahala
 Chikkaballapura,Akkimangala,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.94,
 Chikkaballapura,Akkimangala,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.94,
 Chikkaballapura,Attiganahalli,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.94,
@@ -4733,32 +4733,32 @@ Chikkaballapura,Amaravathi,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta
 Chikkaballapura,Amaniballadakere,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.94,
 Chikkaballapura,Amaniballadakere,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.94,
 Chikkaballapura,Amaniballadakere Village and,,village,Sidlaghatta,taluk,agricultural_land,,3750000,acre,Sidlaghatta SRO gazette p.94,
-Chikkaballapura,Amaniballadakere Sri Ashok Sy,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.94,
-Chikkaballapura,"Amaniballadakere Sri Kannali Yugandar Reddy and A, Ravi",,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.95,
-Chikkaballapura,Chandana Layout,,locality,Sidlaghatta,taluk,plot,,6200,sqm,Sidlaghatta SRO gazette p.95,
+Chikkaballapura,Amaniballadakere Sri Ashok Sy,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.94,Amaniballadakere Village and
+Chikkaballapura,"Amaniballadakere Sri Kannali Yugandar Reddy and A, Ravi",,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.95,Amaniballadakere Village and
+Chikkaballapura,Chandana Layout,,locality,Sidlaghatta,taluk,plot,,6200,sqm,Sidlaghatta SRO gazette p.95,Amaniballadakere Village and
 Chikkaballapura,Arikere,,village,Sidlaghatta,taluk,agricultural_land,,1600000,acre,Sidlaghatta SRO gazette p.95,
 Chikkaballapura,Arikere,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.95,
 Chikkaballapura,Ankatatti,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.95,
 Chikkaballapura,Ankatatti,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.95,
-Chikkaballapura,"Ankathatti A, B, Chandra",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.95,
+Chikkaballapura,"Ankathatti A, B, Chandra",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.95,Ankatatti
 Chikkaballapura,Ambiganahalli,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.95,
 Chikkaballapura,Ambiganahalli,,village,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.95,
 Chikkaballapura,Ambiganahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,3750000,acre,Sidlaghatta SRO gazette p.95,
-Chikkaballapura,Ambiganahalli Jacob Abrahim,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.96,
+Chikkaballapura,Ambiganahalli Jacob Abrahim,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.96,Ambiganahalli Village and
 Chikkaballapura,Oblapura,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.96,
 Chikkaballapura,Oblapura,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.96,
 Chikkaballapura,Kadirapur,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.96,
 Chikkaballapura,Kadirapur,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.96,
 Chikkaballapura,Kariyanpura,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.96,
 Chikkaballapura,Kariyanpura,,village,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.96,
-Chikkaballapura,"Kariyanpura Sri B, Manjunath",,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.96,
-Chikkaballapura,Kariyanpura VAIBHAV,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.96,
+Chikkaballapura,"Kariyanpura Sri B, Manjunath",,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.96,Kariyanpura
+Chikkaballapura,Kariyanpura VAIBHAV,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.96,Kariyanpura
 Chikkaballapura,Kalyapura,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.97,
 Chikkaballapura,Kalyapura,,village,Sidlaghatta,taluk,plot,,7000,sqm,Sidlaghatta SRO gazette p.97,
-Chikkaballapura,Kalyapura Sri Ramu,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.97,
-Chikkaballapura,Kalyapura FERNS FOREST,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.97,
-Chikkaballapura,Kalyapura VAIBHAV NAGAR SY,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.97,
-Chikkaballapura,Kalyapura VAIBHAV GREENS PHASE -V,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.97,
+Chikkaballapura,Kalyapura Sri Ramu,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.97,Kalyapura
+Chikkaballapura,Kalyapura FERNS FOREST,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.97,Kalyapura
+Chikkaballapura,Kalyapura VAIBHAV NAGAR SY,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.97,Kalyapura
+Chikkaballapura,Kalyapura VAIBHAV GREENS PHASE -V,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.97,Kalyapura
 Chikkaballapura,Kakachokkandahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.97,
 Chikkaballapura,Kakachokkandahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.97,
 Chikkaballapura,Kakachokndahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.97,
@@ -4766,39 +4766,39 @@ Chikkaballapura,Kalanayakanahalli,,village,Sidlaghatta,taluk,agricultural_land,,
 Chikkaballapura,Kalanayakanahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.98,
 Chikkaballapura,Kurubarahalli,,village,Sidlaghatta,taluk,agricultural_land,,3200000,acre,Sidlaghatta SRO gazette p.98,
 Chikkaballapura,Kurubarahalli,,village,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.98,
-Chikkaballapura,Kurubarahalli Somashekara,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.98,
-Chikkaballapura,"Kurubarahalli Sri S, Ashok Sy",,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.98,
-Chikkaballapura,Kurubarahalli GREEN WOODS,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.98,
+Chikkaballapura,Kurubarahalli Somashekara,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.98,Kurubarahalli
+Chikkaballapura,"Kurubarahalli Sri S, Ashok Sy",,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.98,Kurubarahalli
+Chikkaballapura,Kurubarahalli GREEN WOODS,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.98,Kurubarahalli
 Chikkaballapura,Krishnahalli,,village,Sidlaghatta,taluk,agricultural_land,,2200000,acre,Sidlaghatta SRO gazette p.98,
 Chikkaballapura,Krishnahalli,,village,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.98,
-Chikkaballapura,Krishnahalli M,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.99,
-Chikkaballapura,Krishnahalli Munikonappa Sy,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.99,
+Chikkaballapura,Krishnahalli M,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.99,Krishnahalli
+Chikkaballapura,Krishnahalli Munikonappa Sy,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.99,Krishnahalli
 Chikkaballapura,Krishnammana Hosuru,,village,Sidlaghatta,taluk,agricultural_land,,1700000,acre,Sidlaghatta SRO gazette p.99,
 Chikkaballapura,Krishnammana Hosuru,,village,Sidlaghatta,taluk,plot,,7000,sqm,Sidlaghatta SRO gazette p.99,
 Chikkaballapura,Krishnammana Hosuru Village,,village,Sidlaghatta,taluk,agricultural_land,,2125000,acre,Sidlaghatta SRO gazette p.99,
-Chikkaballapura,Krishnammana Hosuru M/S,,locality,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.99,
+Chikkaballapura,Krishnammana Hosuru M/S,,locality,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.99,Krishnammana Hosuru Village
 Chikkaballapura,Kolimihosuru,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.99,
 Chikkaballapura,Kolimihosuru,,village,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.99,
 Chikkaballapura,Kumbiganahalli,,village,Sidlaghatta,taluk,agricultural_land,,4000000,acre,Sidlaghatta SRO gazette p.99,
 Chikkaballapura,Kumbiganahalli,,village,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.99,
 Chikkaballapura,Kumbiganahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,5000000,acre,Sidlaghatta SRO gazette p.100,
-Chikkaballapura,Kumbiganahalli Udbav Projects,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.100,
-Chikkaballapura,Kumbiganahalli Sri Obalaraju,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.100,
-Chikkaballapura,Kumbiganahalli Sri,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.100,
-Chikkaballapura,Kumbiganahalli SHREE,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.100,
-Chikkaballapura,Kumbiganahalli OPTIMUM SUN VALY PHASE-1,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.100,
+Chikkaballapura,Kumbiganahalli Udbav Projects,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.100,Kumbiganahalli Village and
+Chikkaballapura,Kumbiganahalli Sri Obalaraju,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.100,Kumbiganahalli Village and
+Chikkaballapura,Kumbiganahalli Sri,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.100,Kumbiganahalli Village and
+Chikkaballapura,Kumbiganahalli SHREE,,locality,Sidlaghatta,taluk,plot,,8500,sqm,Sidlaghatta SRO gazette p.100,Kumbiganahalli Village and
+Chikkaballapura,Kumbiganahalli OPTIMUM SUN VALY PHASE-1,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.100,Kumbiganahalli Village and
 Chikkaballapura,Gambiranahalli,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.101,
 Chikkaballapura,Gambiranahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.101,
-Chikkaballapura,Gambiranahalli KARUNYA,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.101,
+Chikkaballapura,Gambiranahalli KARUNYA,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.101,Gambiranahalli
 Chikkaballapura,Ghattamarnahalli,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.101,
 Chikkaballapura,Ghattamarnahalli,,village,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.101,
 Chikkaballapura,Ghattamarnahalli State,,village,Sidlaghatta,taluk,agricultural_land,,6000000,acre,Sidlaghatta SRO gazette p.101,
-Chikkaballapura,Ghattamarnahalli Smt,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.101,
+Chikkaballapura,Ghattamarnahalli Smt,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.101,Ghattamarnahalli State
 Chikkaballapura,Chikkaballa.K.G,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.101,
 Chikkaballapura,Chikkaballa.K.G,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.101,
-Chikkaballapura,Chikkaballa.K.G M.N.Nagaraj,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.102,
-Chikkaballapura,Chikkaballa.K.G TULIP,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.102,
-Chikkaballapura,Chikkaballa.K.G JVM LAYOUT,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.102,
+Chikkaballapura,Chikkaballa.K.G M.N.Nagaraj,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.102,Chikkaballa.K.G
+Chikkaballapura,Chikkaballa.K.G TULIP,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.102,Chikkaballa.K.G
+Chikkaballapura,Chikkaballa.K.G JVM LAYOUT,,locality,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.102,Chikkaballa.K.G
 Chikkaballapura,Chemangala,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.102,
 Chikkaballapura,Chemangala,,village,Sidlaghatta,taluk,plot,,8000,sqm,Sidlaghatta SRO gazette p.102,
 Chikkaballapura,Chokkandahalli,,village,Sidlaghatta,taluk,agricultural_land,,2800000,acre,Sidlaghatta SRO gazette p.103,
@@ -4810,8 +4810,8 @@ Chikkaballapura,Thataparti,,village,Sidlaghatta,taluk,agricultural_land,,1500000
 Chikkaballapura,Thataparti,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.103,
 Chikkaballapura,Thaduru,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.103,
 Chikkaballapura,Thaduru,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.103,
-Chikkaballapura,Thaduru M/S North East,,locality,Sidlaghatta,taluk,plot,,7000,sqm,Sidlaghatta SRO gazette p.104,
-Chikkaballapura,Thaduru M/s Trancity,,locality,Sidlaghatta,taluk,plot,,7000,sqm,Sidlaghatta SRO gazette p.104,
+Chikkaballapura,Thaduru M/S North East,,locality,Sidlaghatta,taluk,plot,,7000,sqm,Sidlaghatta SRO gazette p.104,Thaduru
+Chikkaballapura,Thaduru M/s Trancity,,locality,Sidlaghatta,taluk,plot,,7000,sqm,Sidlaghatta SRO gazette p.104,Thaduru
 Chikkaballapura,Thimmasandra B,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.104,
 Chikkaballapura,Thimmasandra B,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.104,
 Chikkaballapura,Thimmasandra B Village and,,village,Sidlaghatta,taluk,agricultural_land,,1875000,acre,Sidlaghatta SRO gazette p.104,
@@ -4820,20 +4820,20 @@ Chikkaballapura,Totlaghanahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlag
 Chikkaballapura,Totlaghanahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.104,
 Chikkaballapura,Devaganahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.104,
 Chikkaballapura,Devaganahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.104,
-Chikkaballapura,Devaganahalli Smt Shruthi,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.105,
-Chikkaballapura,Devaganahalli Poojappa,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.105,
+Chikkaballapura,Devaganahalli Smt Shruthi,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.105,Devaganahalli
+Chikkaballapura,Devaganahalli Poojappa,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.105,Devaganahalli
 Chikkaballapura,Devenahalli,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.105,
 Chikkaballapura,Devenahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.105,
-Chikkaballapura,"Devenahalli Papanna, Sonnamma, Mytra GPA P Lakshmisha",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.105,
-Chikkaballapura,"Devenahalli J, Ravi Kumar Sy",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.105,
+Chikkaballapura,"Devenahalli Papanna, Sonnamma, Mytra GPA P Lakshmisha",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.105,Devenahalli
+Chikkaballapura,"Devenahalli J, Ravi Kumar Sy",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.105,Devenahalli
 Chikkaballapura,Nadapinayakanahalli,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.105,
 Chikkaballapura,Nadapinayakanahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.105,
-Chikkaballapura,Nadapinayakanahalli DANWANTRI CHAMUNDI AGRAHARA LAYOUT,,locality,Sidlaghatta,taluk,plot,,11000,sqm,Sidlaghatta SRO gazette p.106,
+Chikkaballapura,Nadapinayakanahalli DANWANTRI CHAMUNDI AGRAHARA LAYOUT,,locality,Sidlaghatta,taluk,plot,,11000,sqm,Sidlaghatta SRO gazette p.106,Nadapinayakanahalli
 Chikkaballapura,Nagamangala,,village,Sidlaghatta,taluk,agricultural_land,,2200000,acre,Sidlaghatta SRO gazette p.106,
 Chikkaballapura,Nagamangala,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.106,
-Chikkaballapura,Nagamangala Fly City Layout,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.107,
-Chikkaballapura,Nagamangala Sri Jayaprakash,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.107,
-Chikkaballapura,"Nagamangala N, V",,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.107,
+Chikkaballapura,Nagamangala Fly City Layout,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.107,Nagamangala
+Chikkaballapura,Nagamangala Sri Jayaprakash,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.107,Nagamangala
+Chikkaballapura,"Nagamangala N, V",,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.107,Nagamangala
 Chikkaballapura,Narayanadasarahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.107,
 Chikkaballapura,Narayanadasarahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.107,
 Chikkaballapura,Narayanadasarahalli Village,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.107,
@@ -4841,7 +4841,7 @@ Chikkaballapura,Narayanadasarahalli MDR Sy,,village,Sidlaghatta,taluk,agricultur
 Chikkaballapura,Fakiranahahosahalli,,village,Sidlaghatta,taluk,agricultural_land,,2100000,acre,Sidlaghatta SRO gazette p.107,
 Chikkaballapura,Fakiranahahosahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.107,
 Chikkaballapura,Fakiranahahosahalli Village,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.107,
-Chikkaballapura,Fakiranahahosahalli MahamadGouse Lay Out,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.108,
+Chikkaballapura,Fakiranahahosahalli MahamadGouse Lay Out,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.108,Fakiranahahosahalli Village
 Chikkaballapura,Patalammanahalli,,village,Sidlaghatta,taluk,agricultural_land,,1800000,acre,Sidlaghatta SRO gazette p.108,
 Chikkaballapura,Patalammanahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.108,
 Chikkaballapura,Pura,,village,Sidlaghatta,taluk,agricultural_land,,1800000,acre,Sidlaghatta SRO gazette p.108,
@@ -4850,35 +4850,35 @@ Chikkaballapura,Pura.K.G,,village,Sidlaghatta,taluk,agricultural_land,,1800000,a
 Chikkaballapura,Pura.K.G,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.108,
 Chikkaballapura,Basavapattana,,village,Sidlaghatta,taluk,agricultural_land,,1800000,acre,Sidlaghatta SRO gazette p.108,
 Chikkaballapura,Basavapattana,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.108,
-Chikkaballapura,Basavapattana Minakshi V Lay,,locality,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.108,
-Chikkaballapura,"Basavapattana Smt P, Rashmi",,locality,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.108,
+Chikkaballapura,Basavapattana Minakshi V Lay,,locality,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.108,Basavapattana
+Chikkaballapura,"Basavapattana Smt P, Rashmi",,locality,Sidlaghatta,taluk,plot,,7500,sqm,Sidlaghatta SRO gazette p.108,Basavapattana
 Chikkaballapura,Basavapattana.K.G,,village,Sidlaghatta,taluk,agricultural_land,,1700000,acre,Sidlaghatta SRO gazette p.108,
 Chikkaballapura,Basavapattana.K.G,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.108,
 Chikkaballapura,Baluvanahalli,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.108,
 Chikkaballapura,Baluvanahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.108,
 Chikkaballapura,Byrasandra,,village,Sidlaghatta,taluk,agricultural_land,,1800000,acre,Sidlaghatta SRO gazette p.108,
 Chikkaballapura,Byrasandra,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.108,
-Chikkaballapura,Byrasandra Manjunath G and,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.108,
-Chikkaballapura,Byrasandra Jakab Abram,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,
+Chikkaballapura,Byrasandra Manjunath G and,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.108,Byrasandra
+Chikkaballapura,Byrasandra Jakab Abram,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,Byrasandra
 Chikkaballapura,Bhaktharahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.109,
 Chikkaballapura,Bhaktharahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.109,
-Chikkaballapura,Bhaktharahalli Shrayas,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,
-Chikkaballapura,Bhaktharahalli Prodemco,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,
-Chikkaballapura,Bhaktharahalli Gogineni,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,
-Chikkaballapura,"Bhaktharahalli M, N, Nagaraj",,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,
-Chikkaballapura,Bhaktharahalli SHREYAS,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.110,
+Chikkaballapura,Bhaktharahalli Shrayas,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,Bhaktharahalli
+Chikkaballapura,Bhaktharahalli Prodemco,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,Bhaktharahalli
+Chikkaballapura,Bhaktharahalli Gogineni,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,Bhaktharahalli
+Chikkaballapura,"Bhaktharahalli M, N, Nagaraj",,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.109,Bhaktharahalli
+Chikkaballapura,Bhaktharahalli SHREYAS,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.110,Bhaktharahalli
 Chikkaballapura,Busanahalli,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.110,
 Chikkaballapura,Busanahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.110,
 Chikkaballapura,Mallenahalli,,village,Sidlaghatta,taluk,agricultural_land,,2200000,acre,Sidlaghatta SRO gazette p.110,
 Chikkaballapura,Mallenahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.110,
-Chikkaballapura,Mallenahalli VAIBHAV GREENS,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.110,
+Chikkaballapura,Mallenahalli VAIBHAV GREENS,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.110,Mallenahalli
 Chikkaballapura,Malamachanahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.110,
 Chikkaballapura,Malamachanahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.110,
 Chikkaballapura,Malamachanahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.110,
-Chikkaballapura,Malamachanahalli M/s Jambola,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.111,
-Chikkaballapura,Malamachanahalli Prodemco,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.111,
-Chikkaballapura,Haven Phase-I,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.112,
-Chikkaballapura,Malamachanahalli HINDH,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.112,
+Chikkaballapura,Malamachanahalli M/s Jambola,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.111,Malamachanahalli Village and
+Chikkaballapura,Malamachanahalli Prodemco,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.111,Malamachanahalli Village and
+Chikkaballapura,Haven Phase-I,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.112,Malamachanahalli Village and
+Chikkaballapura,Malamachanahalli HINDH,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.112,Malamachanahalli Village and
 Chikkaballapura,Malluru,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.112,
 Chikkaballapura,Malluru,,village,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.112,
 Chikkaballapura,Mittanahalli,,village,Sidlaghatta,taluk,agricultural_land,,3000000,acre,Sidlaghatta SRO gazette p.112,
@@ -4887,10 +4887,10 @@ Chikkaballapura,Mugaladapi,,village,Sidlaghatta,taluk,agricultural_land,,1500000
 Chikkaballapura,Mugaladapi,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.113,
 Chikkaballapura,Mutturu,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.113,
 Chikkaballapura,Mutturu,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.113,
-Chikkaballapura,Mutturu M/s Ankor Assoiates,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.113,
-Chikkaballapura,Mutturu M Parameshwaran,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.113,
-Chikkaballapura,Mutturu Bharathesh Layout,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.113,
-Chikkaballapura,Mutturu Krishnayya Shetti Sy,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.113,
+Chikkaballapura,Mutturu M/s Ankor Assoiates,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.113,Mutturu
+Chikkaballapura,Mutturu M Parameshwaran,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.113,Mutturu
+Chikkaballapura,Mutturu Bharathesh Layout,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.113,Mutturu
+Chikkaballapura,Mutturu Krishnayya Shetti Sy,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.113,Mutturu
 Chikkaballapura,Meluru,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.113,
 Chikkaballapura,Meluru,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.113,
 Chikkaballapura,Melukunte,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.114,
@@ -4899,52 +4899,52 @@ Chikkaballapura,Yannuru,,village,Sidlaghatta,taluk,agricultural_land,,2000000,ac
 Chikkaballapura,Yannuru,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.114,
 Chikkaballapura,Yannanguru,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.114,
 Chikkaballapura,Yannanguru,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.114,
-Chikkaballapura,Yananguru N Lakshminarayanamurthy,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.114,
+Chikkaballapura,Yananguru N Lakshminarayanamurthy,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.114,Yannanguru
 Chikkaballapura,Yaddalathippenahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.114,
 Chikkaballapura,Yaddalathippenahalli,,village,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.114,
 Chikkaballapura,Yaddalathippenahalli State,,village,Sidlaghatta,taluk,agricultural_land,,3500000,acre,Sidlaghatta SRO gazette p.115,
-Chikkaballapura,Yaddalathippenahalli Hyland,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.115,
+Chikkaballapura,Yaddalathippenahalli Hyland,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.115,Yaddalathippenahalli State
 Chikkaballapura,Yarachinapura,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.115,
 Chikkaballapura,Yarachinapura,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.115,
 Chikkaballapura,Ragimakalahalli,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.115,
 Chikkaballapura,Ragimakalahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.115,
 Chikkaballapura,Vallappanahalli,,village,Sidlaghatta,taluk,agricultural_land,,1800000,acre,Sidlaghatta SRO gazette p.115,
 Chikkaballapura,Vallappanahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.115,
-Chikkaballapura,"Vallappanahalli T, M, Rajappa",,locality,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.115,
+Chikkaballapura,"Vallappanahalli T, M, Rajappa",,locality,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.115,Vallappanahalli
 Chikkaballapura,Venkatapura,,village,Sidlaghatta,taluk,agricultural_land,,3500000,acre,Sidlaghatta SRO gazette p.115,
 Chikkaballapura,Venkatapura,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.115,
-Chikkaballapura,VenkatapuraM/S North East Properties,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.116,
-Chikkaballapura,Venkatapura M,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.116,
+Chikkaballapura,VenkatapuraM/S North East Properties,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.116,Venkatapura
+Chikkaballapura,Venkatapura M,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.116,Venkatapura
 Chikkaballapura,Sanjeevapura,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.116,
 Chikkaballapura,Sanjeevapura,,village,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.116,
 Chikkaballapura,Sugaturu,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.116,
 Chikkaballapura,Sugaturu,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.116,
-Chikkaballapura,Sugaturu M/S North East Properties,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,
-Chikkaballapura,Sugaturu Manani Project Ltd,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,
-Chikkaballapura,Sugaturu Sri Jarj,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,
-Chikkaballapura,"Sugaturu Sri K, R, Nataraj Sy",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,
-Chikkaballapura,Sugaturu Sri Rajan Chariyan,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,
-Chikkaballapura,"Sugaturu D, Manjunath",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,
+Chikkaballapura,Sugaturu M/S North East Properties,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,Sugaturu
+Chikkaballapura,Sugaturu Manani Project Ltd,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,Sugaturu
+Chikkaballapura,Sugaturu Sri Jarj,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,Sugaturu
+Chikkaballapura,"Sugaturu Sri K, R, Nataraj Sy",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,Sugaturu
+Chikkaballapura,Sugaturu Sri Rajan Chariyan,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,Sugaturu
+Chikkaballapura,"Sugaturu D, Manjunath",,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.117,Sugaturu
 Chikkaballapura,Sundrahalli,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.117,
 Chikkaballapura,Sundrahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.117,
-Chikkaballapura,Sundrahalli FERNS FOREST,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.117,
+Chikkaballapura,Sundrahalli FERNS FOREST,,locality,Sidlaghatta,taluk,plot,,9000,sqm,Sidlaghatta SRO gazette p.117,Sundrahalli
 Chikkaballapura,Haradi,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.117,
 Chikkaballapura,Haradi,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.117,
-Chikkaballapura,Haradi J Ravikumar,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.118,
-Chikkaballapura,Haradi Smt Muniyamma,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.118,
+Chikkaballapura,Haradi J Ravikumar,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.118,Haradi
+Chikkaballapura,Haradi Smt Muniyamma,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.118,Haradi
 Chikkaballapura,Hireballa,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.118,
 Chikkaballapura,Hireballa,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.118,
 Chikkaballapura,Hemarlahalli,,village,Sidlaghatta,taluk,agricultural_land,,2500000,acre,Sidlaghatta SRO gazette p.118,
 Chikkaballapura,Hemarlahalli,,village,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.118,
-Chikkaballapura,Hemarlahalli M R Shivakumar,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.118,
-Chikkaballapura,Hemarlahalli M/S HOUSSO SY,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.118,
+Chikkaballapura,Hemarlahalli M R Shivakumar,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.118,Hemarlahalli
+Chikkaballapura,Hemarlahalli M/S HOUSSO SY,,locality,Sidlaghatta,taluk,plot,,6500,sqm,Sidlaghatta SRO gazette p.118,Hemarlahalli
 Chikkaballapura,Hosapete,,village,Sidlaghatta,taluk,agricultural_land,,2000000,acre,Sidlaghatta SRO gazette p.118,
 Chikkaballapura,Hosapete,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.118,
-Chikkaballapura,Hosapete Ramchandrareddy,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,
-Chikkaballapura,Hosapete Srinivasayya Layout,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,
-Chikkaballapura,Hosapete Sri Manjunath,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,
-Chikkaballapura,"Hosapete Smt K, Roopa SY",,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,
-Chikkaballapura,Hosapete GATEWAY MEADOWS PHASE-2 EXTENSION,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,
+Chikkaballapura,Hosapete Ramchandrareddy,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,Hosapete
+Chikkaballapura,Hosapete Srinivasayya Layout,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,Hosapete
+Chikkaballapura,Hosapete Sri Manjunath,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,Hosapete
+Chikkaballapura,"Hosapete Smt K, Roopa SY",,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,Hosapete
+Chikkaballapura,Hosapete GATEWAY MEADOWS PHASE-2 EXTENSION,,locality,Sidlaghatta,taluk,plot,,6000,sqm,Sidlaghatta SRO gazette p.119,Hosapete
 Chikkaballapura,Hosakere,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.119,
 Chikkaballapura,Hosakere,,village,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.119,
 Chikkaballapura,Hosahalli,,village,Sidlaghatta,taluk,agricultural_land,,1500000,acre,Sidlaghatta SRO gazette p.119,
@@ -5027,7 +5027,7 @@ Chikkaballapura,Thavarevaddu,,village,Sidlaghatta,taluk,plot,,3000,sqm,Sidlaghat
 Chikkaballapura,Thimmanayakahalli,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.127,
 Chikkaballapura,Thimmanayakahalli,,village,Sidlaghatta,taluk,plot,,3800,sqm,Sidlaghatta SRO gazette p.127,
 Chikkaballapura,Thimmanayakahalli MDR Sy,,village,Sidlaghatta,taluk,agricultural_land,,1200000,acre,Sidlaghatta SRO gazette p.127,
-Chikkaballapura,Thimmanayakahalli Anand Sy,,locality,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.128,
+Chikkaballapura,Thimmanayakahalli Anand Sy,,locality,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.128,Thimmanayakahalli MDR Sy
 Chikkaballapura,Thekahalli,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.128,
 Chikkaballapura,Thekahalli,,village,Sidlaghatta,taluk,plot,,3000,sqm,Sidlaghatta SRO gazette p.128,
 Chikkaballapura,Thokalahalli,,village,Sidlaghatta,taluk,agricultural_land,,500000,acre,Sidlaghatta SRO gazette p.128,
@@ -5037,7 +5037,7 @@ Chikkaballapura,Thambalahalli,,village,Sidlaghatta,taluk,plot,,3000,sqm,Sidlagha
 Chikkaballapura,Devaguttahalli,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.128,
 Chikkaballapura,Devaguttahalli,,village,Sidlaghatta,taluk,plot,,3800,sqm,Sidlaghatta SRO gazette p.128,
 Chikkaballapura,Devaguttahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,750000,acre,Sidlaghatta SRO gazette p.128,
-Chikkaballapura,Devaguttahalli Sri Sridhar Sy,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.128,
+Chikkaballapura,Devaguttahalli Sri Sridhar Sy,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.128,Devaguttahalli Village and
 Chikkaballapura,Devappanagudi,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.128,
 Chikkaballapura,Devappanagudi,,village,Sidlaghatta,taluk,plot,,3000,sqm,Sidlaghatta SRO gazette p.128,
 Chikkaballapura,Doddabadaraghatta,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.128,
@@ -5086,7 +5086,7 @@ Chikkaballapura,Belenayakahalli,,village,Sidlaghatta,taluk,agricultural_land,,60
 Chikkaballapura,Belenayakahalli,,village,Sidlaghatta,taluk,plot,,3000,sqm,Sidlaghatta SRO gazette p.132,
 Chikkaballapura,Byraganahalli,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.133,
 Chikkaballapura,Byraganahalli,,village,Sidlaghatta,taluk,plot,,3800,sqm,Sidlaghatta SRO gazette p.133,
-Chikkaballapura,Byraganahalli Sri Honnegowda,,locality,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.133,
+Chikkaballapura,Byraganahalli Sri Honnegowda,,locality,Sidlaghatta,taluk,plot,,4500,sqm,Sidlaghatta SRO gazette p.133,Byraganahalli
 Chikkaballapura,Maddegarahalli,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.133,
 Chikkaballapura,Maddegarahalli,,village,Sidlaghatta,taluk,plot,,3000,sqm,Sidlaghatta SRO gazette p.133,
 Chikkaballapura,Maddenahalli,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.133,
@@ -5205,7 +5205,7 @@ Chikkaballapura,Totlaganahalli,,village,Sidlaghatta,taluk,agricultural_land,,500
 Chikkaballapura,Totlaganahalli,,village,Sidlaghatta,taluk,plot,,3000,sqm,Sidlaghatta SRO gazette p.143,
 Chikkaballapura,Dibburahalli,,village,Sidlaghatta,taluk,agricultural_land,,1000000,acre,Sidlaghatta SRO gazette p.143,
 Chikkaballapura,Dibburahalli,,village,Sidlaghatta,taluk,plot,,5000,sqm,Sidlaghatta SRO gazette p.143,
-Chikkaballapura,Dibburahalli VISHWA PRIYA,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.144,
+Chikkaballapura,Dibburahalli VISHWA PRIYA,,locality,Sidlaghatta,taluk,plot,,5500,sqm,Sidlaghatta SRO gazette p.144,Dibburahalli
 Chikkaballapura,Devaganahalli.S,,village,Sidlaghatta,taluk,agricultural_land,,500000,acre,Sidlaghatta SRO gazette p.144,
 Chikkaballapura,Devaganahalli.S,,village,Sidlaghatta,taluk,plot,,3600,sqm,Sidlaghatta SRO gazette p.144,
 Chikkaballapura,Dimbarlahalli Dasarlahalli,,village,Sidlaghatta,taluk,agricultural_land,,500000,acre,Sidlaghatta SRO gazette p.144,
@@ -5215,10 +5215,10 @@ Chikkaballapura,Nallajaruvahalli,,village,Sidlaghatta,taluk,plot,,3000,sqm,Sidla
 Chikkaballapura,Nallappanahalli,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.145,
 Chikkaballapura,Nallappanahalli,,village,Sidlaghatta,taluk,plot,,3600,sqm,Sidlaghatta SRO gazette p.145,
 Chikkaballapura,Nallappanahalli Village and,,village,Sidlaghatta,taluk,agricultural_land,,750000,acre,Sidlaghatta SRO gazette p.145,
-Chikkaballapura,Smt Parvathi,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.145,
+Chikkaballapura,Smt Parvathi,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.145,Nallappanahalli Village and
 Chikkaballapura,Nallaguttahalli,,village,Sidlaghatta,taluk,agricultural_land,,600000,acre,Sidlaghatta SRO gazette p.146,
 Chikkaballapura,Nallaguttahalli,,village,Sidlaghatta,taluk,plot,,3600,sqm,Sidlaghatta SRO gazette p.146,
-Chikkaballapura,Smt Kempamma,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.146,
+Chikkaballapura,Smt Kempamma,,locality,Sidlaghatta,taluk,plot,,4000,sqm,Sidlaghatta SRO gazette p.146,Nallaguttahalli
 Chikkaballapura,Niluvarathahalli,,village,Sidlaghatta,taluk,agricultural_land,,500000,acre,Sidlaghatta SRO gazette p.146,
 Chikkaballapura,Niluvarathahalli,,village,Sidlaghatta,taluk,plot,,3000,sqm,Sidlaghatta SRO gazette p.146,
 Chikkaballapura,Neralemaradahalli,,village,Sidlaghatta,taluk,agricultural_land,,500000,acre,Sidlaghatta SRO gazette p.146,
