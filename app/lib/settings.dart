@@ -4,6 +4,31 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'bulk_import_page.dart';
 import 'listing_import_page.dart';
 
+/// Light, dark or follow the phone; remembered on this device.
+class ThemeChoice {
+  static const _prefKey = 'theme_mode';
+  static final ValueNotifier<ThemeMode> current = ValueNotifier<ThemeMode>(ThemeMode.system);
+
+  static Future<void> load() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      current.value = switch (prefs.getString(_prefKey)) {
+        'light' => ThemeMode.light,
+        'dark' => ThemeMode.dark,
+        _ => ThemeMode.system,
+      };
+    } catch (_) {}
+  }
+
+  static Future<void> save(ThemeMode mode) async {
+    current.value = mode;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_prefKey, mode.name);
+    } catch (_) {}
+  }
+}
+
 /// The owner's private editor key, kept on this device only.
 class EditorKey {
   static const _prefKey = 'editor_key';
@@ -68,6 +93,22 @@ class _SettingsPageState extends State<SettingsPage> {
         builder: (context, key, _) => ListView(
           padding: const EdgeInsets.all(16),
           children: [
+            Text('Appearance', style: theme.textTheme.titleMedium),
+            const SizedBox(height: 8),
+            ValueListenableBuilder<ThemeMode>(
+              valueListenable: ThemeChoice.current,
+              builder: (context, mode, _) => SegmentedButton<ThemeMode>(
+                segments: const [
+                  ButtonSegment(value: ThemeMode.system, icon: Icon(Icons.brightness_auto_outlined), label: Text('Phone')),
+                  ButtonSegment(value: ThemeMode.light, icon: Icon(Icons.light_mode_outlined), label: Text('Light')),
+                  ButtonSegment(value: ThemeMode.dark, icon: Icon(Icons.dark_mode_outlined), label: Text('Dark')),
+                ],
+                selected: {mode},
+                showSelectedIcon: false,
+                onSelectionChanged: (s) => ThemeChoice.save(s.first),
+              ),
+            ),
+            const SizedBox(height: 28),
             Text('Editor key', style: theme.textTheme.titleMedium),
             const SizedBox(height: 4),
             Text(

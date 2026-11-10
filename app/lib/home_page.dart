@@ -7,6 +7,7 @@ import 'area_sheet.dart';
 import 'format.dart';
 import 'location.dart';
 import 'models.dart';
+import 'search.dart';
 
 const _districts = ['Bangalore Urban', 'Bangalore Rural', 'Ramanagara', 'Tumakuru', 'Kolar', 'Chikkaballapura'];
 const _types = ['plot', 'agricultural_land', 'apartment'];
@@ -32,6 +33,13 @@ class _RatesListViewState extends State<RatesListView> {
   List<Area> _areas = [];
   Map<int, double>? _nearKm; // set while showing places near the user
   bool _locating = false;
+
+  // search extras
+  String? _parent;                    // showing every place in one taluk / city area
+  List<AreaHit> _areaHits = const [];  // areas whose name matched
+  List<Area> _nearAreas = const [];    // places near / along a popular name
+  Map<int, double> _km = const {};
+  String? _nearTitle;
 
   @override
   void initState() {
@@ -63,6 +71,10 @@ class _RatesListViewState extends State<RatesListView> {
       setState(() {
         _district = null;
         _type = null;
+        _parent = null;
+        _areaHits = const [];
+        _nearAreas = const [];
+        _nearTitle = null;
         _areas = [for (final (a, _) in near) a];
         _nearKm = {for (final (a, km) in near) a.id: km};
         _locating = false;
@@ -83,10 +95,41 @@ class _RatesListViewState extends State<RatesListView> {
       _error = null;
     });
     try {
-      final areas = await _api.fetchAreas(query: _search.text, district: _district, type: _type);
+      final q = _search.text.trim();
+      final index = SearchIndex.current.value;
+      var areas = <Area>[];
+      var nearAreas = <Area>[];
+      var km = <int, double>{};
+      String? nearTitle;
+      var hits = const <AreaHit>[];
+      if (_parent != null) {
+        areas = await _api.fetchAreas(parent: _parent, district: _district, type: _type);
+      } else if (q.isNotEmpty && index != null) {
+        final r = index.search(q, district: _district);
+        final nearIds = [for (final (pid, _) in r.near) if (!r.places.contains(pid)) pid];
+        final ids = [...r.places, ...nearIds];
+        final fetched = ids.isEmpty ? <Area>[] : await _api.fetchAreasByIds(ids.take(140).toList());
+        final byId = {for (final a in fetched) a.id: a};
+        bool keep(Area? a) => a != null && (_type == null || a.rates[_type] != null);
+        areas = [for (final pid in r.places) if (keep(byId[pid])) byId[pid]!];
+        nearAreas = [for (final pid in nearIds) if (keep(byId[pid])) byId[pid]!];
+        km = {for (final (pid, d) in r.near) pid: d};
+        nearTitle = r.nearLabel == null
+            ? null
+            : RegExp(r'\b(road|highway|bypass|marga)\b', caseSensitive: false).hasMatch(r.nearLabel!)
+                ? 'Along ${r.nearLabel}'
+                : 'Near ${r.nearLabel}';
+        hits = r.areas;
+      } else {
+        areas = await _api.fetchAreas(query: q, district: _district, type: _type);
+      }
       if (id != _requestId || !mounted) return;
       setState(() {
         _areas = areas;
+        _nearAreas = nearAreas;
+        _km = km;
+        _nearTitle = nearAreas.isEmpty ? null : nearTitle;
+        _areaHits = hits;
         _loading = false;
       });
     } catch (e) {
@@ -98,9 +141,19 @@ class _RatesListViewState extends State<RatesListView> {
     }
   }
 
+  void _openArea(AreaHit a) {
+    _search.clear();
+    setState(() {
+      _parent = a.name;
+      _district = a.district;
+    });
+    _load();
+  }
+
   void _onSearchChanged(String _) {
+    _parent = null;
     _debounce?.cancel();
-    _debounce = Timer(const Duration(milliseconds: 350), _load);
+    _debounce = Timer(Duration(milliseconds: SearchIndex.current.value != null ? 200 : 350), _load);
     setState(() {}); // updates the clear button
   }
 
@@ -162,6 +215,24 @@ class _RatesListViewState extends State<RatesListView> {
               _load();
             },
           ),
+          if (_parent != null)
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 4, 8, 0),
+              child: Row(
+                children: [
+                  Icon(Icons.layers_outlined, size: 18, color: theme.colorScheme.primary),
+                  const SizedBox(width: 6),
+                  Expanded(child: Text('All places in $_parent area', style: theme.textTheme.titleSmall)),
+                  TextButton(
+                    onPressed: () {
+                      setState(() => _parent = null);
+                      _load();
+                    },
+                    child: const Text('Show all'),
+                  ),
+                ],
+              ),
+            ),
           if (_nearKm != null)
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 4, 8, 0),
@@ -181,7 +252,7 @@ class _RatesListViewState extends State<RatesListView> {
   }
 
   Widget _body(ThemeData theme) {
-    if (_loading && _areas.isEmpty) {
+    if (_loading && _areas.isEmpty && _nearAreas.isEmpty) {
       return const Center(child: CircularProgressIndicator());
     }
     if (_error != null) {
@@ -191,31 +262,55 @@ class _RatesListViewState extends State<RatesListView> {
         action: FilledButton.tonal(onPressed: _load, child: const Text('Try again')),
       );
     }
-    if (_areas.isEmpty) {
-      return const _Message(icon: Icons.search_off, text: 'No places match. Try another spelling.');
+    if (_areas.isEmpty && _nearAreas.isEmpty && _areaHits.isEmpty) {
+      return const _Message(icon: Icons.search_off, text: 'No places match. Try another spelling or a nearby place.');
     }
+    final muted = theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant);
+    final items = <Widget>[
+      for (final a in _areaHits)
+        Card(
+          margin: const EdgeInsets.symmetric(vertical: 5),
+          color: theme.colorScheme.secondaryContainer,
+          child: ListTile(
+            leading: Icon(Icons.layers_outlined, color: theme.colorScheme.onSecondaryContainer),
+            title: Text('${a.name} area', style: TextStyle(color: theme.colorScheme.onSecondaryContainer)),
+            subtitle: Text('${a.places} places · ${a.district}',
+                style: TextStyle(color: theme.colorScheme.onSecondaryContainer)),
+            trailing: Icon(Icons.chevron_right, color: theme.colorScheme.onSecondaryContainer),
+            onTap: () => _openArea(a),
+          ),
+        ),
+      for (final a in _areas) _AreaCard(area: a, km: _nearKm?[a.id]),
+      if (_nearTitle != null) ...[
+        Padding(
+          padding: const EdgeInsets.fromLTRB(4, 16, 4, 4),
+          child: Row(children: [
+            Icon(Icons.near_me_outlined, size: 18, color: theme.colorScheme.primary),
+            const SizedBox(width: 6),
+            Expanded(child: Text(_nearTitle!, style: theme.textTheme.titleSmall)),
+          ]),
+        ),
+        for (final a in _nearAreas) _AreaCard(area: a, km: _km[a.id]),
+      ],
+      Padding(
+        padding: const EdgeInsets.all(16),
+        child: Text(
+          _nearKm != null || _nearTitle != null
+              ? 'Distances are to the middle of each place. Place names nearby come from OpenStreetMap.'
+              : _areas.length >= 100
+                  ? 'Showing the first ${_areas.length} places. Search to narrow down.'
+                  : 'Government guidance values. Market prices are usually higher.',
+          textAlign: TextAlign.center,
+          style: muted,
+        ),
+      ),
+    ];
     return RefreshIndicator(
       onRefresh: _load,
       child: ListView.builder(
         padding: const EdgeInsets.fromLTRB(12, 0, 12, 24),
-        itemCount: _areas.length + 1,
-        itemBuilder: (context, i) {
-          if (i == _areas.length) {
-            return Padding(
-              padding: const EdgeInsets.all(16),
-              child: Text(
-                _nearKm != null
-                    ? 'Distances are to the middle of each place.'
-                    : _areas.length >= 100
-                    ? 'Showing the first ${_areas.length} places. Search to narrow down.'
-                    : 'Government guidance values, Oct 2023. Market prices are usually higher.',
-                textAlign: TextAlign.center,
-                style: theme.textTheme.bodySmall,
-              ),
-            );
-          }
-          return _AreaCard(area: _areas[i], km: _nearKm?[_areas[i].id]);
-        },
+        itemCount: items.length,
+        itemBuilder: (context, i) => items[i],
       ),
     );
   }

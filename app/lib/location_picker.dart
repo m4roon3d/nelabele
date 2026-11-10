@@ -30,7 +30,9 @@ class _LocationPickerPageState extends State<LocationPickerPage> {
         alignment: Alignment.center,
         children: [
           MapLibreMap(
-            styleString: 'https://tiles.openfreemap.org/styles/liberty',
+            styleString: Theme.of(context).brightness == Brightness.dark
+                ? 'https://tiles.openfreemap.org/styles/dark'
+                : 'https://tiles.openfreemap.org/styles/liberty',
             initialCameraPosition: CameraPosition(
               target: widget.initial ?? const LatLng(12.9716, 77.5946),
               zoom: widget.initial != null ? 14 : 10,

@@ -54,12 +54,13 @@ class NelaBeleApi {
   }
 
   /// Areas matching the filters, with their rates, sorted by name.
-  Future<List<Area>> fetchAreas({String query = '', String? district, String? type}) async {
+  Future<List<Area>> fetchAreas({String query = '', String? district, String? type, String? parent}) async {
     final params = <String, String>{
       'select': _rateColumns,
       'order': 'area_name.asc,property_type.asc',
-      'limit': '200',
+      'limit': parent != null ? '1500' : '200',
     };
+    if (parent != null) params['parent_name'] = 'eq.$parent';
     final q = query.trim().replaceAll(RegExp(r'[*,()"]'), ' ').trim();
     if (q.isNotEmpty) {
       if (RegExp(r'[\u0C80-\u0CFF]').hasMatch(q)) {

@@ -11,7 +11,8 @@ import 'format.dart';
 import 'location.dart';
 import 'models.dart';
 
-const _styleUrl = 'https://tiles.openfreemap.org/styles/positron';
+const _styleLight = 'https://tiles.openfreemap.org/styles/positron';
+const _styleDark = 'https://tiles.openfreemap.org/styles/dark';
 const _sourceId = 'areas';
 const _layerId = 'areas-dots';
 const _shapeSourceId = 'area-shapes';
@@ -25,6 +26,8 @@ const _meLayerId = 'me-dot';
 const _metroColor = '#7A3E9D';
 const _noDataColor = '#B9B2A6';
 const _ringColor = '#3D4A5C';
+const _metroColorDark = '#C08BE6';
+const _ringColorDark = '#AAB6C4';
 
 /// Five rate bands, cheapest to priciest: field green through to deep red earth.
 const _bandColors = ['#5C8A38', '#A3B84A', '#E3A21A', '#D9774A', '#9C3F1C'];
@@ -51,6 +54,7 @@ class _MapPageState extends State<MapPage> {
   int _noData = 0;      // places with no market figure in market mode
   bool _infraAdded = false;
   bool _locating = false;
+  bool _dark = false;
 
   Future<void> _show(String type) async {
     setState(() {
@@ -195,6 +199,8 @@ class _MapPageState extends State<MapPage> {
     try {
       final data = jsonDecode(await rootBundle.loadString('assets/infra.geojson')) as Map<String, dynamic>;
       await map.addGeoJsonSource(_infraSourceId, data);
+      final metro = _dark ? _metroColorDark : _metroColor;
+      final ring = _dark ? _ringColorDark : _ringColor;
       Future<void> line(String id, String kind, String color, double width, {bool dashed = false}) =>
           map.addLineLayer(
             _infraSourceId,
@@ -208,16 +214,16 @@ class _MapPageState extends State<MapPage> {
             ),
             filter: ['==', ['get', 'kind'], kind],
           );
-      await line('infra-ring', 'ring', _ringColor, 2.2);
-      await line('infra-ring-planned', 'ring_planned', _ringColor, 2.2, dashed: true);
-      await line('infra-metro', 'metro', _metroColor, 2.6);
-      await line('infra-metro-planned', 'metro_planned', _metroColor, 2.6, dashed: true);
+      await line('infra-ring', 'ring', ring, 2.2);
+      await line('infra-ring-planned', 'ring_planned', ring, 2.2, dashed: true);
+      await line('infra-metro', 'metro', metro, 2.6);
+      await line('infra-metro-planned', 'metro_planned', metro, 2.6, dashed: true);
       await map.addCircleLayer(
         _infraSourceId,
         'infra-stations',
-        const CircleLayerProperties(
-          circleColor: '#FFFFFF',
-          circleStrokeColor: _metroColor,
+        CircleLayerProperties(
+          circleColor: _dark ? '#161D19' : '#FFFFFF',
+          circleStrokeColor: metro,
           circleStrokeWidth: 2,
           circleRadius: ['interpolate', ['linear'], ['zoom'], 9, 2, 14, 5],
         ),
@@ -228,8 +234,8 @@ class _MapPageState extends State<MapPage> {
             textField: ['get', 'name'],
             textFont: const ['Noto Sans Regular'],
             textSize: size,
-            textColor: _metroColor,
-            textHaloColor: '#FFFFFF',
+            textColor: metro,
+            textHaloColor: _dark ? '#161D19' : '#FFFFFF',
             textHaloWidth: 1.4,
             textOffset: const [0, 1.1],
             textAnchor: 'top',
@@ -329,16 +335,24 @@ class _MapPageState extends State<MapPage> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final scheme = theme.colorScheme;
+    final dark = theme.brightness == Brightness.dark;
+    _dark = dark;
     return Stack(
       children: [
         MapLibreMap(
-          styleString: _styleUrl,
+          // a new map when the theme flips, so the style and our layers load fresh
+          key: ValueKey(dark),
+          styleString: dark ? _styleDark : _styleLight,
           initialCameraPosition: const CameraPosition(target: LatLng(13.05, 77.6), zoom: 9.3),
           minMaxZoomPreference: const MinMaxZoomPreference(7, 17),
           compassEnabled: false,
           rotateGesturesEnabled: false,
           tiltGesturesEnabled: false,
-          onMapCreated: (c) => _map = c,
+          onMapCreated: (c) {
+            _map = c;
+            _styleReady = false;
+            _infraAdded = false;
+          },
           onStyleLoadedCallback: () {
             _styleReady = true;
             _show(_type);
@@ -431,7 +445,7 @@ class _MapPageState extends State<MapPage> {
           bottom: 34,
           child: Text(
             'Outlines: Census 2011 via DataMeet · Metro & roads: © OpenStreetMap',
-            style: theme.textTheme.labelSmall?.copyWith(color: const Color(0xFF6B6157), fontSize: 9),
+            style: theme.textTheme.labelSmall?.copyWith(color: scheme.onSurfaceVariant, fontSize: 9),
           ),
         ),
         if (_breaks.length == 4)
@@ -452,8 +466,8 @@ class _MapPageState extends State<MapPage> {
                     const SizedBox(height: 6),
                     if (_showInfra) ...[
                       const SizedBox(height: 2),
-                      _LineKey(color: _metroColor, label: 'Metro', dashedLabel: 'building'),
-                      _LineKey(color: _ringColor, label: 'Ring roads', dashedLabel: 'planned'),
+                      _LineKey(color: dark ? _metroColorDark : _metroColor, label: 'Metro', dashedLabel: 'building'),
+                      _LineKey(color: dark ? _ringColorDark : _ringColor, label: 'Ring roads', dashedLabel: 'planned'),
                       const SizedBox(height: 4),
                     ],
                     if (_market && _noData > 0)
