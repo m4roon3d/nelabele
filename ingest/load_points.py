@@ -43,6 +43,17 @@ def main():
                AND a.point_source IS DISTINCT FROM 'pin'
                AND coalesce(a.point_source, '') NOT LIKE 'pin:%'""")
         updated = cur.rowcount
+        # points set by an earlier run that the file no longer has (a namesake far away,
+        # a clash with a nearer office's place) come off the map; pins people dropped stay
+        cur.execute("""
+            UPDATE nelabele.geo_area a SET point = NULL, point_source = NULL
+             WHERE a.point_source LIKE 'osm:%%'
+               AND a.level::text IN ('village', 'locality')
+               AND NOT EXISTS (
+                   SELECT 1 FROM pts t JOIN nelabele.geo_area p ON lower(p.name) = lower(t.parent_name)
+                    WHERE p.id = a.parent_id AND a.district = t.district
+                      AND lower(a.name) = lower(t.area_name))""")
+        cleared = cur.rowcount
         # Kannada names from OpenStreetMap, where we don't have one from the gazette
         cur.execute("""
             UPDATE nelabele.geo_area a SET name_kn = t.name_kn
@@ -54,7 +65,8 @@ def main():
         cur.execute("SELECT count(*) FROM nelabele.geo_area WHERE coalesce(centroid, point) IS NOT NULL")
         located = cur.fetchone()[0]
         conn.commit()
-    print(f"{len(rows)} points in file, {updated} areas updated, {located} areas now on the map, "
+    print(f"{len(rows)} points in file, {updated} areas updated, {cleared} old points cleared, "
+          f"{located} areas now on the map, "
           f"{named} Kannada names added")
 
 
