@@ -26,6 +26,16 @@ db/nelabele_schema.sql   tables and rate engine (private nelabele schema)
 db/api.sql               read-only views and lookups the Data API exposes
 ingest/                  guidance value extract, parse and load scripts
 data/guidance/           parsed guidance values, ready to load
+data/market/published.csv market prices from reports and listings, with sources
+data/geo/                map points and village boundaries
+```
+
+Map points are rebuilt in this order, from the repo root:
+
+```
+python ingest/geocode.py <osm places.json> data/geo/area_points.csv <osm roads.json>
+python ingest/boundaries.py <census ka.geojson> data/geo/village_boundaries.geojson
+python ingest/points_from_boundaries.py data/geo/village_boundaries.geojson data/geo/area_points.csv
 ```
 
 ## Getting started

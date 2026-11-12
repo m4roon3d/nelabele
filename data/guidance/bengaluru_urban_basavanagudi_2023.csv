@@ -219,7 +219,7 @@ Bangalore Urban,Deepike Elite,,locality,Attibele,zone,plot,,15000,sqm,Attibele S
 Bangalore Urban,Indlabele,,village,Attibele,zone,agricultural_land,,12000000,acre,Attibele SRO gazette p.109,
 Bangalore Urban,Indlabele,,village,Attibele,zone,plot,,15000,sqm,Attibele SRO gazette p.109,
 Bangalore Urban,Golden Encalve,,locality,Attibele,zone,plot,,16000,sqm,Attibele SRO gazette p.110,survey no's
-Bangalore Urban,M/s Dhanalaxmi Highteck city,,locality,Attibele,zone,plot,,17000,sqm,Attibele SRO gazette p.110,survey no's
+Bangalore Urban,Dhanalaxmi Highteck city,,locality,Attibele,zone,plot,,17000,sqm,Attibele SRO gazette p.110,survey no's
 Bangalore Urban,Blue bells Residential Layout,,locality,Attibele,zone,plot,,17000,sqm,Attibele SRO gazette p.110,survey no's
 Bangalore Urban,Iggaluru,,village,Attibele,zone,agricultural_land,,15800000,acre,Attibele SRO gazette p.110,
 Bangalore Urban,Iggaluru,,village,Attibele,zone,plot,,18000,sqm,Attibele SRO gazette p.110,
@@ -493,7 +493,7 @@ Bangalore Urban,Mahanthaligapura,,village,Jigani,zone,agricultural_land,,1050000
 Bangalore Urban,Mahanthaligapura,,village,Jigani,zone,plot,,14000,sqm,Jigani SRO gazette p.220,
 Bangalore Urban,Maragondanahalli,,village,Jigani,zone,agricultural_land,,17000000,acre,Jigani SRO gazette p.221,
 Bangalore Urban,Maragondanahalli,,village,Jigani,zone,plot,,20000,sqm,Jigani SRO gazette p.221,
-Bangalore Urban,S.K. Daisy Aparment,,locality,Jigani,zone,plot,,34000,sqm,Jigani SRO gazette p.222,Part - I(Mahanthalingapura
+Bangalore Urban,S.K. Daisy Apartment,,locality,Jigani,zone,plot,,34000,sqm,Jigani SRO gazette p.222,Part - I(Mahanthalingapura
 Bangalore Urban,Pioneer Sun Blasam,,locality,Jigani,zone,plot,,34000,sqm,Jigani SRO gazette p.222,Part - I(Mahanthalingapura
 Bangalore Urban,Concorde Tech Turf,,locality,Jigani,zone,plot,,55000,sqm,Jigani SRO gazette p.222,Sy.No.90/1)
 Bangalore Urban,Nallasandra,,village,Jigani,zone,agricultural_land,,9000000,acre,Jigani SRO gazette p.223,
@@ -617,7 +617,6 @@ Bangalore Urban,Byatarayanapura,,locality,Chamarajpet,zone,apartment,,42000,sqm,
 Bangalore Urban,Kalasipalya,,locality,Chamarajpet,zone,apartment,,50000,sqm,Chamarajpet SRO gazette p.25 (median of 25),
 Bangalore Urban,Karithimmanahalli,,locality,Chamarajpet,zone,apartment,,28000,sqm,Chamarajpet SRO gazette p.25 (median of 7),
 Bangalore Urban,Doddamavalli,,locality,Chamarajpet,zone,apartment,,63000,sqm,Chamarajpet SRO gazette p.26 (median of 8),
-Bangalore Urban,No.Prm/ka,,locality,Chamarajpet,zone,apartment,,75000,sqm,Chamarajpet SRO gazette p.26 (median of 6),
 Bangalore Urban,Chamarajpet,,locality,Chamarajpet,zone,apartment,,84000,sqm,Chamarajpet SRO gazette p.26 (median of 9),
 Bangalore Urban,Chikkamavalli,,locality,Chamarajpet,zone,apartment,,62000,sqm,Chamarajpet SRO gazette p.27 (median of 10),
 Bangalore Urban,Parvathipura,,locality,Chamarajpet,zone,apartment,,64000,sqm,Chamarajpet SRO gazette p.28 (median of 8),
@@ -692,9 +691,7 @@ Bangalore Urban,Jayanagara HBCS,,locality,Banashankari,zone,plot,,47500,sqm,Bana
 Bangalore Urban,Bharath HBCS,,locality,Banashankari,zone,plot,,47500,sqm,Banashankari SRO gazette p.45 (median of 2),No.PRM/KA/RERA/1251/310/PR
 Bangalore Urban,Karishma Hills,,locality,Banashankari,zone,plot,,48000,sqm,Banashankari SRO gazette p.45,
 Bangalore Urban,Mantri Tranquil,,locality,Banashankari,zone,apartment,,50600,sqm,Banashankari SRO gazette p.45,
-Bangalore Urban,No.PRM/KA,,locality,Banashankari,zone,apartment,,41910,sqm,Banashankari SRO gazette p.46 (median of 111),
 Bangalore Urban,Govinayakanahalli,,locality,Banashankari,zone,plot,,45000,sqm,Banashankari SRO gazette p.46,No.PRM/KA/RERA/1251/310/PR
-Bangalore Urban,No.PRM/KA,,locality,Banashankari,zone,plot,,52000,sqm,Banashankari SRO gazette p.46 (median of 23),
 Bangalore Urban,Gowdanapalya,,locality,Banashankari,zone,plot,,45000,sqm,Banashankari SRO gazette p.46,No.PRM/KA/RERA/1251/310/PR
 Bangalore Urban,BEML Layout 10th Block,,locality,Banashankari,zone,plot,,57500,sqm,Banashankari SRO gazette p.47,No.PRM/KA/RERA/1251/310/PR
 Bangalore Urban,Jaraganahalli / Gangadharanagara,,locality,Banashankari,zone,plot,,59000,sqm,Banashankari SRO gazette p.48,No.PRM/KA/RERA/1251/310/PR
@@ -768,7 +765,7 @@ Bangalore Urban,Smilee Nisarga Layout,,locality,Anekal,zone,plot,,6400,sqm,Aneka
 Bangalore Urban,Grand Home Layout,,locality,Anekal,zone,plot,,11300,sqm,Anekal SRO gazette p.94,Anekal Town Limits
 Bangalore Urban,C.K.Aditya,,locality,Anekal,zone,plot,,15000,sqm,Anekal SRO gazette p.94,Anekal Town Limits
 Bangalore Urban,Golden Infra ASTER PARK,,locality,Anekal,zone,plot,,11900,sqm,Anekal SRO gazette p.95,Anekal Town Limits
-Bangalore Urban,M/s. D.X Max properties Pvt Ltd,,locality,Attibele,zone,apartment,,28000,sqm,Attibele SRO gazette p.98,
+Bangalore Urban,D.X Max properties Pvt Ltd,,locality,Attibele,zone,apartment,,28000,sqm,Attibele SRO gazette p.98,
 Bangalore Urban,Above,,locality,Attibele,zone,apartment,,31000,sqm,Attibele SRO gazette p.101 (median of 93),
 Bangalore Urban,Above,,locality,Attibele,zone,plot,,12000,sqm,Attibele SRO gazette p.101 (median of 11),
 Bangalore Urban,Sun City Layout,,locality,Attibele,zone,plot,,14800,sqm,Attibele SRO gazette p.109,survey no's
@@ -785,7 +782,7 @@ Bangalore Urban,Confident Aspire Plots,,locality,Sarjapura,zone,plot,,31000,sqm,
 Bangalore Urban,Sun Blosom Plots,,locality,Sarjapura,zone,plot,,11800,sqm,Sarjapura SRO gazette p.127,
 Bangalore Urban,Telecom Ayushmanbhava Plots,,locality,Sarjapura,zone,plot,,19000,sqm,Sarjapura SRO gazette p.128,
 Bangalore Urban,Citi light seasons Plots,,locality,Sarjapura,zone,plot,,27000,sqm,Sarjapura SRO gazette p.128,
-Bangalore Urban,confident ivory coast plots,,locality,Sarjapura,zone,plot,,30000,sqm,Sarjapura SRO gazette p.128,
+Bangalore Urban,Confident ivory coast plots,,locality,Sarjapura,zone,plot,,30000,sqm,Sarjapura SRO gazette p.128,
 Bangalore Urban,Akruti Cozy Home,,locality,Sarjapura,zone,plot,,30000,sqm,Sarjapura SRO gazette p.129,
 Bangalore Urban,Akruti Cozy Home,,locality,Sarjapura,zone,apartment,,33000,sqm,Sarjapura SRO gazette p.129,
 Bangalore Urban,Confident Floris Plots,,locality,Sarjapura,zone,plot,,33000,sqm,Sarjapura SRO gazette p.129 (median of 2),"LAYOUT sy.no.111, sy.no"
@@ -805,7 +802,7 @@ Bangalore Urban,Ashish woods / Ashish Greens Plots,,locality,Sarjapura,zone,plot
 Bangalore Urban,Ashish woods / Ashish Greens Plots,,locality,Sarjapura,zone,apartment,,29000,sqm,Sarjapura SRO gazette p.137,
 Bangalore Urban,Adithya Home Plots,,locality,Sarjapura,zone,plot,,26500,sqm,Sarjapura SRO gazette p.137,
 Bangalore Urban,Excell Plots,,locality,Sarjapura,zone,plot,,23000,sqm,Sarjapura SRO gazette p.137,
-Bangalore Urban,Adithya Homes Elite Residential Layout Sy,,locality,Sarjapura,zone,plot,,27000,sqm,Sarjapura SRO gazette p.137,
+Bangalore Urban,Adithya Homes Elite Residential Layout,,locality,Sarjapura,zone,plot,,27000,sqm,Sarjapura SRO gazette p.137,
 Bangalore Urban,Teachers Town Plots,,locality,Sarjapura,zone,plot,,31000,sqm,Sarjapura SRO gazette p.140,
 Bangalore Urban,Vakil Satellite Plots,,locality,Sarjapura,zone,plot,,39000,sqm,Sarjapura SRO gazette p.140,
 Bangalore Urban,Poineer Lakdew Plots,,locality,Sarjapura,zone,plot,,29200,sqm,Sarjapura SRO gazette p.141,
@@ -901,7 +898,6 @@ Bangalore Urban,Anjinappa Layout,,locality,Jigani,zone,plot,,14200,sqm,Jigani SR
 Bangalore Urban,Srikanta Reddy Layout,,locality,Jigani,zone,plot,,14200,sqm,Jigani SRO gazette p.189,Layout
 Bangalore Urban,M.Narayana Reddy Layout,,locality,Jigani,zone,plot,,14200,sqm,Jigani SRO gazette p.189,Layout
 Bangalore Urban,Ashwath Reddy Layout,,locality,Jigani,zone,plot,,14200,sqm,Jigani SRO gazette p.189,Layout
-Bangalore Urban,Nagar Ward,,locality,Jigani,zone,plot,,34000,sqm,Jigani SRO gazette p.189,
 Bangalore Urban,Madduramma Temple,,locality,Jigani,zone,plot,,14000,sqm,Jigani SRO gazette p.189,Commercial)
 Bangalore Urban,Vinayaka Nagar,,locality,Jigani,zone,plot,,14000,sqm,Jigani SRO gazette p.189 (median of 2),Side
 Bangalore Urban,"Surappa House, Shamba",,locality,Jigani,zone,plot,,14200,sqm,Jigani SRO gazette p.189,Commercial)
@@ -1010,8 +1006,7 @@ Bangalore Urban,Akbar Layout,,locality,Jigani,zone,plot,,17000,sqm,Jigani SRO ga
 Bangalore Urban,Aishwarya Golden Nest,,locality,Jigani,zone,plot,,18000,sqm,Jigani SRO gazette p.201 (median of 3),attached to National Highway
 Bangalore Urban,Nirmal Nagar,,locality,Jigani,zone,plot,,17000,sqm,Jigani SRO gazette p.201,Layout
 Bangalore Urban,Green Meadows layout,,locality,Jigani,zone,plot,,19500,sqm,Jigani SRO gazette p.201 (median of 2),Layout
-Bangalore Urban,pride crosswinds layout,,locality,Jigani,zone,plot,,22000,sqm,Jigani SRO gazette p.201,PRM/KA/RERA/1251/pR
-Bangalore Urban,PRM/KA,,locality,Jigani,zone,apartment,,34000,sqm,Jigani SRO gazette p.201,
+Bangalore Urban,Pride crosswinds layout,,locality,Jigani,zone,plot,,22000,sqm,Jigani SRO gazette p.201,PRM/KA/RERA/1251/pR
 Bangalore Urban,Nos. 1 to,,locality,Jigani,zone,plot,,15000,sqm,Jigani SRO gazette p.204,
 Bangalore Urban,Akshya quiet Land Layout,,locality,Jigani,zone,plot,,18000,sqm,Jigani SRO gazette p.204 (median of 3),Resiential Layout (Nosenuru
 Bangalore Urban,Bannerughatta to Bangalore,,locality,Jigani,zone,plot,,11000,sqm,Jigani SRO gazette p.205,
@@ -1038,16 +1033,13 @@ Bangalore Urban,Akruthi Green Woods,,locality,Jigani,zone,plot,,16000,sqm,Jigani
 Bangalore Urban,Akra Layout,,locality,Jigani,zone,plot,,12000,sqm,Jigani SRO gazette p.217,Residentail Single Site in Sy
 Bangalore Urban,Vasavi Shelters Layout,,locality,Jigani,zone,plot,,22000,sqm,Jigani SRO gazette p.218,Residentail Single Site in Sy
 Bangalore Urban,Om Sai Nagar Layout,,locality,Jigani,zone,plot,,15750,sqm,Jigani SRO gazette p.218 (median of 2),Survey No
-Bangalore Urban,Residentail Single Site in Sy,,locality,Jigani,zone,plot,,16000,sqm,Jigani SRO gazette p.218,
+Bangalore Urban,Residentail Single Site in,,locality,Jigani,zone,plot,,16000,sqm,Jigani SRO gazette p.218,
 Bangalore Urban,Symphony Shelter Layout,,locality,Jigani,zone,plot,,16500,sqm,Jigani SRO gazette p.220,Survey No
 Bangalore Urban,Furtune Lake View Layout,,locality,Jigani,zone,plot,,16500,sqm,Jigani SRO gazette p.220,Survey No
 Bangalore Urban,Arunodaya Layout,,locality,Jigani,zone,plot,,16500,sqm,Jigani SRO gazette p.220,Survey No
 Bangalore Urban,Part - I,,locality,Jigani,zone,plot,,21000,sqm,Jigani SRO gazette p.221,
 Bangalore Urban,Part - I,,locality,Jigani,zone,apartment,,38000,sqm,Jigani SRO gazette p.221 (median of 2),
 Bangalore Urban,Part-II,,locality,Jigani,zone,apartment,,36000,sqm,Jigani SRO gazette p.223,
-Bangalore Urban,No.PRM/KA,,locality,Jigani,zone,apartment,,48000,sqm,Jigani SRO gazette p.223,
-Bangalore Urban,No.PRM/KA,,locality,Jigani,zone,apartment,,44000,sqm,Jigani SRO gazette p.223,
-Bangalore Urban,Prm/Ka,,locality,Jigani,zone,apartment,,40120,sqm,Jigani SRO gazette p.223,
 Bangalore Urban,Aishwarya Ivy Paradise,,locality,Jigani,zone,plot,,15000,sqm,Jigani SRO gazette p.225,Survey
 Bangalore Urban,U.R.Castel Layout,,locality,Jigani,zone,plot,,15000,sqm,Jigani SRO gazette p.225,Layout
 Bangalore Urban,Sai Samrudhi Homes,,locality,Jigani,zone,plot,,15000,sqm,Jigani SRO gazette p.225,Layout

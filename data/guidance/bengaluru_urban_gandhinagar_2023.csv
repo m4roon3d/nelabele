@@ -2,8 +2,8 @@ district,area_name,name_kn,area_level,parent_name,parent_level,property_type,app
 Bangalore Urban,Banashankari Homes,,locality,Hebbal,zone,plot,,69460,sqm,Hebbal SRO gazette p.105,Pin Code No.560077)
 Bangalore Urban,Kalpatharu Dollars Park,,locality,Hebbal,zone,plot,,84150,sqm,Hebbal SRO gazette p.105,Pin Code No.560077)
 Bangalore Urban,Godrej-17 (Row House),,locality,Hebbal,zone,plot,,82300,sqm,Hebbal SRO gazette p.113,Kodigehalli gate) Hebbal Sy
-Bangalore Urban,NGEFLayout PIDNos,,village,Hebbal,zone,agricultural_land,,81600000,acre,Hebbal SRO gazette p.130,
-Bangalore Urban,NGEFLayout PIDNos,,village,Hebbal,zone,plot,,76560,sqm,Hebbal SRO gazette p.130,
+Bangalore Urban,NGEFLayout,,village,Hebbal,zone,agricultural_land,,81600000,acre,Hebbal SRO gazette p.130,
+Bangalore Urban,NGEFLayout,,village,Hebbal,zone,plot,,76560,sqm,Hebbal SRO gazette p.130,
 Bangalore Urban,Royal Baveri a Sai Balaji,,locality,Hebbal,zone,plot,,60020,sqm,Hebbal SRO gazette p.133,Pin Code No.560094)
 Bangalore Urban,Sri Lakshmi Narashima,,locality,Hebbal,zone,plot,,60020,sqm,Hebbal SRO gazette p.133,Pin Code No.560094)
 Bangalore Urban,Kacharakanahalli,,village,Kacharakanahalli,zone,agricultural_land,,90000000,acre,Kacharakanahalli SRO gazette p.139,
@@ -34,7 +34,7 @@ Bangalore Urban,R.Nanjundappa Road/Karavali Road,,locality,Kacharakanahalli,zone
 Bangalore Urban,M.Muniyappa Road (M.M.Road),,locality,Kacharakanahalli,zone,plot,,40000,sqm,Kacharakanahalli SRO gazette p.146,Old Property No. 84/2)
 Bangalore Urban,Railway Layout (Pillanna Garden),,locality,Kacharakanahalli,zone,plot,,40000,sqm,Kacharakanahalli SRO gazette p.146,Old Property No. 84/2)
 Bangalore Urban,Subhash Layout,,locality,Kacharakanahalli,zone,plot,,40000,sqm,Kacharakanahalli SRO gazette p.146,Old Property No. 84/2)
-Bangalore Urban,IndiraNagara,,locality,Kacharakanahalli,zone,plot,,40000,sqm,Kacharakanahalli SRO gazette p.146,Old Property No. 84/2)
+Bangalore Urban,Indira Nagara,,locality,Kacharakanahalli,zone,plot,,40000,sqm,Kacharakanahalli SRO gazette p.146,Old Property No. 84/2)
 Bangalore Urban,Mangala Layout,,locality,Kacharakanahalli,zone,plot,,40000,sqm,Kacharakanahalli SRO gazette p.146,Old Property No. 84/2)
 Bangalore Urban,Teachers Colony,,locality,Kacharakanahalli,zone,plot,,40000,sqm,Kacharakanahalli SRO gazette p.146,Old Property No. 84/2)
 Bangalore Urban,Ajjamallappa Layout,,locality,Kacharakanahalli,zone,plot,,35000,sqm,Kacharakanahalli SRO gazette p.146,Old Property No. 84/2)
@@ -117,7 +117,7 @@ Bangalore Urban,Kushal Nagara,,locality,Kacharakanahalli,zone,plot,,25000,sqm,Ka
 Bangalore Urban,Basava Nagara,,locality,Kacharakanahalli,zone,plot,,21500,sqm,Kacharakanahalli SRO gazette p.160,Old Property No. 84/2)
 Bangalore Urban,Ashoka Nagara,,locality,Kacharakanahalli,zone,plot,,21500,sqm,Kacharakanahalli SRO gazette p.160,Old Property No. 84/2)
 Bangalore Urban,Anwar Layout,,locality,Kacharakanahalli,zone,plot,,25000,sqm,Kacharakanahalli SRO gazette p.160,Old Property No. 84/2)
-Bangalore Urban,GandhiNagara,,locality,Kacharakanahalli,zone,plot,,20500,sqm,Kacharakanahalli SRO gazette p.160,Old Property No. 84/2)
+Bangalore Urban,Gandhi Nagara,,locality,Kacharakanahalli,zone,plot,,20500,sqm,Kacharakanahalli SRO gazette p.160,Old Property No. 84/2)
 Bangalore Urban,Muslim Layout/Colony,,locality,Kacharakanahalli,zone,plot,,12000,sqm,Kacharakanahalli SRO gazette p.160,Old Property No. 84/2)
 Bangalore Urban,Muneshwara Nagara,,locality,Kacharakanahalli,zone,plot,,21500,sqm,Kacharakanahalli SRO gazette p.160,Old Property No. 84/2)
 Bangalore Urban,Lidkar Colony,,locality,Kacharakanahalli,zone,plot,,18000,sqm,Kacharakanahalli SRO gazette p.160,Old Property No. 84/2)
@@ -275,7 +275,7 @@ Bangalore Urban,Jakkuru,,village,Byatarayanapura,zone,agricultural_land,,6270000
 Bangalore Urban,Jakkuru,,village,Byatarayanapura,zone,plot,,37500,sqm,Byatarayanapura SRO gazette p.204,
 Bangalore Urban,Jakkuru Plantation,,village,Byatarayanapura,zone,agricultural_land,,77000000,acre,Byatarayanapura SRO gazette p.206,
 Bangalore Urban,Jakkuru Plantation,,village,Byatarayanapura,zone,plot,,45500,sqm,Byatarayanapura SRO gazette p.206,
-Bangalore Urban,Green Aspire Aparment,,locality,Byatarayanapura,zone,plot,,43670,sqm,Byatarayanapura SRO gazette p.207,Jakkuru Plantation dP
+Bangalore Urban,Green Aspire Apartment,,locality,Byatarayanapura,zone,plot,,43670,sqm,Byatarayanapura SRO gazette p.207,Jakkuru Plantation dP
 Bangalore Urban,Jarakabandekaval,,village,Byatarayanapura,zone,agricultural_land,,57800000,acre,Byatarayanapura SRO gazette p.207,
 Bangalore Urban,Jarakabandekaval,,village,Byatarayanapura,zone,plot,,30000,sqm,Byatarayanapura SRO gazette p.207,
 Bangalore Urban,Jarakabandekaval,,village,Byatarayanapura,zone,agricultural_land,,57800000,acre,Byatarayanapura SRO gazette p.207,
@@ -290,8 +290,8 @@ Bangalore Urban,Narasipura (Vidyaranyapura),,village,Byatarayanapura,zone,agricu
 Bangalore Urban,Narasipura (Vidyaranyapura),,village,Byatarayanapura,zone,plot,,46000,sqm,Byatarayanapura SRO gazette p.213,
 Bangalore Urban,Byatarayanapura,,village,Byatarayanapura,zone,agricultural_land,,62700000,acre,Byatarayanapura SRO gazette p.215,
 Bangalore Urban,Byatarayanapura,,village,Byatarayanapura,zone,plot,,45000,sqm,Byatarayanapura SRO gazette p.215,
-Bangalore Urban,Daffodil in Esteem Gardenia Aparment,,locality,Byatarayanapura,zone,plot,,49500,sqm,Byatarayanapura SRO gazette p.216,Railway Gate)
-Bangalore Urban,L&T Rains Tree Boulevard Aparment,,locality,Byatarayanapura,zone,plot,,83600,sqm,Byatarayanapura SRO gazette p.216,Railway Gate)
+Bangalore Urban,Daffodil in Esteem Gardenia Apartment,,locality,Byatarayanapura,zone,plot,,49500,sqm,Byatarayanapura SRO gazette p.216,Railway Gate)
+Bangalore Urban,L&T Rains Tree Boulevard Apartment,,locality,Byatarayanapura,zone,plot,,83600,sqm,Byatarayanapura SRO gazette p.216,Railway Gate)
 Bangalore Urban,Medi Agrahara,,village,Byatarayanapura,zone,agricultural_land,,10400000,acre,Byatarayanapura SRO gazette p.217,
 Bangalore Urban,Medi Agrahara,,village,Byatarayanapura,zone,plot,,13500,sqm,Byatarayanapura SRO gazette p.217,
 Bangalore Urban,Ramachandrapura,,village,Byatarayanapura,zone,agricultural_land,,51700000,acre,Byatarayanapura SRO gazette p.217,
@@ -308,7 +308,7 @@ Bangalore Urban,Sampigehalli,,village,Byatarayanapura,zone,agricultural_land,,50
 Bangalore Urban,Sampigehalli,,village,Byatarayanapura,zone,plot,,33000,sqm,Byatarayanapura SRO gazette p.221,
 Bangalore Urban,Singapura,,village,Byatarayanapura,zone,agricultural_land,,26400000,acre,Byatarayanapura SRO gazette p.222,
 Bangalore Urban,Singapura,,village,Byatarayanapura,zone,plot,,22000,sqm,Byatarayanapura SRO gazette p.222,
-Bangalore Urban,"SMR Vinay Estilla Aparment Estila-1 (Block-1), Estila-2 (Block-2), Estila-3 (Block-3)",,locality,Byatarayanapura,zone,plot,,39600,sqm,Byatarayanapura SRO gazette p.223,S+G+3Uf
+Bangalore Urban,"SMR Vinay Estilla Apartment Estila-1 (Block-1), Estila-2 (Block-2), Estila-3 (Block-3)",,locality,Byatarayanapura,zone,plot,,39600,sqm,Byatarayanapura SRO gazette p.223,S+G+3Uf
 Bangalore Urban,Meenakshi Gardenia,,locality,Byatarayanapura,zone,plot,,37070,sqm,Byatarayanapura SRO gazette p.223,S+G+3Uf
 Bangalore Urban,Arebinnamangala,,village,Jala,zone,agricultural_land,,10000000,acre,Jala SRO gazette p.226,
 Bangalore Urban,Arebinnamangala,,village,Jala,zone,plot,,13000,sqm,Jala SRO gazette p.226,
@@ -661,7 +661,7 @@ Bangalore Urban,Old Pension Mohalla,,locality,Gandhinagar,zone,plot,,35636,sqm,G
 Bangalore Urban,Flower garden,,locality,Gandhinagar,zone,plot,,35636,sqm,Gandhinagar SRO gazette p.31,Kumara Park Extension
 Bangalore Urban,Nagarathpete,,locality,Gandhinagar,zone,plot,,115920,sqm,Gandhinagar SRO gazette p.31 (median of 29),
 Bangalore Urban,Maldarpete,,locality,Gandhinagar,zone,plot,,116280,sqm,Gandhinagar SRO gazette p.32,Nagarathpete
-Bangalore Urban,kenchaNayakana Galli,,locality,Gandhinagar,zone,plot,,116280,sqm,Gandhinagar SRO gazette p.32,Nagarathpete
+Bangalore Urban,Kencha Nayakana Galli,,locality,Gandhinagar,zone,plot,,116280,sqm,Gandhinagar SRO gazette p.32,Nagarathpete
 Bangalore Urban,Nagarth pete,,locality,Gandhinagar,zone,plot,,170640,sqm,Gandhinagar SRO gazette p.32,Nagarathpete
 Bangalore Urban,Ulsoorpet,,locality,Gandhinagar,zone,plot,,115920,sqm,Gandhinagar SRO gazette p.32,Nagarathpete
 Bangalore Urban,Nagarathpete,,locality,Gandhinagar,zone,apartment,,96000,sqm,Gandhinagar SRO gazette p.32,
@@ -920,10 +920,10 @@ Bangalore Urban,Ramchandra Layout,,locality,Hebbal,zone,plot,,48180,sqm,Hebbal S
 Bangalore Urban,Chikkamaranahalli,,locality,Hebbal,zone,plot,,61710,sqm,Hebbal SRO gazette p.85,Pin Code No. 560054)
 Bangalore Urban,Pin Code No. 560054,,locality,Hebbal,zone,plot,,76065,sqm,Hebbal SRO gazette p.85 (median of 4),
 Bangalore Urban,Pin Code No. 560054,,locality,Hebbal,zone,apartment,,62920,sqm,Hebbal SRO gazette p.85 (median of 10),
-Bangalore Urban,AG's HBCSLayoutPID Nos,,locality,Hebbal,zone,plot,,61710,sqm,Hebbal SRO gazette p.85,Pin Code No. 560054)
+Bangalore Urban,AG's HBCSLayout,,locality,Hebbal,zone,plot,,61710,sqm,Hebbal SRO gazette p.85,Pin Code No. 560054)
 Bangalore Urban,BEL Society HBCSLayout,,locality,Hebbal,zone,plot,,74420,sqm,Hebbal SRO gazette p.86,Pin Code No. 560054)
 Bangalore Urban,Netravati Layout,,locality,Hebbal,zone,plot,,49170,sqm,Hebbal SRO gazette p.86,Pin Code No. 560054)
-Bangalore Urban,Seenappa LayoutPID Nos,,locality,Hebbal,zone,plot,,59510,sqm,Hebbal SRO gazette p.86,Pin Code No. 560054)
+Bangalore Urban,Seenappa Layout,,locality,Hebbal,zone,plot,,59510,sqm,Hebbal SRO gazette p.86,Pin Code No. 560054)
 Bangalore Urban,Venkateshwar Extention,,locality,Hebbal,zone,plot,,47960,sqm,Hebbal SRO gazette p.86,Pin Code No. 560054)
 Bangalore Urban,Cholanayakanahalli,,locality,Hebbal,zone,plot,,54340,sqm,Hebbal SRO gazette p.86,Pin Code No.560032)
 Bangalore Urban,Cholanayakanahalli All,,locality,Hebbal,zone,plot,,62100,sqm,Hebbal SRO gazette p.86,Pin Code No.560032)
@@ -932,7 +932,7 @@ Bangalore Urban,Cholanayakanahalli . V,,locality,Hebbal,zone,plot,,59520,sqm,Heb
 Bangalore Urban,Manorayanapalya,,locality,Hebbal,zone,plot,,41800,sqm,Hebbal SRO gazette p.88,roads
 Bangalore Urban,Buildengs,,locality,Hebbal,zone,apartment,,48890,sqm,Hebbal SRO gazette p.91 (median of 16),
 Bangalore Urban,Buildengs,,locality,Hebbal,zone,plot,,48180,sqm,Hebbal SRO gazette p.91 (median of 3),
-Bangalore Urban,Ananda NagarPID Nos,,locality,Hebbal,zone,plot,,68640,sqm,Hebbal SRO gazette p.91,Buildengs)
+Bangalore Urban,Ananda Nagar,,locality,Hebbal,zone,plot,,68640,sqm,Hebbal SRO gazette p.91,Buildengs)
 Bangalore Urban,Ayyappa Block,,locality,Hebbal,zone,plot,,32120,sqm,Hebbal SRO gazette p.91,Buildengs)
 Bangalore Urban,Appanna Block,,locality,Hebbal,zone,plot,,32120,sqm,Hebbal SRO gazette p.92,Buildengs)
 Bangalore Urban,Basaveshwar Layout,,locality,Hebbal,zone,plot,,42680,sqm,Hebbal SRO gazette p.92,Buildengs)
@@ -945,7 +945,7 @@ Bangalore Urban,Gangamma layout,,locality,Hebbal,zone,plot,,46420,sqm,Hebbal SRO
 Bangalore Urban,Gopalappa layout,,locality,Hebbal,zone,plot,,44330,sqm,Hebbal SRO gazette p.95,Layout
 Bangalore Urban,Gundappareddy Layout,,locality,Hebbal,zone,plot,,47190,sqm,Hebbal SRO gazette p.95,Layout
 Bangalore Urban,Kempanna/Kempaiah Layout,,locality,Hebbal,zone,plot,,45100,sqm,Hebbal SRO gazette p.97,Layout
-Bangalore Urban,krishnappa layout,,locality,Hebbal,zone,plot,,45540,sqm,Hebbal SRO gazette p.98,Layout
+Bangalore Urban,Krishnappa layout,,locality,Hebbal,zone,plot,,45540,sqm,Hebbal SRO gazette p.98,Layout
 Bangalore Urban,Kuppaswamy Garden,,locality,Hebbal,zone,plot,,51810,sqm,Hebbal SRO gazette p.98 (median of 2),Pin Code No.560094)
 Bangalore Urban,Meenakshi Sundareshwar,,locality,Hebbal,zone,plot,,49610,sqm,Hebbal SRO gazette p.99,Appartment
 Bangalore Urban,Muneshwar Layout,,locality,Hebbal,zone,plot,,49610,sqm,Hebbal SRO gazette p.99,Housing Society( M S H)
@@ -965,9 +965,9 @@ Bangalore Urban,Thimmakka layout,,locality,Hebbal,zone,plot,,43890,sqm,Hebbal SR
 Bangalore Urban,V N Extention,,locality,Hebbal,zone,plot,,45430,sqm,Hebbal SRO gazette p.101,Housing Society( M S H)
 Bangalore Urban,Venkataswamappa Layout,,locality,Hebbal,zone,plot,,43890,sqm,Hebbal SRO gazette p.101,Housing Society( M S H)
 Bangalore Urban,Venkateshwar Layout,,locality,Hebbal,zone,plot,,45430,sqm,Hebbal SRO gazette p.101,Housing Society( M S H)
-Bangalore Urban,Venkateshwarppa layoutPID Nos,,locality,Hebbal,zone,plot,,43890,sqm,Hebbal SRO gazette p.101,Housing Society( M S H)
+Bangalore Urban,Venkateshwarppa layout,,locality,Hebbal,zone,plot,,43890,sqm,Hebbal SRO gazette p.101,Housing Society( M S H)
 Bangalore Urban,Pin Code No.560077,,locality,Hebbal,zone,plot,,77825,sqm,Hebbal SRO gazette p.101 (median of 20),
-Bangalore Urban,Jaladarshini LayoutPID Nos,,locality,Hebbal,zone,plot,,81950,sqm,Hebbal SRO gazette p.102,Pin Code No.560077)
+Bangalore Urban,Jaladarshini Layout,,locality,Hebbal,zone,plot,,81950,sqm,Hebbal SRO gazette p.102,Pin Code No.560077)
 Bangalore Urban,Pin Code No.560077,,locality,Hebbal,zone,apartment,,68370,sqm,Hebbal SRO gazette p.102 (median of 116),
 Bangalore Urban,Kakamunishamappa Layout,,locality,Hebbal,zone,plot,,81950,sqm,Hebbal SRO gazette p.105,Pin Code No.560077)
 Bangalore Urban,Central Gurus,,locality,Hebbal,zone,plot,,44880,sqm,Hebbal SRO gazette p.107,Pin Code No.560077)
@@ -975,7 +975,7 @@ Bangalore Urban,G M Ramkrishnappa Extention,,locality,Hebbal,zone,plot,,48400,sq
 Bangalore Urban,Munipoojappa Layout,,locality,Hebbal,zone,plot,,48400,sqm,Hebbal SRO gazette p.108,Pin Code No.560077)
 Bangalore Urban,Munisomappa Layout,,locality,Hebbal,zone,plot,,48400,sqm,Hebbal SRO gazette p.109,Pin Code No.560077)
 Bangalore Urban,Coconut Garden,,locality,Hebbal,zone,plot,,68860,sqm,Hebbal SRO gazette p.109,Pin Code No.560077)
-Bangalore Urban,N.N. FarmRoad,,locality,Hebbal,zone,plot,,71990,sqm,Hebbal SRO gazette p.109,Pin Code No.560077)
+Bangalore Urban,N.N. Farm Road,,locality,Hebbal,zone,plot,,71990,sqm,Hebbal SRO gazette p.109,Pin Code No.560077)
 Bangalore Urban,P & T Colony,,locality,Hebbal,zone,plot,,110770,sqm,Hebbal SRO gazette p.109,Pin Code No.560077)
 Bangalore Urban,P & T Layout,,locality,Hebbal,zone,plot,,110770,sqm,Hebbal SRO gazette p.110,Pin Code No.560077)
 Bangalore Urban,Puttaiah Compound,,locality,Hebbal,zone,plot,,56320,sqm,Hebbal SRO gazette p.110,Pin Code No.560077)
@@ -988,12 +988,12 @@ Bangalore Urban,Pin Code No.560024,,locality,Hebbal,zone,apartment,,58850,sqm,He
 Bangalore Urban,Anandgiri Layout,,locality,Hebbal,zone,plot,,41910,sqm,Hebbal SRO gazette p.112,Sy No.'s
 Bangalore Urban,Arkavathi Layout,,locality,Hebbal,zone,plot,,43820,sqm,Hebbal SRO gazette p.113,Sy No.'s
 Bangalore Urban,Balaji Layout,,locality,Hebbal,zone,plot,,44220,sqm,Hebbal SRO gazette p.113,Sy No.'s
-Bangalore Urban,Kodigehalli gate Hebbal Sy,,locality,Hebbal,zone,apartment,,49500,sqm,Hebbal SRO gazette p.113 (median of 33),
+Bangalore Urban,Kodigehalli gate Hebbal,,locality,Hebbal,zone,apartment,,49500,sqm,Hebbal SRO gazette p.113 (median of 33),
 Bangalore Urban,Byrappa Layout,,locality,Hebbal,zone,plot,,40150,sqm,Hebbal SRO gazette p.113,Kodigehalli gate) Hebbal Sy
 Bangalore Urban,Indira Block (Slum),,locality,Hebbal,zone,plot,,32010,sqm,Hebbal SRO gazette p.113,Kodigehalli gate) Hebbal Sy
 Bangalore Urban,Kempaiah Layout,,locality,Hebbal,zone,plot,,45430,sqm,Hebbal SRO gazette p.113,Kodigehalli gate) Hebbal Sy
 Bangalore Urban,Krishnappa Garden,,locality,Hebbal,zone,plot,,38280,sqm,Hebbal SRO gazette p.114,Kodigehalli gate) Hebbal Sy
-Bangalore Urban,Kodigehalli gate Hebbal Sy,,locality,Hebbal,zone,plot,,50450,sqm,Hebbal SRO gazette p.114 (median of 6),
+Bangalore Urban,Kodigehalli gate Hebbal,,locality,Hebbal,zone,plot,,50450,sqm,Hebbal SRO gazette p.114 (median of 6),
 Bangalore Urban,Sadahalli Baiayanna Layout,,locality,Hebbal,zone,plot,,40150,sqm,Hebbal SRO gazette p.114,Kodigehalli gate) Hebbal Sy
 Bangalore Urban,Shivashankar Block,,locality,Hebbal,zone,plot,,46200,sqm,Hebbal SRO gazette p.114,Kodigehalli gate) Hebbal Sy
 Bangalore Urban,Neerubhavi Doddsannappa,,locality,Hebbal,zone,plot,,45100,sqm,Hebbal SRO gazette p.115,Kodigehalli gate) Hebbal Sy
@@ -1011,14 +1011,14 @@ Bangalore Urban,Pin Code No.560032,,locality,Hebbal,zone,apartment,,45260,sqm,He
 Bangalore Urban,Kavalbyrasandra New extention,,locality,Hebbal,zone,plot,,46350,sqm,Hebbal SRO gazette p.117,Pin Code No.560032)
 Bangalore Urban,Chinnappa/Chinnanna Layout,,locality,Hebbal,zone,plot,,36300,sqm,Hebbal SRO gazette p.120,Pin Code No.560032)
 Bangalore Urban,D V Anadkar Layout,,locality,Hebbal,zone,plot,,32010,sqm,Hebbal SRO gazette p.120,Pin Code No.560032)
-Bangalore Urban,DoddannaNagaraPID Nos,,locality,Hebbal,zone,plot,,32010,sqm,Hebbal SRO gazette p.121,Pin Code No.560032)
+Bangalore Urban,Doddanna Nagara,,locality,Hebbal,zone,plot,,32010,sqm,Hebbal SRO gazette p.121,Pin Code No.560032)
 Bangalore Urban,Kayum Garden,,locality,Hebbal,zone,plot,,34980,sqm,Hebbal SRO gazette p.121,Pin Code No.560032)
-Bangalore Urban,M M LayoutPID Nos,,locality,Hebbal,zone,plot,,50820,sqm,Hebbal SRO gazette p.121,Pin Code No.560032)
+Bangalore Urban,M M Layout,,locality,Hebbal,zone,plot,,50820,sqm,Hebbal SRO gazette p.121,Pin Code No.560032)
 Bangalore Urban,Modi Garden,,locality,Hebbal,zone,plot,,51700,sqm,Hebbal SRO gazette p.123,Pin Code No.560032)
 Bangalore Urban,Muninagappa Layout,,locality,Hebbal,zone,plot,,33110,sqm,Hebbal SRO gazette p.123,Pin Code No.560032)
 Bangalore Urban,Muninanjappa Garden,,locality,Hebbal,zone,plot,,35310,sqm,Hebbal SRO gazette p.123,Pin Code No.560032)
 Bangalore Urban,Coconut Garden,,locality,Hebbal,zone,plot,,38830,sqm,Hebbal SRO gazette p.123,Pin Code No.560032)
-Bangalore Urban,Nagamma LayoutPID Nos,,locality,Hebbal,zone,plot,,35310,sqm,Hebbal SRO gazette p.123,Pin Code No.560032)
+Bangalore Urban,Nagamma Layout,,locality,Hebbal,zone,plot,,35310,sqm,Hebbal SRO gazette p.123,Pin Code No.560032)
 Bangalore Urban,Ratansingh Layout,,locality,Hebbal,zone,plot,,43560,sqm,Hebbal SRO gazette p.124,Pin Code No.560032)
 Bangalore Urban,Rayanna Garden,,locality,Hebbal,zone,plot,,30360,sqm,Hebbal SRO gazette p.124,Pin Code No.560032)
 Bangalore Urban,Sakamma Hanumanthappa,,locality,Hebbal,zone,plot,,29425,sqm,Hebbal SRO gazette p.124,Pin Code No.560032)
@@ -1034,7 +1034,7 @@ Bangalore Urban,Venkat swamappa layout,,locality,Hebbal,zone,plot,,37350,sqm,Heb
 Bangalore Urban,Lottegollahalli,,locality,Hebbal,zone,plot,,59620,sqm,Hebbal SRO gazette p.127,Pin Code No.560094)
 Bangalore Urban,Pin Code No.560094,,locality,Hebbal,zone,plot,,69580,sqm,Hebbal SRO gazette p.127 (median of 11),
 Bangalore Urban,Pin Code No.560094,,locality,Hebbal,zone,apartment,,60020,sqm,Hebbal SRO gazette p.127 (median of 110),
-Bangalore Urban,B.S. LakshmanappaLayout,,locality,Hebbal,zone,plot,,58080,sqm,Hebbal SRO gazette p.127,Pin Code No.560094)
+Bangalore Urban,B.S. Lakshmanappa Layout,,locality,Hebbal,zone,plot,,58080,sqm,Hebbal SRO gazette p.127,Pin Code No.560094)
 Bangalore Urban,Sakkamma Layout,,locality,Hebbal,zone,plot,,56490,sqm,Hebbal SRO gazette p.128,Pin Code No.560094)
 Bangalore Urban,Venkatachari Nagar Layout,,locality,Hebbal,zone,plot,,75790,sqm,Hebbal SRO gazette p.129,Pin Code No.560094)
 Bangalore Urban,Hbcs,,locality,Hebbal,zone,plot,,62980,sqm,Hebbal SRO gazette p.129,
@@ -1214,10 +1214,10 @@ Bangalore Urban,Park View Layout,,locality,Byatarayanapura,zone,plot,,40000,sqm,
 Bangalore Urban,Munigurappa Lyt,,locality,Byatarayanapura,zone,plot,,40000,sqm,Byatarayanapura SRO gazette p.190,
 Bangalore Urban,LK Gioria (New),,locality,Byatarayanapura,zone,apartment,,46200,sqm,Byatarayanapura SRO gazette p.192,
 Bangalore Urban,Trend Square (New),,locality,Byatarayanapura,zone,apartment,,48400,sqm,Byatarayanapura SRO gazette p.192,
-Bangalore Urban,Century Ethos Aparment,,locality,Byatarayanapura,zone,apartment,,59950,sqm,Byatarayanapura SRO gazette p.192,
+Bangalore Urban,Century Ethos Apartment,,locality,Byatarayanapura,zone,apartment,,59950,sqm,Byatarayanapura SRO gazette p.192,
 Bangalore Urban,Chiranjeevi Layout,,locality,Byatarayanapura,zone,plot,,40500,sqm,Byatarayanapura SRO gazette p.192,
 Bangalore Urban,Coffeboard Layout,,locality,Byatarayanapura,zone,plot,,80000,sqm,Byatarayanapura SRO gazette p.192,
-Bangalore Urban,CoffeeBoard Layout (60 ft Road),,locality,Byatarayanapura,zone,plot,,88000,sqm,Byatarayanapura SRO gazette p.193,
+Bangalore Urban,Coffee Board Layout (60 ft Road),,locality,Byatarayanapura,zone,plot,,88000,sqm,Byatarayanapura SRO gazette p.193,
 Bangalore Urban,Pampa Layout,,locality,Byatarayanapura,zone,plot,,43000,sqm,Byatarayanapura SRO gazette p.193,
 Bangalore Urban,Venkategowda Layout,,locality,Byatarayanapura,zone,plot,,43000,sqm,Byatarayanapura SRO gazette p.193,
 Bangalore Urban,Vinayaka Layout,,locality,Byatarayanapura,zone,plot,,43000,sqm,Byatarayanapura SRO gazette p.193,
@@ -1252,13 +1252,11 @@ Bangalore Urban,Akashavani Layout,,locality,Byatarayanapura,zone,plot,,38000,sqm
 Bangalore Urban,Adithya Nagara,,locality,Byatarayanapura,zone,plot,,30000,sqm,Byatarayanapura SRO gazette p.202,Prm/Ka/Rera/1251/309/Pr
 Bangalore Urban,Sai Orchard,,locality,Byatarayanapura,zone,plot,,30000,sqm,Byatarayanapura SRO gazette p.202,Prm/Ka/Rera/1251/309/Pr
 Bangalore Urban,Best County,,locality,Byatarayanapura,zone,plot,,30000,sqm,Byatarayanapura SRO gazette p.202,Prm/Ka/Rera/1251/309/Pr
-Bangalore Urban,Prm/Ka,,locality,Byatarayanapura,zone,plot,,44000,sqm,Byatarayanapura SRO gazette p.202 (median of 3),
 Bangalore Urban,A.M.S Layout,,locality,Byatarayanapura,zone,plot,,30000,sqm,Byatarayanapura SRO gazette p.202,Prm/Ka/Rera/1251/309/Pr
 Bangalore Urban,Muniswamappa Layout,,locality,Byatarayanapura,zone,plot,,30000,sqm,Byatarayanapura SRO gazette p.202,Prm/Ka/Rera/1251/309/Pr
 Bangalore Urban,Annapoorneshwari Layout,,locality,Byatarayanapura,zone,plot,,30000,sqm,Byatarayanapura SRO gazette p.202,Prm/Ka/Rera/1251/309/Pr
 Bangalore Urban,Hill Side Meadow Layout,,locality,Byatarayanapura,zone,plot,,30000,sqm,Byatarayanapura SRO gazette p.202,Prm/Ka/Rera/1251/309/Pr
 Bangalore Urban,BHEL Layout,,locality,Byatarayanapura,zone,plot,,33000,sqm,Byatarayanapura SRO gazette p.203,Prm/Ka/Rera/1251/309/Pr
-Bangalore Urban,Prm/Ka,,locality,Byatarayanapura,zone,apartment,,37950,sqm,Byatarayanapura SRO gazette p.203 (median of 24),
 Bangalore Urban,Kempegowda Layout,,locality,Byatarayanapura,zone,plot,,38000,sqm,Byatarayanapura SRO gazette p.204,No. 03 & B+G+4UF)
 Bangalore Urban,U.A.S. Layout,,locality,Byatarayanapura,zone,plot,,42000,sqm,Byatarayanapura SRO gazette p.204,No. 03 & B+G+4UF)
 Bangalore Urban,Free Sites Distributed By Government In,,locality,Byatarayanapura,zone,plot,,37500,sqm,Byatarayanapura SRO gazette p.204,No. 03 & B+G+4UF)
@@ -1410,7 +1408,6 @@ Bangalore Urban,Kensingtown Park,,locality,Jala,zone,plot,,13500,sqm,Jala SRO ga
 Bangalore Urban,Rams Lakeview Meadows,,locality,Jala,zone,plot,,24000,sqm,Jala SRO gazette p.232,Prm/Ka/Rera/1251/309/Pr
 Bangalore Urban,BEML layout,,locality,Jala,zone,plot,,15000,sqm,Jala SRO gazette p.232,Prm/Ka/Rera/1251/309/Pr
 Bangalore Urban,L.G.Rose heritage,,locality,Jala,zone,plot,,17000,sqm,Jala SRO gazette p.232,Prm/Ka/Rera/1251/309/Pr
-Bangalore Urban,Prm/Ka,,locality,Jala,zone,apartment,,25000,sqm,Jala SRO gazette p.232,
 Bangalore Urban,Hightech defence and Aerospace Park,,locality,Jala,zone,apartment,,42000,sqm,Jala SRO gazette p.233 (median of 4),
 Bangalore Urban,Hightech defence and Aerospace Park,,locality,Jala,zone,plot,,16000,sqm,Jala SRO gazette p.233 (median of 3),
 Bangalore Urban,M.G.B Layout,,locality,Jala,zone,plot,,16000,sqm,Jala SRO gazette p.233,Hightech defence and Aerospace Park )
@@ -1437,19 +1434,17 @@ Bangalore Urban,Barani Nest Layout,,locality,Hesaraghatta,zone,plot,,16000,sqm,H
 Bangalore Urban,Karnataka Telecom Rathna Swaroop Layout,,locality,Hesaraghatta,zone,plot,,16000,sqm,Hesaraghatta SRO gazette p.239,
 Bangalore Urban,Bhagyashree Riveria,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.240,
 Bangalore Urban,Vista,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.240 (median of 3),
-Bangalore Urban,M/S Plasent Vally,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.240,Vista
+Bangalore Urban,Plasent Vally,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.240,Vista
 Bangalore Urban,Prasiddi Properties Pvt.Ltd,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.241,Vista
 Bangalore Urban,Shri Taralabalu Jagadguru,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.241,Vista
-Bangalore Urban,M/S Best constructions,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.241,Employees HSBC
+Bangalore Urban,Best constructions,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.241,Employees HSBC
 Bangalore Urban,Best City Layout,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.241 (median of 14),
 Bangalore Urban,Best City Layout,,locality,Hesaraghatta,zone,apartment,,24600,sqm,Hesaraghatta SRO gazette p.241 (median of 2),
 Bangalore Urban,ESTATES,,locality,Hesaraghatta,zone,plot,,13000,sqm,Hesaraghatta SRO gazette p.242,
 Bangalore Urban,Hesarughatta Vinayaka,,locality,Hesaraghatta,zone,plot,,10000,sqm,Hesaraghatta SRO gazette p.243,ESTATES Sy Nos
 Bangalore Urban,Hesarughatta Puttaswamy,,locality,Hesaraghatta,zone,plot,,12500,sqm,Hesaraghatta SRO gazette p.243,Layout
 Bangalore Urban,Green Woods Layout,,locality,Hesaraghatta,zone,plot,,15000,sqm,Hesaraghatta SRO gazette p.244,Layout
-Bangalore Urban,M/S Century Ltd,,locality,Hesaraghatta,zone,plot,,15000,sqm,Hesaraghatta SRO gazette p.244,Layout
-Bangalore Urban,Nagar,,locality,Hesaraghatta,zone,apartment,,40000,sqm,Hesaraghatta SRO gazette p.244,
-Bangalore Urban,Nagar,,locality,Hesaraghatta,zone,plot,,33000,sqm,Hesaraghatta SRO gazette p.244 (median of 4),
+Bangalore Urban,Century Ltd,,locality,Hesaraghatta,zone,plot,,15000,sqm,Hesaraghatta SRO gazette p.244,Layout
 Bangalore Urban,Surya Hermitage,,locality,Hesaraghatta,zone,plot,,20000,sqm,Hesaraghatta SRO gazette p.245,Sy.Nos48/1A
 Bangalore Urban,Dhakale,,locality,Hesaraghatta,zone,apartment,,31800,sqm,Hesaraghatta SRO gazette p.247,
 Bangalore Urban,Dhakale,,locality,Hesaraghatta,zone,plot,,15000,sqm,Hesaraghatta SRO gazette p.247 (median of 3),
@@ -1458,7 +1453,6 @@ Bangalore Urban,Vinayaka Regency,,locality,Hesaraghatta,zone,plot,,13500,sqm,Hes
 Bangalore Urban,Burgundy Orchids,,locality,Hesaraghatta,zone,plot,,14500,sqm,Hesaraghatta SRO gazette p.248,Dhakale)
 Bangalore Urban,Bhuvan Burgundy,,locality,Hesaraghatta,zone,plot,,14500,sqm,Hesaraghatta SRO gazette p.248,Dhakale)
 Bangalore Urban,Soladevanahalli Achuth,,locality,Hesaraghatta,zone,plot,,25000,sqm,Hesaraghatta SRO gazette p.248,Dhakhale)
-Bangalore Urban,Nagara,,locality,Hesaraghatta,zone,plot,,26000,sqm,Hesaraghatta SRO gazette p.249,
 Bangalore Urban,Max Worth Reality India,,locality,Hesaraghatta,zone,plot,,18000,sqm,Hesaraghatta SRO gazette p.249,Layout
 Bangalore Urban,Pvt.Ltd,,locality,Hesaraghatta,zone,plot,,31000,sqm,Hesaraghatta SRO gazette p.249 (median of 4),
-Bangalore Urban,M/S BCIL Red Earth,,locality,Hesaraghatta,zone,plot,,18000,sqm,Hesaraghatta SRO gazette p.249,Pvt.Ltd
+Bangalore Urban,BCIL Red Earth,,locality,Hesaraghatta,zone,plot,,18000,sqm,Hesaraghatta SRO gazette p.249,Pvt.Ltd

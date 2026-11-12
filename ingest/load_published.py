@@ -26,12 +26,20 @@ def main(path: str) -> None:
         loaded, missing = 0, []
         for r in rows:
             cur.execute(
-                """SELECT a.id FROM nelabele.geo_area a
+                """SELECT a.id,
+                          EXISTS (SELECT 1 FROM nelabele.rate_observation o
+                                  WHERE o.geo_area_id = a.id AND o.batch_id IS DISTINCT FROM %s)
+                   FROM nelabele.geo_area a
                    LEFT JOIN nelabele.geo_area p ON p.id = a.parent_id
                    WHERE a.district = %s AND lower(a.name) = lower(%s) AND lower(p.name) = lower(%s)""",
-                (r["district"], r["area_name"], r["parent_name"]),
+                (BATCH, r["district"], r["area_name"], r["parent_name"]),
             )
-            ids = [x[0] for x in cur.fetchall()]
+            found = cur.fetchall()
+            ids = [x[0] for x in found]
+            if len(ids) > 1:
+                # the same name at two levels (a leftover from an older parse):
+                # use the one that carries the guidance value
+                ids = [x[0] for x in found if x[1]] or ids
             if len(ids) != 1:
                 missing.append(f'{r["label"]} → {r["area_name"]} ({len(ids)} matches)')
                 continue

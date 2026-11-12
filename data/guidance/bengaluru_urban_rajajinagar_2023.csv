@@ -195,11 +195,11 @@ Bangalore Urban,Chikkabidarakallu,,village,Dasanapura,zone,plot,,40000,sqm,Dasan
 Bangalore Urban,Dasanapura,,village,Dasanapura,zone,agricultural_land,,30500000,acre,Dasanapura SRO gazette p.95,
 Bangalore Urban,Dasanapura,,village,Dasanapura,zone,plot,,33000,sqm,Dasanapura SRO gazette p.95,
 Bangalore Urban,Dasanapura Potential Land Use,,village,Dasanapura,zone,agricultural_land,,41500000,acre,Dasanapura SRO gazette p.95,
-Bangalore Urban,Dasanapura Unibic Industry Sy,,village,Dasanapura,zone,agricultural_land,,40000000,acre,Dasanapura SRO gazette p.95,
+Bangalore Urban,Dasanapura Unibic Industry,,village,Dasanapura,zone,agricultural_land,,40000000,acre,Dasanapura SRO gazette p.95,
 Bangalore Urban,Dombarahalli,,village,Dasanapura,zone,agricultural_land,,20000000,acre,Dasanapura SRO gazette p.96,
 Bangalore Urban,Dombarahalli,,village,Dasanapura,zone,plot,,28000,sqm,Dasanapura SRO gazette p.96,
-Bangalore Urban,Dombarahalli Sy,,village,Dasanapura,zone,agricultural_land,,18500000,acre,Dasanapura SRO gazette p.96,
-Bangalore Urban,Dombarahalli Sy,,village,Dasanapura,zone,plot,,40000,sqm,Dasanapura SRO gazette p.96,
+Bangalore Urban,Dombarahalli,,village,Dasanapura,zone,agricultural_land,,18500000,acre,Dasanapura SRO gazette p.96,
+Bangalore Urban,Dombarahalli,,village,Dasanapura,zone,plot,,40000,sqm,Dasanapura SRO gazette p.96,
 Bangalore Urban,Giddenahalli,,village,Dasanapura,zone,agricultural_land,,12500000,acre,Dasanapura SRO gazette p.96,
 Bangalore Urban,Giddenahalli,,village,Dasanapura,zone,plot,,12000,sqm,Dasanapura SRO gazette p.96,
 Bangalore Urban,Gangodanahalli,,village,Dasanapura,zone,agricultural_land,,22000000,acre,Dasanapura SRO gazette p.96,
@@ -231,8 +231,8 @@ Bangalore Urban,Kadabagere,,village,Dasanapura,zone,agricultural_land,,20000000,
 Bangalore Urban,Kadabagere,,village,Dasanapura,zone,plot,,31000,sqm,Dasanapura SRO gazette p.98,
 Bangalore Urban,Kadharanahalli,,village,Dasanapura,zone,agricultural_land,,15000000,acre,Dasanapura SRO gazette p.99,
 Bangalore Urban,Kadharanahalli,,village,Dasanapura,zone,plot,,22000,sqm,Dasanapura SRO gazette p.99,
-Bangalore Urban,Kadharanahalli Sy,,village,Dasanapura,zone,agricultural_land,,22700000,acre,Dasanapura SRO gazette p.99,
-Bangalore Urban,Kadharanahalli Sy,,village,Dasanapura,zone,plot,,25000,sqm,Dasanapura SRO gazette p.99,
+Bangalore Urban,Kadharanahalli,,village,Dasanapura,zone,agricultural_land,,22700000,acre,Dasanapura SRO gazette p.99,
+Bangalore Urban,Kadharanahalli,,village,Dasanapura,zone,plot,,25000,sqm,Dasanapura SRO gazette p.99,
 Bangalore Urban,Kammasandra,,village,Dasanapura,zone,agricultural_land,,6000000,acre,Dasanapura SRO gazette p.99,
 Bangalore Urban,Kammasandra,,village,Dasanapura,zone,plot,,25000,sqm,Dasanapura SRO gazette p.99,
 Bangalore Urban,Kenganahalli,,village,Dasanapura,zone,agricultural_land,,7000000,acre,Dasanapura SRO gazette p.100,
@@ -257,8 +257,8 @@ Bangalore Urban,Nagasandra,,village,Dasanapura,zone,agricultural_land,,9000000,a
 Bangalore Urban,Nagasandra,,village,Dasanapura,zone,plot,,15000,sqm,Dasanapura SRO gazette p.101,
 Bangalore Urban,Narayanappana Palya,,village,Dasanapura,zone,agricultural_land,,9000000,acre,Dasanapura SRO gazette p.101,
 Bangalore Urban,Narayanappana Palya,,village,Dasanapura,zone,plot,,15000,sqm,Dasanapura SRO gazette p.101,
-Bangalore Urban,Narayanappana Palya Sy,,village,Dasanapura,zone,agricultural_land,,12000000,acre,Dasanapura SRO gazette p.102,
-Bangalore Urban,Narayanappana Palya Sy,,village,Dasanapura,zone,plot,,30000,sqm,Dasanapura SRO gazette p.102,
+Bangalore Urban,Narayanappana Palya,,village,Dasanapura,zone,agricultural_land,,12000000,acre,Dasanapura SRO gazette p.102,
+Bangalore Urban,Narayanappana Palya,,village,Dasanapura,zone,plot,,30000,sqm,Dasanapura SRO gazette p.102,
 Bangalore Urban,Ravuthanahalli,,village,Dasanapura,zone,agricultural_land,,10000000,acre,Dasanapura SRO gazette p.102,
 Bangalore Urban,Ravuthanahalli,,village,Dasanapura,zone,plot,,12000,sqm,Dasanapura SRO gazette p.102,
 Bangalore Urban,Shivanapura,,village,Dasanapura,zone,agricultural_land,,12500000,acre,Dasanapura SRO gazette p.102,
@@ -572,7 +572,7 @@ Bangalore Urban,MEI layout,,locality,Peenya,zone,plot,,90000,sqm,Peenya SRO gaze
 Bangalore Urban,Manjunathanagara slum area,,locality,Peenya,zone,plot,,20000,sqm,Peenya SRO gazette p.48,
 Bangalore Urban,Havanuru layout,,locality,Peenya,zone,plot,,80000,sqm,Peenya SRO gazette p.48,
 Bangalore Urban,Defence layout,,locality,Peenya,zone,plot,,90000,sqm,Peenya SRO gazette p.48,
-Bangalore Urban,M/s Union Holdings,,locality,Peenya,zone,apartment,,64000,sqm,Peenya SRO gazette p.48,
+Bangalore Urban,Union Holdings,,locality,Peenya,zone,apartment,,64000,sqm,Peenya SRO gazette p.48,
 Bangalore Urban,Sheshadri layout,,locality,Peenya,zone,plot,,60000,sqm,Peenya SRO gazette p.48,
 Bangalore Urban,Vishveshwara nagara,,locality,Peenya,zone,plot,,60000,sqm,Peenya SRO gazette p.48,
 Bangalore Urban,Munikondappa layout,,locality,Peenya,zone,plot,,60000,sqm,Peenya SRO gazette p.48,
@@ -581,13 +581,13 @@ Bangalore Urban,Via Chikkabanavarana railway station road,,locality,Peenya,zone,
 Bangalore Urban,Bagalagunte main road,,locality,Peenya,zone,plot,,80000,sqm,Peenya SRO gazette p.49,
 Bangalore Urban,Ravindranagar(slum area),,locality,Peenya,zone,plot,,30000,sqm,Peenya SRO gazette p.49,
 Bangalore Urban,Properties abetting Mallasandra- Hesaraghatta road in,,locality,Peenya,zone,plot,,80000,sqm,Peenya SRO gazette p.49,
-Bangalore Urban,M/s G.M. Dwelling india (p) Ltd,,locality,Peenya,zone,apartment,,64000,sqm,Peenya SRO gazette p.49,
+Bangalore Urban,G.M. Dwelling india (p) Ltd,,locality,Peenya,zone,apartment,,64000,sqm,Peenya SRO gazette p.49,
 Bangalore Urban,Myadarahalli main road left and right side property,,locality,Peenya,zone,plot,,80000,sqm,Peenya SRO gazette p.49,
 Bangalore Urban,E Light falns,,locality,Peenya,zone,plot,,40000,sqm,Peenya SRO gazette p.49,
 Bangalore Urban,Paschima properties,,locality,Peenya,zone,plot,,40000,sqm,Peenya SRO gazette p.49,
 Bangalore Urban,Kanshiramnagara,,locality,Peenya,zone,plot,,35000,sqm,Peenya SRO gazette p.49,
 Bangalore Urban,Abbigere main road,,locality,Peenya,zone,plot,,70000,sqm,Peenya SRO gazette p.49,
-Bangalore Urban,BBMP/Addl.Dir/JD NORTH/0318/11-12 M/s Suvilas Properties Pvt Ltd,,locality,Peenya,zone,apartment,,58000,sqm,Peenya SRO gazette p.50,
+Bangalore Urban,Suvilas Properties Pvt Ltd,,locality,Peenya,zone,apartment,,58000,sqm,Peenya SRO gazette p.50,
 Bangalore Urban,Properties abetting Shidedahalli - Hesaraghatta road in,,locality,Peenya,zone,plot,,110000,sqm,Peenya SRO gazette p.50,
 Bangalore Urban,Indradhanush,,locality,Peenya,zone,apartment,,64000,sqm,Peenya SRO gazette p.50,
 Bangalore Urban,Siddeshwaranagara,,locality,Peenya,zone,plot,,60000,sqm,Peenya SRO gazette p.50,
@@ -616,8 +616,6 @@ Bangalore Urban,Robertson Block,,locality,Srirampura,zone,plot,,50000,sqm,Sriram
 Bangalore Urban,Goutamanagara,,locality,Srirampura,zone,plot,,40000,sqm,Srirampura SRO gazette p.54,Roads
 Bangalore Urban,Okalipuram,,locality,Srirampura,zone,plot,,150000,sqm,Srirampura SRO gazette p.54,
 Bangalore Urban,Ramachandrapura,,locality,Srirampura,zone,plot,,90000,sqm,Srirampura SRO gazette p.54,
-Bangalore Urban,"nagara, BDA Layout",,locality,Srirampura,zone,plot,,55000,sqm,Srirampura SRO gazette p.55,
-Bangalore Urban,"nagara, BDA Layout",,locality,Srirampura,zone,apartment,,55000,sqm,Srirampura SRO gazette p.55,
 Bangalore Urban,K.P.Agrahara Ato HBlock,,locality,Srirampura,zone,plot,,55000,sqm,Srirampura SRO gazette p.55,"nagara, BDA Layout"
 Bangalore Urban,Mariyappanapalya,,locality,Srirampura,zone,plot,,55000,sqm,Srirampura SRO gazette p.55 (median of 2),
 Bangalore Urban,Markandeshwaranagara Ward,,locality,Srirampura,zone,plot,,40000,sqm,Srirampura SRO gazette p.55,Mariyappanapalya) Ward No
@@ -636,10 +634,8 @@ Bangalore Urban,Kuvempu Nagara,,locality,Srirampura,zone,plot,,50000,sqm,Sriramp
 Bangalore Urban,Kuvempu Nagara,,locality,Srirampura,zone,plot,,75000,sqm,Srirampura SRO gazette p.56 (median of 3),
 Bangalore Urban,Shamanna Garden,,locality,Srirampura,zone,plot,,35000,sqm,Srirampura SRO gazette p.57,Kuvempu Nagara Ward No
 Bangalore Urban,Shamanna Garden Drainage,,locality,Srirampura,zone,plot,,35000,sqm,Srirampura SRO gazette p.57,Nagara)
-Bangalore Urban,Nagara,,locality,Srirampura,zone,plot,,40000,sqm,Srirampura SRO gazette p.57 (median of 5),
 Bangalore Urban,H.B.G Layout,,locality,Srirampura,zone,plot,,40000,sqm,Srirampura SRO gazette p.57,Nagara)
 Bangalore Urban,Padarayanapura Attached to,,locality,Srirampura,zone,plot,,130000,sqm,Srirampura SRO gazette p.57,Nagara)
-Bangalore Urban,Nagara,,locality,Srirampura,zone,apartment,,53000,sqm,Srirampura SRO gazette p.57,
 Bangalore Urban,Bapujinagara,,locality,Srirampura,zone,plot,,45000,sqm,Srirampura SRO gazette p.57 (median of 2),
 Bangalore Urban,Kavika Layout,,locality,Srirampura,zone,plot,,60000,sqm,Srirampura SRO gazette p.57,Bapujinagara
 Bangalore Urban,Maruthinagar,,locality,Srirampura,zone,plot,,35000,sqm,Srirampura SRO gazette p.57,Bapujinagara
@@ -654,7 +650,6 @@ Bangalore Urban,Andrahalli Govt School to,,locality,Laggere,zone,plot,,40000,sqm
 Bangalore Urban,Andrahalli Aralimarad,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.59,to Andrahalli Govt School
 Bangalore Urban,Maruthinagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.59 (median of 3),Station to Summanahalli
 Bangalore Urban,House Building Co,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.59,Peenya 2nd Stage
-Bangalore Urban,operative Society Ltd,,locality,Laggere,zone,apartment,,45000,sqm,Laggere SRO gazette p.59,
 Bangalore Urban,Rameshwaranagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.59,operative Society Ltd
 Bangalore Urban,Shusruthinagara,,locality,Laggere,zone,plot,,35000,sqm,Laggere SRO gazette p.59,operative Society Ltd
 Bangalore Urban,Chakranagara,,locality,Laggere,zone,plot,,30000,sqm,Laggere SRO gazette p.59,operative Society Ltd
@@ -745,7 +740,7 @@ Bangalore Urban,Chowdeshwarinagara,,locality,Laggere,zone,plot,,45000,sqm,Lagger
 Bangalore Urban,G.K.W.Layout,,locality,Laggere,zone,plot,,50000,sqm,Laggere SRO gazette p.64,Co.op.Society
 Bangalore Urban,Ganapathinagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.64,Co.op.Society
 Bangalore Urban,J.C.Nagara,,locality,Laggere,zone,plot,,45000,sqm,Laggere SRO gazette p.64,Co.op.Society
-Bangalore Urban,JaimaruthiNagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.64,Co.op.Society
+Bangalore Urban,Jaimaruthi Nagara,,locality,Laggere,zone,plot,,40000,sqm,Laggere SRO gazette p.64,Co.op.Society
 Bangalore Urban,Rajivgandinagara,,locality,Laggere,zone,plot,,20000,sqm,Laggere SRO gazette p.64,Co.op.Society
 Bangalore Urban,Kirloskar Layout,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.65,Areas)
 Bangalore Urban,Kurubarahalli,,locality,Laggere,zone,plot,,60000,sqm,Laggere SRO gazette p.65,Areas)
@@ -811,7 +806,7 @@ Bangalore Urban,Nayandahalli flyover,,locality,Nagarbhavi,zone,apartment,,60000,
 Bangalore Urban,Gidadakonenahalli,,locality,Nagarbhavi,zone,apartment,,36000,sqm,Nagarbhavi SRO gazette p.71 (median of 4),
 Bangalore Urban,Raghavendra Layout,,locality,Nagarbhavi,zone,plot,,36000,sqm,Nagarbhavi SRO gazette p.71,Gidadakonenahalli
 Bangalore Urban,Muddanapalya,,locality,Nagarbhavi,zone,plot,,50000,sqm,Nagarbhavi SRO gazette p.71,Gidadakonenahalli
-Bangalore Urban,MuddanapalyaRoad,,locality,Nagarbhavi,zone,plot,,75000,sqm,Nagarbhavi SRO gazette p.71,Gidadakonenahalli
+Bangalore Urban,Muddanapalya Road,,locality,Nagarbhavi,zone,plot,,75000,sqm,Nagarbhavi SRO gazette p.71,Gidadakonenahalli
 Bangalore Urban,D' Group Layout,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.71,Gidadakonenahalli
 Bangalore Urban,Nagarabhavi circal to 60 feet,,locality,Nagarbhavi,zone,plot,,90000,sqm,Nagarbhavi SRO gazette p.71,"Nagarabavi, Yeshwantpura"
 Bangalore Urban,India Univercity,,locality,Nagarbhavi,zone,plot,,110000,sqm,Nagarbhavi SRO gazette p.71,
@@ -895,7 +890,7 @@ Bangalore Urban,Ashwath nagar,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbha
 Bangalore Urban,P &T Layout,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
 Bangalore Urban,Pillappana katte,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
 Bangalore Urban,Chandana Layout,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
-Bangalore Urban,SrigandaNagar,,locality,Nagarbhavi,zone,apartment,,50000,sqm,Nagarbhavi SRO gazette p.79 (median of 6),
+Bangalore Urban,Sriganda Nagar,,locality,Nagarbhavi,zone,apartment,,50000,sqm,Nagarbhavi SRO gazette p.79 (median of 6),
 Bangalore Urban,Rajiv Gandhi nagar (Slum),,locality,Nagarbhavi,zone,plot,,25000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
 Bangalore Urban,Srigandadakavalu Vasathi,,locality,Nagarbhavi,zone,plot,,40000,sqm,Nagarbhavi SRO gazette p.79,SrigandaNagar
 Bangalore Urban,D' Group Employees Central,,locality,Nagarbhavi,zone,plot,,66000,sqm,Nagarbhavi SRO gazette p.79 (median of 2),Association
@@ -923,8 +918,8 @@ Bangalore Urban,Reservoir Catchment,,locality,Madanayakanahalli,zone,plot,,25000
 Bangalore Urban,Sheshagirirao palya (N P A),,locality,Madanayakanahalli,zone,plot,,22000,sqm,Madanayakanahalli SRO gazette p.92,"Reservoir Catchment) Sy Nos. 1to17,30 to 32, 35 to"
 Bangalore Urban,Sathyanarayana HBCS Layout,,locality,Dasanapura,zone,apartment,,60000,sqm,Dasanapura SRO gazette p.95 (median of 3),
 Bangalore Urban,Ravi Kirloskar Layout,,locality,Dasanapura,zone,plot,,40000,sqm,Dasanapura SRO gazette p.95,Sathyanarayana HBCS Layout
-Bangalore Urban,Residential area Sy,,locality,Dasanapura,zone,plot,,32000,sqm,Dasanapura SRO gazette p.98 (median of 5),
-Bangalore Urban,Residential area Sy,,locality,Dasanapura,zone,apartment,,36000,sqm,Dasanapura SRO gazette p.98,
+Bangalore Urban,Residential area,,locality,Dasanapura,zone,plot,,32000,sqm,Dasanapura SRO gazette p.98 (median of 5),
+Bangalore Urban,Residential area,,locality,Dasanapura,zone,apartment,,36000,sqm,Dasanapura SRO gazette p.98,
 Bangalore Urban,Kadabagere Shivani Greens,,locality,Dasanapura,zone,plot,,45000,sqm,Dasanapura SRO gazette p.99,Residential area Sy
 Bangalore Urban,Kadabagere Vinayaka Layout,,locality,Dasanapura,zone,plot,,45000,sqm,Dasanapura SRO gazette p.99,Residential area Sy
 Bangalore Urban,Kadabagere NPA,,locality,Dasanapura,zone,plot,,38000,sqm,Dasanapura SRO gazette p.99,Residential area Sy
@@ -981,7 +976,6 @@ Bangalore Urban,P&TLayout,,locality,Vijayanagar,zone,plot,,60000,sqm,Vijayanagar
 Bangalore Urban,Padarayanapura Pipeline,,locality,Vijayanagar,zone,plot,,60000,sqm,Vijayanagar SRO gazette p.109,Addition)
 Bangalore Urban,Pipeline,,locality,Vijayanagar,zone,plot,,80000,sqm,Vijayanagar SRO gazette p.109,Addition)
 Bangalore Urban,Telecom Employees H.B.C.S.Layout,,locality,Vijayanagar,zone,plot,,80000,sqm,Vijayanagar SRO gazette p.110,Addition)
-Bangalore Urban,toll gate ( New addition),,locality,Vijayanagar,zone,plot,,67500,sqm,Vijayanagar SRO gazette p.110 (median of 2),
 Bangalore Urban,Govindrajanagara,,locality,Vijayanagar,zone,apartment,,104500,sqm,Vijayanagar SRO gazette p.110 (median of 2),
 Bangalore Urban,Govindrajanagara,,locality,Vijayanagar,zone,plot,,95750,sqm,Vijayanagar SRO gazette p.110 (median of 4),
 Bangalore Urban,Kempe Gowda Housing Co-operative Society Limited,,locality,Vijayanagar,zone,plot,,86500,sqm,Vijayanagar SRO gazette p.110,Govindrajanagara)

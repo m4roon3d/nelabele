@@ -559,8 +559,8 @@ Kolar,"Bethamangala Road, Byanian Tree to Bharath Nagar Cross",,locality,Bangara
 Kolar,"Bethamangala Road, Byanian Tree to Bharath Nagar Cross",,locality,Bangarapet,taluk,apartment,,9000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
 Kolar,"Bethamangala Road, Byanian Tree to Bharath Nagar Cross Road Side",,locality,Bangarapet,taluk,plot,,15000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
 Kolar,"Bethamangala Road, Byanian Tree to Bharath Nagar Cross Road Side",,locality,Bangarapet,taluk,apartment,,18000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
-Kolar,Byanian Road to GaneshTemple,,locality,Bangarapet,taluk,plot,,16000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
-Kolar,Byanian Road to GaneshTemple Road Side,,locality,Bangarapet,taluk,plot,,16000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
+Kolar,Byanian Road to Ganesh Temple,,locality,Bangarapet,taluk,plot,,16000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
+Kolar,Byanian Road to Ganesh Temple Road Side,,locality,Bangarapet,taluk,plot,,16000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
 Kolar,Ganesh Temple to Chaithanya puram,,locality,Bangarapet,taluk,plot,,7000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
 Kolar,Ganesh Temple to Chaithanya puram,,locality,Bangarapet,taluk,apartment,,9000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
 Kolar,Ganesh Temple to Chaithanya puram Road Side,,locality,Bangarapet,taluk,plot,,15000,sqm,Bangarapet SRO gazette p.149,"Doddurukarapanahalli Plantation (Town Attached Survey Nos..1,23,2,3,6,7,5,4,13,11)"
@@ -629,8 +629,8 @@ Kolar,"Near Borewell, Venkataramap pa Layout",,village,KGF,taluk,agricultural_la
 Kolar,"Near Borewell, Venkataramap pa Layout",,village,KGF,taluk,plot,,9600,sqm,KGF SRO gazette p.42,
 Kolar,"Gopal Layout, Main Road",,village,KGF,taluk,agricultural_land,,2200000,acre,KGF SRO gazette p.43,
 Kolar,"Gopal Layout, Main Road",,village,KGF,taluk,plot,,8000,sqm,KGF SRO gazette p.43,
-Kolar,M/S. white,,village,KGF,taluk,agricultural_land,,2100000,acre,KGF SRO gazette p.44,
-Kolar,M/S. white,,village,KGF,taluk,plot,,6000,sqm,KGF SRO gazette p.44,
+Kolar,White,,village,KGF,taluk,agricultural_land,,2100000,acre,KGF SRO gazette p.44,
+Kolar,White,,village,KGF,taluk,plot,,6000,sqm,KGF SRO gazette p.44,
 Kolar,T.Srinivasa S/o.N.Thimmai ah. R-pet. KGF,,locality,KGF,taluk,plot,,8000,sqm,KGF SRO gazette p.47,M/S. white
 Kolar,"Baskar And Other,Ganesh pura. R-pet ,KGF",,locality,KGF,taluk,plot,,8000,sqm,KGF SRO gazette p.47,M/S. white
 Kolar,Sammadh,,village,KGF,taluk,agricultural_land,,2300000,acre,KGF SRO gazette p.52,
@@ -737,7 +737,7 @@ Kolar,Ghattakamadenah alli Layout Approved,,locality,KGF,taluk,plot,,8000,sqm,KG
 Kolar,Ghattakamadenah alli,,village,KGF,taluk,agricultural_land,,1800000,acre,KGF SRO gazette p.105,
 Kolar,Ghattaryagadahalli,,village,KGF,taluk,agricultural_land,,280000,acre,KGF SRO gazette p.106,
 Kolar,Ghattaryagadahalli,,village,KGF,taluk,plot,,2500,sqm,KGF SRO gazette p.106,
-Kolar,"Ghattaryagadahalli (Town AttachedSurvey Nos.62,63,64,61,5 9,53,54,55,56,49,5 0,51,48,57,58)",,village,KGF,taluk,agricultural_land,,940000,acre,KGF SRO gazette p.106,
+Kolar,Ghattaryagadahalli,,village,KGF,taluk,agricultural_land,,940000,acre,KGF SRO gazette p.106,
 Kolar,Gangadoddi,,village,KGF,taluk,agricultural_land,,385000,acre,KGF SRO gazette p.106,
 Kolar,Gangadoddi,,village,KGF,taluk,plot,,3500,sqm,KGF SRO gazette p.106,
 Kolar,Gangadoddi,,village,KGF,taluk,agricultural_land,,1000000,acre,KGF SRO gazette p.106,
@@ -825,7 +825,7 @@ Kolar,Kambampalli,,village,KGF,taluk,agricultural_land,,385000,acre,KGF SRO gaze
 Kolar,Kambampalli,,village,KGF,taluk,plot,,2000,sqm,KGF SRO gazette p.121,
 Kolar,Doddakari maraja Kambampalli,,village,KGF,taluk,agricultural_land,,385000,acre,KGF SRO gazette p.121,
 Kolar,Doddakari maraja Kambampalli,,village,KGF,taluk,plot,,2000,sqm,KGF SRO gazette p.121,
-Kolar,Doddakari maraja KambampalliExpre ss High way Attached,,village,KGF,taluk,agricultural_land,,1000000,acre,KGF SRO gazette p.121,
+Kolar,Doddakari maraja Kambampalli Expre ss High way Attached,,village,KGF,taluk,agricultural_land,,1000000,acre,KGF SRO gazette p.121,
 Kolar,Kambampalli,,village,KGF,taluk,agricultural_land,,940000,acre,KGF SRO gazette p.121,
 Kolar,Kanganallur,,village,KGF,taluk,agricultural_land,,1050000,acre,KGF SRO gazette p.122,
 Kolar,Kanganallur,,village,KGF,taluk,plot,,3000,sqm,KGF SRO gazette p.122,
@@ -1699,8 +1699,8 @@ Kolar,Kembodi,,village,Kolar,taluk,agricultural_land,,6000000,acre,Kolar SRO gaz
 Kolar,Kembodi,,village,Kolar,taluk,plot,,4000,sqm,Kolar SRO gazette p.318,
 Kolar,Kotiganahalli,,village,Kolar,taluk,agricultural_land,,600000,acre,Kolar SRO gazette p.318,
 Kolar,Kotiganahalli,,village,Kolar,taluk,plot,,4000,sqm,Kolar SRO gazette p.318,
-Kolar,KotturuBasapura,,village,Kolar,taluk,agricultural_land,,600000,acre,Kolar SRO gazette p.318,
-Kolar,KotturuBasapura,,village,Kolar,taluk,plot,,4000,sqm,Kolar SRO gazette p.318,
+Kolar,Kotturu Basapura,,village,Kolar,taluk,agricultural_land,,600000,acre,Kolar SRO gazette p.318,
+Kolar,Kotturu Basapura,,village,Kolar,taluk,plot,,4000,sqm,Kolar SRO gazette p.318,
 Kolar,Kenchapur,,village,Kolar,taluk,agricultural_land,,800000,acre,Kolar SRO gazette p.318,
 Kolar,Kenchapur,,village,Kolar,taluk,plot,,4000,sqm,Kolar SRO gazette p.318,
 Kolar,Karahalli,,village,Kolar,taluk,agricultural_land,,500000,acre,Kolar SRO gazette p.318,
@@ -2071,8 +2071,8 @@ Kolar,Chowdadenahalli,,village,Kolar,taluk,agricultural_land,,2500000,acre,Kolar
 Kolar,Chowdadenahalli,,village,Kolar,taluk,plot,,6000,sqm,Kolar SRO gazette p.339,
 Kolar,Chowdadenahalli JDA,,locality,Kolar,taluk,plot,,8000,sqm,Kolar SRO gazette p.339,Chowdadenahalli
 Kolar,VR Samrudh Layout,,locality,Kolar,taluk,plot,,8000,sqm,Kolar SRO gazette p.339,Chowdadenahalli
-Kolar,M/s V R Ventures Layout,,locality,Kolar,taluk,plot,,8000,sqm,Kolar SRO gazette p.339,Chowdadenahalli
-Kolar,M/s Pragna East County Layout,,locality,Kolar,taluk,plot,,8000,sqm,Kolar SRO gazette p.339,Chowdadenahalli
+Kolar,V R Ventures Layout,,locality,Kolar,taluk,plot,,8000,sqm,Kolar SRO gazette p.339,Chowdadenahalli
+Kolar,Pragna East County Layout,,locality,Kolar,taluk,plot,,8000,sqm,Kolar SRO gazette p.339,Chowdadenahalli
 Kolar,Chowdadenahalli New Layout,,locality,Kolar,taluk,plot,,8000,sqm,Kolar SRO gazette p.339,Chowdadenahalli
 Kolar,Chowdadenahalli MDR,,village,Kolar,taluk,agricultural_land,,6000000,acre,Kolar SRO gazette p.339,
 Kolar,Chowdadenahalli MDR,,village,Kolar,taluk,plot,,8000,sqm,Kolar SRO gazette p.339,
@@ -2100,7 +2100,7 @@ Kolar,Bellur,,village,Kolar,taluk,plot,,7000,sqm,Kolar SRO gazette p.341,
 Kolar,Bellur KIADB,,village,Kolar,taluk,agricultural_land,,5500000,acre,Kolar SRO gazette p.341,
 Kolar,Bellur KIADB,,village,Kolar,taluk,plot,,5000,sqm,Kolar SRO gazette p.341,
 Kolar,Belluru JDA,,locality,Kolar,taluk,plot,,7000,sqm,Kolar SRO gazette p.341,Bellur KIADB
-Kolar,M/s Swarna Kamala Developers,,locality,Kolar,taluk,plot,,7000,sqm,Kolar SRO gazette p.341,Bellur KIADB
+Kolar,Swarna Kamala Developers,,locality,Kolar,taluk,plot,,7000,sqm,Kolar SRO gazette p.341,Bellur KIADB
 Kolar,Bellur Layout,,locality,Kolar,taluk,plot,,7000,sqm,Kolar SRO gazette p.341,Bellur KIADB
 Kolar,Byrasandra,,village,Kolar,taluk,agricultural_land,,5500000,acre,Kolar SRO gazette p.342,
 Kolar,Byrasandra,,village,Kolar,taluk,plot,,5000,sqm,Kolar SRO gazette p.342,
@@ -2150,7 +2150,7 @@ Kolar,Kendhatthi Madiwala,,village,Kolar,taluk,plot,,6000,sqm,Kolar SRO gazette 
 Kolar,Kendhatti Madiwala JDA,,locality,Kolar,taluk,plot,,6000,sqm,Kolar SRO gazette p.345,Kendhatthi Madiwala
 Kolar,Balaji Developers,,locality,Kolar,taluk,plot,,6000,sqm,Kolar SRO gazette p.345,Kendhatthi Madiwala
 Kolar,Siri Developers,,locality,Kolar,taluk,plot,,6000,sqm,Kolar SRO gazette p.345,Kendhatthi Madiwala
-Kolar,M/s Ramya Build Tech Layout,,locality,Kolar,taluk,plot,,6000,sqm,Kolar SRO gazette p.346,Kendhatthi Madiwala
+Kolar,Ramya Build Tech Layout,,locality,Kolar,taluk,plot,,6000,sqm,Kolar SRO gazette p.346,Kendhatthi Madiwala
 Kolar,Kuthandahalli Adishesh Layout,,locality,Kolar,taluk,plot,,6000,sqm,Kolar SRO gazette p.346,Kuthandahalli
 Kolar,Korgandahalli,,village,Kolar,taluk,agricultural_land,,1000000,acre,Kolar SRO gazette p.346,
 Kolar,Korgandahalli,,village,Kolar,taluk,plot,,5000,sqm,Kolar SRO gazette p.346,
@@ -2359,8 +2359,8 @@ Kolar,Thondala,,village,Kolar,taluk,agricultural_land,,800000,acre,Kolar SRO gaz
 Kolar,Thondala,,village,Kolar,taluk,plot,,4000,sqm,Kolar SRO gazette p.358,
 Kolar,Thondala (MDR-3),,village,Kolar,taluk,agricultural_land,,1000000,acre,Kolar SRO gazette p.358,
 Kolar,Thondala (MDR-3),,village,Kolar,taluk,plot,,4500,sqm,Kolar SRO gazette p.358,
-Kolar,DoodaKurubarahalli,,village,Kolar,taluk,agricultural_land,,500000,acre,Kolar SRO gazette p.358,
-Kolar,DoodaKurubarahalli,,village,Kolar,taluk,plot,,4000,sqm,Kolar SRO gazette p.358,
+Kolar,Dooda Kurubarahalli,,village,Kolar,taluk,agricultural_land,,500000,acre,Kolar SRO gazette p.358,
+Kolar,Dooda Kurubarahalli,,village,Kolar,taluk,plot,,4000,sqm,Kolar SRO gazette p.358,
 Kolar,Dadi reddy Halli,,village,Kolar,taluk,agricultural_land,,700000,acre,Kolar SRO gazette p.358,
 Kolar,Dadi reddy Halli,,village,Kolar,taluk,plot,,4000,sqm,Kolar SRO gazette p.358,
 Kolar,Naga Nayakanahalli,,village,Kolar,taluk,agricultural_land,,500000,acre,Kolar SRO gazette p.358,
@@ -2570,7 +2570,7 @@ Kolar,S.A.K Layout 2nd Stage,,locality,Malur,taluk,plot,,14500,sqm,Malur SRO gaz
 Kolar,Vaishnavi Layout,,locality,Malur,taluk,plot,,8500,sqm,Malur SRO gazette p.84,
 Kolar,Ashraya Layout (indira Nagar),,locality,Malur,taluk,plot,,8500,sqm,Malur SRO gazette p.84,
 Kolar,Ashraya Layout (Rajeev Nagar),,locality,Malur,taluk,plot,,9000,sqm,Malur SRO gazette p.84,
-Kolar,"Green Garden (112/12, 524)",,locality,Malur,taluk,plot,,12000,sqm,Malur SRO gazette p.84,
+Kolar,Green Garden,,locality,Malur,taluk,plot,,12000,sqm,Malur SRO gazette p.84,
 Kolar,Muniyappa layout,,locality,Malur,taluk,plot,,9000,sqm,Malur SRO gazette p.84,
 Kolar,Fortune Developers,,locality,Malur,taluk,plot,,10500,sqm,Malur SRO gazette p.84,
 Kolar,Vajra Layout,,locality,Malur,taluk,plot,,10500,sqm,Malur SRO gazette p.85,
@@ -2621,7 +2621,7 @@ Kolar,Korachanur,,village,Malur,taluk,agricultural_land,,3000000,acre,Malur SRO 
 Kolar,Korachanur,,village,Malur,taluk,plot,,3600,sqm,Malur SRO gazette p.90,
 Kolar,Kadadenahalli,,village,Malur,taluk,agricultural_land,,3500000,acre,Malur SRO gazette p.90,
 Kolar,Kadadenahalli,,village,Malur,taluk,plot,,5000,sqm,Malur SRO gazette p.90,
-Kolar,M/s Meenakshi Developers (Meenakshi Pearl ),,locality,Malur,taluk,plot,,8800,sqm,Malur SRO gazette p.90,Kadadenahalli
+Kolar,Meenakshi Developers (Meenakshi Pearl ),,locality,Malur,taluk,plot,,8800,sqm,Malur SRO gazette p.90,Kadadenahalli
 Kolar,Kambipura,,village,Malur,taluk,agricultural_land,,3000000,acre,Malur SRO gazette p.90,
 Kolar,Kambipura,,village,Malur,taluk,plot,,3400,sqm,Malur SRO gazette p.90,
 Kolar,Kondrahalli,,village,Malur,taluk,agricultural_land,,3800000,acre,Malur SRO gazette p.90,
@@ -2664,7 +2664,7 @@ Kolar,Chikkapura,,village,Malur,taluk,plot,,4300,sqm,Malur SRO gazette p.95,
 Kolar,Chennakal,,village,Malur,taluk,agricultural_land,,3800000,acre,Malur SRO gazette p.95,
 Kolar,Chennakal,,village,Malur,taluk,plot,,5600,sqm,Malur SRO gazette p.95,
 Kolar,Iris Layout,,locality,Malur,taluk,plot,,8600,sqm,Malur SRO gazette p.95,Chennakal
-Kolar,M/s D. & J Corp,,locality,Malur,taluk,plot,,8800,sqm,Malur SRO gazette p.95,Chennakal
+Kolar,D. & J Corp,,locality,Malur,taluk,plot,,8800,sqm,Malur SRO gazette p.95,Chennakal
 Kolar,Vekata Sai Developers,,locality,Malur,taluk,plot,,8800,sqm,Malur SRO gazette p.96,Chennakal
 Kolar,Chakanahalli,,village,Malur,taluk,agricultural_land,,2000000,acre,Malur SRO gazette p.96,
 Kolar,Chakanahalli,,village,Malur,taluk,plot,,2400,sqm,Malur SRO gazette p.96,
@@ -2707,7 +2707,7 @@ Kolar,Thuragaluru,,village,Malur,taluk,agricultural_land,,2000000,acre,Malur SRO
 Kolar,Thuragaluru,,village,Malur,taluk,plot,,2300,sqm,Malur SRO gazette p.99,
 Kolar,Dyapasandra,,village,Malur,taluk,agricultural_land,,4200000,acre,Malur SRO gazette p.99,
 Kolar,Dyapasandra,,village,Malur,taluk,plot,,5000,sqm,Malur SRO gazette p.99,
-Kolar,M/s D. & J Corp,,locality,Malur,taluk,plot,,8800,sqm,Malur SRO gazette p.99,Dyapasandra
+Kolar,D. & J Corp,,locality,Malur,taluk,plot,,8800,sqm,Malur SRO gazette p.99,Dyapasandra
 Kolar,Doddakadathur,,village,Malur,taluk,agricultural_land,,5000000,acre,Malur SRO gazette p.99,
 Kolar,Doddakadathur,,village,Malur,taluk,plot,,5300,sqm,Malur SRO gazette p.99,
 Kolar,Sun Shine Garden Layout,,locality,Malur,taluk,plot,,7500,sqm,Malur SRO gazette p.100,Doddakadathur
@@ -2719,7 +2719,7 @@ Kolar,Dodda Sabbenahalli,,village,Malur,taluk,agricultural_land,,3000000,acre,Ma
 Kolar,Dodda Sabbenahalli,,village,Malur,taluk,plot,,3400,sqm,Malur SRO gazette p.100,
 Kolar,Dombrahalli,,village,Malur,taluk,agricultural_land,,5000000,acre,Malur SRO gazette p.101,
 Kolar,Dombrahalli,,village,Malur,taluk,plot,,5000,sqm,Malur SRO gazette p.101,
-Kolar,M/s V.J.L. Infra Pvt Ltd,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.101,Dombrahalli
+Kolar,V.J.L. Infra Pvt Ltd,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.101,Dombrahalli
 Kolar,Jeon Developers Pvt Ltd,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.101,Dombrahalli
 Kolar,Saroj Whispering Winds,,locality,Malur,taluk,plot,,8500,sqm,Malur SRO gazette p.101,Dombrahalli
 Kolar,"CHSVSRIDEVI(Sy No161,162)",,locality,Malur,taluk,plot,,8500,sqm,Malur SRO gazette p.101,Dombrahalli
@@ -2763,7 +2763,7 @@ Kolar,Tharakans Viveja,,locality,Malur,taluk,plot,,15500,sqm,Malur SRO gazette p
 Kolar,Pichaguntrahalli,,village,Malur,taluk,agricultural_land,,6000000,acre,Malur SRO gazette p.106,
 Kolar,Pichaguntrahalli,,village,Malur,taluk,plot,,9000,sqm,Malur SRO gazette p.106,
 Kolar,Comon Wealth Layout,,locality,Malur,taluk,plot,,12400,sqm,Malur SRO gazette p.106,Pichaguntrahalli
-Kolar,M/s Akruthi Developers,,locality,Malur,taluk,plot,,12400,sqm,Malur SRO gazette p.106,Pichaguntrahalli
+Kolar,Akruthi Developers,,locality,Malur,taluk,plot,,12400,sqm,Malur SRO gazette p.106,Pichaguntrahalli
 Kolar,Triangal Realty Venchers,,locality,Malur,taluk,plot,,12400,sqm,Malur SRO gazette p.106,Pichaguntrahalli
 Kolar,Boppanahalli,,village,Malur,taluk,agricultural_land,,3000000,acre,Malur SRO gazette p.106,
 Kolar,Boppanahalli,,village,Malur,taluk,plot,,3500,sqm,Malur SRO gazette p.106,
@@ -2773,18 +2773,18 @@ Kolar,Byalahalli,,village,Malur,taluk,agricultural_land,,4500000,acre,Malur SRO 
 Kolar,Byalahalli,,village,Malur,taluk,plot,,5000,sqm,Malur SRO gazette p.106,
 Kolar,Bhavanahalli,,village,Malur,taluk,agricultural_land,,4800000,acre,Malur SRO gazette p.106,
 Kolar,Bhavanahalli,,village,Malur,taluk,plot,,5500,sqm,Malur SRO gazette p.106,
-Kolar,M/s Shasta Venchares,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.106,Bhavanahalli
-Kolar,M/s shasta Venchers Pvt Ltd,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.107,Bhavanahalli
+Kolar,Shasta Venchares,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.106,Bhavanahalli
+Kolar,Shasta Venchers Pvt Ltd,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.107,Bhavanahalli
 Kolar,Skanda Avani Developers,,locality,Malur,taluk,plot,,12500,sqm,Malur SRO gazette p.107,Bhavanahalli
 Kolar,Sohum Developers,,locality,Malur,taluk,plot,,10600,sqm,Malur SRO gazette p.107,Bhavanahalli
-Kolar,M/s Balaji Developers,,locality,Malur,taluk,plot,,10600,sqm,Malur SRO gazette p.107,Bhavanahalli
+Kolar,Balaji Developers,,locality,Malur,taluk,plot,,10600,sqm,Malur SRO gazette p.107,Bhavanahalli
 Kolar,K.Mahesh Developers,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.107,Bhavanahalli
 Kolar,Ghana Residency,,locality,Malur,taluk,apartment,,10600,sqm,Malur SRO gazette p.107,Bhavanahalli
 Kolar,Riqueza Laughing Earth,,locality,Malur,taluk,plot,,9500,sqm,Malur SRO gazette p.107,Bhavanahalli
 Kolar,SPOORTHI BOLAVERD,,locality,Malur,taluk,plot,,12000,sqm,Malur SRO gazette p.107,Bhavanahalli
 Kolar,Byranahalli,,village,Malur,taluk,agricultural_land,,4500000,acre,Malur SRO gazette p.107,
 Kolar,Byranahalli,,village,Malur,taluk,plot,,4500,sqm,Malur SRO gazette p.107,
-Kolar,M/s Zoe India Properties,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.108,Byranahalli
+Kolar,Zoe India Properties,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.108,Byranahalli
 Kolar,Prerana Greens,,locality,Malur,taluk,plot,,10600,sqm,Malur SRO gazette p.108,Byranahalli
 Kolar,Bellavi,,village,Malur,taluk,agricultural_land,,4500000,acre,Malur SRO gazette p.108,
 Kolar,Bellavi,,village,Malur,taluk,plot,,6400,sqm,Malur SRO gazette p.108,
@@ -2803,8 +2803,8 @@ Kolar,Mittiganahalli,,village,Malur,taluk,agricultural_land,,2000000,acre,Malur 
 Kolar,Mittiganahalli,,village,Malur,taluk,plot,,2300,sqm,Malur SRO gazette p.109,
 Kolar,Maliyappanahalli,,village,Malur,taluk,agricultural_land,,4000000,acre,Malur SRO gazette p.109,
 Kolar,Maliyappanahalli,,village,Malur,taluk,plot,,4300,sqm,Malur SRO gazette p.109,
-Kolar,M/s S.K.R.N Developers,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.109,Maliyappanahalli
-Kolar,M/s Geown Casper,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.109,Maliyappanahalli
+Kolar,S.K.R.N Developers,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.109,Maliyappanahalli
+Kolar,Geown Casper,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.109,Maliyappanahalli
 Kolar,Madiwala,,village,Malur,taluk,agricultural_land,,6500000,acre,Malur SRO gazette p.110,
 Kolar,Madiwala,,village,Malur,taluk,plot,,5600,sqm,Malur SRO gazette p.110,
 Kolar,B.S.N.L. Sri Sai City Layout,,locality,Malur,taluk,plot,,11900,sqm,Malur SRO gazette p.110,Madiwala
@@ -2824,7 +2824,7 @@ Kolar,Marasandra,,village,Malur,taluk,plot,,5000,sqm,Malur SRO gazette p.112,
 Kolar,Ishwarya Gardenia,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.112,Marasandra
 Kolar,Aero Craft Layout,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.112,Marasandra
 Kolar,City Developeres/ Prashanth Gowda Mallar,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.112,Marasandra
-Kolar,M/s Richi Ventures,,locality,Malur,taluk,plot,,10600,sqm,Malur SRO gazette p.112,Marasandra
+Kolar,Richi Ventures,,locality,Malur,taluk,plot,,10600,sqm,Malur SRO gazette p.112,Marasandra
 Kolar,Madanahatti Venkatapura,,village,Malur,taluk,agricultural_land,,6000000,acre,Malur SRO gazette p.112,
 Kolar,Madanahatti Venkatapura,,village,Malur,taluk,plot,,5300,sqm,Malur SRO gazette p.112,
 Kolar,Triangal Realty Venchers,,locality,Malur,taluk,plot,,12400,sqm,Malur SRO gazette p.112,Madanahatti Venkatapura
@@ -2906,13 +2906,13 @@ Kolar,Sulikunte (Sukunte),,village,Malur,taluk,agricultural_land,,3000000,acre,M
 Kolar,Sulikunte (Sukunte),,village,Malur,taluk,plot,,3300,sqm,Malur SRO gazette p.117,
 Kolar,Sonnappanahatti,,village,Malur,taluk,agricultural_land,,2500000,acre,Malur SRO gazette p.117,
 Kolar,Sonnappanahatti,,village,Malur,taluk,plot,,3100,sqm,Malur SRO gazette p.117,
-Kolar,M/s V.G.R Properties,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.117,Sonnappanahatti
+Kolar,V.G.R Properties,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.117,Sonnappanahatti
 Kolar,Sonnahalli,,village,Malur,taluk,agricultural_land,,2500000,acre,Malur SRO gazette p.118,
 Kolar,Sonnahalli,,village,Malur,taluk,plot,,2900,sqm,Malur SRO gazette p.118,
 Kolar,Sonnanayakanahalli,,village,Malur,taluk,agricultural_land,,4500000,acre,Malur SRO gazette p.118,
 Kolar,Sonnanayakanahalli,,village,Malur,taluk,plot,,5000,sqm,Malur SRO gazette p.118,
 Kolar,Souharda Society,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.118,Sonnanayakanahalli
-Kolar,M/s OMR Group,,locality,Malur,taluk,plot,,9400,sqm,Malur SRO gazette p.118,Sonnanayakanahalli
+Kolar,OMR Group,,locality,Malur,taluk,plot,,9400,sqm,Malur SRO gazette p.118,Sonnanayakanahalli
 Kolar,PRIVILAGE GREEN GROVES,,locality,Malur,taluk,plot,,10500,sqm,Malur SRO gazette p.118,Sonnanayakanahalli
 Kolar,Halkempanahalli,,village,Malur,taluk,agricultural_land,,2000000,acre,Malur SRO gazette p.118,
 Kolar,Halkempanahalli,,village,Malur,taluk,plot,,2600,sqm,Malur SRO gazette p.118,
@@ -2929,7 +2929,7 @@ Kolar,Huralagere,,village,Malur,taluk,agricultural_land,,4500000,acre,Malur SRO 
 Kolar,Huralagere,,village,Malur,taluk,plot,,5000,sqm,Malur SRO gazette p.119,
 Kolar,Hedaginabele,,village,Malur,taluk,agricultural_land,,4000000,acre,Malur SRO gazette p.119,
 Kolar,Hedaginabele,,village,Malur,taluk,plot,,4400,sqm,Malur SRO gazette p.119,
-Kolar,M/s Skylon Estates,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.120,Hedaginabele
+Kolar,Skylon Estates,,locality,Malur,taluk,plot,,10000,sqm,Malur SRO gazette p.120,Hedaginabele
 Kolar,Hanumanayakahalli,,village,Malur,taluk,agricultural_land,,4500000,acre,Malur SRO gazette p.120,
 Kolar,Hanumanayakahalli,,village,Malur,taluk,plot,,5000,sqm,Malur SRO gazette p.120,
 Kolar,Atlantees Layout / Ganesh Enterprises,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.120,Hanumanayakahalli
@@ -2963,8 +2963,8 @@ Kolar,Aravind Green Fields,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazet
 Kolar,K P Moosa Developers,,locality,Malur,taluk,plot,,10600,sqm,Malur SRO gazette p.122,Alambadi
 Kolar,Heritage Funs creaks,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.122,Alambadi
 Kolar,Artha Propertis,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.122,Alambadi
-Kolar,M/s Nitesh Adithya Developers,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.122,Alambadi
-Kolar,M/s Avalan infra,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.123,Alambadi
+Kolar,Nitesh Adithya Developers,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.122,Alambadi
+Kolar,Avalan infra,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.123,Alambadi
 Kolar,S C Atheeth developers,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.123,Alambadi
 Kolar,Anchemuskur,,village,Malur,taluk,agricultural_land,,7500000,acre,Malur SRO gazette p.123,
 Kolar,Anchemuskur,,village,Malur,taluk,plot,,5800,sqm,Malur SRO gazette p.123,
@@ -2974,8 +2974,8 @@ Kolar,Sizzal Oak Wood,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.
 Kolar,R V Layout,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.124,Anchemuskur
 Kolar,Imperian,,locality,Malur,taluk,plot,,25000,sqm,Malur SRO gazette p.124,Anchemuskur
 Kolar,Imperian,,locality,Malur,taluk,apartment,,25000,sqm,Malur SRO gazette p.124,Anchemuskur
-Kolar,M/s Vivaswath Infra,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.124,Anchemuskur
-Kolar,M/s Excell dwellings Luxury Properties Pvt Ltd,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.124,Anchemuskur
+Kolar,Vivaswath Infra,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.124,Anchemuskur
+Kolar,Excell dwellings Luxury Properties Pvt Ltd,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.124,Anchemuskur
 Kolar,Vishba Enclave,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.124,Anchemuskur
 Kolar,Bhema Promoters,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.124,Anchemuskur
 Kolar,Ahanya,,village,Malur,taluk,agricultural_land,,2000000,acre,Malur SRO gazette p.125,
@@ -3029,7 +3029,7 @@ Kolar,Dharani Ventures,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p
 Kolar,Heritage Properties,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.129,Chikkathirupathi
 Kolar,Nuthan T S Developers,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.129,Chikkathirupathi
 Kolar,Nagaraja K R Developers,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.129,Chikkathirupathi
-Kolar,M/s Excell dwellings Luxury Properties Pvt Ltd,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.129,Chikkathirupathi
+Kolar,Excell dwellings Luxury Properties Pvt Ltd,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.129,Chikkathirupathi
 Kolar,Roshini Homes,,locality,Malur,taluk,plot,,11900,sqm,Malur SRO gazette p.129,Chikkathirupathi
 Kolar,T.S.Krishnappa Developers,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.129,Chikkathirupathi
 Kolar,Aarra Springs,,locality,Malur,taluk,plot,,12500,sqm,Malur SRO gazette p.130,Chikkathirupathi
@@ -3046,7 +3046,7 @@ Kolar,Jagadenahalli,,village,Malur,taluk,agricultural_land,,7500000,acre,Malur S
 Kolar,Jagadenahalli,,village,Malur,taluk,plot,,7400,sqm,Malur SRO gazette p.131,
 Kolar,Dharani Ventures,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.131,Jagadenahalli
 Kolar,Skylon Oak Garden,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.131,Jagadenahalli
-Kolar,M/s V J L Infrastructures,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.132,Jagadenahalli
+Kolar,V J L Infrastructures,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.132,Jagadenahalli
 Kolar,Shesha Sai Developers,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.132,Jagadenahalli
 Kolar,Mithra Homes,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.132,Jagadenahalli
 Kolar,YESH DIVINITY,,locality,Malur,taluk,plot,,17500,sqm,Malur SRO gazette p.132,Jagadenahalli
@@ -3104,7 +3104,7 @@ Kolar,Yakkadoddi,,village,Malur,taluk,plot,,2300,sqm,Malur SRO gazette p.136,
 Kolar,Yattakodi,,village,Malur,taluk,agricultural_land,,8000000,acre,Malur SRO gazette p.136,
 Kolar,Yattakodi,,village,Malur,taluk,plot,,5000,sqm,Malur SRO gazette p.136,
 Kolar,Maybelle,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.136,Yattakodi
-Kolar,M/s Woodway Ventures,,locality,Malur,taluk,plot,,10600,sqm,Malur SRO gazette p.136,Yattakodi
+Kolar,Woodway Ventures,,locality,Malur,taluk,plot,,10600,sqm,Malur SRO gazette p.136,Yattakodi
 Kolar,J P Eadens,,locality,Malur,taluk,plot,,11300,sqm,Malur SRO gazette p.136,Yattakodi
 Kolar,KARNATAKA CIRCLE POSTAL AND CENTRAL GOVT EMPLYEES HOUSE ASSOCIATION,,locality,Malur,taluk,plot,,9700,sqm,Malur SRO gazette p.138,Yattakodi
 Kolar,Lakkasandra,,village,Malur,taluk,agricultural_land,,3800000,acre,Malur SRO gazette p.138,
@@ -3192,8 +3192,8 @@ Kolar,Godaga Halli,,village,Malur,taluk,agricultural_land,,820000,acre,Malur SRO
 Kolar,Godaga Halli,,village,Malur,taluk,plot,,2100,sqm,Malur SRO gazette p.144,
 Kolar,Gollahalli,,village,Malur,taluk,agricultural_land,,800000,acre,Malur SRO gazette p.144,
 Kolar,Gollahalli,,village,Malur,taluk,plot,,2000,sqm,Malur SRO gazette p.144,
-Kolar,Chikka KallaHalli,,village,Malur,taluk,agricultural_land,,900000,acre,Malur SRO gazette p.144,
-Kolar,Chikka KallaHalli,,village,Malur,taluk,plot,,2000,sqm,Malur SRO gazette p.144,
+Kolar,Chikka Kalla Halli,,village,Malur,taluk,agricultural_land,,900000,acre,Malur SRO gazette p.144,
+Kolar,Chikka Kalla Halli,,village,Malur,taluk,plot,,2000,sqm,Malur SRO gazette p.144,
 Kolar,Chavaramangala,,village,Malur,taluk,agricultural_land,,1500000,acre,Malur SRO gazette p.144,
 Kolar,Chavaramangala,,village,Malur,taluk,plot,,2100,sqm,Malur SRO gazette p.144,
 Kolar,Chikkasandra,,village,Malur,taluk,agricultural_land,,750000,acre,Malur SRO gazette p.144,
@@ -3527,8 +3527,8 @@ Kolar,G Vaddahalli,,village,Mulbagal,taluk,agricultural_land,,500000,acre,Mulbag
 Kolar,G Vaddahalli,,village,Mulbagal,taluk,plot,,1500,sqm,Mulbagal SRO gazette p.124,
 Kolar,Gummalapura,,village,Mulbagal,taluk,agricultural_land,,668000,acre,Mulbagal SRO gazette p.125,
 Kolar,Gummalapura,,village,Mulbagal,taluk,plot,,1600,sqm,Mulbagal SRO gazette p.125,
-Kolar,ChamaReddihalli,,village,Mulbagal,taluk,agricultural_land,,350000,acre,Mulbagal SRO gazette p.125,
-Kolar,ChamaReddihalli,,village,Mulbagal,taluk,plot,,1600,sqm,Mulbagal SRO gazette p.125,
+Kolar,Chama Reddihalli,,village,Mulbagal,taluk,agricultural_land,,350000,acre,Mulbagal SRO gazette p.125,
+Kolar,Chama Reddihalli,,village,Mulbagal,taluk,plot,,1600,sqm,Mulbagal SRO gazette p.125,
 Kolar,Chaluvanayakanahalli,,village,Mulbagal,taluk,agricultural_land,,1200000,acre,Mulbagal SRO gazette p.125,
 Kolar,Chaluvanayakanahalli,,village,Mulbagal,taluk,plot,,9100,sqm,Mulbagal SRO gazette p.125,
 Kolar,Chikkabandahalli,,village,Mulbagal,taluk,agricultural_land,,325000,acre,Mulbagal SRO gazette p.126,
@@ -3827,8 +3827,8 @@ Kolar,Tippadoddi,,village,Mulbagal,taluk,agricultural_land,,246000,acre,Mulbagal
 Kolar,Tippadoddi,,village,Mulbagal,taluk,plot,,1400,sqm,Mulbagal SRO gazette p.181,
 Kolar,Thondahalli,,village,Mulbagal,taluk,agricultural_land,,730000,acre,Mulbagal SRO gazette p.181,
 Kolar,Thondahalli,,village,Mulbagal,taluk,plot,,3000,sqm,Mulbagal SRO gazette p.181,
-Kolar,ThammaReddihalli,,village,Mulbagal,taluk,agricultural_land,,720000,acre,Mulbagal SRO gazette p.181,
-Kolar,ThammaReddihalli,,village,Mulbagal,taluk,plot,,2000,sqm,Mulbagal SRO gazette p.181,
+Kolar,Thamma Reddihalli,,village,Mulbagal,taluk,agricultural_land,,720000,acre,Mulbagal SRO gazette p.181,
+Kolar,Thamma Reddihalli,,village,Mulbagal,taluk,plot,,2000,sqm,Mulbagal SRO gazette p.181,
 Kolar,Gonikuppa,,village,Mulbagal,taluk,agricultural_land,,310000,acre,Mulbagal SRO gazette p.182,
 Kolar,Gonikuppa,,village,Mulbagal,taluk,plot,,1500,sqm,Mulbagal SRO gazette p.182,
 Kolar,Gadduru,,village,Mulbagal,taluk,agricultural_land,,1520000,acre,Mulbagal SRO gazette p.182,
@@ -3923,8 +3923,8 @@ Kolar,Mallekuppa,,village,Mulbagal,taluk,agricultural_land,,2200000,acre,Mulbaga
 Kolar,Mallekuppa,,village,Mulbagal,taluk,plot,,7100,sqm,Mulbagal SRO gazette p.191,
 Kolar,Chinnabalepalli,,village,Mulbagal,taluk,agricultural_land,,210000,acre,Mulbagal SRO gazette p.192,
 Kolar,Chinnabalepalli,,village,Mulbagal,taluk,plot,,1400,sqm,Mulbagal SRO gazette p.192,
-Kolar,SheegeHosahalli,,village,Mulbagal,taluk,agricultural_land,,286000,acre,Mulbagal SRO gazette p.192,
-Kolar,SheegeHosahalli,,village,Mulbagal,taluk,plot,,1400,sqm,Mulbagal SRO gazette p.192,
+Kolar,Sheege Hosahalli,,village,Mulbagal,taluk,agricultural_land,,286000,acre,Mulbagal SRO gazette p.192,
+Kolar,Sheege Hosahalli,,village,Mulbagal,taluk,plot,,1400,sqm,Mulbagal SRO gazette p.192,
 Kolar,Seegehalli,,village,Mulbagal,taluk,agricultural_land,,378000,acre,Mulbagal SRO gazette p.192,
 Kolar,Seegehalli,,village,Mulbagal,taluk,plot,,1600,sqm,Mulbagal SRO gazette p.192,
 Kolar,Siddanahalli,,village,Mulbagal,taluk,agricultural_land,,211000,acre,Mulbagal SRO gazette p.192,
@@ -3964,8 +3964,8 @@ Kolar,Naganahalli,,village,Mulbagal,taluk,plot,,1400,sqm,Mulbagal SRO gazette p.
 Kolar,Nagali,,village,Mulbagal,taluk,agricultural_land,,2700000,acre,Mulbagal SRO gazette p.196,
 Kolar,Nagali,,village,Mulbagal,taluk,plot,,8000,sqm,Mulbagal SRO gazette p.196,
 Kolar,V.R. New Town,,locality,Mulbagal,taluk,plot,,7000,sqm,Mulbagal SRO gazette p.199,Nagali
-Kolar,HiranyaGowdanahalli,,village,Mulbagal,taluk,agricultural_land,,300000,acre,Mulbagal SRO gazette p.199,
-Kolar,HiranyaGowdanahalli,,village,Mulbagal,taluk,plot,,1400,sqm,Mulbagal SRO gazette p.199,
+Kolar,Hiranya Gowdanahalli,,village,Mulbagal,taluk,agricultural_land,,300000,acre,Mulbagal SRO gazette p.199,
+Kolar,Hiranya Gowdanahalli,,village,Mulbagal,taluk,plot,,1400,sqm,Mulbagal SRO gazette p.199,
 Kolar,Sunapakunte,,village,Mulbagal,taluk,agricultural_land,,308000,acre,Mulbagal SRO gazette p.199,
 Kolar,Sunapakunte,,village,Mulbagal,taluk,plot,,2100,sqm,Mulbagal SRO gazette p.199,
 Kolar,Byrakuru,,village,Mulbagal,taluk,agricultural_land,,710000,acre,Mulbagal SRO gazette p.199,
