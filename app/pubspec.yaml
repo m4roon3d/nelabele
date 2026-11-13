@@ -1,7 +1,7 @@
 name: nelabele
 description: Indicative land and property rates for Bangalore Urban and Rural.
 publish_to: none
-version: 0.6.2+10
+version: 0.7.0+11
 
 environment:
   sdk: ">=3.4.0 <4.0.0"

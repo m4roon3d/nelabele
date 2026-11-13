@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'add_rate_page.dart';
 import 'api.dart';
 import 'cost_page.dart';
+import 'house_page.dart';
 import 'format.dart';
 import 'models.dart';
 import 'saved.dart';
@@ -167,7 +168,7 @@ class _RateCard extends StatelessWidget {
               const SizedBox(height: 2),
               Text(
                 '${rate.marketObs} data point${rate.marketObs == 1 ? '' : 's'}, ${rate.confidence} confidence'
-                '${rate.fromReports ? ' · includes published prices (ANAROCK reports, BDA auction reserves)' : ''}',
+                '${rate.fromReports ? ' · includes published prices (reports, auction reserves, listing averages)' : ''}',
                 style: muted,
               ),
               if (rate.marketRatio != null) ...[
@@ -203,6 +204,18 @@ class _RateCard extends StatelessWidget {
                   label: const Text('Total cost with registration'),
                 ),
               ),
+              if (type == 'plot')
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: TextButton.icon(
+                    style: TextButton.styleFrom(padding: EdgeInsets.zero, visualDensity: VisualDensity.compact),
+                    onPressed: () => Navigator.of(context).push(
+                      MaterialPageRoute<void>(builder: (_) => HousePage(area: area, plot: rate)),
+                    ),
+                    icon: const Icon(Icons.house_outlined, size: 18),
+                    label: const Text('Value a house on this plot'),
+                  ),
+                ),
             ],
           ],
         ),

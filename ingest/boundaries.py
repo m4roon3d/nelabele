@@ -17,6 +17,7 @@ Usage:
 import csv
 import glob
 import json
+import re
 import sys
 from collections import Counter, defaultdict
 
@@ -46,6 +47,45 @@ TALUKS = {
 CITY = ["Anekal", "Bangalore North", "Bangalore South"]   # every Bangalore Urban office
 SIMPLIFY = 0.00015      # degrees, about 15 m: plenty for a phone map
 FUZZY_MIN = 90
+
+
+LOOSE_MIN, LOOSE_MARGIN = 80, 8
+# words around a village name that the census doesn't carry
+NOISE = re.compile(r"\b(grama\s*tana|gramatana|village|and|road\s*side|road|s\.?\s*h|n\.?\s*h)\b\.?", re.I)
+
+
+def skeleton(key):
+    """A spelling-tolerant key: the first letter, then consonants with repeats folded."""
+    rest = re.sub(r"[aeiouy]", "", key[1:])
+    rest = re.sub(r"(.)\1+", r"\1", rest.replace("h", ""))
+    return key[:1] + rest
+
+
+def loose_match(name, cands):
+    """Second try for spelling variants (Tubukunte/Tubakunte, Balageri/Balagere).
+
+    Takes each spelling in the name ("Bynepalli (Bysepalli)" has two), drops
+    "Grama Tana", "Road", a leading initial ("N Jangalahalli"), and accepts the
+    best census name only when it is clearly better than the next one.
+    """
+    spellings = [name] + re.findall(r"\(([^)]+)\)", name)
+    keys = [c[0] for c in cands]
+    skels = [skeleton(k) for k in keys]
+    for sp in spellings:
+        sp = NOISE.sub(" ", re.sub(r"\(.*?\)", " ", sp))
+        sp = re.sub(r"^\s*[A-Z]\.?\s+(?=[A-Za-z]{4})", "", sp)      # "N Jangalahalli"
+        key = norm(sp)
+        if len(key) < 5:
+            continue
+        for pool, k, floor in ((keys, key, LOOSE_MIN), (skels, skeleton(key), 88)):
+            best = process.extract(k, pool, scorer=fuzz.ratio, limit=5)
+            best = [b for b in best if cands[b[2]][1] != cands[best[0][2]][1] or b is best[0]]
+            if not best or best[0][1] < floor or best[0][0][:1] != k[:1]:
+                continue
+            second = best[1][1] if len(best) > 1 else 0
+            if best[0][1] - second >= LOOSE_MARGIN:
+                return cands[best[0][2]]
+    return None
 
 
 def main():
@@ -79,6 +119,9 @@ def main():
             best = process.extractOne(key, [c[0] for c in cands], scorer=fuzz.ratio, score_cutoff=FUZZY_MIN)
             if best and best[0][:1] == key[:1]:
                 hit, method = cands[best[2]], "fuzzy"
+        if not hit and district != "Bangalore Urban":
+            hit = loose_match(name, cands)
+            method = "fuzzy (loose)"
         if not hit:
             how["not found"] += 1
             continue

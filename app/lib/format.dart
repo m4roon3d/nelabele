@@ -20,6 +20,9 @@ String _trim(String s) => s.contains('.') ? s.replaceFirst(RegExp(r'\.?0+$'), ''
 /// Full rupees with Indian grouping, e.g. ₹8,500.
 String rupees(num v) => '₹${_group(v.round())}';
 
+/// A whole number with Indian digit grouping: 1,20,000.
+String fmtInt(num v) => _group(v.round());
+
 /// Short form for large amounts, e.g. ₹31 L, ₹1.1 Cr.
 String rupeesShort(num v) {
   if (v >= 1e7) return '₹${_trim((v / 1e7).toStringAsFixed(2))} Cr';
