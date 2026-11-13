@@ -31,8 +31,8 @@ DROP VIEW IF EXISTS public.api_area;
 -- Areas for the map: name, level, a map point and boundary as GeoJSON
 CREATE VIEW public.api_area AS
 SELECT id, name, name_kn, level, parent_id, district, aliases,
-       ST_Y(coalesce(centroid, point)) AS lat,
-       ST_X(coalesce(centroid, point)) AS lon,
+       ST_Y(coalesce(point, centroid)) AS lat,
+       ST_X(coalesce(point, centroid)) AS lon,
        ST_AsGeoJSON(boundary)::json AS boundary
 FROM nelabele.geo_area;
 
@@ -89,8 +89,8 @@ calibration AS (
 SELECT r.*, a.name AS area_name, a.name_kn, a.level, a.district,
        a.boundary IS NOT NULL AS has_boundary,
        p.name AS parent_name, p.level AS parent_level,
-       ST_Y(coalesce(a.centroid, a.point)) AS lat,
-       ST_X(coalesce(a.centroid, a.point)) AS lon,
+       ST_Y(coalesce(a.point, a.centroid)) AS lat,
+       ST_X(coalesce(a.point, a.centroid)) AS lon,
        -- the range is at least ±15% around the mid: places differ more than the sample shows
        round(r.guidance_rate * least(c.lo, c.mid * 0.85))    AS est_low,
        round(r.guidance_rate * c.mid)                        AS est_mid,
@@ -151,13 +151,13 @@ RETURNS TABLE (id bigint, name text, km double precision, inside boolean)
 LANGUAGE sql STABLE SECURITY DEFINER SET search_path = nelabele, public AS $$
   WITH here AS (SELECT ST_SetSRID(ST_MakePoint(lon, lat), 4326) AS pt)
   SELECT g.id, g.name,
-         round((ST_DistanceSphere(coalesce(g.centroid, g.point), here.pt) / 1000)::numeric, 2)::double precision,
+         round((ST_DistanceSphere(coalesce(g.point, g.centroid), here.pt) / 1000)::numeric, 2)::double precision,
          coalesce(ST_Contains(g.boundary, here.pt), false)
   FROM nelabele.geo_area g, here
-  WHERE coalesce(g.centroid, g.point) IS NOT NULL
+  WHERE coalesce(g.point, g.centroid) IS NOT NULL
     AND EXISTS (SELECT 1 FROM nelabele.rate_summary r WHERE r.geo_area_id = g.id)
   ORDER BY coalesce(ST_Contains(g.boundary, here.pt), false) DESC,
-           coalesce(g.centroid, g.point) <-> here.pt
+           coalesce(g.point, g.centroid) <-> here.pt
   LIMIT least(greatest(lim, 1), 50)
 $$;
 

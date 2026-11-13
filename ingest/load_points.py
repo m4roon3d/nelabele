@@ -62,7 +62,7 @@ def main():
                AND lower(p.name) = lower(t.parent_name) AND lower(a.name) = lower(t.area_name)
                AND t.name_kn IS NOT NULL AND a.name_kn IS NULL""")
         named = cur.rowcount
-        cur.execute("SELECT count(*) FROM nelabele.geo_area WHERE coalesce(centroid, point) IS NOT NULL")
+        cur.execute("SELECT count(*) FROM nelabele.geo_area WHERE coalesce(point, centroid) IS NOT NULL")
         located = cur.fetchone()[0]
         conn.commit()
     print(f"{len(rows)} points in file, {updated} areas updated, {cleared} old points cleared, "

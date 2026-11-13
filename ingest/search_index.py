@@ -36,7 +36,7 @@ def main(places_path, roads_path, out_path):
     with psycopg.connect(url) as conn, conn.cursor() as cur:
         cur.execute("""
             SELECT g.id, g.name, coalesce(g.name_kn, ''), coalesce(p.name, ''), g.district,
-                   ST_Y(coalesce(g.centroid, g.point)), ST_X(coalesce(g.centroid, g.point))
+                   ST_Y(coalesce(g.point, g.centroid)), ST_X(coalesce(g.point, g.centroid))
             FROM nelabele.geo_area g
             LEFT JOIN nelabele.geo_area p ON p.id = g.parent_id
             WHERE EXISTS (SELECT 1 FROM nelabele.rate_summary r WHERE r.geo_area_id = g.id)

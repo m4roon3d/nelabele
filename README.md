@@ -35,6 +35,7 @@ Map points are rebuilt in this order, from the repo root:
 ```
 python ingest/geocode.py <osm places.json> data/geo/area_points.csv <osm roads.json>
 python ingest/boundaries.py <census ka.geojson> data/geo/village_boundaries.geojson
+python ingest/align_boundaries.py data/geo/village_boundaries.geojson data/geo/area_points.csv
 python ingest/points_from_boundaries.py data/geo/village_boundaries.geojson data/geo/area_points.csv
 ```
 
