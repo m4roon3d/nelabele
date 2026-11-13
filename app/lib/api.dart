@@ -125,20 +125,27 @@ class NelaBeleApi {
   }
 
   /// Places with rates nearest a point, closest first, with distance in km.
-  /// Looks in a small box around the point and widens it until enough turn up.
+  /// The server's nearby_areas finds them with a spatial index (the place whose
+  /// boundary holds the point first), then their rates are fetched by id. A box
+  /// filter on api_rate's computed lat/lon had to build the whole view and could
+  /// run past the 3-second limit on a cold database, returning nothing.
   Future<List<(Area, double)>> nearbyAreas(double lat, double lon, {int limit = 15}) async {
-    var found = <Area>[];
-    for (final d in const [0.02, 0.05, 0.12]) {
-      found = _group(await _get('api_rate', {
-        'select': _rateColumns,
-        'and': '(lat.gte.${lat - d},lat.lte.${lat + d},lon.gte.${lon - d},lon.lte.${lon + d})',
-        'limit': '600',
-      }));
-      if (found.length >= limit) break;
-    }
-    final withKm = [for (final a in found) if (a.lat != null && a.lon != null) (a, _km(lat, lon, a.lat!, a.lon!))]
-      ..sort((x, y) => x.$2.compareTo(y.$2));
-    return withKm.take(limit).toList();
+    final near = (await _get('rpc/nearby_areas', {
+      'lat': '$lat',
+      'lon': '$lon',
+      'lim': '$limit',
+    }))
+        .cast<Map<String, dynamic>>();
+    if (near.isEmpty) return const [];
+    final km = {for (final r in near) (r['id'] as num).toInt(): (r['km'] as num).toDouble()};
+    final order = {for (final (i, r) in near.indexed) (r['id'] as num).toInt(): i};
+    final areas = _group(await _get('api_rate', {
+      'select': _rateColumns,
+      'geo_area_id': 'in.(${km.keys.join(',')})',
+      'limit': '400',
+    }));
+    areas.sort((x, y) => (order[x.id] ?? 999).compareTo(order[y.id] ?? 999));
+    return [for (final a in areas) (a, km[a.id] ?? (a.lat != null ? _km(lat, lon, a.lat!, a.lon!) : 0))];
   }
 
   static double _km(double lat1, double lon1, double lat2, double lon2) {
