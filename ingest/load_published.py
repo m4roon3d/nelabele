@@ -28,18 +28,22 @@ def main(path: str) -> None:
             cur.execute(
                 """SELECT a.id,
                           EXISTS (SELECT 1 FROM nelabele.rate_observation o
-                                  WHERE o.geo_area_id = a.id AND o.batch_id IS DISTINCT FROM %s)
+                                  WHERE o.geo_area_id = a.id AND o.batch_id IS DISTINCT FROM %s),
+                          EXISTS (SELECT 1 FROM nelabele.rate_observation o
+                                  WHERE o.geo_area_id = a.id AND o.batch_id IS DISTINCT FROM %s
+                                    AND o.property_type::text = %s)
                    FROM nelabele.geo_area a
                    LEFT JOIN nelabele.geo_area p ON p.id = a.parent_id
                    WHERE a.district = %s AND lower(a.name) = lower(%s) AND lower(p.name) = lower(%s)""",
-                (BATCH, r["district"], r["area_name"], r["parent_name"]),
+                (BATCH, BATCH, r["property_type"], r["district"], r["area_name"], r["parent_name"]),
             )
             found = cur.fetchall()
             ids = [x[0] for x in found]
             if len(ids) > 1:
                 # the same name at two levels (a leftover from an older parse):
                 # use the one that carries the guidance value
-                ids = [x[0] for x in found if x[1]] or ids
+                # the guidance value, preferably for the same property type
+                ids = [x[0] for x in found if x[2]] or [x[0] for x in found if x[1]] or ids
             if len(ids) != 1:
                 missing.append(f'{r["label"]} → {r["area_name"]} ({len(ids)} matches)')
                 continue
