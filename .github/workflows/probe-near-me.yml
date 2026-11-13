@@ -1,0 +1,19 @@
+name: Probe Near me
+on: workflow_dispatch
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    steps:
+      - name: Time the Near me queries at Dollars Colony, JP Nagar
+        run: |
+          psql "$DATABASE_URL" <<'SQL'
+          \timing on
+          SHOW statement_timeout;
+          SELECT rolname, rolconfig FROM pg_roles WHERE rolname IN ('anonymous','authenticated','authenticator');
+          SELECT count(*) AS rate_rows FROM public.api_rate;
+          SELECT count(*) AS box_rows, count(DISTINCT geo_area_id) AS box_areas FROM public.api_rate
+           WHERE lat BETWEEN 12.886 AND 12.926 AND lon BETWEEN 77.5675 AND 77.6075;
+          SELECT * FROM public.nearby_areas(12.906, 77.5875, 15);
+          SQL
