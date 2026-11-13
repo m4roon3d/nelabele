@@ -23,6 +23,7 @@ from shapely.geometry import shape
 FAR_KM = 10     # an OSM point this far from the village's boundary is the wrong place
 TALUK_KM = 45   # a point this far from its taluk's villages is the wrong place
 CITY = "Bangalore Urban"
+CITY_ZONE_KM = 15   # an outer city zone spans about 10 km
 
 
 def km(a, b):
@@ -78,6 +79,64 @@ def main():
         kept.append(r)
     print(f"Took {len(rows) - len(kept)} points off the map that sat far outside their taluk")
     rows[:] = kept
+
+    # City zones. Their villages were matched to census boundaries across all three
+    # city taluks, so the boundary points are trusted only through their median:
+    # an outer zone's own villages show where it is (Tavarekere SRO is out on Magadi
+    # Road, not the Tavarekere by BTM Layout), and anything far from that is a namesake.
+    zone_pts = defaultdict(list)
+    for r in rows:
+        if r["district"] == CITY and r["match"] == "village boundary":
+            zone_pts[r["parent_name"]].append((float(r["lat"]), float(r["lon"])))
+    zone_centre = {z: (statistics.median(a for a, _ in v), statistics.median(b for _, b in v))
+                   for z, v in zone_pts.items() if len(v) >= 10}
+    kept = [r for r in rows if not (
+        r["district"] == CITY and r["parent_name"] in zone_centre
+        and km((float(r["lat"]), float(r["lon"])), zone_centre[r["parent_name"]]) > CITY_ZONE_KM)]
+    print(f"Took {len(rows) - len(kept)} city points off the map that sat far outside their zone")
+    rows[:] = kept
+
+    # One point claimed by same-named places in different city zones (three "RBI
+    # Layout"s on the one in JP Nagar): the zone nearest the point keeps it; the
+    # others go to the locality they're listed under, if that's on the map, else off it.
+    centre_all = defaultdict(list)
+    for r in rows:
+        if r["district"] == CITY:
+            centre_all[r["parent_name"]].append((float(r["lat"]), float(r["lon"])))
+    # where the zone's places mostly are (its census villages alone can lean to one edge)
+    zc = {z: (statistics.median(a for a, _ in v), statistics.median(b for _, b in v))
+          for z, v in centre_all.items()}
+    ctx = {}
+    for path in sorted(glob.glob("data/guidance/bengaluru_urban_*_2023.csv")):
+        for g in csv.DictReader(open(path, encoding="utf-8")):
+            if g.get("context"):
+                ctx[(g["parent_name"], g["area_name"])] = g["context"]
+    pos = {(r["district"], r["parent_name"], r["area_name"]): r for r in rows}
+    groups = defaultdict(list)
+    for r in rows:
+        if r["district"] == CITY:
+            groups[(r["lat"], r["lon"], r["area_name"].lower())].append(r)
+    moved = dropped = 0
+    drop_ids = set()
+    for (lat, lon, _), grp in groups.items():
+        zones = {r["parent_name"] for r in grp}
+        if len(zones) < 2:
+            continue
+        pt = (float(lat), float(lon))
+        best = min(zones, key=lambda z: km(pt, zc[z]))
+        for r in grp:
+            if r["parent_name"] == best:
+                continue
+            host = pos.get((CITY, r["parent_name"], ctx.get((r["parent_name"], r["area_name"]), "")))
+            if host and (host["lat"], host["lon"]) != (lat, lon):
+                r.update(lat=host["lat"], lon=host["lon"], match="at the place it's listed under",
+                         osm_name=host["area_name"])
+                moved += 1
+            else:
+                drop_ids.add(id(r))
+                dropped += 1
+    rows[:] = [r for r in rows if id(r) not in drop_ids]
+    print(f"Same-named city places sharing a point: {moved} moved to their listed locality, {dropped} taken off")
 
     # layouts and roads still off the map go where the place they're listed
     # under is: the village (rural gazettes) or locality heading (city ones)
