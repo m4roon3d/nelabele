@@ -225,7 +225,7 @@ class _RateCard extends StatelessWidget {
               Text(otherUnits(type, g).join('  ·  '), style: muted),
               const SizedBox(height: 6),
               Text(
-                'Govt guidance value'
+                '${t('Govt guidance value')}'
                 '${rate.guidanceEffective != null ? ' · ${t('from {date}', {'date': monthYear(rate.guidanceEffective!)})}' : ''}',
                 style: muted,
               ),

@@ -49,13 +49,19 @@ const scroll = async (page, dy, after = 1500) => {
 };
 const saved = { saved_places: [`${whitefield}`, `${jayanagar}`, `${thanisandra}`] };
 
-await shot('1-list');
-await shot('2-place', { url: `${base}?area=${whitefield}`, steps: (p) => scroll(p, 250) });
+const search = (q) => async (page) => {
+  await tap(page, 200, 115, 1000);
+  await page.keyboard.type(q, { delay: 60 });
+  await page.waitForTimeout(4000);
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(800);
+};
+await shot('1-list', { steps: search('Jayanagar') });
+await shot('2-place', { url: `${base}?area=${whitefield}`, steps: (p) => scroll(p, 120) });
 await shot('3-place-more', { url: `${base}?area=${whitefield}`, steps: (p) => scroll(p, 900) });
-await shot('4-map', { steps: (p) => tap(p, 200, 770, 9000) });
 await shot('5-saved', { prefs: saved, steps: (p) => tap(p, 333, 770, 5000) });
-await shot('6-kannada', { prefs: { language: 'kn' } });
-await shot('7-kannada-place', { url: `${base}?area=${jayanagar}`, prefs: { language: 'kn' }, steps: (p) => scroll(p, 250) });
+await shot('6-kannada', { prefs: { language: 'kn' }, steps: search('Whitefield') });
+await shot('7-kannada-place', { url: `${base}?area=${jayanagar}`, prefs: { language: 'kn' }, steps: (p) => scroll(p, 120) });
 
 // Play icon (512, square: Play rounds the corners itself) and feature graphic (1024×500)
 const svg = fs.readFileSync('brand/nelabele-app-icon.svg', 'utf8').replace('rx="112" ', '');
