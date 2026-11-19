@@ -32,3 +32,17 @@ ALTER TABLE nelabele.city_trend ENABLE ROW LEVEL SECURITY;
 INSERT INTO nelabele.source (code, name, notes)
 VALUES ('published', 'Published market reports', 'Average quoted prices from research reports; figure and link only')
 ON CONFLICT (code) DO NOTHING;
+
+-- Asking rents per locality (published averages), for rental yield on apartment cards
+CREATE TABLE IF NOT EXISTS nelabele.rent_observation (
+  id               bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  geo_area_id      bigint NOT NULL REFERENCES nelabele.geo_area(id),
+  property_type    nelabele.property_type NOT NULL DEFAULT 'apartment',
+  rent_per_sqft    numeric(8,2) NOT NULL CHECK (rent_per_sqft > 0),   -- ₹ per sq ft per month
+  observed_on      date NOT NULL,
+  label            text NOT NULL,
+  source_url       text NOT NULL,
+  report           text NOT NULL
+);
+CREATE INDEX IF NOT EXISTS rent_observation_area ON nelabele.rent_observation (geo_area_id);
+ALTER TABLE nelabele.rent_observation ENABLE ROW LEVEL SECURITY;

@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 
 import 'add_rate_page.dart';
 import 'api.dart';
+import 'checklist_page.dart';
 import 'cost_page.dart';
+import 'fair_price_page.dart';
 import 'house_page.dart';
 import 'format.dart';
+import 'infra.dart';
 import 'models.dart';
 import 'saved.dart';
 import 'settings.dart';
@@ -34,8 +38,39 @@ class _AreaDetails extends StatefulWidget {
   State<_AreaDetails> createState() => _AreaDetailsState();
 }
 
+/// Price history and typical rents for a place, fetched with the sheet.
+typedef _Extras = (Map<String, List<PricePoint>>, Map<String, Rent>);
+
 class _AreaDetailsState extends State<_AreaDetails> {
   late Area _area = widget.area;
+  late Future<_Extras> _extras = _loadExtras();
+
+  Future<_Extras> _loadExtras() async {
+    final api = NelaBeleApi();
+    final results = await Future.wait([
+      api.marketHistory(_area.id).catchError((_) => <String, List<PricePoint>>{}),
+      api.rents(_area.id).catchError((_) => <String, Rent>{}),
+    ]);
+    return (results[0] as Map<String, List<PricePoint>>, results[1] as Map<String, Rent>);
+  }
+
+  void _share() {
+    final area = _area;
+    final lines = [
+      '${area.name} (${area.subtitle})',
+      for (final r in area.sortedRates)
+        '${propertyLabel(r.propertyType)}: ${[
+          if (r.guidanceRate != null) 'guidance ${headline(r.propertyType, r.guidanceRate!)}',
+          if (r.hasMarket)
+            'market ${headline(r.propertyType, r.marketLow!)}–${headline(r.propertyType, r.marketHigh!)}'
+          else if (r.hasEstimate)
+            'est. market ${headline(r.propertyType, r.estLow!)}–${headline(r.propertyType, r.estHigh!)}',
+        ].join(', ')}',
+      '',
+      'NelaBele, indicative rates: https://m4roon3d.github.io/nelabele/?area=${area.id}',
+    ];
+    SharePlus.instance.share(ShareParams(text: lines.join('\n'), subject: '${area.name}: property rates'));
+  }
 
   Future<void> _logRate() async {
     final saved = await Navigator.of(context).push<bool>(
@@ -44,7 +79,12 @@ class _AreaDetailsState extends State<_AreaDetails> {
     if (saved != true || !mounted) return;
     try {
       final fresh = await NelaBeleApi().fetchArea(_area.id);
-      if (fresh != null && mounted) setState(() => _area = fresh);
+      if (fresh != null && mounted) {
+        setState(() {
+          _area = fresh;
+          _extras = _loadExtras();
+        });
+      }
     } catch (_) {}
   }
 
@@ -72,6 +112,11 @@ class _AreaDetailsState extends State<_AreaDetails> {
                 ],
               ),
             ),
+            IconButton(
+              tooltip: 'Share this place',
+              icon: const Icon(Icons.share_outlined),
+              onPressed: _share,
+            ),
             ValueListenableBuilder<List<int>>(
               valueListenable: SavedPlaces.ids,
               builder: (context, ids, _) {
@@ -86,8 +131,20 @@ class _AreaDetailsState extends State<_AreaDetails> {
             ),
           ],
         ),
+        if (area.lat != null && area.lon != null) _NearbyLine(lat: area.lat!, lon: area.lon!),
         const SizedBox(height: 16),
-        for (final r in area.sortedRates) _RateCard(area: area, rate: r),
+        FutureBuilder<_Extras>(
+          future: _extras,
+          builder: (context, snap) {
+            final (history, rents) = snap.data ?? (const <String, List<PricePoint>>{}, const <String, Rent>{});
+            return Column(
+              children: [
+                for (final r in area.sortedRates)
+                  _RateCard(area: area, rate: r, history: history[r.propertyType] ?? const [], rent: rents[r.propertyType]),
+              ],
+            );
+          },
+        ),
         ValueListenableBuilder<String?>(
           valueListenable: EditorKey.current,
           builder: (context, key, _) => key == null
@@ -115,10 +172,22 @@ class _AreaDetailsState extends State<_AreaDetails> {
 }
 
 class _RateCard extends StatelessWidget {
-  const _RateCard({required this.area, required this.rate});
+  const _RateCard({required this.area, required this.rate, this.history = const [], this.rent});
 
   final Area area;
   final Rate rate;
+  final List<PricePoint> history;
+  final Rent? rent;
+
+  Widget _link(BuildContext context, IconData icon, String label, Widget Function() page) => Align(
+        alignment: Alignment.centerLeft,
+        child: TextButton.icon(
+          style: TextButton.styleFrom(padding: EdgeInsets.zero, visualDensity: VisualDensity.compact),
+          onPressed: () => Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => page())),
+          icon: Icon(icon, size: 18),
+          label: Text(label),
+        ),
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -191,8 +260,23 @@ class _RateCard extends StatelessWidget {
               ),
             ] else
               Text('Market range: no data or estimate yet', style: muted),
+            if (rent != null) ...[
+              const SizedBox(height: 10),
+              Text(
+                'Typical rent: ${rupees(rent!.perSqft)}/sq ft a month'
+                '${rate.bestMarketMid != null ? ' · about ${rent!.yieldAt(rate.bestMarketMid!).toStringAsFixed(1)}% gross yield' : ''}',
+                style: theme.textTheme.bodyMedium,
+              ),
+              Text('${rent!.label}: ${rent!.report.split(':').first}', style: muted),
+            ],
+            if (history.length >= 2) ...[
+              const SizedBox(height: 12),
+              _HistoryChart(points: history, guidance: g, type: type),
+            ],
             if (g != null || rate.hasMarket || rate.hasEstimate) ...[
               const SizedBox(height: 8),
+              _link(context, Icons.balance_outlined, 'Is this price fair?',
+                  () => FairPricePage(area: area, rate: rate, rent: rent)),
               Align(
                 alignment: Alignment.centerLeft,
                 child: TextButton.icon(
@@ -217,6 +301,8 @@ class _RateCard extends StatelessWidget {
                   ),
                 ),
             ],
+            _link(context, Icons.checklist, 'Buyer\'s checklist',
+                () => ChecklistPage(type: type, district: area.district)),
           ],
         ),
       ),
@@ -249,4 +335,164 @@ class _CityTrendNote extends StatelessWidget {
       },
     );
   }
+}
+
+
+/// Nearest metro station and ring roads, as the crow flies.
+class _NearbyLine extends StatelessWidget {
+  const _NearbyLine({required this.lat, required this.lon});
+
+  final double lat, lon;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return FutureBuilder<Infra>(
+      future: Infra.load(),
+      builder: (context, snap) {
+        final infra = snap.data;
+        if (infra == null) return const SizedBox.shrink();
+        final stations = infra.stations(lat, lon).where((s) => s.km <= 15).toList();
+        final roads = infra.roads(lat, lon).take(2).toList();
+        if (stations.isEmpty && roads.isEmpty) return const SizedBox.shrink();
+        final parts = [
+          for (final s in stations) '${s.name} metro${s.planned ? ' (planned)' : ''} ${kmLabel(s.km)}',
+          for (final r in roads) '${r.name}${r.planned ? ' (planned)' : ''} ${kmLabel(r.km)}',
+        ];
+        return Padding(
+          padding: const EdgeInsets.only(top: 8),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(Icons.directions_transit_outlined, size: 18, color: theme.colorScheme.primary),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  '${parts.join(' · ')}  (straight line)',
+                  style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
+
+/// Market prices over time as dots and a line, with the guidance value dashed.
+class _HistoryChart extends StatelessWidget {
+  const _HistoryChart({required this.points, required this.guidance, required this.type});
+
+  final List<PricePoint> points;
+  final double? guidance;
+  final String type;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final muted = theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant);
+    final first = points.first, last = points.last;
+    final change = first.rate > 0 ? (last.rate - first.rate) / first.rate * 100 : 0.0;
+    final sameDay = points.every((p) => p.date == first.date);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Price history', style: theme.textTheme.titleSmall),
+        const SizedBox(height: 6),
+        SizedBox(
+          height: 90,
+          width: double.infinity,
+          child: CustomPaint(
+            painter: _HistoryPainter(
+              points: points,
+              guidance: guidance,
+              line: theme.colorScheme.primary,
+              guide: theme.colorScheme.outline,
+            ),
+          ),
+        ),
+        const SizedBox(height: 4),
+        Text(
+          sameDay
+              ? '${points.length} prices from ${monthYear(first.date)}, ${headline(type, _min)} – ${headline(type, _max)}'
+              : '${monthYear(first.date)} → ${monthYear(last.date)}: ${headline(type, first.rate)} → '
+                  '${headline(type, last.rate)} (${changeLabel(change)}) · ${points.length} prices'
+                  '${guidance != null ? ' · dashed: guidance' : ''}',
+          style: muted,
+        ),
+      ],
+    );
+  }
+
+  double get _min => points.map((p) => p.rate).reduce((a, b) => a < b ? a : b);
+  double get _max => points.map((p) => p.rate).reduce((a, b) => a > b ? a : b);
+}
+
+class _HistoryPainter extends CustomPainter {
+  _HistoryPainter({required this.points, required this.guidance, required this.line, required this.guide});
+
+  final List<PricePoint> points;
+  final double? guidance;
+  final Color line, guide;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rates = [for (final p in points) p.rate, if (guidance != null) guidance!];
+    var lo = rates.reduce((a, b) => a < b ? a : b), hi = rates.reduce((a, b) => a > b ? a : b);
+    if (hi - lo < 1) {
+      lo -= 1;
+      hi += 1;
+    }
+    final t0 = points.first.date.millisecondsSinceEpoch.toDouble();
+    final t1 = points.last.date.millisecondsSinceEpoch.toDouble();
+    const pad = 6.0;
+    double x(PricePoint p) => t1 == t0
+        ? size.width / 2
+        : pad + (p.date.millisecondsSinceEpoch - t0) / (t1 - t0) * (size.width - 2 * pad);
+    double y(double v) => size.height - pad - (v - lo) / (hi - lo) * (size.height - 2 * pad);
+
+    if (guidance != null) {
+      final gy = y(guidance!);
+      final dash = Paint()
+        ..color = guide
+        ..strokeWidth = 1;
+      for (var dx = 0.0; dx < size.width; dx += 8) {
+        canvas.drawLine(Offset(dx, gy), Offset((dx + 4).clamp(0, size.width), gy), dash);
+      }
+    }
+    // the middle of each date's prices, joined up
+    final byDate = <int, List<double>>{};
+    for (final p in points) {
+      byDate.putIfAbsent(p.date.millisecondsSinceEpoch, () => []).add(p.rate);
+    }
+    final dates = byDate.keys.toList()..sort();
+    if (dates.length >= 2) {
+      final path = Path();
+      for (final (i, d) in dates.indexed) {
+        final v = byDate[d]!..sort();
+        final m = v[v.length ~/ 2];
+        final px = x(PricePoint(type: '', date: DateTime.fromMillisecondsSinceEpoch(d), rate: m, source: ''));
+        if (i == 0) {
+          path.moveTo(px, y(m));
+        } else {
+          path.lineTo(px, y(m));
+        }
+      }
+      canvas.drawPath(
+        path,
+        Paint()
+          ..color = line
+          ..strokeWidth = 2
+          ..style = PaintingStyle.stroke,
+      );
+    }
+    final dot = Paint()..color = line;
+    for (final p in points) {
+      canvas.drawCircle(Offset(x(p), y(p.rate)), 3.5, dot);
+    }
+  }
+
+  @override
+  bool shouldRepaint(_HistoryPainter old) => old.points != points || old.guidance != guidance;
 }

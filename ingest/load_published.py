@@ -1,4 +1,5 @@
-"""Load market prices quoted in published reports (data/market/published.csv).
+"""Load market prices quoted in published reports (data/market/published.csv),
+and asking rents (data/market/rents.csv, beside it) for rental yields.
 
 Each row names a place by its gazette name and taluk/zone, so it lands on the
 same area as the guidance value. The whole file replaces the previous load
@@ -24,7 +25,9 @@ def main(path: str) -> None:
         src = cur.fetchone() or sys.exit("Source 'published' missing – run db/migrate.sql first")
         cur.execute("DELETE FROM nelabele.rate_observation WHERE batch_id = %s", (BATCH,))
         loaded, missing = 0, []
-        for r in rows:
+
+        def find_area(r):
+            """The one area a row names, or None (and the reason goes in missing)."""
             cur.execute(
                 """SELECT a.id,
                           EXISTS (SELECT 1 FROM nelabele.rate_observation o
@@ -46,19 +49,42 @@ def main(path: str) -> None:
                 ids = [x[0] for x in found if x[2]] or [x[0] for x in found if x[1]] or ids
             if len(ids) != 1:
                 missing.append(f'{r["label"]} → {r["area_name"]} ({len(ids)} matches)')
+                return None
+            return ids[0]
+
+        for r in rows:
+            area = find_area(r)
+            if area is None:
                 continue
             cur.execute(
                 """INSERT INTO nelabele.rate_observation
                      (geo_area_id, property_type, approval_status, source_id, raw_rate, raw_unit,
                       observed_on, source_ref, batch_id, entered_by)
                    VALUES (%s, %s::nelabele.property_type, 'unknown', %s, %s, %s::nelabele.area_unit, %s::date, %s, %s, 'published')""",
-                (ids[0], r["property_type"], src[0], r["rate"], r["unit"], r["observed_on"],
+                (area, r["property_type"], src[0], r["rate"], r["unit"], r["observed_on"],
                  f'{r["report"]}: {r["label"]} · {r["source_url"]}', BATCH),
             )
             loaded += 1
+        rents = 0
+        rent_path = os.path.join(os.path.dirname(path), "rents.csv")
+        if os.path.exists(rent_path):
+            cur.execute("DELETE FROM nelabele.rent_observation")
+            for r in csv.DictReader(open(rent_path, encoding="utf-8")):
+                area = find_area(r)
+                if area is None:
+                    continue
+                cur.execute(
+                    """INSERT INTO nelabele.rent_observation
+                         (geo_area_id, property_type, rent_per_sqft, observed_on, label, source_url, report)
+                       VALUES (%s, %s::nelabele.property_type, %s, %s::date, %s, %s, %s)""",
+                    (area, r["property_type"], r["rent_per_sqft"], r["observed_on"], r["label"],
+                     r["source_url"], r["report"]),
+                )
+                rents += 1
         cur.execute("REFRESH MATERIALIZED VIEW nelabele.rate_summary")
         conn.commit()
     print(f"Loaded {loaded} published prices")
+    print(f"Loaded {rents} asking rents")
     for m in missing:
         print(f"::warning::Not matched: {m}")
 
