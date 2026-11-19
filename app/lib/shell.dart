@@ -5,6 +5,7 @@ import 'area_sheet.dart';
 import 'home_page.dart';
 import 'listing_import_page.dart';
 import 'map_page.dart';
+import 'my_property_page.dart';
 import 'saved_page.dart';
 import 'settings.dart';
 import 'share_inbox.dart';
@@ -112,6 +113,7 @@ class _AppShellState extends State<AppShell> {
           // the map is built the first time its tab opens, then kept alive
           _mapOpened ? const MapPage() : const SizedBox.shrink(),
           const SavedPage(),
+          const MyPropertyPage(),
         ],
       ),
       bottomNavigationBar: NavigationBar(
@@ -124,6 +126,8 @@ class _AppShellState extends State<AppShell> {
           NavigationDestination(icon: Icon(Icons.list_alt_outlined), selectedIcon: Icon(Icons.list_alt), label: t('List')),
           NavigationDestination(icon: Icon(Icons.map_outlined), selectedIcon: Icon(Icons.map), label: t('Map')),
           NavigationDestination(icon: Icon(Icons.star_outline), selectedIcon: Icon(Icons.star), label: t('Saved')),
+          NavigationDestination(
+              icon: Icon(Icons.home_work_outlined), selectedIcon: Icon(Icons.home_work), label: t('My property')),
         ],
       ),
     );

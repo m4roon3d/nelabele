@@ -40,6 +40,12 @@ Keep track:
 • See what has changed for your saved places since you last looked
 • Add your own notes, contacts and photos of documents to a place. They stay on your phone.
 
+My property:
+• Keep your property ID, e-khata and ward handy, and open the official GBA tax site to pay
+• Record each year's tax with a photo of the receipt
+• A yearly reminder for the 5% early-payment rebate, and a rough tax estimate
+• Village properties: where to pay the gram panchayat
+
 Also: a map coloured by price, search in English or Kannada, places near you, sharing, light and dark themes,
 and the whole app in Kannada.
 
@@ -66,6 +72,12 @@ Kannada (kn-IN):
 • ಸ್ಥಳಗಳನ್ನು ಉಳಿಸಿ, ಎರಡು ಅಥವಾ ಮೂರನ್ನು ಅಕ್ಕಪಕ್ಕ ಹೋಲಿಸಿ
 • ಕಳೆದ ಬಾರಿಯಿಂದ ನಿಮ್ಮ ಉಳಿಸಿದ ಸ್ಥಳಗಳಲ್ಲಿ ಏನು ಬದಲಾಗಿದೆ ಎಂದು ನೋಡಿ
 • ಸ್ಥಳಕ್ಕೆ ನಿಮ್ಮ ಟಿಪ್ಪಣಿ, ಸಂಪರ್ಕ ಮತ್ತು ದಾಖಲೆಗಳ ಫೋಟೋ ಸೇರಿಸಿ. ಅವು ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲೇ ಇರುತ್ತವೆ.
+
+ನನ್ನ ಆಸ್ತಿ:
+• ಆಸ್ತಿ ಸಂಖ್ಯೆ, ಇ-ಖಾತೆ ಮತ್ತು ವಾರ್ಡ್ ಕೈಗೆಟುಕುವಂತೆ ಇರಿಸಿ, ತೆರಿಗೆ ಕಟ್ಟಲು ಅಧಿಕೃತ ಜಿಬಿಎ ಜಾಲತಾಣ ತೆರೆಯಿರಿ
+• ಪ್ರತಿ ವರ್ಷದ ತೆರಿಗೆಯನ್ನು ರಸೀದಿ ಫೋಟೋದೊಂದಿಗೆ ದಾಖಲಿಸಿ
+• 5% ಬೇಗ-ಪಾವತಿ ರಿಯಾಯಿತಿಗೆ ವಾರ್ಷಿಕ ಜ್ಞಾಪನೆ ಮತ್ತು ಸ್ಥೂಲ ತೆರಿಗೆ ಅಂದಾಜು
+• ಗ್ರಾಮದ ಆಸ್ತಿ: ಗ್ರಾಮ ಪಂಚಾಯಿತಿಗೆ ಎಲ್ಲಿ ಕಟ್ಟಬೇಕು
 
 ಜೊತೆಗೆ: ಬೆಲೆಯಂತೆ ಬಣ್ಣದ ನಕ್ಷೆ, ಇಂಗ್ಲಿಷ್ ಅಥವಾ ಕನ್ನಡದಲ್ಲಿ ಹುಡುಕಾಟ, ಹತ್ತಿರದ ಸ್ಥಳಗಳು, ಹಂಚಿಕೆ, ಬೆಳಕು ಮತ್ತು ಕತ್ತಲು ನೋಟ,
 ಮತ್ತು ಪೂರ್ತಿ ಕನ್ನಡದಲ್ಲಿ ಆ್ಯಪ್.

@@ -1,6 +1,7 @@
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'i18n.dart';
+import 'property_tax.dart';
 import 'saved.dart';
 import 'search.dart';
 import 'settings.dart';
@@ -16,6 +17,7 @@ Future<void> main() async {
   await SavedPlaces.load();
   await PlaceNotes.loadIndex();
   await Lang.load();
+  await OwnedProperties.load();
   await ShareInbox.init();
   SearchIndex.load(); // in the background; search uses the server until it arrives
   runApp(const NelaBeleApp());

@@ -555,4 +555,126 @@ const kn = <String, String>{
       'ಯಾವ ಸ್ಥಳವೂ ಹೊಂದುತ್ತಿಲ್ಲ. ಹತ್ತಿರದ ಗ್ರಾಮ ಅಥವಾ ಬೇರೆ ಕಾಗುಣಿತ ಪ್ರಯತ್ನಿಸಿ.',
   'Move the map so the pin sits on the place.': 'ಪಿನ್ ಸ್ಥಳದ ಮೇಲೆ ಬರುವಂತೆ ನಕ್ಷೆಯನ್ನು ಸರಿಸಿ.',
   'Use this location': 'ಈ ಸ್ಥಳ ಬಳಸಿ',
+
+  // My property and tax
+  'Add a property':
+      'ಆಸ್ತಿ ಸೇರಿಸಿ',
+  'Pay this year\'s property tax for the 5% rebate':
+      '5% ರಿಯಾಯಿತಿಗಾಗಿ ಈ ವರ್ಷದ ಆಸ್ತಿ ತೆರಿಗೆ ಕಟ್ಟಿ',
+  'Paying the full year early earns 5% off. The cut-off is usually 30 April; for 2026-27 GBA extended it to 31 May. Check the date on the official site.':
+      'ಇಡೀ ವರ್ಷದ ತೆರಿಗೆಯನ್ನು ಬೇಗ ಕಟ್ಟಿದರೆ 5% ಕಡಿತ. ಕೊನೆಯ ದಿನ ಸಾಮಾನ್ಯವಾಗಿ ಏಪ್ರಿಲ್ 30; 2026-27 ಕ್ಕೆ ಜಿಬಿಎ ಅದನ್ನು ಮೇ 31 ರವರೆಗೆ ವಿಸ್ತರಿಸಿತ್ತು. ಅಧಿಕೃತ ಜಾಲತಾಣದಲ್ಲಿ ದಿನಾಂಕ ಪರಿಶೀಲಿಸಿ.',
+  'Keep your property\'s tax details here':
+      'ನಿಮ್ಮ ಆಸ್ತಿಯ ತೆರಿಗೆ ವಿವರಗಳನ್ನು ಇಲ್ಲಿ ಇರಿಸಿ',
+  'Property ID, khata and ward, each year\'s payment with its receipt, a reminder for the early-payment rebate and a rough tax estimate. Nothing leaves this device.':
+      'ಆಸ್ತಿ ಸಂಖ್ಯೆ, ಖಾತೆ ಮತ್ತು ವಾರ್ಡ್, ಪ್ರತಿ ವರ್ಷದ ಪಾವತಿ ಮತ್ತು ರಸೀದಿ, ಬೇಗ ಪಾವತಿಯ ರಿಯಾಯಿತಿಗೆ ಜ್ಞಾಪನೆ ಮತ್ತು ಅಂದಾಜು ತೆರಿಗೆ. ಯಾವುದೂ ಈ ಸಾಧನದಿಂದ ಹೊರಗೆ ಹೋಗುವುದಿಲ್ಲ.',
+  'Tax is paid only on the official sites; NelaBele does not take payments or fetch your bill. Details stay on this device.':
+      'ತೆರಿಗೆಯನ್ನು ಅಧಿಕೃತ ಜಾಲತಾಣಗಳಲ್ಲಿ ಮಾತ್ರ ಕಟ್ಟಲಾಗುತ್ತದೆ; ನೆಲಬೆಲೆ ಹಣ ಪಡೆಯುವುದಿಲ್ಲ, ನಿಮ್ಮ ಬಿಲ್ ತರುವುದೂ ಇಲ್ಲ. ವಿವರಗಳು ಈ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತವೆ.',
+  'Could not open {url}':
+      '{url} ತೆರೆಯಲಾಗಲಿಲ್ಲ',
+  'SAS application no.':
+      'ಎಸ್‌ಎಎಸ್ ಅರ್ಜಿ ಸಂಖ್ಯೆ',
+  'My property':
+      'ನನ್ನ ಆಸ್ತಿ',
+  'Edit':
+      'ತಿದ್ದಿ',
+  'Village property: tax goes to the gram panchayat':
+      'ಗ್ರಾಮದ ಆಸ್ತಿ: ತೆರಿಗೆ ಗ್ರಾಮ ಪಂಚಾಯಿತಿಗೆ',
+  'Bengaluru (GBA) property':
+      'ಬೆಂಗಳೂರು (ಜಿಬಿಎ) ಆಸ್ತಿ',
+  '{label} copied':
+      '{label} ನಕಲಿಸಲಾಗಿದೆ',
+  '{fy}: paid {amount} on {date}':
+      '{fy}: {date} ರಂದು {amount} ಪಾವತಿಸಲಾಗಿದೆ',
+  '{fy}: not recorded as paid':
+      '{fy}: ಪಾವತಿ ದಾಖಲಾಗಿಲ್ಲ',
+  'Last paid {amount} for {fy}. GBA has not changed the rates for 2026-27, so expect about the same.':
+      '{fy} ಕ್ಕೆ ಕೊನೆಯದಾಗಿ {amount} ಕಟ್ಟಲಾಗಿದೆ. 2026-27 ಕ್ಕೆ ಜಿಬಿಎ ದರ ಬದಲಿಸಿಲ್ಲ, ಆದ್ದರಿಂದ ಸುಮಾರು ಅಷ್ಟೇ ನಿರೀಕ್ಷಿಸಿ.',
+  'Rough estimate: {amount} a year':
+      'ಸ್ಥೂಲ ಅಂದಾಜು: ವರ್ಷಕ್ಕೆ {amount}',
+  'Pay on the GBA site':
+      'ಜಿಬಿಎ ಜಾಲತಾಣದಲ್ಲಿ ಕಟ್ಟಿ',
+  'Payments and receipts':
+      'ಪಾವತಿಗಳು ಮತ್ತು ರಸೀದಿಗಳು',
+  'Estimate':
+      'ಅಂದಾಜು',
+  'Pay property tax: {name}':
+      'ಆಸ್ತಿ ತೆರಿಗೆ ಕಟ್ಟಿ: {name}',
+  'Pay at the gram panchayat or a Bapuji Seva Kendra.':
+      'ಗ್ರಾಮ ಪಂಚಾಯಿತಿ ಅಥವಾ ಬಾಪೂಜಿ ಸೇವಾ ಕೇಂದ್ರದಲ್ಲಿ ಕಟ್ಟಿ.',
+  'Pay the full year early for the 5% rebate: {url}':
+      '5% ರಿಯಾಯಿತಿಗಾಗಿ ಇಡೀ ವರ್ಷದ ತೆರಿಗೆ ಬೇಗ ಕಟ್ಟಿ: {url}',
+  'Yearly reminder':
+      'ವಾರ್ಷಿಕ ಜ್ಞಾಪನೆ',
+  'Village property tax is paid to the gram panchayat: at the panchayat office, a Bapuji Seva Kendra, or online through the Bapuji Seva Kendra website or app (Panchatantra 2.0) where your panchayat offers it. The khata itself is on e-Swathu.':
+      'ಗ್ರಾಮದ ಆಸ್ತಿ ತೆರಿಗೆಯನ್ನು ಗ್ರಾಮ ಪಂಚಾಯಿತಿಗೆ ಕಟ್ಟಲಾಗುತ್ತದೆ: ಪಂಚಾಯಿತಿ ಕಚೇರಿ, ಬಾಪೂಜಿ ಸೇವಾ ಕೇಂದ್ರ, ಅಥವಾ ನಿಮ್ಮ ಪಂಚಾಯಿತಿ ಒದಗಿಸಿದಲ್ಲಿ ಬಾಪೂಜಿ ಸೇವಾ ಕೇಂದ್ರದ ಜಾಲತಾಣ ಅಥವಾ ಆ್ಯಪ್ (ಪಂಚತಂತ್ರ 2.0) ಮೂಲಕ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ. ಖಾತೆ ಇ-ಸ್ವತ್ತಿನಲ್ಲಿ ಇರುತ್ತದೆ.',
+  'Delete this property and its receipts?':
+      'ಈ ಆಸ್ತಿ ಮತ್ತು ಅದರ ರಸೀದಿಗಳನ್ನು ಅಳಿಸಬೇಕೇ?',
+  'Edit property':
+      'ಆಸ್ತಿ ತಿದ್ದಿ',
+  'e.g. Home in JP Nagar, site in Hoskote':
+      'ಉದಾ. ಜೆಪಿ ನಗರದ ಮನೆ, ಹೊಸಕೋಟೆಯ ನಿವೇಶನ',
+  'Bengaluru (GBA)':
+      'ಬೆಂಗಳೂರು (ಜಿಬಿಎ)',
+  'Village (panchayat)':
+      'ಗ್ರಾಮ (ಪಂಚಾಯಿತಿ)',
+  'Property ID (PID)':
+      'ಆಸ್ತಿ ಸಂಖ್ಯೆ (ಪಿಐಡಿ)',
+  'On last year\'s tax receipt or the GBA tax site':
+      'ಕಳೆದ ವರ್ಷದ ತೆರಿಗೆ ರಸೀದಿ ಅಥವಾ ಜಿಬಿಎ ತೆರಿಗೆ ಜಾಲತಾಣದಲ್ಲಿ',
+  'e-khata ePID':
+      'ಇ-ಖಾತೆ ಇಪಿಐಡಿ',
+  'From e-Aasthi, if the property has an e-khata':
+      'ಆಸ್ತಿಗೆ ಇ-ಖಾತೆ ಇದ್ದರೆ, ಇ-ಆಸ್ತಿಯಿಂದ',
+  'Printed on the self-assessment receipt':
+      'ಸ್ವಯಂ ಮೌಲ್ಯಮಾಪನ ರಸೀದಿಯಲ್ಲಿ ಮುದ್ರಿತ',
+  'e-Swathu property no. or khata no.':
+      'ಇ-ಸ್ವತ್ತು ಆಸ್ತಿ ಸಂಖ್ಯೆ ಅಥವಾ ಖಾತೆ ಸಂಖ್ಯೆ',
+  'On Form 9 / 11 or the panchayat receipt':
+      'ನಮೂನೆ 9 / 11 ಅಥವಾ ಪಂಚಾಯಿತಿ ರಸೀದಿಯಲ್ಲಿ',
+  'Gram panchayat':
+      'ಗ್ರಾಮ ಪಂಚಾಯಿತಿ',
+  'Kept only on this device.':
+      'ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಇರುತ್ತದೆ.',
+  'Payments: {name}':
+      'ಪಾವತಿಗಳು: {name}',
+  'Record a payment':
+      'ಪಾವತಿ ದಾಖಲಿಸಿ',
+  'Record each year\'s payment and add a photo of the receipt. Buyers and banks ask for these receipts.':
+      'ಪ್ರತಿ ವರ್ಷದ ಪಾವತಿ ದಾಖಲಿಸಿ, ರಸೀದಿಯ ಫೋಟೋ ಸೇರಿಸಿ. ಖರೀದಿದಾರರು ಮತ್ತು ಬ್ಯಾಂಕುಗಳು ಈ ರಸೀದಿಗಳನ್ನು ಕೇಳುತ್ತಾರೆ.',
+  'Paid {date}':
+      '{date} ರಂದು ಪಾವತಿ',
+  'Add receipt photo':
+      'ರಸೀದಿ ಫೋಟೋ ಸೇರಿಸಿ',
+  'Replace receipt photo':
+      'ರಸೀದಿ ಫೋಟೋ ಬದಲಿಸಿ',
+  'Amount paid':
+      'ಪಾವತಿಸಿದ ಮೊತ್ತ',
+  'Property tax estimate':
+      'ಆಸ್ತಿ ತೆರಿಗೆ ಅಂದಾಜು',
+  'Value zone':
+      'ಮೌಲ್ಯ ವಲಯ',
+  'GBA puts every street in a zone, A (highest value) to F, by its guidance value. The zone is on your last self-assessment form or the property\'s page on the GBA tax site.':
+      'ಜಿಬಿಎ ಪ್ರತಿ ರಸ್ತೆಯನ್ನು ಮಾರ್ಗಸೂಚಿ ಮೌಲ್ಯದ ಆಧಾರದಲ್ಲಿ ಎ (ಅತಿ ಹೆಚ್ಚು ಮೌಲ್ಯ) ಯಿಂದ ಎಫ್ ವರೆಗಿನ ವಲಯಕ್ಕೆ ಸೇರಿಸುತ್ತದೆ. ವಲಯ ನಿಮ್ಮ ಕಳೆದ ಸ್ವಯಂ ಮೌಲ್ಯಮಾಪನ ನಮೂನೆ ಅಥವಾ ಜಿಬಿಎ ತೆರಿಗೆ ಜಾಲತಾಣದ ಆಸ್ತಿ ಪುಟದಲ್ಲಿದೆ.',
+  'You live in it':
+      'ನೀವೇ ವಾಸಿಸುತ್ತೀರಿ',
+  'Rented out':
+      'ಬಾಡಿಗೆಗೆ ಕೊಟ್ಟಿದೆ',
+  'Year built':
+      'ಕಟ್ಟಿದ ವರ್ಷ',
+  'Pick the zone and enter the built-up area.':
+      'ವಲಯ ಆಯ್ಕೆಮಾಡಿ, ನಿರ್ಮಿತ ವಿಸ್ತೀರ್ಣ ನಮೂದಿಸಿ.',
+  'About {amount} a year':
+      'ವರ್ಷಕ್ಕೆ ಸುಮಾರು {amount}',
+  '{amount} if you pay the full year early (5% rebate)':
+      'ಇಡೀ ವರ್ಷದ ತೆರಿಗೆ ಬೇಗ ಕಟ್ಟಿದರೆ {amount} (5% ರಿಯಾಯಿತಿ)',
+  'Annual value (area × rate × 10 months)':
+      'ವಾರ್ಷಿಕ ಮೌಲ್ಯ (ವಿಸ್ತೀರ್ಣ × ದರ × 10 ತಿಂಗಳು)',
+  'Less {pct}% for age':
+      'ವಯಸ್ಸಿಗೆ {pct}% ಕಡಿತ',
+  'Tax (20%)':
+      'ತೆರಿಗೆ (20%)',
+  'Cess (24% of tax)':
+      'ಸೆಸ್ (ತೆರಿಗೆಯ 24%)',
+  'A rough guide for homes only, from the self-assessment formula and its published zone rates (₹{a} to ₹{f} a sq ft a month for zones A to F, double if rented out). The bill on the GBA site can differ: it limits rises since the 2016 revision, adds the garbage (SWM) fee and charges shops, offices and empty land differently. Last year\'s receipt is the better guide.':
+      'ಮನೆಗಳಿಗೆ ಮಾತ್ರ ಸ್ಥೂಲ ಮಾರ್ಗದರ್ಶಿ, ಸ್ವಯಂ ಮೌಲ್ಯಮಾಪನ ಸೂತ್ರ ಮತ್ತು ಪ್ರಕಟಿತ ವಲಯ ದರಗಳಿಂದ (ಎ ಯಿಂದ ಎಫ್ ವಲಯಕ್ಕೆ ತಿಂಗಳಿಗೆ ಚ.ಅಡಿಗೆ ₹{a} ರಿಂದ ₹{f}, ಬಾಡಿಗೆಗೆ ಕೊಟ್ಟಿದ್ದರೆ ಎರಡರಷ್ಟು). ಜಿಬಿಎ ಜಾಲತಾಣದ ಬಿಲ್ ಬೇರೆಯಾಗಿರಬಹುದು: ಅದು 2016 ರ ಪರಿಷ್ಕರಣೆಯ ನಂತರದ ಏರಿಕೆಗೆ ಮಿತಿ ಹಾಕುತ್ತದೆ, ಕಸ (ಎಸ್‌ಡಬ್ಲ್ಯುಎಂ) ಶುಲ್ಕ ಸೇರಿಸುತ್ತದೆ ಮತ್ತು ಅಂಗಡಿ, ಕಚೇರಿ ಹಾಗೂ ಖಾಲಿ ಜಾಗಕ್ಕೆ ಬೇರೆ ದರ ವಿಧಿಸುತ್ತದೆ. ಕಳೆದ ವರ್ಷದ ರಸೀದಿ ಉತ್ತಮ ಮಾರ್ಗದರ್ಶಿ.',
 };

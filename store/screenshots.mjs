@@ -59,7 +59,7 @@ const search = (q) => async (page) => {
 await shot('1-list', { steps: search('Jayanagar') });
 await shot('2-place', { url: `${base}?area=${whitefield}`, steps: (p) => scroll(p, 120) });
 await shot('3-place-more', { url: `${base}?area=${whitefield}`, steps: (p) => scroll(p, 900) });
-await shot('5-saved', { prefs: saved, steps: (p) => tap(p, 333, 770, 5000) });
+await shot('5-saved', { prefs: saved, steps: (p) => tap(p, 250, 770, 5000) });
 await shot('6-kannada', { prefs: { language: 'kn' }, steps: search('Whitefield') });
 await shot('7-kannada-place', { url: `${base}?area=${jayanagar}`, prefs: { language: 'kn' }, steps: (p) => scroll(p, 120) });
 
