@@ -1,10 +1,15 @@
 name: Store screenshots
 
-# Phone screenshots for the Play Store listing, from a fresh web build of the chosen branch.
+# Phone screenshots, icon and feature graphic for the Play Store listing, taken from the
+# live web app and saved to the "store-assets" branch (store-assets/ folder).
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths: [store/screenshots.mjs, .github/workflows/store-screenshots.yml]
+
+permissions:
+  contents: write
 
 jobs:
   shots:
@@ -12,34 +17,30 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: stable
-          cache: true
-
-      - name: Build web app
-        working-directory: app
-        run: |
-          flutter create --platforms=web --project-name nelabele --org app.nelabele .
-          rm -rf test
-          flutter pub get
-          flutter build web --release --pwa-strategy=none --base-href /nelabele/ --dart-define-from-file=../config/data_api.json
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
 
       - name: Take screenshots
         run: |
-          mkdir -p site && cp -r app/build/web site/nelabele
-          (cd site && python3 -m http.server 8080 >/dev/null 2>&1 &)
           npm init -y >/dev/null
           npm install playwright@1.49.1 >/dev/null
           npx playwright install --with-deps chromium >/dev/null
           sudo apt-get install -y -qq fonts-noto-core >/dev/null
-          node store/screenshots.mjs http://localhost:8080/nelabele/ shots
+          node store/screenshots.mjs https://m4roon3d.github.io/nelabele/ shots
 
       - uses: actions/upload-artifact@v4
         with:
           name: store-screenshots
           path: shots
+
+      - name: Save to the store-assets branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch --orphan store-assets
+          git rm -rq --cached . || true
+          mkdir -p store-assets && cp shots/*.png store-assets/
+          git add store-assets
+          git commit -qm "Play Store screenshots and graphics"
+          git push -f origin store-assets
