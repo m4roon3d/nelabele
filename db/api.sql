@@ -222,6 +222,35 @@ EXCEPTION
 END $$;
 
 -- Functions are executable by everyone by default; limit them to the API roles
+
+-- ---------------------------------------------------------------------
+-- Market prices over time for one place: every non-guidance observation,
+-- newest first, with where it came from (for the price-history chart)
+CREATE OR REPLACE VIEW public.api_market_history AS
+SELECT o.geo_area_id,
+       o.property_type::text AS property_type,
+       o.observed_on,
+       o.rate_per_sqft::double precision AS rate_per_sqft,
+       s.code AS source,
+       -- the report and link for published prices; notes on logged rates stay private
+       CASE WHEN s.code = 'published' THEN o.source_ref END AS source_ref
+  FROM nelabele.rate_observation o
+  JOIN nelabele.source s ON s.id = o.source_id
+ WHERE s.code <> 'guidance';
+
+-- Latest asking rent per place and type (₹ per sq ft per month), with its source
+CREATE OR REPLACE VIEW public.api_rent AS
+SELECT DISTINCT ON (r.geo_area_id, r.property_type)
+       r.geo_area_id,
+       r.property_type::text AS property_type,
+       r.rent_per_sqft::double precision AS rent_per_sqft,
+       r.observed_on,
+       r.label,
+       r.report,
+       r.source_url
+  FROM nelabele.rent_observation r
+ ORDER BY r.geo_area_id, r.property_type, r.observed_on DESC;
+
 REVOKE EXECUTE ON FUNCTION public.area_at(double precision, double precision),
                            public.search_area(text),
                            public.nearby_areas(double precision, double precision, integer),
@@ -232,7 +261,8 @@ DO $$
 BEGIN
   IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'anonymous') THEN
     GRANT USAGE ON SCHEMA public TO anonymous;
-    GRANT SELECT ON public.api_area, public.api_rate, public.api_area_shape, public.api_city_trend TO anonymous;
+    GRANT SELECT ON public.api_area, public.api_rate, public.api_area_shape, public.api_city_trend,
+                     public.api_market_history, public.api_rent TO anonymous;
     GRANT EXECUTE ON FUNCTION public.area_at(double precision, double precision),
                               public.search_area(text),
                               public.nearby_areas(double precision, double precision, integer) TO anonymous;
@@ -245,7 +275,8 @@ BEGIN
 
   IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'authenticated') THEN
     GRANT USAGE ON SCHEMA public TO authenticated;
-    GRANT SELECT ON public.api_area, public.api_rate, public.api_area_shape, public.api_city_trend TO authenticated;
+    GRANT SELECT ON public.api_area, public.api_rate, public.api_area_shape, public.api_city_trend,
+                     public.api_market_history, public.api_rent TO authenticated;
     GRANT EXECUTE ON FUNCTION public.area_at(double precision, double precision),
                               public.search_area(text),
                               public.nearby_areas(double precision, double precision, integer),

@@ -177,3 +177,56 @@ class CityTrend {
         measure: j['measure'] as String,
       );
 }
+
+/// One market price for a place at a date (published or logged), ₹ per sq ft.
+class PricePoint {
+  PricePoint({required this.type, required this.date, required this.rate, required this.source, this.sourceRef});
+
+  final String type;
+  final DateTime date;
+  final double rate;
+  final String source;
+  final String? sourceRef;
+
+  /// The report and label part of a published price, without its link.
+  String get label => (sourceRef ?? (source == 'published' ? 'Published price' : 'Logged rate')).split(' · ').first;
+
+  factory PricePoint.fromJson(Map<String, dynamic> j) => PricePoint(
+        type: j['property_type'] as String,
+        date: DateTime.parse(j['observed_on'] as String),
+        rate: (j['rate_per_sqft'] as num).toDouble(),
+        source: j['source'] as String,
+        sourceRef: j['source_ref'] as String?,
+      );
+}
+
+/// Typical asking rent for a place, ₹ per sq ft per month, with its source.
+class Rent {
+  Rent({
+    required this.type,
+    required this.perSqft,
+    required this.observedOn,
+    required this.label,
+    required this.report,
+    required this.url,
+  });
+
+  final String type;
+  final double perSqft;
+  final DateTime observedOn;
+  final String label;
+  final String report;
+  final String url;
+
+  /// Gross yield in % for a price of [pricePerSqft].
+  double yieldAt(double pricePerSqft) => perSqft * 12 / pricePerSqft * 100;
+
+  factory Rent.fromJson(Map<String, dynamic> j) => Rent(
+        type: j['property_type'] as String,
+        perSqft: (j['rent_per_sqft'] as num).toDouble(),
+        observedOn: DateTime.parse(j['observed_on'] as String),
+        label: j['label'] as String,
+        report: j['report'] as String,
+        url: j['source_url'] as String,
+      );
+}

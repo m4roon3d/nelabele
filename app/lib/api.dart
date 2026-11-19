@@ -159,6 +159,28 @@ class NelaBeleApi {
   static CityTrend? _trend;
 
   /// Latest city-wide price change, cached for the session.
+  /// Every market price recorded for a place, oldest first, by property type.
+  Future<Map<String, List<PricePoint>>> marketHistory(int areaId) async {
+    final rows = (await _get('api_market_history', {
+      'geo_area_id': 'eq.$areaId',
+      'order': 'observed_on.asc',
+      'limit': '200',
+    }))
+        .cast<Map<String, dynamic>>();
+    final out = <String, List<PricePoint>>{};
+    for (final r in rows) {
+      final p = PricePoint.fromJson(r);
+      out.putIfAbsent(p.type, () => []).add(p);
+    }
+    return out;
+  }
+
+  /// Latest typical rent for a place, by property type.
+  Future<Map<String, Rent>> rents(int areaId) async {
+    final rows = (await _get('api_rent', {'geo_area_id': 'eq.$areaId'})).cast<Map<String, dynamic>>();
+    return {for (final r in rows) r['property_type'] as String: Rent.fromJson(r)};
+  }
+
   Future<CityTrend?> cityTrend() async {
     if (_trend != null) return _trend;
     try {

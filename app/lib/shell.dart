@@ -1,4 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+
+import 'api.dart';
+import 'area_sheet.dart';
 
 import 'home_page.dart';
 import 'listing_import_page.dart';
@@ -24,7 +28,21 @@ class _AppShellState extends State<AppShell> {
   void initState() {
     super.initState();
     ShareInbox.text.addListener(_onShared);
-    WidgetsBinding.instance.addPostFrameCallback((_) => _onShared());
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _onShared();
+      _openLinkedArea();
+    });
+  }
+
+  /// A shared link (…/nelabele/?area=123) opens that place's rate card.
+  Future<void> _openLinkedArea() async {
+    if (!kIsWeb) return;
+    final id = int.tryParse(Uri.base.queryParameters['area'] ?? '');
+    if (id == null) return;
+    try {
+      final area = await NelaBeleApi().fetchArea(id);
+      if (area != null && mounted) await showAreaSheet(context, area);
+    } catch (_) {}
   }
 
   @override
