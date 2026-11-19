@@ -1,11 +1,12 @@
-import 'package:flutter/material.dart';
 import 'package:maplibre_gl/maplibre_gl.dart' show LatLng;
 
 import 'api.dart';
 import 'format.dart';
+import 'i18n.dart';
 import 'location_picker.dart';
 import 'models.dart';
 import 'settings.dart';
+import 'ui.dart';
 
 const _units = {
   'sqft': 'per sq ft',
@@ -106,7 +107,7 @@ class _AddRatePageState extends State<AddRatePage> {
     final a = widget.area;
     final start = _pin ?? (a.lat != null && a.lon != null ? LatLng(a.lat!, a.lon!) : null);
     final picked = await Navigator.of(context).push<LatLng>(
-      MaterialPageRoute(builder: (_) => LocationPickerPage(title: 'Where is ${a.name}?', initial: start)),
+      MaterialPageRoute(builder: (_) => LocationPickerPage(title: t('Where is {place}?', {'place': a.name}), initial: start)),
     );
     if (picked != null) setState(() => _pin = picked);
   }
@@ -184,7 +185,7 @@ class _AddRatePageState extends State<AddRatePage> {
                     controller: _rate,
                     keyboardType: const TextInputType.numberWithOptions(decimal: true),
                     decoration: InputDecoration(
-                      labelText: 'Rate (₹)',
+                      labelText: t('Rate (₹)'),
                       helperText: _perSqftPreview,
                       border: const OutlineInputBorder(),
                     ),
@@ -203,7 +204,7 @@ class _AddRatePageState extends State<AddRatePage> {
                   child: DropdownButtonFormField<String>(
                     key: ValueKey('unit-$_unit'),
                     initialValue: _unit,
-                    decoration: const InputDecoration(labelText: 'Unit', border: OutlineInputBorder()),
+                    decoration: InputDecoration(labelText: t('Unit'), border: const OutlineInputBorder()),
                     items: [for (final e in _units.entries) DropdownMenuItem(value: e.key, child: Text(e.value))],
                     onChanged: (v) => setState(() => _unit = v!),
                   ),
@@ -213,14 +214,14 @@ class _AddRatePageState extends State<AddRatePage> {
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
               initialValue: _source,
-              decoration: const InputDecoration(labelText: 'Where it came from', border: OutlineInputBorder()),
+              decoration: InputDecoration(labelText: t('Where it came from'), border: const OutlineInputBorder()),
               items: [for (final e in _sources.entries) DropdownMenuItem(value: e.key, child: Text(e.value))],
               onChanged: (v) => setState(() => _source = v!),
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
               initialValue: _approval,
-              decoration: const InputDecoration(labelText: 'Khata / approval', border: OutlineInputBorder()),
+              decoration: InputDecoration(labelText: t('Khata / approval'), border: const OutlineInputBorder()),
               items: [for (final e in _approvals.entries) DropdownMenuItem(value: e.key, child: Text(e.value))],
               onChanged: (v) => setState(() => _approval = v!),
             ),
@@ -228,7 +229,7 @@ class _AddRatePageState extends State<AddRatePage> {
             OutlinedButton.icon(
               onPressed: _pickDate,
               icon: const Icon(Icons.event_outlined),
-              label: Text('Seen on ${_date.day} ${monthYear(_date)}'),
+              label: Text(t('Seen on {date}', {'date': dayMonthYear(_date)})),
             ),
             const SizedBox(height: 16),
             _LocationRow(
@@ -240,10 +241,10 @@ class _AddRatePageState extends State<AddRatePage> {
             TextFormField(
               controller: _note,
               maxLength: 200,
-              decoration: const InputDecoration(
-                labelText: 'Note (optional)',
-                hintText: 'e.g. 30×40 corner site, 99acres listing',
-                border: OutlineInputBorder(),
+              decoration: InputDecoration(
+                labelText: t('Note (optional)'),
+                hintText: t('e.g. 30×40 corner site, 99acres listing'),
+                border: const OutlineInputBorder(),
               ),
             ),
             if (_error != null) ...[

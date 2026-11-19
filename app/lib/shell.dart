@@ -1,9 +1,7 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 
 import 'api.dart';
 import 'area_sheet.dart';
-
 import 'home_page.dart';
 import 'listing_import_page.dart';
 import 'map_page.dart';
@@ -11,6 +9,8 @@ import 'saved_page.dart';
 import 'settings.dart';
 import 'share_inbox.dart';
 import 'theme.dart';
+import 'i18n.dart';
+import 'ui.dart';
 
 /// Brand header, List / Map tabs and the settings button.
 class AppShell extends StatefulWidget {
@@ -88,7 +88,7 @@ class _AppShellState extends State<AppShell> {
                   ]),
                   style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600),
                 ),
-                Text('ನೆಲ ಬೆಲೆ · indicative property rates',
+                Text(Lang.kannada ? 'ನೆಲ ಬೆಲೆ · ಅಂದಾಜು ಆಸ್ತಿ ದರಗಳು' : 'ನೆಲ ಬೆಲೆ · indicative property rates',
                     style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
               ],
             ),
@@ -96,7 +96,7 @@ class _AppShellState extends State<AppShell> {
         ),
         actions: [
           IconButton(
-            tooltip: 'Settings',
+            tooltip: t('Settings'),
             icon: const Icon(Icons.settings_outlined),
             onPressed: () => Navigator.of(context).push(
               MaterialPageRoute<void>(builder: (_) => const SettingsPage()),
@@ -120,10 +120,10 @@ class _AppShellState extends State<AppShell> {
           _tab = i;
           if (i == 1) _mapOpened = true;
         }),
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.list_alt_outlined), selectedIcon: Icon(Icons.list_alt), label: 'List'),
-          NavigationDestination(icon: Icon(Icons.map_outlined), selectedIcon: Icon(Icons.map), label: 'Map'),
-          NavigationDestination(icon: Icon(Icons.star_outline), selectedIcon: Icon(Icons.star), label: 'Saved'),
+        destinations: [
+          NavigationDestination(icon: Icon(Icons.list_alt_outlined), selectedIcon: Icon(Icons.list_alt), label: t('List')),
+          NavigationDestination(icon: Icon(Icons.map_outlined), selectedIcon: Icon(Icons.map), label: t('Map')),
+          NavigationDestination(icon: Icon(Icons.star_outline), selectedIcon: Icon(Icons.star), label: t('Saved')),
         ],
       ),
     );

@@ -1,15 +1,17 @@
+import 'i18n_core.dart';
+
 /// Property types in the order the app shows them.
 const propertyTypes = ['plot', 'agricultural_land', 'independent_house', 'apartment'];
 
-String propertyLabel(String type) => switch (type) {
+String propertyLabel(String type) => t(switch (type) {
       'plot' => 'Plot',
       'agricultural_land' => 'Farmland',
       'independent_house' => 'House',
       'apartment' => 'Apartment',
       _ => type,
-    };
+    });
 
-String levelLabel(String level) => switch (level) {
+String levelLabel(String level) => t(switch (level) {
       'village' => 'Village',
       'locality' => 'Locality',
       'ward' => 'Ward',
@@ -18,7 +20,7 @@ String levelLabel(String level) => switch (level) {
       'taluk' => 'Taluk',
       'district' => 'District',
       _ => level,
-    };
+    });
 
 double? _num(Object? v) => (v as num?)?.toDouble();
 
@@ -156,7 +158,7 @@ class Area {
 
   String get subtitle => [
         levelLabel(level),
-        if (parentName != null) parentLevel == 'zone' ? '$parentName area' : '$parentName taluk',
+        if (parentName != null) parentLevel == 'zone' ? t('{place} area', {'place': parentName!}) : t('{place} taluk', {'place': parentName!}),
         district,
       ].join(' · ');
 }

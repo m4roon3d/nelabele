@@ -1,13 +1,13 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
-
 import 'api.dart';
 import 'area_sheet.dart';
 import 'format.dart';
+import 'i18n.dart';
 import 'location.dart';
 import 'models.dart';
 import 'search.dart';
+import 'ui.dart';
 
 const _districts = ['Bangalore Urban', 'Bangalore Rural', 'Ramanagara', 'Tumakuru', 'Kolar', 'Chikkaballapura'];
 const _types = ['plot', 'agricultural_land', 'apartment'];
@@ -63,7 +63,7 @@ class _RatesListViewState extends State<RatesListView> {
     try {
       final here = await currentLocation();
       if (outsideCoverage(here)) {
-        throw const LocationException('You seem to be outside Bengaluru and nearby districts, which NelaBele covers.');
+        throw LocationException(t('You seem to be outside Bengaluru and nearby districts, which NelaBele covers.'));
       }
       final near = await _api.nearbyAreas(here.lat, here.lon);
       if (id != _requestId || !mounted) return;
@@ -117,8 +117,8 @@ class _RatesListViewState extends State<RatesListView> {
         nearTitle = r.nearLabel == null
             ? null
             : RegExp(r'\b(road|highway|bypass|marga)\b', caseSensitive: false).hasMatch(r.nearLabel!)
-                ? 'Along ${r.nearLabel}'
-                : 'Near ${r.nearLabel}';
+                ? t('Along {place}', {'place': r.nearLabel!})
+                : t('Near {place}', {'place': r.nearLabel!});
         hits = r.areas;
       } else {
         areas = await _api.fetchAreas(query: q, district: _district, type: _type);
@@ -169,18 +169,18 @@ class _RatesListViewState extends State<RatesListView> {
               onChanged: _onSearchChanged,
               textInputAction: TextInputAction.search,
               decoration: InputDecoration(
-                hintText: 'Search a place · ಸ್ಥಳ ಹುಡುಕಿ',
+                hintText: Lang.kannada ? 'ಸ್ಥಳ ಹುಡುಕಿ · Search a place' : 'Search a place · ಸ್ಥಳ ಹುಡುಕಿ',
                 prefixIcon: const Icon(Icons.search),
                 suffixIcon: _search.text.isEmpty
                     ? IconButton(
-                        tooltip: 'Places near me',
+                        tooltip: t('Places near me'),
                         icon: _locating
                             ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2))
                             : const Icon(Icons.my_location),
                         onPressed: _locating ? null : _nearMe,
                       )
                     : IconButton(
-                        tooltip: 'Clear',
+                        tooltip: t('Clear'),
                         icon: const Icon(Icons.close),
                         onPressed: () {
                           _search.clear();
@@ -222,7 +222,7 @@ class _RatesListViewState extends State<RatesListView> {
                 children: [
                   Icon(Icons.layers_outlined, size: 18, color: theme.colorScheme.primary),
                   const SizedBox(width: 6),
-                  Expanded(child: Text('All places in $_parent area', style: theme.textTheme.titleSmall)),
+                  Expanded(child: Text(t('All places in {place} area', {'place': '$_parent'}), style: theme.textTheme.titleSmall)),
                   TextButton(
                     onPressed: () {
                       setState(() => _parent = null);
@@ -273,8 +273,8 @@ class _RatesListViewState extends State<RatesListView> {
           color: theme.colorScheme.secondaryContainer,
           child: ListTile(
             leading: Icon(Icons.layers_outlined, color: theme.colorScheme.onSecondaryContainer),
-            title: Text('${a.name} area', style: TextStyle(color: theme.colorScheme.onSecondaryContainer)),
-            subtitle: Text('${a.places} places · ${a.district}',
+            title: Text(t('{place} area', {'place': a.name}), style: TextStyle(color: theme.colorScheme.onSecondaryContainer)),
+            subtitle: Text('${t('{n} places', {'n': '${a.places}'})} · ${a.district}',
                 style: TextStyle(color: theme.colorScheme.onSecondaryContainer)),
             trailing: Icon(Icons.chevron_right, color: theme.colorScheme.onSecondaryContainer),
             onTap: () => _openArea(a),
@@ -298,7 +298,7 @@ class _RatesListViewState extends State<RatesListView> {
           _nearKm != null || _nearTitle != null
               ? 'Distances are to the middle of each place. Place names nearby come from OpenStreetMap.'
               : _areas.length >= 100
-                  ? 'Showing the first ${_areas.length} places. Search to narrow down.'
+                  ? t('Showing the first {n} places. Search to narrow down.', {'n': '${_areas.length}'})
                   : 'Government guidance values. Market prices are usually higher.',
           textAlign: TextAlign.center,
           style: muted,
@@ -396,7 +396,7 @@ class _AreaCard extends StatelessWidget {
               Text(
                   km == null
                       ? area.subtitle
-                      : '${km! < 1 ? '${(km! * 1000).round()} m' : '${km!.toStringAsFixed(1)} km'} away · ${area.subtitle}',
+                      : '${t('{d} away', {'d': km! < 1 ? '${(km! * 1000).round()} m' : '${km!.toStringAsFixed(1)} km'})} · ${area.subtitle}',
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
               const SizedBox(height: 10),
               Wrap(
@@ -411,9 +411,9 @@ class _AreaCard extends StatelessWidget {
                         extra: [
                           if (r.revised) changeLabel(r.guidanceChangePct!),
                           if (r.marketRatio != null)
-                            'market ${r.marketRatio!.toStringAsFixed(1)}×'
+                            t('market {x}×', {'x': r.marketRatio!.toStringAsFixed(1)})
                           else if (r.hasEstimate)
-                            'est. ~${headline(r.propertyType, r.estMid!)}',
+                            t('est. ~{rate}', {'rate': headline(r.propertyType, r.estMid!)}),
                         ].join('  ·  ').ifEmptyNull,
                       ),
                 ],

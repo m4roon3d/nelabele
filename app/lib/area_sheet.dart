@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:share_plus/share_plus.dart';
 
 import 'add_rate_page.dart';
@@ -6,12 +5,16 @@ import 'api.dart';
 import 'checklist_page.dart';
 import 'cost_page.dart';
 import 'fair_price_page.dart';
-import 'house_page.dart';
 import 'format.dart';
+import 'house_page.dart';
+import 'i18n.dart';
 import 'infra.dart';
+import 'loan_page.dart';
 import 'models.dart';
+import 'notes_page.dart';
 import 'saved.dart';
 import 'settings.dart';
+import 'ui.dart';
 
 Future<void> showAreaSheet(BuildContext context, Area area) {
   return showModalBottomSheet<void>(
@@ -60,16 +63,16 @@ class _AreaDetailsState extends State<_AreaDetails> {
       '${area.name} (${area.subtitle})',
       for (final r in area.sortedRates)
         '${propertyLabel(r.propertyType)}: ${[
-          if (r.guidanceRate != null) 'guidance ${headline(r.propertyType, r.guidanceRate!)}',
+          if (r.guidanceRate != null) '${t('guidance')} ${headline(r.propertyType, r.guidanceRate!)}',
           if (r.hasMarket)
-            'market ${headline(r.propertyType, r.marketLow!)}–${headline(r.propertyType, r.marketHigh!)}'
+            '${t('market')} ${headline(r.propertyType, r.marketLow!)}–${headline(r.propertyType, r.marketHigh!)}'
           else if (r.hasEstimate)
-            'est. market ${headline(r.propertyType, r.estLow!)}–${headline(r.propertyType, r.estHigh!)}',
+            '${t('est. market')} ${headline(r.propertyType, r.estLow!)}–${headline(r.propertyType, r.estHigh!)}',
         ].join(', ')}',
       '',
-      'NelaBele, indicative rates: https://m4roon3d.github.io/nelabele/?area=${area.id}',
+      '${t('NelaBele, indicative rates')}: https://m4roon3d.github.io/nelabele/?area=${area.id}',
     ];
-    SharePlus.instance.share(ShareParams(text: lines.join('\n'), subject: '${area.name}: property rates'));
+    SharePlus.instance.share(ShareParams(text: lines.join('\n'), subject: '${area.name}: ${t('property rates')}'));
   }
 
   Future<void> _logRate() async {
@@ -112,8 +115,19 @@ class _AreaDetailsState extends State<_AreaDetails> {
                 ],
               ),
             ),
+            ValueListenableBuilder<Set<int>>(
+              valueListenable: PlaceNotes.withNotes,
+              builder: (context, withNotes, _) => IconButton(
+                tooltip: t('Your notes and documents'),
+                icon: Icon(withNotes.contains(area.id) ? Icons.sticky_note_2 : Icons.sticky_note_2_outlined),
+                color: withNotes.contains(area.id) ? theme.colorScheme.primary : null,
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute<void>(builder: (_) => NotesPage(area: area)),
+                ),
+              ),
+            ),
             IconButton(
-              tooltip: 'Share this place',
+              tooltip: t('Share this place'),
               icon: const Icon(Icons.share_outlined),
               onPressed: _share,
             ),
@@ -122,7 +136,7 @@ class _AreaDetailsState extends State<_AreaDetails> {
               builder: (context, ids, _) {
                 final saved = ids.contains(area.id);
                 return IconButton(
-                  tooltip: saved ? 'Remove from saved' : 'Save this place',
+                  tooltip: saved ? t('Remove from saved') : t('Save this place'),
                   icon: Icon(saved ? Icons.star : Icons.star_outline),
                   color: saved ? theme.colorScheme.primary : null,
                   onPressed: () => SavedPlaces.toggle(area.id),
@@ -212,14 +226,17 @@ class _RateCard extends StatelessWidget {
               const SizedBox(height: 6),
               Text(
                 'Govt guidance value'
-                '${rate.guidanceEffective != null ? ' · from ${monthYear(rate.guidanceEffective!)}' : ''}',
+                '${rate.guidanceEffective != null ? ' · ${t('from {date}', {'date': monthYear(rate.guidanceEffective!)})}' : ''}',
                 style: muted,
               ),
               if (rate.revised) ...[
                 const SizedBox(height: 4),
                 Text(
-                  '${changeLabel(rate.guidanceChangePct!)} from ${headline(type, rate.prevGuidanceRate!)} '
-                  '(${monthYear(rate.prevGuidanceEffective!)})',
+                  t('{change} from {rate} ({date})', {
+                    'change': changeLabel(rate.guidanceChangePct!),
+                    'rate': headline(type, rate.prevGuidanceRate!),
+                    'date': monthYear(rate.prevGuidanceEffective!),
+                  }),
                   style: theme.textTheme.bodyMedium?.copyWith(
                     color: rate.guidanceChangePct! >= 0 ? theme.colorScheme.error : theme.colorScheme.primary,
                     fontWeight: FontWeight.w600,
@@ -231,31 +248,33 @@ class _RateCard extends StatelessWidget {
             const Divider(height: 24),
             if (rate.hasMarket) ...[
               Text(
-                'Market range: ${headline(type, rate.marketLow!)} – ${headline(type, rate.marketHigh!)}',
+                '${t('Market range')}: ${headline(type, rate.marketLow!)} – ${headline(type, rate.marketHigh!)}',
                 style: theme.textTheme.titleMedium,
               ),
               const SizedBox(height: 2),
               Text(
-                '${rate.marketObs} data point${rate.marketObs == 1 ? '' : 's'}, ${rate.confidence} confidence'
-                '${rate.fromReports ? ' · includes published prices (reports, auction reserves, listing averages)' : ''}',
+                '${t(rate.marketObs == 1 ? '1 data point' : '{n} data points', {'n': '${rate.marketObs}'})}, '
+                '${t('{level} confidence', {'level': t(rate.confidence)})}'
+                '${rate.fromReports ? ' · ${t('includes published prices (reports, auction reserves, listing averages)')}' : ''}',
                 style: muted,
               ),
               if (rate.marketRatio != null) ...[
                 const SizedBox(height: 4),
                 Text(
-                  'Market is about ${rate.marketRatio!.toStringAsFixed(1)}× the guidance value',
+                  t('Market is about {x}× the guidance value', {'x': rate.marketRatio!.toStringAsFixed(1)}),
                   style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.primary),
                 ),
               ],
             ] else if (rate.hasEstimate) ...[
               Text(
-                'Estimated market: ${headline(type, rate.estLow!)} – ${headline(type, rate.estHigh!)}',
+                '${t('Estimated market')}: ${headline(type, rate.estLow!)} – ${headline(type, rate.estHigh!)}',
                 style: theme.textTheme.titleMedium?.copyWith(fontStyle: FontStyle.italic),
               ),
               const SizedBox(height: 2),
               Text(
-                'Estimate, not data: about ${rate.estRatio?.toStringAsFixed(1) ?? '–'}× guidance, the ratio seen in '
-                '${rate.estPlaces ?? 'several'} areas with published prices. Log or share a listing to replace it.',
+                t('Estimate, not data: about {x}× guidance, the ratio seen in {n} areas with published prices. '
+                    'Log or share a listing to replace it.',
+                    {'x': rate.estRatio?.toStringAsFixed(1) ?? '–', 'n': '${rate.estPlaces ?? t('several')}'}),
                 style: muted,
               ),
             ] else
@@ -263,8 +282,8 @@ class _RateCard extends StatelessWidget {
             if (rent != null) ...[
               const SizedBox(height: 10),
               Text(
-                'Typical rent: ${rupees(rent!.perSqft)}/sq ft a month'
-                '${rate.bestMarketMid != null ? ' · about ${rent!.yieldAt(rate.bestMarketMid!).toStringAsFixed(1)}% gross yield' : ''}',
+                '${t('Typical rent: {rent}/sq ft a month', {'rent': rupees(rent!.perSqft)})}'
+                '${rate.bestMarketMid != null ? ' · ${t('about {pct}% gross yield', {'pct': rent!.yieldAt(rate.bestMarketMid!).toStringAsFixed(1)})}' : ''}',
                 style: theme.textTheme.bodyMedium,
               ),
               Text('${rent!.label}: ${rent!.report.split(':').first}', style: muted),
@@ -301,6 +320,9 @@ class _RateCard extends StatelessWidget {
                   ),
                 ),
             ],
+            if (rate.bestMarketMid != null || g != null)
+              _link(context, Icons.account_balance_outlined, 'Home loan and EMI',
+                  () => LoanPage(area: area, rate: rate)),
             _link(context, Icons.checklist, 'Buyer\'s checklist',
                 () => ChecklistPage(type: type, district: area.district)),
           ],
@@ -320,16 +342,16 @@ class _CityTrendNote extends StatelessWidget {
     return FutureBuilder<CityTrend?>(
       future: NelaBeleApi().cityTrend(),
       builder: (context, snap) {
-        final t = snap.data;
-        if (t == null) return const SizedBox.shrink();
-        final sign = t.yoyPct >= 0 ? '+' : '';
+        final trend = snap.data;
+        if (trend == null) return const SizedBox.shrink();
+        final sign = trend.yoyPct >= 0 ? '+' : '';
         return Card(
           margin: const EdgeInsets.only(bottom: 4),
           color: theme.colorScheme.surfaceContainerHigh,
           child: ListTile(
             leading: const Icon(Icons.trending_up),
-            title: Text('${t.city} homes: $sign${t.yoyPct.toStringAsFixed(1)}% in a year'),
-            subtitle: Text('${t.measure}, ${t.period}. Guidance values have not changed since Oct 2023.'),
+            title: Text(t('{city} homes: {pct}% in a year', {'city': trend.city, 'pct': '$sign${trend.yoyPct.toStringAsFixed(1)}'})),
+            subtitle: Text('${trend.measure}, ${trend.period}. ${t('Guidance values have not changed since Oct 2023.')}'),
           ),
         );
       },
@@ -356,8 +378,8 @@ class _NearbyLine extends StatelessWidget {
         final roads = infra.roads(lat, lon).take(2).toList();
         if (stations.isEmpty && roads.isEmpty) return const SizedBox.shrink();
         final parts = [
-          for (final s in stations) '${s.name} metro${s.planned ? ' (planned)' : ''} ${kmLabel(s.km)}',
-          for (final r in roads) '${r.name}${r.planned ? ' (planned)' : ''} ${kmLabel(r.km)}',
+          for (final s in stations) '${s.name} ${t('metro')}${s.planned ? ' (${t('planned')})' : ''} ${kmLabel(s.km)}',
+          for (final r in roads) '${r.name}${r.planned ? ' (${t('planned')})' : ''} ${kmLabel(r.km)}',
         ];
         return Padding(
           padding: const EdgeInsets.only(top: 8),
@@ -368,7 +390,7 @@ class _NearbyLine extends StatelessWidget {
               const SizedBox(width: 6),
               Expanded(
                 child: Text(
-                  '${parts.join(' · ')}  (straight line)',
+                  '${parts.join(' · ')}  (${t('straight line')})',
                   style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                 ),
               ),
@@ -415,10 +437,15 @@ class _HistoryChart extends StatelessWidget {
         const SizedBox(height: 4),
         Text(
           sameDay
-              ? '${points.length} prices from ${monthYear(first.date)}, ${headline(type, _min)} – ${headline(type, _max)}'
+              ? t('{n} prices from {date}, {low} – {high}', {
+                  'n': '${points.length}',
+                  'date': monthYear(first.date),
+                  'low': headline(type, _min),
+                  'high': headline(type, _max),
+                })
               : '${monthYear(first.date)} → ${monthYear(last.date)}: ${headline(type, first.rate)} → '
-                  '${headline(type, last.rate)} (${changeLabel(change)}) · ${points.length} prices'
-                  '${guidance != null ? ' · dashed: guidance' : ''}',
+                  '${headline(type, last.rate)} (${changeLabel(change)}) · ${t('{n} prices', {'n': '${points.length}'})}'
+                  '${guidance != null ? ' · ${t('dashed: guidance')}' : ''}',
           style: muted,
         ),
       ],
