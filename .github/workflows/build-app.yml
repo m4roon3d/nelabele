@@ -3,7 +3,7 @@ name: Build app
 on:
   push:
     branches: [main]
-    paths: [app/**, config/**, .github/workflows/build-app.yml]
+    paths: [app/**, config/**, store/**, .github/workflows/build-app.yml]
   workflow_dispatch:
 
 permissions:
@@ -99,6 +99,10 @@ jobs:
           flutter build apk --release --split-per-abi --dart-define-from-file=../config/data_api.json
           flutter build apk --release --dart-define-from-file=../config/data_api.json
 
+      # The Play Store takes an app bundle, signed with the same key (Google re-signs it for phones)
+      - name: Build Play Store bundle
+        run: flutter build appbundle --release --dart-define-from-file=../config/data_api.json
+
       - name: Build web app
         run: |
           # No offline caching: updates show up on the next visit instead of being stuck behind a saved copy
@@ -116,6 +120,8 @@ jobs:
           });
           EOF
           grep -c "serviceWorkerVersion" build/web/flutter_bootstrap.js || true
+          # Privacy policy for the Play Store listing: https://m4roon3d.github.io/nelabele/privacy.html
+          cp ../store/privacy.html build/web/privacy.html
 
       # Most phones: 64-bit ARM (smaller download). Universal: works everywhere.
       - uses: actions/upload-artifact@v4
@@ -127,6 +133,11 @@ jobs:
         with:
           name: nelabele-android-universal
           path: app/build/app/outputs/flutter-apk/app-release.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nelabele-play
+          path: app/build/app/outputs/bundle/release/app-release.aab
 
       - uses: actions/upload-artifact@v4
         with:
@@ -143,15 +154,17 @@ jobs:
           out=build/app/outputs/flutter-apk
           cp $out/app-arm64-v8a-release.apk nelabele.apk
           cp $out/app-release.apk nelabele-universal.apk
+          cp build/app/outputs/bundle/release/app-release.aab nelabele.aab
           notes="NelaBele $(grep '^version:' pubspec.yaml | cut -d' ' -f2), built $(date -u +'%d %b %Y %H:%M UTC') from ${GITHUB_SHA::7}.
 
           - nelabele.apk: for most phones (64-bit)
-          - nelabele-universal.apk: if the first one won't install"
+          - nelabele-universal.apk: if the first one won't install
+          - nelabele.aab: for uploading to the Google Play Console"
           if gh release view app >/dev/null 2>&1; then
-            gh release upload app nelabele.apk nelabele-universal.apk --clobber
+            gh release upload app nelabele.apk nelabele-universal.apk nelabele.aab --clobber
             gh release edit app --notes "$notes"
           else
-            gh release create app nelabele.apk nelabele-universal.apk --title "NelaBele app" --notes "$notes" --latest
+            gh release create app nelabele.apk nelabele-universal.apk nelabele.aab --title "NelaBele app" --notes "$notes" --latest
           fi
 
       - uses: actions/upload-pages-artifact@v3
