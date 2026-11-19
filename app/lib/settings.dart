@@ -1,8 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'bulk_import_page.dart';
+import 'i18n.dart';
 import 'listing_import_page.dart';
+import 'ui.dart';
 
 /// Light, dark or follow the phone; remembered on this device.
 class ThemeChoice {
@@ -109,6 +110,23 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ),
             const SizedBox(height: 28),
+            Text(t('Language'), style: theme.textTheme.titleMedium),
+            const SizedBox(height: 8),
+            ValueListenableBuilder<String>(
+              valueListenable: Lang.current,
+              builder: (context, lang, _) => SegmentedButton<String>(
+                segments: const [
+                  ButtonSegment(value: 'en', label: Text('English')),
+                  ButtonSegment(value: 'kn', label: Text('ಕನ್ನಡ')),
+                ],
+                selected: {lang},
+                showSelectedIcon: false,
+                onSelectionChanged: (s) => Lang.save(s.first),
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(t('Place names stay as in the government records.'), style: muted),
+            const SizedBox(height: 28),
             Text('Editor key', style: theme.textTheme.titleMedium),
             const SizedBox(height: 4),
             Text(
@@ -169,7 +187,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 minLines: 2,
                 maxLines: 4,
                 decoration: InputDecoration(
-                  labelText: 'Paste your editor key',
+                  labelText: t('Paste your editor key'),
                   errorText: _error,
                   border: const OutlineInputBorder(),
                 ),

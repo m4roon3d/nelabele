@@ -1,15 +1,16 @@
 import 'dart:convert';
 import 'dart:math' show Point;
 
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:maplibre_gl/maplibre_gl.dart';
 
 import 'api.dart';
 import 'area_sheet.dart';
 import 'format.dart';
+import 'i18n.dart';
 import 'location.dart';
 import 'models.dart';
+import 'ui.dart';
 
 const _styleLight = 'https://tiles.openfreemap.org/styles/positron';
 const _styleDark = 'https://tiles.openfreemap.org/styles/dark';
@@ -325,8 +326,8 @@ class _MapPageState extends State<MapPage> {
     String fmt(double v) => headline(_type, v);
     if (_breaks.length != 4) return '';
     return switch (band) {
-      0 => 'under ${fmt(_breaks[0])}',
-      4 => 'over ${fmt(_breaks[3])}',
+      0 => t('under {rate}', {'rate': fmt(_breaks[0])}),
+      4 => t('over {rate}', {'rate': fmt(_breaks[3])}),
       _ => '${fmt(_breaks[band - 1])} – ${fmt(_breaks[band])}',
     };
   }
@@ -433,7 +434,7 @@ class _MapPageState extends State<MapPage> {
           bottom: 56,
           child: FloatingActionButton.small(
             heroTag: 'locate',
-            tooltip: 'Show where I am',
+            tooltip: t('Show where I am'),
             onPressed: _locating ? null : _locate,
             child: _locating
                 ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2))
@@ -460,7 +461,7 @@ class _MapPageState extends State<MapPage> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      '${propertyLabel(_type)} · ${_market ? 'market (incl. estimates)' : 'guidance value'}',
+                      '${propertyLabel(_type)} · ${_market ? t('market (incl. estimates)') : t('guidance value')}',
                       style: theme.textTheme.labelMedium,
                     ),
                     const SizedBox(height: 6),

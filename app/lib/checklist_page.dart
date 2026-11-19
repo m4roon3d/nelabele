@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-
+import 'i18n.dart';
 import 'models.dart';
+import 'ui.dart';
 
 /// What to check before buying, by property type. Rules that change (khata,
 /// land conversion) carry the date they were checked; the monthly refresh
@@ -37,7 +37,7 @@ class ChecklistPage extends StatelessWidget {
     ];
 
     return Scaffold(
-      appBar: AppBar(title: Text('Buying a ${propertyLabel(type).toLowerCase()}: checklist')),
+      appBar: AppBar(title: Text(t('Checklist: buying a {type}', {'type': Lang.kannada ? propertyLabel(type) : propertyLabel(type).toLowerCase()}))),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 32),
         children: [
@@ -50,10 +50,10 @@ class ChecklistPage extends StatelessWidget {
           ],
           const SizedBox(height: 20),
           Text(
-            'A general guide, checked $checkedOn, not legal advice. Khata and land-conversion rules '
-            'changed in 2025–26 and may change again: confirm with the sub-registrar, GBA (e-Aasthi), '
-            'the gram panchayat or the planning authority, and have a property lawyer read the documents '
-            'before you pay an advance.',
+            t('A general guide, checked {date}, not legal advice. Khata and land-conversion rules '
+                'changed in 2025–26 and may change again: confirm with the sub-registrar, GBA (e-Aasthi), '
+                'the gram panchayat or the planning authority, and have a property lawyer read the documents '
+                'before you pay an advance.', {'date': checkedOn}),
             style: muted,
           ),
           const SizedBox(height: 8),

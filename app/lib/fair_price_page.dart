@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-
 import 'format.dart';
+import 'i18n.dart';
 import 'listing.dart';
 import 'models.dart';
+import 'ui.dart';
 
 /// Units a size can be typed in, per property type.
 List<(String, String)> _units(String type) => type == 'agricultural_land'
@@ -65,16 +65,16 @@ class _FairPricePageState extends State<FairPricePage> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Text('${propertyLabel(type)} in ${widget.area.name}', style: theme.textTheme.titleLarge),
+          Text(t('{type} in {place}', {'type': propertyLabel(type), 'place': widget.area.name}), style: theme.textTheme.titleLarge),
           Text(widget.area.subtitle, style: muted),
           const SizedBox(height: 16),
           TextField(
             controller: _price,
             keyboardType: TextInputType.text,
-            decoration: const InputDecoration(
-              labelText: 'Asking price',
-              hintText: 'e.g. 1.2 cr, 85 L, 45,00,000',
-              border: OutlineInputBorder(),
+            decoration: InputDecoration(
+              labelText: t('Asking price'),
+              hintText: t('e.g. 1.2 cr, 85 L, 45,00,000'),
+              border: const OutlineInputBorder(),
             ),
             onChanged: (_) => setState(() {}),
           ),
@@ -86,7 +86,7 @@ class _FairPricePageState extends State<FairPricePage> {
                   controller: _size,
                   keyboardType: const TextInputType.numberWithOptions(decimal: true),
                   decoration: InputDecoration(
-                    labelText: type == 'apartment' ? 'Super built-up area' : 'Size',
+                    labelText: type == 'apartment' ? t('Super built-up area') : t('Size'),
                     border: const OutlineInputBorder(),
                   ),
                   onChanged: (_) => setState(() {}),
@@ -122,7 +122,7 @@ class _FairPricePageState extends State<FairPricePage> {
           if (asked == null)
             Text('Enter the asking price and the size.', style: muted)
           else ...[
-            Text('${headline(type, asked)} asked', style: theme.textTheme.headlineMedium),
+            Text(t('{rate} asked', {'rate': headline(type, asked)}), style: theme.textTheme.headlineMedium),
             if (type == 'agricultural_land') Text('${rupees(asked)}/sq ft', style: muted),
             const SizedBox(height: 12),
             _Verdict(asked: asked, lo: lo, mid: mid, hi: hi, isEstimate: isEstimate, type: type),
@@ -131,11 +131,11 @@ class _FairPricePageState extends State<FairPricePage> {
             const SizedBox(height: 12),
             if (r.guidanceRate != null)
               _Line('Govt guidance value', headline(type, r.guidanceRate!),
-                  note: '${(asked / r.guidanceRate!).toStringAsFixed(1)}× guidance'),
+                  note: t('{x}× guidance', {'x': (asked / r.guidanceRate!).toStringAsFixed(1)})),
             if (lo != null)
               _Line(isEstimate ? 'Estimated market range' : 'Market range',
                   '${headline(type, lo)} – ${headline(type, hi!)}',
-                  note: isEstimate ? 'an estimate, not data' : '${r.marketObs} data point${r.marketObs == 1 ? '' : 's'}'),
+                  note: isEstimate ? t('an estimate, not data') : t(r.marketObs == 1 ? '1 data point' : '{n} data points', {'n': '${r.marketObs}'})),
             if (r.guidanceRate != null && sqft != null)
               _Line('Registration value (guidance)', rupeesShort(r.guidanceRate! * sqft),
                   note: 'stamp duty is on the higher of this and the price'),
@@ -148,8 +148,8 @@ class _FairPricePageState extends State<FairPricePage> {
               controller: _rentCtl,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
-                labelText: 'Expected rent a month',
-                hintText: knownRent != null ? 'typical here: ${rupees(knownRent)}' : 'e.g. 35,000',
+                labelText: t('Expected rent a month'),
+                hintText: knownRent != null ? t('typical here: {rent}', {'rent': rupees(knownRent)}) : t('e.g. 35,000'),
                 border: const OutlineInputBorder(),
               ),
               onChanged: (_) => setState(() {}),
@@ -157,14 +157,14 @@ class _FairPricePageState extends State<FairPricePage> {
             const SizedBox(height: 8),
             if (yieldPct != null)
               Text(
-                'Gross yield ${yieldPct.toStringAsFixed(1)}% a year'
-                '${typedRent == null ? ' at the typical rent here' : ''}',
+                t(typedRent == null ? 'Gross yield {pct}% a year at the typical rent here' : 'Gross yield {pct}% a year',
+                    {'pct': yieldPct.toStringAsFixed(1)}),
                 style: theme.textTheme.titleMedium,
               ),
             if (widget.rent != null)
               Text(
-                'Typical rent: ${rupees(widget.rent!.perSqft)}/sq ft a month, ${widget.rent!.label} '
-                '(${widget.rent!.report.split(':').first}). Bengaluru flats usually yield 3–4.5% gross.',
+                '${t('Typical rent: {rent}/sq ft a month', {'rent': rupees(widget.rent!.perSqft)})}, ${widget.rent!.label} '
+                '(${widget.rent!.report.split(':').first}). ${t('Bengaluru flats usually yield 3–4.5% gross.')}',
                 style: muted,
               )
             else
@@ -208,22 +208,24 @@ class _Verdict extends StatelessWidget {
     }
     final pct = (asked - mid!) / mid! * 100;
     final (icon, text, color) = asked < lo! * 0.85
-        ? (Icons.warning_amber, 'Well below the ${isEstimate ? 'estimated ' : ''}range: check khata, approvals and title closely', cs.tertiary)
+        ? (Icons.warning_amber, t('Well below the range: check khata, approvals and title closely'), cs.tertiary)
         : asked < lo!
-            ? (Icons.thumb_up_alt_outlined, 'Below the ${isEstimate ? 'estimated ' : ''}range: a good price if the papers are clean', cs.primary)
+            ? (Icons.thumb_up_alt_outlined, t('Below the range: a good price if the papers are clean'), cs.primary)
             : asked <= hi!
-                ? (Icons.check_circle_outline, 'Within the ${isEstimate ? 'estimated ' : ''}range', cs.primary)
+                ? (Icons.check_circle_outline, t('Within the range'), cs.primary)
                 : asked <= hi! * 1.15
-                    ? (Icons.trending_up, 'A little above the ${isEstimate ? 'estimated ' : ''}range: room to negotiate', cs.error)
-                    : (Icons.priority_high, 'Well above the ${isEstimate ? 'estimated ' : ''}range', cs.error);
+                    ? (Icons.trending_up, t('A little above the range: room to negotiate'), cs.error)
+                    : (Icons.priority_high, t('Well above the range'), cs.error);
     return Card(
       margin: EdgeInsets.zero,
       color: color.withValues(alpha: 0.12),
       child: ListTile(
         leading: Icon(icon, color: color),
         title: Text(text),
-        subtitle: Text('${pct >= 0 ? '+' : '−'}${pct.abs().toStringAsFixed(0)}% against the '
-            '${isEstimate ? 'estimated ' : ''}market middle of ${headline(type, mid!)}'),
+        subtitle: Text(t(isEstimate ? '{pct}% against the estimated market middle of {rate}' : '{pct}% against the market middle of {rate}', {
+          'pct': '${pct >= 0 ? '+' : '−'}${pct.abs().toStringAsFixed(0)}',
+          'rate': headline(type, mid!),
+        })),
       ),
     );
   }

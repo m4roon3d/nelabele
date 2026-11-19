@@ -1,8 +1,9 @@
-import 'package:flutter/material.dart';
-
 import 'format.dart';
+import 'i18n.dart';
 import 'listing.dart';
+import 'loan_page.dart';
 import 'models.dart';
+import 'ui.dart';
 
 const _sizeUnits = {'sqft': 'sq ft', 'sqm': 'sq m', 'sqyd': 'sq yard', 'guntha': 'guntha', 'acre': 'acre'};
 
@@ -97,8 +98,8 @@ class _CostPageState extends State<CostPage> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Text('${propertyLabel(type)} in ${widget.area.name}', style: theme.textTheme.titleLarge),
-          if (g != null) Text('Guidance value ${headline(type, g)}', style: muted),
+          Text(t('{type} in {place}', {'type': propertyLabel(type), 'place': widget.area.name}), style: theme.textTheme.titleLarge),
+          if (g != null) Text('${t('Guidance value')} ${headline(type, g)}', style: muted),
           const SizedBox(height: 16),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -108,7 +109,7 @@ class _CostPageState extends State<CostPage> {
                   controller: _size,
                   keyboardType: const TextInputType.numberWithOptions(decimal: true),
                   decoration: InputDecoration(
-                    labelText: type == 'apartment' ? 'Size (super built-up)' : 'Size',
+                    labelText: type == 'apartment' ? t('Size (super built-up)') : t('Size'),
                     border: const OutlineInputBorder(),
                   ),
                   onChanged: (_) => setState(() {}),
@@ -120,7 +121,7 @@ class _CostPageState extends State<CostPage> {
                 child: DropdownButtonFormField<String>(
                   key: ValueKey('size-unit-$_unit'),
                   initialValue: _unit,
-                  decoration: const InputDecoration(labelText: 'Unit', border: OutlineInputBorder()),
+                  decoration: InputDecoration(labelText: t('Unit'), border: const OutlineInputBorder()),
                   items: [for (final e in _sizeUnits.entries) DropdownMenuItem(value: e.key, child: Text(e.value))],
                   onChanged: (v) => setState(() => _unit = v!),
                 ),
@@ -145,13 +146,13 @@ class _CostPageState extends State<CostPage> {
           TextField(
             controller: _price,
             decoration: InputDecoration(
-              labelText: 'Agreed price (optional)',
-              hintText: 'e.g. 85 L or 1.2 Cr',
+              labelText: t('Agreed price (optional)'),
+              hintText: t('e.g. 85 L or 1.2 cr'),
               helperText: agreed != null
                   ? rupees(agreed)
                   : marketValue != null
-                      ? 'Leave empty to use the ${estimated ? 'estimated ' : ''}market mid, ${rupeesShort(marketValue)}'
-                      : 'Leave empty to use the guidance value',
+                      ? t(estimated ? 'Leave empty to use the estimated market mid, {price}' : 'Leave empty to use the market mid, {price}', {'price': rupeesShort(marketValue)})
+                      : t('Leave empty to use the guidance value'),
               border: const OutlineInputBorder(),
             ),
             onChanged: (_) => setState(() {}),
@@ -179,8 +180,8 @@ class _CostPageState extends State<CostPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('About ${rupeesShort(price + charges.total)}', style: theme.textTheme.headlineMedium),
-                    Text('all in, of which ${rupeesShort(charges.total)} is government charges', style: muted),
+                    Text(t('About {price}', {'price': rupeesShort(price + charges.total)}), style: theme.textTheme.headlineMedium),
+                    Text(t('all in, of which {amount} is government charges', {'amount': rupeesShort(charges.total)}), style: muted),
                     const Divider(height: 24),
                     _Line(
                       agreed != null
@@ -193,23 +194,36 @@ class _CostPageState extends State<CostPage> {
                     if (guidanceValue != null) _Line('Guidance value', guidanceValue, muted: true),
                     _Line('Charged on (the higher of the two)', charges.base, muted: true),
                     const SizedBox(height: 8),
-                    _Line('Stamp duty (${charges.dutyPct}%)', charges.duty),
+                    _Line(t('Stamp duty ({pct}%)', {'pct': '${charges.dutyPct}'}), charges.duty),
                     _Line('Cess (10% of duty)', charges.cess),
-                    _Line('Surcharge (${_urban ? 2 : 3}% of duty)', charges.surcharge),
+                    _Line(t('Surcharge ({pct}% of duty)', {'pct': '${_urban ? 2 : 3}'}), charges.surcharge),
                     _Line('Registration fee (2%)', charges.registration),
                     const Divider(height: 24),
                     _Line('Total', price + charges.total, bold: true),
+                    const SizedBox(height: 8),
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: TextButton.icon(
+                        style: TextButton.styleFrom(padding: EdgeInsets.zero),
+                        onPressed: () => Navigator.of(context).push(MaterialPageRoute<void>(
+                          builder: (_) => LoanPage(area: widget.area, rate: widget.rate, price: price, charges: charges.total),
+                        )),
+                        icon: const Icon(Icons.account_balance_outlined, size: 18),
+                        label: const Text('Plan the home loan'),
+                      ),
+                    ),
                   ],
                 ),
               ),
             ),
           const SizedBox(height: 16),
           Text(
-            'Indicative. Duty is 2% up to ₹20 L, 3% up to ₹45 L and 5% above, on the higher of the '
-            'agreed price and the guidance value. Not included: '
-            '${type == 'apartment' ? 'GST on under-construction flats (1–5%), ' : ''}'
-            'khata transfer, legal checks, brokerage and loan fees. '
-            'Confirm the exact amount on Kaveri Online (kaveri.karnataka.gov.in) before paying.',
+            '${t('Indicative. Duty is 2% up to ₹20 L, 3% up to ₹45 L and 5% above, on the higher of the '
+                'agreed price and the guidance value.')} '
+            '${t('Not included:')} '
+            '${type == 'apartment' ? '${t('GST on under-construction flats (1–5%)')}, ' : ''}'
+            '${t('khata transfer, legal checks, brokerage and loan fees.')} '
+            '${t('Confirm the exact amount on Kaveri Online (kaveri.karnataka.gov.in) before paying.')}',
             style: muted,
           ),
         ],

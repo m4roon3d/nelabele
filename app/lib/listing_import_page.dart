@@ -1,13 +1,12 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
-
 import 'add_rate_page.dart';
 import 'api.dart';
 import 'format.dart';
 import 'listing.dart';
 import 'models.dart';
 import 'settings.dart';
+import 'ui.dart';
 
 const _unitLabels = {'sqft': 'sq ft', 'sqm': 'sq m', 'sqyd': 'sq yard', 'guntha': 'guntha', 'acre': 'acre'};
 

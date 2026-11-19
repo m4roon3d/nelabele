@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'ui.dart';
 
 /// NelaBele brand colours (see the NelaBele design system).
 abstract final class Brand {

@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-
 import 'format.dart';
+import 'i18n.dart';
 import 'models.dart';
+import 'ui.dart';
 
 /// Construction cost per sq ft of built-up area in Bengaluru, 2026, GST included.
 /// Midpoints of the InfraLens bands (May 2026); Brick & Bolt's packages
@@ -74,8 +74,8 @@ class _HousePageState extends State<HousePage> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Text('Independent house in ${widget.area.name}', style: theme.textTheme.titleLarge),
-          Text('Land at the plot ${landBasis == 'guidance value' ? 'guidance value' : landBasis}'
+          Text(t('{type} in {place}', {'type': propertyLabel('independent_house'), 'place': widget.area.name}), style: theme.textTheme.titleLarge),
+          Text('${t('Land at the plot {basis}', {'basis': t(landBasis)})}'
               '${landRate != null ? ', ${headline('plot', landRate)}' : ''}', style: muted),
           const SizedBox(height: 16),
           Row(
@@ -113,9 +113,9 @@ class _HousePageState extends State<HousePage> {
             onSelectionChanged: (s) => setState(() => _tier = s.first),
           ),
           const SizedBox(height: 4),
-          Text('${houseTiers[_tier].$2}: about ₹${fmtInt(costRate)}/sq ft to build today', style: muted),
+          Text(t('{tier}: about ₹{rate}/sq ft to build today', {'tier': t(houseTiers[_tier].$2), 'rate': fmtInt(costRate)}), style: muted),
           const SizedBox(height: 16),
-          Text('Age of the building: $age year${age == 1 ? '' : 's'}', style: theme.textTheme.titleSmall),
+          Text(t(age == 1 ? 'Age of the building: 1 year' : 'Age of the building: {n} years', {'n': '$age'}), style: theme.textTheme.titleSmall),
           Slider(
             value: _age,
             min: 0,
@@ -136,12 +136,12 @@ class _HousePageState extends State<HousePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('About ${rupeesShort(total)}', style: theme.textTheme.headlineMedium),
-                    Text('${rupeesShort(land!)} land + ${rupeesShort(building!)} building', style: muted),
+                    Text(t('About {price}', {'price': rupeesShort(total)}), style: theme.textTheme.headlineMedium),
+                    Text(t('{land} land + {building} building', {'land': rupeesShort(land!), 'building': rupeesShort(building!)}), style: muted),
                     const Divider(height: 24),
-                    _Line('Land, ${fmtInt(site!)} sq ft', land),
-                    _Line('Building, new ($tierName, ${fmtInt(built!)} sq ft)', rebuild!),
-                    _Line('Less ${dep.toStringAsFixed(0)}% for $age years of age', -(rebuild - building)),
+                    _Line(t('Land, {n} sq ft', {'n': fmtInt(site!)}), land),
+                    _Line(t('Building, new ({tier}, {n} sq ft)', {'tier': t(tierName), 'n': fmtInt(built!)}), rebuild!),
+                    _Line(t('Less {pct}% for {n} years of age', {'pct': dep.toStringAsFixed(0), 'n': '$age'}), -(rebuild - building)),
                     _Line('Building today', building, muted: true),
                     const Divider(height: 24),
                     _Line('Estimated value', total, bold: true),

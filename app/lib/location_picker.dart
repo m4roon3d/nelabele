@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:maplibre_gl/maplibre_gl.dart';
+
+import 'ui.dart';
 
 /// Full-screen map with a fixed pin in the middle: move the map under the
 /// pin, then confirm. Pops the chosen [LatLng], or null if cancelled.

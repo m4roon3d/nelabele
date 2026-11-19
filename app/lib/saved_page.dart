@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
-
 import 'api.dart';
 import 'area_sheet.dart';
 import 'format.dart';
+import 'i18n.dart';
 import 'models.dart';
 import 'saved.dart';
+import 'ui.dart';
 
 /// Starred places, with up to three picked for a side-by-side comparison.
 class SavedPage extends StatefulWidget {
@@ -21,6 +21,10 @@ class _SavedPageState extends State<SavedPage> {
   bool _loading = false;
   String? _error;
   List<int> _loadedIds = const [];
+
+  /// Changes since the last time they were acknowledged: (place, what changed).
+  List<(Area, String)> _changes = const [];
+  DateTime? _since;
 
   @override
   void initState() {
@@ -58,6 +62,7 @@ class _SavedPageState extends State<SavedPage> {
         _loadedIds = ids;
         _loading = false;
       });
+      await _compare(areas);
     } catch (e) {
       if (mounted) {
         setState(() {
@@ -66,6 +71,76 @@ class _SavedPageState extends State<SavedPage> {
         });
       }
     }
+  }
+
+  static Map<String, List<num?>> _snapOf(Area a) => {
+        for (final r in a.rates.values) r.propertyType: [r.guidanceRate, r.marketMid, r.marketObs],
+      };
+
+  /// Compares each saved place with how it looked last time. Places saved
+  /// since then are recorded quietly, so only real changes show.
+  Future<void> _compare(List<Area> areas) async {
+    final (snap, since) = await SavedSnapshot.load();
+    final changes = <(Area, String)>[];
+    var added = false;
+    for (final a in areas) {
+      final old = snap[a.id];
+      if (old == null) {
+        snap[a.id] = _snapOf(a);
+        added = true;
+        continue;
+      }
+      for (final r in a.sortedRates) {
+        final o = old[r.propertyType];
+        if (o == null) continue;
+        final type = r.propertyType;
+        final label = propertyLabel(type);
+        final (og, om, oo) = (o[0]?.toDouble(), o[1]?.toDouble(), (o[2] ?? 0).toInt());
+        final g = r.guidanceRate;
+        if (og != null && g != null && (g - og).abs() / og > 0.005) {
+          changes.add((a, t('{type}: guidance {from} → {to} ({change})', {
+            'type': label,
+            'from': headline(type, og),
+            'to': headline(type, g),
+            'change': changeLabel((g - og) / og * 100),
+          })));
+        }
+        final m = r.marketMid;
+        if (om == null && m != null) {
+          changes.add((a, t('{type}: market range now {range}', {
+            'type': label,
+            'range': '${headline(type, r.marketLow!)} – ${headline(type, r.marketHigh!)}',
+          })));
+        } else if (om != null && m != null && (m - om).abs() / om > 0.03) {
+          changes.add((a, t('{type}: market middle {from} → {to} ({change})', {
+            'type': label,
+            'from': headline(type, om),
+            'to': headline(type, m),
+            'change': changeLabel((m - om) / om * 100),
+          })));
+        } else if (r.marketObs > oo) {
+          final n = r.marketObs - oo;
+          changes.add((a, t(n == 1 ? '{type}: 1 new market price' : '{type}: {n} new market prices',
+              {'type': label, 'n': '$n'})));
+        }
+      }
+    }
+    if (added) await SavedSnapshot.save(snap, touchDate: since == null);
+    if (mounted) {
+      setState(() {
+        _changes = changes;
+        _since = since;
+      });
+    }
+  }
+
+  Future<void> _acknowledge() async {
+    final (snap, _) = await SavedSnapshot.load();
+    for (final a in _areas) {
+      snap[a.id] = _snapOf(a);
+    }
+    await SavedSnapshot.save(snap);
+    if (mounted) setState(() => _changes = const []);
   }
 
   void _togglePick(int id) => setState(() {
@@ -115,16 +190,60 @@ class _SavedPageState extends State<SavedPage> {
     ].whereType<DateTime>().fold<DateTime?>(null, (a, b) => a == null || b.isAfter(a) ? b : a);
     return Column(
       children: [
+        if (_changes.isNotEmpty)
+          Card(
+            margin: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+            color: theme.colorScheme.secondaryContainer,
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 8, 4),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(children: [
+                    const Icon(Icons.notifications_active_outlined, size: 20),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        _since == null
+                            ? t('What\'s changed for your saved places')
+                            : t('What\'s changed since {date}', {'date': dayMonthYear(_since!)}),
+                        style: theme.textTheme.titleSmall,
+                      ),
+                    ),
+                  ]),
+                  const SizedBox(height: 6),
+                  for (final (a, what) in _changes.take(8))
+                    InkWell(
+                      onTap: () => showAreaSheet(context, a),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 3),
+                        child: Text.rich(TextSpan(children: [
+                          TextSpan(text: '${a.name}  ', style: const TextStyle(fontWeight: FontWeight.w600)),
+                          TextSpan(text: what),
+                        ])),
+                      ),
+                    ),
+                  if (_changes.length > 8) Text(t('and {n} more', {'n': '${_changes.length - 8}'}), style: muted),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(onPressed: _acknowledge, child: Text(t('Got it'))),
+                  ),
+                ],
+              ),
+            ),
+          ),
         if (changes.isNotEmpty)
           Card(
             margin: const EdgeInsets.fromLTRB(12, 8, 12, 0),
             color: theme.colorScheme.tertiaryContainer,
             child: ListTile(
               leading: const Icon(Icons.gavel_outlined),
-              title: Text('Guidance values revised${revisedFrom != null ? ' from ${monthYear(revisedFrom)}' : ''}'),
+              title: Text(revisedFrom != null
+                  ? t('Guidance values revised from {date}', {'date': monthYear(revisedFrom)})
+                  : t('Guidance values revised')),
               subtitle: Text(changes.first == changes.last
-                  ? 'Your saved places: ${changeLabel(changes.first)}'
-                  : 'Your saved places: ${changeLabel(changes.first)} to ${changeLabel(changes.last)}'),
+                  ? '${t('Your saved places')}: ${changeLabel(changes.first)}'
+                  : '${t('Your saved places')}: ${changeLabel(changes.first)} – ${changeLabel(changes.last)}'),
             ),
           ),
         Padding(
@@ -144,9 +263,22 @@ class _SavedPageState extends State<SavedPage> {
                       onChanged: _picked.contains(a.id) || _picked.length < 3 ? (_) => _togglePick(a.id) : null,
                     ),
                     title: Text(a.nameKn == null ? a.name : '${a.name} · ${a.nameKn}'),
-                    subtitle: Text(a.subtitle),
+                    subtitle: ValueListenableBuilder<Set<int>>(
+                      valueListenable: PlaceNotes.withNotes,
+                      builder: (context, withNotes, _) => Text.rich(TextSpan(children: [
+                        if (withNotes.contains(a.id))
+                          WidgetSpan(
+                            alignment: PlaceholderAlignment.middle,
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 4),
+                              child: Icon(Icons.sticky_note_2, size: 14, color: theme.colorScheme.primary),
+                            ),
+                          ),
+                        TextSpan(text: a.subtitle),
+                      ])),
+                    ),
                     trailing: IconButton(
-                      tooltip: 'Remove from saved',
+                      tooltip: t('Remove from saved'),
                       icon: const Icon(Icons.star),
                       color: theme.colorScheme.primary,
                       onPressed: () => SavedPlaces.toggle(a.id),
@@ -170,7 +302,7 @@ class _SavedPageState extends State<SavedPage> {
                           builder: (_) => ComparePage(areas: picked),
                         )),
                 icon: const Icon(Icons.compare_arrows),
-                label: Text(picked.length < 2 ? 'Compare' : 'Compare ${picked.length} places'),
+                label: Text(picked.length < 2 ? t('Compare') : t('Compare {n} places', {'n': '${picked.length}'})),
               ),
             ),
           ),
@@ -191,8 +323,8 @@ class ComparePage extends StatelessWidget {
     final theme = Theme.of(context);
     final muted = theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurfaceVariant);
     final types = [
-      for (final t in propertyTypes)
-        if (areas.any((a) => a.rates[t] != null)) t,
+      for (final pt in propertyTypes)
+        if (areas.any((a) => a.rates[pt] != null)) pt,
     ];
 
     Widget cell(Widget child) => Padding(padding: const EdgeInsets.fromLTRB(0, 6, 10, 6), child: child);
@@ -222,43 +354,43 @@ class ComparePage extends StatelessWidget {
               ]),
             ],
           ),
-          for (final t in types) ...[
+          for (final type in types) ...[
             const Divider(height: 24),
-            Text(propertyLabel(t), style: theme.textTheme.titleSmall),
+            Text(propertyLabel(type), style: theme.textTheme.titleSmall),
             Table(
               columnWidths: const {0: FixedColumnWidth(96)},
               children: [
                 row('Guidance', (a) {
-                  final g = a.rates[t]?.guidanceRate;
-                  return g == null ? '–' : headline(t, g);
+                  final g = a.rates[type]?.guidanceRate;
+                  return g == null ? '–' : headline(type, g);
                 }, strong: true),
-                if (areas.any((a) => a.rates[t]?.revised ?? false))
+                if (areas.any((a) => a.rates[type]?.revised ?? false))
                   row('Revision', (a) {
-                    final r = a.rates[t];
+                    final r = a.rates[type];
                     return r == null || !r.revised
                         ? '–'
-                        : '${changeLabel(r.guidanceChangePct!)} since ${monthYear(r.prevGuidanceEffective!)}';
+                        : t('{change} since {date}', {'change': changeLabel(r.guidanceChangePct!), 'date': monthYear(r.prevGuidanceEffective!)});
                   }),
                 row('Market', (a) {
-                  final r = a.rates[t];
-                  if (r != null && r.hasMarket) return '${headline(t, r.marketLow!)} – ${headline(t, r.marketHigh!)}';
+                  final r = a.rates[type];
+                  if (r != null && r.hasMarket) return '${headline(type, r.marketLow!)} – ${headline(type, r.marketHigh!)}';
                   if (r != null && r.hasEstimate) {
-                    return 'est. ${headline(t, r.estLow!)} – ${headline(t, r.estHigh!)}';
+                    return '${t('est.')} ${headline(type, r.estLow!)} – ${headline(type, r.estHigh!)}';
                   }
                   return 'no data yet';
                 }),
                 row('Market ÷ guidance', (a) {
-                  final x = a.rates[t]?.marketRatio;
+                  final x = a.rates[type]?.marketRatio;
                   return x == null ? '–' : '${x.toStringAsFixed(1)}×';
                 }),
-                if (t == 'plot')
+                if (type == 'plot')
                   row('30×40 site', (a) {
-                    final g = a.rates[t]?.guidanceRate;
+                    final g = a.rates[type]?.guidanceRate;
                     return g == null ? '–' : rupeesShort(g * 1200);
                   }),
-                if (t == 'agricultural_land')
+                if (type == 'agricultural_land')
                   row('Per guntha', (a) {
-                    final g = a.rates[t]?.guidanceRate;
+                    final g = a.rates[type]?.guidanceRate;
                     return g == null ? '–' : rupeesShort(g * sqftPerGuntha);
                   }),
               ],
