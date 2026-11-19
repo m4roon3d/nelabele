@@ -45,6 +45,7 @@ ThemeData nelabeleTheme(Brightness brightness) {
   return ThemeData(
     useMaterial3: true,
     colorScheme: scheme,
+    fontFamilyFallback: const ['NotoSansKannada'],
     scaffoldBackgroundColor: scheme.surface,
     appBarTheme: AppBarTheme(
       backgroundColor: scheme.surface,
