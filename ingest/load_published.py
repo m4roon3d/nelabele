@@ -34,7 +34,9 @@ def main(path: str) -> None:
                                   WHERE o.geo_area_id = a.id AND o.batch_id IS DISTINCT FROM %s),
                           EXISTS (SELECT 1 FROM nelabele.rate_observation o
                                   WHERE o.geo_area_id = a.id AND o.batch_id IS DISTINCT FROM %s
-                                    AND o.property_type::text = %s)
+                                    AND o.property_type::text = %s),
+                          coalesce(a.point, a.centroid) IS NOT NULL,
+                          a.level::text
                    FROM nelabele.geo_area a
                    LEFT JOIN nelabele.geo_area p ON p.id = a.parent_id
                    WHERE a.district = %s AND lower(a.name) = lower(%s) AND lower(p.name) = lower(%s)""",
@@ -47,6 +49,13 @@ def main(path: str) -> None:
                 # use the one that carries the guidance value
                 # the guidance value, preferably for the same property type
                 ids = [x[0] for x in found if x[2]] or [x[0] for x in found if x[1]] or ids
+            if len(ids) > 1:
+                # still tied (a village and a locality of the same name in one hobli):
+                # the one on the map, then the village
+                tied = [x for x in found if x[0] in ids]
+                ids = [x[0] for x in tied if x[3]] or ids
+                if len(ids) > 1:
+                    ids = [x[0] for x in tied if x[0] in ids and x[4] == "village"] or ids
             if len(ids) != 1:
                 missing.append(f'{r["label"]} → {r["area_name"]} ({len(ids)} matches)')
                 return None
