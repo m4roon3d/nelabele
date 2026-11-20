@@ -272,9 +272,16 @@ class _RateCard extends StatelessWidget {
               ),
               const SizedBox(height: 2),
               Text(
-                t('Estimate, not data: about {x}× guidance, the ratio seen in {n} areas with published prices. '
-                    'Log or share a listing to replace it.',
-                    {'x': rate.estRatio?.toStringAsFixed(1) ?? '–', 'n': '${rate.estPlaces ?? t('several')}'}),
+                rate.estBasis == 'nearby'
+                    ? t('Estimate, not data: about {x}× guidance, the ratio seen in {n} nearby places with market '
+                        'prices, about {km} km away. Log or share a listing to replace it.', {
+                        'x': rate.estRatio?.toStringAsFixed(1) ?? '–',
+                        'n': '${rate.estPlaces ?? t('several')}',
+                        'km': rate.estKm?.toStringAsFixed(1) ?? '–',
+                      })
+                    : t('Estimate, not data: about {x}× guidance, the ratio seen in {n} areas with published prices. '
+                        'Log or share a listing to replace it.',
+                        {'x': rate.estRatio?.toStringAsFixed(1) ?? '–', 'n': '${rate.estPlaces ?? t('several')}'}),
                 style: muted,
               ),
             ] else
