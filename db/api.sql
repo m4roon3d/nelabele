@@ -41,7 +41,8 @@ FROM nelabele.geo_area;
 -- A place's own guidance value is compared, or else the median for its
 -- taluk/zone. Shared by the local and the city-wide estimates below.
 CREATE MATERIALIZED VIEW nelabele.local_estimate AS
-WITH compared AS (
+-- MATERIALIZED: work out the ratios once, not again for every place below
+WITH compared AS MATERIALIZED (
   SELECT r.property_type,
          coalesce(a.point, a.centroid) AS pt,
          coalesce(r.guidance_rate, z.zone_guidance) AS ref,
@@ -58,7 +59,7 @@ WITH compared AS (
   ) z ON r.guidance_rate IS NULL
   WHERE r.market_mid IS NOT NULL
 ),
-usable AS (
+usable AS MATERIALIZED (
   SELECT * FROM compared WHERE ratio > 0 AND pt IS NOT NULL
 ),
 targets AS (
