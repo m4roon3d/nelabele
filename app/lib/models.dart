@@ -41,6 +41,8 @@ class Rate {
     this.estHigh,
     this.estRatio,
     this.estPlaces,
+    this.estBasis,
+    this.estKm,
     this.prevGuidanceRate,
     this.prevGuidanceEffective,
     this.guidanceChangePct,
@@ -62,6 +64,12 @@ class Rate {
   final double? estHigh;
   final double? estRatio;
   final int? estPlaces;
+
+  /// 'nearby' (ratio from the nearest places with market prices) or 'city'.
+  final String? estBasis;
+
+  /// Typical distance to those nearby places, km.
+  final double? estKm;
 
   /// Guidance value before the latest revision, when there has been one.
   final double? prevGuidanceRate;
@@ -102,6 +110,8 @@ class Rate {
         estHigh: _num(j['est_high']),
         estRatio: _num(j['est_ratio']),
         estPlaces: (j['est_places'] as num?)?.toInt(),
+        estBasis: j['est_basis'] as String?,
+        estKm: _num(j['est_km']),
         prevGuidanceRate: _num(j['prev_guidance_rate']),
         prevGuidanceEffective: j['prev_guidance_effective'] == null
             ? null

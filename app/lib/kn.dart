@@ -134,6 +134,10 @@ const kn = <String, String>{
           'Log or share a listing to replace it.':
       'ಇದು ಅಂದಾಜು, ದತ್ತಾಂಶವಲ್ಲ: ಪ್ರಕಟಿತ ಬೆಲೆಗಳಿರುವ {n} ಪ್ರದೇಶಗಳಲ್ಲಿ ಕಂಡ ಅನುಪಾತದಂತೆ ಮಾರ್ಗಸೂಚಿಯ ಸುಮಾರು {x}×. '
           'ಇದನ್ನು ಬದಲಿಸಲು ಒಂದು ಜಾಹೀರಾತನ್ನು ದಾಖಲಿಸಿ ಅಥವಾ ಹಂಚಿಕೊಳ್ಳಿ.',
+  'Estimate, not data: about {x}× guidance, the ratio seen in {n} nearby places with market prices, about {km} km '
+          'away. Log or share a listing to replace it.':
+      'ಇದು ಅಂದಾಜು, ದತ್ತಾಂಶವಲ್ಲ: ಸುಮಾರು {km} ಕಿ.ಮೀ ದೂರದ, ಮಾರುಕಟ್ಟೆ ಬೆಲೆ ಇರುವ {n} ಹತ್ತಿರದ ಸ್ಥಳಗಳಲ್ಲಿ ಕಂಡ ಅನುಪಾತದಂತೆ '
+          'ಮಾರ್ಗಸೂಚಿಯ ಸುಮಾರು {x}×. ಇದನ್ನು ಬದಲಿಸಲು ಒಂದು ಜಾಹೀರಾತನ್ನು ದಾಖಲಿಸಿ ಅಥವಾ ಹಂಚಿಕೊಳ್ಳಿ.',
   'several': 'ಹಲವು',
   'Market range: no data or estimate yet': 'ಮಾರುಕಟ್ಟೆ ಶ್ರೇಣಿ: ಇನ್ನೂ ದತ್ತಾಂಶ ಅಥವಾ ಅಂದಾಜು ಇಲ್ಲ',
   'Typical rent: {rent}/sq ft a month': 'ಸಾಮಾನ್ಯ ಬಾಡಿಗೆ: ತಿಂಗಳಿಗೆ {rent}/ಚ.ಅಡಿ',

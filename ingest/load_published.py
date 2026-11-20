@@ -82,6 +82,7 @@ def main(path: str) -> None:
                 )
                 rents += 1
         cur.execute("REFRESH MATERIALIZED VIEW nelabele.rate_summary")
+        cur.execute("REFRESH MATERIALIZED VIEW nelabele.local_estimate")
         conn.commit()
     print(f"Loaded {loaded} published prices")
     print(f"Loaded {rents} asking rents")

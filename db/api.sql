@@ -27,6 +27,7 @@ DROP VIEW IF EXISTS public.api_rate;
 DROP VIEW IF EXISTS public.api_area_shape;
 DROP VIEW IF EXISTS public.api_city_trend;
 DROP VIEW IF EXISTS public.api_area;
+DROP MATERIALIZED VIEW IF EXISTS nelabele.local_estimate;
 
 -- Areas for the map: name, level, a map point and boundary as GeoJSON
 CREATE VIEW public.api_area AS
@@ -36,18 +37,75 @@ SELECT id, name, name_kn, level, parent_id, district, aliases,
        ST_AsGeoJSON(boundary)::json AS boundary
 FROM nelabele.geo_area;
 
+-- How far above guidance market prices run, learnt from places that have both.
+-- A place's own guidance value is compared, or else the median for its
+-- taluk/zone. Shared by the local and the city-wide estimates below.
+CREATE MATERIALIZED VIEW nelabele.local_estimate AS
+WITH compared AS (
+  SELECT r.property_type,
+         coalesce(a.point, a.centroid) AS pt,
+         coalesce(r.guidance_rate, z.zone_guidance) AS ref,
+         r.market_mid / coalesce(r.guidance_rate, z.zone_guidance) AS ratio
+  FROM nelabele.rate_summary r
+  JOIN nelabele.geo_area a ON a.id = r.geo_area_id
+  LEFT JOIN LATERAL (
+    SELECT percentile_cont(0.5) WITHIN GROUP (ORDER BY s.guidance_rate) AS zone_guidance
+    FROM nelabele.rate_summary s
+    JOIN nelabele.geo_area b ON b.id = s.geo_area_id
+    WHERE b.parent_id = a.parent_id
+      AND s.property_type = r.property_type
+      AND s.guidance_rate IS NOT NULL
+  ) z ON r.guidance_rate IS NULL
+  WHERE r.market_mid IS NOT NULL
+),
+usable AS (
+  SELECT * FROM compared WHERE ratio > 0 AND pt IS NOT NULL
+),
+targets AS (
+  SELECT r.geo_area_id, r.property_type, r.approval_status, r.guidance_rate,
+         coalesce(a.point, a.centroid) AS pt
+  FROM nelabele.rate_summary r
+  JOIN nelabele.geo_area a ON a.id = r.geo_area_id
+  WHERE r.market_mid IS NULL AND r.guidance_rate IS NOT NULL
+    AND coalesce(a.point, a.centroid) IS NOT NULL
+)
+-- Local: the up-to-5 nearest places of the same type with market prices,
+-- within 12 km; needs at least 2, and this place's guidance value within
+-- 0.5×–2× of theirs, so a pricey street isn't priced off a village nearby.
+SELECT t.geo_area_id, t.property_type, t.approval_status,
+       n.places, n.lo, n.mid, n.hi, n.km
+FROM targets t
+CROSS JOIN LATERAL (
+  SELECT count(*) AS places,
+         min(k.ratio) AS lo,
+         percentile_cont(0.5) WITHIN GROUP (ORDER BY k.ratio) AS mid,
+         max(k.ratio) AS hi,
+         percentile_cont(0.5) WITHIN GROUP (ORDER BY k.km) AS km,
+         min(k.ref) AS min_ref,
+         max(k.ref) AS max_ref
+  FROM (
+    SELECT u.ratio, u.ref, ST_DistanceSphere(u.pt, t.pt) / 1000 AS km
+    FROM usable u
+    WHERE u.property_type = t.property_type
+    ORDER BY u.pt <-> t.pt
+    LIMIT 5
+  ) k
+  WHERE k.km <= 12
+) n
+WHERE n.places >= 2
+  AND t.guidance_rate BETWEEN n.min_ref * 0.5 AND n.max_ref * 2;
+
+CREATE UNIQUE INDEX local_estimate_pk ON nelabele.local_estimate (geo_area_id, property_type, approval_status);
+
 -- Indicative rates with area names, the taluk/zone they sit in and a map point.
 --
 -- Estimated market range (est_*): where a place has no market data of its own,
--- its guidance value × how far above guidance market prices run elsewhere.
--- The multiplier is learnt per property type from every place that has both a
--- market price (published reports, listings, entries) and a guidance value to
--- compare with – the place's own, or else the median for its taluk/zone. Needs
--- at least 3 such places, so a type gets estimates only once there is data.
--- The multiplier isn't the same everywhere (guidance sits closer to market in
--- pricey central areas), so it is only applied to places whose guidance value
--- is within the range of the places it was learnt from (0.6× lowest to 1.5×
--- highest); the range widens by itself as market data comes in.
+-- its guidance value × how far above guidance market prices run nearby
+-- (est_basis 'nearby': the nearest places with market prices, see
+-- local_estimate), or else across all places of that type (est_basis 'city').
+-- The city-wide multiplier needs at least 3 places and is only applied to
+-- places whose guidance value is within the range it was learnt from (0.6×
+-- lowest to 1.5× highest); both widen by themselves as market data comes in.
 CREATE VIEW public.api_rate AS
 WITH compared AS (
   SELECT r.property_type,
@@ -92,11 +150,15 @@ SELECT r.*, a.name AS area_name, a.name_kn, a.level, a.district,
        ST_Y(coalesce(a.point, a.centroid)) AS lat,
        ST_X(coalesce(a.point, a.centroid)) AS lon,
        -- the range is at least ±15% around the mid: places differ more than the sample shows
-       round(r.guidance_rate * least(c.lo, c.mid * 0.85))    AS est_low,
-       round(r.guidance_rate * c.mid)                        AS est_mid,
-       round(r.guidance_rate * greatest(c.hi, c.mid * 1.15)) AS est_high,
-       round(c.mid::numeric, 2)                              AS est_ratio,
-       c.places                                              AS est_places,
+       round(r.guidance_rate * CASE WHEN l.mid IS NOT NULL THEN least(l.lo, l.mid * 0.85)
+                                    ELSE least(c.lo, c.mid * 0.85) END)      AS est_low,
+       round(r.guidance_rate * coalesce(l.mid, c.mid))                       AS est_mid,
+       round(r.guidance_rate * CASE WHEN l.mid IS NOT NULL THEN greatest(l.hi, l.mid * 1.15)
+                                    ELSE greatest(c.hi, c.mid * 1.15) END)   AS est_high,
+       round(coalesce(l.mid, c.mid)::numeric, 2)                             AS est_ratio,
+       coalesce(l.places, c.places)                                          AS est_places,
+       CASE WHEN l.mid IS NOT NULL THEN 'nearby' WHEN c.mid IS NOT NULL THEN 'city' END AS est_basis,
+       round(l.km::numeric, 1)                                               AS est_km,
        -- the guidance value before the latest revision, and the change
        prev.rate                                             AS prev_guidance_rate,
        prev.observed_on                                      AS prev_guidance_effective,
@@ -106,9 +168,13 @@ JOIN nelabele.geo_area a ON a.id = r.geo_area_id
 LEFT JOIN nelabele.geo_area p ON p.id = a.parent_id
 LEFT JOIN guidance_history prev
   ON prev.geo_area_id = r.geo_area_id AND prev.property_type = r.property_type AND prev.rn = 2
+LEFT JOIN nelabele.local_estimate l
+  ON l.geo_area_id = r.geo_area_id AND l.property_type = r.property_type
+ AND l.approval_status = r.approval_status
 LEFT JOIN calibration c
   ON c.property_type = r.property_type
  AND r.market_mid IS NULL
+ AND l.mid IS NULL
  AND r.guidance_rate BETWEEN c.min_ref * 0.6 AND c.max_ref * 1.5;
 
 -- Village outlines for the map, simplified to about 15 m, as GeoJSON
@@ -214,6 +280,7 @@ BEGIN
   RETURNING id INTO new_id;
 
   REFRESH MATERIALIZED VIEW nelabele.rate_summary;
+  REFRESH MATERIALIZED VIEW nelabele.local_estimate;
   RETURN json_build_object('id', new_id, 'area_id', area_id, 'property_type', property_type,
                            'located', lat IS NOT NULL);
 EXCEPTION
